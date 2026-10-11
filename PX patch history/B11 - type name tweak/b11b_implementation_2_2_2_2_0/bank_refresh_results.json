@@ -1,0 +1,11 @@
+{
+  "stock_bank_delete_dispatch": "PASS: button 14 press enters bank deletion; stock mapper selects group 1",
+  "stock_bank_delete_cache_builder": "PASS: actual expanded builder executes after count/name completion, before UI return",
+  "expanded_cache_rows_verified": 1105,
+  "flash_byte_reads": 1106,
+  "bank_availability_word": "PASS: selected bank availability refreshed to zero",
+  "debug_reload_dispatch": "PASS: Confirm press on item 3 invokes 9D022760; no expanded builder call",
+  "external_effects": "deletion, count/name refresh, UI and flash byte reads are controlled callbacks; actual PIC dispatch and cache builder execute",
+  "hardware": "owner confirms complete User-bank deletion refreshes category files and immediately skips deleted bank on .1.15",
+  "firmware_modified": false
+}

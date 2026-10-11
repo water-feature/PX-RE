@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "version": "2.2.2.1.15",
+  "baseline": "exact 2.2.2.1.12",
+  "package": "PxUpdate_V2.2.2.1.15_B10_ordinary_entry_candidate.bin",
+  "bytes": 3187784,
+  "package_sha256": "ebb2aebbd0decdadce92ed40d257e0cb03ebbf7aecf3e05749d9533fd5603450",
+  "QNX_sha256": "dd9efbcd2804e02cc4599e72d2ee90f996facce1fa06f1815a0078270566a2fa",
+  "PIC_sha256": "be8eb8ac823a639f3024b97e01b017ef0cef5f33d086eaa71dfe55d4b0e34622",
+  "FPGA_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+  "application_checksum": "fb38",
+  "FPGA_checksum": "5977",
+  "PIC_legacy_trailer": "3030",
+  "PIC_only_two_revision_bytes": true,
+  "FPGA_entire_record_unchanged": true,
+  "reextraction_identical": true,
+  "flashed": false,
+  "all_package_differences_accounted": true,
+  "package_differing_bytes": 1401
+}

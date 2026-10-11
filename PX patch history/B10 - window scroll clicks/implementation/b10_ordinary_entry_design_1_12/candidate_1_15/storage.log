@@ -1,0 +1,1 @@
+{'status': 'PASS', 'constructor': True, 'independent_readers': True, 'clone_excludes_state': True, 'close_reset': True, 'reconstruction': True, 'successful_open_reset': True, 'all_allocations_freed': True, 'allocation_canaries': True, 'per_reader_bytes': 16, 'additional_audio_buffers': 0}

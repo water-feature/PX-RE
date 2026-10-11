@@ -1,0 +1,15 @@
+--- inherited b5_core.c
++++ proposed rate-independent buffered endpoint identity
+@@
+ static int same(const Key *a,const Key *b) {
+     return a->a==b->a && a->b==b->b && a->rate_bits==b->rate_bits
+         && a->reverse==b->reverse && a->loop==b->loop;
+ }
++/* Source coordinates remain valid when the output playback rate changes. */
++static int same_endpoint_region(const Key *a,const Key *b) {
++    return a->a==b->a && a->b==b->b
++        && a->reverse==b->reverse && a->loop==b->loop;
++}
+@@
+-             && same(&s->d.timeline_key,&s->d.effective)) {
++             && same_endpoint_region(&s->d.timeline_key,&s->d.effective)) {

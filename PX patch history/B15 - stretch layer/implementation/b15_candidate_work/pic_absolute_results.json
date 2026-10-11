@@ -1,0 +1,123 @@
+{
+  "status": "UNPLACED_FULL_HELPER_PLAN",
+  "bytes": 2616,
+  "cave_bytes": 2400,
+  "shortfall": 216,
+  "fits": false,
+  "complete_hook_installation_verified": false,
+  "sha256": "de80831cab52e8d624fc0984623869fc7ad50d6fb495f656bbf44f185e926801",
+  "functions": {
+    "b15_pic_init": 40,
+    "b15_pair": 20,
+    "b15_effective_get": 136,
+    "b15_pic_receive": 196,
+    "b15_pic_service": 140,
+    "b15_capture_prepare": 72,
+    "b15_capture_commit": 220,
+    "b15_capture_enable": 52,
+    "b15_encoder": 256,
+    "b15_rx_entry": 108,
+    "b15_main_entry": 48,
+    "b15_invalidate": 80,
+    "b15_token_send": 96,
+    "b15_transport": 288,
+    "b15_context": 100,
+    "b15_worker": 312,
+    "b15_replay": 28,
+    "b15_load": 28,
+    "b15_import": 28,
+    "b15_edit_apply": 28,
+    "b15_defaults": 28,
+    "b15_reset": 28,
+    "b15_compare": 48,
+    "b15_restore": 48,
+    "b15_cold_defaults": 20,
+    "b15_setter_bank": 28,
+    "b15_setter": 84,
+    "b15_format": 56
+  },
+  "hooks": [
+    {
+      "name": "replay",
+      "pc": "0x9d07c368",
+      "target": "b15_replay",
+      "mode": 1,
+      "expected_words": [
+        "0x27bdffe0",
+        "0xafbf001c"
+      ]
+    },
+    {
+      "name": "load",
+      "pc": "0x9d040418",
+      "target": "b15_load",
+      "mode": 0,
+      "expected_words": [
+        "0x27bdffb8",
+        "0xafbf0044"
+      ]
+    },
+    {
+      "name": "import",
+      "pc": "0x9d0744cc",
+      "target": "b15_import",
+      "mode": 0,
+      "expected_words": [
+        "0x27bdffc8",
+        "0xafbf0034"
+      ]
+    },
+    {
+      "name": "edit_apply",
+      "pc": "0x9d046e4c",
+      "target": "b15_edit_apply",
+      "mode": 0,
+      "expected_words": [
+        "0x27bdffe8",
+        "0xafbf0014"
+      ]
+    },
+    {
+      "name": "defaults",
+      "pc": "0x9d04cd14",
+      "target": "b15_defaults",
+      "mode": 0,
+      "expected_words": [
+        "0x27bdffd8",
+        "0xafbf0024"
+      ]
+    },
+    {
+      "name": "reset",
+      "pc": "0x9d07c2ac",
+      "target": "b15_reset",
+      "mode": 2,
+      "expected_words": [
+        "0x27bdffe0",
+        "0xafbf001c"
+      ]
+    },
+    {
+      "name": "compare",
+      "pc": "0x9d04feb4",
+      "target": "b15_compare",
+      "mode": 0,
+      "expected_words": [
+        "0x3082fffd",
+        "0x5440000e"
+      ]
+    },
+    {
+      "name": "restore",
+      "pc": "0x9d04ffc4",
+      "target": "b15_restore",
+      "mode": 0,
+      "expected_words": [
+        "0x3082fffd",
+        "0x5440000e"
+      ]
+    }
+  ],
+  "state_bytes": 64,
+  "limits": "Full emitted helper plan including lifecycle/raw/replay adapters; exact hook installation/caller routing still requires validation. No payload produced."
+}

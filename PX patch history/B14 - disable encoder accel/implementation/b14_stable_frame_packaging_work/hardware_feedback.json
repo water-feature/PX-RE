@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-07",
+  "revision": [
+    2,
+    2,
+    2,
+    1,
+    7
+  ],
+  "package": "PxUpdate_V2.2.2.1.7.bin",
+  "package_sha256": "91ec37c306731743c62f10b915450f8e64bccec3260e84a9ca8938d146df7f82",
+  "user_report": "this is working better on hardware. we'll stop here for now. wrap up with a handover doc",
+  "interpretation": "User-reported qualitative hardware improvement; pause further investigation at this revision. No measured latency, exhaustive regression or explicit tearing result reported.",
+  "tested_by": "user",
+  "agent_flashed": false
+}

@@ -1,0 +1,1127 @@
+{
+  "status": "STATIC_COMPONENT_PASS_NOT_RELEASE",
+  "ready_for_hardware": false,
+  "baseline_sha256": "4bcac9801d1d9f8306271a7ab42bb93e5e8fa9462664e16c6889ffcd050ea635",
+  "candidate_sha256": "e5fbbc361fbd8b5c3614b1116ce03be660224f634eab2fb352261e76bae5c0a5",
+  "candidate": "voice_B15_absolute_QNX_UNPLACED.elf",
+  "text_bytes": 3921,
+  "new_unwind_bytes": 1256,
+  "index_bytes": 7164,
+  "inherited_FDEs_preserved": 870,
+  "new_FDEs": 24,
+  "program_headers": 8,
+  "RX_end": "0x105000",
+  "RW_end": "0x2b21c0",
+  "state_reservation": [
+    "0x2b1ec0",
+    "0x2b21c0"
+  ],
+  "end_symbols_moved": [
+    {
+      "name": "_end",
+      "table": ".dynsym",
+      "file_offset": 5016
+    },
+    {
+      "name": "_end",
+      "table": ".symtab",
+      "file_offset": 943096
+    }
+  ],
+  "fixed_frame_cache_endpoint_preserved": true,
+  "old_loaded_byte_changes_guarded": true,
+  "new_helpers_position_independent": true,
+  "absolute_relocations_rejected": true,
+  "hooks": [
+    {
+      "va": "0x1e050",
+      "file_offset": 122960,
+      "before": "554889e54157",
+      "after": "e9eb2d0e0090",
+      "label": "b15_message_entry"
+    },
+    {
+      "va": "0x23b2d",
+      "file_offset": 146221,
+      "before": "e8ce280100",
+      "after": "e855d30d00",
+      "label": "b15_noteon_thunk"
+    },
+    {
+      "va": "0x23a3a",
+      "file_offset": 145978,
+      "before": "e8215dfeff",
+      "after": "e896d40d00",
+      "label": "b15_attempt_thunk"
+    },
+    {
+      "va": "0x22280",
+      "file_offset": 139904,
+      "before": "49c78424b81f000000000000",
+      "after": "e98dec0d0090909090909090",
+      "label": "b15_group_clear_thunk"
+    },
+    {
+      "va": "0x22344",
+      "file_offset": 140100,
+      "before": "e8f7350100",
+      "after": "31c0909090",
+      "label": "defer legacy group selection to common helper"
+    }
+  ],
+  "symbols": {
+    "b15_stock_message_continue": "0x1e056",
+    "b15_stock_noteon": "0x36400",
+    "b15_stock_getparam": "0x9760",
+    "b15_stock_group_continue": "0x2228c",
+    "b15_runtime_storage": "0x2b1ec0",
+    "b15_stock_mutex": "0x2a57a0",
+    "b15_stock_fn_0x7a10": "0x7a10",
+    "b15_stock_fn_0x79a0": "0x79a0",
+    "b15_stock_fn_0x9700": "0x9700",
+    "b15_stock_fn_0x1d7f0": "0x1d7f0",
+    "b15_stock_fn_0x35940": "0x35940",
+    "b15_stock_fn_0x36180": "0x36180",
+    "b15_stock_fn_0x3ed50": "0x3ed50",
+    "b15_init": "0x100000",
+    "b15_note_attempt": "0x100029",
+    "b15_note_accepted": "0x10004e",
+    "b15_prepare": "0x100079",
+    "b15_enable": "0x1000d3",
+    "b15_commit": "0x10023e",
+    "b15_key": "0x100364",
+    "b15_absolute": "0x1003d5",
+    "b15_group_changed": "0x100497",
+    "b15_context_begin": "0x100551",
+    "b15_context_end": "0x10059a",
+    "b15_qnx_before": "0x100634",
+    "b15_qnx_after": "0x100a5c",
+    "b15_qnx_group_clear": "0x100b46",
+    "b15_qnx_note_attempt": "0x100b96",
+    "b15_qnx_note_accepted": "0x100c0d",
+    "b15_message_entry": "0x100e40",
+    "b15_original_message": "0x100e7c",
+    "b15_noteon_thunk": "0x100e87",
+    "b15_attempt_thunk": "0x100ed5",
+    "b15_group_clear_thunk": "0x100f12"
+  },
+  "relocations": [
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x102020",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 0
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x102034",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 41
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x102048",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 78
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x10205c",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 121
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x102070",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 211
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x1020b8",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 409
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x1020e4",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 574
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x102130",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 868
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x10216c",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 981
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x1021b4",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 1175
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x1021fc",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 1361
+    },
+    {
+      "object": "b15_absolute_core.o",
+      "place": "0x102210",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100000",
+      "addend": 1434
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10064c",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 576
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100659",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10065e",
+      "type": 4,
+      "symbol": "b15_init",
+      "target": "0x100000",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10066a",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 580
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100671",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1006b9",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 136
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1006c3",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1006e4",
+      "type": 4,
+      "symbol": "b15_context_begin",
+      "target": "0x100551",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1006f1",
+      "type": 4,
+      "symbol": "b15_context_end",
+      "target": "0x10059a",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100742",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10077b",
+      "type": 2,
+      "symbol": "b15_stock_mutex",
+      "target": "0x2a57a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100783",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x7a10",
+      "target": "0x7a10",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10079a",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1007a1",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1007b4",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x9700",
+      "target": "0x9700",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1007bc",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x79a0",
+      "target": "0x79a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1007cf",
+      "type": 4,
+      "symbol": "b15_commit",
+      "target": "0x10023e",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1007e3",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 124
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10081e",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10082b",
+      "type": 4,
+      "symbol": "b15_prepare",
+      "target": "0x100079",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100841",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100864",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1008fe",
+      "type": 2,
+      "symbol": "b15_stock_mutex",
+      "target": "0x2a57a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100906",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x7a10",
+      "target": "0x7a10",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10090d",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100914",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100929",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x9700",
+      "target": "0x9700",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100931",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x79a0",
+      "target": "0x79a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100941",
+      "type": 4,
+      "symbol": "b15_key",
+      "target": "0x100364",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10094d",
+      "type": 2,
+      "symbol": "b15_stock_mutex",
+      "target": "0x2a57a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100955",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x7a10",
+      "target": "0x7a10",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10095c",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100971",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x9700",
+      "target": "0x9700",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100979",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x79a0",
+      "target": "0x79a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100992",
+      "type": 2,
+      "symbol": "b15_stock_mutex",
+      "target": "0x2a57a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10099a",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x7a10",
+      "target": "0x7a10",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1009a1",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1009a8",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1009bd",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x9700",
+      "target": "0x9700",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1009c5",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x79a0",
+      "target": "0x79a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1009d5",
+      "type": 4,
+      "symbol": "b15_absolute",
+      "target": "0x1003d5",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1009f1",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a1a",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a24",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x1d7f0",
+      "target": "0x1d7f0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a2f",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a3c",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x1d7f0",
+      "target": "0x1d7f0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a48",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a58",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x1d7f0",
+      "target": "0x1d7f0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a6f",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 576
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a7c",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a81",
+      "type": 4,
+      "symbol": "b15_init",
+      "target": "0x100000",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a8d",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 580
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100a94",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100aeb",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100af3",
+      "type": 4,
+      "symbol": "b15_enable",
+      "target": "0x1000d3",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100afb",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 584
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b02",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b1d",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 584
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b2a",
+      "type": 4,
+      "symbol": "b15_group_changed",
+      "target": "0x100497",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b30",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 584
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b51",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 576
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b5e",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b63",
+      "type": 4,
+      "symbol": "b15_init",
+      "target": "0x100000",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b6f",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 580
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b76",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100b8a",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 584
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100bab",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 576
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100bb8",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100bbd",
+      "type": 4,
+      "symbol": "b15_init",
+      "target": "0x100000",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100bc9",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 580
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100bd0",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100beb",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100bfd",
+      "type": 4,
+      "symbol": "b15_note_attempt",
+      "target": "0x100029",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100c26",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 576
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100c33",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100c38",
+      "type": 4,
+      "symbol": "b15_init",
+      "target": "0x100000",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100c44",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 580
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100c4b",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100c6d",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100c7d",
+      "type": 4,
+      "symbol": "b15_note_accepted",
+      "target": "0x10004e",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100ca0",
+      "type": 2,
+      "symbol": "b15_stock_mutex",
+      "target": "0x2a57a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100ca5",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x7a10",
+      "target": "0x7a10",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100cac",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100da4",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x35940",
+      "target": "0x35940",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100dc4",
+      "type": 2,
+      "symbol": "b15_stock_mutex",
+      "target": "0x2a57a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100dc9",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x79a0",
+      "target": "0x79a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100de5",
+      "type": 2,
+      "symbol": "b15_stock_mutex",
+      "target": "0x2a57a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100dea",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x79a0",
+      "target": "0x79a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100df6",
+      "type": 2,
+      "symbol": "b15_runtime_storage",
+      "target": "0x2b1ec0",
+      "addend": 572
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100e09",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x36180",
+      "target": "0x36180",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100e13",
+      "type": 2,
+      "symbol": "b15_stock_mutex",
+      "target": "0x2a57a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100e18",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x79a0",
+      "target": "0x79a0",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x100e29",
+      "type": 4,
+      "symbol": "b15_stock_fn_0x3ed50",
+      "target": "0x3ed50",
+      "addend": -4
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x102270",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100634",
+      "addend": 0
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1022bc",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100634",
+      "addend": 938
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1022f4",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100634",
+      "addend": 1064
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x10232c",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100634",
+      "addend": 1298
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x102354",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100634",
+      "addend": 1378
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1023a0",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100634",
+      "addend": 1497
+    },
+    {
+      "object": "b15_absolute_qnx_adapter.o",
+      "place": "0x1023ec",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100634",
+      "addend": 1623
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100e50",
+      "type": 4,
+      "symbol": "b15_qnx_before",
+      "target": "0x100634",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100e63",
+      "type": 4,
+      "symbol": "b15_original_message",
+      "target": "0x100e7c",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100e72",
+      "type": 4,
+      "symbol": "b15_qnx_after",
+      "target": "0x100a5c",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100e83",
+      "type": 4,
+      "symbol": "b15_stock_message_continue",
+      "target": "0x1e056",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100ea9",
+      "type": 4,
+      "symbol": "b15_stock_noteon",
+      "target": "0x36400",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100ecc",
+      "type": 4,
+      "symbol": "b15_qnx_note_accepted",
+      "target": "0x100c0d",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100ef8",
+      "type": 4,
+      "symbol": "b15_qnx_note_attempt",
+      "target": "0x100b96",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100f09",
+      "type": 4,
+      "symbol": "b15_stock_getparam",
+      "target": "0x9760",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100f2e",
+      "type": 4,
+      "symbol": "b15_qnx_group_clear",
+      "target": "0x100b46",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x100f4d",
+      "type": 4,
+      "symbol": "b15_stock_group_continue",
+      "target": "0x2228c",
+      "addend": -4
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x102460",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100e40",
+      "addend": 0
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x102480",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100e40",
+      "addend": 60
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x10249c",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100e40",
+      "addend": 71
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x1024b4",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100e40",
+      "addend": 149
+    },
+    {
+      "object": "b15_qnx_thunks.o",
+      "place": "0x1024cc",
+      "type": 2,
+      "symbol": "",
+      "target": "0x100e40",
+      "addend": 210
+    }
+  ],
+  "limits": "PIC not integrated; runtime ABI/ownership/transport tests still required; not a flashable candidate."
+}

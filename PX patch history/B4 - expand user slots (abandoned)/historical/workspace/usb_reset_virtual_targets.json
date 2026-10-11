@@ -1,0 +1,38 @@
+[
+  {
+    "call": "0x9d066c8c",
+    "vtable_offset": "0x40",
+    "target": "0x9d054710",
+    "condition": "Parent uses the recovered 0x800538e0 driver vtable"
+  },
+  {
+    "call": "0x9d066ca0",
+    "vtable_offset": "0x40",
+    "target": "0x9d054710",
+    "condition": "Parent uses the recovered 0x800538e0 driver vtable"
+  },
+  {
+    "call": "0x9d066cbc",
+    "vtable_offset": "0x24",
+    "target": "0x9d054098",
+    "condition": "Parent uses the recovered 0x800538e0 driver vtable"
+  },
+  {
+    "call": "0x9d066cd8",
+    "vtable_offset": "0x20",
+    "target": "0x9d054338",
+    "condition": "Parent uses the recovered 0x800538e0 driver vtable"
+  },
+  {
+    "call": "0x9d066d08",
+    "vtable_offset": "0x10",
+    "target": "0x9d053de0",
+    "condition": "Parent uses the recovered 0x800538e0 driver vtable"
+  },
+  {
+    "call": "0x9d066d8c",
+    "vtable_offset": "0x38",
+    "target": "0x9d05529c",
+    "condition": "Parent uses the recovered 0x800538e0 driver vtable"
+  }
+]

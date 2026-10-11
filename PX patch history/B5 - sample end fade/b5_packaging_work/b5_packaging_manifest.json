@@ -1,0 +1,201 @@
+{
+  "status": "packaged_and_offline_verified",
+  "test_file": "voice_b5_2.2.2.0.5.bin",
+  "test_sha256": "41242b0d3cde1cf208181d998176db62dcc9484e2ca74e22104f4a140845a587",
+  "test_bytes": 3127120,
+  "base_file": "voice_2.2.2.0.2.bin",
+  "base_sha256": "2ad5392eb842cbcd5c2e85e65ab42c16f1fac12d16b09c417a61761a8348bcbf",
+  "base_bytes": 3099064,
+  "required_candidate_file": "b5_candidate_work/voice_2.2.2.0.2_qnx_B5_candidate.elf",
+  "required_candidate_sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35",
+  "candidate_bytes": 1014576,
+  "package_revision": [
+    2,
+    2,
+    2,
+    0,
+    5
+  ],
+  "identity_scope": "container header and descriptive filename only; exact ELF retains voice DSP revision 2.2.2.0.2",
+  "format": "F0 + three records (type,7B,5 version bytes,7A,u32be length,payload,u16le trailer) + F7",
+  "application_checksum": "0x3404",
+  "qnx_size_growth": 28056,
+  "change_whitelist": [
+    {
+      "region": "application header version",
+      "offset": 3,
+      "bytes": 5,
+      "old": "0202020002",
+      "new": "0202020005"
+    },
+    {
+      "region": "application length",
+      "offset": 9,
+      "bytes": 4,
+      "old": "000f0d98",
+      "new": "000f7b30"
+    },
+    {
+      "region": "QNX application payload",
+      "old_offset": 13,
+      "old_bytes": 986520,
+      "new_offset": 13,
+      "new_bytes": 1014576
+    },
+    {
+      "region": "application checksum trailer",
+      "old_offset": 986533,
+      "new_offset": 1014589,
+      "bytes": 2,
+      "old": "4bf4",
+      "new": "0434"
+    }
+  ],
+  "all_other_records_byte_identical": true,
+  "records": [
+    {
+      "type": 1,
+      "header_offset": 1,
+      "payload_offset": 13,
+      "trailer_offset": 1014589,
+      "end_offset": 1014591,
+      "length": 1014576,
+      "revision": [
+        2,
+        2,
+        2,
+        0,
+        5
+      ],
+      "stored_checksum": "0x3404",
+      "calculated_word_checksum": "0x3404",
+      "word_checksum_matches": true,
+      "payload_sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35",
+      "record_sha256": "ec1466c8ae2d137356d0844bed81e73f7888f268ec53b9660a9f232e90a6a68e"
+    },
+    {
+      "type": 2,
+      "header_offset": 1014591,
+      "payload_offset": 1014603,
+      "trailer_offset": 2596319,
+      "end_offset": 2596321,
+      "length": 1581716,
+      "revision": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "stored_checksum": "0x7759",
+      "calculated_word_checksum": "0x7759",
+      "word_checksum_matches": true,
+      "payload_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+      "record_sha256": "9697f1cbe3d798c2b066a2f6a3355b2c8ce444130f0362800fab2894aa885b40"
+    },
+    {
+      "type": 3,
+      "header_offset": 2596321,
+      "payload_offset": 2596333,
+      "trailer_offset": 3127117,
+      "end_offset": 3127119,
+      "length": 530784,
+      "revision": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "stored_checksum": "0x3030",
+      "calculated_word_checksum": "0x4658",
+      "word_checksum_matches": false,
+      "payload_sha256": "14e9c9b9dc562b0384fc43b3c5e0eb7fea84a5792d1a19b9b3ea8276ef7646f5",
+      "record_sha256": "29d93873449503c2c9b6563495643399b642c19f2996c2db43f9fb22e445c03b"
+    }
+  ],
+  "verification_summary": {
+    "status": "offline_container_verified",
+    "container_sha256": "41242b0d3cde1cf208181d998176db62dcc9484e2ca74e22104f4a140845a587",
+    "container_bytes": 3127120,
+    "candidate_sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35",
+    "passed": 21,
+    "checks": [
+      "exact tested voice container",
+      "required candidate identity",
+      "three records and F0/F7 framing",
+      "B5 header revision 2.2.2.0.5",
+      "application length matches exact candidate",
+      "extracted QNX bytes and pinned hash",
+      "application word checksum",
+      "base application checksum",
+      "application header changes confined to version/length",
+      "complete later-record suffix unchanged",
+      "total file length equals payload growth",
+      "FPGA complete record bytes unchanged",
+      "FPGA payload bytes/hash unchanged",
+      "FPGA length/revision/trailer preserved",
+      "FPGA offset shift matches QNX growth",
+      "PIC complete record bytes unchanged",
+      "PIC payload bytes/hash unchanged",
+      "PIC length/revision/trailer preserved",
+      "PIC offset shift matches QNX growth",
+      "FPGA checksum matches established word sum",
+      "known PIC checksum discrepancy preserved exactly"
+    ],
+    "known_base_checksum_exception": "PIC stored 0x3030 differs from simple word sum 0x4658 in the exact tested base; its entire record/trailer is preserved, not repaired.",
+    "hardware_acceptance_tested": false,
+    "target_performance_tested": false,
+    "listening_tested": false
+  },
+  "negative_cases": [
+    {
+      "case": "modified base",
+      "rejected": true
+    },
+    {
+      "case": "truncated base",
+      "rejected": true
+    },
+    {
+      "case": "modified candidate",
+      "rejected": true
+    },
+    {
+      "case": "truncated candidate",
+      "rejected": true
+    },
+    {
+      "case": "wrong packaged B5 revision",
+      "rejected": true
+    },
+    {
+      "case": "QNX checksum corruption",
+      "rejected": true
+    },
+    {
+      "case": "PIC byte corruption",
+      "rejected": true
+    }
+  ],
+  "rollback": {
+    "known_good_tested_voice_file": "voice_2.2.2.0.2.bin",
+    "known_good_tested_voice_sha256": "2ad5392eb842cbcd5c2e85e65ab42c16f1fac12d16b09c417a61761a8348bcbf",
+    "same_version_gate_caveat": "Exact candidate retains compiled .2 gate; incoming tested voice .2 is skipped. Established running-updater rollback requires official stock .0 first, then tested voice .2; use a pretest SSD recovery image if the updater cannot run.",
+    "official_stock_intermediate_file": "PxUpdate_V2.2.2.0.0.bin",
+    "official_stock_intermediate_sha256": "a4b304b3bb48ca933ae63c99c0098698c497ebfc7c38ab2a823b5e0df4919fa9"
+  },
+  "source_sha256": {
+    "package_b5_test.py": "d775ef23ff0818c2bca8d0ae79ef2aea3fe559e5d8caaed992940284d99ddec8",
+    "verify_b5_test.py": "196a8dcad9a080be63ac98df9bf2e4085fc41e3eda5704c1f53cee106e6b1fe9"
+  },
+  "pending": [
+    "hardware updater/QNX acceptance",
+    "target performance",
+    "listening tests"
+  ],
+  "flashed": false,
+  "deterministic_rebuild_matches": true,
+  "saved_extraction_sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35",
+  "usb_filename_if_standard_prefix_is_required": "PxUpdate_V2.2.2.0.5.bin"
+}

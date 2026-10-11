@@ -1,0 +1,121 @@
+{
+  "status": "PASS_BOUNDED_FORMATTER_CALLER_GUARD",
+  "formatter": "0x9d05f7f4",
+  "resume": "0x9d05f7fc",
+  "guard_cases": 196609,
+  "direct_callers": [
+    {
+      "call": "0x9d031e0c",
+      "parameter": "dynamic (0x20 seeded)",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d031eac",
+      "parameter": "dynamic (0x20 seeded)",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03af30",
+      "parameter": "dynamic (0x20 seeded)",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03afbc",
+      "parameter": "dynamic (0x20 seeded)",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03b298",
+      "parameter": "dynamic (0x20 seeded)",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03b310",
+      "parameter": "dynamic (0x20 seeded)",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03df40",
+      "parameter": "0xb7",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03e158",
+      "parameter": "0xb8",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03e3e0",
+      "parameter": "0xc1",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03e46c",
+      "parameter": "0xc2",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03e56c",
+      "parameter": "0xc3",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03e5c0",
+      "parameter": "0xb9",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03e6b4",
+      "parameter": "0xc4",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03e77c",
+      "parameter": "0xba",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03e93c",
+      "parameter": "0xbb",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03e99c",
+      "parameter": "0xc5",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03ef4c",
+      "parameter": "0x65",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03f0b4",
+      "parameter": "0x22",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03f17c",
+      "parameter": "0x24",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d03f2e8",
+      "parameter": "0x63",
+      "status": "PASS call/delay/hook; stock resume reached"
+    },
+    {
+      "call": "0x9d060bfc",
+      "parameter": "dynamic (0x20 seeded)",
+      "status": "PASS call/delay/hook; stock resume reached"
+    }
+  ],
+  "entry_literal_alias_hits": [],
+  "unchanged_stock_body": [
+    "0x9d05f7fc",
+    "0x9d060bec"
+  ],
+  "fitted_sha256": "bbaeda4fd2d32602088747caa81d4031fb4607c0073344e3e92fb6bdf00efbfe",
+  "modeled": "MIPS interpreter; seeded caller state. Stops at unchanged stock-body resume, not full renderer/parameter-specific callee execution.",
+  "limits": "All raw direct J/JAL references listed. Literal pointer scan is not exhaustive indirect/computed/callback closure. Hardware and physical display NOT VERIFIED."
+}

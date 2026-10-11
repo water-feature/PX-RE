@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "exit": 0,
+  "stderr": "",
+  "emitted_host": {
+    "status": "PASS",
+    "cases": 43528,
+    "pushes": 6872,
+    "bypasses": 36656,
+    "geometry_model_checks": 217640,
+    "actual_stock_geometry_checks": 435280,
+    "ABI_comparisons": 43528,
+    "retreat_sequences": 24
+  },
+  "wrapper_CFI_matches_original_at_every_byte": true,
+  "original_CFA_expression_evaluated": true,
+  "core_CFI_validated": true,
+  "stack_alignment": true,
+  "extra_peak_stack_bytes": 456,
+  "interior_branch_targets_absent_in_ghidra_function": true,
+  "firmware_unmodified": true,
+  "scope": "actual isolated emitted x86/hook replay, stock getters/map and both stock geometry instruction slices in all size modes; fake parameter/modulation/reader objects and bounded arithmetic oracle; complete QNX playback and hardware NOT VERIFIED"
+}

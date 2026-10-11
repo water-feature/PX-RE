@@ -1,0 +1,54 @@
+{
+  "independent_byte_verification": true,
+  "actual_application_message": "0x40139203",
+  "application_version_gate_cases": [
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        1
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        3
+      ],
+      "skip": true
+    }
+  ],
+  "actual_pic_setter_verified": true,
+  "actual_pic_formatter_output": "M: 2.2.2, DSP: 2.2.2.0.3",
+  "pic_fpga_records_identical": true,
+  "mocks": [
+    "application virtual transport",
+    "PIC persistence request tail"
+  ],
+  "hardware_tested": false
+}

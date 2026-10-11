@@ -1,0 +1,112 @@
+[
+  {
+    "groups_scanned": 65,
+    "folder": "u00",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "u07",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "p00",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "p31",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "u08",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "u31",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "u32",
+    "accepted": false
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "u63",
+    "accepted": false
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "u64",
+    "accepted": false
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "u99",
+    "accepted": false
+  },
+  {
+    "groups_scanned": 65,
+    "folder": "x00",
+    "accepted": false
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "u00",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "u07",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "p00",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "p31",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "u08",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "u31",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "u32",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "u63",
+    "accepted": true
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "u64",
+    "accepted": false
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "u99",
+    "accepted": false
+  },
+  {
+    "groups_scanned": 97,
+    "folder": "x00",
+    "accepted": false
+  }
+]

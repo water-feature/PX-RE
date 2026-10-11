@@ -1,0 +1,19 @@
+{
+  "status": "EMITTED_COMPONENT_PASS_NOT_RELEASE",
+  "cases": [
+    "status-only framing, independent cursors; redraw without parameter stores",
+    "A+B dynamic3/6 limits, immediate stores;500 rapid reversals ignore delayed base status",
+    "On sends zero but retains cursor; next detent avoids hidden-zero jump",
+    "lifecycle token before ordinary command; stale full32 epoch and exhausted generation rejected",
+    "capture prepare A+B before panic and commit final stored keys; o32 preservation",
+    "raw/replay/reset wrappers preserve return,register/stack args; bulk masks and no waiting phase",
+    "stock compare/restore BNE-likely trampolines preserve branch/annul destinations",
+    "SampleVel setter atomic store+send restores IE both ways; cold defaults initializes state without transport",
+    "reduced ISR save set covers all emitted receiver writes; leaf has no callee clobbers",
+    "actual stock A/B serialization loops save immediate P with feedback pending; display cannot rewrite P and old context is rejected after load",
+    "actual unknown uses display-only FFFF/--, disabled reveals P; ordinary formatter trampoline unchanged"
+  ],
+  "control_delay_slots_checked": 142,
+  "bytes": 2616,
+  "limits": "Fitted/scattered emitted components; stock setter/worker contracts and modeled feedback. Not a full paired or physical IRQ test."
+}

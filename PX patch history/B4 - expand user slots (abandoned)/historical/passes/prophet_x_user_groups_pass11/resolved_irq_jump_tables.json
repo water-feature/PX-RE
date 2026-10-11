@@ -1,0 +1,106 @@
+[
+  {
+    "pc": "0x9d077b18",
+    "table": "0x9d077b20",
+    "guarded_entries": 5,
+    "targets": [
+      "0x9d077c08",
+      "0x9d077c48",
+      "0x9d077c8c",
+      "0x9d077b84",
+      "0x9d077bc8"
+    ],
+    "basis": "manually traced sltiu bound, scaled index and base construction"
+  },
+  {
+    "pc": "0x9d06e9e0",
+    "table": "0x9d06e9e8",
+    "guarded_entries": 40,
+    "targets": [
+      "0x9d06ea88",
+      "0x9d06ea88",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06eaa0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ead0",
+      "0x9d06ebf0",
+      "0x9d06eaa0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06eaa0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06eb34",
+      "0x9d06eaa0",
+      "0x9d06eaa0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06ebf0",
+      "0x9d06eaa0",
+      "0x9d06ebf0",
+      "0x9d06eaa0",
+      "0x9d06ec14",
+      "0x9d06eaa0",
+      "0x9d06ebf0",
+      "0x9d06ebf0"
+    ],
+    "basis": "manually traced sltiu bound, scaled index and base construction"
+  },
+  {
+    "pc": "0x9d05b8f0",
+    "table": "0x9d05b8f8",
+    "guarded_entries": 9,
+    "targets": [
+      "0x9d05b950",
+      "0x9d05b964",
+      "0x9d05b978",
+      "0x9d05b98c",
+      "0x9d05b9a0",
+      "0x9d05b9b4",
+      "0x9d05b9c8",
+      "0x9d05b93c",
+      "0x9d05b91c"
+    ],
+    "basis": "manually traced sltiu bound, scaled index and base construction"
+  },
+  {
+    "pc": "0x9d056f34",
+    "table": "0x9d056f3c",
+    "guarded_entries": 5,
+    "targets": [
+      "0x9d05725c",
+      "0x9d057224",
+      "0x9d0571f4",
+      "0x9d0571a8",
+      "0x9d057294"
+    ],
+    "basis": "manually traced sltiu bound, scaled index and base construction"
+  },
+  {
+    "pc": "0x9d056f74",
+    "table": "0x9d056f7c",
+    "guarded_entries": 5,
+    "targets": [
+      "0x9d05713c",
+      "0x9d0570f0",
+      "0x9d0570ac",
+      "0x9d057030",
+      "0x9d057174"
+    ],
+    "basis": "manually traced sltiu bound, scaled index and base construction"
+  }
+]

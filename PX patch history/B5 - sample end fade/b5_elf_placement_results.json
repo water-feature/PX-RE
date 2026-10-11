@@ -1,0 +1,3739 @@
+{
+  "scope": "structural ELF/index model; no modified ELF emitted",
+  "checks": [
+    {
+      "name": "tested voice ELF identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "tested voice container identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ET_DYN x86-64 original PHDR count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no spare PHDR before interpreter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "interpreter fixed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "candidate starts beyond original file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3640-byte gap is zero but not currently RX",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "839 original index targets sorted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old frame pointer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all indexed FDE/CIEs mapped and decodable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all original index starts match FDE PC",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "installed voice FDE retained outside .eh_frame",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "installed voice helper/hook bytes unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all 839 absolute pairs preserved after reencoding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frame pointer still original, no linear-stream relocation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new index and synthetic records within reservations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "index capacity bound rejects next entry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "byte-copy header relocation is detected as incorrect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wrong datarel base +8 is detected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only RX sizes and EH header fields changed in PHDR model",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "p_filesz <= p_memsz and alignment congruence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "candidate PT_LOAD VAs do not overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no rounded VA overlap at 0x1000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no rounded VA overlap at 0x200000",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "code/frame/header reservations covered by RX",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original 37 section indices retained, two added",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "active header section agrees with EH program header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only active header/name table and new section descriptors differ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replacement name/table extents nonallocated and nonoverlapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "file extents large enough for new RX payload and section table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "combined index lookup matches every old/new target at three biases",
+      "passed": true,
+      "detail": 2535
+    },
+    {
+      "name": "new PC rejected without RX mapping extension",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FDE fixture end is excluded rather than miscovered",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "voice frame bytes and original metadata remain immutable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "discontiguous fixture FDE/CIEs structurally decodable",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 35,
+  "old_pairs": [
+    {
+      "pc": "0x7180",
+      "fde": "0x92ff0"
+    },
+    {
+      "pc": "0x7bc0",
+      "fde": "0x94f50"
+    },
+    {
+      "pc": "0x7bf0",
+      "fde": "0x95740"
+    },
+    {
+      "pc": "0x7d30",
+      "fde": "0x96338"
+    },
+    {
+      "pc": "0x83c0",
+      "fde": "0x93018"
+    },
+    {
+      "pc": "0x83d0",
+      "fde": "0x93030"
+    },
+    {
+      "pc": "0x8400",
+      "fde": "0x93048"
+    },
+    {
+      "pc": "0x8410",
+      "fde": "0x93060"
+    },
+    {
+      "pc": "0x8440",
+      "fde": "0x93078"
+    },
+    {
+      "pc": "0x8450",
+      "fde": "0x93090"
+    },
+    {
+      "pc": "0x8480",
+      "fde": "0x930a8"
+    },
+    {
+      "pc": "0x8490",
+      "fde": "0x930c0"
+    },
+    {
+      "pc": "0x84b0",
+      "fde": "0x930e0"
+    },
+    {
+      "pc": "0x8630",
+      "fde": "0x93130"
+    },
+    {
+      "pc": "0x87c0",
+      "fde": "0x93160"
+    },
+    {
+      "pc": "0x87d0",
+      "fde": "0x93178"
+    },
+    {
+      "pc": "0x8920",
+      "fde": "0x931a0"
+    },
+    {
+      "pc": "0x8950",
+      "fde": "0x931b8"
+    },
+    {
+      "pc": "0x8a30",
+      "fde": "0x931d0"
+    },
+    {
+      "pc": "0x8bb0",
+      "fde": "0x931f8"
+    },
+    {
+      "pc": "0x8bd0",
+      "fde": "0x93210"
+    },
+    {
+      "pc": "0x8c10",
+      "fde": "0x93230"
+    },
+    {
+      "pc": "0x8d20",
+      "fde": "0x93250"
+    },
+    {
+      "pc": "0x8de0",
+      "fde": "0x93268"
+    },
+    {
+      "pc": "0x95d0",
+      "fde": "0x932b8"
+    },
+    {
+      "pc": "0x9660",
+      "fde": "0x932f8"
+    },
+    {
+      "pc": "0x96e0",
+      "fde": "0x93348"
+    },
+    {
+      "pc": "0x9700",
+      "fde": "0x93360"
+    },
+    {
+      "pc": "0x9720",
+      "fde": "0x93378"
+    },
+    {
+      "pc": "0x9740",
+      "fde": "0x93390"
+    },
+    {
+      "pc": "0x9760",
+      "fde": "0x933a8"
+    },
+    {
+      "pc": "0x9780",
+      "fde": "0x933c0"
+    },
+    {
+      "pc": "0x97a0",
+      "fde": "0x933d8"
+    },
+    {
+      "pc": "0x97c0",
+      "fde": "0x933f0"
+    },
+    {
+      "pc": "0x97e0",
+      "fde": "0x93408"
+    },
+    {
+      "pc": "0x9800",
+      "fde": "0x93420"
+    },
+    {
+      "pc": "0x9880",
+      "fde": "0x93458"
+    },
+    {
+      "pc": "0x9910",
+      "fde": "0x934a0"
+    },
+    {
+      "pc": "0x9930",
+      "fde": "0x934b8"
+    },
+    {
+      "pc": "0x9950",
+      "fde": "0x934d0"
+    },
+    {
+      "pc": "0x9a70",
+      "fde": "0x934e8"
+    },
+    {
+      "pc": "0x9bd0",
+      "fde": "0x93508"
+    },
+    {
+      "pc": "0x9c00",
+      "fde": "0x93520"
+    },
+    {
+      "pc": "0x9c30",
+      "fde": "0x93540"
+    },
+    {
+      "pc": "0x9cb0",
+      "fde": "0x93578"
+    },
+    {
+      "pc": "0x9cd0",
+      "fde": "0x93598"
+    },
+    {
+      "pc": "0x9f20",
+      "fde": "0x935e8"
+    },
+    {
+      "pc": "0xa010",
+      "fde": "0x93608"
+    },
+    {
+      "pc": "0xa240",
+      "fde": "0x93650"
+    },
+    {
+      "pc": "0xa880",
+      "fde": "0x93698"
+    },
+    {
+      "pc": "0xa890",
+      "fde": "0x936b0"
+    },
+    {
+      "pc": "0xa8c0",
+      "fde": "0x936c8"
+    },
+    {
+      "pc": "0xa8d0",
+      "fde": "0x936e0"
+    },
+    {
+      "pc": "0xa900",
+      "fde": "0x936f8"
+    },
+    {
+      "pc": "0xa910",
+      "fde": "0x93710"
+    },
+    {
+      "pc": "0xa940",
+      "fde": "0x93728"
+    },
+    {
+      "pc": "0xa950",
+      "fde": "0x93740"
+    },
+    {
+      "pc": "0xa970",
+      "fde": "0x93760"
+    },
+    {
+      "pc": "0xaaf0",
+      "fde": "0x93778"
+    },
+    {
+      "pc": "0xae00",
+      "fde": "0x937a8"
+    },
+    {
+      "pc": "0xae20",
+      "fde": "0x937c0"
+    },
+    {
+      "pc": "0xae60",
+      "fde": "0x937e0"
+    },
+    {
+      "pc": "0xaed0",
+      "fde": "0x93800"
+    },
+    {
+      "pc": "0xafc0",
+      "fde": "0x93820"
+    },
+    {
+      "pc": "0xb4b0",
+      "fde": "0x93880"
+    },
+    {
+      "pc": "0xb4c0",
+      "fde": "0x93898"
+    },
+    {
+      "pc": "0xb4f0",
+      "fde": "0x938b0"
+    },
+    {
+      "pc": "0xb500",
+      "fde": "0x938c8"
+    },
+    {
+      "pc": "0xb530",
+      "fde": "0x938e0"
+    },
+    {
+      "pc": "0xb540",
+      "fde": "0x938f8"
+    },
+    {
+      "pc": "0xb570",
+      "fde": "0x93910"
+    },
+    {
+      "pc": "0xb580",
+      "fde": "0x93928"
+    },
+    {
+      "pc": "0xb5a0",
+      "fde": "0x93948"
+    },
+    {
+      "pc": "0xb680",
+      "fde": "0x93968"
+    },
+    {
+      "pc": "0xb770",
+      "fde": "0x93988"
+    },
+    {
+      "pc": "0xb780",
+      "fde": "0x939a0"
+    },
+    {
+      "pc": "0xb7b0",
+      "fde": "0x939b8"
+    },
+    {
+      "pc": "0xb890",
+      "fde": "0x939d0"
+    },
+    {
+      "pc": "0xb930",
+      "fde": "0x939f0"
+    },
+    {
+      "pc": "0xb950",
+      "fde": "0x93a08"
+    },
+    {
+      "pc": "0xb990",
+      "fde": "0x93a28"
+    },
+    {
+      "pc": "0xbaa0",
+      "fde": "0x93a48"
+    },
+    {
+      "pc": "0xbb60",
+      "fde": "0x93a60"
+    },
+    {
+      "pc": "0xc090",
+      "fde": "0x93ab0"
+    },
+    {
+      "pc": "0xcc70",
+      "fde": "0x93ad0"
+    },
+    {
+      "pc": "0xcc90",
+      "fde": "0x93af0"
+    },
+    {
+      "pc": "0xd620",
+      "fde": "0x93b20"
+    },
+    {
+      "pc": "0xd8a0",
+      "fde": "0x93b38"
+    },
+    {
+      "pc": "0xd910",
+      "fde": "0x93b58"
+    },
+    {
+      "pc": "0xd930",
+      "fde": "0x93b70"
+    },
+    {
+      "pc": "0xde60",
+      "fde": "0x93bb0"
+    },
+    {
+      "pc": "0xdf10",
+      "fde": "0x93bf0"
+    },
+    {
+      "pc": "0xe4c0",
+      "fde": "0x93c90"
+    },
+    {
+      "pc": "0xe850",
+      "fde": "0x93cd8"
+    },
+    {
+      "pc": "0xe8c0",
+      "fde": "0x93cf0"
+    },
+    {
+      "pc": "0xe930",
+      "fde": "0x93d08"
+    },
+    {
+      "pc": "0xe990",
+      "fde": "0x93d40"
+    },
+    {
+      "pc": "0xeab0",
+      "fde": "0x93d88"
+    },
+    {
+      "pc": "0xead0",
+      "fde": "0x93da0"
+    },
+    {
+      "pc": "0xeaf0",
+      "fde": "0x93db8"
+    },
+    {
+      "pc": "0xeb00",
+      "fde": "0x93dd0"
+    },
+    {
+      "pc": "0xeb10",
+      "fde": "0x93de8"
+    },
+    {
+      "pc": "0xeb20",
+      "fde": "0x93e00"
+    },
+    {
+      "pc": "0xeb40",
+      "fde": "0x93e18"
+    },
+    {
+      "pc": "0xeb70",
+      "fde": "0x93e30"
+    },
+    {
+      "pc": "0xef20",
+      "fde": "0x93e80"
+    },
+    {
+      "pc": "0xf360",
+      "fde": "0x93ed0"
+    },
+    {
+      "pc": "0xf760",
+      "fde": "0x93f20"
+    },
+    {
+      "pc": "0xfdb0",
+      "fde": "0x93f68"
+    },
+    {
+      "pc": "0xfdc0",
+      "fde": "0x93f80"
+    },
+    {
+      "pc": "0xfdd0",
+      "fde": "0x93f98"
+    },
+    {
+      "pc": "0xfde0",
+      "fde": "0x93fb0"
+    },
+    {
+      "pc": "0xfdf0",
+      "fde": "0x93fc8"
+    },
+    {
+      "pc": "0xfe30",
+      "fde": "0x93fe0"
+    },
+    {
+      "pc": "0xfe90",
+      "fde": "0x94008"
+    },
+    {
+      "pc": "0xfeb0",
+      "fde": "0x94028"
+    },
+    {
+      "pc": "0x100a0",
+      "fde": "0x94068"
+    },
+    {
+      "pc": "0x10230",
+      "fde": "0x94088"
+    },
+    {
+      "pc": "0x10240",
+      "fde": "0x940a0"
+    },
+    {
+      "pc": "0x10250",
+      "fde": "0x940b8"
+    },
+    {
+      "pc": "0x10260",
+      "fde": "0x940d0"
+    },
+    {
+      "pc": "0x10270",
+      "fde": "0x940e8"
+    },
+    {
+      "pc": "0x10280",
+      "fde": "0x94100"
+    },
+    {
+      "pc": "0x10290",
+      "fde": "0x94118"
+    },
+    {
+      "pc": "0x102c0",
+      "fde": "0x94130"
+    },
+    {
+      "pc": "0x102d0",
+      "fde": "0x94148"
+    },
+    {
+      "pc": "0x10300",
+      "fde": "0x94160"
+    },
+    {
+      "pc": "0x10310",
+      "fde": "0x94178"
+    },
+    {
+      "pc": "0x10340",
+      "fde": "0x94190"
+    },
+    {
+      "pc": "0x10350",
+      "fde": "0x941a8"
+    },
+    {
+      "pc": "0x10370",
+      "fde": "0x941c8"
+    },
+    {
+      "pc": "0x10570",
+      "fde": "0x941e0"
+    },
+    {
+      "pc": "0x10630",
+      "fde": "0x94200"
+    },
+    {
+      "pc": "0x10670",
+      "fde": "0x94220"
+    },
+    {
+      "pc": "0x106e0",
+      "fde": "0x94240"
+    },
+    {
+      "pc": "0x10720",
+      "fde": "0x94260"
+    },
+    {
+      "pc": "0x10d50",
+      "fde": "0x942b0"
+    },
+    {
+      "pc": "0x10d70",
+      "fde": "0x942c8"
+    },
+    {
+      "pc": "0x10d80",
+      "fde": "0x942e0"
+    },
+    {
+      "pc": "0x10db0",
+      "fde": "0x942f8"
+    },
+    {
+      "pc": "0x10dc0",
+      "fde": "0x94310"
+    },
+    {
+      "pc": "0x10df0",
+      "fde": "0x94328"
+    },
+    {
+      "pc": "0x10e00",
+      "fde": "0x94340"
+    },
+    {
+      "pc": "0x10e20",
+      "fde": "0x94360"
+    },
+    {
+      "pc": "0x10ec0",
+      "fde": "0x94378"
+    },
+    {
+      "pc": "0x10fb0",
+      "fde": "0x94398"
+    },
+    {
+      "pc": "0x11080",
+      "fde": "0x943b8"
+    },
+    {
+      "pc": "0x11120",
+      "fde": "0x943d8"
+    },
+    {
+      "pc": "0x111a0",
+      "fde": "0x943f8"
+    },
+    {
+      "pc": "0x112b0",
+      "fde": "0x94418"
+    },
+    {
+      "pc": "0x116c0",
+      "fde": "0x94468"
+    },
+    {
+      "pc": "0x11700",
+      "fde": "0x94480"
+    },
+    {
+      "pc": "0x11740",
+      "fde": "0x944b0"
+    },
+    {
+      "pc": "0x11760",
+      "fde": "0x944d0"
+    },
+    {
+      "pc": "0x117e0",
+      "fde": "0x94510"
+    },
+    {
+      "pc": "0x118c0",
+      "fde": "0x94560"
+    },
+    {
+      "pc": "0x11950",
+      "fde": "0x945a0"
+    },
+    {
+      "pc": "0x11a90",
+      "fde": "0x94600"
+    },
+    {
+      "pc": "0x11ab0",
+      "fde": "0x94618"
+    },
+    {
+      "pc": "0x11b00",
+      "fde": "0x94648"
+    },
+    {
+      "pc": "0x11b10",
+      "fde": "0x94660"
+    },
+    {
+      "pc": "0x11b20",
+      "fde": "0x94678"
+    },
+    {
+      "pc": "0x11b50",
+      "fde": "0x94690"
+    },
+    {
+      "pc": "0x11db0",
+      "fde": "0x946e0"
+    },
+    {
+      "pc": "0x11e30",
+      "fde": "0x94720"
+    },
+    {
+      "pc": "0x11e90",
+      "fde": "0x94740"
+    },
+    {
+      "pc": "0x11fa0",
+      "fde": "0x94788"
+    },
+    {
+      "pc": "0x12080",
+      "fde": "0x947c0"
+    },
+    {
+      "pc": "0x12120",
+      "fde": "0x94800"
+    },
+    {
+      "pc": "0x12260",
+      "fde": "0x94838"
+    },
+    {
+      "pc": "0x122f0",
+      "fde": "0x94850"
+    },
+    {
+      "pc": "0x12380",
+      "fde": "0x94888"
+    },
+    {
+      "pc": "0x12400",
+      "fde": "0x948a0"
+    },
+    {
+      "pc": "0x129f0",
+      "fde": "0x948e8"
+    },
+    {
+      "pc": "0x12a10",
+      "fde": "0x94900"
+    },
+    {
+      "pc": "0x12a20",
+      "fde": "0x94918"
+    },
+    {
+      "pc": "0x12a50",
+      "fde": "0x94930"
+    },
+    {
+      "pc": "0x12a60",
+      "fde": "0x94948"
+    },
+    {
+      "pc": "0x12a90",
+      "fde": "0x94960"
+    },
+    {
+      "pc": "0x12aa0",
+      "fde": "0x94978"
+    },
+    {
+      "pc": "0x12ad0",
+      "fde": "0x94990"
+    },
+    {
+      "pc": "0x12d60",
+      "fde": "0x949c0"
+    },
+    {
+      "pc": "0x13080",
+      "fde": "0x949f0"
+    },
+    {
+      "pc": "0x13770",
+      "fde": "0x94a18"
+    },
+    {
+      "pc": "0x13810",
+      "fde": "0x94a38"
+    },
+    {
+      "pc": "0x138c0",
+      "fde": "0x94a50"
+    },
+    {
+      "pc": "0x13910",
+      "fde": "0x94a70"
+    },
+    {
+      "pc": "0x14a20",
+      "fde": "0x94ac0"
+    },
+    {
+      "pc": "0x14a80",
+      "fde": "0x94af0"
+    },
+    {
+      "pc": "0x14ab0",
+      "fde": "0x94b10"
+    },
+    {
+      "pc": "0x14ae0",
+      "fde": "0x94b30"
+    },
+    {
+      "pc": "0x14b40",
+      "fde": "0x94b60"
+    },
+    {
+      "pc": "0x14c60",
+      "fde": "0x94b90"
+    },
+    {
+      "pc": "0x14d00",
+      "fde": "0x94bd8"
+    },
+    {
+      "pc": "0x14e20",
+      "fde": "0x94c18"
+    },
+    {
+      "pc": "0x14e90",
+      "fde": "0x94c50"
+    },
+    {
+      "pc": "0x15050",
+      "fde": "0x94ca0"
+    },
+    {
+      "pc": "0x151c0",
+      "fde": "0x94ce0"
+    },
+    {
+      "pc": "0x15320",
+      "fde": "0x94d30"
+    },
+    {
+      "pc": "0x15350",
+      "fde": "0x94d48"
+    },
+    {
+      "pc": "0x15520",
+      "fde": "0x94d98"
+    },
+    {
+      "pc": "0x15560",
+      "fde": "0x94db0"
+    },
+    {
+      "pc": "0x155f0",
+      "fde": "0x94dc8"
+    },
+    {
+      "pc": "0x15650",
+      "fde": "0x94de0"
+    },
+    {
+      "pc": "0x15a00",
+      "fde": "0x94e30"
+    },
+    {
+      "pc": "0x15a80",
+      "fde": "0x94e50"
+    },
+    {
+      "pc": "0x15c40",
+      "fde": "0x94e98"
+    },
+    {
+      "pc": "0x15ce0",
+      "fde": "0x94ed0"
+    },
+    {
+      "pc": "0x15d60",
+      "fde": "0x94f00"
+    },
+    {
+      "pc": "0x15e60",
+      "fde": "0x94f68"
+    },
+    {
+      "pc": "0x15e80",
+      "fde": "0x94f80"
+    },
+    {
+      "pc": "0x15ea0",
+      "fde": "0x94f98"
+    },
+    {
+      "pc": "0x15f30",
+      "fde": "0x94fb0"
+    },
+    {
+      "pc": "0x15f70",
+      "fde": "0x94fd0"
+    },
+    {
+      "pc": "0x15f90",
+      "fde": "0x95020"
+    },
+    {
+      "pc": "0x182b0",
+      "fde": "0x95078"
+    },
+    {
+      "pc": "0x186f0",
+      "fde": "0x950b8"
+    },
+    {
+      "pc": "0x18710",
+      "fde": "0x950d0"
+    },
+    {
+      "pc": "0x188d0",
+      "fde": "0x95120"
+    },
+    {
+      "pc": "0x18930",
+      "fde": "0x95140"
+    },
+    {
+      "pc": "0x18970",
+      "fde": "0x95160"
+    },
+    {
+      "pc": "0x189c0",
+      "fde": "0x95188"
+    },
+    {
+      "pc": "0x189d0",
+      "fde": "0x951a0"
+    },
+    {
+      "pc": "0x18a90",
+      "fde": "0x951e8"
+    },
+    {
+      "pc": "0x18dd0",
+      "fde": "0x95238"
+    },
+    {
+      "pc": "0x18de0",
+      "fde": "0x95250"
+    },
+    {
+      "pc": "0x18e60",
+      "fde": "0x95268"
+    },
+    {
+      "pc": "0x18ee0",
+      "fde": "0x95280"
+    },
+    {
+      "pc": "0x193f0",
+      "fde": "0x952d0"
+    },
+    {
+      "pc": "0x195d0",
+      "fde": "0x95338"
+    },
+    {
+      "pc": "0x1b270",
+      "fde": "0x95388"
+    },
+    {
+      "pc": "0x1b430",
+      "fde": "0x953d8"
+    },
+    {
+      "pc": "0x1ba60",
+      "fde": "0x95428"
+    },
+    {
+      "pc": "0x1bab0",
+      "fde": "0x95440"
+    },
+    {
+      "pc": "0x1bae0",
+      "fde": "0x95458"
+    },
+    {
+      "pc": "0x1bc00",
+      "fde": "0x95498"
+    },
+    {
+      "pc": "0x1bd20",
+      "fde": "0x954d0"
+    },
+    {
+      "pc": "0x1d240",
+      "fde": "0x95520"
+    },
+    {
+      "pc": "0x1d3b0",
+      "fde": "0x95570"
+    },
+    {
+      "pc": "0x1d580",
+      "fde": "0x955d8"
+    },
+    {
+      "pc": "0x1d730",
+      "fde": "0x95620"
+    },
+    {
+      "pc": "0x1d740",
+      "fde": "0x95638"
+    },
+    {
+      "pc": "0x1d7f0",
+      "fde": "0x95688"
+    },
+    {
+      "pc": "0x1d840",
+      "fde": "0x956b0"
+    },
+    {
+      "pc": "0x1d890",
+      "fde": "0x956c8"
+    },
+    {
+      "pc": "0x1dc90",
+      "fde": "0x94ff0"
+    },
+    {
+      "pc": "0x1ddc0",
+      "fde": "0x95758"
+    },
+    {
+      "pc": "0x1def0",
+      "fde": "0x95788"
+    },
+    {
+      "pc": "0x1e000",
+      "fde": "0x957b8"
+    },
+    {
+      "pc": "0x1e050",
+      "fde": "0x957d0"
+    },
+    {
+      "pc": "0x26fe0",
+      "fde": "0x95838"
+    },
+    {
+      "pc": "0x27030",
+      "fde": "0x95858"
+    },
+    {
+      "pc": "0x27040",
+      "fde": "0x95870"
+    },
+    {
+      "pc": "0x27070",
+      "fde": "0x95888"
+    },
+    {
+      "pc": "0x27320",
+      "fde": "0x958d8"
+    },
+    {
+      "pc": "0x27560",
+      "fde": "0x95928"
+    },
+    {
+      "pc": "0x278d0",
+      "fde": "0x95978"
+    },
+    {
+      "pc": "0x27a70",
+      "fde": "0x959c8"
+    },
+    {
+      "pc": "0x27b30",
+      "fde": "0x959e0"
+    },
+    {
+      "pc": "0x27b70",
+      "fde": "0x959f8"
+    },
+    {
+      "pc": "0x27ba0",
+      "fde": "0x95a10"
+    },
+    {
+      "pc": "0x27bc0",
+      "fde": "0x95a28"
+    },
+    {
+      "pc": "0x27d60",
+      "fde": "0x95a78"
+    },
+    {
+      "pc": "0x27df0",
+      "fde": "0x95ac0"
+    },
+    {
+      "pc": "0x27e00",
+      "fde": "0x95ad8"
+    },
+    {
+      "pc": "0x27e30",
+      "fde": "0x95af0"
+    },
+    {
+      "pc": "0x27e40",
+      "fde": "0x95b08"
+    },
+    {
+      "pc": "0x27e70",
+      "fde": "0x95b20"
+    },
+    {
+      "pc": "0x27e80",
+      "fde": "0x95b38"
+    },
+    {
+      "pc": "0x27eb0",
+      "fde": "0x95b50"
+    },
+    {
+      "pc": "0x28000",
+      "fde": "0x95b70"
+    },
+    {
+      "pc": "0x28240",
+      "fde": "0x95ba8"
+    },
+    {
+      "pc": "0x283c0",
+      "fde": "0x95bd0"
+    },
+    {
+      "pc": "0x28ae0",
+      "fde": "0x95c38"
+    },
+    {
+      "pc": "0x28b30",
+      "fde": "0x95c50"
+    },
+    {
+      "pc": "0x28de0",
+      "fde": "0x95c88"
+    },
+    {
+      "pc": "0x28e10",
+      "fde": "0x95ca8"
+    },
+    {
+      "pc": "0x28e40",
+      "fde": "0x95cc8"
+    },
+    {
+      "pc": "0x28e50",
+      "fde": "0x95ce0"
+    },
+    {
+      "pc": "0x28e80",
+      "fde": "0x95cf8"
+    },
+    {
+      "pc": "0x28e90",
+      "fde": "0x95d10"
+    },
+    {
+      "pc": "0x28ec0",
+      "fde": "0x95d28"
+    },
+    {
+      "pc": "0x28ed0",
+      "fde": "0x95d40"
+    },
+    {
+      "pc": "0x28f00",
+      "fde": "0x95d58"
+    },
+    {
+      "pc": "0x28f10",
+      "fde": "0x95d70"
+    },
+    {
+      "pc": "0x28f30",
+      "fde": "0x95d90"
+    },
+    {
+      "pc": "0x290c0",
+      "fde": "0x95da8"
+    },
+    {
+      "pc": "0x29160",
+      "fde": "0x95dc8"
+    },
+    {
+      "pc": "0x29250",
+      "fde": "0x95de8"
+    },
+    {
+      "pc": "0x292c0",
+      "fde": "0x95e00"
+    },
+    {
+      "pc": "0x29320",
+      "fde": "0x95e20"
+    },
+    {
+      "pc": "0x29570",
+      "fde": "0x95e48"
+    },
+    {
+      "pc": "0x295b0",
+      "fde": "0x95e78"
+    },
+    {
+      "pc": "0x29e20",
+      "fde": "0x95ed8"
+    },
+    {
+      "pc": "0x29ec0",
+      "fde": "0x95f00"
+    },
+    {
+      "pc": "0x29ed0",
+      "fde": "0x95f18"
+    },
+    {
+      "pc": "0x29ee0",
+      "fde": "0x95f30"
+    },
+    {
+      "pc": "0x29f00",
+      "fde": "0x95f48"
+    },
+    {
+      "pc": "0x29f20",
+      "fde": "0x95f60"
+    },
+    {
+      "pc": "0x29f30",
+      "fde": "0x95f78"
+    },
+    {
+      "pc": "0x29f40",
+      "fde": "0x95f90"
+    },
+    {
+      "pc": "0x29fd0",
+      "fde": "0x95fa8"
+    },
+    {
+      "pc": "0x2a0e0",
+      "fde": "0x95fc0"
+    },
+    {
+      "pc": "0x2a150",
+      "fde": "0x95fd8"
+    },
+    {
+      "pc": "0x2a180",
+      "fde": "0x95ff0"
+    },
+    {
+      "pc": "0x2a1d0",
+      "fde": "0x96008"
+    },
+    {
+      "pc": "0x2a6c0",
+      "fde": "0x96060"
+    },
+    {
+      "pc": "0x2a9c0",
+      "fde": "0x96088"
+    },
+    {
+      "pc": "0x2adf0",
+      "fde": "0x960b0"
+    },
+    {
+      "pc": "0x2b0c0",
+      "fde": "0x960d8"
+    },
+    {
+      "pc": "0x2b540",
+      "fde": "0x960f0"
+    },
+    {
+      "pc": "0x2baa0",
+      "fde": "0x96118"
+    },
+    {
+      "pc": "0x2c070",
+      "fde": "0x96140"
+    },
+    {
+      "pc": "0x2c8a0",
+      "fde": "0x961a0"
+    },
+    {
+      "pc": "0x2d370",
+      "fde": "0x961f0"
+    },
+    {
+      "pc": "0x2d670",
+      "fde": "0x96208"
+    },
+    {
+      "pc": "0x2dbe0",
+      "fde": "0x96258"
+    },
+    {
+      "pc": "0x2df20",
+      "fde": "0x962a0"
+    },
+    {
+      "pc": "0x2df40",
+      "fde": "0x962b8"
+    },
+    {
+      "pc": "0x2dfe0",
+      "fde": "0x962e8"
+    },
+    {
+      "pc": "0x2e0f0",
+      "fde": "0x96390"
+    },
+    {
+      "pc": "0x2e1d0",
+      "fde": "0x963b8"
+    },
+    {
+      "pc": "0x2e1e0",
+      "fde": "0x963d0"
+    },
+    {
+      "pc": "0x2e260",
+      "fde": "0x963e8"
+    },
+    {
+      "pc": "0x2e2a0",
+      "fde": "0x96400"
+    },
+    {
+      "pc": "0x2e2e0",
+      "fde": "0x96418"
+    },
+    {
+      "pc": "0x2e540",
+      "fde": "0x96458"
+    },
+    {
+      "pc": "0x2e5d0",
+      "fde": "0x96488"
+    },
+    {
+      "pc": "0x2e5e0",
+      "fde": "0x964a0"
+    },
+    {
+      "pc": "0x2e610",
+      "fde": "0x964b8"
+    },
+    {
+      "pc": "0x2e620",
+      "fde": "0x964d0"
+    },
+    {
+      "pc": "0x2e650",
+      "fde": "0x964e8"
+    },
+    {
+      "pc": "0x2e660",
+      "fde": "0x96500"
+    },
+    {
+      "pc": "0x2e690",
+      "fde": "0x96518"
+    },
+    {
+      "pc": "0x2e6a0",
+      "fde": "0x96530"
+    },
+    {
+      "pc": "0x2e6c0",
+      "fde": "0x96550"
+    },
+    {
+      "pc": "0x2e850",
+      "fde": "0x96568"
+    },
+    {
+      "pc": "0x2e870",
+      "fde": "0x96580"
+    },
+    {
+      "pc": "0x2e9a0",
+      "fde": "0x96598"
+    },
+    {
+      "pc": "0x2eee0",
+      "fde": "0x965c8"
+    },
+    {
+      "pc": "0x2ef20",
+      "fde": "0x965f8"
+    },
+    {
+      "pc": "0x2f110",
+      "fde": "0x96630"
+    },
+    {
+      "pc": "0x2f1e0",
+      "fde": "0x96648"
+    },
+    {
+      "pc": "0x2f630",
+      "fde": "0x96670"
+    },
+    {
+      "pc": "0x2f650",
+      "fde": "0x96688"
+    },
+    {
+      "pc": "0x2f680",
+      "fde": "0x966a0"
+    },
+    {
+      "pc": "0x2f8f0",
+      "fde": "0x966e0"
+    },
+    {
+      "pc": "0x2fa20",
+      "fde": "0x96710"
+    },
+    {
+      "pc": "0x2fa70",
+      "fde": "0x96728"
+    },
+    {
+      "pc": "0x2fd90",
+      "fde": "0x96778"
+    },
+    {
+      "pc": "0x2fe50",
+      "fde": "0x96790"
+    },
+    {
+      "pc": "0x2fef0",
+      "fde": "0x967a8"
+    },
+    {
+      "pc": "0x2ffd0",
+      "fde": "0x967d0"
+    },
+    {
+      "pc": "0x30f90",
+      "fde": "0x96820"
+    },
+    {
+      "pc": "0x31060",
+      "fde": "0x96838"
+    },
+    {
+      "pc": "0x31080",
+      "fde": "0x96850"
+    },
+    {
+      "pc": "0x31150",
+      "fde": "0x96868"
+    },
+    {
+      "pc": "0x32900",
+      "fde": "0x968b8"
+    },
+    {
+      "pc": "0x32910",
+      "fde": "0x968d0"
+    },
+    {
+      "pc": "0x32940",
+      "fde": "0x968e8"
+    },
+    {
+      "pc": "0x32960",
+      "fde": "0x96900"
+    },
+    {
+      "pc": "0x32990",
+      "fde": "0x96918"
+    },
+    {
+      "pc": "0x329c0",
+      "fde": "0x96930"
+    },
+    {
+      "pc": "0x329d0",
+      "fde": "0x96948"
+    },
+    {
+      "pc": "0x32ae0",
+      "fde": "0x96978"
+    },
+    {
+      "pc": "0x32bc0",
+      "fde": "0x96990"
+    },
+    {
+      "pc": "0x32c60",
+      "fde": "0x969a8"
+    },
+    {
+      "pc": "0x32d40",
+      "fde": "0x969c8"
+    },
+    {
+      "pc": "0x33230",
+      "fde": "0x96a18"
+    },
+    {
+      "pc": "0x33240",
+      "fde": "0x96a30"
+    },
+    {
+      "pc": "0x33270",
+      "fde": "0x96a50"
+    },
+    {
+      "pc": "0x332a0",
+      "fde": "0x96a70"
+    },
+    {
+      "pc": "0x33390",
+      "fde": "0x96ab8"
+    },
+    {
+      "pc": "0x333e0",
+      "fde": "0x96ad0"
+    },
+    {
+      "pc": "0x33550",
+      "fde": "0x96b10"
+    },
+    {
+      "pc": "0x339b0",
+      "fde": "0x96b60"
+    },
+    {
+      "pc": "0x33c10",
+      "fde": "0x96bb0"
+    },
+    {
+      "pc": "0x33c70",
+      "fde": "0x96bc8"
+    },
+    {
+      "pc": "0x33ca0",
+      "fde": "0x96be0"
+    },
+    {
+      "pc": "0x33da0",
+      "fde": "0x96c30"
+    },
+    {
+      "pc": "0x33db0",
+      "fde": "0x96c48"
+    },
+    {
+      "pc": "0x33ee0",
+      "fde": "0x96c80"
+    },
+    {
+      "pc": "0x33f40",
+      "fde": "0x96c98"
+    },
+    {
+      "pc": "0x33f50",
+      "fde": "0x96cb0"
+    },
+    {
+      "pc": "0x33f70",
+      "fde": "0x96cc8"
+    },
+    {
+      "pc": "0x34070",
+      "fde": "0x96d00"
+    },
+    {
+      "pc": "0x34140",
+      "fde": "0x96d48"
+    },
+    {
+      "pc": "0x34160",
+      "fde": "0x96d60"
+    },
+    {
+      "pc": "0x341a0",
+      "fde": "0x96d80"
+    },
+    {
+      "pc": "0x34260",
+      "fde": "0x96db8"
+    },
+    {
+      "pc": "0x342c0",
+      "fde": "0x96dd0"
+    },
+    {
+      "pc": "0x34360",
+      "fde": "0x96df8"
+    },
+    {
+      "pc": "0x34a50",
+      "fde": "0x96e50"
+    },
+    {
+      "pc": "0x34b70",
+      "fde": "0x96e98"
+    },
+    {
+      "pc": "0x34b90",
+      "fde": "0x96eb0"
+    },
+    {
+      "pc": "0x34bf0",
+      "fde": "0x96ee0"
+    },
+    {
+      "pc": "0x34c90",
+      "fde": "0x96f00"
+    },
+    {
+      "pc": "0x34cf0",
+      "fde": "0x96f30"
+    },
+    {
+      "pc": "0x34d50",
+      "fde": "0x96f60"
+    },
+    {
+      "pc": "0x34e20",
+      "fde": "0x96fb0"
+    },
+    {
+      "pc": "0x34ef0",
+      "fde": "0x96fe8"
+    },
+    {
+      "pc": "0x350e0",
+      "fde": "0x97050"
+    },
+    {
+      "pc": "0x35320",
+      "fde": "0x970b0"
+    },
+    {
+      "pc": "0x356b0",
+      "fde": "0x97110"
+    },
+    {
+      "pc": "0x35860",
+      "fde": "0x97160"
+    },
+    {
+      "pc": "0x358f0",
+      "fde": "0x971b8"
+    },
+    {
+      "pc": "0x35940",
+      "fde": "0x971d0"
+    },
+    {
+      "pc": "0x35c00",
+      "fde": "0x97250"
+    },
+    {
+      "pc": "0x35c10",
+      "fde": "0x97268"
+    },
+    {
+      "pc": "0x35c20",
+      "fde": "0x97280"
+    },
+    {
+      "pc": "0x35d10",
+      "fde": "0x97298"
+    },
+    {
+      "pc": "0x35d70",
+      "fde": "0x972b0"
+    },
+    {
+      "pc": "0x35e80",
+      "fde": "0x972e0"
+    },
+    {
+      "pc": "0x35fb0",
+      "fde": "0x97320"
+    },
+    {
+      "pc": "0x36180",
+      "fde": "0x97398"
+    },
+    {
+      "pc": "0x36190",
+      "fde": "0x973b0"
+    },
+    {
+      "pc": "0x36310",
+      "fde": "0x973f0"
+    },
+    {
+      "pc": "0x36380",
+      "fde": "0x97428"
+    },
+    {
+      "pc": "0x363a0",
+      "fde": "0x97440"
+    },
+    {
+      "pc": "0x363b0",
+      "fde": "0x97458"
+    },
+    {
+      "pc": "0x363c0",
+      "fde": "0x97470"
+    },
+    {
+      "pc": "0x363e0",
+      "fde": "0x97488"
+    },
+    {
+      "pc": "0x36400",
+      "fde": "0x974a0"
+    },
+    {
+      "pc": "0x364d0",
+      "fde": "0x97500"
+    },
+    {
+      "pc": "0x364e0",
+      "fde": "0x97518"
+    },
+    {
+      "pc": "0x36540",
+      "fde": "0x97558"
+    },
+    {
+      "pc": "0x365a0",
+      "fde": "0x97598"
+    },
+    {
+      "pc": "0x36630",
+      "fde": "0x975d8"
+    },
+    {
+      "pc": "0x366a0",
+      "fde": "0x97610"
+    },
+    {
+      "pc": "0x36700",
+      "fde": "0x97650"
+    },
+    {
+      "pc": "0x36760",
+      "fde": "0x97690"
+    },
+    {
+      "pc": "0x367c0",
+      "fde": "0x976d0"
+    },
+    {
+      "pc": "0x36820",
+      "fde": "0x97710"
+    },
+    {
+      "pc": "0x36920",
+      "fde": "0x97760"
+    },
+    {
+      "pc": "0x36930",
+      "fde": "0x97778"
+    },
+    {
+      "pc": "0x36950",
+      "fde": "0x97790"
+    },
+    {
+      "pc": "0x36aa0",
+      "fde": "0x977f0"
+    },
+    {
+      "pc": "0x36ac0",
+      "fde": "0x97808"
+    },
+    {
+      "pc": "0x36b10",
+      "fde": "0x97828"
+    },
+    {
+      "pc": "0x36b20",
+      "fde": "0x97840"
+    },
+    {
+      "pc": "0x36cb0",
+      "fde": "0x97858"
+    },
+    {
+      "pc": "0x371e0",
+      "fde": "0x978a0"
+    },
+    {
+      "pc": "0x37790",
+      "fde": "0x97908"
+    },
+    {
+      "pc": "0x377a0",
+      "fde": "0x97920"
+    },
+    {
+      "pc": "0x377d0",
+      "fde": "0x97938"
+    },
+    {
+      "pc": "0x377e0",
+      "fde": "0x97950"
+    },
+    {
+      "pc": "0x37810",
+      "fde": "0x97968"
+    },
+    {
+      "pc": "0x37820",
+      "fde": "0x97980"
+    },
+    {
+      "pc": "0x37850",
+      "fde": "0x97998"
+    },
+    {
+      "pc": "0x37860",
+      "fde": "0x979b0"
+    },
+    {
+      "pc": "0x37880",
+      "fde": "0x979d0"
+    },
+    {
+      "pc": "0x37bb0",
+      "fde": "0x979f8"
+    },
+    {
+      "pc": "0x37d90",
+      "fde": "0x97a18"
+    },
+    {
+      "pc": "0x37da0",
+      "fde": "0x97a30"
+    },
+    {
+      "pc": "0x37f10",
+      "fde": "0x97a50"
+    },
+    {
+      "pc": "0x38200",
+      "fde": "0x97a80"
+    },
+    {
+      "pc": "0x38870",
+      "fde": "0x97ae8"
+    },
+    {
+      "pc": "0x388b0",
+      "fde": "0x97b18"
+    },
+    {
+      "pc": "0x38d30",
+      "fde": "0x97b40"
+    },
+    {
+      "pc": "0x38d70",
+      "fde": "0x97b58"
+    },
+    {
+      "pc": "0x39280",
+      "fde": "0x97b70"
+    },
+    {
+      "pc": "0x39510",
+      "fde": "0x97bb8"
+    },
+    {
+      "pc": "0x3a780",
+      "fde": "0x97c00"
+    },
+    {
+      "pc": "0x3a790",
+      "fde": "0x97c18"
+    },
+    {
+      "pc": "0x3a7c0",
+      "fde": "0x97c30"
+    },
+    {
+      "pc": "0x3a7d0",
+      "fde": "0x97c48"
+    },
+    {
+      "pc": "0x3a800",
+      "fde": "0x97c60"
+    },
+    {
+      "pc": "0x3a810",
+      "fde": "0x97c78"
+    },
+    {
+      "pc": "0x3a840",
+      "fde": "0x97c90"
+    },
+    {
+      "pc": "0x3a850",
+      "fde": "0x97ca8"
+    },
+    {
+      "pc": "0x3a870",
+      "fde": "0x97cc8"
+    },
+    {
+      "pc": "0x3a9a0",
+      "fde": "0x97ce8"
+    },
+    {
+      "pc": "0x3abe0",
+      "fde": "0x97d00"
+    },
+    {
+      "pc": "0x3ac00",
+      "fde": "0x97d20"
+    },
+    {
+      "pc": "0x3ac10",
+      "fde": "0x97d38"
+    },
+    {
+      "pc": "0x3ac60",
+      "fde": "0x97d58"
+    },
+    {
+      "pc": "0x3ae50",
+      "fde": "0x97d90"
+    },
+    {
+      "pc": "0x3aea0",
+      "fde": "0x97db0"
+    },
+    {
+      "pc": "0x3b9b0",
+      "fde": "0x97e00"
+    },
+    {
+      "pc": "0x3b9c0",
+      "fde": "0x97e18"
+    },
+    {
+      "pc": "0x3b9d0",
+      "fde": "0x97e30"
+    },
+    {
+      "pc": "0x3bbc0",
+      "fde": "0x97e48"
+    },
+    {
+      "pc": "0x3bcb0",
+      "fde": "0x97e60"
+    },
+    {
+      "pc": "0x3bd00",
+      "fde": "0x97e78"
+    },
+    {
+      "pc": "0x3bf60",
+      "fde": "0x97ea0"
+    },
+    {
+      "pc": "0x3bfe0",
+      "fde": "0x97eb8"
+    },
+    {
+      "pc": "0x3c0d0",
+      "fde": "0x97ef0"
+    },
+    {
+      "pc": "0x3c120",
+      "fde": "0x97f08"
+    },
+    {
+      "pc": "0x3c130",
+      "fde": "0x97f20"
+    },
+    {
+      "pc": "0x3c140",
+      "fde": "0x97f38"
+    },
+    {
+      "pc": "0x3c240",
+      "fde": "0x97f50"
+    },
+    {
+      "pc": "0x3c2d0",
+      "fde": "0x97f68"
+    },
+    {
+      "pc": "0x3c320",
+      "fde": "0x97f80"
+    },
+    {
+      "pc": "0x3c480",
+      "fde": "0x97fa8"
+    },
+    {
+      "pc": "0x3c500",
+      "fde": "0x97fc0"
+    },
+    {
+      "pc": "0x3c590",
+      "fde": "0x97ff8"
+    },
+    {
+      "pc": "0x3c5e0",
+      "fde": "0x98010"
+    },
+    {
+      "pc": "0x3c6a0",
+      "fde": "0x98028"
+    },
+    {
+      "pc": "0x3c6b0",
+      "fde": "0x98040"
+    },
+    {
+      "pc": "0x3c6d0",
+      "fde": "0x98058"
+    },
+    {
+      "pc": "0x3c6f0",
+      "fde": "0x98070"
+    },
+    {
+      "pc": "0x3c820",
+      "fde": "0x980b0"
+    },
+    {
+      "pc": "0x3c840",
+      "fde": "0x980d0"
+    },
+    {
+      "pc": "0x3c8f0",
+      "fde": "0x98118"
+    },
+    {
+      "pc": "0x3ca40",
+      "fde": "0x98148"
+    },
+    {
+      "pc": "0x3cb50",
+      "fde": "0x98180"
+    },
+    {
+      "pc": "0x3cd80",
+      "fde": "0x981f0"
+    },
+    {
+      "pc": "0x3cdc0",
+      "fde": "0x98208"
+    },
+    {
+      "pc": "0x3ce30",
+      "fde": "0x98238"
+    },
+    {
+      "pc": "0x3ce60",
+      "fde": "0x98250"
+    },
+    {
+      "pc": "0x3cef0",
+      "fde": "0x98268"
+    },
+    {
+      "pc": "0x3cf20",
+      "fde": "0x98280"
+    },
+    {
+      "pc": "0x3cf80",
+      "fde": "0x98298"
+    },
+    {
+      "pc": "0x3cfe0",
+      "fde": "0x982b0"
+    },
+    {
+      "pc": "0x3d170",
+      "fde": "0x982e8"
+    },
+    {
+      "pc": "0x3d1f0",
+      "fde": "0x98318"
+    },
+    {
+      "pc": "0x3d260",
+      "fde": "0x98338"
+    },
+    {
+      "pc": "0x3d280",
+      "fde": "0x98350"
+    },
+    {
+      "pc": "0x3d310",
+      "fde": "0x98368"
+    },
+    {
+      "pc": "0x3d530",
+      "fde": "0x983c8"
+    },
+    {
+      "pc": "0x3d730",
+      "fde": "0x98418"
+    },
+    {
+      "pc": "0x3d800",
+      "fde": "0x98468"
+    },
+    {
+      "pc": "0x3d8d0",
+      "fde": "0x984a8"
+    },
+    {
+      "pc": "0x3d920",
+      "fde": "0x984d0"
+    },
+    {
+      "pc": "0x3d990",
+      "fde": "0x984e8"
+    },
+    {
+      "pc": "0x3da40",
+      "fde": "0x98510"
+    },
+    {
+      "pc": "0x3e9c0",
+      "fde": "0x98560"
+    },
+    {
+      "pc": "0x3e9d0",
+      "fde": "0x98578"
+    },
+    {
+      "pc": "0x3ea00",
+      "fde": "0x98590"
+    },
+    {
+      "pc": "0x3ebb0",
+      "fde": "0x985e0"
+    },
+    {
+      "pc": "0x3ec60",
+      "fde": "0x98600"
+    },
+    {
+      "pc": "0x3ecc0",
+      "fde": "0x98618"
+    },
+    {
+      "pc": "0x3ed00",
+      "fde": "0x98630"
+    },
+    {
+      "pc": "0x3ed50",
+      "fde": "0x98648"
+    },
+    {
+      "pc": "0x3eda0",
+      "fde": "0x98660"
+    },
+    {
+      "pc": "0x3ede0",
+      "fde": "0x98678"
+    },
+    {
+      "pc": "0x3edf0",
+      "fde": "0x98690"
+    },
+    {
+      "pc": "0x3eed0",
+      "fde": "0x986e0"
+    },
+    {
+      "pc": "0x3eee0",
+      "fde": "0x986f8"
+    },
+    {
+      "pc": "0x3f080",
+      "fde": "0x98718"
+    },
+    {
+      "pc": "0x3f190",
+      "fde": "0x98768"
+    },
+    {
+      "pc": "0x3f1c0",
+      "fde": "0x98780"
+    },
+    {
+      "pc": "0x3f200",
+      "fde": "0x98798"
+    },
+    {
+      "pc": "0x3f230",
+      "fde": "0x987b0"
+    },
+    {
+      "pc": "0x3f240",
+      "fde": "0x987c8"
+    },
+    {
+      "pc": "0x3f250",
+      "fde": "0x987e0"
+    },
+    {
+      "pc": "0x3f260",
+      "fde": "0x987f8"
+    },
+    {
+      "pc": "0x3f270",
+      "fde": "0x98810"
+    },
+    {
+      "pc": "0x3f2a0",
+      "fde": "0x98828"
+    },
+    {
+      "pc": "0x3f2b0",
+      "fde": "0x98840"
+    },
+    {
+      "pc": "0x3f2c0",
+      "fde": "0x98858"
+    },
+    {
+      "pc": "0x3f2d0",
+      "fde": "0x98870"
+    },
+    {
+      "pc": "0x3f2e0",
+      "fde": "0x98888"
+    },
+    {
+      "pc": "0x3f2f0",
+      "fde": "0x988a0"
+    },
+    {
+      "pc": "0x3f840",
+      "fde": "0x988c8"
+    },
+    {
+      "pc": "0x417f0",
+      "fde": "0x98a98"
+    },
+    {
+      "pc": "0x41870",
+      "fde": "0x98ab8"
+    },
+    {
+      "pc": "0x424b0",
+      "fde": "0x98b30"
+    },
+    {
+      "pc": "0x42510",
+      "fde": "0x98b48"
+    },
+    {
+      "pc": "0x425d0",
+      "fde": "0x98b60"
+    },
+    {
+      "pc": "0x42640",
+      "fde": "0x98b88"
+    },
+    {
+      "pc": "0x42660",
+      "fde": "0x98ba8"
+    },
+    {
+      "pc": "0x42d90",
+      "fde": "0x98bf8"
+    },
+    {
+      "pc": "0x42da0",
+      "fde": "0x98c10"
+    },
+    {
+      "pc": "0x42db0",
+      "fde": "0x98c28"
+    },
+    {
+      "pc": "0x42dc0",
+      "fde": "0x98c40"
+    },
+    {
+      "pc": "0x42dd0",
+      "fde": "0x98c58"
+    },
+    {
+      "pc": "0x42de0",
+      "fde": "0x98c70"
+    },
+    {
+      "pc": "0x42df0",
+      "fde": "0x98c88"
+    },
+    {
+      "pc": "0x42e00",
+      "fde": "0x98ca0"
+    },
+    {
+      "pc": "0x42e50",
+      "fde": "0x98cb8"
+    },
+    {
+      "pc": "0x42ec0",
+      "fde": "0x98cd0"
+    },
+    {
+      "pc": "0x42f80",
+      "fde": "0x98ce8"
+    },
+    {
+      "pc": "0x42ff0",
+      "fde": "0x98d08"
+    },
+    {
+      "pc": "0x43070",
+      "fde": "0x98d28"
+    },
+    {
+      "pc": "0x43200",
+      "fde": "0x98d48"
+    },
+    {
+      "pc": "0x43280",
+      "fde": "0x98d78"
+    },
+    {
+      "pc": "0x43340",
+      "fde": "0x98dd8"
+    },
+    {
+      "pc": "0x43370",
+      "fde": "0x98df0"
+    },
+    {
+      "pc": "0x43390",
+      "fde": "0x98e08"
+    },
+    {
+      "pc": "0x433c0",
+      "fde": "0x98e20"
+    },
+    {
+      "pc": "0x434a0",
+      "fde": "0x98e70"
+    },
+    {
+      "pc": "0x43500",
+      "fde": "0x98ea0"
+    },
+    {
+      "pc": "0x438e0",
+      "fde": "0x98f30"
+    },
+    {
+      "pc": "0x439c0",
+      "fde": "0x98f48"
+    },
+    {
+      "pc": "0x43d00",
+      "fde": "0x98f80"
+    },
+    {
+      "pc": "0x44110",
+      "fde": "0x98fc8"
+    },
+    {
+      "pc": "0x441a0",
+      "fde": "0x98ff0"
+    },
+    {
+      "pc": "0x442c0",
+      "fde": "0x99030"
+    },
+    {
+      "pc": "0x448b0",
+      "fde": "0x99068"
+    },
+    {
+      "pc": "0x44910",
+      "fde": "0x99088"
+    },
+    {
+      "pc": "0x44aa0",
+      "fde": "0x990a8"
+    },
+    {
+      "pc": "0x44b30",
+      "fde": "0x990d0"
+    },
+    {
+      "pc": "0x44b50",
+      "fde": "0x990f0"
+    },
+    {
+      "pc": "0x44b60",
+      "fde": "0x99108"
+    },
+    {
+      "pc": "0x44b70",
+      "fde": "0x99120"
+    },
+    {
+      "pc": "0x44b80",
+      "fde": "0x99138"
+    },
+    {
+      "pc": "0x44d20",
+      "fde": "0x99170"
+    },
+    {
+      "pc": "0x44d90",
+      "fde": "0x99190"
+    },
+    {
+      "pc": "0x44da0",
+      "fde": "0x991a8"
+    },
+    {
+      "pc": "0x44e10",
+      "fde": "0x991d8"
+    },
+    {
+      "pc": "0x44ea0",
+      "fde": "0x99210"
+    },
+    {
+      "pc": "0x44f10",
+      "fde": "0x99228"
+    },
+    {
+      "pc": "0x44f70",
+      "fde": "0x99240"
+    },
+    {
+      "pc": "0x44fd0",
+      "fde": "0x99260"
+    },
+    {
+      "pc": "0x45000",
+      "fde": "0x99280"
+    },
+    {
+      "pc": "0x45030",
+      "fde": "0x992a0"
+    },
+    {
+      "pc": "0x45270",
+      "fde": "0x992e8"
+    },
+    {
+      "pc": "0x454c0",
+      "fde": "0x99328"
+    },
+    {
+      "pc": "0x45510",
+      "fde": "0x99358"
+    },
+    {
+      "pc": "0x45560",
+      "fde": "0x99378"
+    },
+    {
+      "pc": "0x455e0",
+      "fde": "0x993a8"
+    },
+    {
+      "pc": "0x45670",
+      "fde": "0x993e0"
+    },
+    {
+      "pc": "0x457a0",
+      "fde": "0x993f8"
+    },
+    {
+      "pc": "0x45930",
+      "fde": "0x99410"
+    },
+    {
+      "pc": "0x45940",
+      "fde": "0x99428"
+    },
+    {
+      "pc": "0x45960",
+      "fde": "0x99440"
+    },
+    {
+      "pc": "0x45970",
+      "fde": "0x99458"
+    },
+    {
+      "pc": "0x45980",
+      "fde": "0x99470"
+    },
+    {
+      "pc": "0x45a40",
+      "fde": "0x99488"
+    },
+    {
+      "pc": "0x45a70",
+      "fde": "0x994a0"
+    },
+    {
+      "pc": "0x45ab0",
+      "fde": "0x994b8"
+    },
+    {
+      "pc": "0x45ac0",
+      "fde": "0x994d0"
+    },
+    {
+      "pc": "0x45b00",
+      "fde": "0x994f8"
+    },
+    {
+      "pc": "0x45b20",
+      "fde": "0x99518"
+    },
+    {
+      "pc": "0x45b40",
+      "fde": "0x99530"
+    },
+    {
+      "pc": "0x45b70",
+      "fde": "0x99548"
+    },
+    {
+      "pc": "0x45b90",
+      "fde": "0x99560"
+    },
+    {
+      "pc": "0x45c20",
+      "fde": "0x99590"
+    },
+    {
+      "pc": "0x45c60",
+      "fde": "0x995c0"
+    },
+    {
+      "pc": "0x45c70",
+      "fde": "0x995d8"
+    },
+    {
+      "pc": "0x45c80",
+      "fde": "0x995f0"
+    },
+    {
+      "pc": "0x45c90",
+      "fde": "0x99608"
+    },
+    {
+      "pc": "0x45ca0",
+      "fde": "0x99620"
+    },
+    {
+      "pc": "0x45cb0",
+      "fde": "0x99638"
+    },
+    {
+      "pc": "0x45cc0",
+      "fde": "0x99650"
+    },
+    {
+      "pc": "0x45cd0",
+      "fde": "0x99668"
+    },
+    {
+      "pc": "0x45d70",
+      "fde": "0x99680"
+    },
+    {
+      "pc": "0x45d80",
+      "fde": "0x99698"
+    },
+    {
+      "pc": "0x45db0",
+      "fde": "0x996b0"
+    },
+    {
+      "pc": "0x45de0",
+      "fde": "0x996d0"
+    },
+    {
+      "pc": "0x45e30",
+      "fde": "0x996f8"
+    },
+    {
+      "pc": "0x45e50",
+      "fde": "0x99718"
+    },
+    {
+      "pc": "0x45e70",
+      "fde": "0x99730"
+    },
+    {
+      "pc": "0x45e90",
+      "fde": "0x99748"
+    },
+    {
+      "pc": "0x45ec0",
+      "fde": "0x99768"
+    },
+    {
+      "pc": "0x45f80",
+      "fde": "0x99790"
+    },
+    {
+      "pc": "0x45fe0",
+      "fde": "0x997c0"
+    },
+    {
+      "pc": "0x46090",
+      "fde": "0x997f0"
+    },
+    {
+      "pc": "0x46100",
+      "fde": "0x99820"
+    },
+    {
+      "pc": "0x46150",
+      "fde": "0x99848"
+    },
+    {
+      "pc": "0x46160",
+      "fde": "0x99860"
+    },
+    {
+      "pc": "0x46170",
+      "fde": "0x99878"
+    },
+    {
+      "pc": "0x461c0",
+      "fde": "0x998a8"
+    },
+    {
+      "pc": "0x46210",
+      "fde": "0x998d8"
+    },
+    {
+      "pc": "0x46270",
+      "fde": "0x99918"
+    },
+    {
+      "pc": "0x46500",
+      "fde": "0x99968"
+    },
+    {
+      "pc": "0x465e0",
+      "fde": "0x99980"
+    },
+    {
+      "pc": "0x466c0",
+      "fde": "0x99998"
+    },
+    {
+      "pc": "0x46790",
+      "fde": "0x999b0"
+    },
+    {
+      "pc": "0x46a20",
+      "fde": "0x999c8"
+    },
+    {
+      "pc": "0x46d00",
+      "fde": "0x999f0"
+    },
+    {
+      "pc": "0x46df0",
+      "fde": "0x99a08"
+    },
+    {
+      "pc": "0x46ef0",
+      "fde": "0x99a20"
+    },
+    {
+      "pc": "0x46fb0",
+      "fde": "0x99a38"
+    },
+    {
+      "pc": "0x470f0",
+      "fde": "0x99a78"
+    },
+    {
+      "pc": "0x47220",
+      "fde": "0x99ab8"
+    },
+    {
+      "pc": "0x47350",
+      "fde": "0x99af8"
+    },
+    {
+      "pc": "0x47470",
+      "fde": "0x99b30"
+    },
+    {
+      "pc": "0x47540",
+      "fde": "0x99b48"
+    },
+    {
+      "pc": "0x47770",
+      "fde": "0x99b78"
+    },
+    {
+      "pc": "0x478e0",
+      "fde": "0x99b98"
+    },
+    {
+      "pc": "0x47990",
+      "fde": "0x99bb0"
+    },
+    {
+      "pc": "0x47a80",
+      "fde": "0x99bc8"
+    },
+    {
+      "pc": "0x47b90",
+      "fde": "0x99be0"
+    },
+    {
+      "pc": "0x47c70",
+      "fde": "0x99bf8"
+    },
+    {
+      "pc": "0x47d50",
+      "fde": "0x99c10"
+    },
+    {
+      "pc": "0x47e20",
+      "fde": "0x99c28"
+    },
+    {
+      "pc": "0x480c0",
+      "fde": "0x99c40"
+    },
+    {
+      "pc": "0x48200",
+      "fde": "0x99c58"
+    },
+    {
+      "pc": "0x48360",
+      "fde": "0x99c70"
+    },
+    {
+      "pc": "0x48500",
+      "fde": "0x99c88"
+    },
+    {
+      "pc": "0x48660",
+      "fde": "0x99cb0"
+    },
+    {
+      "pc": "0x48820",
+      "fde": "0x99d00"
+    },
+    {
+      "pc": "0x48830",
+      "fde": "0x99d18"
+    },
+    {
+      "pc": "0x48850",
+      "fde": "0x99d30"
+    },
+    {
+      "pc": "0x48900",
+      "fde": "0x99d48"
+    },
+    {
+      "pc": "0x489c0",
+      "fde": "0x99d60"
+    },
+    {
+      "pc": "0x48a60",
+      "fde": "0x99d78"
+    },
+    {
+      "pc": "0x48b20",
+      "fde": "0x99d90"
+    },
+    {
+      "pc": "0x48c40",
+      "fde": "0x99dc0"
+    },
+    {
+      "pc": "0x48d40",
+      "fde": "0x99df0"
+    },
+    {
+      "pc": "0x48e20",
+      "fde": "0x99e08"
+    },
+    {
+      "pc": "0x48f00",
+      "fde": "0x99e20"
+    },
+    {
+      "pc": "0x491d0",
+      "fde": "0x99e48"
+    },
+    {
+      "pc": "0x49280",
+      "fde": "0x99e60"
+    },
+    {
+      "pc": "0x49330",
+      "fde": "0x99e78"
+    },
+    {
+      "pc": "0x493e0",
+      "fde": "0x99e90"
+    },
+    {
+      "pc": "0x49490",
+      "fde": "0x99ea8"
+    },
+    {
+      "pc": "0x495b0",
+      "fde": "0x99ec0"
+    },
+    {
+      "pc": "0x496a0",
+      "fde": "0x99ed8"
+    },
+    {
+      "pc": "0x49710",
+      "fde": "0x99ef8"
+    },
+    {
+      "pc": "0x49740",
+      "fde": "0x99f10"
+    },
+    {
+      "pc": "0x49770",
+      "fde": "0x99f28"
+    },
+    {
+      "pc": "0x497e0",
+      "fde": "0x99f40"
+    },
+    {
+      "pc": "0x49820",
+      "fde": "0x99f58"
+    },
+    {
+      "pc": "0x49830",
+      "fde": "0x99f70"
+    },
+    {
+      "pc": "0x49850",
+      "fde": "0x99f88"
+    },
+    {
+      "pc": "0x498c0",
+      "fde": "0x99fa8"
+    },
+    {
+      "pc": "0x49930",
+      "fde": "0x99fe0"
+    },
+    {
+      "pc": "0x49a50",
+      "fde": "0x9a020"
+    },
+    {
+      "pc": "0x49ab0",
+      "fde": "0x9a040"
+    },
+    {
+      "pc": "0x49ac0",
+      "fde": "0x9a058"
+    },
+    {
+      "pc": "0x49ae0",
+      "fde": "0x9a078"
+    },
+    {
+      "pc": "0x49bb0",
+      "fde": "0x9a0b8"
+    },
+    {
+      "pc": "0x49c60",
+      "fde": "0x9a0d0"
+    },
+    {
+      "pc": "0x49c90",
+      "fde": "0x9a0e8"
+    },
+    {
+      "pc": "0x49cc0",
+      "fde": "0x9a100"
+    },
+    {
+      "pc": "0x49d10",
+      "fde": "0x9a128"
+    },
+    {
+      "pc": "0x49d40",
+      "fde": "0x9a148"
+    },
+    {
+      "pc": "0x49db0",
+      "fde": "0x9a160"
+    },
+    {
+      "pc": "0x49e90",
+      "fde": "0x9a1c8"
+    },
+    {
+      "pc": "0x49eb0",
+      "fde": "0x9a1e0"
+    },
+    {
+      "pc": "0x49ed0",
+      "fde": "0x9a1f8"
+    },
+    {
+      "pc": "0x49ef0",
+      "fde": "0x9a210"
+    },
+    {
+      "pc": "0x49f10",
+      "fde": "0x9a228"
+    },
+    {
+      "pc": "0x49f30",
+      "fde": "0x9a240"
+    },
+    {
+      "pc": "0x49f50",
+      "fde": "0x9a258"
+    },
+    {
+      "pc": "0x49f70",
+      "fde": "0x9a270"
+    },
+    {
+      "pc": "0x49f90",
+      "fde": "0x9a288"
+    },
+    {
+      "pc": "0x49fb0",
+      "fde": "0x9a2a0"
+    },
+    {
+      "pc": "0x49fd0",
+      "fde": "0x89c38"
+    },
+    {
+      "pc": "0x4a090",
+      "fde": "0x9a2e0"
+    },
+    {
+      "pc": "0x4a0d0",
+      "fde": "0x9a2f8"
+    },
+    {
+      "pc": "0x4a130",
+      "fde": "0x9a320"
+    },
+    {
+      "pc": "0x4a160",
+      "fde": "0x9a338"
+    },
+    {
+      "pc": "0x4a1c0",
+      "fde": "0x9a350"
+    },
+    {
+      "pc": "0x4a240",
+      "fde": "0x9a368"
+    },
+    {
+      "pc": "0x4a290",
+      "fde": "0x9a380"
+    },
+    {
+      "pc": "0x4a2b0",
+      "fde": "0x9a398"
+    },
+    {
+      "pc": "0x4a2d0",
+      "fde": "0x9a3b0"
+    },
+    {
+      "pc": "0x4a300",
+      "fde": "0x9a3c8"
+    },
+    {
+      "pc": "0x4a320",
+      "fde": "0x9a3e0"
+    },
+    {
+      "pc": "0x4a360",
+      "fde": "0x9a3f8"
+    },
+    {
+      "pc": "0x4a3e0",
+      "fde": "0x9a428"
+    },
+    {
+      "pc": "0x4a450",
+      "fde": "0x9a450"
+    },
+    {
+      "pc": "0x4a4d0",
+      "fde": "0x9a480"
+    },
+    {
+      "pc": "0x4a540",
+      "fde": "0x9a4a8"
+    },
+    {
+      "pc": "0x4ba10",
+      "fde": "0x9a510"
+    },
+    {
+      "pc": "0x4ba20",
+      "fde": "0x9a528"
+    },
+    {
+      "pc": "0x4ba30",
+      "fde": "0x9a540"
+    },
+    {
+      "pc": "0x4ba40",
+      "fde": "0x9a558"
+    },
+    {
+      "pc": "0x4ba50",
+      "fde": "0x9a570"
+    },
+    {
+      "pc": "0x4ba60",
+      "fde": "0x9a588"
+    },
+    {
+      "pc": "0x4ba70",
+      "fde": "0x9a5a0"
+    },
+    {
+      "pc": "0x4ba80",
+      "fde": "0x9a5b8"
+    },
+    {
+      "pc": "0x4ba90",
+      "fde": "0x9a5d0"
+    },
+    {
+      "pc": "0x4bbe0",
+      "fde": "0x9a5f0"
+    },
+    {
+      "pc": "0x4bc50",
+      "fde": "0x9a620"
+    },
+    {
+      "pc": "0x4c550",
+      "fde": "0x9a668"
+    },
+    {
+      "pc": "0x4c9b0",
+      "fde": "0x9a6e8"
+    },
+    {
+      "pc": "0x4ca30",
+      "fde": "0x9a700"
+    },
+    {
+      "pc": "0x4d260",
+      "fde": "0x9a750"
+    },
+    {
+      "pc": "0x4d640",
+      "fde": "0x9a7a0"
+    },
+    {
+      "pc": "0x4d7b0",
+      "fde": "0x9a7e0"
+    },
+    {
+      "pc": "0x4d840",
+      "fde": "0x9a818"
+    },
+    {
+      "pc": "0x4d900",
+      "fde": "0x9a868"
+    },
+    {
+      "pc": "0x4d9e0",
+      "fde": "0x9a8b8"
+    },
+    {
+      "pc": "0x4dba0",
+      "fde": "0x9a8e8"
+    },
+    {
+      "pc": "0x4dbf0",
+      "fde": "0x9a900"
+    },
+    {
+      "pc": "0x4dc00",
+      "fde": "0x9a918"
+    },
+    {
+      "pc": "0x4dc70",
+      "fde": "0x9a938"
+    },
+    {
+      "pc": "0x4dc80",
+      "fde": "0x9a950"
+    },
+    {
+      "pc": "0x4dca0",
+      "fde": "0x9a968"
+    },
+    {
+      "pc": "0x4dcb0",
+      "fde": "0x9a980"
+    },
+    {
+      "pc": "0x4dcc0",
+      "fde": "0x9a998"
+    },
+    {
+      "pc": "0x4dcd0",
+      "fde": "0x9a9b0"
+    },
+    {
+      "pc": "0x4dd00",
+      "fde": "0x9a9d0"
+    },
+    {
+      "pc": "0x4dd10",
+      "fde": "0x9a9e8"
+    },
+    {
+      "pc": "0x4dd20",
+      "fde": "0x9aa00"
+    },
+    {
+      "pc": "0x4de30",
+      "fde": "0x9aa38"
+    },
+    {
+      "pc": "0x4de40",
+      "fde": "0x9aa50"
+    },
+    {
+      "pc": "0x4dfa0",
+      "fde": "0x9aa88"
+    },
+    {
+      "pc": "0x4e080",
+      "fde": "0x9aac0"
+    },
+    {
+      "pc": "0x4e140",
+      "fde": "0x9aaf0"
+    },
+    {
+      "pc": "0x4e220",
+      "fde": "0x9ab28"
+    },
+    {
+      "pc": "0x4e240",
+      "fde": "0x9ab40"
+    },
+    {
+      "pc": "0x4e2e0",
+      "fde": "0x9ab70"
+    },
+    {
+      "pc": "0x4e300",
+      "fde": "0x9ab88"
+    },
+    {
+      "pc": "0x4e3d0",
+      "fde": "0x9abd8"
+    },
+    {
+      "pc": "0x4e480",
+      "fde": "0x9ac20"
+    },
+    {
+      "pc": "0x4e4f0",
+      "fde": "0x9ac50"
+    },
+    {
+      "pc": "0x4e550",
+      "fde": "0x9ac78"
+    },
+    {
+      "pc": "0x4e5b0",
+      "fde": "0x9aca0"
+    },
+    {
+      "pc": "0x4e700",
+      "fde": "0x9acc0"
+    },
+    {
+      "pc": "0x4e790",
+      "fde": "0x9ad00"
+    },
+    {
+      "pc": "0x4e8b0",
+      "fde": "0x9ad38"
+    },
+    {
+      "pc": "0x4ea40",
+      "fde": "0x9ada0"
+    },
+    {
+      "pc": "0x4eec0",
+      "fde": "0x9ae08"
+    },
+    {
+      "pc": "0x4ef60",
+      "fde": "0x9ae40"
+    },
+    {
+      "pc": "0x4f0c0",
+      "fde": "0x9aeb0"
+    },
+    {
+      "pc": "0x4f200",
+      "fde": "0x9af00"
+    },
+    {
+      "pc": "0x4f900",
+      "fde": "0x9af68"
+    },
+    {
+      "pc": "0x4f960",
+      "fde": "0x9af88"
+    },
+    {
+      "pc": "0x4f9d0",
+      "fde": "0x9afa8"
+    },
+    {
+      "pc": "0x4f9f0",
+      "fde": "0x9afc0"
+    },
+    {
+      "pc": "0x4fa20",
+      "fde": "0x9afe0"
+    },
+    {
+      "pc": "0x4fa80",
+      "fde": "0x9b000"
+    },
+    {
+      "pc": "0x4fa90",
+      "fde": "0x9b018"
+    },
+    {
+      "pc": "0x4fab0",
+      "fde": "0x9b038"
+    },
+    {
+      "pc": "0x4fbc0",
+      "fde": "0x9b070"
+    },
+    {
+      "pc": "0x4fbd0",
+      "fde": "0x9b088"
+    },
+    {
+      "pc": "0x4fc00",
+      "fde": "0x9b0a0"
+    },
+    {
+      "pc": "0x4fdd0",
+      "fde": "0x9b0e0"
+    },
+    {
+      "pc": "0x4fee0",
+      "fde": "0x9b148"
+    },
+    {
+      "pc": "0x4ff70",
+      "fde": "0x9b160"
+    },
+    {
+      "pc": "0x4ffd0",
+      "fde": "0x9b178"
+    },
+    {
+      "pc": "0x4fff0",
+      "fde": "0x9b190"
+    },
+    {
+      "pc": "0x500b0",
+      "fde": "0x9b1b8"
+    },
+    {
+      "pc": "0x50120",
+      "fde": "0x9b1e8"
+    },
+    {
+      "pc": "0x501a0",
+      "fde": "0x9b238"
+    },
+    {
+      "pc": "0x50210",
+      "fde": "0x9b270"
+    },
+    {
+      "pc": "0x50ca0",
+      "fde": "0x9b308"
+    },
+    {
+      "pc": "0x50da0",
+      "fde": "0x9b348"
+    },
+    {
+      "pc": "0x50e30",
+      "fde": "0x9b378"
+    },
+    {
+      "pc": "0x510f0",
+      "fde": "0x9b3f8"
+    },
+    {
+      "pc": "0x51a80",
+      "fde": "0x9b448"
+    },
+    {
+      "pc": "0x52210",
+      "fde": "0x9b498"
+    },
+    {
+      "pc": "0x528e0",
+      "fde": "0x9b4e8"
+    },
+    {
+      "pc": "0x52f90",
+      "fde": "0x9b538"
+    },
+    {
+      "pc": "0x53640",
+      "fde": "0x9b588"
+    },
+    {
+      "pc": "0x53a30",
+      "fde": "0x9b5d0"
+    },
+    {
+      "pc": "0x53e60",
+      "fde": "0x9b648"
+    },
+    {
+      "pc": "0x54260",
+      "fde": "0x9b698"
+    },
+    {
+      "pc": "0x54610",
+      "fde": "0x9b6e0"
+    },
+    {
+      "pc": "0x54a60",
+      "fde": "0x9b778"
+    },
+    {
+      "pc": "0x54e30",
+      "fde": "0x9b7c8"
+    },
+    {
+      "pc": "0x561d0",
+      "fde": "0x9b8a0"
+    },
+    {
+      "pc": "0x8fed0",
+      "fde": "0x89c80"
+    }
+  ],
+  "old_pair_digest_sha256": "d38d64d20df9f93e5aaa96b67a4fe2900f9e2c565e37c4645aa7140fb9cfcc30",
+  "original_fde_encodings": [
+    27
+  ],
+  "original_program_headers": [
+    {
+      "type": 6,
+      "flags": 5,
+      "offset": 64,
+      "va": 64,
+      "pa": 64,
+      "filesz": 448,
+      "memsz": 448,
+      "align": 8
+    },
+    {
+      "type": 3,
+      "flags": 4,
+      "offset": 512,
+      "va": 512,
+      "pa": 512,
+      "filesz": 23,
+      "memsz": 23,
+      "align": 1
+    },
+    {
+      "type": 1,
+      "flags": 5,
+      "offset": 0,
+      "va": 0,
+      "pa": 0,
+      "filesz": 644224,
+      "memsz": 644224,
+      "align": 2097152
+    },
+    {
+      "type": 1,
+      "flags": 6,
+      "offset": 647864,
+      "va": 2745016,
+      "pa": 2745016,
+      "filesz": 25048,
+      "memsz": 80888,
+      "align": 2097152
+    },
+    {
+      "type": 2,
+      "flags": 6,
+      "offset": 653368,
+      "va": 2750520,
+      "pa": 2750520,
+      "filesz": 496,
+      "memsz": 496,
+      "align": 8
+    },
+    {
+      "type": 4,
+      "flags": 4,
+      "offset": 536,
+      "va": 536,
+      "pa": 536,
+      "filesz": 56,
+      "memsz": 56,
+      "align": 4
+    },
+    {
+      "type": 1685382480,
+      "flags": 4,
+      "offset": 595344,
+      "va": 595344,
+      "pa": 595344,
+      "filesz": 6724,
+      "memsz": 6724,
+      "align": 4
+    },
+    {
+      "type": 1685382482,
+      "flags": 4,
+      "offset": 647864,
+      "va": 2745016,
+      "pa": 2745016,
+      "filesz": 7496,
+      "memsz": 7496,
+      "align": 1
+    }
+  ],
+  "candidate_program_headers_model": [
+    {
+      "type": 6,
+      "flags": 5,
+      "offset": 64,
+      "va": 64,
+      "pa": 64,
+      "filesz": 448,
+      "memsz": 448,
+      "align": 8
+    },
+    {
+      "type": 3,
+      "flags": 4,
+      "offset": 512,
+      "va": 512,
+      "pa": 512,
+      "filesz": 23,
+      "memsz": 23,
+      "align": 1
+    },
+    {
+      "type": 1,
+      "flags": 5,
+      "offset": 0,
+      "va": 0,
+      "pa": 0,
+      "filesz": 999424,
+      "memsz": 999424,
+      "align": 2097152
+    },
+    {
+      "type": 1,
+      "flags": 6,
+      "offset": 647864,
+      "va": 2745016,
+      "pa": 2745016,
+      "filesz": 25048,
+      "memsz": 80888,
+      "align": 2097152
+    },
+    {
+      "type": 2,
+      "flags": 6,
+      "offset": 653368,
+      "va": 2750520,
+      "pa": 2750520,
+      "filesz": 496,
+      "memsz": 496,
+      "align": 8
+    },
+    {
+      "type": 4,
+      "flags": 4,
+      "offset": 536,
+      "va": 536,
+      "pa": 536,
+      "filesz": 56,
+      "memsz": 56,
+      "align": 4
+    },
+    {
+      "type": 1685382480,
+      "flags": 4,
+      "offset": 992256,
+      "va": 992256,
+      "pa": 992256,
+      "filesz": 6772,
+      "memsz": 6772,
+      "align": 4
+    },
+    {
+      "type": 1685382482,
+      "flags": 4,
+      "offset": 647864,
+      "va": 2745016,
+      "pa": 2745016,
+      "filesz": 7496,
+      "memsz": 7496,
+      "align": 1
+    }
+  ],
+  "fixture_count": 6,
+  "fixture_frames_size": 148,
+  "combined_header_size": 6772,
+  "maximum_additional_index_entries": 55,
+  "prospective_section_table": {
+    "offset": "0xf4200",
+    "count": 39,
+    "shstrndx": 34,
+    "shstr_offset": "0xf4000",
+    "shstr_size": 368
+  },
+  "prospective_file_length": 1002432,
+  "prospective_file_growth": 15912,
+  "extra_rx_bytes": 355200,
+  "file_alias_range": [
+    "0x9e2b8",
+    "0xa4490"
+  ],
+  "interpreter": "/usr/lib/ldqnx-64.so.2",
+  "local_unwinder_evidence": {
+    "scan_load_range": "0x4eb4a-0x4eb7a",
+    "header_version_encoding": "0x4ebe8-0x4ec60",
+    "indexed_search": "0x4ed76-0x4ee25",
+    "direct_FDE_range_check": "0x4ee50-0x4eea2"
+  },
+  "target_loader_validated": false,
+  "actual_new_CFI_executed": false,
+  "blocker": "No target loader/runtime evidence for enlarged RX mapping and actual emitted helper/CFI; metadata fixture lookup is not target execution.",
+  "external_primary_sources": [
+    "https://qnx.com/developers/docs/6.5.0SP1.update/com.qnx.doc.neutrino_sys_arch/dll.html",
+    "https://qnx.com/developers/docs/7.1/com.qnx.doc.neutrino.lib_ref/topic/d/dl_iterate_phdr.html"
+  ]
+}

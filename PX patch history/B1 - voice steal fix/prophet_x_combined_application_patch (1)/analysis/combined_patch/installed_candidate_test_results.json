@@ -1,0 +1,10 @@
+{
+  "candidate_sha256": "a47fa006e7f179b5860ff4e8d7e268dc3e5136c6e5cec3a7ec85087afe9e6b02",
+  "selection_cases": 18,
+  "activation_coordinator_cases": 7,
+  "unwind_lookup_cases": 3484,
+  "encoded_pointer_cases": 6,
+  "builder_invalid_input_rejections": 7,
+  "execution_source": "combined candidate ELF, no replacement hook/branch overlays",
+  "limits": "QNX threads, schedulers and DSP mocked; no hardware or audible click test"
+}

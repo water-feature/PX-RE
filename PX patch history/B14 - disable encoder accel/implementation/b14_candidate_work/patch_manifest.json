@@ -1,0 +1,316 @@
+{
+  "baseline": "b9_250_candidate_work/pic_2.2.2.1.2.bin",
+  "baseline_sha256": "8f3fcbccd5763324e5f0b7d9cc5941df806a9ecb46affa5c18f5f4d1b082a16c",
+  "candidate": "pic_B14_global_no_acceleration_unpackaged.bin",
+  "candidate_sha256": "c8bead4c8d7cee282af0d2bd7269a6816910d0fe4029473ab57afcbbcdd516e5",
+  "size": 530784,
+  "revision_metadata": "inherited .1.2 unchanged; no new release revision",
+  "helper_start": "0x9d07a468",
+  "helper_end_exclusive": "0x9d07a4f8",
+  "helper_instructions": 36,
+  "helper_bytes": 144,
+  "patch_words": 40,
+  "changed_bytes": 146,
+  "allowed_ranges": [
+    [
+      500232,
+      500240
+    ],
+    [
+      500556,
+      500560
+    ],
+    [
+      500680,
+      500684
+    ],
+    [
+      500840,
+      500984
+    ]
+  ],
+  "patches": [
+    {
+      "address": "0x9d07a34c",
+      "offset": "0x7a34c",
+      "before": "46004010",
+      "after": "00000000",
+      "reason": "global canonical slow-path bypass"
+    },
+    {
+      "address": "0x9d07a3c8",
+      "offset": "0x7a3c8",
+      "before": "0f004010",
+      "after": "00000000",
+      "reason": "global canonical slow-path bypass"
+    },
+    {
+      "address": "0x9d07a208",
+      "offset": "0x7a208",
+      "before": "e8ffbd27",
+      "after": "1ae9410b",
+      "reason": "service entry jump"
+    },
+    {
+      "address": "0x9d07a20c",
+      "offset": "0x7a20c",
+      "before": "1400bfaf",
+      "after": "00000000",
+      "reason": "service entry delay slot; original prologue skipped"
+    },
+    {
+      "address": "0x9d07a468",
+      "offset": "0x7a468",
+      "before": "0400e890",
+      "after": "e0ffbd27",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a46c",
+      "offset": "0x7a46c",
+      "before": "ff000831",
+      "after": "1c00bfaf",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a470",
+      "offset": "0x7a470",
+      "before": "bbff0015",
+      "after": "1800b2af",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a474",
+      "offset": "0x7a474",
+      "before": "21100000",
+      "after": "1400b1af",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a478",
+      "offset": "0x7a478",
+      "before": "0200e290",
+      "after": "1000b0af",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a47c",
+      "offset": "0x7a47c",
+      "before": "ff004230",
+      "after": "21888000",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a480",
+      "offset": "0x7a480",
+      "before": "0300422c",
+      "after": "80101100",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a484",
+      "offset": "0x7a484",
+      "before": "21004010",
+      "after": "00191100",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a488",
+      "offset": "0x7a488",
+      "before": "04000824",
+      "after": "23186200",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a48c",
+      "offset": "0x7a48c",
+      "before": "0200e890",
+      "after": "0180093c",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a490",
+      "offset": "0x7a490",
+      "before": "0400a238",
+      "after": "f00b2925",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a494",
+      "offset": "0x7a494",
+      "before": "0100422c",
+      "after": "21186900",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a498",
+      "offset": "0x7a498",
+      "before": "01000525",
+      "after": "00606841",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a49c",
+      "offset": "0x7a49c",
+      "before": "ff00a530",
+      "after": "c0000000",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4a0",
+      "offset": "0x7a4a0",
+      "before": "0200e5a0",
+      "after": "0800708c",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4a4",
+      "offset": "0x7a4a4",
+      "before": "d9e8410b",
+      "after": "080060ac",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4a8",
+      "offset": "0x7a4a8",
+      "before": "23288600",
+      "after": "00608840",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4ac",
+      "offset": "0x7a4ac",
+      "before": "ccffa814",
+      "after": "c0000000",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4b0",
+      "offset": "0x7a4b0",
+      "before": "ffff0224",
+      "after": "0b000012",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4b4",
+      "offset": "0x7a4b4",
+      "before": "0500e590",
+      "after": "00000000",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4b8",
+      "offset": "0x7a4b8",
+      "before": "ff00a530",
+      "after": "2a400002",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4bc",
+      "offset": "0x7a4bc",
+      "before": "ea00a52c",
+      "after": "40400800",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4c0",
+      "offset": "0x7a4c0",
+      "before": "c8ffa014",
+      "after": "01001224",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4c4",
+      "offset": "0x7a4c4",
+      "before": "23288600",
+      "after": "23904802",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4c8",
+      "offset": "0x7a4c8",
+      "before": "0500e590",
+      "after": "21202002",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4cc",
+      "offset": "0x7a4cc",
+      "before": "ff00a530",
+      "after": "d1f6410f",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4d0",
+      "offset": "0x7a4d0",
+      "before": "fa00a52c",
+      "after": "21284002",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4d4",
+      "offset": "0x7a4d4",
+      "before": "c2ffa010",
+      "after": "23801202",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4d8",
+      "offset": "0x7a4d8",
+      "before": "f9ff0224",
+      "after": "fbff0016",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4dc",
+      "offset": "0x7a4dc",
+      "before": "0500e590",
+      "after": "00000000",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4e0",
+      "offset": "0x7a4e0",
+      "before": "ff00a530",
+      "after": "1000b08f",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4e4",
+      "offset": "0x7a4e4",
+      "before": "f400a52c",
+      "after": "1400b18f",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4e8",
+      "offset": "0x7a4e8",
+      "before": "bdffa010",
+      "after": "1800b28f",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4ec",
+      "offset": "0x7a4ec",
+      "before": "fcff0224",
+      "after": "1c00bf8f",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4f0",
+      "offset": "0x7a4f0",
+      "before": "0500e790",
+      "after": "0800e003",
+      "reason": "replay helper in unreachable acceleration code"
+    },
+    {
+      "address": "0x9d07a4f4",
+      "offset": "0x7a4f4",
+      "before": "fdff0224",
+      "after": "2000bd27",
+      "reason": "replay helper in unreachable acceleration code"
+    }
+  ],
+  "QNX": "not modified",
+  "packaged": false
+}

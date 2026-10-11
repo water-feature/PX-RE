@@ -1,0 +1,51 @@
+{
+  "package_sha256": "438da40fee68dee6062f169e3ca9ed461bf31547f0c1f0a77279a3bc264e6e5d",
+  "records": [
+    {
+      "type": 1,
+      "size": 1039304,
+      "sha256": "1a562cb01a7703f4facf9a6d0b90a76f6b4da6fc5218e43ac9991a255aba0406",
+      "matches_extracted": true
+    },
+    {
+      "type": 2,
+      "size": 1581716,
+      "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+      "matches_extracted": null
+    },
+    {
+      "type": 3,
+      "size": 530784,
+      "sha256": "80723ffbd381e1e6cf401f09cff99591d43a07d91d00d57570fe2dea5265e2f3",
+      "matches_extracted": true
+    }
+  ],
+  "pic_differences_from_7": 744,
+  "ranges": [
+    {
+      "start": "0x9d01a800",
+      "end": "0x9d031000",
+      "differences": [
+        "0x9d0258b4",
+        "0x9d0258c0",
+        "0x9d0258c1",
+        "0x9d0258c2"
+      ]
+    },
+    {
+      "start": "0x9d03f600",
+      "end": "0x9d042760",
+      "differences": []
+    },
+    {
+      "start": "0x9d046e00",
+      "end": "0x9d046fc0",
+      "differences": []
+    },
+    {
+      "start": "0x9d074000",
+      "end": "0x9d078200",
+      "differences": []
+    }
+  ]
+}

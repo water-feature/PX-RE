@@ -1,0 +1,372 @@
+{
+  "status": "PASS",
+  "scope": "Host execution of saved emitted reader code; no resampler or mixer",
+  "cases": 57600,
+  "independent_readers": 4,
+  "isolation_comparisons": 57600,
+  "rate_identical_groups": 19200,
+  "rate_groups": 19200,
+  "firmware_sha256": "dd9efbcd2804e02cc4599e72d2ee90f996facce1fa06f1815a0078270566a2fa",
+  "groups": [
+    {
+      "rate": 0.5,
+      "N": 0,
+      "cases": 1600,
+      "max_step": 23976,
+      "interior_max": 0,
+      "entry_max": 23976,
+      "handoff_max": 23976,
+      "interior_worst_cases": 0
+    },
+    {
+      "rate": 0.5,
+      "N": 1,
+      "cases": 1600,
+      "max_step": 23976,
+      "interior_max": 0,
+      "entry_max": 753,
+      "handoff_max": 23976,
+      "interior_worst_cases": 0
+    },
+    {
+      "rate": 0.5,
+      "N": 2,
+      "cases": 1600,
+      "max_step": 23976,
+      "interior_max": 23976,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1369
+    },
+    {
+      "rate": 0.5,
+      "N": 3,
+      "cases": 1600,
+      "max_step": 12000,
+      "interior_max": 12000,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1382
+    },
+    {
+      "rate": 0.5,
+      "N": 4,
+      "cases": 1600,
+      "max_step": 8775,
+      "interior_max": 8775,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1374
+    },
+    {
+      "rate": 0.5,
+      "N": 8,
+      "cases": 1600,
+      "max_step": 3796,
+      "interior_max": 3796,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1345
+    },
+    {
+      "rate": 0.5,
+      "N": 16,
+      "cases": 1600,
+      "max_step": 2007,
+      "interior_max": 2007,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1225
+    },
+    {
+      "rate": 0.5,
+      "N": 32,
+      "cases": 1600,
+      "max_step": 1366,
+      "interior_max": 1366,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1163
+    },
+    {
+      "rate": 0.5,
+      "N": 64,
+      "cases": 1600,
+      "max_step": 1141,
+      "interior_max": 1141,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1219
+    },
+    {
+      "rate": 0.5,
+      "N": 128,
+      "cases": 1600,
+      "max_step": 1080,
+      "interior_max": 1080,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1185
+    },
+    {
+      "rate": 0.5,
+      "N": 512,
+      "cases": 1600,
+      "max_step": 1064,
+      "interior_max": 1064,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1443
+    },
+    {
+      "rate": 0.5,
+      "N": 2048,
+      "cases": 1600,
+      "max_step": 1065,
+      "interior_max": 1065,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1505
+    },
+    {
+      "rate": 1.0,
+      "N": 0,
+      "cases": 1600,
+      "max_step": 23976,
+      "interior_max": 0,
+      "entry_max": 23976,
+      "handoff_max": 23976,
+      "interior_worst_cases": 0
+    },
+    {
+      "rate": 1.0,
+      "N": 1,
+      "cases": 1600,
+      "max_step": 23976,
+      "interior_max": 0,
+      "entry_max": 753,
+      "handoff_max": 23976,
+      "interior_worst_cases": 0
+    },
+    {
+      "rate": 1.0,
+      "N": 2,
+      "cases": 1600,
+      "max_step": 23976,
+      "interior_max": 23976,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1369
+    },
+    {
+      "rate": 1.0,
+      "N": 3,
+      "cases": 1600,
+      "max_step": 12000,
+      "interior_max": 12000,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1382
+    },
+    {
+      "rate": 1.0,
+      "N": 4,
+      "cases": 1600,
+      "max_step": 8775,
+      "interior_max": 8775,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1374
+    },
+    {
+      "rate": 1.0,
+      "N": 8,
+      "cases": 1600,
+      "max_step": 3796,
+      "interior_max": 3796,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1345
+    },
+    {
+      "rate": 1.0,
+      "N": 16,
+      "cases": 1600,
+      "max_step": 2007,
+      "interior_max": 2007,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1225
+    },
+    {
+      "rate": 1.0,
+      "N": 32,
+      "cases": 1600,
+      "max_step": 1366,
+      "interior_max": 1366,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1163
+    },
+    {
+      "rate": 1.0,
+      "N": 64,
+      "cases": 1600,
+      "max_step": 1141,
+      "interior_max": 1141,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1219
+    },
+    {
+      "rate": 1.0,
+      "N": 128,
+      "cases": 1600,
+      "max_step": 1080,
+      "interior_max": 1080,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1185
+    },
+    {
+      "rate": 1.0,
+      "N": 512,
+      "cases": 1600,
+      "max_step": 1064,
+      "interior_max": 1064,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1443
+    },
+    {
+      "rate": 1.0,
+      "N": 2048,
+      "cases": 1600,
+      "max_step": 1065,
+      "interior_max": 1065,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1505
+    },
+    {
+      "rate": 2.0,
+      "N": 0,
+      "cases": 1600,
+      "max_step": 23976,
+      "interior_max": 0,
+      "entry_max": 23976,
+      "handoff_max": 23976,
+      "interior_worst_cases": 0
+    },
+    {
+      "rate": 2.0,
+      "N": 1,
+      "cases": 1600,
+      "max_step": 23976,
+      "interior_max": 0,
+      "entry_max": 753,
+      "handoff_max": 23976,
+      "interior_worst_cases": 0
+    },
+    {
+      "rate": 2.0,
+      "N": 2,
+      "cases": 1600,
+      "max_step": 23976,
+      "interior_max": 23976,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1369
+    },
+    {
+      "rate": 2.0,
+      "N": 3,
+      "cases": 1600,
+      "max_step": 12000,
+      "interior_max": 12000,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1382
+    },
+    {
+      "rate": 2.0,
+      "N": 4,
+      "cases": 1600,
+      "max_step": 8775,
+      "interior_max": 8775,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1374
+    },
+    {
+      "rate": 2.0,
+      "N": 8,
+      "cases": 1600,
+      "max_step": 3796,
+      "interior_max": 3796,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1345
+    },
+    {
+      "rate": 2.0,
+      "N": 16,
+      "cases": 1600,
+      "max_step": 2007,
+      "interior_max": 2007,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1225
+    },
+    {
+      "rate": 2.0,
+      "N": 32,
+      "cases": 1600,
+      "max_step": 1366,
+      "interior_max": 1366,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1163
+    },
+    {
+      "rate": 2.0,
+      "N": 64,
+      "cases": 1600,
+      "max_step": 1141,
+      "interior_max": 1141,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1219
+    },
+    {
+      "rate": 2.0,
+      "N": 128,
+      "cases": 1600,
+      "max_step": 1080,
+      "interior_max": 1080,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1185
+    },
+    {
+      "rate": 2.0,
+      "N": 512,
+      "cases": 1600,
+      "max_step": 1064,
+      "interior_max": 1064,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1443
+    },
+    {
+      "rate": 2.0,
+      "N": 2048,
+      "cases": 1600,
+      "max_step": 1065,
+      "interior_max": 1065,
+      "entry_max": 753,
+      "handoff_max": 753,
+      "interior_worst_cases": 1505
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "check": "known_baseline_reproduces_v4",
+    "result": "pass",
+    "candidate_created": true
+  },
+  {
+    "check": "wrong_baseline_hash_rejected",
+    "result": "pass",
+    "candidate_created": false
+  },
+  {
+    "check": "startup_contract_change_rejected",
+    "result": "pass",
+    "candidate_created": false
+  },
+  {
+    "check": "occupied_helper_space_rejected",
+    "result": "pass",
+    "candidate_created": false
+  },
+  {
+    "check": "known_revision_operands_preserved",
+    "result": "pass",
+    "candidate_created": true
+  },
+  {
+    "check": "preserved_components_accepted",
+    "result": "pass"
+  },
+  {
+    "check": "PIC_change_rejected",
+    "result": "pass"
+  },
+  {
+    "check": "wrong_packaged_QNX_rejected",
+    "result": "pass"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "qnx_component_name": "QNX",
+  "baseline": {
+    "QNX": "baseline_qnx.elf",
+    "PIC": "baseline_pic.bin",
+    "FPGA": "baseline_fpga.bin"
+  },
+  "candidate": {
+    "QNX": "reextracted_qnx.elf",
+    "PIC": "reextracted_pic.bin",
+    "FPGA": "reextracted_fpga.bin"
+  }
+}

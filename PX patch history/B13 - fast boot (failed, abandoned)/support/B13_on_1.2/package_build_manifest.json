@@ -1,0 +1,70 @@
+{
+  "baseline_package_sha256": "3e844a73a9f29bf0f1dc24929c989e0cb3946c9a307cab948e6af4c0928b5029",
+  "output_version": [
+    2,
+    2,
+    2,
+    1,
+    3
+  ],
+  "PIC_version_preserved": [
+    2,
+    2,
+    2,
+    1,
+    2
+  ],
+  "candidate_qnx_sha256": "9b1662cfdff70e76b9ba38c6de9ee78f07f1f782a07d1e311cabc26583bd4b20",
+  "candidate_package_sha256": "52d27173142479dfe84bb019b551f946ef3ae09b579b82fef719d8a1e17b857a",
+  "package_bytes": 3151848,
+  "qnx_word_checksum": 12415,
+  "changed_package_bytes": 461,
+  "changed_qnx_bytes": 458,
+  "allowed_qnx_difference_spans": [
+    [
+      217725,
+      217729
+    ],
+    [
+      1020480,
+      1020870
+    ],
+    [
+      1025320,
+      1025428
+    ],
+    [
+      1028104,
+      1028108
+    ],
+    [
+      1035068,
+      1035076
+    ],
+    [
+      1037608,
+      1037616
+    ],
+    [
+      1039208,
+      1039216
+    ],
+    [
+      1039272,
+      1039280
+    ],
+    [
+      432,
+      448
+    ],
+    [
+      128227,
+      128228
+    ],
+    [
+      151791,
+      151792
+    ]
+  ],
+  "scope": "B13 application plus two application revision operands. Complete PIC/FPGA records preserved."
+}

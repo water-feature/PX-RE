@@ -1,0 +1,213 @@
+.section __TEXT,__text,regular,pure_instructions
+.globl _fixture_call
+_fixture_call:
+ pushq %rbp
+ pushq %rbx
+ pushq %r12
+ pushq %r13
+ pushq %r14
+ pushq %r15
+ subq $424,%rsp
+ movq %rdi,400(%rsp)
+ movq %rdx,408(%rsp)
+ movq $0x1122,0(%rsp)
+ movq $0x3344,8(%rsp)
+ movq _fixture_open_slot_offset(%rip),%rax
+ movq %rax,0x20(%rsp)
+ movl $1,0x28(%rsp)
+ movl $96,0x2c(%rsp)
+ movq %rsi,%r11
+ movdqu 0(%r11),%xmm0
+ movdqu 16(%r11),%xmm1
+ movdqu 32(%r11),%xmm2
+ movdqu 48(%r11),%xmm3
+ movdqu 64(%r11),%xmm4
+ movdqu 80(%r11),%xmm5
+ movdqu 96(%r11),%xmm6
+ movdqu 112(%r11),%xmm7
+ movdqu 128(%r11),%xmm8
+ movdqu 144(%r11),%xmm9
+ movdqu 160(%r11),%xmm10
+ movdqu 176(%r11),%xmm11
+ movdqu 192(%r11),%xmm12
+ movdqu 208(%r11),%xmm13
+ movdqu 224(%r11),%xmm14
+ movdqu 240(%r11),%xmm15
+ movq 256(%r11),%r15
+ movq 264(%r11),%r14
+ movq 272(%r11),%r13
+ movq 280(%r11),%r12
+ movq 288(%r11),%rbp
+ movq 296(%r11),%rbx
+ movq 312(%r11),%r10
+ movq 320(%r11),%r9
+ movq 328(%r11),%r8
+ movq 336(%r11),%rdi
+ movq 344(%r11),%rsi
+ movq 352(%r11),%rdx
+ movq 360(%r11),%rcx
+ movq 368(%r11),%rax
+ pushq 376(%r11)
+ popfq
+ movq 304(%r11),%r11
+ callq *400(%rsp)
+ movq %rax,368(%rsp)
+ movq %rcx,360(%rsp)
+ movq %rdx,352(%rsp)
+ movq %rsi,344(%rsp)
+ movq %rdi,336(%rsp)
+ movq %r8,328(%rsp)
+ movq %r9,320(%rsp)
+ movq %r10,312(%rsp)
+ movq %r11,304(%rsp)
+ movq %rbx,296(%rsp)
+ movq %rbp,288(%rsp)
+ movq %r12,280(%rsp)
+ movq %r13,272(%rsp)
+ movq %r14,264(%rsp)
+ movq %r15,256(%rsp)
+ pushfq
+ popq %r11
+ movq %r11,376(%rsp)
+ movdqu %xmm0,0(%rsp)
+ movdqu %xmm1,16(%rsp)
+ movdqu %xmm2,32(%rsp)
+ movdqu %xmm3,48(%rsp)
+ movdqu %xmm4,64(%rsp)
+ movdqu %xmm5,80(%rsp)
+ movdqu %xmm6,96(%rsp)
+ movdqu %xmm7,112(%rsp)
+ movdqu %xmm8,128(%rsp)
+ movdqu %xmm9,144(%rsp)
+ movdqu %xmm10,160(%rsp)
+ movdqu %xmm11,176(%rsp)
+ movdqu %xmm12,192(%rsp)
+ movdqu %xmm13,208(%rsp)
+ movdqu %xmm14,224(%rsp)
+ movdqu %xmm15,240(%rsp)
+ movq %rsp,%rsi
+ movq 408(%rsp),%rdi
+ movl $48,%ecx
+ rep movsq
+ addq $424,%rsp
+ popq %r15
+ popq %r14
+ popq %r13
+ popq %r12
+ popq %rbx
+ popq %rbp
+ retq
+
+.globl _fixture_outputs
+_fixture_outputs:
+ movq %rdi,%rax
+ movl $101,%ecx
+ movl $202,%edx
+ movl $303,%esi
+ movl $404,%edi
+ movl $505,%r8d
+ movl $606,%r9d
+ movl $707,%r10d
+ movl $808,%r11d
+ pcmpeqd %xmm0,%xmm0
+ pcmpeqd %xmm1,%xmm1
+ pcmpeqd %xmm2,%xmm2
+ pcmpeqd %xmm3,%xmm3
+ pcmpeqd %xmm4,%xmm4
+ pcmpeqd %xmm5,%xmm5
+ pcmpeqd %xmm6,%xmm6
+ pcmpeqd %xmm7,%xmm7
+ pcmpeqd %xmm8,%xmm8
+ pcmpeqd %xmm9,%xmm9
+ pcmpeqd %xmm10,%xmm10
+ pcmpeqd %xmm11,%xmm11
+ pcmpeqd %xmm12,%xmm12
+ pcmpeqd %xmm13,%xmm13
+ pcmpeqd %xmm14,%xmm14
+ pxor %xmm15,%xmm15
+ cmpl %eax,%eax
+ retq
+
+# B8 JMP fixtures: restore body-entry alignment; target continuations are host-only.
+.section __DATA,__data
+.p2align 3
+.globl _fixture_jump_target
+_fixture_jump_target: .quad 0
+.globl _fixture_branch_path
+_fixture_branch_path: .long 0
+.section __TEXT,__text,regular,pure_instructions
+.globl _fixture_jump_prepare
+_fixture_jump_prepare:
+ leaq -8(%rsp),%rsp
+ jmpq *_fixture_jump_target(%rip)
+.globl _fixture_continue_prepare
+_fixture_continue_prepare:
+ leaq 8(%rsp),%rsp
+ retq
+.globl _fixture_jump_gate
+_fixture_jump_gate:
+ leaq -8(%rsp),%rsp
+ movq %rcx,(%rsp)
+ leaq _b5_image+OFF_MARKER(%rip),%r11
+ movq %r11,168(%rsp)
+ jmpq *_fixture_jump_target(%rip)
+.globl _fixture_continue_gate
+_fixture_continue_gate:
+ leaq 8(%rsp),%rsp
+ retq
+.globl _fixture_jump_note
+_fixture_jump_note:
+ leaq -8(%rsp),%rsp
+ jmpq *_fixture_jump_target(%rip)
+.globl _fixture_continue_note
+_fixture_continue_note:
+ movl $0,_fixture_branch_path(%rip)
+ leaq 8(%rsp),%rsp
+ retq
+.globl _fixture_jump_return
+_fixture_jump_return:
+ leaq -8(%rsp),%rsp
+ movq %rcx,0x48(%rsp)
+ jmpq *_fixture_jump_target(%rip)
+.globl _fixture_continue_return
+_fixture_continue_return:
+ leaq 8(%rsp),%rsp
+ retq
+.globl _fixture_jump_reset
+_fixture_jump_reset:
+ pushq %r12
+ pushq %rbp
+ jmpq *_fixture_jump_target(%rip)
+.globl _fixture_continue_reset
+_fixture_continue_reset:
+ popq %rbx
+ popq %rbp
+ popq %r12
+ retq
+.globl _fixture_note_skip
+_fixture_note_skip:
+ movl $1,_fixture_branch_path(%rip)
+ leaq 8(%rsp),%rsp
+ retq
+.globl _fixture_zero_gate
+_fixture_zero_gate:
+ movq %rbp,%rdx
+ imulq %r13,%rdx
+ movq %r15,%rdi
+ xorl %esi,%esi
+ callq _memset
+ leaq 8(%rsp),%rsp
+ retq
+.section __DATA,__data
+.p2align 3
+.globl _fixture_prepare_route_target
+_fixture_prepare_route_target: .quad _fixture_continue_prepare
+.section __TEXT,__text,regular,pure_instructions
+.globl _fixture_prepare_route
+_fixture_prepare_route:
+ jmpq *_fixture_prepare_route_target(%rip)
+.globl _fixture_stock_prepare
+_fixture_stock_prepare:
+ movss %xmm1,0x14(%rsp)
+ movl 8(%r15),%esi
+ jmp _b5_image+OFF_PREPARE

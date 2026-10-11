@@ -1,0 +1,298 @@
+{
+  "scope": "host-only; no firmware execution or changes",
+  "tests": 34,
+  "failures": 0,
+  "errors": 0,
+  "cases": [
+    {
+      "name": "test_01_boundary_prediction_physical_oracle_grid",
+      "status": "pass"
+    },
+    {
+      "name": "test_02_forward_reverse_mapping_offset_and_stereo",
+      "status": "pass"
+    },
+    {
+      "name": "test_03_high_rate_logical_predictor_counterexample",
+      "status": "pass"
+    },
+    {
+      "name": "test_04_startup_truncation_mutant",
+      "status": "pass"
+    },
+    {
+      "name": "test_05_float32_rate_and_sequential_double_additions",
+      "status": "pass"
+    },
+    {
+      "name": "test_06_all_32_early_finish_offsets_and_full_240_ramp",
+      "status": "pass"
+    },
+    {
+      "name": "test_07_low_and_high_rate_zero_before_actual_terminal",
+      "status": "pass"
+    },
+    {
+      "name": "test_08_horizon_must_include_block_rounded_ramp_start",
+      "status": "pass"
+    },
+    {
+      "name": "test_09_full_region_threshold_against_duration_fraction",
+      "status": "pass"
+    },
+    {
+      "name": "test_10_shortened_late_start_has_unity_first_gain",
+      "status": "pass"
+    },
+    {
+      "name": "test_11_barely_eligible_startup_clips_240_span",
+      "status": "pass"
+    },
+    {
+      "name": "test_12_immediate_late_control_shortens_without_prehold",
+      "status": "pass"
+    },
+    {
+      "name": "test_13_no_positive_span_does_not_manufacture_shutdown",
+      "status": "pass"
+    },
+    {
+      "name": "test_14_before_first_audible_block_control_is_not_deferred",
+      "status": "pass"
+    },
+    {
+      "name": "test_15_active_only_deferral_and_completion_latest_wins",
+      "status": "pass"
+    },
+    {
+      "name": "test_16_request_at_completion_overrides_pending_immediately",
+      "status": "pass"
+    },
+    {
+      "name": "test_17_extension_after_completion_resumes_without_noteon",
+      "status": "pass"
+    },
+    {
+      "name": "test_18_unchanged_completion_cannot_rebound",
+      "status": "pass"
+    },
+    {
+      "name": "test_19_queued_short_region_obeys_bypass_at_completion",
+      "status": "pass"
+    },
+    {
+      "name": "test_20_speculation_and_unavailable_output_never_commit",
+      "status": "pass"
+    },
+    {
+      "name": "test_21_partial_load_and_shortage_zero_are_not_terminal",
+      "status": "pass"
+    },
+    {
+      "name": "test_22_start_delay_not_terminal_and_does_not_advance_source",
+      "status": "pass"
+    },
+    {
+      "name": "test_23_looping_passthrough_and_immediate_mode_change",
+      "status": "pass"
+    },
+    {
+      "name": "test_24_stereo_shared_clock_and_no_pcm_history_rewrites",
+      "status": "pass"
+    },
+    {
+      "name": "test_25_nonfinite_rates_bypass_and_zero_gain_clears_nan",
+      "status": "pass"
+    },
+    {
+      "name": "test_26_original_voice_and_firmware_bytes_untouched",
+      "status": "pass"
+    },
+    {
+      "name": "test_27_loaded_batch_identity_not_latest_speculative_read",
+      "status": "pass"
+    },
+    {
+      "name": "test_28_latest_request_revert_cancels_queued_extension",
+      "status": "pass"
+    },
+    {
+      "name": "test_29_note_reuse_drops_old_completion_and_pending",
+      "status": "pass"
+    },
+    {
+      "name": "test_30_direction_change_not_added_to_control_deferral",
+      "status": "pass"
+    },
+    {
+      "name": "test_31_shortage_then_new_anchor_revises_prediction_not_history",
+      "status": "pass"
+    },
+    {
+      "name": "test_32_no_output_during_fade_cancels_deferral_not_history",
+      "status": "pass"
+    },
+    {
+      "name": "test_33_every_block_application_point_is_inside_ramp_or_immediate",
+      "status": "pass"
+    },
+    {
+      "name": "test_34_logical_predictor_mutant_leaks_at_real_terminal_end_to_end",
+      "status": "pass"
+    }
+  ],
+  "metrics": {
+    "oracle_cases": 162,
+    "early_offsets": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      0,
+      1
+    ],
+    "ramp_intervals": [
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240
+    ],
+    "shortened_intervals": [
+      128,
+      224,
+      128
+    ],
+    "max_hold_outputs": 224
+  },
+  "counterexamples": [
+    {
+      "id": "F1-high-rate-ring-alias",
+      "rate": 32,
+      "phase": 9216,
+      "E": 10236,
+      "W_after_load": 10241,
+      "old_T_offset": 32,
+      "actual_T_offset": 0,
+      "old_zero_at": 320,
+      "required_zero_at": 288,
+      "old_gain_at_actual_terminal": 0.13333333333333333
+    },
+    {
+      "id": "F2-floor-startup",
+      "phase": 0.25,
+      "rate": 0.5,
+      "E": 1,
+      "correct_first_hit": 4,
+      "floor_mutant": 6
+    },
+    {
+      "id": "F3-closed-form-rounding",
+      "phase": 1048575.9900000672,
+      "rate_f32": 0.009999999776482582,
+      "E": 1048577,
+      "sequential_hit": 301,
+      "division_ceil_hit": 302
+    },
+    {
+      "id": "F4-short-lookahead",
+      "E": 285,
+      "T": 287,
+      "required_S": 16,
+      "horizon_240_misses_first_fade_block": true,
+      "fixed_horizon": 304
+    },
+    {
+      "id": "F5-fixed-denominator-late-start",
+      "available_span": 128,
+      "old_initial_gain": 0.5333333333333333,
+      "revised_initial_gain": 1.0
+    },
+    {
+      "id": "F6-unity-after-fade-rebound",
+      "raw_filter_value_at_Z": [
+        -0.34409164467939657,
+        -0.08150480252905715
+      ],
+      "correct_output_at_Z": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "F7-forecast-is-not-observed-EOF",
+      "shortage_inputs": 28,
+      "old_E": 300,
+      "actual_E": 328,
+      "old_Z": 288,
+      "revised_Z": 320,
+      "old_early_finish": 42
+    },
+    {
+      "id": "F8-unavailable-return-stale-hold",
+      "request_at": 576,
+      "failure_at": 640,
+      "stalled_clock_while_silent_blocks_pass": true,
+      "fix": "cancel active B5/hold on zero-output return"
+    }
+  ],
+  "limitations": [
+    "Synthetic 13-tap weights and filter, not acoustic validation",
+    "Ordinary stream model, not full legacy loop/splice emulator",
+    "Control timing relative to original block-application points",
+    "No target QNX loader, unwind execution or machine-code patch"
+  ]
+}

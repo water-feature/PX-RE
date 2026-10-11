@@ -1,0 +1,50 @@
+[
+  {
+    "type": 1,
+    "name": "qnx",
+    "header_offset": 1,
+    "payload_offset": 13,
+    "length": 1039304,
+    "revision": [
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "trailer": "0681",
+    "sha256": "a0ee95328e908b4d1aadff6e71ca34e44d1845418bb1e8204372667ed99d62bf"
+  },
+  {
+    "type": 2,
+    "name": "fpga",
+    "header_offset": 1039319,
+    "payload_offset": 1039331,
+    "length": 1581716,
+    "revision": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "trailer": "5977",
+    "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+  },
+  {
+    "type": 3,
+    "name": "pic",
+    "header_offset": 2621049,
+    "payload_offset": 2621061,
+    "length": 530784,
+    "revision": [
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "trailer": "3030",
+    "sha256": "8f3fcbccd5763324e5f0b7d9cc5941df806a9ecb46affa5c18f5f4d1b082a16c"
+  }
+]

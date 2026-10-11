@@ -1,0 +1,29 @@
+{
+  "boundary_rows": 120,
+  "states": [
+    0,
+    1,
+    7,
+    9,
+    15
+  ],
+  "groups": [
+    64,
+    65,
+    96,
+    97
+  ],
+  "categories": [
+    0,
+    16,
+    17
+  ],
+  "extension": "0x80053ae8",
+  "size_initialization_queries": 96,
+  "stock_size_queries": 64,
+  "stock_count_reload_preserved": true,
+  "instruction_words": 637,
+  "placement": "synthetic only; no physical helper placement assigned",
+  "limits": "direct name windows stop before serial I/O; extension population exercised via private writers, not a new serial metadata parser",
+  "stock_sha256": "14e9c9b9dc562b0384fc43b3c5e0eb7fea84a5792d1a19b9b3ea8276ef7646f5"
+}

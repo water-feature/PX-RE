@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "baseline": "2.2.2.1.11",
+  "version": "2.2.2.1.12",
+  "baseline_QNX_sha256": "45ee5d94dddb785f0ffa6e3514d42f05671811a669c5f638414d0cd668d66640",
+  "QNX_sha256": "b411fc94d17683f49d62184e3c794f6e4eea72e7d6ea58edd1b78ff706377ced",
+  "PIC_sha256": "955839db90f004eb893225e41183c11808f6447bdd5c839b4c0a5d88081d3a3a",
+  "QNX_bytes": 1075240,
+  "PIC_bytes": 530784,
+  "QNX_differing_bytes": 951,
+  "PIC_differing_bytes": 2,
+  "allowed_QNX_ranges": [
+    {
+      "start": 1052512,
+      "end": 1053371,
+      "reason": "reviewed design_payload.bin"
+    },
+    {
+      "start": 1058024,
+      "end": 1058212,
+      "reason": "reviewed design_frames.bin"
+    },
+    {
+      "start": 108667,
+      "end": 108679,
+      "reason": "single producer hook; full displaced window"
+    },
+    {
+      "start": 1060864,
+      "end": 1068068,
+      "reason": "unwind index: 897 inherited plus two reviewed FDEs"
+    },
+    {
+      "start": 432,
+      "end": 448,
+      "reason": "GNU_EH_FRAME file/memory sizes"
+    },
+    {
+      "start": 1075144,
+      "end": 1075152,
+      "reason": ".b15_text section size"
+    },
+    {
+      "start": 1075208,
+      "end": 1075216,
+      "reason": ".b15_eh_frame section size"
+    },
+    {
+      "start": 1073416,
+      "end": 1073424,
+      "reason": ".eh_frame_hdr section size"
+    },
+    {
+      "start": 128227,
+      "end": 128228,
+      "reason": "application packed version report: .1.12"
+    },
+    {
+      "start": 151791,
+      "end": 151792,
+      "reason": "application updater fifth-field compare: 12"
+    }
+  ],
+  "reviewed_code_bytes": 859,
+  "reviewed_frame_bytes": 188,
+  "index_growth": 16,
+  "hook_bytes": 12,
+  "inherited_FDEs_unchanged": 897,
+  "total_FDEs": 899,
+  "image_growth": 0,
+  "hardware": "NOT VERIFIED",
+  "diffs": {
+    "QNX": {
+      "ranges": 61,
+      "different_or_added_bytes": 951,
+      "file": "QNX_diff.tsv"
+    },
+    "PIC": {
+      "ranges": 2,
+      "different_or_added_bytes": 2,
+      "file": "PIC_diff.tsv"
+    }
+  }
+}

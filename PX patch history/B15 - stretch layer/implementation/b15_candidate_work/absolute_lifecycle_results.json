@@ -1,0 +1,1558 @@
+{
+  "status": "PASS_MODELED_DEPENDENCIES",
+  "fitted_sha256": "bbaeda4fd2d32602088747caa81d4031fb4607c0073344e3e92fb6bdf00efbfe",
+  "hook_resumes": {
+    "replay": {
+      "overwritten": [
+        "0x9d07c368",
+        "0x9d07c370"
+      ],
+      "stock_resume_targets": [
+        "0x9d07c370"
+      ]
+    },
+    "load": {
+      "overwritten": [
+        "0x9d040418",
+        "0x9d040420"
+      ],
+      "stock_resume_targets": [
+        "0x9d040420"
+      ]
+    },
+    "import": {
+      "overwritten": [
+        "0x9d0744cc",
+        "0x9d0744d4"
+      ],
+      "stock_resume_targets": [
+        "0x9d0744d4"
+      ]
+    },
+    "edit_apply": {
+      "overwritten": [
+        "0x9d046e4c",
+        "0x9d046e54"
+      ],
+      "stock_resume_targets": [
+        "0x9d046e54"
+      ]
+    },
+    "defaults": {
+      "overwritten": [
+        "0x9d04cd14",
+        "0x9d04cd1c"
+      ],
+      "stock_resume_targets": [
+        "0x9d04cd1c"
+      ]
+    },
+    "reset": {
+      "overwritten": [
+        "0x9d07c2ac",
+        "0x9d07c2b4"
+      ],
+      "stock_resume_targets": [
+        "0x9d07c2b4"
+      ]
+    },
+    "compare": {
+      "overwritten": [
+        "0x9d04feb4",
+        "0x9d04febc"
+      ],
+      "stock_resume_targets": [
+        "0x9d04fef4",
+        "0x9d04fec0"
+      ]
+    },
+    "restore": {
+      "overwritten": [
+        "0x9d04ffc4",
+        "0x9d04ffcc"
+      ],
+      "stock_resume_targets": [
+        "0x9d050004",
+        "0x9d04ffd0"
+      ]
+    },
+    "load_bypass": {
+      "call": "0x9d02e238",
+      "target": "0x9d041e10",
+      "resume": "0x9d02e240",
+      "overwritten_bytes": 0
+    },
+    "startup": {
+      "call": "0x9d052d0c",
+      "target": "0x9d000be8",
+      "resume": "0x9d052d14",
+      "overwritten_bytes": 4
+    }
+  },
+  "cases": [
+    {
+      "root": "replay",
+      "entry": "0x9d07c368",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 25889,
+      "stale_during": [
+        {
+          "at": "0x9d07c370",
+          "accepted": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "advanced_pairs": [
+        0,
+        1
+      ],
+      "live_parameter_sha256": "4b17e1a94357b045c13eb846ce25de21136f242d1fcd4b2441770eaa2b95e0ae",
+      "ordinary_commands": 409
+    },
+    {
+      "root": "replay",
+      "entry": "0x9d07c368",
+      "args": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 25849,
+      "stale_during": [
+        {
+          "at": "0x9d07c370",
+          "accepted": [
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        2,
+        3
+      ],
+      "live_parameter_sha256": "4b17e1a94357b045c13eb846ce25de21136f242d1fcd4b2441770eaa2b95e0ae",
+      "ordinary_commands": 408
+    },
+    {
+      "root": "replay",
+      "entry": "0x9d07c368",
+      "args": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 50844,
+      "stale_during": [
+        {
+          "at": "0x9d07c370",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "4b17e1a94357b045c13eb846ce25de21136f242d1fcd4b2441770eaa2b95e0ae",
+      "ordinary_commands": 817
+    },
+    {
+      "root": "compare",
+      "entry": "0x9d04feb4",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0xd6e",
+      "instructions": 11402,
+      "stale_during": [
+        {
+          "at": "0x9d04feec",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "06933801b2551bd0b52bcc86586986b8dd3ddc992db97e4a13a040662a8622ef",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "compare",
+      "entry": "0x9d04feb4",
+      "args": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0xd6e",
+      "instructions": 11402,
+      "stale_during": [
+        {
+          "at": "0x9d04ff30",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "ac66c3139ef8073c60420555cb8aa6a624ba1f81a8fdc8b094a0dc5a8971983e",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "compare",
+      "entry": "0x9d04feb4",
+      "args": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0xd6e",
+      "instructions": 21942,
+      "stale_during": [
+        {
+          "at": "0x9d04feec",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d04ff30",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "b07d396ee7b93de458162f8948671bbf8d433d9d22ccf3ead2f8a029b07492e8",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "restore",
+      "entry": "0x9d04ffc4",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0xd6e",
+      "instructions": 11402,
+      "stale_during": [
+        {
+          "at": "0x9d04fffc",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "48df98cb33b646575142d2824d9a5af63a1c9af317b0257054d08b84f02a6e61",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "restore",
+      "entry": "0x9d04ffc4",
+      "args": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0xd6e",
+      "instructions": 11402,
+      "stale_during": [
+        {
+          "at": "0x9d050040",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "0c6d6495ac9e4a560fbd6319b8df8608ce3f7046db3c1e6170bdf48d4de36ac2",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "restore",
+      "entry": "0x9d04ffc4",
+      "args": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0xd6e",
+      "instructions": 21942,
+      "stale_during": [
+        {
+          "at": "0x9d04fffc",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d050040",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "82ea12fd32a8abaab33e046a223a63f86375490037bd9e1f623ed10e63500272",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "load",
+      "entry": "0x9d040418",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "040230 flash seek/CS",
+        "04e970 metadata/audio reconciliation",
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 152932,
+      "stale_during": [
+        {
+          "at": "0x9d040420",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d0404e8",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "9f5a07efb752008b9d0893e784576837915561047e910b916d4373a76f4735f1",
+      "ordinary_commands": 2
+    },
+    {
+      "root": "load",
+      "entry": "0x9d040418",
+      "args": [
+        4,
+        1,
+        1,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "040230 flash seek/CS",
+        "04e970 metadata/audio reconciliation",
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 158522,
+      "stale_during": [
+        {
+          "at": "0x9d040420",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d0404e8",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "37f191b548320e31e9f5e06ba389d2267942e1b681f52cbff3b2c85fe69f1f8e",
+      "ordinary_commands": 2
+    },
+    {
+      "root": "load",
+      "entry": "0x9d040418",
+      "args": [
+        8,
+        2,
+        2,
+        2
+      ],
+      "initial_IE": 1,
+      "models": [
+        "040230 flash seek/CS",
+        "04e970 metadata/audio reconciliation",
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 237242,
+      "stale_during": [
+        {
+          "at": "0x9d040420",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d0404e8",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "3f3bd1e3a9886b783ca1b34e91003d224bce7378d7a27940f6e4cdda8214d5b7",
+      "ordinary_commands": 2
+    },
+    {
+      "root": "load",
+      "entry": "0x9d040418",
+      "args": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "initial_IE": 1,
+      "models": [
+        "040230 flash seek/CS",
+        "04e970 metadata/audio reconciliation",
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 156570,
+      "stale_during": [
+        {
+          "at": "0x9d040420",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "07fa09524417775596af2365fc4f57317e6f779d41b653e7a601f09224d720d0",
+      "ordinary_commands": 2
+    },
+    {
+      "root": "import",
+      "entry": "0x9d0744cc",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport",
+        "078878 SysEx input (seven bytes)"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 148922,
+      "stale_during": [
+        {
+          "at": "0x9d0744d4",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d074530",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d074564",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "194d84b1b1e344c92b15ae5127c717e508b6568714c72119907a04baff0fd655",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "edit_apply",
+      "entry": "0x9d046e4c",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "040230 flash seek/CS",
+        "04e970 metadata/audio reconciliation",
+        "075c24 physical transport",
+        "07636c hardware gain programming",
+        "0794d0 group-info completion flag (modeled IRQ response)",
+        "0795b8/07960c query completion flag (modeled IRQ response)",
+        "07f4b0 hardware float gain programming",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x1",
+      "instructions": 103828,
+      "stale_during": [
+        {
+          "at": "0x9d046e54",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d07c370",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "d030895635d82eb1d7da990597b653f399c00041c772731c80d054c7cb7afc54",
+      "ordinary_commands": 833
+    },
+    {
+      "root": "defaults",
+      "entry": "0x9d04cd14",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport",
+        "07636c hardware gain programming",
+        "07f4b0 hardware float gain programming",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 78220,
+      "stale_during": [
+        {
+          "at": "0x9d04cd1c",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d04cdc4",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d04cdd8",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "00f3046915f518fbf6b43d0abdf111ddcb61a05d2c70f7d84f18a8ae6a8d2c3b",
+      "ordinary_commands": 2
+    },
+    {
+      "root": "reset",
+      "entry": "0x9d07c2ac",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 14892,
+      "stale_during": [
+        {
+          "at": "0x9d07c2b4",
+          "accepted": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "advanced_pairs": [
+        0,
+        1
+      ],
+      "live_parameter_sha256": "4b17e1a94357b045c13eb846ce25de21136f242d1fcd4b2441770eaa2b95e0ae",
+      "ordinary_commands": 386
+    },
+    {
+      "root": "load_bypass",
+      "entry": "0x9d02e238",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "040230 flash seek/CS",
+        "04e970 metadata/audio reconciliation",
+        "075c24 physical transport",
+        "07636c hardware gain programming",
+        "0794d0 group-info completion flag (modeled IRQ response)",
+        "0795b8/07960c query completion flag (modeled IRQ response)",
+        "07f4b0 hardware float gain programming",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x1",
+      "instructions": 245220,
+      "stale_during": [
+        {
+          "at": "0x9d0404e8",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d07c370",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "402e9c05fa6bb9eae9092b9c72926bc32b21682721840e11f566df50d11c03e9",
+      "ordinary_commands": 831
+    },
+    {
+      "root": "startup",
+      "entry": "0x9d052d0c",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 1,
+      "models": [
+        "075c24 physical transport",
+        "07636c hardware gain programming",
+        "07f4b0 hardware float gain programming",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 77928,
+      "stale_during": [
+        {
+          "at": "0x9d04cd1c",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d04cdc4",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d04cdd8",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "00f3046915f518fbf6b43d0abdf111ddcb61a05d2c70f7d84f18a8ae6a8d2c3b",
+      "ordinary_commands": 2
+    },
+    {
+      "root": "replay",
+      "entry": "0x9d07c368",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 0,
+      "models": [
+        "075c24 physical transport",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 25889,
+      "stale_during": [
+        {
+          "at": "0x9d07c370",
+          "accepted": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "advanced_pairs": [
+        0,
+        1
+      ],
+      "live_parameter_sha256": "4b17e1a94357b045c13eb846ce25de21136f242d1fcd4b2441770eaa2b95e0ae",
+      "ordinary_commands": 409
+    },
+    {
+      "root": "load",
+      "entry": "0x9d040418",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 0,
+      "models": [
+        "040230 flash seek/CS",
+        "04e970 metadata/audio reconciliation",
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 152932,
+      "stale_during": [
+        {
+          "at": "0x9d040420",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d0404e8",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "9f5a07efb752008b9d0893e784576837915561047e910b916d4373a76f4735f1",
+      "ordinary_commands": 2
+    },
+    {
+      "root": "import",
+      "entry": "0x9d0744cc",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 0,
+      "models": [
+        "075c24 physical transport",
+        "078878 SysEx input (seven bytes)"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 148922,
+      "stale_during": [
+        {
+          "at": "0x9d0744d4",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d074530",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d074564",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "194d84b1b1e344c92b15ae5127c717e508b6568714c72119907a04baff0fd655",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "edit_apply",
+      "entry": "0x9d046e4c",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 0,
+      "models": [
+        "040230 flash seek/CS",
+        "04e970 metadata/audio reconciliation",
+        "075c24 physical transport",
+        "07636c hardware gain programming",
+        "0794d0 group-info completion flag (modeled IRQ response)",
+        "0795b8/07960c query completion flag (modeled IRQ response)",
+        "07f4b0 hardware float gain programming",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x1",
+      "instructions": 103828,
+      "stale_during": [
+        {
+          "at": "0x9d046e54",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d07c370",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "d030895635d82eb1d7da990597b653f399c00041c772731c80d054c7cb7afc54",
+      "ordinary_commands": 833
+    },
+    {
+      "root": "defaults",
+      "entry": "0x9d04cd14",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 0,
+      "models": [
+        "075c24 physical transport",
+        "07636c hardware gain programming",
+        "07f4b0 hardware float gain programming",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 78220,
+      "stale_during": [
+        {
+          "at": "0x9d04cd1c",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d04cdc4",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d04cdd8",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "00f3046915f518fbf6b43d0abdf111ddcb61a05d2c70f7d84f18a8ae6a8d2c3b",
+      "ordinary_commands": 2
+    },
+    {
+      "root": "reset",
+      "entry": "0x9d07c2ac",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 0,
+      "models": [
+        "075c24 physical transport",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 14892,
+      "stale_during": [
+        {
+          "at": "0x9d07c2b4",
+          "accepted": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "advanced_pairs": [
+        0,
+        1
+      ],
+      "live_parameter_sha256": "4b17e1a94357b045c13eb846ce25de21136f242d1fcd4b2441770eaa2b95e0ae",
+      "ordinary_commands": 386
+    },
+    {
+      "root": "compare",
+      "entry": "0x9d04feb4",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 0,
+      "models": [
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0xd6e",
+      "instructions": 11402,
+      "stale_during": [
+        {
+          "at": "0x9d04feec",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "06933801b2551bd0b52bcc86586986b8dd3ddc992db97e4a13a040662a8622ef",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "restore",
+      "entry": "0x9d04ffc4",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 0,
+      "models": [
+        "075c24 physical transport"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0xd6e",
+      "instructions": 11402,
+      "stale_during": [
+        {
+          "at": "0x9d04fffc",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "48df98cb33b646575142d2824d9a5af63a1c9af317b0257054d08b84f02a6e61",
+      "ordinary_commands": 0
+    },
+    {
+      "root": "startup",
+      "entry": "0x9d052d0c",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_IE": 0,
+      "models": [
+        "075c24 physical transport",
+        "07636c hardware gain programming",
+        "07f4b0 hardware float gain programming",
+        "081194 delay/time"
+      ],
+      "status": "PASS_MODELED_DEPENDENCIES",
+      "stock_body_executed": true,
+      "baseline_equivalent": true,
+      "return_value": "0x0",
+      "instructions": 77928,
+      "stale_during": [
+        {
+          "at": "0x9d04cd1c",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d04cdc4",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "at": "0x9d04cdd8",
+          "accepted": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "stale_after_accepted": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "advanced_pairs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "live_parameter_sha256": "00f3046915f518fbf6b43d0abdf111ddcb61a05d2c70f7d84f18a8ae6a8d2c3b",
+      "ordinary_commands": 2
+    }
+  ],
+  "method": "Real fitted root and stock lifecycle body execution; same seeded state/dependency contracts on baseline1.7; compare complete live parameter arrays, ordinary command transcript, delays, return, continuation stack/callee-saved registers and Status. Old feedback delivered before, during and after via emitted receiver, with no fresh B15 feedback.",
+  "limits": "Seeded callers/data, modeled SPI readiness/content, SysEx input, physical transport, device query IRQ completion, metadata/audio reconciliation and gain hardware. No actual IRQ, file medium, QNX runtime, hardware or full outer UI/startup execution. No-reply hardware waits and every possible stock input/failure route are NOT VERIFIED."
+}

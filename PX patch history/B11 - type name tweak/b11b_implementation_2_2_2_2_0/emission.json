@@ -1,0 +1,59 @@
+{
+  "status": "EMITTED_REQUIRES_VALIDATION",
+  "revision": [
+    2,
+    2,
+    2,
+    2,
+    0
+  ],
+  "baseline": "exact 2.2.2.1.15",
+  "baseline_package_sha256": "ebb2aebbd0decdadce92ed40d257e0cb03ebbf7aecf3e05749d9533fd5603450",
+  "baseline_PIC_sha256": "be8eb8ac823a639f3024b97e01b017ef0cef5f33d086eaa71dfe55d4b0e34622",
+  "baseline_QNX_sha256": "dd9efbcd2804e02cc4599e72d2ee90f996facce1fa06f1815a0078270566a2fa",
+  "PIC_sha256": "caa2a19d9a246aaeded2debd6b373490fee06f035d101373c24ec188456f6612",
+  "QNX_sha256": "dcc77bdaff17f99288182ffb4927e85dcb76de597f8c5906a4078df8f5b14d16",
+  "owned_ranges": [
+    [
+      "0x9d02a74c",
+      "0x9d02a794"
+    ],
+    [
+      "0x9d02d428",
+      "0x9d02d464"
+    ],
+    [
+      "0x9d02dd08",
+      "0x9d02dd2c"
+    ],
+    [
+      "0x9d02def8",
+      "0x9d02df1c"
+    ]
+  ],
+  "active_layout_bytes": 200,
+  "allocated_layout_bytes": 204,
+  "clamp_call_sites": [
+    "0x9d04debc",
+    "0x9d04e010",
+    "0x9d04e54c",
+    "0x9d04e624"
+  ],
+  "PIC_changed_bytes": 191,
+  "QNX_changed_bytes": 3,
+  "PIC_revision_word_offsets": [
+    "0x1394",
+    "0x13a0",
+    "0x258b4",
+    "0x51bc4"
+  ],
+  "QNX_revision_byte_offsets": [
+    "0x1f4e3",
+    "0x250e2",
+    "0x250ef"
+  ],
+  "behavior_matches_frozen_approved_layout": true,
+  "outside_ownership_and_metadata_unchanged": true,
+  "cache_correction_included": false,
+  "flashed": false
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "factory_sha256": "a4b304b3bb48ca933ae63c99c0098698c497ebfc7c38ab2a823b5e0df4919fa9",
+  "final_sha256": "488444589607a1b4e793a8d8f79a67c5bd50773b722c302e6d80bc1db77b4b7c",
+  "final_bytes": 3187784,
+  "round_trip_identical": true,
+  "FPGA_record_unchanged": true,
+  "component_sha256": {
+    "1": "23175d047f8ac0bace3566f2da0a49f920d43d699de03635cdf20836c3f0838a",
+    "2": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+    "3": "8964e630a929e608aa0d3f368f55b97718e7cbf8ef79afbd5ee21e71fc40822a"
+  },
+  "staged_source_inventory_sha256": "e0b6a1db6f2350736ea13d691067725991ecdb77cac4d31c37a0f1cc11b86d5b",
+  "verification_date": "2026-10-11",
+  "accepted_reference_byte_comparison": "PASS: identical",
+  "source_only_full_build": "PASS",
+  "public_entry_point_full_build": "PASS",
+  "factory_null_repack": "PASS: identical",
+  "cli_guard_checks": [
+    {
+      "case": "wrong factory",
+      "status": "PASS"
+    },
+    {
+      "case": "existing output",
+      "status": "PASS"
+    },
+    {
+      "case": "output in public tree",
+      "status": "PASS"
+    },
+    {
+      "case": "assertions disabled",
+      "status": "PASS"
+    }
+  ],
+  "environment": {
+    "platform": "Apple silicon macOS",
+    "python": "3.14.3",
+    "clang": "Apple clang 16.0.0 (clang-1600.0.26.6)",
+    "rustc": "1.83.0",
+    "host_fixtures": "x86_64 under Rosetta"
+  },
+  "new_hardware_test": "NOT PERFORMED; byte identity connects output to accepted package",
+  "private_B7_branch_target_trace_review_reexecuted": false
+}

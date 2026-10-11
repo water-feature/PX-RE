@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "package_bytes": 3151848,
+  "PIC_changed_byte_count": 340,
+  "accounted_patch_words": 90,
+  "PIC_payload_growth": 0,
+  "transport_checksum_blocks_decoded": 130,
+  "final_block_bytes": 2400,
+  "valid_and_corrupt_block_checksum_comparisons": 260,
+  "application_checksum": "057d",
+  "FPGA_checksum": "5977",
+  "PIC_container_trailer": "3030",
+  "package_sha256": "c7e2e03999ca4590c99c3ba18a518f93f073ee8a619c84371677c7f6cd2c8e7f",
+  "limitations": "Checksum arithmetic/compare fragments executed; USB, full updater transport and post-reset installation were not emulated."
+}

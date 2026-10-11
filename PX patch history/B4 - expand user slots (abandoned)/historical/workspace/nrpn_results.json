@@ -1,0 +1,194 @@
+[
+  {
+    "parameter": "0x22",
+    "value": 0,
+    "bytes": "b06300b06222b00600b02600",
+    "received_value": 0
+  },
+  {
+    "parameter": "0x22",
+    "value": 64,
+    "bytes": "b06300b06222b00600b02640",
+    "received_value": 64
+  },
+  {
+    "parameter": "0x22",
+    "value": 65,
+    "bytes": "b06300b06222b00600b02641",
+    "received_value": 65
+  },
+  {
+    "parameter": "0x22",
+    "value": 96,
+    "bytes": "b06300b06222b00600b02660",
+    "received_value": 96
+  },
+  {
+    "parameter": "0x22",
+    "value": 127,
+    "bytes": "b06300b06222b00600b0267f",
+    "received_value": 127
+  },
+  {
+    "parameter": "0x22",
+    "value": 128,
+    "bytes": "b06300b06222b00601b02600",
+    "received_value": 128
+  },
+  {
+    "parameter": "0x22",
+    "value": 132,
+    "bytes": "b06300b06222b00601b02604",
+    "received_value": 132
+  },
+  {
+    "parameter": "0x22",
+    "value": 255,
+    "bytes": "b06300b06222b00601b0267f",
+    "received_value": 255
+  },
+  {
+    "parameter": "0x63",
+    "value": 0,
+    "bytes": "b06300b06263b00600b02600",
+    "received_value": 0
+  },
+  {
+    "parameter": "0x63",
+    "value": 64,
+    "bytes": "b06300b06263b00600b02640",
+    "received_value": 64
+  },
+  {
+    "parameter": "0x63",
+    "value": 65,
+    "bytes": "b06300b06263b00600b02641",
+    "received_value": 65
+  },
+  {
+    "parameter": "0x63",
+    "value": 96,
+    "bytes": "b06300b06263b00600b02660",
+    "received_value": 96
+  },
+  {
+    "parameter": "0x63",
+    "value": 127,
+    "bytes": "b06300b06263b00600b0267f",
+    "received_value": 127
+  },
+  {
+    "parameter": "0x63",
+    "value": 128,
+    "bytes": "b06300b06263b00601b02600",
+    "received_value": 128
+  },
+  {
+    "parameter": "0x63",
+    "value": 132,
+    "bytes": "b06300b06263b00601b02604",
+    "received_value": 132
+  },
+  {
+    "parameter": "0x63",
+    "value": 255,
+    "bytes": "b06300b06263b00601b0267f",
+    "received_value": 255
+  },
+  {
+    "parameter": "0x822",
+    "value": 0,
+    "bytes": "b06310b06222b00600b02600",
+    "received_value": 0
+  },
+  {
+    "parameter": "0x822",
+    "value": 64,
+    "bytes": "b06310b06222b00600b02640",
+    "received_value": 64
+  },
+  {
+    "parameter": "0x822",
+    "value": 65,
+    "bytes": "b06310b06222b00600b02641",
+    "received_value": 65
+  },
+  {
+    "parameter": "0x822",
+    "value": 96,
+    "bytes": "b06310b06222b00600b02660",
+    "received_value": 96
+  },
+  {
+    "parameter": "0x822",
+    "value": 127,
+    "bytes": "b06310b06222b00600b0267f",
+    "received_value": 127
+  },
+  {
+    "parameter": "0x822",
+    "value": 128,
+    "bytes": "b06310b06222b00601b02600",
+    "received_value": 128
+  },
+  {
+    "parameter": "0x822",
+    "value": 132,
+    "bytes": "b06310b06222b00601b02604",
+    "received_value": 132
+  },
+  {
+    "parameter": "0x822",
+    "value": 255,
+    "bytes": "b06310b06222b00601b0267f",
+    "received_value": 255
+  },
+  {
+    "parameter": "0x863",
+    "value": 0,
+    "bytes": "b06310b06263b00600b02600",
+    "received_value": 0
+  },
+  {
+    "parameter": "0x863",
+    "value": 64,
+    "bytes": "b06310b06263b00600b02640",
+    "received_value": 64
+  },
+  {
+    "parameter": "0x863",
+    "value": 65,
+    "bytes": "b06310b06263b00600b02641",
+    "received_value": 65
+  },
+  {
+    "parameter": "0x863",
+    "value": 96,
+    "bytes": "b06310b06263b00600b02660",
+    "received_value": 96
+  },
+  {
+    "parameter": "0x863",
+    "value": 127,
+    "bytes": "b06310b06263b00600b0267f",
+    "received_value": 127
+  },
+  {
+    "parameter": "0x863",
+    "value": 128,
+    "bytes": "b06310b06263b00601b02600",
+    "received_value": 128
+  },
+  {
+    "parameter": "0x863",
+    "value": 132,
+    "bytes": "b06310b06263b00601b02604",
+    "received_value": 132
+  },
+  {
+    "parameter": "0x863",
+    "value": 255,
+    "bytes": "b06310b06263b00601b0267f",
+    "received_value": 255
+  }
+]

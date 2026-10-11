@@ -1,0 +1,14 @@
+{
+  "encoding": "PASS: LLVM matches 51 words; zero relocations",
+  "actual_routing_and_setter_cases": 18366,
+  "owned_replacement_bytes": 204,
+  "unplaced_fragment_bytes": 0,
+  "total_fragments_bytes": 204,
+  "active_fragment_bytes": 200,
+  "helper_allocated_bytes": 52,
+  "helper_contiguous_active_bytes": 48,
+  "setter_call_replacements_bytes": 16,
+  "firmware_modified": false,
+  "implementation_approval_required": true,
+  "reason": "All fragments within the four established owned ranges; hardware validation follows an approved implementation"
+}

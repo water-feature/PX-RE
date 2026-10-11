@@ -1,0 +1,27 @@
+
+Elf file type is DYN (Shared object file)
+Entry point 0x81a0
+There are 8 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0x0000000000000040 0x0000000000000040 0x0001c0 0x0001c0 R E 0x8
+  INTERP         0x000200 0x0000000000000200 0x0000000000000200 0x000017 0x000017 R   0x1
+      [Requesting program interpreter: /usr/lib/ldqnx-64.so.2]
+  LOAD           0x000000 0x0000000000000000 0x0000000000000000 0x09d480 0x09d480 R E 0x200000
+  LOAD           0x09e2b8 0x000000000029e2b8 0x000000000029e2b8 0x0061d8 0x013bf8 RW  0x200000
+  DYNAMIC        0x09f838 0x000000000029f838 0x000000000029f838 0x0001f0 0x0001f0 RW  0x8
+  NOTE           0x000218 0x0000000000000218 0x0000000000000218 0x000038 0x000038 R   0x4
+  GNU_EH_FRAME   0x091590 0x0000000000091590 0x0000000000091590 0x001a44 0x001a44 R   0x4
+  GNU_RELRO      0x09e2b8 0x000000000029e2b8 0x000000000029e2b8 0x001d48 0x001d48 R   0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .interp 
+   02     .interp .note .note.gnu.build-id .gnu.hash .dynsym .dynstr .rela.dyn .rela.plt .init .plt .text .fini .rodata .eh_frame_hdr .eh_frame .gcc_except_table 
+   03     .init_array .fini_array .jcr .data.rel.ro .dynamic .got .data .bss 
+   04     .dynamic 
+   05     .note .note.gnu.build-id 
+   06     .eh_frame_hdr 
+   07     .init_array .fini_array .jcr .data.rel.ro .dynamic .got 

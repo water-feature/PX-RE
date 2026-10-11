@@ -1,0 +1,200 @@
+{
+  "status": "EMITTED_NOT_YET_VALIDATED",
+  "baseline_sha256": "b411fc94d17683f49d62184e3c794f6e4eea72e7d6ea58edd1b78ff706377ced",
+  "sha256": "dd9efbcd2804e02cc4599e72d2ee90f996facce1fa06f1815a0078270566a2fa",
+  "symbols": {
+    "image_anchor": 1053376,
+    "read_resume": 260168,
+    "update_resume": 268406,
+    "close_resume": 271640,
+    "open_resume": 273622,
+    "original_fade": 258800,
+    "local_read": 258176,
+    "allocate": 286976,
+    "entry_allocate": 1053376,
+    "entry_read": 1053404,
+    "entry_update": 1053494,
+    "entry_fade": 1053709,
+    "original_read": 1054160,
+    "original_update": 1054173,
+    "fade_hook": 1054184,
+    "reverse_read_hook": 1054283,
+    "close_hook": 1054345,
+    "open_hook": 1054382
+  },
+  "text_end": 1054411,
+  "frame_end": 1058684,
+  "new_FDEs": [
+    [
+      1053376,
+      1058236
+    ],
+    [
+      1053404,
+      1058264
+    ],
+    [
+      1053494,
+      1058284
+    ],
+    [
+      1053709,
+      1058356
+    ],
+    [
+      1054160,
+      1058508
+    ],
+    [
+      1054173,
+      1058548
+    ],
+    [
+      1054184,
+      1058568
+    ],
+    [
+      1054283,
+      1058592
+    ],
+    [
+      1054345,
+      1058616
+    ],
+    [
+      1054382,
+      1058640
+    ]
+  ],
+  "inherited_FDEs": 899,
+  "allowed_ranges": [
+    [
+      1053376,
+      1054150,
+      ".text"
+    ],
+    [
+      1058212,
+      1058484,
+      ".eh_frame"
+    ],
+    [
+      1054160,
+      1054411,
+      ".text"
+    ],
+    [
+      1058484,
+      1058684,
+      ".eh_frame"
+    ],
+    [
+      260160,
+      260168,
+      "entry_read"
+    ],
+    [
+      268400,
+      268406,
+      "entry_update"
+    ],
+    [
+      271632,
+      271640,
+      "close_hook"
+    ],
+    [
+      273617,
+      273622,
+      "open_hook"
+    ],
+    [
+      258077,
+      258082,
+      "entry_allocate"
+    ],
+    [
+      265159,
+      265164,
+      "reverse_read_hook"
+    ],
+    [
+      263535,
+      263540,
+      "fade_hook"
+    ],
+    [
+      264265,
+      264270,
+      "fade_hook"
+    ],
+    [
+      265821,
+      265826,
+      "fade_hook"
+    ],
+    [
+      266105,
+      266110,
+      "fade_hook"
+    ],
+    [
+      264912,
+      264917,
+      "fade_hook"
+    ],
+    [
+      265255,
+      265260,
+      "fade_hook"
+    ],
+    [
+      261497,
+      261502,
+      "fade_hook"
+    ],
+    [
+      267152,
+      267157,
+      "fade_hook"
+    ],
+    [
+      1060864,
+      1068148,
+      "unwind index"
+    ],
+    [
+      432,
+      448,
+      "unwind sizes"
+    ],
+    [
+      1075144,
+      1075152,
+      ".b15_text size"
+    ],
+    [
+      1075208,
+      1075216,
+      ".b15_eh_frame size"
+    ],
+    [
+      1073416,
+      1073424,
+      ".eh_frame_hdr size"
+    ],
+    [
+      128227,
+      128228,
+      "revision .15"
+    ],
+    [
+      151791,
+      151792,
+      "updater .15"
+    ]
+  ],
+  "changed_bytes": 1395,
+  "per_reader_bytes": 16,
+  "additional_audio_buffers": 0
+}

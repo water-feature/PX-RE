@@ -1,0 +1,114 @@
+{
+  "file_name": "PxUpdate_V2.2.2.0.1.bin",
+  "file_bytes": 3099064,
+  "sha256": "d2775bd0e017e4442ce7d5bbc7d089022a1cf8c02714d89427462938e934d166",
+  "baseline_voice_fade_sha256": "f6b5205fc40e635305445bb19dd1a41d12f2ee4c64b7284ccd432868ef0c5898",
+  "app_header_version": [
+    2,
+    2,
+    2,
+    0,
+    1
+  ],
+  "app_checksum": "0xF14B",
+  "pic_header_and_reported_version": [
+    2,
+    2,
+    2,
+    1,
+    0
+  ],
+  "pic_payload_sha256": "2f746346fa1e592795fd243a9866a8019e69c2d97ab3d674204bb7f5022ef0cc",
+  "pic_container_trailer": "0x3030 (preserved; consumed without validation by inspected type3 parser)",
+  "changed_bytes_relative_to_voice_fade": 39,
+  "changed_raw_offsets": [
+    "0x27304e",
+    "0x274255",
+    "0x274256",
+    "0x274257",
+    "0x274258",
+    "0x274259",
+    "0x27425a",
+    "0x27425b",
+    "0x27425c",
+    "0x27425d",
+    "0x27425e",
+    "0x27425f",
+    "0x274260",
+    "0x274261",
+    "0x274262",
+    "0x274263",
+    "0x274264",
+    "0x274265",
+    "0x274266",
+    "0x274267",
+    "0x274268",
+    "0x274269",
+    "0x27426a",
+    "0x27426b",
+    "0x27426c",
+    "0x27426d",
+    "0x27426e",
+    "0x27426f",
+    "0x274270",
+    "0x274271",
+    "0x274272",
+    "0x274273",
+    "0x274274",
+    "0x298909",
+    "0x29c605",
+    "0x29c606",
+    "0x29c607",
+    "0x29c608",
+    "0x2c4c19"
+  ],
+  "pic_instruction_changes": {
+    "0x9d0295b0": {
+      "old": "0xf417b93",
+      "new": "0xb400480"
+    },
+    "0x9d001200": {
+      "old": "0xffffffff",
+      "new": "0x90a30005"
+    },
+    "0x9d001204": {
+      "old": "0xffffffff",
+      "new": "0x386300f0"
+    },
+    "0x9d001208": {
+      "old": "0xffffffff",
+      "new": "0x10600003"
+    },
+    "0x9d00120c": {
+      "old": "0xffffffff",
+      "new": "0x1021"
+    },
+    "0x9d001210": {
+      "old": "0xffffffff",
+      "new": "0xf417b93"
+    },
+    "0x9d001214": {
+      "old": "0xffffffff",
+      "new": "0x90a40004"
+    },
+    "0x9d001218": {
+      "old": "0xffffffff",
+      "new": "0xb40a56e"
+    },
+    "0x9d00121c": {
+      "old": "0xffffffff",
+      "new": "0x0"
+    },
+    "0x9d0258b4": {
+      "old": "0x24842220",
+      "new": "0x24842221"
+    },
+    "0x9d051bc4": {
+      "old": "0x24842220",
+      "new": "0x24842221"
+    }
+  },
+  "qnx_and_fpga_records_identical": true,
+  "hardware_tested": false,
+  "scope": "offline candidate; receiver queue/serial-flash programming and unseen internal copier not hardware validated"
+}

@@ -1,0 +1,72 @@
+{
+  "scope": "Standalone object instruction/CFI consistency, not QNX unwinder runtime",
+  "functions": 12,
+  "instruction_cfa_checks": 1142,
+  "aligned_call_sites": 21,
+  "details": [
+    {
+      "function": "b5_hook_forward",
+      "instruction_cfa_checks": 73,
+      "max_saved_stack_bytes": 384
+    },
+    {
+      "function": "b5_hook_reverse",
+      "instruction_cfa_checks": 73,
+      "max_saved_stack_bytes": 384
+    },
+    {
+      "function": "b5_hook_geometry",
+      "instruction_cfa_checks": 73,
+      "max_saved_stack_bytes": 384
+    },
+    {
+      "function": "b5_hook_prepare",
+      "instruction_cfa_checks": 73,
+      "max_saved_stack_bytes": 384
+    },
+    {
+      "function": "b5_hook_note_on",
+      "instruction_cfa_checks": 73,
+      "max_saved_stack_bytes": 384
+    },
+    {
+      "function": "b5_hook_reset",
+      "instruction_cfa_checks": 76,
+      "max_saved_stack_bytes": 392
+    },
+    {
+      "function": "b5_hook_return",
+      "instruction_cfa_checks": 72,
+      "max_saved_stack_bytes": 384
+    },
+    {
+      "function": "b5_hook_eof",
+      "instruction_cfa_checks": 73,
+      "max_saved_stack_bytes": 384
+    },
+    {
+      "function": "b5_wrap_read",
+      "instruction_cfa_checks": 139,
+      "max_saved_stack_bytes": 400
+    },
+    {
+      "function": "b5_wrap_load",
+      "instruction_cfa_checks": 139,
+      "max_saved_stack_bytes": 400
+    },
+    {
+      "function": "b5_wrap_filter",
+      "instruction_cfa_checks": 139,
+      "max_saved_stack_bytes": 400
+    },
+    {
+      "function": "b5_wrap_publish",
+      "instruction_cfa_checks": 139,
+      "max_saved_stack_bytes": 400
+    }
+  ],
+  "pending": [
+    "combined relocated frame/index validation at an authorized placement",
+    "QNX unwinder/runtime"
+  ]
+}

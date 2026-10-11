@@ -1,0 +1,2402 @@
+[
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 64
+  },
+  {
+    "max": 64,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 66
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 95
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 66
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 95
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 66
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 95
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 66
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 95
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 96
+  },
+  {
+    "max": 96,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 66
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 97
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 95
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 131
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 66
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 97
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 95
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x22",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 131
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 66
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 97
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 95
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 0,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 131
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xffff",
+    "setter_value": 1
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 0,
+    "message_value": "0xfff3",
+    "setter_value": 0
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xffff",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 64,
+    "message_value": "0xfff3",
+    "setter_value": 63
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xffff",
+    "setter_value": 66
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 65,
+    "message_value": "0xfff3",
+    "setter_value": 64
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xffff",
+    "setter_value": 97
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 96,
+    "message_value": "0xfff3",
+    "setter_value": 95
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x41",
+    "setter_value": 65
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x60",
+    "setter_value": 96
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0x84",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xffff",
+    "setter_value": 132
+  },
+  {
+    "max": 132,
+    "parameter": "0x63",
+    "part": 1,
+    "current": 132,
+    "message_value": "0xfff3",
+    "setter_value": 131
+  }
+]

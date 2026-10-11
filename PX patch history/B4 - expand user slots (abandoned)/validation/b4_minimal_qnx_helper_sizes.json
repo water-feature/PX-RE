@@ -1,0 +1,72 @@
+{
+  "helpers": [
+    {
+      "name": "b4_cache_init",
+      "offset": 0,
+      "size": 42,
+      "proposed_va": "0x9d480"
+    },
+    {
+      "name": "b4_size_front",
+      "offset": 42,
+      "size": 49,
+      "proposed_va": "0x9d4aa"
+    },
+    {
+      "name": "b4_size_store_base",
+      "offset": 91,
+      "size": 25,
+      "proposed_va": "0x9d4db"
+    },
+    {
+      "name": "b4_copy_cache_base",
+      "offset": 116,
+      "size": 25,
+      "proposed_va": "0x9d4f4"
+    },
+    {
+      "name": "b4_delete_cache_base",
+      "offset": 141,
+      "size": 25,
+      "proposed_va": "0x9d50d"
+    },
+    {
+      "name": "b4_direct_size_guard",
+      "offset": 166,
+      "size": 18,
+      "proposed_va": "0x9d526"
+    },
+    {
+      "name": "b4_copy_group_guard",
+      "offset": 184,
+      "size": 23,
+      "proposed_va": "0x9d538"
+    },
+    {
+      "name": "b4_release_guard",
+      "offset": 207,
+      "size": 40,
+      "proposed_va": "0x9d54f"
+    },
+    {
+      "name": "b4_index_guard",
+      "offset": 247,
+      "size": 40,
+      "proposed_va": "0x9d577"
+    },
+    {
+      "name": "b4_update_guard",
+      "offset": 287,
+      "size": 43,
+      "proposed_va": "0x9d59f"
+    },
+    {
+      "name": "b4_count_reply_guard",
+      "offset": 330,
+      "size": 29,
+      "proposed_va": "0x9d5ca"
+    }
+  ],
+  "total_text_bytes": 359,
+  "limitation": "Unlinked assembly sizing object; no firmware built. No new calls or stack changes in helpers."
+}

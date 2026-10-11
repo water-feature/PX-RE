@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "emitted_width_instruction_cases": 16330,
+  "actual_getters_clipping_draw_argument_cases": 3024,
+  "representative": [
+    {
+      "raw": 0,
+      "halfwidth": 7,
+      "unclipped_draw": [
+        "0x9d0686bc",
+        121,
+        21,
+        135,
+        35
+      ]
+    },
+    {
+      "raw": 1,
+      "halfwidth": 15,
+      "unclipped_draw": [
+        "0x9d0686bc",
+        113,
+        21,
+        143,
+        35
+      ]
+    },
+    {
+      "raw": 16,
+      "halfwidth": 3,
+      "unclipped_draw": [
+        "0x9d0686bc",
+        125,
+        21,
+        131,
+        35
+      ]
+    },
+    {
+      "raw": 17,
+      "halfwidth": 1,
+      "unclipped_draw": [
+        "0x9d0686bc",
+        127,
+        21,
+        129,
+        35
+      ]
+    }
+  ],
+  "limits": [
+    "Scoped interpreter, not a complete PIC emulator",
+    "Drawing I/O intercepted; panel pixels and hardware not tested",
+    "General recovery independence remains NOT VERIFIED"
+  ]
+}

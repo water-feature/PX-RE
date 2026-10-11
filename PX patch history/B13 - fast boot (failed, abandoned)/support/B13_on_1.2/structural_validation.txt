@@ -1,0 +1,15 @@
+candidate sha256 9b1662cfdff70e76b9ba38c6de9ee78f07f1f782a07d1e311cabc26583bd4b20
+changed bytes 458
+application-report-revision 0x1f4e3-0x1f4e4 changed=1/1
+application-gate-revision 0x250ef-0x250f0 changed=1/1
+startup-call-disp      0x3527d-0x35281 changed=4/4
+helper-text            0xf9240-0xf93c6 changed=354/390
+helper-cfi+terminator  0xfa528-0xfa594 changed=83/108
+eh-count               0xfb008-0xfb00c changed=1/4
+eh-index-entry         0xfcb3c-0xfcb44 changed=8/8
+ph-filesz              0x1b0-0x1b8 changed=1/8
+ph-memsz               0x1b8-0x1c0 changed=1/8
+sh14-size              0xfd528-0xfd530 changed=1/8
+sh39-size              0xfdb68-0xfdb70 changed=2/8
+sh40-size              0xfdba8-0xfdbb0 changed=1/8
+ALL STRUCTURAL CHECKS PASS

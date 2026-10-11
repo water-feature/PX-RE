@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "c8bead4c8d7cee282af0d2bd7269a6816910d0fe4029473ab57afcbbcdd516e5",
+  "service_cases": 462,
+  "during_dispatch_races": 2,
+  "instruction_boundary_races": 39,
+  "decoder_cases": 65536,
+  "ideal_quadrature_sweeps": 42,
+  "B9_helper_and_hooks_preserved": true,
+  "outside_allowlist_identical": true,
+  "limits": "Mock synchronous event consumer; bounded instruction model, no silicon timing or mechanical detent calibration. Signed reversal cancellation retained."
+}

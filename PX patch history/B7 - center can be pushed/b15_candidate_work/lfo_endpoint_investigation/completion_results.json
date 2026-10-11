@@ -1,0 +1,9 @@
+{
+  "baseline": "b14_sample_acceleration_work/voice_2.2.2.1.10_B14_sample_acceleration_candidate_qnx.elf",
+  "sha256": "7322f41979a70d72b740b1a967770f71ef706822343d2582eab0b08caea69ddc",
+  "status": "PASS",
+  "scope": "actual .1.10 B5 dispatch/core; modeled stock audio/loader; hardware NOT VERIFIED",
+  "stdout": "drifting=0 next_rate=1 completed=96 phase=7996 endpoint=8000 fade_after_prepare=1 last_ramp=0.010416667 next_first=0 no_opportunity=0\ndrifting=0 next_rate=1.00000095 completed=96 phase=7996 endpoint=8000 fade_after_prepare=0 last_ramp=0.010416667 next_first=1 no_opportunity=1\ndrifting=0 next_rate=0.999998987 completed=96 phase=7996 endpoint=8000 fade_after_prepare=0 last_ramp=0.010416667 next_first=1 no_opportunity=1\ndrifting=1 next_rate=1 completed=96 phase=7996 endpoint=8000 fade_after_prepare=1 last_ramp=0.010416667 next_first=0 no_opportunity=0\ndrifting=1 next_rate=1.00000095 completed=96 phase=7996 endpoint=8000 fade_after_prepare=0 last_ramp=0.010416667 next_first=1 no_opportunity=1\ndrifting=1 next_rate=0.999998987 completed=96 phase=7996 endpoint=8000 fade_after_prepare=0 last_ramp=0.010416667 next_first=1 no_opportunity=1\nPASS 54 checks: completed-fade rate-change regression reproduced; stock audio/loader modeled, hardware NOT VERIFIED\n",
+  "stderr": "",
+  "exit": 0
+}

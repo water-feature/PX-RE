@@ -1,0 +1,109 @@
+{
+  "direct_or_address_references": {
+    "GetGroupFileInfo": [
+      {
+        "site": 143484,
+        "caller": "CMessageAudioLoop::HandleMessage(unsigned int, unsigned int)",
+        "instruction": "call   34ef0 <CGroupFileInfoCache::GetGroupFileInfo(char*, char*, CWavHandler**, char*, char*, float*, char*)>"
+      },
+      {
+        "site": 217724,
+        "caller": "GroupFileParseThread(void*)",
+        "instruction": "call   34ef0 <CGroupFileInfoCache::GetGroupFileInfo(char*, char*, CWavHandler**, char*, char*, float*, char*)>"
+      },
+      {
+        "site": 218530,
+        "caller": "GroupFileUpdateFolder(CSampleGroups*, IInstrumentDictionary*, int, int, int, bool)",
+        "instruction": "call   34ef0 <CGroupFileInfoCache::GetGroupFileInfo(char*, char*, CWavHandler**, char*, char*, float*, char*)>"
+      },
+      {
+        "site": 219334,
+        "caller": "CSampleGroup::SwitchSampleGroup(SSampleGroupFolder*)",
+        "instruction": "call   34ef0 <CGroupFileInfoCache::GetGroupFileInfo(char*, char*, CWavHandler**, char*, char*, float*, char*)>"
+      }
+    ],
+    "SwitchSampleGroup": [
+      {
+        "site": 91030,
+        "caller": "CMessageAudioLoop::CMessageAudioLoop()",
+        "instruction": "call   35860 <CSampleGroup::SwitchSampleGroup(SSampleGroupFolder*)>"
+      },
+      {
+        "site": 139971,
+        "caller": "CMessageAudioLoop::HandleMessage(unsigned int, unsigned int)",
+        "instruction": "call   35860 <CSampleGroup::SwitchSampleGroup(SSampleGroupFolder*)>"
+      }
+    ],
+    "GroupFileUpdateFolder": [
+      {
+        "site": 123692,
+        "caller": "CMessageAudioLoop::HandleMessage(unsigned int, unsigned int)",
+        "instruction": "call   35320 <GroupFileUpdateFolder(CSampleGroups*, IInstrumentDictionary*, int, int, int, bool)>"
+      },
+      {
+        "site": 131401,
+        "caller": "CMessageAudioLoop::HandleMessage(unsigned int, unsigned int)",
+        "instruction": "call   35320 <GroupFileUpdateFolder(CSampleGroups*, IInstrumentDictionary*, int, int, int, bool)>"
+      },
+      {
+        "site": 135402,
+        "caller": "CMessageAudioLoop::HandleMessage(unsigned int, unsigned int)",
+        "instruction": "call   35320 <GroupFileUpdateFolder(CSampleGroups*, IInstrumentDictionary*, int, int, int, bool)>"
+      },
+      {
+        "site": 141227,
+        "caller": "CMessageAudioLoop::HandleMessage(unsigned int, unsigned int)",
+        "instruction": "call   35320 <GroupFileUpdateFolder(CSampleGroups*, IInstrumentDictionary*, int, int, int, bool)>"
+      }
+    ],
+    "CacheSampleGroups": [
+      {
+        "site": 90986,
+        "caller": "CMessageAudioLoop::CMessageAudioLoop()",
+        "instruction": "call   356b0 <CSampleGroup::CacheSampleGroups(CSampleGroups*, IInstrumentDictionary*)>"
+      }
+    ],
+    "HandleMessage": [
+      {
+        "site": 120392,
+        "caller": "CMessageAudioLoop::get_messages(void*)",
+        "instruction": "call   1e050 <CMessageAudioLoop::HandleMessage(unsigned int, unsigned int)>"
+      },
+      {
+        "site": 120446,
+        "caller": "CMessageAudioLoop::get_messages(void*)",
+        "instruction": "call   1e050 <CMessageAudioLoop::HandleMessage(unsigned int, unsigned int)>"
+      },
+      {
+        "site": 120496,
+        "caller": "CMessageAudioLoop::get_messages(void*)",
+        "instruction": "call   1e050 <CMessageAudioLoop::HandleMessage(unsigned int, unsigned int)>"
+      }
+    ],
+    "get_messages": [
+      {
+        "site": 32587,
+        "caller": "main",
+        "instruction": "lea    0x1562e(%rip),%rdx        # 1d580 <CMessageAudioLoop::get_messages(void*)>"
+      }
+    ],
+    "GroupFileParseThread": [
+      {
+        "site": 218971,
+        "caller": "CSampleGroup::CacheSampleGroups(CSampleGroups*, IInstrumentDictionary*)",
+        "instruction": "lea    -0x682(%rip),%rdx        # 350e0 <GroupFileParseThread(void*)>"
+      }
+    ]
+  },
+  "allocated_function_pointers": {
+    "GetGroupFileInfo": [],
+    "SwitchSampleGroup": [],
+    "GroupFileUpdateFolder": [],
+    "CacheSampleGroups": [],
+    "HandleMessage": [],
+    "get_messages": [],
+    "GroupFileParseThread": []
+  },
+  "external_exports": "none",
+  "conclusion": "Known caller closure unchanged. Runtime cache consumers are synchronous HandleMessage descendants on the one get_messages thread. Startup preload is joined before constructor slot loading and message-thread creation. No ordinary runtime duplicate-insertion path found in this ELF."
+}

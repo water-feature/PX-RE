@@ -1,0 +1,20 @@
+[
+  {
+    "group_argument": "0x40",
+    "category_argument": "0x0",
+    "count_entries_cleared": 1,
+    "pointer_entries_cleared": 1
+  },
+  {
+    "group_argument": "0x41",
+    "category_argument": "0x0",
+    "count_entries_cleared": 17,
+    "pointer_entries_cleared": 17
+  },
+  {
+    "group_argument": "0xffffffff",
+    "category_argument": "0xffffffff",
+    "count_entries_cleared": 17,
+    "pointer_entries_cleared": 17
+  }
+]

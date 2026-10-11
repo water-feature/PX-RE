@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "file": "PxUpdate_V2.2.2.0.9.bin",
+  "package_sha256": "438da40fee68dee6062f169e3ca9ed461bf31547f0c1f0a77279a3bc264e6e5d",
+  "package_bytes": 3151848,
+  "baseline_sha256": "c7e2e03999ca4590c99c3ba18a518f93f073ee8a619c84371677c7f6cd2c8e7f",
+  "PIC_sha256": "80723ffbd381e1e6cf401f09cff99591d43a07d91d00d57570fe2dea5265e2f3",
+  "QNX_sha256": "1a562cb01a7703f4facf9a6d0b90a76f6b4da6fc5218e43ac9991a255aba0406",
+  "record_lengths": [
+    1039304,
+    1581716,
+    530784
+  ],
+  "application_checksum": "057f",
+  "FPGA_checksum": "5977",
+  "PIC_trailer": "3030",
+  "revision": [
+    2,
+    2,
+    2,
+    0,
+    9
+  ],
+  "PIC_and_application_headers_reports_gates_match": true,
+  "application_gate_cases": [
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        7
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        8
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        9
+      ],
+      "skip": true
+    }
+  ],
+  "PIC_gate_cases": [
+    {
+      "installed": [
+        2,
+        2,
+        4,
+        0,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "installed": [
+        2,
+        2,
+        2,
+        0,
+        8
+      ],
+      "skip": false
+    },
+    {
+      "installed": [
+        2,
+        2,
+        2,
+        0,
+        9
+      ],
+      "skip": true
+    }
+  ],
+  "all_five_PIC_fields_compared": true,
+  "QNX_version_only_changes": true,
+  "FPGA_record_unchanged": true,
+  "all_inherited_PIC_bytes_preserved_except_approved_hook_and_versions": true,
+  "transport_checksum_blocks": 130,
+  "valid_corrupt_checksum_comparisons": 260,
+  "reextraction_matches_candidates": true,
+  "hardware_tested": false,
+  "flashed": false,
+  "limitations": "External engine/MIDI calls summarized; full USB/updater installation and hardware/audio not emulated."
+}

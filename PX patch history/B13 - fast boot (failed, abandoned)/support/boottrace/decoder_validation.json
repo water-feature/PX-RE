@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "decoder_sha256": "8e25d57641ac3c7f96fd91cc5d37a6508040ec1d3c2af581eddcbb07774b78c5",
+  "compatibility": "Matches actual failed boottrace ELF embedded header and authored trace.asm marker IDs; tested with synthetic timestamps only.",
+  "trace_ELF_sha256": "d28f7bc316ddc5fd638c604249477be225b3f8bce1f93b4520fdcd7017227556",
+  "header": {
+    "magic": "PXBTRACE",
+    "schema": 1,
+    "markers": 20,
+    "bytes": 64,
+    "baseline_sha256": "dd9efbcd2804e02cc4599e72d2ee90f996facce1fa06f1815a0078270566a2fa",
+    "build": "PXTRACE-1.1"
+  },
+  "checks": [
+    "Actual embedded trace header plus synthetic timestamps loads and reports all 20 markers",
+    "Missing marker reported correctly",
+    "Built-in fake sample round trip",
+    "Rejects bad magic",
+    "Rejects unsupported schema",
+    "Rejects truncated timestamps"
+  ],
+  "real_hardware_trace_tested": false,
+  "note": "Decoder reports baseline hash/build text but does not enforce the exact expected baseline or marker count. Address comments are historical reference notes; trace.asm/build_elf.py define actual hook locations."
+}

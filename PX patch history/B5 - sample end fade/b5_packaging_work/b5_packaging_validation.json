@@ -1,0 +1,96 @@
+{
+  "status": "offline_container_verified",
+  "container_sha256": "41242b0d3cde1cf208181d998176db62dcc9484e2ca74e22104f4a140845a587",
+  "container_bytes": 3127120,
+  "candidate_sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35",
+  "passed": 21,
+  "checks": [
+    "exact tested voice container",
+    "required candidate identity",
+    "three records and F0/F7 framing",
+    "B5 header revision 2.2.2.0.5",
+    "application length matches exact candidate",
+    "extracted QNX bytes and pinned hash",
+    "application word checksum",
+    "base application checksum",
+    "application header changes confined to version/length",
+    "complete later-record suffix unchanged",
+    "total file length equals payload growth",
+    "FPGA complete record bytes unchanged",
+    "FPGA payload bytes/hash unchanged",
+    "FPGA length/revision/trailer preserved",
+    "FPGA offset shift matches QNX growth",
+    "PIC complete record bytes unchanged",
+    "PIC payload bytes/hash unchanged",
+    "PIC length/revision/trailer preserved",
+    "PIC offset shift matches QNX growth",
+    "FPGA checksum matches established word sum",
+    "known PIC checksum discrepancy preserved exactly"
+  ],
+  "records": [
+    {
+      "type": 1,
+      "header_offset": 1,
+      "payload_offset": 13,
+      "trailer_offset": 1014589,
+      "end_offset": 1014591,
+      "length": 1014576,
+      "revision": [
+        2,
+        2,
+        2,
+        0,
+        5
+      ],
+      "stored_checksum": "0x3404",
+      "calculated_word_checksum": "0x3404",
+      "word_checksum_matches": true,
+      "payload_sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35",
+      "record_sha256": "ec1466c8ae2d137356d0844bed81e73f7888f268ec53b9660a9f232e90a6a68e"
+    },
+    {
+      "type": 2,
+      "header_offset": 1014591,
+      "payload_offset": 1014603,
+      "trailer_offset": 2596319,
+      "end_offset": 2596321,
+      "length": 1581716,
+      "revision": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "stored_checksum": "0x7759",
+      "calculated_word_checksum": "0x7759",
+      "word_checksum_matches": true,
+      "payload_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+      "record_sha256": "9697f1cbe3d798c2b066a2f6a3355b2c8ce444130f0362800fab2894aa885b40"
+    },
+    {
+      "type": 3,
+      "header_offset": 2596321,
+      "payload_offset": 2596333,
+      "trailer_offset": 3127117,
+      "end_offset": 3127119,
+      "length": 530784,
+      "revision": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "stored_checksum": "0x3030",
+      "calculated_word_checksum": "0x4658",
+      "word_checksum_matches": false,
+      "payload_sha256": "14e9c9b9dc562b0384fc43b3c5e0eb7fea84a5792d1a19b9b3ea8276ef7646f5",
+      "record_sha256": "29d93873449503c2c9b6563495643399b642c19f2996c2db43f9fb22e445c03b"
+    }
+  ],
+  "known_base_checksum_exception": "PIC stored 0x3030 differs from simple word sum 0x4658 in the exact tested base; its entire record/trailer is preserved, not repaired.",
+  "hardware_acceptance_tested": false,
+  "target_performance_tested": false,
+  "listening_tested": false
+}

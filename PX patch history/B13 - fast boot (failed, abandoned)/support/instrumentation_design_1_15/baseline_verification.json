@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "package": "PX-RE/PxUpdate_V2.2.2.1.15_B10_ordinary_entry_candidate.bin",
+  "sha256": "ebb2aebbd0decdadce92ed40d257e0cb03ebbf7aecf3e05749d9533fd5603450",
+  "application_matches_saved_elf": true,
+  "application_and_fpga_checksums_valid": true,
+  "pic_legacy_trailer_preserved": true,
+  "records": [
+    {
+      "record": 1,
+      "offset": 1,
+      "size": 1075240,
+      "header": "017b020202010f7a00106828",
+      "sha256": "dd9efbcd2804e02cc4599e72d2ee90f996facce1fa06f1815a0078270566a2fa",
+      "trailer": "fb38"
+    },
+    {
+      "record": 2,
+      "offset": 1075255,
+      "size": 1581716,
+      "header": "027b00000001007a00182294",
+      "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+      "trailer": "5977"
+    },
+    {
+      "record": 3,
+      "offset": 2656985,
+      "size": 530784,
+      "header": "037b020202010f7a00081960",
+      "sha256": "be8eb8ac823a639f3024b97e01b017ef0cef5f33d086eaa71dfe55d4b0e34622",
+      "trailer": "3030"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "outputs": [
+    {
+      "path": "b3_private_artifacts/reconstructed_early_inputs/voice_sysex_2.2.2.0.3.bin",
+      "sha256": "bbc3c2ad26bef7310fc15cac8edee22a1792d8ced3788f7080acccc047304857",
+      "origin": "Reconstructed from exact retained packages; matches historical whole-package SHA-256."
+    },
+    {
+      "path": "b3_private_artifacts/reconstructed_early_inputs/combined_2.2.2.0.1.bin",
+      "sha256": "d2775bd0e017e4442ce7d5bbc7d089022a1cf8c02714d89427462938e934d166",
+      "origin": "Reconstructed from exact retained packages; matches historical whole-package SHA-256."
+    },
+    {
+      "path": "b3_private_artifacts/reconstructed_early_inputs/voice_fade_2.2.2.0.1.bin",
+      "sha256": "f6b5205fc40e635305445bb19dd1a41d12f2ee4c64b7284ccd432868ef0c5898",
+      "origin": "Reconstructed from exact retained packages; matches historical whole-package SHA-256."
+    }
+  ],
+  "combined_0_7_rebuild": {
+    "status": "PASS",
+    "byte_identical_to_retained_package": true,
+    "sha256": "2fe41c83415c1d85efd7848a31511157162528ec4a83d08045be7e8bcee2e753",
+    "hardware_retested": false
+  },
+  "recipe_private_path": "b3_private_artifacts/reconstructed_early_inputs/recover_early.py"
+}

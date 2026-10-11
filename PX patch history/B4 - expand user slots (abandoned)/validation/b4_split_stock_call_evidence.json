@@ -1,0 +1,132 @@
+{
+  "0x9d0792e0": [
+    {
+      "call": "0x9d02a6e8",
+      "window": "9D02A6DC 0F4134C0 jal 9d04d300\n9D02A6E0 02202021 addu a0 s1 zero\n9D02A6E4 02402021 addu a0 s2 zero\n9D02A6E8 0F41E4B8 jal 9d0792e0\n9D02A6EC 00402821 addu a1 v0 zero\n9D02A6F0 AFA20010 sw v0 0x10(sp)\n9D02A6F4 00002021 addu a0 zero zero\n9D02A6F8 02202821 addu a1 s1 zero\n9D02A6FC 24060023 addiu a2 zero 0x23"
+    },
+    {
+      "call": "0x9d02d4e0",
+      "window": "9D02D4D4 0F4134C0 jal 9d04d300\n9D02D4D8 02202021 addu a0 s1 zero\n9D02D4DC 02402021 addu a0 s2 zero\n9D02D4E0 0F41E4B8 jal 9d0792e0\n9D02D4E4 00402821 addu a1 v0 zero\n9D02D4E8 AFA20010 sw v0 0x10(sp)\n9D02D4EC 00002021 addu a0 zero zero\n9D02D4F0 02202821 addu a1 s1 zero\n9D02D4F4 24060064 addiu a2 zero 0x64"
+    },
+    {
+      "call": "0x9d02de80",
+      "window": "9D02DE74 0F4134C0 jal 9d04d300\n9D02DE78 02202021 addu a0 s1 zero\n9D02DE7C 02402021 addu a0 s2 zero\n9D02DE80 0F41E4B8 jal 9d0792e0\n9D02DE84 00402821 addu a1 v0 zero\n9D02DE88 AFA20010 sw v0 0x10(sp)\n9D02DE8C 00002021 addu a0 zero zero\n9D02DE90 02202821 addu a1 s1 zero\n9D02DE94 24060023 addiu a2 zero 0x23"
+    },
+    {
+      "call": "0x9d02e0f8",
+      "window": "9D02E0EC 0F4134C0 jal 9d04d300\n9D02E0F0 02202021 addu a0 s1 zero\n9D02E0F4 02402021 addu a0 s2 zero\n9D02E0F8 0F41E4B8 jal 9d0792e0\n9D02E0FC 00402821 addu a1 v0 zero\n9D02E100 AFA20010 sw v0 0x10(sp)\n9D02E104 00002021 addu a0 zero zero\n9D02E108 02202821 addu a1 s1 zero\n9D02E10C 24060064 addiu a2 zero 0x64"
+    },
+    {
+      "call": "0x9d0413c8",
+      "window": "9D0413BC 0F4134C0 jal 9d04d300\n9D0413C0 24050024 addiu a1 zero 0x24\n9D0413C4 02202021 addu a0 s1 zero\n9D0413C8 0F41E4B8 jal 9d0792e0\n9D0413CC 00402821 addu a1 v0 zero\n9D0413D0 AFA20014 sw v0 0x14(sp)\n9D0413D4 2403001C addiu v1 zero 0x1c\n9D0413D8 AFA30018 sw v1 0x18(sp)\n9D0413DC 2403000F addiu v1 zero 0xf"
+    },
+    {
+      "call": "0x9d04168c",
+      "window": "9D041680 0F4134C0 jal 9d04d300\n9D041684 24050065 addiu a1 zero 0x65\n9D041688 02202021 addu a0 s1 zero\n9D04168C 0F41E4B8 jal 9d0792e0\n9D041690 00402821 addu a1 v0 zero\n9D041694 AFA20014 sw v0 0x14(sp)\n9D041698 2403005D addiu v1 zero 0x5d\n9D04169C AFA30018 sw v1 0x18(sp)\n9D0416A0 24030050 addiu v1 zero 0x50"
+    },
+    {
+      "call": "0x9d04d5a4",
+      "window": "9D04D598 3C108000 lui s0 0x8000\n9D04D59C 2610046C addiu s0 s0 0x46c\n9D04D5A0 960400C6 lhu a0 0xc6(s0)\n9D04D5A4 0F41E4B8 jal 9d0792e0\n9D04D5A8 960500CA lhu a1 0xca(s0)\n9D04D5AC 0222102A slt v0 s1 v0\n9D04D5B0 1440FFF1 bne v0 zero 9d04d578\n9D04D5B4 02201021 addu v0 s1 zero\n9D04D5B8 52400044 beql s2 zero 9d04d6cc"
+    },
+    {
+      "call": "0x9d04d5f0",
+      "window": "9D04D5E4 3C108000 lui s0 0x8000\n9D04D5E8 2610046C addiu s0 s0 0x46c\n9D04D5EC 96040044 lhu a0 0x44(s0)\n9D04D5F0 0F41E4B8 jal 9d0792e0\n9D04D5F4 96050048 lhu a1 0x48(s0)\n9D04D5F8 0222102A slt v0 s1 v0\n9D04D5FC 1440FFDE bne v0 zero 9d04d578\n9D04D600 02201021 addu v0 s1 zero\n9D04D604 5240002F beql s2 zero 9d04d6c4"
+    },
+    {
+      "call": "0x9d04d620",
+      "window": "9D04D614 96040044 lhu a0 0x44(s0)\n9D04D618 96040DB2 lhu a0 0xdb2(s0)\n9D04D61C 96050DB6 lhu a1 0xdb6(s0)\n9D04D620 0F41E4B8 jal 9d0792e0\n9D04D624 00000000 nop\n9D04D628 2442FFFF addiu v0 v0 -0x1\n9D04D62C 3042FFFF andi v0 v0 0xffff\n9D04D630 8FBF001C lw ra 0x1c(sp)\n9D04D634 8FB20018 lw s2 0x18(sp)"
+    },
+    {
+      "call": "0x9d04d658",
+      "window": "9D04D64C 1242FFD4 beq s2 v0 9d04d5a0\n9D04D650 2610046C addiu s0 s0 0x46c\n9D04D654 96040E34 lhu a0 0xe34(s0)\n9D04D658 0F41E4B8 jal 9d0792e0\n9D04D65C 96050E38 lhu a1 0xe38(s0)\n9D04D660 0222102A slt v0 s1 v0\n9D04D664 1440FFC4 bne v0 zero 9d04d578\n9D04D668 02201021 addu v0 s1 zero\n9D04D66C 96040E34 lhu a0 0xe34(s0)"
+    },
+    {
+      "call": "0x9d04d688",
+      "window": "9D04D67C 1242FFDB beq s2 v0 9d04d5ec\n9D04D680 2610046C addiu s0 s0 0x46c\n9D04D684 96040DB2 lhu a0 0xdb2(s0)\n9D04D688 0F41E4B8 jal 9d0792e0\n9D04D68C 96050DB6 lhu a1 0xdb6(s0)\n9D04D690 0222102A slt v0 s1 v0\n9D04D694 5040FFE1 beql v0 zero 9d04d61c\n9D04D698 96040DB2 lhu a0 0xdb2(s0)\n9D04D69C 0B41355E j 9d04d578"
+    },
+    {
+      "call": "0x9d04ded0",
+      "window": "9D04DEC4 0040A021 addu s4 v0 zero\n9D04DEC8 A6220046 sh v0 0x46(s1)\n9D04DECC 96240044 lhu a0 0x44(s1)\n9D04DED0 0F41E4B8 jal 9d0792e0\n9D04DED4 96250048 lhu a1 0x48(s1)\n9D04DED8 0282102A slt v0 s4 v0\n9D04DEDC 50400205 beql v0 zero 9d04e6f4\n9D04DEE0 96240044 lhu a0 0x44(s1)\n9D04DEE4 00002021 addu a0 zero zero"
+    },
+    {
+      "call": "0x9d04e024",
+      "window": "9D04E018 00409021 addu s2 v0 zero\n9D04E01C A6220DB4 sh v0 0xdb4(s1)\n9D04E020 96240DB2 lhu a0 0xdb2(s1)\n9D04E024 0F41E4B8 jal 9d0792e0\n9D04E028 96250DB6 lhu a1 0xdb6(s1)\n9D04E02C 0242102A slt v0 s2 v0\n9D04E030 504001DC beql v0 zero 9d04e7a4\n9D04E034 96240DB2 lhu a0 0xdb2(s1)\n9D04E038 24040001 addiu a0 zero 0x1"
+    },
+    {
+      "call": "0x9d04e560",
+      "window": "9D04E554 0040A021 addu s4 v0 zero\n9D04E558 A62200C8 sh v0 0xc8(s1)\n9D04E55C 962400C6 lhu a0 0xc6(s1)\n9D04E560 0F41E4B8 jal 9d0792e0\n9D04E564 962500CA lhu a1 0xca(s1)\n9D04E568 0282102A slt v0 s4 v0\n9D04E56C 50400049 beql v0 zero 9d04e694\n9D04E570 962400C6 lhu a0 0xc6(s1)\n9D04E574 00002021 addu a0 zero zero"
+    },
+    {
+      "call": "0x9d04e638",
+      "window": "9D04E62C 00409021 addu s2 v0 zero\n9D04E630 A6220E36 sh v0 0xe36(s1)\n9D04E634 96240E34 lhu a0 0xe34(s1)\n9D04E638 0F41E4B8 jal 9d0792e0\n9D04E63C 96250E38 lhu a1 0xe38(s1)\n9D04E640 0242102A slt v0 s2 v0\n9D04E644 5040007F beql v0 zero 9d04e844\n9D04E648 96250E38 lhu a1 0xe38(s1)\n9D04E64C 24040001 addiu a0 zero 0x1"
+    },
+    {
+      "call": "0x9d04e694",
+      "window": "9D04E688 00409821 addu s3 v0 zero\n9D04E68C 0B4138FC j 9d04e3f0\n9D04E690 24020002 addiu v0 zero 0x2\n9D04E694 0F41E4B8 jal 9d0792e0\n9D04E698 962500CA lhu a1 0xca(s1)\n9D04E69C 3046FFFF andi a2 v0 0xffff\n9D04E6A0 00002021 addu a0 zero zero\n9D04E6A4 0F41353F jal 9d04d4fc\n9D04E6A8 24050064 addiu a1 zero 0x64"
+    },
+    {
+      "call": "0x9d04e6f4",
+      "window": "9D04E6E8 00000000 nop\n9D04E6EC 0B4137C0 j 9d04df00\n9D04E6F0 2402012C addiu v0 zero 0x12c\n9D04E6F4 0F41E4B8 jal 9d0792e0\n9D04E6F8 96250048 lhu a1 0x48(s1)\n9D04E6FC 3046FFFF andi a2 v0 0xffff\n9D04E700 00002021 addu a0 zero zero\n9D04E704 0F41353F jal 9d04d4fc\n9D04E708 24050023 addiu a1 zero 0x23"
+    },
+    {
+      "call": "0x9d04e7a4",
+      "window": "9D04E798 00002021 addu a0 zero zero\n9D04E79C 0B4137B3 j 9d04decc\n9D04E7A0 96340046 lhu s4 0x46(s1)\n9D04E7A4 0F41E4B8 jal 9d0792e0\n9D04E7A8 96250DB6 lhu a1 0xdb6(s1)\n9D04E7AC 3046FFFF andi a2 v0 0xffff\n9D04E7B0 24040001 addiu a0 zero 0x1\n9D04E7B4 0F41353F jal 9d04d4fc\n9D04E7B8 24050023 addiu a1 zero 0x23"
+    },
+    {
+      "call": "0x9d04e848",
+      "window": "9D04E83C 0B41399A j 9d04e668\n9D04E840 2402012C addiu v0 zero 0x12c\n9D04E844 96240E34 lhu a0 0xe34(s1)\n9D04E848 0F41E4B8 jal 9d0792e0\n9D04E84C 24A5FFFF addiu a1 a1 -0x1\n9D04E850 3046FFFF andi a2 v0 0xffff\n9D04E854 24040001 addiu a0 zero 0x1\n9D04E858 0F41353F jal 9d04d4fc\n9D04E85C 24050064 addiu a1 zero 0x64"
+    },
+    {
+      "call": "0x9d07499c",
+      "window": "9D074990 24140041 addiu s4 zero 0x41\n9D074994 00008021 addu s0 zero zero\n9D074998 02002821 addu a1 s0 zero\n9D07499C 0F41E4B8 jal 9d0792e0\n9D0749A0 02402021 addu a0 s2 zero\n9D0749A4 00408821 addu s1 v0 zero\n9D0749A8 0F41E02B jal 9d0780ac\n9D0749AC 7C4431C0 UNKNOWN 7c4431c0\n9D0749B0 26100001 addiu s0 s0 0x1"
+    },
+    {
+      "call": "0x9d0749f0",
+      "window": "9D0749E4 2671002C addiu s1 s3 0x2c\n9D0749E8 0000A021 addu s4 zero zero\n9D0749EC 02C02021 addu a0 s6 zero\n9D0749F0 0F41E4B8 jal 9d0792e0\n9D0749F4 02802821 addu a1 s4 zero\n9D0749F8 0040A821 addu s5 v0 zero\n9D0749FC 2C420002 sltiu v0 v0 0x2\n9D074A00 14400024 bne v0 zero 9d074a94\n9D074A04 3C028003 lui v0 0x8003"
+    }
+  ],
+  "0x9d079300": [
+    {
+      "call": "0x9d02eb30",
+      "window": "9D02EB24 0F420398 jal 9d080e60\n9D02EB28 AF8283D4 sw v0 -0x7c2c(gp)\n9D02EB2C 00402021 addu a0 v0 zero\n9D02EB30 0F41E4C0 jal 9d079300\n9D02EB34 AF8283C8 sw v0 -0x7c38(gp)\n9D02EB38 1840FFF5 blez v0 zero 9d02eb10\n9D02EB3C AF8283C4 sw v0 -0x7c3c(gp)\n9D02EB40 96050044 lhu a1 0x44(s0)\n9D02EB44 978783C8 lhu a3 -0x7c38(gp)"
+    },
+    {
+      "call": "0x9d02eb7c",
+      "window": "9D02EB70 0F420398 jal 9d080e60\n9D02EB74 AF8283D4 sw v0 -0x7c2c(gp)\n9D02EB78 00402021 addu a0 v0 zero\n9D02EB7C 0F41E4C0 jal 9d079300\n9D02EB80 AF8283C8 sw v0 -0x7c38(gp)\n9D02EB84 1840FFF5 blez v0 zero 9d02eb5c\n9D02EB88 AF8283C4 sw v0 -0x7c3c(gp)\n9D02EB8C 0B40BAD1 j 9d02eb44\n9D02EB90 96050044 lhu a1 0x44(s0)"
+    },
+    {
+      "call": "0x9d02ec34",
+      "window": "9D02EC28 0F420398 jal 9d080e60\n9D02EC2C AF8283D4 sw v0 -0x7c2c(gp)\n9D02EC30 00402021 addu a0 v0 zero\n9D02EC34 0F41E4C0 jal 9d079300\n9D02EC38 AF8283C8 sw v0 -0x7c38(gp)\n9D02EC3C 1840FFF5 blez v0 zero 9d02ec14\n9D02EC40 AF8283C4 sw v0 -0x7c3c(gp)\n9D02EC44 96050044 lhu a1 0x44(s0)\n9D02EC48 978783C8 lhu a3 -0x7c38(gp)"
+    },
+    {
+      "call": "0x9d02ec80",
+      "window": "9D02EC74 0F420398 jal 9d080e60\n9D02EC78 AF8283D4 sw v0 -0x7c2c(gp)\n9D02EC7C 00402021 addu a0 v0 zero\n9D02EC80 0F41E4C0 jal 9d079300\n9D02EC84 AF8283C8 sw v0 -0x7c38(gp)\n9D02EC88 1840FFF5 blez v0 zero 9d02ec60\n9D02EC8C AF8283C4 sw v0 -0x7c3c(gp)\n9D02EC90 0B40BB12 j 9d02ec48\n9D02EC94 96050044 lhu a1 0x44(s0)"
+    }
+  ],
+  "0x9d040ed8": [
+    {
+      "call": "0x9d01b914",
+      "window": "9D01B908 00000000 nop\n9D01B90C 0F410AE0 jal 9d042b80\n9D01B910 00000000 nop\n9D01B914 0F4103B6 jal 9d040ed8\n9D01B918 00000000 nop\n9D01B91C 00003021 addu a2 zero zero\n9D01B920 24050021 addiu a1 zero 0x21\n9D01B924 0F4135D9 jal 9d04d764\n9D01B928 24040001 addiu a0 zero 0x1"
+    },
+    {
+      "call": "0x9d02454c",
+      "window": "9D024540 00000000 nop\n9D024544 0F410AE0 jal 9d042b80\n9D024548 00000000 nop\n9D02454C 0F4103B6 jal 9d040ed8\n9D024550 00000000 nop\n9D024554 0F4109B0 jal 9d0426c0\n9D024558 00000000 nop\n9D02455C 0F4116F6 jal 9d045bd8\n9D024560 24040001 addiu a0 zero 0x1"
+    },
+    {
+      "call": "0x9d079228",
+      "window": "9D07921C 0004100B movn v0 zero a0\n9D079220 27BDFFE8 addiu sp sp -0x18\n9D079224 AFBF0014 sw ra 0x14(sp)\n9D079228 0F4103B6 jal 9d040ed8\n9D07922C 00000000 nop\n9D079230 3C028003 lui v0 0x8003\n9D079234 24427D3C addiu v0 v0 0x7d3c\n9D079238 3C038003 lui v1 0x8003\n9D07923C 24637E3C addiu v1 v1 0x7e3c"
+    }
+  ],
+  "0x9d079a08": [
+    {
+      "call": "0x9d01b724",
+      "window": "9D01B718 2404000A addiu a0 zero 0xa\n9D01B71C 0F41F240 jal 9d07c900\n9D01B720 24050001 addiu a1 zero 0x1\n9D01B724 0F41E682 jal 9d079a08\n9D01B728 00000000 nop\n9D01B72C 262401B4 addiu a0 s1 0x1b4\n9D01B730 24050031 addiu a1 zero 0x31\n9D01B734 0F40DA8A jal 9d036a28\n9D01B738 00003021 addu a2 zero zero"
+    }
+  ],
+  "0x9d041e8c": [
+    {
+      "call": "0x9d074a18",
+      "window": "9D074A0C 24507E52 addiu s0 v0 0x7e52\n9D074A10 02C02021 addu a0 s6 zero\n9D074A14 02802821 addu a1 s4 zero\n9D074A18 0F4107A3 jal 9d041e8c\n9D074A1C 02403021 addu a2 s2 zero\n9D074A20 02E0F021 addu fp s7 zero\n9D074A24 93C40000 lbu a0 0x0(fp)\n9D074A28 27DE0001 addiu fp fp 0x1\n9D074A2C 0F41E02B jal 9d0780ac"
+    }
+  ]
+}

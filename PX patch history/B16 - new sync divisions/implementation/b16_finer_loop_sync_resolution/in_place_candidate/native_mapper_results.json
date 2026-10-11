@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "execution": "actual ELF mapper and helper instructions via x86_64 host harness (Rosetta)",
+  "legacy_bit_exact_cases": 524752,
+  "new_mapping_bit_exact_cases": 65594,
+  "new_zero_modulation_BPM_cases": 8,
+  "runtime_S0_scale_cases": 30,
+  "hardware": "NOT VERIFIED"
+}

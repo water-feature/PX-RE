@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "files": 927,
+    "bytes": 20965926,
+    "embedded_nul": 0,
+    "duplicate_uuid_header": 0,
+    "stock_uuid_found": 0,
+    "fast_success": 927
+  },
+  "mismatches": [],
+  "unique_headers": 3,
+  "max_line_bytes": 202,
+  "scope": "Actual assembled helper vs UUID projection using extracted stock line, token and GUID routines. Full GroupFileParse/velocity parsing not executed."
+}

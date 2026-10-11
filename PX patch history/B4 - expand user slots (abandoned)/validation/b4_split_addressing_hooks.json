@@ -1,0 +1,110 @@
+{
+  "0x9d0792e0": {
+    "helper": "count",
+    "synthetic_entry": "0x9f000000",
+    "stock_words": [
+      "00041100",
+      "00442021"
+    ],
+    "test_hook_words": [
+      "0BC00000",
+      "00000000"
+    ]
+  },
+  "0x9d079300": {
+    "helper": "availability",
+    "synthetic_entry": "0x9f009000",
+    "stock_words": [
+      "000430C0",
+      "000421C0"
+    ],
+    "test_hook_words": [
+      "0BC02400",
+      "00000000"
+    ]
+  },
+  "0x9d041178": {
+    "helper": "selected_index",
+    "synthetic_entry": "0x9f00a000",
+    "stock_words": [
+      "00518821",
+      "0234A021"
+    ],
+    "test_hook_words": [
+      "0BC02800",
+      "00000000"
+    ]
+  },
+  "0x9d041ea0": {
+    "helper": "shared_index",
+    "synthetic_entry": "0x9f00b000",
+    "stock_words": [
+      "00041100",
+      "00442021"
+    ],
+    "test_hook_words": [
+      "0BC02C00",
+      "00000000"
+    ]
+  },
+  "0x9d01b8dc": {
+    "helper": "import_size",
+    "synthetic_entry": "0x9f00c000",
+    "stock_words": [
+      "0014A080",
+      "3C04402C"
+    ],
+    "test_hook_words": [
+      "0BC03000",
+      "00000000"
+    ]
+  },
+  "0x9d034280": {
+    "helper": "render_size",
+    "synthetic_entry": "0x9f00d000",
+    "stock_words": [
+      "00132080",
+      "3C038004"
+    ],
+    "test_hook_words": [
+      "0BC03400",
+      "00000000"
+    ]
+  },
+  "0x9d079a08": {
+    "helper": "size_initialize",
+    "synthetic_entry": "0x9f00e000",
+    "stock_words": [
+      "27BDFFE0",
+      "AFBF001C"
+    ],
+    "test_hook_words": [
+      "0BC03800",
+      "00000000"
+    ]
+  },
+  "0x9d041014": {
+    "helper": "count_defaults_tail",
+    "synthetic_entry": "0x9f00f000",
+    "stock_words": [
+      "8FBF001C",
+      "8FB20018"
+    ],
+    "test_hook_words": [
+      "0BC03C00",
+      "00000000"
+    ]
+  },
+  "0x9d040ed8": {
+    "helper": "count_entry_gate",
+    "synthetic_entry": "0x9f010000",
+    "stock_words": [
+      "27BDFFE0",
+      "AFBF001C"
+    ],
+    "test_hook_words": [
+      "0BC04000",
+      "00000000"
+    ]
+  }
+}

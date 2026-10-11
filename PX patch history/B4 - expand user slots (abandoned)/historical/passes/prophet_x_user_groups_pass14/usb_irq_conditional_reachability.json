@@ -1,0 +1,46 @@
+[
+  {
+    "entry": "0x9d0526ec",
+    "candidate_reachable_words": 472,
+    "direct_calls": [
+      {
+        "pc": "0x9d052814",
+        "target": "0x9d07abe0"
+      },
+      {
+        "pc": "0x9d07ac1c",
+        "target": "0x9d056414"
+      }
+    ],
+    "unresolved_indirect_edges": [],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d0526f8",
+        "bytes": 304
+      },
+      {
+        "pc": "0x9d07abe0",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d056414",
+        "bytes": 72
+      },
+      {
+        "pc": "0x9d07b8fc",
+        "bytes": 40
+      },
+      {
+        "pc": "0x9d07b860",
+        "bytes": 40
+      }
+    ],
+    "unique_negative_sp_bytes": 480,
+    "status_writes": [
+      "0x9d052714",
+      "0x9d052938"
+    ],
+    "assumptions": "Observed transfer request callbacks and parent registration only; event dispatch restricted to proven emitted events15/16. Writer set not exhaustive.",
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  }
+]

@@ -1,0 +1,348 @@
+{
+  "direct_calls": [
+    {
+      "site": "0x80ec",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x80e5"
+    },
+    {
+      "site": "0x8104",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x80fd"
+    },
+    {
+      "site": "0x811c",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x8115"
+    },
+    {
+      "site": "0x8134",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x812d"
+    },
+    {
+      "site": "0x814c",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x8145"
+    },
+    {
+      "site": "0x14cf0",
+      "kind": "call",
+      "priority": 3,
+      "assignment": "0x14ce9"
+    },
+    {
+      "site": "0x159a6",
+      "kind": "call",
+      "priority": 3,
+      "assignment": "0x1599f"
+    },
+    {
+      "site": "0x15bfe",
+      "kind": "call",
+      "priority": 3,
+      "assignment": "0x15bf9"
+    },
+    {
+      "site": "0x15c2e",
+      "kind": "call",
+      "priority": 3,
+      "assignment": "0x15c27"
+    },
+    {
+      "site": "0x1d5ed",
+      "kind": "call",
+      "priority": 3,
+      "assignment": "0x1d5e8"
+    },
+    {
+      "site": "0x1d714",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x1d70d"
+    },
+    {
+      "site": "0x349de",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x349d7"
+    },
+    {
+      "site": "0x34a22",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x34a1d"
+    },
+    {
+      "site": "0x364b1",
+      "kind": "jmp",
+      "priority": 3,
+      "assignment": "0x364a0"
+    },
+    {
+      "site": "0x38850",
+      "kind": "jmp",
+      "priority": 5,
+      "assignment": "0x3883f"
+    },
+    {
+      "site": "0x42771",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x4276a"
+    },
+    {
+      "site": "0x42995",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x4298e"
+    },
+    {
+      "site": "0x429b9",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x429b2"
+    },
+    {
+      "site": "0x4432b",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x44324"
+    },
+    {
+      "site": "0x44370",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x44369"
+    },
+    {
+      "site": "0x443a0",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x44399"
+    },
+    {
+      "site": "0x443d0",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x443c9"
+    },
+    {
+      "site": "0x443fe",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x443f7"
+    },
+    {
+      "site": "0x4451b",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x44514"
+    },
+    {
+      "site": "0x44538",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x44531"
+    },
+    {
+      "site": "0x44555",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x4454e"
+    },
+    {
+      "site": "0x4457e",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x44577"
+    },
+    {
+      "site": "0x445d1",
+      "kind": "call",
+      "priority": 5,
+      "assignment": "0x445ca"
+    }
+  ],
+  "code_references": [
+    {
+      "site": "0x80ec",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x8104",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x811c",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x8134",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x814c",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x14cf0",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x159a6",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x15bfe",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x15c2e",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x1d5ed",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x1d714",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x349de",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x34a22",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x364b1",
+      "instruction": "jmp 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x38850",
+      "instruction": "jmp 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x42771",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x42995",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x429b9",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x4431d",
+      "instruction": "lea rsi, [rip + 0x4bbac]",
+      "target": "0x8fed0"
+    },
+    {
+      "site": "0x4432b",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x44362",
+      "instruction": "lea rsi, [rip + 0x4bb9f]",
+      "target": "0x8ff08"
+    },
+    {
+      "site": "0x44370",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x443a0",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x443d0",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x443fe",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x4451b",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x44538",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x44555",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x4457e",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x445d1",
+      "instruction": "call 0x49fd0",
+      "target": "0x49fd0"
+    },
+    {
+      "site": "0x49ff1",
+      "instruction": "je 0x4a02a",
+      "target": "0x4a02a"
+    },
+    {
+      "site": "0x4a043",
+      "instruction": "ja 0x4a076",
+      "target": "0x4a076"
+    },
+    {
+      "site": "0x4a07e",
+      "instruction": "jne 0x4a089",
+      "target": "0x4a089"
+    }
+  ],
+  "dynamic_exports": [],
+  "relocation_addends_in_regions": [],
+  "aligned_runtime_pointer_literals": [],
+  "string_segment_flags": 5,
+  "limits": [
+    "direct instructions and aligned pointers only",
+    "no proof of arbitrary computed runtime pointers",
+    "old DebugPrintf unwind metadata covers reclaimed body and needs review"
+  ]
+}

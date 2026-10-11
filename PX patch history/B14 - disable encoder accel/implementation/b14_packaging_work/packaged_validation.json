@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "filename": "PxUpdate_V2.2.2.1.4.bin",
+  "revision": [
+    2,
+    2,
+    2,
+    1,
+    4
+  ],
+  "package_bytes": 3151848,
+  "package_sha256": "eadf12ea51991ad749155c89136fa01176578b8e936df6851c6987b728af94f4",
+  "baseline_package_sha256": "3e844a73a9f29bf0f1dc24929c989e0cb3946c9a307cab948e6af4c0928b5029",
+  "PIC_sha256": "111334a1fc96a473efba6d3c4fdc2b0c227f4daf1453be107cd40cfb9e36feb0",
+  "QNX_sha256": "512ac7dc140791318a4331a04f94b4c56e844328aad409c192dee4abc5e963b9",
+  "FPGA_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+  "PIC_changed_bytes_vs_1_2": 148,
+  "PIC_metadata_changed_bytes_vs_B14_raw": 2,
+  "QNX_metadata_changed_bytes": 2,
+  "package_changed_bytes": 153,
+  "FPGA_entire_record_unchanged": true,
+  "B9_and_unrelated_bytes_preserved": true,
+  "B14_behavior_identical_to_validated_raw_candidate": true,
+  "application_checksum": "0685",
+  "PIC_container_trailer": "3030",
+  "actual_version_gate_cases": 19,
+  "PIC_transport_blocks": 130,
+  "valid_and_corrupt_transport_comparisons": 260,
+  "hardware_tested": false,
+  "flashed": false
+}

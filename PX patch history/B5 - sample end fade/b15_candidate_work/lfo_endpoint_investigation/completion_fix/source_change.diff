@@ -1,0 +1,31 @@
+Equivalent source change over B5 source plus inherited .1.9 source_change.diff.
+Binary recipe uses narrowly placed helpers to preserve all existing addresses.
+
+--- b5_core.c (including .1.9 same_endpoint_region helper)
++++ b5_core.c (completion correction)
+@@
+ static void apply(State *s,const Key *k) {
+     if(!same(&s->d.effective,k)) {
++        int completed_same_region=s->d.has_fade && s->d.clock>=s->d.end
++            && same_endpoint_region(&s->d.effective,k);
+         s->d.effective=*k;
+-        s->d.has_fade=0;
+-        s->d.no_opportunity=0;
++        if(!completed_same_region) {
++            s->d.has_fade=0;
++            s->d.no_opportunity=0;
++        }
+     }
+ }
+--- b5_adapters.c
++++ b5_adapters.c
+@@
+         if((d->packed&PREPARED) && !observed.loop && !equal(&observed,&s->d.effective)) {
+-            cancel(s);b5_begin(s,&observed);
++            int completed_same_region=s->d.has_fade && s->d.clock>=s->d.end
++                && observed.a==s->d.effective.a && observed.b==s->d.effective.b
++                && observed.reverse==s->d.effective.reverse
++                && observed.loop==s->d.effective.loop;
++            if(!completed_same_region) cancel(s);
++            b5_begin(s,&observed);
+         }

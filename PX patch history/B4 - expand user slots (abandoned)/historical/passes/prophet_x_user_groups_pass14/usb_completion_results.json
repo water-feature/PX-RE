@@ -1,0 +1,162 @@
+{
+  "cases": [
+    {
+      "kind": "registration segment",
+      "callback": "0x9d07b860",
+      "slot_index": 0,
+      "slot_bytes": 36
+    },
+    {
+      "kind": "registration segment",
+      "callback": "0x9d07b860",
+      "slot_index": 1,
+      "slot_bytes": 36
+    },
+    {
+      "kind": "registration segment",
+      "callback": "0x9d07b8fc",
+      "slot_index": 0,
+      "slot_bytes": 36
+    },
+    {
+      "kind": "registration segment",
+      "callback": "0x9d07b8fc",
+      "slot_index": 1,
+      "slot_bytes": 36
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b860",
+      "status": 0,
+      "event": 16,
+      "mapped_status": 0,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b860",
+      "status": 1,
+      "event": 16,
+      "mapped_status": 0,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b860",
+      "status": -3,
+      "event": 16,
+      "mapped_status": -98,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b860",
+      "status": -4,
+      "event": 16,
+      "mapped_status": -97,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b860",
+      "status": 2,
+      "event": 16,
+      "mapped_status": -96,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b8fc",
+      "status": 0,
+      "event": 15,
+      "mapped_status": 0,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b8fc",
+      "status": 1,
+      "event": 15,
+      "mapped_status": 0,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b8fc",
+      "status": -3,
+      "event": 15,
+      "mapped_status": -98,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b8fc",
+      "status": -4,
+      "event": 15,
+      "mapped_status": -97,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    },
+    {
+      "kind": "completion execution",
+      "callback": "0x9d07b8fc",
+      "status": 2,
+      "event": 15,
+      "mapped_status": -96,
+      "pending_flag_cleared": true,
+      "stack_restored": true
+    }
+  ],
+  "vtable_ram": "0x800538e0",
+  "vtable_source": "0x9d01a3f0",
+  "vtable": [
+    "0x9d07aae8",
+    "0x9d07ab38",
+    "0x9d07ad3c",
+    "0x9d053dbc",
+    "0x9d053de0",
+    "0x9d053e80",
+    "0x9d053df8",
+    "0x9d053e50",
+    "0x9d054338",
+    "0x9d054098",
+    "0x9d054918",
+    "0x9d054be4",
+    "0x9d053e88",
+    "0x9d053ec0",
+    "0x9d05529c",
+    "0x0",
+    "0x9d054710",
+    "0x9d053de8",
+    "0x9d053df0",
+    "0x9d053ef8"
+  ],
+  "bounded_event_table": [
+    "0x9d06be08",
+    "0x9d06be08",
+    "0x9d06be24",
+    "0x9d06be08",
+    "0x9d06be08",
+    "0x9d06be08",
+    "0x9d06be08",
+    "0x9d06be38",
+    "0x9d06be50",
+    "0x9d06bec8",
+    "0x9d06be24",
+    "0x9d06be08",
+    "0x9d06be08",
+    "0x9d06bee8",
+    "0x9d06be08",
+    "0x9d06be10",
+    "0x9d06bf0c"
+  ],
+  "limitations": "Four registration segments and ten callback executions using synthetic RAM objects. Event indexed load explicitly emulated. No transfer queue, real USB hardware, exhaustive callback-writer/alias proof or global stack bound."
+}

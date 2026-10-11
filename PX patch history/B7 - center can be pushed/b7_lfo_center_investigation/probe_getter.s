@@ -1,0 +1,30 @@
+.section __TEXT,__text,regular,pure_instructions
+.globl _probe_getter
+_probe_getter:
+ movl 8(%rdi),%eax
+ movl $101,%ecx
+ movl $202,%edx
+ movl $303,%esi
+ movl $404,%edi
+ movl $505,%r8d
+ movl $606,%r9d
+ movl $707,%r10d
+ movl $808,%r11d
+ pcmpeqd %xmm0,%xmm0
+ pcmpeqd %xmm1,%xmm1
+ pcmpeqd %xmm2,%xmm2
+ pcmpeqd %xmm3,%xmm3
+ pcmpeqd %xmm4,%xmm4
+ pcmpeqd %xmm5,%xmm5
+ pcmpeqd %xmm6,%xmm6
+ pcmpeqd %xmm7,%xmm7
+ pcmpeqd %xmm8,%xmm8
+ pcmpeqd %xmm9,%xmm9
+ pcmpeqd %xmm10,%xmm10
+ pcmpeqd %xmm11,%xmm11
+ pcmpeqd %xmm12,%xmm12
+ pcmpeqd %xmm13,%xmm13
+ pcmpeqd %xmm14,%xmm14
+ pxor %xmm15,%xmm15
+ cmpl %eax,%eax
+ retq

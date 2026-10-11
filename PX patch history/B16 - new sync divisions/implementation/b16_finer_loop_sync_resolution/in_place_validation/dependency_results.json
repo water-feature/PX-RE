@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "preset_actual_validator_u8_cases": 256,
+  "transport_actual_packer_cases": 108,
+  "external_direct_entries": [
+    [
+      "0x9d0006d0",
+      "0x9d04fa74",
+      "0xb413e9d"
+    ]
+  ],
+  "literal_references_all_alignments": [
+    [
+      "0x9d05f8b8",
+      "0x9d060278"
+    ],
+    [
+      "0x9d05f9bc",
+      "0x9d060278"
+    ]
+  ],
+  "constructed_addresses_bounded_lookahead": [
+    [
+      "0x9d06027c",
+      "0x9d060280",
+      "0x9d062074"
+    ]
+  ],
+  "limits": [
+    "Computed/external consumers cannot be exhaustively excluded by application-image references",
+    "Transport I/O boundary mocked; preset physical save/read and external MIDI hardware not executed",
+    "Display lookup requires validated raw 0..17; corrupt RAM or unchecked external writer remains out of contract",
+    "Recovery independence NOT VERIFIED"
+  ]
+}

@@ -1,0 +1,639 @@
+{
+  "scope": "Emitted ELF object machine code in non-PIE x86-64 Mach-O/Rosetta fixtures; actual B8 JMP shims/Open wrapper and inherited B5 adapters/Prepare/Read/Publish wrappers; stock QNX methods and continuations simulated",
+  "host_exit": 0,
+  "stdout": "B8 preflight host 0.024 us/call (200000 iterations, includes fixture capture copy)\nPASS 38622 focused checks in 8 groups (actual inherited B5 + new B8 emitted adapters/wrappers, stock reader/scheduler fixtures)\n",
+  "stderr": "",
+  "object_payload_bytes": 15947,
+  "host_binding_payload_sha256": "ecc11e4f76111ec5fadaacb6a87d5026f1fcd57f8e1707755dfebd34867d2640",
+  "resolved_code_relocations": [
+    {
+      "object": "b5_core.o",
+      "offset": 21,
+      "symbol": ".LCPI0_1",
+      "type": 2,
+      "target": 1740
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 45,
+      "symbol": ".LCPI0_0",
+      "type": 2,
+      "target": 1736
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 61,
+      "symbol": ".LCPI0_2",
+      "type": 2,
+      "target": 1752
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 105,
+      "symbol": ".LCPI0_0",
+      "type": 2,
+      "target": 1736
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 133,
+      "symbol": ".LCPI0_3",
+      "type": 2,
+      "target": 1760
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 153,
+      "symbol": ".LCPI0_4",
+      "type": 2,
+      "target": 1768
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 225,
+      "symbol": ".LCPI0_5",
+      "type": 2,
+      "target": 1776
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 233,
+      "symbol": ".LCPI0_6",
+      "type": 2,
+      "target": 1784
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 409,
+      "symbol": "b5_reset",
+      "type": 4,
+      "target": 366
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 1160,
+      "symbol": ".LCPI8_0",
+      "type": 2,
+      "target": 1744
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 1200,
+      "symbol": ".LCPI8_1",
+      "type": 2,
+      "target": 1792
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 1231,
+      "symbol": ".LCPI8_2",
+      "type": 2,
+      "target": 1808
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 1239,
+      "symbol": ".LCPI8_3",
+      "type": 2,
+      "target": 1824
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 1536,
+      "symbol": "b5_predict",
+      "type": 4,
+      "target": 0
+    },
+    {
+      "object": "b5_core.o",
+      "offset": 1674,
+      "symbol": "b5_reset",
+      "type": 4,
+      "target": 366
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 1892,
+      "symbol": "b5_attach",
+      "type": 4,
+      "target": 1642
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 1983,
+      "symbol": "b5_ram_vtable",
+      "type": 2,
+      "target": 15952
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 2114,
+      "symbol": "b5_note_on",
+      "type": 4,
+      "target": 387
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 2158,
+      "symbol": "b5_ram_vtable",
+      "type": 2,
+      "target": 15952
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 2627,
+      "symbol": "b5_begin",
+      "type": 4,
+      "target": 438
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 2684,
+      "symbol": ".LCPI0_1",
+      "type": 2,
+      "target": 5008
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 2747,
+      "symbol": "b5_read_original_return",
+      "type": 2,
+      "target": 8329
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 3056,
+      "symbol": "b5_begin",
+      "type": 4,
+      "target": 438
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 3315,
+      "symbol": "b5_begin",
+      "type": 4,
+      "target": 438
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 3852,
+      "symbol": "b5_unavailable",
+      "type": 4,
+      "target": 999
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 3943,
+      "symbol": "b5_unavailable",
+      "type": 4,
+      "target": 999
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 3990,
+      "symbol": "b5_render",
+      "type": 4,
+      "target": 1118
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 4175,
+      "symbol": ".LCPI0_0",
+      "type": 2,
+      "target": 5000
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 4548,
+      "symbol": "b5_read_descriptor",
+      "type": 4,
+      "target": 681
+    },
+    {
+      "object": "b5_adapters.o",
+      "offset": 4583,
+      "symbol": "b5_loaded",
+      "type": 4,
+      "target": 708
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 5199,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 5374,
+      "symbol": "b5_continue_forward",
+      "type": 4,
+      "target": 16104
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 5567,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 5742,
+      "symbol": "b5_continue_reverse",
+      "type": 4,
+      "target": 16120
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 5935,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 6103,
+      "symbol": "b5_geometry_default",
+      "type": 4,
+      "target": 16088
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 6108,
+      "symbol": "b5_continue_geometry",
+      "type": 4,
+      "target": 16136
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 6287,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 6457,
+      "symbol": "b5_continue_prepare",
+      "type": 4,
+      "target": 16152
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 6639,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 6810,
+      "symbol": "b5_continue_note_on",
+      "type": 4,
+      "target": 16168
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 6993,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 7168,
+      "symbol": "b5_continue_reset",
+      "type": 4,
+      "target": 16184
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 7359,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 7525,
+      "symbol": "b5_stack_guard_got",
+      "type": 2,
+      "target": 16080
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 7530,
+      "symbol": "b5_continue_return",
+      "type": 4,
+      "target": 16200
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 7711,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 7882,
+      "symbol": "b5_continue_eof",
+      "type": 4,
+      "target": 16216
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 8065,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 8325,
+      "symbol": "b5_original_read",
+      "type": 4,
+      "target": 16232
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 8556,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 8913,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 9173,
+      "symbol": "b5_original_load",
+      "type": 4,
+      "target": 16248
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 9404,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 9761,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 10021,
+      "symbol": "b5_original_filter",
+      "type": 4,
+      "target": 16264
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 10252,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 10609,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 10869,
+      "symbol": "b5_original_publish",
+      "type": 4,
+      "target": 16280
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "offset": 11100,
+      "symbol": "b5_dispatch",
+      "type": 4,
+      "target": 1840
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 11294,
+      "symbol": "",
+      "type": 2,
+      "target": 12772
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 11352,
+      "symbol": "b5_ram_vtable",
+      "type": 2,
+      "target": 15952
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 11771,
+      "symbol": "b8_continue_note",
+      "type": 2,
+      "target": 16344
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 11797,
+      "symbol": "b8_continue_gate",
+      "type": 2,
+      "target": 16312
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 11811,
+      "symbol": "b5_read_original_return",
+      "type": 2,
+      "target": 8329
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 11943,
+      "symbol": "b8_zero",
+      "type": 2,
+      "target": 16376
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 11967,
+      "symbol": "b5_ram_vtable",
+      "type": 2,
+      "target": 15952
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 12127,
+      "symbol": "b5_ram_vtable",
+      "type": 2,
+      "target": 15952
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 12312,
+      "symbol": "b5_note_on",
+      "type": 4,
+      "target": 387
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 12376,
+      "symbol": "b5_ram_vtable",
+      "type": 2,
+      "target": 15952
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 12513,
+      "symbol": "b8_note_skip",
+      "type": 2,
+      "target": 16424
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 12772,
+      "symbol": "",
+      "type": 2,
+      "target": 11272
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 12776,
+      "symbol": "",
+      "type": 2,
+      "target": 11272
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 12780,
+      "symbol": "",
+      "type": 2,
+      "target": 11272
+    },
+    {
+      "object": "b8_adapters.o",
+      "offset": 12784,
+      "symbol": "",
+      "type": 2,
+      "target": 11272
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 12975,
+      "symbol": "b8_dispatch",
+      "type": 4,
+      "target": 11272
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 13146,
+      "symbol": "b8_continue_prepare",
+      "type": 4,
+      "target": 16296
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 13332,
+      "symbol": "b8_dispatch",
+      "type": 4,
+      "target": 11272
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 13700,
+      "symbol": "b8_dispatch",
+      "type": 4,
+      "target": 11272
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 13875,
+      "symbol": "b8_continue_reset",
+      "type": 4,
+      "target": 16328
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 14311,
+      "symbol": "b8_original_resampler_reset",
+      "type": 4,
+      "target": 16408
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 14542,
+      "symbol": "b8_dispatch",
+      "type": 4,
+      "target": 11272
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 14911,
+      "symbol": "b8_dispatch",
+      "type": 4,
+      "target": 11272
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 15080,
+      "symbol": "b8_continue_return",
+      "type": 4,
+      "target": 16360
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 15268,
+      "symbol": "b8_dispatch",
+      "type": 4,
+      "target": 11272
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 15542,
+      "symbol": "b8_original_open",
+      "type": 4,
+      "target": 16392
+    },
+    {
+      "object": "b8_hooks.o",
+      "offset": 15778,
+      "symbol": "b8_dispatch",
+      "type": 4,
+      "target": 11272
+    }
+  ],
+  "input_objects": {
+    "b5_core.o": "6624b456630afa455286b8191c5134be2ae3d3ec9ab0fdeb5940d0c7cc678394",
+    "b5_adapters.o": "e441b13389d999a9841e9346e7b6fe484228b36711e31fc089239e4a2ae98ba1",
+    "b5_hooks.objects.o": "4850159b26e93e3b6b2bd431a3bce5db0408432686c40b4f288ab0223c1d8ee0",
+    "b8_adapters.o": "bec629a1b3d2a6fc4e3f65c4d2828f72e5cac713679a811cc97024f5722943f4",
+    "b8_hooks.o": "7ad598e7e8c1475f650e6825c8802981a989c7581adb05008d3b642002227314"
+  },
+  "test_sources": {
+    "b8_integration_tests.c": "e04fb030e515aaac42258817e4a1c2d6eef586899daec30fc13ea8058f1a5d15",
+    "b8_wrapper_fixture.s": "a55ca0159588c8fc1af9896b87d62d501842a7d9f65e8db58f28540ab94cb003",
+    "validate_b8_host.py": "bb4afc839bf946468c5f3c67b9c6d0aec2ef9ec5cf9878000aa734b501979e38"
+  },
+  "candidate_emitted": false,
+  "pending": [
+    "installed QNX hook execution",
+    "QNX loader/runtime",
+    "target CPU cost",
+    "acoustics",
+    "legacy splice/ping-pong audio integration on target"
+  ]
+}

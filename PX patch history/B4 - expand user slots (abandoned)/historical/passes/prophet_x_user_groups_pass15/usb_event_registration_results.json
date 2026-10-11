@@ -1,0 +1,47 @@
+{
+  "executed_registration": "0x9d066840 -> vtable+8 -> 0x9d07ad3c",
+  "parent_callback": "0x9d06bda0",
+  "parent_context": "0x0",
+  "driver_argument": "0x800536bc",
+  "driver_callback": "0x9d066ba8",
+  "bounded_driver_events": [
+    "0x9d066c10",
+    "0x9d066c10",
+    "0x9d066c74",
+    "0x9d066d4c",
+    "0x9d066d5c",
+    "0x9d066c10",
+    "0x9d066c10",
+    "0x9d066c28",
+    "0x9d066d70"
+  ],
+  "vtable_source": "DINIT 0x9d01a3f0 -> 0x800538e0",
+  "limitations": "Synthetic initialized objects; registration and events3/4/6 only. DSP indexed loads explicitly emulated. Reset event2 not executed. No real USB IRQ, exhaustive alias proof or global stack bound.",
+  "event_cases": [
+    {
+      "event": 3,
+      "parent_byte_before": 128,
+      "parent_byte_after": 0,
+      "forwarded_events": [
+        3
+      ],
+      "stack_restored": true
+    },
+    {
+      "event": 4,
+      "parent_byte_before": 0,
+      "parent_byte_after": 128,
+      "forwarded_events": [
+        4
+      ],
+      "stack_restored": true
+    },
+    {
+      "event": 6,
+      "parent_byte_before": 128,
+      "parent_byte_after": 128,
+      "forwarded_events": [],
+      "stack_restored": true
+    }
+  ]
+}

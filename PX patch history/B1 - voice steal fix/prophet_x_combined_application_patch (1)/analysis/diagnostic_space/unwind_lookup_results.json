@@ -1,0 +1,11 @@
+{
+  "lookup_cases": 3484,
+  "encoded_pointer_cases": 6,
+  "load_biases": [
+    "0x0",
+    "0x10000000"
+  ],
+  "routine": "stock _Unwind_IteratePhdrCallback 0x4ea40 and read_encoded_value_with_base 0x4e5b0",
+  "scope": "all 839 FDE starts and final covered bytes, 61 replacement instruction boundaries, three uncovered boundaries; cold and reused header cache; helper NULL LSDA and indirect personality encoding",
+  "limits": "dl_iterate_phdr input supplied and libc strlen mocked; exception personality and actual QNX runtime not executed"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS_EMITTED_TARGETED_HOST_CHECKS",
+  "decoder_cases": 80640,
+  "service_cases": 1323,
+  "numeric_handler_cases": 180,
+  "hardware": "NOT VERIFIED",
+  "limits": "Decoder/service real words; event callback mocked with adversarial ABI clobbers and ISR-arrival storage. Numeric routes stop at setter entry; getter storage lookup modeled. Existing B15/hardware limits inherited."
+}

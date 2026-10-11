@@ -1,0 +1,33 @@
+{
+  "configuration": "0x9d07f2a8",
+  "driver": "0x8003a27c",
+  "controller_indices": [
+    132,
+    133
+  ],
+  "priority_field_register": "0xbf810350",
+  "priority_field_word": "0x1010",
+  "writes": [
+    {
+      "pc": "0x9d06bfd4",
+      "address": "0xbf810350",
+      "value": "0x10"
+    },
+    {
+      "pc": "0x9d06bff4",
+      "address": "0xbf810350",
+      "value": "0x1010"
+    },
+    {
+      "pc": "0x9d07abc8",
+      "address": "0xbf810084",
+      "value": "0x10"
+    },
+    {
+      "pc": "0x9d07ac4c",
+      "address": "0xbf810084",
+      "value": "0x20"
+    }
+  ],
+  "limitations": "Complete simple driver initialization plus isolated priority and controller-clear segments. Plain mapped MMIO; no real USB interrupt, device-specific register-map confirmation or global stack bound."
+}

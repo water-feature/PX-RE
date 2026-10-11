@@ -1,0 +1,274 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "853a74248983b260f95d845341efa2825152bb477d74e504b86a4d2a0cf6844d",
+  "guard_cases": 8256,
+  "secondary_guard_cases": 774,
+  "secondary_fairness_cases": 15,
+  "render_masks": 64,
+  "resume_cases": 8,
+  "cancellation_wrapper_cases": 72,
+  "clear_destination_equivalence_cases": 24,
+  "blank_cases": 8,
+  "sustained_stream_cases": [
+    {
+      "mask": 3,
+      "period": 1,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 3,
+      "period": 2,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 3,
+      "period": 3,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 3,
+      "period": 8,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 3,
+      "period": 128,
+      "frames_started": 4,
+      "drain_passes": 4
+    },
+    {
+      "mask": 3,
+      "period": 160,
+      "frames_started": 4,
+      "drain_passes": 97
+    },
+    {
+      "mask": 6,
+      "period": 1,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 6,
+      "period": 2,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 6,
+      "period": 3,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 6,
+      "period": 8,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 6,
+      "period": 128,
+      "frames_started": 4,
+      "drain_passes": 4
+    },
+    {
+      "mask": 6,
+      "period": 160,
+      "frames_started": 4,
+      "drain_passes": 97
+    },
+    {
+      "mask": 7,
+      "period": 1,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 7,
+      "period": 2,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 7,
+      "period": 3,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 7,
+      "period": 8,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 7,
+      "period": 128,
+      "frames_started": 4,
+      "drain_passes": 4
+    },
+    {
+      "mask": 7,
+      "period": 160,
+      "frames_started": 4,
+      "drain_passes": 97
+    },
+    {
+      "mask": 24,
+      "period": 1,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 24,
+      "period": 2,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 24,
+      "period": 3,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 24,
+      "period": 8,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 24,
+      "period": 128,
+      "frames_started": 4,
+      "drain_passes": 4
+    },
+    {
+      "mask": 24,
+      "period": 160,
+      "frames_started": 4,
+      "drain_passes": 97
+    },
+    {
+      "mask": 48,
+      "period": 1,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 48,
+      "period": 2,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 48,
+      "period": 3,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 48,
+      "period": 8,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 48,
+      "period": 128,
+      "frames_started": 4,
+      "drain_passes": 4
+    },
+    {
+      "mask": 48,
+      "period": 160,
+      "frames_started": 4,
+      "drain_passes": 97
+    },
+    {
+      "mask": 56,
+      "period": 1,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 56,
+      "period": 2,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 56,
+      "period": 3,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 56,
+      "period": 8,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 56,
+      "period": 128,
+      "frames_started": 4,
+      "drain_passes": 4
+    },
+    {
+      "mask": 56,
+      "period": 160,
+      "frames_started": 4,
+      "drain_passes": 97
+    },
+    {
+      "mask": 63,
+      "period": 1,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 63,
+      "period": 2,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 63,
+      "period": 3,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 63,
+      "period": 8,
+      "frames_started": 5,
+      "drain_passes": 133
+    },
+    {
+      "mask": 63,
+      "period": 128,
+      "frames_started": 4,
+      "drain_passes": 4
+    },
+    {
+      "mask": 63,
+      "period": 160,
+      "frames_started": 4,
+      "drain_passes": 97
+    }
+  ],
+  "random_gated_cases": 20,
+  "stock_equivalence_cases": 7,
+  "mid_transfer_transition_cases": 30,
+  "limits": [
+    "Drawing glyph/pixel bodies and OLED hardware are explicit summaries.",
+    "Main-pass counts are not milliseconds; synchronous replay cost remains unchanged.",
+    "No silicon timing, visual tearing, physical edge acquisition or arbitrary-pointer ownership proof."
+  ]
+}

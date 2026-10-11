@@ -1,0 +1,1517 @@
+{
+  "status": "validated_structural_host_candidate",
+  "base_file": "voice_2.2.2.0.2_qnx.elf",
+  "base_sha256": "651f0ac3339f4f41a4c0bc562cdf4c72df821d85aad3f689e700612b8c8b05e7",
+  "candidate_sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35",
+  "base_length": 986520,
+  "candidate_length": 1014576,
+  "layout": {
+    "code_base": 987136,
+    "code_bytes": 11269,
+    "code_reservation": 12288,
+    "frame_base": 999424,
+    "frame_bytes": 3024,
+    "frame_bytes_with_terminator": 3028,
+    "frame_reservation": 4096,
+    "index_base": 1003520,
+    "index_bytes": 6916,
+    "index_reservation": 8192,
+    "rx_end": 1011712,
+    "names_offset": 1011712,
+    "names_size": 368,
+    "section_table_offset": 1012080,
+    "section_count": 39
+  },
+  "policy": {
+    "shared_source": "../b5_fade_prototype.py:FADE_DURATION_MS",
+    "duration_ms": 5.0,
+    "intervals": 240,
+    "horizon": 304
+  },
+  "extra_heap_bytes": 17408,
+  "symbols": {
+    "b5_ram_vtable": 2745576,
+    "b5_stack_guard_got": 2752424,
+    "b5_geometry_default": 265280,
+    "b5_continue_forward": 263624,
+    "b5_continue_reverse": 263295,
+    "b5_continue_geometry": 261106,
+    "b5_continue_prepare": 226027,
+    "b5_continue_note_on": 222287,
+    "b5_continue_reset": 248054,
+    "b5_continue_return": 226461,
+    "b5_continue_eof": 262247,
+    "b5_original_read": 260160,
+    "b5_original_load": 189152,
+    "b5_original_filter": 224032,
+    "b5_original_publish": 268272,
+    "b5_predict": 987136,
+    "b5_reset": 987502,
+    "b5_note_on": 987523,
+    "b5_begin": 987574,
+    "b5_read_descriptor": 987817,
+    "b5_loaded": 987844,
+    "b5_unavailable": 988135,
+    "b5_render": 988254,
+    "b5_attach": 988778,
+    "b5_dispatch": 988976,
+    "b5_hook_forward": 992160,
+    "b5_hook_reverse": 992528,
+    "b5_hook_geometry": 992896,
+    "b5_hook_prepare": 993248,
+    "b5_hook_note_on": 993600,
+    "b5_hook_reset": 993952,
+    "b5_hook_return": 994320,
+    "b5_hook_eof": 994672,
+    "b5_wrap_read": 995024,
+    "b5_read_original_return": 995465,
+    "b5_wrap_load": 995872,
+    "b5_wrap_filter": 996720,
+    "b5_wrap_publish": 997568
+  },
+  "functions": [
+    {
+      "object": "b5_core.o",
+      "name": "same",
+      "va": 988091,
+      "size": 44
+    },
+    {
+      "object": "b5_core.o",
+      "name": "b5_predict",
+      "va": 987136,
+      "size": 366
+    },
+    {
+      "object": "b5_core.o",
+      "name": "b5_reset",
+      "va": 987502,
+      "size": 21
+    },
+    {
+      "object": "b5_core.o",
+      "name": "b5_note_on",
+      "va": 987523,
+      "size": 51
+    },
+    {
+      "object": "b5_core.o",
+      "name": "b5_begin",
+      "va": 987574,
+      "size": 243
+    },
+    {
+      "object": "b5_core.o",
+      "name": "b5_read_descriptor",
+      "va": 987817,
+      "size": 27
+    },
+    {
+      "object": "b5_core.o",
+      "name": "b5_loaded",
+      "va": 987844,
+      "size": 247
+    },
+    {
+      "object": "b5_core.o",
+      "name": "b5_unavailable",
+      "va": 988135,
+      "size": 119
+    },
+    {
+      "object": "b5_core.o",
+      "name": "b5_render",
+      "va": 988254,
+      "size": 524
+    },
+    {
+      "object": "b5_core.o",
+      "name": "b5_attach",
+      "va": 988778,
+      "size": 92
+    },
+    {
+      "object": "b5_adapters.o",
+      "name": "requested_key",
+      "va": 991904,
+      "size": 228
+    },
+    {
+      "object": "b5_adapters.o",
+      "name": "b5_dispatch",
+      "va": 988976,
+      "size": 2928
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_hook_forward",
+      "va": 992160,
+      "size": 354
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_hook_reverse",
+      "va": 992528,
+      "size": 354
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_hook_geometry",
+      "va": 992896,
+      "size": 352
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_hook_prepare",
+      "va": 993248,
+      "size": 349
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_hook_note_on",
+      "va": 993600,
+      "size": 350
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_hook_reset",
+      "va": 993952,
+      "size": 356
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_hook_return",
+      "va": 994320,
+      "size": 350
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_hook_eof",
+      "va": 994672,
+      "size": 350
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_wrap_read",
+      "va": 995024,
+      "size": 837
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_wrap_load",
+      "va": 995872,
+      "size": 837
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_wrap_filter",
+      "va": 996720,
+      "size": 837
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "name": "b5_wrap_publish",
+      "va": 997568,
+      "size": 837
+    }
+  ],
+  "relocations": [
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 987157,
+      "type": 2,
+      "symbol": ".LCPI0_1",
+      "target": 988876,
+      "addend": -4,
+      "value": 1715
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 987181,
+      "type": 2,
+      "symbol": ".LCPI0_0",
+      "target": 988872,
+      "addend": -4,
+      "value": 1687
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 987197,
+      "type": 2,
+      "symbol": ".LCPI0_2",
+      "target": 988888,
+      "addend": -4,
+      "value": 1687
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 987241,
+      "type": 2,
+      "symbol": ".LCPI0_0",
+      "target": 988872,
+      "addend": -4,
+      "value": 1627
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 987269,
+      "type": 2,
+      "symbol": ".LCPI0_3",
+      "target": 988896,
+      "addend": -4,
+      "value": 1623
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 987289,
+      "type": 2,
+      "symbol": ".LCPI0_4",
+      "target": 988904,
+      "addend": -4,
+      "value": 1611
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 987361,
+      "type": 2,
+      "symbol": ".LCPI0_5",
+      "target": 988912,
+      "addend": -4,
+      "value": 1547
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 987369,
+      "type": 2,
+      "symbol": ".LCPI0_6",
+      "target": 988920,
+      "addend": -4,
+      "value": 1547
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 987545,
+      "type": 4,
+      "symbol": "b5_reset",
+      "target": 987502,
+      "addend": -4,
+      "value": -47
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 988296,
+      "type": 2,
+      "symbol": ".LCPI8_0",
+      "target": 988880,
+      "addend": -4,
+      "value": 580
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 988336,
+      "type": 2,
+      "symbol": ".LCPI8_1",
+      "target": 988928,
+      "addend": -4,
+      "value": 588
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 988367,
+      "type": 2,
+      "symbol": ".LCPI8_2",
+      "target": 988944,
+      "addend": -4,
+      "value": 573
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 988375,
+      "type": 2,
+      "symbol": ".LCPI8_3",
+      "target": 988960,
+      "addend": -4,
+      "value": 581
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 988672,
+      "type": 4,
+      "symbol": "b5_predict",
+      "target": 987136,
+      "addend": -4,
+      "value": -1540
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".text",
+      "site": 988810,
+      "type": 4,
+      "symbol": "b5_reset",
+      "target": 987502,
+      "addend": -4,
+      "value": -1312
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999456,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 0,
+      "value": -12320
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999476,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 366,
+      "value": -11974
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999496,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 387,
+      "value": -11973
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999540,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 438,
+      "value": -11966
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999584,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 681,
+      "value": -11767
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999604,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 708,
+      "value": -11760
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999676,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 955,
+      "value": -11585
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999696,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 999,
+      "value": -11561
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999740,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 1118,
+      "value": -11486
+    },
+    {
+      "object": "b5_core.o",
+      "section": ".eh_frame",
+      "site": 999792,
+      "type": 2,
+      "symbol": "",
+      "target": 987136,
+      "addend": 1642,
+      "value": -11014
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 989028,
+      "type": 4,
+      "symbol": "b5_attach",
+      "target": 988778,
+      "addend": -4,
+      "value": -254
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 989119,
+      "type": 2,
+      "symbol": "b5_ram_vtable",
+      "target": 2745576,
+      "addend": -4,
+      "value": 1756453
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 989250,
+      "type": 4,
+      "symbol": "b5_note_on",
+      "target": 987523,
+      "addend": -4,
+      "value": -1731
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 989294,
+      "type": 2,
+      "symbol": "b5_ram_vtable",
+      "target": 2745576,
+      "addend": -4,
+      "value": 1756278
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 989763,
+      "type": 4,
+      "symbol": "b5_begin",
+      "target": 987574,
+      "addend": -4,
+      "value": -2193
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 989820,
+      "type": 2,
+      "symbol": ".LCPI0_1",
+      "target": 992144,
+      "addend": -4,
+      "value": 2320
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 989883,
+      "type": 2,
+      "symbol": "b5_read_original_return",
+      "target": 995465,
+      "addend": -4,
+      "value": 5578
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 990192,
+      "type": 4,
+      "symbol": "b5_begin",
+      "target": 987574,
+      "addend": -4,
+      "value": -2622
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 990451,
+      "type": 4,
+      "symbol": "b5_begin",
+      "target": 987574,
+      "addend": -4,
+      "value": -2881
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 990988,
+      "type": 4,
+      "symbol": "b5_unavailable",
+      "target": 988135,
+      "addend": -4,
+      "value": -2857
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 991079,
+      "type": 4,
+      "symbol": "b5_unavailable",
+      "target": 988135,
+      "addend": -4,
+      "value": -2948
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 991126,
+      "type": 4,
+      "symbol": "b5_render",
+      "target": 988254,
+      "addend": -4,
+      "value": -2876
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 991311,
+      "type": 2,
+      "symbol": ".LCPI0_0",
+      "target": 992136,
+      "addend": -4,
+      "value": 821
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 991684,
+      "type": 4,
+      "symbol": "b5_read_descriptor",
+      "target": 987817,
+      "addend": -4,
+      "value": -3871
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".text",
+      "site": 991719,
+      "type": 4,
+      "symbol": "b5_loaded",
+      "target": 987844,
+      "addend": -4,
+      "value": -3879
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".eh_frame",
+      "site": 999872,
+      "type": 2,
+      "symbol": "",
+      "target": 988976,
+      "addend": 0,
+      "value": -10896
+    },
+    {
+      "object": "b5_adapters.o",
+      "section": ".eh_frame",
+      "site": 1000000,
+      "type": 2,
+      "symbol": "",
+      "target": 988976,
+      "addend": 2928,
+      "value": -8096
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 992335,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -3363
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 992510,
+      "type": 4,
+      "symbol": "b5_continue_forward",
+      "target": 263624,
+      "addend": -4,
+      "value": -728890
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 992703,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -3731
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 992878,
+      "type": 4,
+      "symbol": "b5_continue_reverse",
+      "target": 263295,
+      "addend": -4,
+      "value": -729587
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 993071,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -4099
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 993239,
+      "type": 4,
+      "symbol": "b5_geometry_default",
+      "target": 265280,
+      "addend": -4,
+      "value": -727963
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 993244,
+      "type": 4,
+      "symbol": "b5_continue_geometry",
+      "target": 261106,
+      "addend": -4,
+      "value": -732142
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 993423,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -4451
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 993593,
+      "type": 4,
+      "symbol": "b5_continue_prepare",
+      "target": 226027,
+      "addend": -4,
+      "value": -767570
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 993775,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -4803
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 993946,
+      "type": 4,
+      "symbol": "b5_continue_note_on",
+      "target": 222287,
+      "addend": -4,
+      "value": -771663
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 994129,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -5157
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 994304,
+      "type": 4,
+      "symbol": "b5_continue_reset",
+      "target": 248054,
+      "addend": -4,
+      "value": -746254
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 994495,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -5523
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 994661,
+      "type": 2,
+      "symbol": "b5_stack_guard_got",
+      "target": 2752424,
+      "addend": -4,
+      "value": 1757759
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 994666,
+      "type": 4,
+      "symbol": "b5_continue_return",
+      "target": 226461,
+      "addend": -4,
+      "value": -768209
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 994847,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -5875
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 995018,
+      "type": 4,
+      "symbol": "b5_continue_eof",
+      "target": 262247,
+      "addend": -4,
+      "value": -732775
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 995201,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -6229
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 995461,
+      "type": 4,
+      "symbol": "b5_original_read",
+      "target": 260160,
+      "addend": -4,
+      "value": -735305
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 995692,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -6720
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 996049,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -7077
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 996309,
+      "type": 4,
+      "symbol": "b5_original_load",
+      "target": 189152,
+      "addend": -4,
+      "value": -807161
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 996540,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -7568
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 996897,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -7925
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 997157,
+      "type": 4,
+      "symbol": "b5_original_filter",
+      "target": 224032,
+      "addend": -4,
+      "value": -773129
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 997388,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -8416
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 997745,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -8773
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 998005,
+      "type": 4,
+      "symbol": "b5_original_publish",
+      "target": 268272,
+      "addend": -4,
+      "value": -729737
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".text",
+      "site": 998236,
+      "type": 4,
+      "symbol": "b5_dispatch",
+      "target": 988976,
+      "addend": -4,
+      "value": -9264
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1000056,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 0,
+      "value": -7896
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1000256,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 368,
+      "value": -7728
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1000456,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 736,
+      "value": -7560
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1000656,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 1088,
+      "value": -7408
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1000856,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 1440,
+      "value": -7256
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1001040,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 1792,
+      "value": -7088
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1001236,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 2160,
+      "value": -6916
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1001436,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 2512,
+      "value": -6764
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1001636,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 2864,
+      "value": -6612
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1001840,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 3712,
+      "value": -5968
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1002044,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 4560,
+      "value": -5324
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "section": ".eh_frame",
+      "site": 1002248,
+      "type": 2,
+      "symbol": "",
+      "target": 992160,
+      "addend": 5408,
+      "value": -4680
+    }
+  ],
+  "hooks": [
+    {
+      "name": "forward",
+      "kind": "JMP",
+      "site": 263613,
+      "size": 11,
+      "target": 992160,
+      "continuation": 263624,
+      "cfa": 176
+    },
+    {
+      "name": "reverse",
+      "kind": "JMP",
+      "site": 263284,
+      "size": 11,
+      "target": 992528,
+      "continuation": 263295,
+      "cfa": 176
+    },
+    {
+      "name": "geometry",
+      "kind": "JMP",
+      "site": 261097,
+      "size": 9,
+      "target": 992896,
+      "continuation": 261106,
+      "cfa": 176
+    },
+    {
+      "name": "prepare",
+      "kind": "JMP",
+      "site": 226021,
+      "size": 6,
+      "target": 993248,
+      "continuation": 226027,
+      "cfa": 144
+    },
+    {
+      "name": "note_on",
+      "kind": "JMP",
+      "site": 222280,
+      "size": 7,
+      "target": 993600,
+      "continuation": 222287,
+      "cfa": 64
+    },
+    {
+      "name": "reset",
+      "kind": "JMP",
+      "site": 248048,
+      "size": 6,
+      "target": 993952,
+      "continuation": 248054,
+      "cfa": 8
+    },
+    {
+      "name": "return",
+      "kind": "JMP",
+      "site": 226454,
+      "size": 7,
+      "target": 994320,
+      "continuation": 226461,
+      "cfa": 144
+    },
+    {
+      "name": "eof",
+      "kind": "JMP",
+      "site": 262240,
+      "size": 7,
+      "target": 994672,
+      "continuation": 262247,
+      "cfa": 176
+    },
+    {
+      "name": "read",
+      "kind": "CALL",
+      "site": 248961,
+      "size": 5,
+      "target": 995024,
+      "original_target": 260160,
+      "continuation": 248966
+    },
+    {
+      "name": "load",
+      "kind": "CALL",
+      "site": 226147,
+      "size": 5,
+      "target": 995872,
+      "original_target": 189152,
+      "continuation": 226152
+    },
+    {
+      "name": "filter",
+      "kind": "CALL",
+      "site": 226374,
+      "size": 5,
+      "target": 996720,
+      "original_target": 224032,
+      "continuation": 226379
+    },
+    {
+      "name": "publish",
+      "kind": "CALL",
+      "site": 249193,
+      "size": 5,
+      "target": 997568,
+      "original_target": 268272,
+      "continuation": 249198
+    }
+  ],
+  "original_byte_whitelist": [
+    {
+      "label": "JMP forward",
+      "offset": 263613,
+      "size": 11,
+      "old": "807c242000440fb65c243c",
+      "new": "e9de1d0b00909090909090"
+    },
+    {
+      "label": "JMP reverse",
+      "offset": 263284,
+      "size": 11,
+      "old": "807c242000440fb65c243c",
+      "new": "e997200b00909090909090"
+    },
+    {
+      "label": "JMP geometry",
+      "offset": 261097,
+      "size": 9,
+      "old": "83faff0f844e100000",
+      "new": "e9922a0b0090909090"
+    },
+    {
+      "label": "JMP prepare",
+      "offset": 226021,
+      "size": 6,
+      "old": "488b07ff5068",
+      "new": "e9f6b40b0090"
+    },
+    {
+      "label": "JMP note_on",
+      "offset": 222280,
+      "size": 7,
+      "old": "488b7d30488b07",
+      "new": "e9f3c40b009090"
+    },
+    {
+      "label": "JMP reset",
+      "offset": 248048,
+      "size": 6,
+      "old": "41544531e455",
+      "new": "e9ab610b0090"
+    },
+    {
+      "label": "JMP return",
+      "offset": 226454,
+      "size": 7,
+      "old": "488b1d0b8b2600",
+      "new": "e975b70b009090"
+    },
+    {
+      "label": "JMP eof",
+      "offset": 262240,
+      "size": 7,
+      "old": "488b04244885c0",
+      "new": "e90b2d0b009090"
+    },
+    {
+      "label": "CALL read",
+      "offset": 248961,
+      "size": 5,
+      "old": "e8ba2b0000",
+      "new": "e84a620b00"
+    },
+    {
+      "label": "CALL load",
+      "offset": 226147,
+      "size": 5,
+      "old": "e8786fffff",
+      "new": "e8b8be0b00"
+    },
+    {
+      "label": "CALL filter",
+      "offset": 226374,
+      "size": 5,
+      "old": "e8d5f6ffff",
+      "new": "e825c10b00"
+    },
+    {
+      "label": "CALL publish",
+      "offset": 249193,
+      "size": 5,
+      "old": "e8824a0000",
+      "new": "e8526b0b00"
+    },
+    {
+      "label": "owned allocation 0x3d010",
+      "offset": 249872,
+      "size": 5,
+      "old": "bf000c0000",
+      "new": "bf004c0000"
+    },
+    {
+      "label": "owned allocation 0x3d0fc",
+      "offset": 250108,
+      "size": 5,
+      "old": "bfb8010000",
+      "new": "bfc0010000"
+    },
+    {
+      "label": "owned allocation 0x3d11a",
+      "offset": 250138,
+      "size": 5,
+      "old": "bfb8010000",
+      "new": "bfc0010000"
+    },
+    {
+      "label": "ELF e_shoff",
+      "offset": 40,
+      "size": 8,
+      "old": "58040f0000000000",
+      "new": "70710f0000000000"
+    },
+    {
+      "label": "ELF e_shnum",
+      "offset": 60,
+      "size": 2,
+      "old": "2500",
+      "new": "2700"
+    },
+    {
+      "label": "RX filesz/memsz",
+      "offset": 208,
+      "size": 16,
+      "old": "80d409000000000080d4090000000000",
+      "new": "00700f000000000000700f0000000000"
+    },
+    {
+      "label": "PT_GNU_EH_FRAME location/size",
+      "offset": 408,
+      "size": 40,
+      "old": "901509000000000090150900000000009015090000000000441a000000000000441a000000000000",
+      "new": "00500f000000000000500f000000000000500f0000000000041b000000000000041b000000000000"
+    }
+  ],
+  "original_index_count": 839,
+  "new_index_count": 24,
+  "combined_index_count": 863,
+  "original_index_semantic_sha256": "d38d64d20df9f93e5aaa96b67a4fe2900f9e2c565e37c4645aa7140fb9cfcc30",
+  "source_sha256": {
+    "build_b5_candidate.py": "7a772f2553a9aaa9e871c780569255d501dbafba95c1d492be7f271fdc48c50a",
+    "validate_b5_candidate.py": "dd4a5bdbbae1b00464b8bbbe8a0440ed2299967a0c231fca5866d63122db6471",
+    "emit_b5_objects.py": "6e8e8e30f03221eb5c03263f1420defce3dbf9b232a7eb494a4db6551857011e",
+    "emit_b5_candidate.py": "13c33c83af2aefe11f1281a685625267461eee447ca3000671a11d77bb8907f3",
+    "b5_core.c": "0f1b19128dad1dd326ceaa3dbd3b8a8f363fcc63a1a3935ea276dfeaf46a7a14",
+    "b5_adapters.c": "4efa88a28e87e193e554804e0045f8aca6231b1e11c55c2a3734ccffacd1870a",
+    "b5_hooks.objects.s": "160d30c4d5e92922ef34c1e75cb24bc49e1972b0d7b34945e13eb1a064c09453",
+    "b5_policy.generated.h": "d78aa5a5b59c45098b7ec932818f03c92e9d609f53fd46b5db1ec75f024809ae"
+  },
+  "input_objects": [
+    {
+      "object": "b5_core.o",
+      "sha256": "6624b456630afa455286b8191c5134be2ae3d3ec9ab0fdeb5940d0c7cc678394",
+      "text": 1734,
+      "constants": 92,
+      "eh_frame": 416,
+      "fde_count": 10,
+      "functions": [
+        {
+          "name": "same",
+          "section": ".text",
+          "offset": 955,
+          "size": 44
+        },
+        {
+          "name": "b5_predict",
+          "section": ".text",
+          "offset": 0,
+          "size": 366
+        },
+        {
+          "name": "b5_reset",
+          "section": ".text",
+          "offset": 366,
+          "size": 21
+        },
+        {
+          "name": "b5_note_on",
+          "section": ".text",
+          "offset": 387,
+          "size": 51
+        },
+        {
+          "name": "b5_begin",
+          "section": ".text",
+          "offset": 438,
+          "size": 243
+        },
+        {
+          "name": "b5_read_descriptor",
+          "section": ".text",
+          "offset": 681,
+          "size": 27
+        },
+        {
+          "name": "b5_loaded",
+          "section": ".text",
+          "offset": 708,
+          "size": 247
+        },
+        {
+          "name": "b5_unavailable",
+          "section": ".text",
+          "offset": 999,
+          "size": 119
+        },
+        {
+          "name": "b5_render",
+          "section": ".text",
+          "offset": 1118,
+          "size": 524
+        },
+        {
+          "name": "b5_attach",
+          "section": ".text",
+          "offset": 1642,
+          "size": 92
+        }
+      ]
+    },
+    {
+      "object": "b5_adapters.o",
+      "sha256": "e441b13389d999a9841e9346e7b6fe484228b36711e31fc089239e4a2ae98ba1",
+      "text": 3156,
+      "constants": 12,
+      "eh_frame": 184,
+      "fde_count": 2,
+      "functions": [
+        {
+          "name": "requested_key",
+          "section": ".text",
+          "offset": 2928,
+          "size": 228
+        },
+        {
+          "name": "b5_dispatch",
+          "section": ".text",
+          "offset": 0,
+          "size": 2928
+        }
+      ]
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "sha256": "4850159b26e93e3b6b2bd431a3bce5db0408432686c40b4f288ab0223c1d8ee0",
+      "text": 6245,
+      "constants": 0,
+      "eh_frame": 2424,
+      "fde_count": 12,
+      "functions": [
+        {
+          "name": "b5_hook_forward",
+          "section": ".text",
+          "offset": 0,
+          "size": 354
+        },
+        {
+          "name": "b5_hook_reverse",
+          "section": ".text",
+          "offset": 368,
+          "size": 354
+        },
+        {
+          "name": "b5_hook_geometry",
+          "section": ".text",
+          "offset": 736,
+          "size": 352
+        },
+        {
+          "name": "b5_hook_prepare",
+          "section": ".text",
+          "offset": 1088,
+          "size": 349
+        },
+        {
+          "name": "b5_hook_note_on",
+          "section": ".text",
+          "offset": 1440,
+          "size": 350
+        },
+        {
+          "name": "b5_hook_reset",
+          "section": ".text",
+          "offset": 1792,
+          "size": 356
+        },
+        {
+          "name": "b5_hook_return",
+          "section": ".text",
+          "offset": 2160,
+          "size": 350
+        },
+        {
+          "name": "b5_hook_eof",
+          "section": ".text",
+          "offset": 2512,
+          "size": 350
+        },
+        {
+          "name": "b5_wrap_read",
+          "section": ".text",
+          "offset": 2864,
+          "size": 837
+        },
+        {
+          "name": "b5_wrap_load",
+          "section": ".text",
+          "offset": 3712,
+          "size": 837
+        },
+        {
+          "name": "b5_wrap_filter",
+          "section": ".text",
+          "offset": 4560,
+          "size": 837
+        },
+        {
+          "name": "b5_wrap_publish",
+          "section": ".text",
+          "offset": 5408,
+          "size": 837
+        }
+      ]
+    }
+  ],
+  "pending": [
+    "QNX loader/runtime execution",
+    "target CPU performance",
+    "acoustic/listening tests"
+  ],
+  "packaged": false,
+  "validation": {
+    "scope": "Installed candidate structural/relocation/CFI/index checks; prior unchanged object host execution accepted",
+    "passed": 7036,
+    "changed_original_byte_count": 100,
+    "code_relocations": 60,
+    "frame_relocations": 24,
+    "new_fdes": 24,
+    "instruction_cfa_checks": 1142,
+    "aligned_call_sites": 21,
+    "combined_index_lookup_checks": 2733,
+    "all_original_unwind_targets_preserved": 839,
+    "target_loader_runtime_validated": false,
+    "target_performance_validated": false,
+    "acoustics_validated": false
+  },
+  "candidate_file": "voice_2.2.2.0.2_qnx_B5_candidate.elf"
+}

@@ -1,0 +1,672 @@
+{
+  "status": "validated_structural_host_candidate",
+  "base_file": "b5_packaged_qnx.elf",
+  "base_sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35",
+  "candidate_sha256": "85b76594924f1a8b7deffec1d81f79feb848edf6c631d0eb2b6c24f49aa393f1",
+  "base_length": 1014576,
+  "candidate_length": 1039304,
+  "layout": {
+    "code_base": 1015808,
+    "code_bytes": 4667,
+    "code_reservation": 8192,
+    "frame_base": 1024000,
+    "frame_bytes": 1320,
+    "frame_bytes_with_terminator": 1324,
+    "frame_reservation": 4096,
+    "index_base": 1028096,
+    "index_bytes": 6972,
+    "index_reservation": 8192,
+    "rx_end": 1036288,
+    "names_offset": 1036288,
+    "names_size": 390,
+    "section_table_offset": 1036680,
+    "section_count": 41
+  },
+  "policy": {
+    "inherited_B5_fade_ms": 5,
+    "reader_latch_offset": 448
+  },
+  "extra_heap_bytes": 18432,
+  "incremental_heap_bytes": 1024,
+  "symbols": {
+    "b5_ram_vtable": 2745576,
+    "b5_read_original_return": 995465,
+    "b8_continue_prepare": 226011,
+    "b8_continue_gate": 261171,
+    "b8_continue_reset": 248060,
+    "b8_continue_note": 222280,
+    "b8_continue_return": 226466,
+    "b8_zero": 262240,
+    "b8_original_open": 271968,
+    "b8_original_resampler_reset": 189024,
+    "b8_note_skip": 222287,
+    "b5_note_on": 987523,
+    "b8_dispatch": 1015808,
+    "b8_hook_prepare": 1017328,
+    "b8_hook_gate": 1017680,
+    "b8_hook_reset": 1018048,
+    "b8_hook_note": 1018416,
+    "b8_hook_return": 1019264,
+    "b8_wrap_open": 1019616
+  },
+  "functions": [
+    {
+      "object": "b8_adapters.o",
+      "name": "b8_dispatch",
+      "va": 1015808,
+      "size": 1499
+    },
+    {
+      "object": "b8_hooks.o",
+      "name": "b8_hook_prepare",
+      "va": 1017328,
+      "size": 350
+    },
+    {
+      "object": "b8_hooks.o",
+      "name": "b8_hook_gate",
+      "va": 1017680,
+      "size": 358
+    },
+    {
+      "object": "b8_hooks.o",
+      "name": "b8_hook_reset",
+      "va": 1018048,
+      "size": 359
+    },
+    {
+      "object": "b8_hooks.o",
+      "name": "b8_hook_note",
+      "va": 1018416,
+      "size": 833
+    },
+    {
+      "object": "b8_hooks.o",
+      "name": "b8_hook_return",
+      "va": 1019264,
+      "size": 348
+    },
+    {
+      "object": "b8_hooks.o",
+      "name": "b8_wrap_open",
+      "va": 1019616,
+      "size": 859
+    }
+  ],
+  "relocations": [
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1015830,
+      "type": 2,
+      "symbol": "",
+      "target": 1017308,
+      "addend": -4,
+      "value": 1474
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1015888,
+      "type": 2,
+      "symbol": "b5_ram_vtable",
+      "target": 2745576,
+      "addend": -4,
+      "value": 1729684
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1016307,
+      "type": 2,
+      "symbol": "b8_continue_note",
+      "target": 222280,
+      "addend": -4,
+      "value": -794031
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1016333,
+      "type": 2,
+      "symbol": "b8_continue_gate",
+      "target": 261171,
+      "addend": -4,
+      "value": -755166
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1016347,
+      "type": 2,
+      "symbol": "b5_read_original_return",
+      "target": 995465,
+      "addend": -4,
+      "value": -20886
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1016479,
+      "type": 2,
+      "symbol": "b8_zero",
+      "target": 262240,
+      "addend": -4,
+      "value": -754243
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1016503,
+      "type": 2,
+      "symbol": "b5_ram_vtable",
+      "target": 2745576,
+      "addend": -4,
+      "value": 1729069
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1016663,
+      "type": 2,
+      "symbol": "b5_ram_vtable",
+      "target": 2745576,
+      "addend": -4,
+      "value": 1728909
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1016848,
+      "type": 4,
+      "symbol": "b5_note_on",
+      "target": 987523,
+      "addend": -4,
+      "value": -29329
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1016912,
+      "type": 2,
+      "symbol": "b5_ram_vtable",
+      "target": 2745576,
+      "addend": -4,
+      "value": 1728660
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".text",
+      "site": 1017049,
+      "type": 2,
+      "symbol": "b8_note_skip",
+      "target": 222287,
+      "addend": -4,
+      "value": -794766
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".rodata",
+      "site": 1017308,
+      "type": 2,
+      "symbol": "",
+      "target": 1015808,
+      "addend": 35,
+      "value": -1465
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".rodata",
+      "site": 1017312,
+      "type": 2,
+      "symbol": "",
+      "target": 1015808,
+      "addend": 526,
+      "value": -978
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".rodata",
+      "site": 1017316,
+      "type": 2,
+      "symbol": "",
+      "target": 1015808,
+      "addend": 688,
+      "value": -820
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".rodata",
+      "site": 1017320,
+      "type": 2,
+      "symbol": "",
+      "target": 1015808,
+      "addend": 815,
+      "value": -697
+    },
+    {
+      "object": "b8_adapters.o",
+      "section": ".eh_frame",
+      "site": 1024032,
+      "type": 2,
+      "symbol": "",
+      "target": 1015808,
+      "addend": 0,
+      "value": -8224
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1017503,
+      "type": 4,
+      "symbol": "b8_dispatch",
+      "target": 1015808,
+      "addend": -4,
+      "value": -1699
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1017674,
+      "type": 4,
+      "symbol": "b8_continue_prepare",
+      "target": 226011,
+      "addend": -4,
+      "value": -791667
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1017860,
+      "type": 4,
+      "symbol": "b8_dispatch",
+      "target": 1015808,
+      "addend": -4,
+      "value": -2056
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1018228,
+      "type": 4,
+      "symbol": "b8_dispatch",
+      "target": 1015808,
+      "addend": -4,
+      "value": -2424
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1018403,
+      "type": 4,
+      "symbol": "b8_continue_reset",
+      "target": 248060,
+      "addend": -4,
+      "value": -770347
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1018839,
+      "type": 4,
+      "symbol": "b8_original_resampler_reset",
+      "target": 189024,
+      "addend": -4,
+      "value": -829819
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1019070,
+      "type": 4,
+      "symbol": "b8_dispatch",
+      "target": 1015808,
+      "addend": -4,
+      "value": -3266
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1019439,
+      "type": 4,
+      "symbol": "b8_dispatch",
+      "target": 1015808,
+      "addend": -4,
+      "value": -3635
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1019608,
+      "type": 4,
+      "symbol": "b8_continue_return",
+      "target": 226466,
+      "addend": -4,
+      "value": -793146
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1019796,
+      "type": 4,
+      "symbol": "b8_dispatch",
+      "target": 1015808,
+      "addend": -4,
+      "value": -3992
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1020070,
+      "type": 4,
+      "symbol": "b8_original_open",
+      "target": 271968,
+      "addend": -4,
+      "value": -748106
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".text",
+      "site": 1020306,
+      "type": 4,
+      "symbol": "b8_dispatch",
+      "target": 1015808,
+      "addend": -4,
+      "value": -4502
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".eh_frame",
+      "site": 1024096,
+      "type": 2,
+      "symbol": "",
+      "target": 1017328,
+      "addend": 0,
+      "value": -6768
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".eh_frame",
+      "site": 1024296,
+      "type": 2,
+      "symbol": "",
+      "target": 1017328,
+      "addend": 352,
+      "value": -6616
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".eh_frame",
+      "site": 1024504,
+      "type": 2,
+      "symbol": "",
+      "target": 1017328,
+      "addend": 720,
+      "value": -6456
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".eh_frame",
+      "site": 1024696,
+      "type": 2,
+      "symbol": "",
+      "target": 1017328,
+      "addend": 1088,
+      "value": -6280
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".eh_frame",
+      "site": 1024912,
+      "type": 2,
+      "symbol": "",
+      "target": 1017328,
+      "addend": 1936,
+      "value": -5648
+    },
+    {
+      "object": "b8_hooks.o",
+      "section": ".eh_frame",
+      "site": 1025112,
+      "type": 2,
+      "symbol": "",
+      "target": 1017328,
+      "addend": 2288,
+      "value": -5496
+    }
+  ],
+  "hooks": [
+    {
+      "name": "prepare",
+      "kind": "JMP",
+      "site": 226004,
+      "size": 7,
+      "target": 1017328,
+      "continuation": 226011,
+      "cfa": 144
+    },
+    {
+      "name": "gate",
+      "kind": "JMP",
+      "site": 261165,
+      "size": 6,
+      "target": 1017680,
+      "continuation": 261171,
+      "cfa": 176
+    },
+    {
+      "name": "reset",
+      "kind": "JMP",
+      "site": 248054,
+      "size": 6,
+      "target": 1018048,
+      "continuation": 248060,
+      "cfa": 24
+    },
+    {
+      "name": "note",
+      "kind": "JMP",
+      "site": 222271,
+      "size": 9,
+      "target": 1018416,
+      "continuation": 222280,
+      "cfa": 64
+    },
+    {
+      "name": "return",
+      "kind": "JMP",
+      "site": 226461,
+      "size": 5,
+      "target": 1019264,
+      "continuation": 226466,
+      "cfa": 144
+    },
+    {
+      "name": "open",
+      "kind": "CALL",
+      "site": 251026,
+      "size": 5,
+      "target": 1019616,
+      "original_target": 271968,
+      "continuation": 251031
+    }
+  ],
+  "original_byte_whitelist": [
+    {
+      "label": "JMP prepare",
+      "offset": 226004,
+      "size": 7,
+      "old": "498b7f300f28c1",
+      "new": "e917130c009090"
+    },
+    {
+      "label": "JMP gate",
+      "offset": 261165,
+      "size": 6,
+      "old": "898794000000",
+      "new": "e91e8b0b0090"
+    },
+    {
+      "label": "JMP reset",
+      "offset": 248054,
+      "size": 6,
+      "old": "31ed534889fb",
+      "new": "e9c5bf0b0090"
+    },
+    {
+      "label": "JMP note",
+      "offset": 222271,
+      "size": 9,
+      "old": "488b7d18e8187effff",
+      "new": "e9ec250c0090909090"
+    },
+    {
+      "label": "JMP return",
+      "offset": 226461,
+      "size": 5,
+      "old": "488b4c2448",
+      "new": "e9de180c00"
+    },
+    {
+      "label": "CALL open",
+      "offset": 251026,
+      "size": 5,
+      "old": "e8c9510000",
+      "new": "e849ba0b00"
+    },
+    {
+      "label": "owned allocation 0x3d0fc",
+      "offset": 250108,
+      "size": 5,
+      "old": "bfc0010000",
+      "new": "bfc8010000"
+    },
+    {
+      "label": "owned allocation 0x3d11a",
+      "offset": 250138,
+      "size": 5,
+      "old": "bfc0010000",
+      "new": "bfc8010000"
+    },
+    {
+      "label": "ELF e_shoff",
+      "offset": 40,
+      "size": 8,
+      "old": "70710f0000000000",
+      "new": "88d10f0000000000"
+    },
+    {
+      "label": "ELF e_shnum",
+      "offset": 60,
+      "size": 2,
+      "old": "2700",
+      "new": "2900"
+    },
+    {
+      "label": "RX filesz/memsz",
+      "offset": 208,
+      "size": 16,
+      "old": "00700f000000000000700f0000000000",
+      "new": "00d00f000000000000d00f0000000000"
+    },
+    {
+      "label": "PT_GNU_EH_FRAME location/size",
+      "offset": 408,
+      "size": 40,
+      "old": "00500f000000000000500f000000000000500f0000000000041b000000000000041b000000000000",
+      "new": "00b00f000000000000b00f000000000000b00f00000000003c1b0000000000003c1b000000000000"
+    }
+  ],
+  "original_index_count": 863,
+  "new_index_count": 7,
+  "combined_index_count": 870,
+  "original_index_semantic_sha256": "775e891bd215a06cd54dbfaaec5d99a479714ae96298a78dccfea1e51f063a36",
+  "source_sha256": {
+    "build_b8_candidate.py": "123e3fd175b85c926bae2ceac014fccb241daddc2f0d6b603b5e3fe23e59c91e",
+    "validate_b8_candidate.py": "7db40b2f1b06000fed0dcda774f32ba6258aa3153db8ca3e68b1dc12eeb25dc9",
+    "emit_b8.py": "9cb424def8cacfc6e40aefbbbadb8c506d428f329594bbc2cec510697b051c90",
+    "b8_adapters.c": "d791f759f9c855d383f0f9f96d276a79e2a22dd90e822e921a0123a53628c114",
+    "b8_hooks.s": "fcbe863e399f3667a8677d11beb475117e83c41304f098a8e6f5774105e6c112"
+  },
+  "input_objects": [
+    {
+      "object": "b8_adapters.o",
+      "sha256": "bec629a1b3d2a6fc4e3f65c4d2828f72e5cac713679a811cc97024f5722943f4",
+      "text_bytes": 1499,
+      "constant_bytes": 16,
+      "eh_frame_bytes": 64,
+      "symbols": [
+        {
+          "name": "b8_dispatch",
+          "section": ".text",
+          "offset": 0,
+          "size": 1499
+        }
+      ]
+    },
+    {
+      "object": "b8_hooks.o",
+      "sha256": "7ad598e7e8c1475f650e6825c8802981a989c7581adb05008d3b642002227314",
+      "text_bytes": 3147,
+      "constant_bytes": 0,
+      "eh_frame_bytes": 1256,
+      "symbols": [
+        {
+          "name": "b8_hook_prepare",
+          "section": ".text",
+          "offset": 0,
+          "size": 350
+        },
+        {
+          "name": "b8_hook_gate",
+          "section": ".text",
+          "offset": 352,
+          "size": 358
+        },
+        {
+          "name": "b8_hook_reset",
+          "section": ".text",
+          "offset": 720,
+          "size": 359
+        },
+        {
+          "name": "b8_hook_note",
+          "section": ".text",
+          "offset": 1088,
+          "size": 833
+        },
+        {
+          "name": "b8_hook_return",
+          "section": ".text",
+          "offset": 1936,
+          "size": 348
+        },
+        {
+          "name": "b8_wrap_open",
+          "section": ".text",
+          "offset": 2288,
+          "size": 859
+        }
+      ]
+    }
+  ],
+  "pending": [
+    "QNX loader/runtime execution",
+    "target CPU performance",
+    "acoustic/listening tests"
+  ],
+  "packaged": false,
+  "validation": {
+    "scope": "Installed candidate structural/relocation/ABI/CFI/index validation, host execution separate",
+    "passed": 5719,
+    "changed_original_byte_count": 47,
+    "new_fdes": 7,
+    "inherited_unwind_targets": 863,
+    "instruction_cfa_checks": 575,
+    "aligned_call_sites": 9,
+    "index_lookup_checks": 2652,
+    "maximum_capture_stack_bytes": 408,
+    "hardware_validated": false
+  },
+  "candidate_file": "voice_B1_B5_B8_candidate.elf"
+}

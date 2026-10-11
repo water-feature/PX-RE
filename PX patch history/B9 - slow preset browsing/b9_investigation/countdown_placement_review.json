@@ -1,0 +1,13 @@
+{
+  "baseline_pic_sha256": "80723ffbd381e1e6cf401f09cff99591d43a07d91d00d57570fe2dea5265e2f3",
+  "candidate_tail": [
+    "0x9d000d84",
+    "0x9d000e00"
+  ],
+  "bytes": 124,
+  "all_FF": true,
+  "unaligned_literal_refs_in_payload": [],
+  "direct_J_JAL_refs": [],
+  "nearby_LUI_addiu_ori_candidates": [],
+  "limits": "Static scans supplement inherited B6 vector exclusion; not a proof against every dynamically computed pointer. No code emitted or memory reserved."
+}

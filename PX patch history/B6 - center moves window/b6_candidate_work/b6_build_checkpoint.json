@@ -1,0 +1,8 @@
+{
+  "build_b6.py": "7d71eb556b89b1a3f22567e1123c311172fe54976a5f64fbe7d298e61af30c22",
+  "validate_candidate.py": "a21a8d003cdbd270f01cefe7fabdfab881f9d56f80f12cc3646bb0e01d41efad",
+  "verify_package.py": "5fb8d26d5dd0c59294885e7ead5b61634398b2afdfc795c287d76790ee0319b5",
+  "publish_b6.py": "7f7ba6b6d12aa91617ebfc5520e69dc17a07713a36028343dcaea9f58222755a",
+  "pic_2.2.2.0.9.bin": "80723ffbd381e1e6cf401f09cff99591d43a07d91d00d57570fe2dea5265e2f3",
+  "voice_2.2.2.0.9_qnx.elf": "1a562cb01a7703f4facf9a6d0b90a76f6b4da6fc5218e43ac9991a255aba0406"
+}

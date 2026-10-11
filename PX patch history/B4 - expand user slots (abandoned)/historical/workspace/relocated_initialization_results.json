@@ -1,0 +1,42 @@
+[
+  {
+    "extended": false,
+    "instrument_count": 0,
+    "initialized_groups": 97,
+    "serial_reads": 697,
+    "boundary_canaries_preserved": true,
+    "old_base_untouched": true
+  },
+  {
+    "extended": false,
+    "instrument_count": 1,
+    "initialized_groups": 97,
+    "serial_reads": 697,
+    "boundary_canaries_preserved": true,
+    "old_base_untouched": true
+  },
+  {
+    "extended": true,
+    "instrument_count": 0,
+    "initialized_groups": 97,
+    "serial_reads": 1650,
+    "boundary_canaries_preserved": true,
+    "old_base_untouched": true
+  },
+  {
+    "extended": true,
+    "instrument_count": 1,
+    "initialized_groups": 97,
+    "serial_reads": 1650,
+    "boundary_canaries_preserved": true,
+    "old_base_untouched": true
+  },
+  {
+    "extended": true,
+    "instrument_count": 255,
+    "initialized_groups": 97,
+    "serial_reads": 1650,
+    "boundary_canaries_preserved": true,
+    "old_base_untouched": true
+  }
+]

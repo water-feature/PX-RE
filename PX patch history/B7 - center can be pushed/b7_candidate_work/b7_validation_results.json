@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "endpoint_cases_with_retreat": 52224,
+  "direct_center_equivalence_cases": 1632,
+  "custom_side_effect_equivalence_cases": 48,
+  "single_part_redispatch_comparison_cases": 1280,
+  "redispatch_custom_side_effect_differences": 1040,
+  "stock_linked_bug_reproduced_raw_values": [
+    600,
+    400,
+    200,
+    1,
+    1
+  ],
+  "planning_extent": [
+    "0x9d001220",
+    "0x9d001394"
+  ],
+  "examples": [
+    {
+      "kind": 7,
+      "request": 600,
+      "A": [
+        600,
+        900,
+        600,
+        1,
+        1
+      ],
+      "B": [
+        400,
+        400,
+        400,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": 7,
+      "request": 600,
+      "A": [
+        400,
+        400,
+        400,
+        1,
+        1
+      ],
+      "B": [
+        600,
+        900,
+        600,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": 9,
+      "request": 400,
+      "A": [
+        100,
+        400,
+        400,
+        1,
+        1
+      ],
+      "B": [
+        600,
+        600,
+        600,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": 9,
+      "request": 400,
+      "A": [
+        600,
+        600,
+        600,
+        1,
+        1
+      ],
+      "B": [
+        100,
+        400,
+        400,
+        1,
+        1
+      ]
+    }
+  ],
+  "limitations": [
+    "External descriptor/output/UI calls retain the established contract summaries; transport and hardware are not simulated.",
+    "PIC installation, audio and display repaint require hardware checks."
+  ],
+  "decoded_candidate_instructions": 75,
+  "helper_bytes": 300,
+  "unrelated_control_equivalence_cases": 24,
+  "version_verification": {
+    "application_header": [
+      2,
+      2,
+      2,
+      0,
+      8
+    ],
+    "PIC_header": [
+      2,
+      2,
+      4,
+      0,
+      0
+    ],
+    "PIC_reports_match_header": true,
+    "M_formatter": "2.2.4",
+    "DSP_reply_and_updater_revision_offsets": [
+      "0x1F4E3",
+      "0x250EF"
+    ],
+    "PIC_trailer": "3030 (inherited, ignored by type-3 parser)",
+    "application_checksum": "7D05",
+    "FPGA_byte_identical": true,
+    "QNX_only_two_version_bytes_changed": true
+  },
+  "placement": {
+    "payload_size": 530784,
+    "helpers_start": "0x9D001220",
+    "helpers_exclusive_end": "0x9D001394",
+    "data_boundary": "0x9D001480",
+    "B3_preserved": true,
+    "all_changes_accounted": true
+  },
+  "hashes": {
+    "baseline_package": "2fe41c83415c1d85efd7848a31511157162528ec4a83d08045be7e8bcee2e753",
+    "candidate_package": "c7e2e03999ca4590c99c3ba18a518f93f073ee8a619c84371677c7f6cd2c8e7f",
+    "PIC": "3554fc3dc413c05fd329df1d04efd1ea49e27469121b38d140b7ebdf3be2e254",
+    "QNX": "6e0e22ec75036411f7ada1418939e13a684bf144898dd7745ae608e550a65de8",
+    "FPGA": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+  }
+}

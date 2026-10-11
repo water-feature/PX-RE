@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "853a74248983b260f95d845341efa2825152bb477d74e504b86a4d2a0cf6844d",
+  "independent_words": 96,
+  "patched_words_checked": 60,
+  "overlay_discarded": true
+}

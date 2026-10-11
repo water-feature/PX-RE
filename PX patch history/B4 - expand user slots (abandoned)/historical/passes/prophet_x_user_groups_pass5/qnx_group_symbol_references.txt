@@ -1,0 +1,73 @@
+837:    7bc0:	48 8d 05 59 ce 29 00 	lea    rax,[rip+0x29ce59]        # 2a4a20 <gGroupSizeCache>
+1000:    7e31:	e8 aa 61 02 00       	call   2dfe0 <MakeNewUserFolders()>
+14582:   150a8:	48 8d 05 b1 b0 28 00 	lea    rax,[rip+0x28b0b1]        # 2a0160 <gpGroupNames>
+14644:   15188:	48 8d 05 d1 af 28 00 	lea    rax,[rip+0x28afd1]        # 2a0160 <gpGroupNames>
+14691:   15228:	48 8d 05 31 af 28 00 	lea    rax,[rip+0x28af31]        # 2a0160 <gpGroupNames>
+14711:   15278:	48 8d 15 a1 f7 28 00 	lea    rdx,[rip+0x28f7a1]        # 2a4a20 <gGroupSizeCache>
+14738:   152f0:	48 8d 05 69 ae 28 00 	lea    rax,[rip+0x28ae69]        # 2a0160 <gpGroupNames>
+14753:   15324:	48 8d 05 f5 f6 28 00 	lea    rax,[rip+0x28f6f5]        # 2a4a20 <gGroupSizeCache>
+14818:   1541c:	4c 8d 3d 3d ad 28 00 	lea    r15,[rip+0x28ad3d]        # 2a0160 <gpGroupNames>
+15298:   15af8:	48 8d 05 61 a6 28 00 	lea    rax,[rip+0x28a661]        # 2a0160 <gpGroupNames>
+15339:   15bb1:	48 8d 05 68 ee 28 00 	lea    rax,[rip+0x28ee68]        # 2a4a20 <gGroupSizeCache>
+15390:   15c70:	48 8d 05 e9 a4 28 00 	lea    rax,[rip+0x28a4e9]        # 2a0160 <gpGroupNames>
+15432:   15d0c:	48 8d 05 4d a4 28 00 	lea    rax,[rip+0x28a44d]        # 2a0160 <gpGroupNames>
+15473:   15da4:	4c 8d 25 b5 a3 28 00 	lea    r12,[rip+0x28a3b5]        # 2a0160 <gpGroupNames>
+15506:   15e22:	48 8d 05 f7 eb 28 00 	lea    rax,[rip+0x28ebf7]        # 2a4a20 <gGroupSizeCache>
+15738:   16191:	e8 fa d1 01 00       	call   33390 <CSampleGroups::CSampleGroups()>
+15743:   161a3:	e8 08 dc 01 00       	call   33db0 <CSampleGroups::IndexSampleGroupFiles(int, int)>
+15856:   16386:	e8 85 d8 01 00       	call   33c10 <CSampleGroups::GetSampleGroupFolder(int, int, int)>
+17793:   18523:	e8 78 b8 01 00       	call   33da0 <CSampleGroups::~CSampleGroups()>
+26905:   221ef:	e8 1c 1a 01 00       	call   33c10 <CSampleGroups::GetSampleGroupFolder(int, int, int)>
+26941:   222a7:	e8 64 19 01 00       	call   33c10 <CSampleGroups::GetSampleGroupFolder(int, int, int)>
+27514:   22c8d:	e8 de 0f 01 00       	call   33c70 <CSampleGroups::GetNumInstrumentsInFolder(int, int)>
+27624:   22e97:	e8 74 0d 01 00       	call   33c10 <CSampleGroups::GetSampleGroupFolder(int, int, int)>
+28648:   240f4:	48 8d 15 65 c0 27 00 	lea    rdx,[rip+0x27c065]        # 2a0160 <gpGroupNames>
+38128:000000000002dfe0 <MakeNewUserFolders()>:
+38144:   2e010:	48 8d 05 49 21 27 00 	lea    rax,[rip+0x272149]        # 2a0160 <gpGroupNames>
+38147:   2e025:	eb 1a                	jmp    2e041 <MakeNewUserFolders()+0x61>
+38154:   2e03f:	74 7f                	je     2e0c0 <MakeNewUserFolders()+0xe0>
+38163:   2e061:	75 cd                	jne    2e030 <MakeNewUserFolders()+0x50>
+38181:   2e0ab:	75 d3                	jne    2e080 <MakeNewUserFolders()+0xa0>
+38184:   2e0b4:	75 8b                	jne    2e041 <MakeNewUserFolders()+0x61>
+38191:   2e0d2:	75 12                	jne    2e0e6 <MakeNewUserFolders()+0x106>
+43292:0000000000033390 <CSampleGroups::CSampleGroups()>:
+43303:   333c3:	75 e3                	jne    333a8 <CSampleGroups::CSampleGroups()+0x18>
+43307:   333d3:	75 cb                	jne    333a0 <CSampleGroups::CSampleGroups()+0x10>
+43523:   336d1:	4c 8d 3d 88 ca 26 00 	lea    r15,[rip+0x26ca88]        # 2a0160 <gpGroupNames>
+43878:0000000000033c10 <CSampleGroups::GetSampleGroupFolder(int, int, int)>:
+43880:   33c13:	77 4b                	ja     33c60 <CSampleGroups::GetSampleGroupFolder(int, int, int)+0x50>
+43882:   33c18:	77 46                	ja     33c60 <CSampleGroups::GetSampleGroupFolder(int, int, int)+0x50>
+43892:   33c3a:	74 24                	je     33c60 <CSampleGroups::GetSampleGroupFolder(int, int, int)+0x50>
+43894:   33c3e:	74 22                	je     33c62 <CSampleGroups::GetSampleGroupFolder(int, int, int)+0x52>
+43896:   33c42:	eb 0b                	jmp    33c4f <CSampleGroups::GetSampleGroupFolder(int, int, int)+0x3f>
+43900:   33c4d:	74 13                	je     33c62 <CSampleGroups::GetSampleGroupFolder(int, int, int)+0x52>
+43903:   33c59:	75 ed                	jne    33c48 <CSampleGroups::GetSampleGroupFolder(int, int, int)+0x38>
+43912:0000000000033c70 <CSampleGroups::GetNumInstrumentsInFolder(int, int)>:
+43915:   33c75:	77 1b                	ja     33c92 <CSampleGroups::GetNumInstrumentsInFolder(int, int)+0x22>
+43917:   33c7a:	77 16                	ja     33c92 <CSampleGroups::GetNumInstrumentsInFolder(int, int)+0x22>
+43930:0000000000033ca0 <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)>:
+43940:   33cb4:	0f 87 b2 00 00 00    	ja     33d6c <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)+0xcc>
+43942:   33cbd:	0f 87 c9 00 00 00    	ja     33d8c <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)+0xec>
+43950:   33cdd:	7d 6b                	jge    33d4a <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)+0xaa>
+43961:   33d05:	74 1d                	je     33d24 <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)+0x84>
+43968:   33d22:	75 ec                	jne    33d10 <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)+0x70>
+43976:   33d43:	75 ab                	jne    33cf0 <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)+0x50>
+43981:   33d57:	0f 8c 7b ff ff ff    	jl     33cd8 <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)+0x38>
+43997:   33d87:	e9 4c ff ff ff       	jmp    33cd8 <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)+0x38>
+44001:   33d97:	e9 31 ff ff ff       	jmp    33ccd <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)+0x2d>
+44004:0000000000033da0 <CSampleGroups::~CSampleGroups()>:
+44007:   33da7:	e9 f4 fe ff ff       	jmp    33ca0 <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)>
+44010:0000000000033db0 <CSampleGroups::IndexSampleGroupFiles(int, int)>:
+44026:   33dec:	e8 af fe ff ff       	call   33ca0 <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)>
+44028:   33df4:	77 73                	ja     33e69 <CSampleGroups::IndexSampleGroupFiles(int, int)+0xb9>
+44030:   33df9:	0f 87 a9 00 00 00    	ja     33ea8 <CSampleGroups::IndexSampleGroupFiles(int, int)+0xf8>
+44032:   33e06:	48 8d 15 53 c3 26 00 	lea    rdx,[rip+0x26c353]        # 2a0160 <gpGroupNames>
+44046:   33e42:	74 0b                	je     33e4f <CSampleGroups::IndexSampleGroupFiles(int, int)+0x9f>
+44054:   33e5b:	75 72                	jne    33ecf <CSampleGroups::IndexSampleGroupFiles(int, int)+0x11f>
+44073:   33ea1:	75 ed                	jne    33e90 <CSampleGroups::IndexSampleGroupFiles(int, int)+0xe0>
+44074:   33ea3:	eb aa                	jmp    33e4f <CSampleGroups::IndexSampleGroupFiles(int, int)+0x9f>
+44076:   33ea8:	48 8d 15 b1 c2 26 00 	lea    rdx,[rip+0x26c2b1]        # 2a0160 <gpGroupNames>
+44084:   33eca:	e9 5d ff ff ff       	jmp    33e2c <CSampleGroups::IndexSampleGroupFiles(int, int)+0x7c>
+45601:   35457:	e8 44 e8 ff ff       	call   33ca0 <CSampleGroups::ReleaseSampleGroupFilesIndex(int, int)>
+45641:   354f3:	e8 b8 e8 ff ff       	call   33db0 <CSampleGroups::IndexSampleGroupFiles(int, int)>
+45719:   35623:	e8 88 e7 ff ff       	call   33db0 <CSampleGroups::IndexSampleGroupFiles(int, int)>

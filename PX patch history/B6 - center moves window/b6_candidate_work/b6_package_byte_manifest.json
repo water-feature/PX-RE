@@ -1,0 +1,137 @@
+[
+  {
+    "offset": "0x7",
+    "old": "08",
+    "new": "09"
+  },
+  {
+    "offset": "0x1f4f0",
+    "old": "08",
+    "new": "09"
+  },
+  {
+    "offset": "0x250fc",
+    "old": "08",
+    "new": "09"
+  },
+  {
+    "offset": "0xfdbd6",
+    "old": "7d",
+    "new": "7f"
+  },
+  {
+    "offset": "0x27fe7d",
+    "old": "04",
+    "new": "02"
+  },
+  {
+    "offset": "0x27fe7f",
+    "old": "00",
+    "new": "09"
+  },
+  {
+    "offset": "0x280a85",
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "0f0008240400081200000000500008245a00081600000000d0"
+  },
+  {
+    "offset": "0x280a9f",
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "bd271000b0af1400b1af1800b2af1c00b3af2000b4af2400b6af2800bfaf01005032e7031624e803e82c0bb0e8001000a88f404008000080113c6c0431262188280202000012000000006e0d3126ec"
+  },
+  {
+    "offset": "0x280aef",
+    "old": "ffffffffffffffffffffff",
+    "new": "28962e00001100000000f0"
+  },
+  {
+    "offset": "0x280afb",
+    "old": "ffffff",
+    "new": "2996f4"
+  },
+  {
+    "offset": "0x280aff",
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "2a9623a0c9022b40c9020e0000150000000023a0ca022b40560124000011000000001000b28ffa"
+  },
+  {
+    "offset": "0x280b27",
+    "old": "ffffff",
+    "new": "5226fe"
+  },
+  {
+    "offset": "0x280b2b",
+    "old": "ffffffffffffffffffffff",
+    "new": "13242148340121505401f4"
+  },
+  {
+    "offset": "0x280b37",
+    "old": "ffffff",
+    "new": "2aa6f0"
+  },
+  {
+    "offset": "0x280b3b",
+    "old": "ffffffffffffffffffffffffffffff",
+    "new": "29a63703400b000000001000b28ff8"
+  },
+  {
+    "offset": "0x280b4b",
+    "old": "ffffffffffffffffffffffffffffff",
+    "new": "5226020013242148340121505401f0"
+  },
+  {
+    "offset": "0x280b5b",
+    "old": "ffffff",
+    "new": "29a6f4"
+  },
+  {
+    "offset": "0x280b5f",
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "2aa6020014240500a016000000000080083cfe6f089505000011000000002120a00221280002443d410f213040020400a0160000000021200002ee35410f21284002"
+  },
+  {
+    "offset": "0x280ba3",
+    "old": "ffffff",
+    "new": "9426ef"
+  },
+  {
+    "offset": "0x280ba7",
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "8016219053021800a88f0200092406000915000000000400001600000000010010241203400b000000002120a0021800a58f1000a68f4000a78f1000b08f1400b18f1800b28f1c00b38f2000b48f2400b68f2800bf8f3000bd27bf36410b50000224"
+  },
+  {
+    "offset": "0x2810a9",
+    "old": "bf3641",
+    "new": "000340"
+  },
+  {
+    "offset": "0x281219",
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "0900842407d7410b0000000009008424c6d6410b00000000"
+  },
+  {
+    "offset": "0x2a5739",
+    "old": "40",
+    "new": "20"
+  },
+  {
+    "offset": "0x2a5745",
+    "old": "07d741",
+    "new": "e50440"
+  },
+  {
+    "offset": "0x2d1a49",
+    "old": "40",
+    "new": "20"
+  },
+  {
+    "offset": "0x2d1a4d",
+    "old": "c6d641",
+    "new": "e80440"
+  },
+  {
+    "offset": "0x2d2e71",
+    "old": "04",
+    "new": "02"
+  }
+]

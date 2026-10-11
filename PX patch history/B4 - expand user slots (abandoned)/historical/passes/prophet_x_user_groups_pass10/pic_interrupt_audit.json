@@ -1,0 +1,321 @@
+[
+  {
+    "stub": "0x9d000200",
+    "entry": "0x9d05077c",
+    "exclusive_end": "0x9d05081c",
+    "frame_allocations": [
+      -24
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d0507a0",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d0507a4",
+      "0x9d050814"
+    ],
+    "direct_calls": [],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d050810"
+  },
+  {
+    "stub": "0x9d000208",
+    "entry": "0x9d05081c",
+    "exclusive_end": "0x9d050ad0",
+    "frame_allocations": [
+      -328
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d050840",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d050844",
+      "0x9d050ac8"
+    ],
+    "direct_calls": [
+      {
+        "pc": "0x9d050970",
+        "target": "0x9d07c80c"
+      }
+    ],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d050ac4"
+  },
+  {
+    "stub": "0x9d000210",
+    "entry": "0x9d050f30",
+    "exclusive_end": "0x9d0514b8",
+    "frame_allocations": [
+      -352
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d050f54",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d050f58",
+      "0x9d0514b0"
+    ],
+    "direct_calls": [
+      {
+        "pc": "0x9d051070",
+        "target": "0x9d01e0b4"
+      },
+      {
+        "pc": "0x9d051084",
+        "target": "0x9d01e0b4"
+      },
+      {
+        "pc": "0x9d0510b8",
+        "target": "0x9d07a5ac"
+      },
+      {
+        "pc": "0x9d0510c0",
+        "target": "0x9d07a6d0"
+      },
+      {
+        "pc": "0x9d051180",
+        "target": "0x9d075d10"
+      }
+    ],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d0514ac"
+  },
+  {
+    "stub": "0x9d000218",
+    "entry": "0x9d050b54",
+    "exclusive_end": "0x9d050bf4",
+    "frame_allocations": [
+      -24
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d050b78",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d050b7c",
+      "0x9d050bec"
+    ],
+    "direct_calls": [],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d050be8"
+  },
+  {
+    "stub": "0x9d000220",
+    "entry": "0x9d050bf4",
+    "exclusive_end": "0x9d050ef0",
+    "frame_allocations": [
+      -304
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d050c18",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d050c1c",
+      "0x9d050ee8"
+    ],
+    "direct_calls": [
+      {
+        "pc": "0x9d050dac",
+        "target": "0x9d0776b0"
+      },
+      {
+        "pc": "0x9d050db4",
+        "target": "0x9d077a90"
+      }
+    ],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d050ee4"
+  },
+  {
+    "stub": "0x9d000228",
+    "entry": "0x9d051db0",
+    "exclusive_end": "0x9d052004",
+    "frame_allocations": [
+      -304
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d051dd4",
+        "literal": "0x400",
+        "IPL": 1
+      }
+    ],
+    "status_writes": [
+      "0x9d051dd8",
+      "0x9d051ffc"
+    ],
+    "direct_calls": [
+      {
+        "pc": "0x9d051ed8",
+        "target": "0x9d05bec0"
+      }
+    ],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d051ff8"
+  },
+  {
+    "stub": "0x9d000230",
+    "entry": "0x9d052004",
+    "exclusive_end": "0x9d0520a4",
+    "frame_allocations": [
+      -24
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d052028",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d05202c",
+      "0x9d05209c"
+    ],
+    "direct_calls": [],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d052098"
+  },
+  {
+    "stub": "0x9d000238",
+    "entry": "0x9d05212c",
+    "exclusive_end": "0x9d052420",
+    "frame_allocations": [
+      -312
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d052150",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d052154",
+      "0x9d052418"
+    ],
+    "direct_calls": [
+      {
+        "pc": "0x9d0522b8",
+        "target": "0x9d04d780"
+      }
+    ],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d052414"
+  },
+  {
+    "stub": "0x9d000240",
+    "entry": "0x9d0520a4",
+    "exclusive_end": "0x9d05212c",
+    "frame_allocations": [
+      -24
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d0520c8",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d0520cc",
+      "0x9d052124"
+    ],
+    "direct_calls": [],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d052120"
+  },
+  {
+    "stub": "0x9d000248",
+    "entry": "0x9d052498",
+    "exclusive_end": "0x9d0526ec",
+    "frame_allocations": [
+      -304
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d0524bc",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d0524c0",
+      "0x9d0526e4"
+    ],
+    "direct_calls": [
+      {
+        "pc": "0x9d0525c0",
+        "target": "0x9d07ab60"
+      }
+    ],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d0526e0"
+  },
+  {
+    "stub": "0x9d000250",
+    "entry": "0x9d0526ec",
+    "exclusive_end": "0x9d052940",
+    "frame_allocations": [
+      -304
+    ],
+    "IPL_literals": [
+      {
+        "pc": "0x9d052710",
+        "literal": "0x1000",
+        "IPL": 4
+      }
+    ],
+    "status_writes": [
+      "0x9d052714",
+      "0x9d052938"
+    ],
+    "direct_calls": [
+      {
+        "pc": "0x9d052814",
+        "target": "0x9d07abe0"
+      }
+    ],
+    "indirect_calls": [],
+    "remaining_undecoded_words": [],
+    "entry_decode": "rdpgpr $29, $29",
+    "exit_transfer_pc": "0x9d052934"
+  }
+]

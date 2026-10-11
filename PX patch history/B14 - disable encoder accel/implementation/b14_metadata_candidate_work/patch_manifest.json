@@ -1,0 +1,287 @@
+{
+  "baseline": "b14_packaging_work/pic_2.2.2.1.4.bin",
+  "baseline_sha256": "111334a1fc96a473efba6d3c4fdc2b0c227f4daf1453be107cd40cfb9e36feb0",
+  "candidate": "pic_B14_metadata_bulk_read_unpackaged.bin",
+  "candidate_sha256": "ce85a91c7221df449b0d6306eb98241a0f8fffc480ad5505eb4cb07f7e1e8978",
+  "size": 530784,
+  "allowed_ranges": [
+    [
+      266696,
+      266772
+    ],
+    [
+      266872,
+      266880
+    ]
+  ],
+  "patches": [
+    {
+      "address": "0x9d0411c8",
+      "offset": "0x411c8",
+      "before": "7504410b",
+      "after": "21206000",
+      "assembly": [
+        "addu",
+        "a0",
+        "v1",
+        "zero"
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411cc",
+      "offset": "0x411cc",
+      "before": "21406802",
+      "after": "8c00410f",
+      "assembly": [
+        "jal",
+        2634285616
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411d0",
+      "offset": "0x411d0",
+      "before": "2118e000",
+      "after": "21a8c000",
+      "assembly": [
+        "addu",
+        "s5",
+        "a2",
+        "zero"
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411d4",
+      "offset": "0x411d4",
+      "before": "21206000",
+      "after": "40000824",
+      "assembly": [
+        "addiu",
+        "t0",
+        "zero",
+        64
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411d8",
+      "offset": "0x411d8",
+      "before": "9302410f",
+      "after": "3308410f",
+      "assembly": [
+        "jal",
+        2634293452
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411dc",
+      "offset": "0x411dc",
+      "before": "01006724",
+      "after": "21200000",
+      "assembly": [
+        "addu",
+        "a0",
+        "zero",
+        "zero"
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411e0",
+      "offset": "0x411e0",
+      "before": "0000c2a0",
+      "after": "2014a28c",
+      "assembly": [
+        "lw",
+        "v0",
+        "a1",
+        5152
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411e4",
+      "offset": "0x411e4",
+      "before": "faffe814",
+      "after": "0000c2a0",
+      "assembly": [
+        "sb",
+        "v0",
+        "a2",
+        0
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411e8",
+      "offset": "0x411e8",
+      "before": "0100c624",
+      "after": "ffff0825",
+      "assembly": [
+        "addiu",
+        "t0",
+        "t0",
+        -1
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411ec",
+      "offset": "0x411ec",
+      "before": "21305002",
+      "after": "faff0015",
+      "assembly": [
+        "bne",
+        "t0",
+        "zero",
+        "byte"
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411f0",
+      "offset": "0x411f0",
+      "before": "c000083c",
+      "after": "0100c624",
+      "assembly": [
+        "addiu",
+        "a2",
+        "a2",
+        1
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411f4",
+      "offset": "0x411f4",
+      "before": "80310600",
+      "after": "00800234",
+      "assembly": [
+        "ori",
+        "v0",
+        "zero",
+        32768
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411f8",
+      "offset": "0x411f8",
+      "before": "16000325",
+      "after": "86bf033c",
+      "assembly": [
+        "lui",
+        "v1",
+        49030
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d0411fc",
+      "offset": "0x411fc",
+      "before": "21302602",
+      "after": "380162ac",
+      "assembly": [
+        "sw",
+        "v0",
+        "v1",
+        312
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d041200",
+      "offset": "0x41200",
+      "before": "2c000825",
+      "after": "21b05002",
+      "assembly": [
+        "addu",
+        "s6",
+        "s2",
+        "s0"
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d041204",
+      "offset": "0x41204",
+      "before": "21186302",
+      "after": "80b11600",
+      "assembly": [
+        "sll",
+        "s6",
+        "s6",
+        6
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d041208",
+      "offset": "0x41208",
+      "before": "1600c624",
+      "after": "2d00a292",
+      "assembly": [
+        "lbu",
+        "v0",
+        "s5",
+        45
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d04120c",
+      "offset": "0x4120c",
+      "before": "8604410b",
+      "after": "9904410b",
+      "assembly": [
+        "j",
+        2634289764
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d041210",
+      "offset": "0x41210",
+      "before": "21406802",
+      "after": "00000000",
+      "assembly": [
+        "nop"
+      ],
+      "reason": "in-place bounded 64-byte sequential metadata read"
+    },
+    {
+      "address": "0x9d041278",
+      "offset": "0x41278",
+      "before": "21805002",
+      "after": "ab04410b",
+      "assembly": [
+        "j",
+        2634289836
+      ],
+      "reason": "tail is already read; shared normal/error continuation exits"
+    },
+    {
+      "address": "0x9d04127c",
+      "offset": "0x4127c",
+      "before": "80811000",
+      "after": "00000000",
+      "assembly": [
+        "nop"
+      ],
+      "reason": "tail bypass delay slot"
+    }
+  ],
+  "changed_bytes": 73,
+  "write_span_bytes": 84,
+  "replacement_words": 21,
+  "new_stack_bytes": 0,
+  "new_RAM_bytes": 0,
+  "code_cave": null,
+  "revision_metadata": "inherited .1.4; no release assigned",
+  "display_scheduler": "identical to .1.4; rejected .1.5 excluded",
+  "QNX_changed": false,
+  "packaged": false
+}

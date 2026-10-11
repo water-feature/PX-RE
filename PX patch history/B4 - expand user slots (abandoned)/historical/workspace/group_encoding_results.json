@@ -1,0 +1,16 @@
+{
+  "limiter": {
+    "64:34": "PASS",
+    "64:99": "PASS",
+    "96:34": "PASS",
+    "96:99": "PASS",
+    "132:34": "PASS",
+    "132:99": "PASS"
+  },
+  "byte_roundtrips": 256,
+  "sanitizer": {
+    "64": "PASS",
+    "96": "PASS",
+    "132": "PASS"
+  }
+}

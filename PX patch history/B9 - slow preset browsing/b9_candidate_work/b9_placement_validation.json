@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "baseline_hash": "80723ffbd381e1e6cf401f09cff99591d43a07d91d00d57570fe2dea5265e2f3",
+  "helper_range": [
+    "0x9d000d84",
+    "0x9d000de8"
+  ],
+  "baseline_free_tail_bytes": 124,
+  "used_bytes": 100,
+  "remaining_FF_bytes": 24,
+  "baseline_direct_literal_nearby_construction_refs": [],
+  "reserved_B6_helper_preserved": [
+    "0x9d000c00",
+    "0x9d000d84"
+  ],
+  "B3_B7_code_and_report_thunk_bodies_preserved": true,
+  "version_thunk_ADDIU_metadata_only": true,
+  "installed_vectors_startup_OFF_records_identical_to_B6_resolved_vector_evidence": true,
+  "vector_authority": "b6_investigation/vector_reservation_report.md (PIC32MZ2048EFG100; C00-E00 excluded)",
+  "other_branch_reservation_review": "Only existing B6 occupancy and B9 proposal found for this tail; unfinished B7 revision 2.2.2.1.0 retained, no other branch incorporated.",
+  "limits": "Static references supplemented by inherited exact vector configuration; arbitrary dynamic pointer arithmetic is not exhaustively proven."
+}

@@ -1,0 +1,44 @@
+{
+  "qnx_blocks_verified": 130,
+  "pic_changed_and_final_blocks_verified": [
+    {
+      "index": 1,
+      "size": 4096,
+      "checksum": 54474,
+      "valid_accepted": true,
+      "corruption_rejected": true
+    },
+    {
+      "index": 37,
+      "size": 4096,
+      "checksum": 17227,
+      "valid_accepted": true,
+      "corruption_rejected": true
+    },
+    {
+      "index": 41,
+      "size": 4096,
+      "checksum": 47337,
+      "valid_accepted": true,
+      "corruption_rejected": true
+    },
+    {
+      "index": 81,
+      "size": 4096,
+      "checksum": 7179,
+      "valid_accepted": true,
+      "corruption_rejected": true
+    },
+    {
+      "index": 129,
+      "size": 2400,
+      "checksum": 33603,
+      "valid_accepted": true,
+      "corruption_rejected": true
+    }
+  ],
+  "candidate_pic_sha256": "2f746346fa1e592795fd243a9866a8019e69c2d97ab3d674204bb7f5022ef0cc",
+  "scope": "QNX sender/checksum real code, link and sleep mocked; PIC real accumulation and checksum branches, receive queue and flash programming excluded",
+  "result": "all transmitted bytes/checksums match; PIC accepts valid checksums and rejects corrupted checksums",
+  "firmware_written": false
+}

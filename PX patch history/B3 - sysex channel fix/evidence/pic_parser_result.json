@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "case": "stock_same",
+      "skip": true,
+      "bytes_consumed": 530797,
+      "trailer_hex": "3030",
+      "checksum_calls": 0,
+      "payload_verified": false
+    },
+    {
+      "case": "combined_install",
+      "skip": false,
+      "bytes_consumed": 530797,
+      "trailer_hex": "3030",
+      "checksum_calls": 0,
+      "payload_verified": true
+    },
+    {
+      "case": "combined_same",
+      "skip": true,
+      "bytes_consumed": 530797,
+      "trailer_hex": "3030",
+      "checksum_calls": 0,
+      "payload_verified": false
+    },
+    {
+      "case": "official_rollback",
+      "skip": false,
+      "bytes_consumed": 530797,
+      "trailer_hex": "3030",
+      "checksum_calls": 0,
+      "payload_verified": true
+    },
+    {
+      "case": "ignored_trailer",
+      "skip": false,
+      "bytes_consumed": 530797,
+      "trailer_hex": "3412",
+      "checksum_calls": 0,
+      "payload_verified": true
+    }
+  ],
+  "scope": "real type3 parser/version gate/length/payload/trailer/splitting; libc mocked; stops at parser loop reentry",
+  "result": "type3 container trailer consumed but not validated; version gating permits combined install and official rollback",
+  "planned_pic_version": [
+    2,
+    2,
+    2,
+    1,
+    0
+  ],
+  "normal_transfer_checksum": "separately recalculated per transmitted block; receiver validation remains separate"
+}

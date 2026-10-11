@@ -1,0 +1,603 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "ce85a91c7221df449b0d6306eb98241a0f8fffc480ad5505eb4cb07f7e1e8978",
+  "record_equivalence_cases": 132,
+  "special_format_slot_zero_missing_cases": 44,
+  "delayed_ready_equivalence_cases": 28,
+  "fault_bounded_completion_cases": [
+    {
+      "transfer": 0,
+      "polls": 317,
+      "bounded": true,
+      "CS_released": true
+    },
+    {
+      "transfer": 1,
+      "polls": 317,
+      "bounded": true,
+      "CS_released": true
+    },
+    {
+      "transfer": 2,
+      "polls": 317,
+      "bounded": true,
+      "CS_released": true
+    },
+    {
+      "transfer": 3,
+      "polls": 317,
+      "bounded": true,
+      "CS_released": true
+    },
+    {
+      "transfer": 4,
+      "polls": 317,
+      "bounded": true,
+      "CS_released": true
+    },
+    {
+      "transfer": 5,
+      "polls": 317,
+      "bounded": true,
+      "CS_released": true
+    },
+    {
+      "transfer": 25,
+      "polls": 317,
+      "bounded": true,
+      "CS_released": true
+    },
+    {
+      "transfer": 47,
+      "polls": 317,
+      "bounded": true,
+      "CS_released": true
+    },
+    {
+      "transfer": 67,
+      "polls": 317,
+      "bounded": true,
+      "CS_released": true
+    },
+    {
+      "transfer": "all",
+      "polls": 17000,
+      "bounded": true,
+      "CS_released": true
+    }
+  ],
+  "dedicated_handler_cases": [
+    {
+      "kind": "Instrument",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Instrument",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Instrument",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 0,
+      "records": 2,
+      "baseline_SPI_bytes": 640,
+      "candidate_SPI_bytes": 136
+    },
+    {
+      "kind": "Instrument",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 0,
+      "records": 2,
+      "baseline_SPI_bytes": 640,
+      "candidate_SPI_bytes": 136
+    },
+    {
+      "kind": "Instrument",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Instrument",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Instrument",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 0,
+      "records": 2,
+      "baseline_SPI_bytes": 640,
+      "candidate_SPI_bytes": 136
+    },
+    {
+      "kind": "Instrument",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 0,
+      "records": 2,
+      "baseline_SPI_bytes": 640,
+      "candidate_SPI_bytes": 136
+    },
+    {
+      "kind": "Instrument",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Instrument",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Instrument",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 0,
+      "records": 2,
+      "baseline_SPI_bytes": 640,
+      "candidate_SPI_bytes": 136
+    },
+    {
+      "kind": "Instrument",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 0,
+      "records": 2,
+      "baseline_SPI_bytes": 640,
+      "candidate_SPI_bytes": 136
+    },
+    {
+      "kind": "Instrument",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Instrument",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Instrument",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 0,
+      "records": 2,
+      "baseline_SPI_bytes": 640,
+      "candidate_SPI_bytes": 136
+    },
+    {
+      "kind": "Instrument",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 0,
+      "records": 2,
+      "baseline_SPI_bytes": 640,
+      "candidate_SPI_bytes": 136
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 0,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 1,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 0,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 1,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 1,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 1,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 0,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 1,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 0,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 1,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 1,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 0,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 1,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 0,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 1,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 0,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 1,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 1,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 0,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 1,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 0,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": -1,
+      "group": 1,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 0,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 0,
+      "delta": 1,
+      "group": 1,
+      "records": 0,
+      "baseline_SPI_bytes": 0,
+      "candidate_SPI_bytes": 0
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": -1,
+      "group": 1,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 0,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    },
+    {
+      "kind": "Type",
+      "part": 1,
+      "instrument": 1,
+      "output_gate": 1,
+      "delta": 1,
+      "group": 1,
+      "records": 1,
+      "baseline_SPI_bytes": 320,
+      "candidate_SPI_bytes": 68
+    }
+  ],
+  "all_other_bytes_identical_to_1_4": true,
+  "SPI_implementation": "Actual 40230 prefix, 420cc byte-transfer and stock single-byte 40a4c execute; CS/FIFO/flash hardware modeled",
+  "formatter_implementation": "Actual 5f770 decimal conversion, f850 strcpy, fcec strlen and SWL/SWR suffix writes execute",
+  "limits": "No silicon/timing/visible-display guarantee; SPI fault content may differ because stock has no error/retry return. IRQ ownership audited separately."
+}

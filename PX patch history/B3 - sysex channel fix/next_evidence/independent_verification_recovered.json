@@ -1,0 +1,8 @@
+{
+  "combined_sha256": "d2775bd0e017e4442ce7d5bbc7d089022a1cf8c02714d89427462938e934d166",
+  "exact_expected_bytes": true,
+  "changed_bytes": 39,
+  "qnx_and_fpga_identical": true,
+  "pic_equals_transfer_tested_candidate": true,
+  "all_record_sizes_and_trailers_preserved": true
+}

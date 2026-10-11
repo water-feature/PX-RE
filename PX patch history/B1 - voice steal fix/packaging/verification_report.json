@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "stock_sha256": "a4b304b3bb48ca933ae63c99c0098698c497ebfc7c38ab2a823b5e0df4919fa9",
+  "candidate_sha256": "a47fa006e7f179b5860ff4e8d7e268dc3e5136c6e5cec3a7ec85087afe9e6b02",
+  "versioned_application_sha256": "651f0ac3339f4f41a4c0bc562cdf4c72df821d85aad3f689e700612b8c8b05e7",
+  "output_sha256": "2ad5392eb842cbcd5c2e85e65ab42c16f1fac12d16b09c417a61761a8348bcbf",
+  "output_size": 3099064,
+  "revision": "2.2.2.0.2",
+  "application_checksum": "0xF44B",
+  "preserved_records": {
+    "FPGA": {
+      "complete_record_sha256": "9697f1cbe3d798c2b066a2f6a3355b2c8ce444130f0362800fab2894aa885b40",
+      "byte_identical_to_stock": true
+    },
+    "PIC": {
+      "complete_record_sha256": "29d93873449503c2c9b6563495643399b642c19f2996c2db43f9fb22e445c03b",
+      "byte_identical_to_stock": true
+    }
+  },
+  "scope": "Offline deterministic packaging; no new hardware trial",
+  "rebuilt_from_public_patch_spec": true,
+  "byte_identical_to_private_hardware_tested_package": true,
+  "invalid_input_rejections_passed": [
+    "modified stock",
+    "modified candidate",
+    "truncated stock",
+    "truncated candidate"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "reference_sha256": "a1ba517ec6fc1386e4205d07e5894528425a185d30a0b19dde95a2b7250063c6",
+  "guards": [
+    {
+      "name": "main startup ordering",
+      "offset": 32367,
+      "length": 279,
+      "ignored_version_offsets": [],
+      "sha256": "e4116159ed7326d7b49f38d2f46df970c4b082901281f52c47da6940678718d5"
+    },
+    {
+      "name": "dictionary Insert",
+      "offset": 72016,
+      "length": 320,
+      "ignored_version_offsets": [],
+      "sha256": "cfef0c2a1cb5294f4a70bde8dc4fab2e2abf64a87185ebe404c695dfacaba5a3"
+    },
+    {
+      "name": "constructor startup/cache ordering",
+      "offset": 90904,
+      "length": 150,
+      "ignored_version_offsets": [],
+      "sha256": "9b5301abb895a2501d81039e9226edcc12bd783520fc07416e13d18bb9e99731"
+    },
+    {
+      "name": "message thread",
+      "offset": 120192,
+      "length": 432,
+      "ignored_version_offsets": [],
+      "sha256": "1ec3e687a0ac6b00756ce5d8796870ad4a5af1028f5d5f319cfed79c8e40e32d"
+    },
+    {
+      "name": "HandleMessage",
+      "offset": 122960,
+      "length": 36752,
+      "ignored_version_offsets": [
+        128227,
+        151791,
+        151778
+      ],
+      "sha256": "6e7dba3f881eca94f5276f8b4bf9f96fb49aac4c0bfa8a33ab2e2060ef27f544"
+    },
+    {
+      "name": "stock tokenizer",
+      "offset": 209568,
+      "length": 240,
+      "ignored_version_offsets": [],
+      "sha256": "d6f0991ca918578fa980c5cc3a780eb5a08e91c663a1a66474e3fe589959465b"
+    },
+    {
+      "name": "stock line reader",
+      "offset": 213104,
+      "length": 208,
+      "ignored_version_offsets": [],
+      "sha256": "6e5b5635ff1506b58208ce94dee80bbdc035123664fac919684c00a0f5b76c55"
+    },
+    {
+      "name": "stock parser",
+      "offset": 213856,
+      "length": 1776,
+      "ignored_version_offsets": [],
+      "sha256": "a4f779936450f993ebd913f192e9f31352c7b1c3fa80d8070816f46107eaf52b"
+    },
+    {
+      "name": "cache entry constructor",
+      "offset": 216048,
+      "length": 160,
+      "ignored_version_offsets": [],
+      "sha256": "dda58b47a943d2be8b86f3623f971b00d01250a97398cdc6af51213a74e52717"
+    },
+    {
+      "name": "cache CopyEntry and GetGroupFileInfo",
+      "offset": 216608,
+      "length": 704,
+      "ignored_version_offsets": [],
+      "sha256": "3c03c3ff12a44e16c701a1f260e4934eefbcce067c58e9ec761ade5a9cb2c346"
+    },
+    {
+      "name": "startup worker",
+      "offset": 217312,
+      "length": 576,
+      "ignored_version_offsets": [],
+      "sha256": "6b91a713536fce44ef874f294329c635b31178fbd041bee37318945ece3fa2a4"
+    },
+    {
+      "name": "library update caller",
+      "offset": 217888,
+      "length": 912,
+      "ignored_version_offsets": [],
+      "sha256": "3d7c7ec3163d5257256a206f6375814e61a317488aa88f329a803bb3a12c5c79"
+    },
+    {
+      "name": "preload worker join",
+      "offset": 218800,
+      "length": 432,
+      "ignored_version_offsets": [],
+      "sha256": "7e24a0785b2c518d37089a1d0ebf2e2ad090e44efd70505df02285c0705f9d6d"
+    },
+    {
+      "name": "runtime switch caller",
+      "offset": 219232,
+      "length": 144,
+      "ignored_version_offsets": [],
+      "sha256": "bca0565881efcb8dc611852d9e9df2a9956418727c25acb01dca0ce79c2e91d7"
+    },
+    {
+      "name": "open PLT",
+      "offset": 30112,
+      "length": 16,
+      "ignored_version_offsets": [],
+      "sha256": "a3eb7cdeb77fb4c8a3e86220aa6db13660f372211f9a4523e79f8a4fb2d3037b"
+    },
+    {
+      "name": "read PLT",
+      "offset": 30912,
+      "length": 16,
+      "ignored_version_offsets": [],
+      "sha256": "39a5203a590721d4445a6998804280167cb8642ed28c8f01d40529ceef5823e2"
+    },
+    {
+      "name": "close PLT",
+      "offset": 30736,
+      "length": 16,
+      "ignored_version_offsets": [],
+      "sha256": "1576aaa80ff47a885699f4b1b6b4216c220202e1abd558d5d5ca31189a1a5a1d"
+    },
+    {
+      "name": "stock parser field-name strings",
+      "offset": 580168,
+      "length": 197,
+      "ignored_version_offsets": [],
+      "sha256": "51c10d1e82ea60c8fa9cf3e2062379786e80495c4a4af2548a8caac63d69cabc"
+    },
+    {
+      "name": "stock parser field-name table",
+      "offset": 648224,
+      "length": 120,
+      "ignored_version_offsets": [],
+      "sha256": "ae5e4115eefdc0a785fb7188ed7b4d33abcd4b5c46b544edb98cda6a1ee91d7b"
+    },
+    {
+      "name": "dictionary creation",
+      "offset": 72368,
+      "length": 80,
+      "ignored_version_offsets": [],
+      "sha256": "e7977aa39e3142d6eace7f59350003f9c0bec57f407798dbc22dd1e576f34bac"
+    },
+    {
+      "name": "dictionary vtable",
+      "offset": 648152,
+      "length": 56,
+      "ignored_version_offsets": [],
+      "sha256": "63a2a323c7b66248cad310f6723698051ccde2a0aa49155c37dce44a0426795a"
+    }
+  ],
+  "scope": "Known ELF layout only; changed protected code requires re-audit. Known application revision operands are ignored for identity checking, not modified. Fourth version field 0x250E2 additionally verified against B9 implementation and exact .1.2 baseline.",
+  "helper_object_sha256": "e2983641933b590023b6435ddbe355ff534673a5d1b5067aa4915de36722f347"
+}

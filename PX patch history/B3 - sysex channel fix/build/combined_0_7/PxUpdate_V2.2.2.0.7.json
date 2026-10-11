@@ -1,0 +1,44 @@
+{
+  "sha256": "2fe41c83415c1d85efd7848a31511157162528ec4a83d08045be7e8bcee2e753",
+  "size": 3151848,
+  "app_checksum": "0x7b05",
+  "qnx_source": "2cd57a89d0873ad7e81c410748e3725de6a336494f4c6af1e0110aba85b15c95",
+  "pic_source": "bbc3c2ad26bef7310fc15cac8edee22a1792d8ced3788f7080acccc047304857",
+  "pic_sha256": "94e75694df255b6e93dc1786b91dad31cc631e87224362dc2fcbf4f2e8c94bb0",
+  "qnx_payload_sha256": "83c2ef55af395347ed705c4c66b023d089f8abe37f9902b2c3963533d004fc3c",
+  "application_revision": [
+    2,
+    2,
+    2,
+    0,
+    7
+  ],
+  "pic_revision": [
+    2,
+    2,
+    3,
+    0,
+    0
+  ],
+  "screen": "M: 2.2.3, DSP: 2.2.2.0.7",
+  "qnx_record": [
+    1,
+    13,
+    1039304,
+    1039319
+  ],
+  "fpga_record": [
+    1039319,
+    1039331,
+    1581716,
+    2621049
+  ],
+  "pic_record": [
+    2621049,
+    2621061,
+    530784,
+    3151847
+  ],
+  "structural_validation": "PASS",
+  "combined_hardware_tested": false
+}

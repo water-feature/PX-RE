@@ -1,0 +1,109 @@
+{
+  "status": "PASS: offline validation; hardware pending; B16 not complete",
+  "version": [
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "package": "PxUpdate_V2.2.2.2.2_B16_geometry_candidate.bin",
+  "package_bytes": 3187784,
+  "package_sha256": "488444589607a1b4e793a8d8f79a67c5bd50773b722c302e6d80bc1db77b4b7c",
+  "PIC_sha256": "8964e630a929e608aa0d3f368f55b97718e7cbf8ef79afbd5ee21e71fc40822a",
+  "QNX_sha256": "23175d047f8ac0bace3566f2da0a49f920d43d699de03635cdf20836c3f0838a",
+  "FPGA_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+  "source_2_2_2_2_1_sha256": {
+    "PIC": "b7d59c09d57e2b9c18146e51b517404a8deba5cfcc5291d8a17f88904fe53e59",
+    "QNX": "34b775ebff3af113ffa12592e71f51136037a64fdb50a6810c11b62c008b5fa2",
+    "package": "0d41efe3fcd93d16161e92ae4b9389d7d0917006a06920b7f2c8b8660e419e74"
+  },
+  "independent_instruction_verification": "33 words match prior Ghidra12.1.4 independent assembly/disassembly, targets and delay slots",
+  "PIC_geometry_changed_bytes": 113,
+  "PIC_geometry_instruction_bytes": 132,
+  "PIC_version_changed_bytes": 2,
+  "QNX_version_changed_bytes": 2,
+  "QNX_functional_changed_bytes": 0,
+  "package_total_changed_bytes": 120,
+  "PIC_report_paths": [
+    {
+      "site": "0x9d0258c0",
+      "wire_word": "0x402a0002"
+    },
+    {
+      "site": "0x9d051bc8",
+      "wire_word": "0x402a0002"
+    }
+  ],
+  "QNX_report_word": "0x40139222",
+  "version_gate_cases": 18,
+  "geometry": {
+    "status": "PASS",
+    "emitted_width_instruction_cases": 16330,
+    "actual_getters_clipping_draw_argument_cases": 3024,
+    "representative": [
+      {
+        "raw": 0,
+        "halfwidth": 7,
+        "unclipped_draw": [
+          "0x9d0686bc",
+          121,
+          21,
+          135,
+          35
+        ]
+      },
+      {
+        "raw": 1,
+        "halfwidth": 15,
+        "unclipped_draw": [
+          "0x9d0686bc",
+          113,
+          21,
+          143,
+          35
+        ]
+      },
+      {
+        "raw": 16,
+        "halfwidth": 3,
+        "unclipped_draw": [
+          "0x9d0686bc",
+          125,
+          21,
+          131,
+          35
+        ]
+      },
+      {
+        "raw": 17,
+        "halfwidth": 1,
+        "unclipped_draw": [
+          "0x9d0686bc",
+          127,
+          21,
+          129,
+          35
+        ]
+      }
+    ],
+    "limits": [
+      "Scoped interpreter, not a complete PIC emulator",
+      "Drawing I/O intercepted; panel pixels and hardware not tested",
+      "General recovery independence remains NOT VERIFIED"
+    ]
+  },
+  "PIC_transport_checksum_blocks": 130,
+  "valid_corrupt_checksum_cases": 260,
+  "application_checksum": "0xaa51",
+  "FPGA_record_unchanged": true,
+  "package_layout_unchanged": true,
+  "outside_geometry_and_version_bytes_unchanged": true,
+  "audio_mapping_and_QNX_unwind_bytes_unchanged": true,
+  "rejected_region_and_existing_allocations_unchanged": true,
+  "source_candidate_unchanged": true,
+  "hardware_geometry": "NOT VERIFIED on .2.2; .2.1 sonic PASS / graphical FAIL",
+  "B16_complete": false,
+  "recovery_independence": "NOT VERIFIED",
+  "flashed": false
+}

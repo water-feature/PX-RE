@@ -1,0 +1,60 @@
+{
+  "status": "PASS: offline validation; no flash approval",
+  "package": "PxUpdate_V2.2.2.2.1_B16_in_place_candidate.bin",
+  "version": [
+    2,
+    2,
+    2,
+    2,
+    1
+  ],
+  "baseline_PIC_sha256": "caa2a19d9a246aaeded2debd6b373490fee06f035d101373c24ec188456f6612",
+  "baseline_QNX_sha256": "dcc77bdaff17f99288182ffb4927e85dcb76de597f8c5906a4078df8f5b14d16",
+  "baseline_package_sha256": "89d794880697c18da66356a2fd8cb90b7302d2250574ea4664bdbc496945bc6f",
+  "PIC_sha256": "b7d59c09d57e2b9c18146e51b517404a8deba5cfcc5291d8a17f88904fe53e59",
+  "QNX_sha256": "34b775ebff3af113ffa12592e71f51136037a64fdb50a6810c11b62c008b5fa2",
+  "FPGA_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+  "package_sha256": "0d41efe3fcd93d16161e92ae4b9389d7d0917006a06920b7f2c8b8660e419e74",
+  "package_bytes": 3187784,
+  "PIC_functional_changed_bytes": 230,
+  "QNX_functional_changed_bytes": 190,
+  "PIC_version_changed_bytes": 2,
+  "QNX_version_changed_bytes": 2,
+  "package_total_changed_bytes": 428,
+  "PIC_report_paths": [
+    {
+      "site": "0x9d0258c0",
+      "wire_word": "0x402a0001"
+    },
+    {
+      "site": "0x9d051bc8",
+      "wire_word": "0x402a0001"
+    }
+  ],
+  "version_gate_cases": 16,
+  "PIC_checksum_blocks": 130,
+  "valid_corrupt_checksum_cases": 260,
+  "QNX_FDEs_checked": 910,
+  "original_FDEs_unchanged": 909,
+  "PT_LOAD_unchanged": true,
+  "FPGA_record_unchanged": true,
+  "package_layout_unchanged": true,
+  "rejected_candidate_files_unchanged": 52,
+  "rejected_PIC_region_unchanged": true,
+  "PIC_display_spare_bytes_used": 0,
+  "PIC_editor_active_bytes": 152,
+  "PIC_editor_body_bytes": 156,
+  "PIC_display_used_bytes": 88,
+  "PIC_display_footprint_bytes": 96,
+  "native": {
+    "status": "PASS",
+    "execution": "actual ELF mapper and helper instructions via x86_64 host harness (Rosetta)",
+    "legacy_bit_exact_cases": 524752,
+    "new_mapping_bit_exact_cases": 65594,
+    "new_zero_modulation_BPM_cases": 8,
+    "runtime_S0_scale_cases": 30,
+    "hardware": "NOT VERIFIED"
+  },
+  "recovery_independence": "NOT VERIFIED; general uncertainty accepted by user",
+  "flashed": false
+}

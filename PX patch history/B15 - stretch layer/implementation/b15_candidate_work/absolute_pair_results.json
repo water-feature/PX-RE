@@ -1,0 +1,13 @@
+{
+  "status": "PAIRED_COMPONENT_PASS_NOT_RELEASE",
+  "cases": [
+    "installed setter entry: no-held highest at stored Key, all four pairs",
+    "1000 A+B reversals with delayed feedback cannot rebase later edits",
+    "absolute/MIDI-style stores, Key target retention and On/no-reload/next actual-base detent",
+    "raw-load invalidation rejects saved old feedback; bulk loaded settings do not become explicit layer edits",
+    "held instrument2 A+B captures actual independent played layers; intermediate feedback suppressed",
+    "pending-key detent drops; disable/re-enable chooses highest without layer history"
+  ],
+  "pic_image": "pic_B15_absolute_INCOMPLETE.bin",
+  "limits": "Fitted MIPS helper/detour execution plus actual native QNX C adapter/policy; stock setter, raw operation bodies and sample resolver remain contracts. Does not establish lifecycle coverage or target QNX thunk runtime/physical transport."
+}

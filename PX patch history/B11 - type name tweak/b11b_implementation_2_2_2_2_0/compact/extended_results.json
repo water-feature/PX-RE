@@ -1,0 +1,39 @@
+{
+  "actual_setter_cases": 2016,
+  "replacement_sites_executed": [
+    "0x9d04debc",
+    "0x9d04e010",
+    "0x9d04e54c",
+    "0x9d04e624"
+  ],
+  "additional_all_group_routing_cases": 42120,
+  "nonmanual_full_return_identity_cases": 16,
+  "bulk_recall_zero_cases": 3,
+  "ownership": "PASS: only four established Type ranges and four approved clamp call-site words",
+  "external_incoming": [
+    {
+      "source": "0x9d029348",
+      "target": "0x9d02a74c"
+    },
+    {
+      "source": "0x9d04debc",
+      "target": "0x9d02dd08"
+    },
+    {
+      "source": "0x9d04e010",
+      "target": "0x9d02dd08"
+    },
+    {
+      "source": "0x9d04e54c",
+      "target": "0x9d02dd08"
+    },
+    {
+      "source": "0x9d04e624",
+      "target": "0x9d02dd08"
+    }
+  ],
+  "additional_pic_storage_bytes": 0,
+  "cache_correction_included": false,
+  "firmware_modified": false,
+  "limits": "external effects stubbed; raw incoming audit does not prove absence of arbitrary computed entries; hardware testing follows implementation approval"
+}

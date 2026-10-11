@@ -1,0 +1,71 @@
+{
+  "objects": [
+    {
+      "object": "b8_adapters.o",
+      "sha256": "bec629a1b3d2a6fc4e3f65c4d2828f72e5cac713679a811cc97024f5722943f4",
+      "text_bytes": 1499,
+      "constant_bytes": 16,
+      "eh_frame_bytes": 64,
+      "symbols": [
+        {
+          "name": "b8_dispatch",
+          "section": ".text",
+          "offset": 0,
+          "size": 1499
+        }
+      ]
+    },
+    {
+      "object": "b8_hooks.o",
+      "sha256": "7ad598e7e8c1475f650e6825c8802981a989c7581adb05008d3b642002227314",
+      "text_bytes": 3147,
+      "constant_bytes": 0,
+      "eh_frame_bytes": 1256,
+      "symbols": [
+        {
+          "name": "b8_hook_prepare",
+          "section": ".text",
+          "offset": 0,
+          "size": 350
+        },
+        {
+          "name": "b8_hook_gate",
+          "section": ".text",
+          "offset": 352,
+          "size": 358
+        },
+        {
+          "name": "b8_hook_reset",
+          "section": ".text",
+          "offset": 720,
+          "size": 359
+        },
+        {
+          "name": "b8_hook_note",
+          "section": ".text",
+          "offset": 1088,
+          "size": 833
+        },
+        {
+          "name": "b8_hook_return",
+          "section": ".text",
+          "offset": 1936,
+          "size": 348
+        },
+        {
+          "name": "b8_wrap_open",
+          "section": ".text",
+          "offset": 2288,
+          "size": 859
+        }
+      ]
+    }
+  ],
+  "source_hashes": {
+    "b8_adapters.c": "d791f759f9c855d383f0f9f96d276a79e2a22dd90e822e921a0123a53628c114",
+    "b8_hooks.s": "fcbe863e399f3667a8677d11beb475117e83c41304f098a8e6f5774105e6c112",
+    "emit_b8.py": "9cb424def8cacfc6e40aefbbbadb8c506d428f329594bbc2cec510697b051c90"
+  },
+  "base_sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35",
+  "new_heap_bytes": 1024
+}

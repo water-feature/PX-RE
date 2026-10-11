@@ -1,0 +1,46 @@
+{
+  "status": "packaged_offline_validated_hardware_pending",
+  "file": "PxUpdate_V2.2.2.0.6.bin",
+  "sha256": "2cd57a89d0873ad7e81c410748e3725de6a336494f4c6af1e0110aba85b15c95",
+  "bytes": 3151848,
+  "candidate_sha256": "85b76594924f1a8b7deffec1d81f79feb848edf6c631d0eb2b6c24f49aa393f1",
+  "candidate_bytes": 1039304,
+  "base_file": "b5_packaging_work/voice_b5_2.2.2.0.5.bin",
+  "base_sha256": "41242b0d3cde1cf208181d998176db62dcc9484e2ca74e22104f4a140845a587",
+  "base_bytes": 3127120,
+  "revision": [
+    2,
+    2,
+    2,
+    0,
+    6
+  ],
+  "application_checksum": "0x7105",
+  "growth_bytes": 24728,
+  "negative_rejections": [
+    "modified base",
+    "truncated base",
+    "modified ELF",
+    "truncated ELF",
+    "wrong revision",
+    "bad application checksum",
+    "modified PIC"
+  ],
+  "fpga_pic_complete_records_unchanged": true,
+  "deterministic_repack": true,
+  "saved_extraction_sha256": "85b76594924f1a8b7deffec1d81f79feb848edf6c631d0eb2b6c24f49aa393f1",
+  "flashed": false,
+  "hardware_validated": false,
+  "screen_and_compiled_update_gate_revision": "2.2.2.0.2 inherited unchanged; package identity is header/file .6",
+  "source_sha256": {
+    "package_b8_candidate.py": "051a8de75a98abbd1275bddb0b68b016322ea35e1e0211fe11df15dcb8c68663",
+    "verify_b8_package.py": "175b8b968e3a37c4edff8146909ed47abda6bafed28e3280713fa697fa0de4d4"
+  },
+  "final_validation_evidence": {
+    "b8_integration_validation.json": "3e6b96f189d1ec9bc0976d1325ef119446f3ad831b6a733da1537b97415070dd",
+    "b8_candidate_validation.json": "dc81edb5dc6d2083e7c28b51b9a690c2c6ec6f1d18e03496daa2cc4159f104fa",
+    "b8_candidate_manifest.json": "68754f259b7a34bcaa68a0526d23ca9ff1649da3b823731b3b31394c8ff6525c"
+  },
+  "final_host_checks": 38622,
+  "final_static_checks": 5719
+}

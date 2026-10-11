@@ -1,0 +1,54 @@
+call_address	route	parameter	Sync_capable
+0x9d01ebcc	generic selected parameter	dynamic	true
+0x9d01f2f0	bounded non-Sync selector	dynamic_non_sync	false
+0x9d01fe30	bounded non-Sync selector	dynamic_non_sync	false
+0x9d029f58	fixed parameter	0f	false
+0x9d02a080	fixed parameter	1d	true
+0x9d02a0e4	fixed parameter	09	false
+0x9d02a148	fixed parameter	07	false
+0x9d02a1e0	generic selected parameter	dynamic	true
+0x9d02a230	fixed parameter	183	false
+0x9d02a29c	fixed parameter	182	false
+0x9d02a304	bounded non-Sync selector	dynamic_non_sync	false
+0x9d02a368	fixed parameter	b7	false
+0x9d02a428	fixed parameter	94	false
+0x9d02a470	fixed parameter	87	false
+0x9d02a4e4	generic selected parameter	dynamic	true
+0x9d02a55c	generic selected parameter	dynamic	true
+0x9d02a5dc	fixed parameter	125	false
+0x9d02a680	generic selected parameter	dynamic	true
+0x9d02a700	fixed parameter	23	false
+0x9d02a86c	bounded non-Sync selector	dynamic_non_sync	false
+0x9d02a8b8	fixed parameter	185	false
+0x9d02d3a4	fixed parameter	5e	true
+0x9d02d3d4	fixed parameter	4a	false
+0x9d02d410	fixed parameter	c1	false
+0x9d02d494	fixed parameter	48	false
+0x9d02d4f8	fixed parameter	64	false
+0x9d02d538	fixed parameter	50	false
+0x9d02d818	fixed parameter	185	false
+0x9d02d83c	fixed parameter	183	false
+0x9d02dab4	fixed parameter	0b	false
+0x9d02dae8	fixed parameter	10d	false
+0x9d02db74	fixed parameter	119	false
+0x9d02dbb8	fixed parameter	101	false
+0x9d02dca8	fixed parameter	4c	false
+0x9d02ddec	fixed parameter	b5	false
+0x9d02de98	fixed parameter	23	false
+0x9d02debc	fixed parameter	c1	false
+0x9d02dee8	fixed parameter	b7	false
+0x9d02df34	fixed parameter	199	false
+0x9d02e110	fixed parameter	64	false
+0x9d02e1b0	bounded non-Sync selector	dynamic_non_sync	false
+0x9d02e28c	fixed parameter	120	false
+0x9d02e2b8	fixed parameter	114	false
+0x9d02e3a0	fixed parameter	0d	false
+0x9d02e3c8	fixed parameter	4e	false
+0x9d02e448	fixed parameter	fc	false
+0x9d02e504	fixed parameter	108	false
+0x9d02e750	generic selected parameter	dynamic	true
+0x9d02f430	MIDI layer A decrement	NRPN lookup	true
+0x9d02f6e8	MIDI layer B decrement	NRPN lookup	true
+0x9d02fcb4	MIDI layer B increment	NRPN lookup	true
+0x9d0300a4	MIDI layer A increment	NRPN lookup	true
+0x9d030324	generic selected parameter	dynamic	true

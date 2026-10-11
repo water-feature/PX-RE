@@ -1,0 +1,19 @@
+# Local OS and Python byproducts
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Manufacturer firmware, extracted executables and generated update media
+*.bin
+*.syx
+*.elf
+*.o
+*.img
+*.iso
+*.qcow2
+
+# Local editor files
+*.swp
+*.swo
+*~

@@ -1,0 +1,107 @@
+[
+  {
+    "offset": 7,
+    "old": "06",
+    "new": "07"
+  },
+  {
+    "offset": 128240,
+    "old": "16",
+    "new": "17"
+  },
+  {
+    "offset": 151804,
+    "old": "06",
+    "new": "07"
+  },
+  {
+    "offset": 1039318,
+    "old": "89",
+    "new": "8b"
+  },
+  {
+    "offset": 2621055,
+    "old": "06",
+    "new": "07"
+  },
+  {
+    "offset": 2626073,
+    "old": "06",
+    "new": "07"
+  },
+  {
+    "offset": 2626085,
+    "old": "06",
+    "new": "07"
+  },
+  {
+    "offset": 2626097,
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "11808293080040100000000010808293050040100000000098"
+  },
+  {
+    "offset": 2626123,
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "bd276400bfaf45fb400b000000000800e0030000000001000224118082a3148280a7e8"
+  },
+  {
+    "offset": 2626159,
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "bd271400bfaf14fb400f000000002efb400b0000000001000224118082a3148280a70800e0031c8282af118082a3148280a733aa410b00000000010002240300821400000000118082a3148280a7e8"
+  },
+  {
+    "offset": 2626239,
+    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new": "bd271400bfaf04f9410b00000000010002240300821400000000118082a3148280a7c0100400c02304009ff8410b00000000"
+  },
+  {
+    "offset": 2791261,
+    "old": "010002241c8282af",
+    "new": "0005400f00000000"
+  },
+  {
+    "offset": 2792293,
+    "old": "33aa41",
+    "new": "050540"
+  },
+  {
+    "offset": 2878261,
+    "old": "e8ffbd2714",
+    "new": "f704400b00"
+  },
+  {
+    "offset": 2878267,
+    "old": "bfaf",
+    "new": "0000"
+  },
+  {
+    "offset": 2878353,
+    "old": "98ffbd2764",
+    "new": "eb04400b00"
+  },
+  {
+    "offset": 2878359,
+    "old": "bfaf",
+    "new": "0000"
+  },
+  {
+    "offset": 2878681,
+    "old": "c0",
+    "new": "b3"
+  },
+  {
+    "offset": 3137785,
+    "old": "c0100400c02304",
+    "new": "1205400b000000"
+  },
+  {
+    "offset": 3138189,
+    "old": "e8ffbd2714",
+    "new": "0905400b00"
+  },
+  {
+    "offset": 3138195,
+    "old": "bfaf",
+    "new": "0000"
+  }
+]

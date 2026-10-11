@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "endpoint_cases_with_retreat": 52224,
+  "direct_center_equivalence_cases": 0,
+  "custom_side_effect_equivalence_cases": 48,
+  "single_part_redispatch_comparison_cases": 1280,
+  "redispatch_custom_side_effect_differences": 1040,
+  "examples": [
+    {
+      "kind": 7,
+      "request": 600,
+      "A": [
+        600,
+        900,
+        600,
+        1,
+        1
+      ],
+      "B": [
+        400,
+        400,
+        400,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": 7,
+      "request": 600,
+      "A": [
+        400,
+        400,
+        400,
+        1,
+        1
+      ],
+      "B": [
+        600,
+        900,
+        600,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": 9,
+      "request": 400,
+      "A": [
+        100,
+        400,
+        400,
+        1,
+        1
+      ],
+      "B": [
+        600,
+        600,
+        600,
+        1,
+        1
+      ]
+    },
+    {
+      "kind": 9,
+      "request": 400,
+      "A": [
+        600,
+        600,
+        600,
+        1,
+        1
+      ],
+      "B": [
+        100,
+        400,
+        400,
+        1,
+        1
+      ]
+    }
+  ]
+}

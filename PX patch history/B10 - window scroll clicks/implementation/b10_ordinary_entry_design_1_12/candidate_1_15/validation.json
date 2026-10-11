@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "QNX_sha256": "dd9efbcd2804e02cc4599e72d2ee90f996facce1fa06f1815a0078270566a2fa",
+  "baseline": "exact .1.12",
+  "phase": {
+    "trials": 162528,
+    "corrected": 6900
+  },
+  "handoff_cases": 6900,
+  "entry_excess_max": 0,
+  "handoff_excess_max": 0,
+  "transition_step_max": 754,
+  "old_transition_step_max": 20834,
+  "no_edit_cases": 96,
+  "preservation_cases": 96,
+  "reader_FwdRev_cases": 48,
+  "short_cases": 16000,
+  "short_distances": [
+    {
+      "N": 0,
+      "entry": 23976,
+      "handoff": 0,
+      "any_step": 23976
+    },
+    {
+      "N": 1,
+      "entry": 753,
+      "handoff": 23976,
+      "any_step": 23976
+    },
+    {
+      "N": 2,
+      "entry": 753,
+      "handoff": 753,
+      "any_step": 23976
+    },
+    {
+      "N": 3,
+      "entry": 753,
+      "handoff": 753,
+      "any_step": 12000
+    },
+    {
+      "N": 4,
+      "entry": 753,
+      "handoff": 753,
+      "any_step": 8775
+    },
+    {
+      "N": 8,
+      "entry": 753,
+      "handoff": 753,
+      "any_step": 3796
+    },
+    {
+      "N": 16,
+      "entry": 753,
+      "handoff": 753,
+      "any_step": 2007
+    },
+    {
+      "N": 32,
+      "entry": 753,
+      "handoff": 753,
+      "any_step": 1366
+    },
+    {
+      "N": 64,
+      "entry": 753,
+      "handoff": 753,
+      "any_step": 1141
+    },
+    {
+      "N": 128,
+      "entry": 753,
+      "handoff": 753,
+      "any_step": 1080
+    }
+  ],
+  "lifecycle_cases": 32,
+  "repeated_edit_cases": 32,
+  "source_sequence_cases": 32,
+  "split_max_difference": 1,
+  "storage": {
+    "status": "PASS",
+    "constructor": true,
+    "independent_readers": true,
+    "clone_excludes_state": true,
+    "close_reset": true,
+    "reconstruction": true,
+    "successful_open_reset": true,
+    "all_allocations_freed": true,
+    "allocation_canaries": true,
+    "per_reader_bytes": 16,
+    "additional_audio_buffers": 0
+  },
+  "transport": {
+    "status": "PASS",
+    "unowned_seek_equivalence": 16,
+    "owned_seek_preservation": 2,
+    "interleaved_independent_reader_streams": 2
+  },
+  "inherited_code_and_frames_unchanged": {
+    ".b5.text": "cc57cc9e0a120aace41d5154e64433614b9b7fdf7a0ed97e17b3a58f602fcca4",
+    ".b5.eh_frame": "1178f340e3fb721ed7bf0f22e80900932bb7af0a2c85b2449763a54ff480a9fe",
+    ".b8.text": "c66f9e8ac48f9427891784d7a1199c4f637ccd5301e9d9b2e6fd0c88caad99ba",
+    ".b8.eh_frame": "d1ee3ec4f23f42c4c712155784a6d0f5aa686a0d9955e2ef9bb7e955a40f9379",
+    ".b15_text": "74405a1c60879cd64977d67830177797273a4e570fbef2a13f2cd72810a22d48",
+    ".b15_eh_frame": "32824d20bc8e4a0eeb70660a603d5bf0e3c207f9518fe56aecf74ce7206f1a36"
+  },
+  "all_899_inherited_FDEs_identical": true,
+  "new_FDEs": 10,
+  "PT_LOADs_unchanged": true,
+  "additional_audio_buffers": 0,
+  "per_reader_bytes": 16,
+  "hardware": "NOT VERIFIED",
+  "flashed": false,
+  "actual_emitted_inherited_Center_fixture": {
+    "status": "PASS",
+    "cases": 43528,
+    "pushes": 6872,
+    "bypasses": 36656,
+    "geometry_model_checks": 217640,
+    "actual_stock_geometry_checks": 435280,
+    "ABI_comparisons": 43528,
+    "retreat_sequences": 24
+  }
+}

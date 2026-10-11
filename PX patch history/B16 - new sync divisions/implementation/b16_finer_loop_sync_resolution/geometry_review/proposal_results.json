@@ -1,0 +1,50 @@
+{
+  "status": "PASS: scoped proposal model only",
+  "cases": 16330,
+  "representative_halfwidth_pixels": [
+    {
+      "raw": 1,
+      "baseline_halfwidth": 15,
+      "current_halfwidth": 13,
+      "proposed_halfwidth": 15
+    },
+    {
+      "raw": 0,
+      "baseline_halfwidth": 7,
+      "current_halfwidth": 6,
+      "proposed_halfwidth": 7
+    },
+    {
+      "raw": 16,
+      "baseline_halfwidth": null,
+      "current_halfwidth": 116,
+      "proposed_halfwidth": 3
+    },
+    {
+      "raw": 17,
+      "baseline_halfwidth": null,
+      "current_halfwidth": 123,
+      "proposed_halfwidth": 1
+    }
+  ],
+  "proposed_instruction_bytes": 132,
+  "first_range_bytes": 100,
+  "second_range_bytes": 32,
+  "existing_two_blocks_capacity_bytes": 184,
+  "existing_second_block_tail_unchanged_bytes": 52,
+  "incoming_direct_candidates": [
+    [
+      "0x9d03b0a4",
+      "0x9d03b55c"
+    ]
+  ],
+  "incoming_literal_candidates": [],
+  "firmware_files_written": false,
+  "package_generated": false,
+  "limits": [
+    "Not an independent PIC emulator",
+    "Getter I/O boundary mocked, actual downstream drawing not emulated",
+    "No hardware validation of correction"
+  ],
+  "independent_assembly": "PASS: Ghidra12.1.4,33 exact words, targets/delay slots; PROPOSED_ASSEMBLY_CHECK.txt"
+}

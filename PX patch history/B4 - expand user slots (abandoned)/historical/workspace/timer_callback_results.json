@@ -1,0 +1,57 @@
+{
+  "registration_prefix_executed_to": "0x9d05c550",
+  "target": "0x9d074f0c",
+  "parent_target_offset": "0x34",
+  "parent_argument_offset": "0x38",
+  "references": {
+    "0x9d05c4e4": {
+      "raw_direct_jump_call_candidates": [
+        "0x9d05c764",
+        "0x9d05c76c",
+        "0x9d075644"
+      ],
+      "aligned_literal_pointer_candidates": []
+    },
+    "0x9d05c764": {
+      "raw_direct_jump_call_candidates": [],
+      "aligned_literal_pointer_candidates": []
+    },
+    "0x9d05c76c": {
+      "raw_direct_jump_call_candidates": [],
+      "aligned_literal_pointer_candidates": []
+    }
+  },
+  "leaf_callback_cases": [
+    {
+      "previous": 0,
+      "incoming": 1,
+      "wrap_counter": 7,
+      "stack_unchanged": true
+    },
+    {
+      "previous": 12,
+      "incoming": 12,
+      "wrap_counter": 7,
+      "stack_unchanged": true
+    },
+    {
+      "previous": 12,
+      "incoming": 13,
+      "wrap_counter": 7,
+      "stack_unchanged": true
+    },
+    {
+      "previous": 12,
+      "incoming": 0,
+      "wrap_counter": 8,
+      "stack_unchanged": true
+    },
+    {
+      "previous": 4294967295,
+      "incoming": 0,
+      "wrap_counter": 8,
+      "stack_unchanged": true
+    }
+  ],
+  "limitations": "Registration prefix and callback leaf only; no MMIO execution, whole IRQ transaction, exhaustive alias proof or stack bound."
+}

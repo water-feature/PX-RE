@@ -1,0 +1,6 @@
+out /workspace/scratch/83eebc8ee139/audit/B13_v4_review/v10_b13_uuid_v4_candidate.elf
+size 1039304 sha256 d5d4d5388558f11e2054caa5dc28bef03de21369baadce796f0d654d8f481cf2
+helper text 0xf9240 0xf93c6 390
+helper eh 0xfa528 0xfa590 104 fde 0xfa540
+hook 0x3527c old-> 0x34ef0 new-> 0xf9240
+changed_bytes 456 first 0x1b0 last 0xfdba8

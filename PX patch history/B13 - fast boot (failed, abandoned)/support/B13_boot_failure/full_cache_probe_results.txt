@@ -1,0 +1,11 @@
+probe /workspace/scratch/83eebc8ee139/audit/manifests/px-grp-export/f00/01 Ambience/02. GuitarAwes/02. GuitarAwes.grp
+fast 0 0000000000000000000000000000000000
+cold switch 0 seconds 8.347299990418833e-05
+warm switch 0 seconds 1.4060005923965946e-06
+cache head 0xcd3ab90 wav head 0xcd371c0
+full stock cache parser: all 927 manifests passed
+concurrent exact worker trial 1 passed
+concurrent exact worker trial 2 passed
+concurrent exact worker trial 3 passed
+concurrent exact worker trial 4 passed
+concurrent exact worker trial 5 passed

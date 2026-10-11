@@ -1,0 +1,94 @@
+{
+  "status": "BOUNDED_PLACEMENT_PASS",
+  "regions": [
+    {
+      "start": "0x9d07a210",
+      "end": "0x9d07a258",
+      "bytes": 72,
+      "literal_hits": [],
+      "direct_control_hits": [
+        [
+          "0x9d07a230",
+          "0x9d07a24c"
+        ]
+      ],
+      "nearby_constructed_hits": [],
+      "placement_approved": true,
+      "original_sha256": "fe538b837f9ffbdbe93742632de603c077ac24cbecae8674cb330eac6cdf7c14"
+    },
+    {
+      "start": "0x9d07a4f8",
+      "end": "0x9d07a56c",
+      "bytes": 116,
+      "literal_hits": [],
+      "direct_control_hits": [
+        [
+          "0x9d0768c4",
+          "0x9d07a500"
+        ]
+      ],
+      "nearby_constructed_hits": [],
+      "placement_approved": true,
+      "original_sha256": "aeca7fee5f4f7adbff6f888b0039e227af8ce038304b3bf62674c224c6240337"
+    },
+    {
+      "start": "0x9d07a408",
+      "end": "0x9d07a450",
+      "bytes": 72,
+      "literal_hits": [],
+      "direct_control_hits": [
+        [
+          "0x9d0767e0",
+          "0x9d07a41c"
+        ]
+      ],
+      "nearby_constructed_hits": [],
+      "placement_approved": true,
+      "original_sha256": "eee37e339c08d0fdf47833a463484dba666e87271c4624c0d27067f2e95a1fc7",
+      "excluded_lookup_data_hit": "767e0 is bytes0e0f0f10 in128-byte monotonic velocity table767bc..7683c, constructed at6f54c/550; no executable ingress. Negative fast region remains bypassed by B14."
+    }
+  ],
+  "approved_total_bytes": 2660,
+  "main_cave_bytes": 2400,
+  "additional_bytes": 260,
+  "roots": [
+    "0x9d07a208",
+    "0x9d07a258",
+    "0x9d07a298",
+    "0x9d07a384",
+    "0x9d07a468"
+  ],
+  "recovered_live_words": 152,
+  "return_sites": [
+    "0x9d07a4f0",
+    "0x9d07a400",
+    "0x9d07a460",
+    "0x9d07a37c",
+    "0x9d07a290"
+  ],
+  "fragment_plan": {
+    "b15_capture_enable": [
+      "0x9d07a210",
+      72
+    ],
+    "b15_setter": [
+      "0x9d07a4f8",
+      116
+    ],
+    "b15_format": [
+      "0x9d07a408",
+      72
+    ]
+  },
+  "extra_trampoline_bytes": 0,
+  "authority": "Exact1.7 inherited B14 unconditional service bypass and disabled acceleration ingress; recovered CFG plus all-byte aliased literals, direct controls and nearby constructed pointer scan. Tail region was reserved dead code by B14. No FF inference.",
+  "limits": "Static recovered ingress closure, matching inherited B14 audit scope; arbitrary fabricated/computed code addresses are not mathematically excluded.",
+  "preserved": [
+    "live service7a258",
+    "decoder7a298/7a384",
+    "anchor exit7a450..468",
+    "inherited helper7a468..4f8",
+    "vectors/startup/DINIT",
+    "bootloader"
+  ]
+}

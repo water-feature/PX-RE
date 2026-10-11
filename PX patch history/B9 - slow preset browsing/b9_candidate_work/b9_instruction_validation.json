@@ -1,0 +1,326 @@
+{
+  "status": "PASS",
+  "all_direct_callers": [
+    "0x9d0238e0",
+    "0x9d0239ec",
+    "0x9d023a48",
+    "0x9d025a10",
+    "0x9d026a9c",
+    "0x9d026fe4",
+    "0x9d0291bc",
+    "0x9d02a3c8",
+    "0x9d02a800",
+    "0x9d02aab4",
+    "0x9d02bcc0",
+    "0x9d02d5b8",
+    "0x9d02dce8",
+    "0x9d02e0b8",
+    "0x9d02fa14",
+    "0x9d02ffd0"
+  ],
+  "panel_returns": [
+    "0x9d02a3d0",
+    "0x9d02a808",
+    "0x9d02aabc",
+    "0x9d02bcc8",
+    "0x9d02dcf0",
+    "0x9d02e0c0"
+  ],
+  "caller_wrapper_matrix_cases": 1920,
+  "nonpanel_equivalence_cases": 1200,
+  "real_panel_handler_cases": 6,
+  "real_counter_service_cases": 50,
+  "real_expiry_cases": 24,
+  "interrupt_to_zero_cases": 58,
+  "inherited_B6_actual_instruction_regressions": 480,
+  "both_helper_exits": [
+    "0x9d023558",
+    "0x9d02355c"
+  ],
+  "caller_scratch_liveness": [
+    {
+      "return_address": "0x9d0238e8",
+      "checked_states": 3,
+      "barriers": [
+        "0x9d023838"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d0239f4",
+      "checked_states": 3,
+      "barriers": [
+        "0x9d023838"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d023a50",
+      "checked_states": 3,
+      "barriers": [
+        "0x9d023838"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d025a18",
+      "checked_states": 15,
+      "barriers": [
+        "0x9d02452c"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d026aa4",
+      "checked_states": 10,
+      "barriers": [
+        "0x9d0266ac"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d026fec",
+      "checked_states": 7,
+      "barriers": [
+        "0x9d026dd0"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d0291c4",
+      "checked_states": 9,
+      "barriers": [
+        "0x9d0291e4"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d02a3d0",
+      "checked_states": 3,
+      "barriers": [
+        "0x9d02a3d8"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d02a808",
+      "checked_states": 3,
+      "barriers": [
+        "0x9d02a810"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d02aabc",
+      "checked_states": 3,
+      "barriers": [
+        "0x9d02aac4"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d02bcc8",
+      "checked_states": 3,
+      "barriers": [
+        "0x9d02bcd0"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d02d5c0",
+      "checked_states": 9,
+      "barriers": [
+        "0x9d0291e4"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d02dcf0",
+      "checked_states": 3,
+      "barriers": [
+        "0x9d02dcf8"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d02e0c0",
+      "checked_states": 3,
+      "barriers": [
+        "0x9d02e0c8"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d02fa1c",
+      "checked_states": 12,
+      "barriers": [
+        "0x9d0291e4"
+      ],
+      "scratch_read_before_write": false
+    },
+    {
+      "return_address": "0x9d02ffd8",
+      "checked_states": 9,
+      "barriers": [
+        "0x9d0291e4"
+      ],
+      "scratch_read_before_write": false
+    }
+  ],
+  "scenarios": {
+    "input_first": [
+      [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        2,
+        0
+      ]
+    ],
+    "input_first_reversal": [
+      [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        2,
+        0
+      ]
+    ],
+    "expiry_first": [
+      [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        2,
+        0
+      ]
+    ],
+    "expiry_first_reversal": [
+      [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        2,
+        0
+      ]
+    ],
+    "pending_reversal_suppressed": [
+      [
+        0,
+        1,
+        0,
+        2,
+        0
+      ]
+    ],
+    "bank_change": [
+      [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        2,
+        0
+      ]
+    ],
+    "sustained_input_first": {
+      "application_count": 5,
+      "final": [
+        0,
+        41
+      ]
+    },
+    "sustained_expiry_first": {
+      "application_count": 9,
+      "final": [
+        0,
+        41
+      ]
+    },
+    "mixed_source_slot_order": [
+      [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      [
+        4,
+        3,
+        0,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1,
+        1,
+        0
+      ]
+    ]
+  },
+  "instruction_source": "candidate payload bytes only; independent raw decoder; no symbolic overlays",
+  "ABI": "callee-saved/SP/GP/FP/RA, caller canary, o32 home-area clobbers and global-getter volatile clobbers checked",
+  "limits": [
+    "Program application/global-getter external contracts summarize their effects; preset I/O/audio and complete hardware interrupts are not emulated.",
+    "Counter-service instructions and expiry/getter instructions execute exactly; IRQ register save/restore is an explicit contract.",
+    "Inherited B6 tests compare actual Center/endpoint code with original engine/UI/MIDI call summaries."
+  ]
+}

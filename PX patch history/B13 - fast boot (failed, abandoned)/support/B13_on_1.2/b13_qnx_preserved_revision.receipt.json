@@ -1,0 +1,45 @@
+{
+  "baseline_sha256": "a0ee95328e908b4d1aadff6e71ca34e44d1845418bb1e8204372667ed99d62bf",
+  "candidate_sha256": "29eaf9650b95ca78e056388e641289765e515d354b4b81c5c21b9228d46128f5",
+  "allowed_difference_spans": [
+    [
+      217725,
+      217729
+    ],
+    [
+      1020480,
+      1020870
+    ],
+    [
+      1025320,
+      1025428
+    ],
+    [
+      1028104,
+      1028108
+    ],
+    [
+      1035068,
+      1035076
+    ],
+    [
+      1037608,
+      1037616
+    ],
+    [
+      1039208,
+      1039216
+    ],
+    [
+      1039272,
+      1039280
+    ],
+    [
+      432,
+      448
+    ]
+  ],
+  "version_bytes_modified": false,
+  "protected_contracts": "pass",
+  "status": "ELF candidate only; container not created"
+}

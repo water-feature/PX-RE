@@ -1,0 +1,19 @@
+PASS no-uuid-cr
+PASS no-uuid-crlf
+PASS empty-columns
+PASS uuid-falls-back
+PASS duplicate-uuid-falls-back
+PASS exact-token-only
+PASS header-only-zero
+PASS incomplete-header
+PASS empty-file
+PASS open-failure
+PASS read-failure
+PASS zero-read
+PASS mono-pitch-only
+PASS mono-collapse-only
+PASS both-mono-fields-conservative-fallback
+PASS similar-mono-token
+PASS complete-at-byte-511
+PASS newline-outside-read
+TOTAL: 0 failures

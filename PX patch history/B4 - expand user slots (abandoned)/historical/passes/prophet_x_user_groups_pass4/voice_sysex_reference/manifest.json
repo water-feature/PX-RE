@@ -1,0 +1,52 @@
+{
+  "file_name": "voice_sysex_2.2.2.0.3.bin",
+  "sha256": "bbc3c2ad26bef7310fc15cac8edee22a1792d8ced3788f7080acccc047304857",
+  "file_bytes": 3099064,
+  "baseline_sha256": "d2775bd0e017e4442ce7d5bbc7d089022a1cf8c02714d89427462938e934d166",
+  "application_header_and_comparison": [
+    2,
+    2,
+    2,
+    0,
+    3
+  ],
+  "screen_DSP_version": [
+    2,
+    2,
+    2,
+    0,
+    3
+  ],
+  "screen_message": "0x40139203",
+  "pic_version": [
+    2,
+    2,
+    2,
+    1,
+    0
+  ],
+  "app_checksum": "0xf64b",
+  "changes": [
+    {
+      "offset": "0x7",
+      "old": 1,
+      "new": 3
+    },
+    {
+      "offset": "0x1f4f0",
+      "old": 0,
+      "new": 3
+    },
+    {
+      "offset": "0x250fc",
+      "old": 1,
+      "new": 3
+    },
+    {
+      "offset": "0xf0da6",
+      "old": 241,
+      "new": 246
+    }
+  ],
+  "hardware_tested": false
+}

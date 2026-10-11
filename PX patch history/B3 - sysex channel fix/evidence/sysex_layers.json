@@ -1,0 +1,45 @@
+{
+  "firmware_sha256": "bbc3c2ad26bef7310fc15cac8edee22a1792d8ced3788f7080acccc047304857",
+  "cfg_instructions": 161,
+  "direct_callees": [
+    "0x9d0234cc",
+    "0x9d046b5c",
+    "0x9d04d3b0",
+    "0x9d04d780",
+    "0x9d04dacc",
+    "0x9d04fe2c",
+    "0x9d04ff3c",
+    "0x9d05d56c",
+    "0x9d0742d0",
+    "0x9d0746e4",
+    "0x9d0748fc",
+    "0x9d0780a4",
+    "0x9d0780ac",
+    "0x9d078110",
+    "0x9d07f850"
+  ],
+  "matcher_register_mentions": [
+    {
+      "address": "0x9d0291d4",
+      "instruction": "lw $s3, 0x28($sp)"
+    },
+    {
+      "address": "0x9d0291d8",
+      "instruction": "lw $s2, 0x24($sp)"
+    },
+    {
+      "address": "0x9d02937c",
+      "instruction": "lw $s3, 0x28($sp)"
+    },
+    {
+      "address": "0x9d029380",
+      "instruction": "lw $s2, 0x24($sp)"
+    }
+  ],
+  "unresolved_indirect_jumps": [],
+  "differential_cases": 512,
+  "executions": 1024,
+  "independent_interpreter_unicorn_crosschecks": 1020,
+  "result": "All dispatcher handler paths ignore matcher s2/s3 until stack restoration; layer 0/1 produce identical call arguments, non-stack writes, return result and RAM in boundary fixtures.",
+  "limits": "Direct callees mocked at ABI boundary, not a full handler or hardware test; starts at SysEx handler after prior routing gate. Includes every seven-bit command, accepted/rejected field and two callee return fixtures. Command 0x0E accepted-field executions covered by independent instruction interpreter and static CFG; Unicorn raises interrupt 20 at final-send instruction."
+}

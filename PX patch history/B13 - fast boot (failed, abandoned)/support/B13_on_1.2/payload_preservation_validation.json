@@ -1,0 +1,23 @@
+{
+  "components": [
+    {
+      "component": "FPGA",
+      "baseline_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+      "candidate_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+      "status": "byte-identical"
+    },
+    {
+      "component": "PIC",
+      "baseline_sha256": "8f3fcbccd5763324e5f0b7d9cc5941df806a9ecb46affa5c18f5f4d1b082a16c",
+      "candidate_sha256": "8f3fcbccd5763324e5f0b7d9cc5941df806a9ecb46affa5c18f5f4d1b082a16c",
+      "status": "byte-identical"
+    },
+    {
+      "component": "QNX",
+      "baseline_sha256": "a0ee95328e908b4d1aadff6e71ca34e44d1845418bb1e8204372667ed99d62bf",
+      "candidate_sha256": "9b1662cfdff70e76b9ba38c6de9ee78f07f1f782a07d1e311cabc26583bd4b20",
+      "status": "validated application"
+    }
+  ],
+  "scope": "Extracted payload byte equality only. Container metadata/checksums and extractor completeness must also be verified by the audited packaging workflow."
+}

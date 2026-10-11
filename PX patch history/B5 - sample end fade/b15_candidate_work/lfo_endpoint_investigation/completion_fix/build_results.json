@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "baseline_sha256": "7322f41979a70d72b740b1a967770f71ef706822343d2582eab0b08caea69ddc",
+  "candidate_sha256": "30663f135c4ad75c43ad7a8252f7d932adce0164138071c8ba32f6f11051e906",
+  "code_bytes": 130,
+  "apply_helper": 998464,
+  "geom_helper": 998544,
+  "patches": [
+    [
+      987692,
+      987697
+    ],
+    [
+      987758,
+      987763
+    ],
+    [
+      990146,
+      990152
+    ]
+  ],
+  "allowed": [
+    [
+      987692,
+      987697
+    ],
+    [
+      987758,
+      987763
+    ],
+    [
+      990146,
+      990152
+    ],
+    [
+      998464,
+      998594
+    ],
+    [
+      1002468,
+      1002524
+    ],
+    [
+      1060864,
+      1068052
+    ],
+    [
+      432,
+      448
+    ],
+    [
+      1074888,
+      1074896
+    ],
+    [
+      1074952,
+      1074960
+    ],
+    [
+      1073416,
+      1073424
+    ]
+  ],
+  "changed_bytes": 283,
+  "inherited_FDEs_unchanged": 895,
+  "new_FDEs": 2,
+  "all_FDE_headers_decodable": 897,
+  "helper_CFI_rows_match": true,
+  "heap_stack_growth": 0,
+  "fade_ms": 5
+}

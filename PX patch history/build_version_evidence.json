@@ -1,0 +1,952 @@
+{
+  "description": "PxUpdate package and component identities. Record kinds: 1 application, 2 FPGA, 3 PIC. Firmware is not distributed.",
+  "packages": [
+    {
+      "filename": "PxUpdate_V2.2.2.1.12.bin",
+      "bytes": 3187784,
+      "sha256": "9d0860d06469519a1f80feef2a2143e4a2a343605821f28f193c985398943139",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.12",
+          "bytes": 1075240,
+          "sha256": "b411fc94d17683f49d62184e3c794f6e4eea72e7d6ea58edd1b78ff706377ced"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.12",
+          "bytes": 530784,
+          "sha256": "955839db90f004eb893225e41183c11808f6447bdd5c839b4c0a5d88081d3a3a"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.2.0_B11b_real_instrument_on_Type_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "89d794880697c18da66356a2fd8cb90b7302d2250574ea4664bdbc496945bc6f",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.2.0",
+          "bytes": 1075240,
+          "sha256": "dcc77bdaff17f99288182ffb4927e85dcb76de597f8c5906a4078df8f5b14d16"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.2.0",
+          "bytes": 530784,
+          "sha256": "caa2a19d9a246aaeded2debd6b373490fee06f035d101373c24ec188456f6612"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.0.9.bin",
+      "bytes": 3151848,
+      "sha256": "438da40fee68dee6062f169e3ca9ed461bf31547f0c1f0a77279a3bc264e6e5d",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.9",
+          "bytes": 1039304,
+          "sha256": "1a562cb01a7703f4facf9a6d0b90a76f6b4da6fc5218e43ac9991a255aba0406"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.0.9",
+          "bytes": 530784,
+          "sha256": "80723ffbd381e1e6cf401f09cff99591d43a07d91d00d57570fe2dea5265e2f3"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.0.8.bin",
+      "bytes": 3151848,
+      "sha256": "c7e2e03999ca4590c99c3ba18a518f93f073ee8a619c84371677c7f6cd2c8e7f",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.8",
+          "bytes": 1039304,
+          "sha256": "6e0e22ec75036411f7ada1418939e13a684bf144898dd7745ae608e550a65de8"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.4.0.0",
+          "bytes": 530784,
+          "sha256": "3554fc3dc413c05fd329df1d04efd1ea49e27469121b38d140b7ebdf3be2e254"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.16_B10_minimum_fade_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "2e01f9843dfc8571aef936d4f75f099f5ea80c27a05f26786df7cef5897cc617",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.16",
+          "bytes": 1075240,
+          "sha256": "01736b2f37a6046c1783d2d12ec73f1eba935bf29618739dc442828f8ce05439"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.16",
+          "bytes": 530784,
+          "sha256": "ab3f2f63a7ee9e81163f10208143f32c22d1e10379f73878a2fb3778ee510c9f"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.0.7.bin",
+      "bytes": 3151848,
+      "sha256": "2fe41c83415c1d85efd7848a31511157162528ec4a83d08045be7e8bcee2e753",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.7",
+          "bytes": 1039304,
+          "sha256": "83c2ef55af395347ed705c4c66b023d089f8abe37f9902b2c3963533d004fc3c"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.3.0.0",
+          "bytes": 530784,
+          "sha256": "94e75694df255b6e93dc1786b91dad31cc631e87224362dc2fcbf4f2e8c94bb0"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.15_B10_ordinary_entry_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "ebb2aebbd0decdadce92ed40d257e0cb03ebbf7aecf3e05749d9533fd5603450",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.15",
+          "bytes": 1075240,
+          "sha256": "dd9efbcd2804e02cc4599e72d2ee90f996facce1fa06f1815a0078270566a2fa"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.15",
+          "bytes": 530784,
+          "sha256": "be8eb8ac823a639f3024b97e01b017ef0cef5f33d086eaa71dfe55d4b0e34622"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.0.0.bin",
+      "bytes": 3099064,
+      "sha256": "a4b304b3bb48ca933ae63c99c0098698c497ebfc7c38ab2a823b5e0df4919fa9",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.0",
+          "bytes": 986520,
+          "sha256": "7db8a8276f0bda34d22fdd2e8744b304dc7d62f80f9189836b107a4d7b178cff"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.0.0",
+          "bytes": 530784,
+          "sha256": "14e9c9b9dc562b0384fc43b3c5e0eb7fea84a5792d1a19b9b3ea8276ef7646f5"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.6.bin",
+      "bytes": 3151848,
+      "sha256": "12ff4c8ad099010d5f9803c3418b2b7ea0ad7fa383d1d78823bfeca9c51e1618",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.6",
+          "bytes": 1039304,
+          "sha256": "6b6139b5d6df4be2c342b48660750fb916dc968f0eed996a621aa59bac6cdde5"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.6",
+          "bytes": 530784,
+          "sha256": "6389eb6d26c5df964d4fd6de9371e7760d58b2e4e5715d0af4a92035385c85e1"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.14_B10_bounded_forced_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "8dece2ed026124a1281e5d95f08b0a3974fff230a9515a03f24be19a6f276a4b",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.14",
+          "bytes": 1075240,
+          "sha256": "e16ea0475149b2437a435e996e489b8811af2a60f8d63d6407d0530b3ccc94d6"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.14",
+          "bytes": 530784,
+          "sha256": "b44d99a656183c5763265b9ea97e08571375fdaf663e786d562a5b7703f7c88f"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.7.bin",
+      "bytes": 3151848,
+      "sha256": "91ec37c306731743c62f10b915450f8e64bccec3260e84a9ca8938d146df7f82",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.7",
+          "bytes": 1039304,
+          "sha256": "4bcac9801d1d9f8306271a7ab42bb93e5e8fa9462664e16c6889ffcd050ea635"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.7",
+          "bytes": 530784,
+          "sha256": "75dc34043b8c4c259eef8182f6bd7dd75c8dc5ca096244e4e5cba5836705de62"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.5.bin",
+      "bytes": 3151848,
+      "sha256": "dad5f69880969114914766a5352597ccdaed62a014dcebc55290138392e1e606",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.5",
+          "bytes": 1039304,
+          "sha256": "6d48965319b9504a4f82a9a047fbf9417c3de0b0c61e070e189e0c108b0bae1f"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.5",
+          "bytes": 530784,
+          "sha256": "d46a4e1f9c232da728846a3bce9f6a6426639aaba9da68772d76ca446d088355"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.4.bin",
+      "bytes": 3151848,
+      "sha256": "eadf12ea51991ad749155c89136fa01176578b8e936df6851c6987b728af94f4",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.4",
+          "bytes": 1039304,
+          "sha256": "512ac7dc140791318a4331a04f94b4c56e844328aad409c192dee4abc5e963b9"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.4",
+          "bytes": 530784,
+          "sha256": "111334a1fc96a473efba6d3c4fdc2b0c227f4daf1453be107cd40cfb9e36feb0"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.13_B10_forced_linear_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "6a94cca83fe13be8b9dfa0d0656519899c9e9377f7a01e715576d9a9b747bbd9",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.13",
+          "bytes": 1075240,
+          "sha256": "53322e4014fd9113dad5881bdf1ede59ffcf5d5dd36c398ba27f28bf9bed53b7"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.13",
+          "bytes": 530784,
+          "sha256": "82b75c72a14c5c992277b6e9d5c508271cab5bc03c40e7d5a799a938154588e9"
+        }
+      ]
+    },
+    {
+      "filename": "voice_2.2.2.0.2.bin",
+      "bytes": 3099064,
+      "sha256": "2ad5392eb842cbcd5c2e85e65ab42c16f1fac12d16b09c417a61761a8348bcbf",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.2",
+          "bytes": 986520,
+          "sha256": "651f0ac3339f4f41a4c0bc562cdf4c72df821d85aad3f689e700612b8c8b05e7"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.0.0",
+          "bytes": 530784,
+          "sha256": "14e9c9b9dc562b0384fc43b3c5e0eb7fea84a5792d1a19b9b3ea8276ef7646f5"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.1.bin",
+      "bytes": 3151848,
+      "sha256": "061248f2d8e4e11e9dec78d6b5c74b87d16a283c273e2eba35ae84c2e592a012",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.1",
+          "bytes": 1039304,
+          "sha256": "47122ddcc8fdd30aaefb51528f100148751003dfad8992614011cc088dcb8582"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.1",
+          "bytes": 530784,
+          "sha256": "a5016c62412181659e397d37b763239b213f3ce305b195be85c0619edec2fd52"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.2.bin",
+      "bytes": 3151848,
+      "sha256": "3e844a73a9f29bf0f1dc24929c989e0cb3946c9a307cab948e6af4c0928b5029",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.2",
+          "bytes": 1039304,
+          "sha256": "a0ee95328e908b4d1aadff6e71ca34e44d1845418bb1e8204372667ed99d62bf"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.2",
+          "bytes": 530784,
+          "sha256": "8f3fcbccd5763324e5f0b7d9cc5941df806a9ecb46affa5c18f5f4d1b082a16c"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.9_B15_LFO_fade_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "fe1858e1da01aeae69e41799dfbdfb1471f90b0c19d34687663533438f52a2da",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.9",
+          "bytes": 1075240,
+          "sha256": "e0f3dd3998b77956b3bdc994a61aadfa4135575b3703868edea42834778517a6"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.9",
+          "bytes": 530784,
+          "sha256": "bc4b1109ccf3f45988cac165b5e8e7b41381c4f6e7cbdfb4f3d619351a7ba82f"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.8_B15_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "200a2d66625f840e0de93ca83518d025aa6de6cb47b7032bfc304384f9922535",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.8",
+          "bytes": 1075240,
+          "sha256": "b819511abcace5c271d13145bbc3499fafed8f442af91d7343663cd71c3892c7"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.8",
+          "bytes": 530784,
+          "sha256": "d141de4ceaf9a754a3c3db193bacdc0ce6757cdabc9beeb3dcdba0ea49bb85e1"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.0.6.bin",
+      "bytes": 3151848,
+      "sha256": "2cd57a89d0873ad7e81c410748e3725de6a336494f4c6af1e0110aba85b15c95",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.6",
+          "bytes": 1039304,
+          "sha256": "85b76594924f1a8b7deffec1d81f79feb848edf6c631d0eb2b6c24f49aa393f1"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.0.0",
+          "bytes": 530784,
+          "sha256": "14e9c9b9dc562b0384fc43b3c5e0eb7fea84a5792d1a19b9b3ea8276ef7646f5"
+        }
+      ]
+    },
+    {
+      "filename": "voice_b5_2.2.2.0.5.bin",
+      "bytes": 3127120,
+      "sha256": "41242b0d3cde1cf208181d998176db62dcc9484e2ca74e22104f4a140845a587",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.5",
+          "bytes": 1014576,
+          "sha256": "07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.0.0",
+          "bytes": 530784,
+          "sha256": "14e9c9b9dc562b0384fc43b3c5e0eb7fea84a5792d1a19b9b3ea8276ef7646f5"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.10_B14_sample_acceleration_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "6ab00ccd1f9461ffcf5927b54b317d7644c85a3a129dff6115f8cd0cd6a6a6e3",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.10",
+          "bytes": 1075240,
+          "sha256": "7322f41979a70d72b740b1a967770f71ef706822343d2582eab0b08caea69ddc"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.10",
+          "bytes": 530784,
+          "sha256": "6622acc21ba805bd6049ba639b60399dde77e299048cabf2865d56892dc8c145"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.2.2_B16_geometry_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "488444589607a1b4e793a8d8f79a67c5bd50773b722c302e6d80bc1db77b4b7c",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.2.2",
+          "bytes": 1075240,
+          "sha256": "23175d047f8ac0bace3566f2da0a49f920d43d699de03635cdf20836c3f0838a"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.2.2",
+          "bytes": 530784,
+          "sha256": "8964e630a929e608aa0d3f368f55b97718e7cbf8ef79afbd5ee21e71fc40822a"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.2.0_B16_finer_loop_sync_offline_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "fb6b739e40a61bcab0d3beccc7566ec28b9d9aee0b4b32471bdb952bed20916f",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.2.0",
+          "bytes": 1075240,
+          "sha256": "60902a147d88d11c42853dca161cc8cd73dc0fbb1ff81137123bf51f892e9139"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.2.0",
+          "bytes": 530784,
+          "sha256": "c310a6f7f79b4be0e1e8b49d73e8fd5bf7de21bed292b7d4cbf402f5fd8d67a5"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.2.1_B16_in_place_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "0d41efe3fcd93d16161e92ae4b9389d7d0917006a06920b7f2c8b8660e419e74",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.2.1",
+          "bytes": 1075240,
+          "sha256": "34b775ebff3af113ffa12592e71f51136037a64fdb50a6810c11b62c008b5fa2"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.2.1",
+          "bytes": 530784,
+          "sha256": "b7d59c09d57e2b9c18146e51b517404a8deba5cfcc5291d8a17f88904fe53e59"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.2.1_B16_finer_loop_sync_offline_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "5060674cf7e99b96aea025ac32dea9ab874568c65c53fd8b31db166feaec77e7",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.2.1",
+          "bytes": 1075240,
+          "sha256": "34b775ebff3af113ffa12592e71f51136037a64fdb50a6810c11b62c008b5fa2"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.2.1",
+          "bytes": 530784,
+          "sha256": "6c454557e543817b2e08c42fd0dc989a98f2a12faf9e806524d1f0f913a57b00"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.11_B5_completion_fade_candidate.bin",
+      "bytes": 3187784,
+      "sha256": "29aff5a6cbf6d603ae86f23525454bbbcbe568c3930d65c2064ce827080c86a8",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.11",
+          "bytes": 1075240,
+          "sha256": "45ee5d94dddb785f0ffa6e3514d42f05671811a669c5f638414d0cd668d66640"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.11",
+          "bytes": 530784,
+          "sha256": "2ffb52bec4e399c0cfcc8bd00d27774e22c4b9ea6843afbd4a271a55ce191325"
+        }
+      ]
+    },
+    {
+      "filename": "dummy_test_2.2.2.0.1.bin",
+      "bytes": 3099064,
+      "sha256": "854f02bd17ba3731d5c038602043bb5b4a02682a6b3b473f7c3f23705bff393d",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.1",
+          "bytes": 986520,
+          "sha256": "00cd9109ec343a5155b3c93f0765a2ba12927e341bcab38c20b5d4cda905a220"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.0.0",
+          "bytes": 530784,
+          "sha256": "14e9c9b9dc562b0384fc43b3c5e0eb7fea84a5792d1a19b9b3ea8276ef7646f5"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.0.4.bin",
+      "bytes": 3099064,
+      "sha256": "4dbe4c8814c9637ff38530ab7f31c20432c99360a2513e2191c878dc550b7af1",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.0",
+          "bytes": 986520,
+          "sha256": "7db8a8276f0bda34d22fdd2e8744b304dc7d62f80f9189836b107a4d7b178cff"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.0.4",
+          "bytes": 530784,
+          "sha256": "84ddca13ccac4f94d3711c9558c06e96658fbf7c7ecb9606a68a009936768f21"
+        }
+      ]
+    },
+    {
+      "filename": "voice_fade_2.2.2.0.1.bin",
+      "bytes": 3099064,
+      "sha256": "f6b5205fc40e635305445bb19dd1a41d12f2ee4c64b7284ccd432868ef0c5898",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.1",
+          "bytes": 986520,
+          "sha256": "b0baae07db0dbaf0675f4f1d20354e75b550b3f0d0d2f5f630c72e46598f90f4"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.0.0",
+          "bytes": 530784,
+          "sha256": "14e9c9b9dc562b0384fc43b3c5e0eb7fea84a5792d1a19b9b3ea8276ef7646f5"
+        }
+      ]
+    },
+    {
+      "filename": "voice_sysex_2.2.2.0.3.bin",
+      "bytes": 3099064,
+      "sha256": "bbc3c2ad26bef7310fc15cac8edee22a1792d8ced3788f7080acccc047304857",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.3",
+          "bytes": 986520,
+          "sha256": "0fe130981f8da8a1465f3eb6dfa932984d644c95869de733601d77c6ca8a7ac5"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.0",
+          "bytes": 530784,
+          "sha256": "2f746346fa1e592795fd243a9866a8019e69c2d97ab3d674204bb7f5022ef0cc"
+        }
+      ]
+    },
+    {
+      "filename": "combined_2.2.2.0.1.bin",
+      "bytes": 3099064,
+      "sha256": "d2775bd0e017e4442ce7d5bbc7d089022a1cf8c02714d89427462938e934d166",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.0.1",
+          "bytes": 986520,
+          "sha256": "b0baae07db0dbaf0675f4f1d20354e75b550b3f0d0d2f5f630c72e46598f90f4"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.0",
+          "bytes": 530784,
+          "sha256": "2f746346fa1e592795fd243a9866a8019e69c2d97ab3d674204bb7f5022ef0cc"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.1_BISECT_noop.bin",
+      "bytes": 3187784,
+      "sha256": "003ea37e7c4e9886ce1a760e7929a59f8a50b1960a16dcde78e72635928f4028",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.1",
+          "bytes": 1075240,
+          "sha256": "5e5a55a40b9a52f2f62f4ce4c780da8ec44444ec39a149ec8bbd9af884fc1141"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.15",
+          "bytes": 530784,
+          "sha256": "be8eb8ac823a639f3024b97e01b017ef0cef5f33d086eaa71dfe55d4b0e34622"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.1_BISECT_stamps.bin",
+      "bytes": 3187784,
+      "sha256": "61292011ab113b9ded244d5e81ad4a934bfc1ac7055b6ec4ae215b76f9c153e2",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.1",
+          "bytes": 1075240,
+          "sha256": "d16b37d1e800e168c049eae67b275037639b477e92c04b8ff0b5bd634f049917"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.15",
+          "bytes": 530784,
+          "sha256": "be8eb8ac823a639f3024b97e01b017ef0cef5f33d086eaa71dfe55d4b0e34622"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.1_boottrace.bin",
+      "bytes": 3187784,
+      "sha256": "9c0d96a7cc12a70a679c656ff62441f6bc5ab1b72456814481d67d841a2d0040",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.1",
+          "bytes": 1075240,
+          "sha256": "d28f7bc316ddc5fd638c604249477be225b3f8bce1f93b4520fdcd7017227556"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.15",
+          "bytes": 530784,
+          "sha256": "be8eb8ac823a639f3024b97e01b017ef0cef5f33d086eaa71dfe55d4b0e34622"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.1_CONTROL_unpatched.bin",
+      "bytes": 3187784,
+      "sha256": "2534cf435eb4af2b51acee4fa7d671dfd3078e64eb137a4db4d2ebf47d304584",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.1",
+          "bytes": 1075240,
+          "sha256": "dd9efbcd2804e02cc4599e72d2ee90f996facce1fa06f1815a0078270566a2fa"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.15",
+          "bytes": 530784,
+          "sha256": "be8eb8ac823a639f3024b97e01b017ef0cef5f33d086eaa71dfe55d4b0e34622"
+        }
+      ]
+    },
+    {
+      "filename": "PxUpdate_V2.2.2.1.3.bin",
+      "bytes": 3151848,
+      "sha256": "52d27173142479dfe84bb019b551f946ef3ae09b579b82fef719d8a1e17b857a",
+      "records": [
+        {
+          "kind": 1,
+          "version": "2.2.2.1.3",
+          "bytes": 1039304,
+          "sha256": "9b1662cfdff70e76b9ba38c6de9ee78f07f1f782a07d1e311cabc26583bd4b20"
+        },
+        {
+          "kind": 2,
+          "version": "0.0.0.1.0",
+          "bytes": 1581716,
+          "sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+        },
+        {
+          "kind": 3,
+          "version": "2.2.2.1.2",
+          "bytes": 530784,
+          "sha256": "8f3fcbccd5763324e5f0b7d9cc5941df806a9ecb46affa5c18f5f4d1b082a16c"
+        }
+      ]
+    }
+  ],
+  "component_comparisons": [
+    {
+      "parent": "b8_candidate_work/PxUpdate_V2.2.2.0.6.bin",
+      "child": "PxUpdate_V2.2.2.0.7.bin",
+      "component": "QNX",
+      "length_unchanged": true,
+      "differing_file_offsets": [
+        "0x1F4E3",
+        "0x250EF"
+      ]
+    },
+    {
+      "parent": "b15_candidate_work/PxUpdate_V2.2.2.1.9_B15_LFO_fade_candidate.bin",
+      "child": "b14_sample_acceleration_work/PxUpdate_V2.2.2.1.10_B14_sample_acceleration_candidate.bin",
+      "component": "QNX",
+      "length_unchanged": true,
+      "differing_file_offsets": [
+        "0x1F4E3",
+        "0x250EF"
+      ]
+    }
+  ]
+}

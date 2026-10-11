@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "source_package": "PxUpdate_V2.2.2.1.2.bin",
+  "published_filename": "PxUpdate_V2.2.2.1.2.bin",
+  "revision": [
+    2,
+    2,
+    2,
+    1,
+    2
+  ],
+  "package_sha256": "3e844a73a9f29bf0f1dc24929c989e0cb3946c9a307cab948e6af4c0928b5029",
+  "package_bytes": 3151848,
+  "baseline_package_sha256": "438da40fee68dee6062f169e3ca9ed461bf31547f0c1f0a77279a3bc264e6e5d",
+  "PIC_sha256": "8f3fcbccd5763324e5f0b7d9cc5941df806a9ecb46affa5c18f5f4d1b082a16c",
+  "QNX_sha256": "a0ee95328e908b4d1aadff6e71ca34e44d1845418bb1e8204372667ed99d62bf",
+  "FPGA_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+  "record_lengths": [
+    1039304,
+    1581716,
+    530784
+  ],
+  "application_checksum": "0x8106",
+  "FPGA_checksum": "0x7759",
+  "PIC_inherited_container_trailer": "3030",
+  "changed_PIC_bytes": 122,
+  "changed_QNX_bytes": 3,
+  "changed_package_bytes": 131,
+  "FPGA_record_unchanged": true,
+  "no_payload_or_package_growth": true,
+  "M_display": "2.2.2",
+  "DSP_display": "2.2.2.1.2",
+  "PIC_report": "2.2.2.1.2",
+  "actual_updater_gate_cases": [
+    {
+      "kind": "application",
+      "compiled": "B6 .9",
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        9
+      ],
+      "skip": true
+    },
+    {
+      "kind": "application",
+      "compiled": "B6 .9",
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "skip": false
+    },
+    {
+      "kind": "application",
+      "compiled": "B6 .9",
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "skip": false
+    },
+    {
+      "kind": "application",
+      "compiled": "B6 .9",
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "kind": "application",
+      "compiled": "B6 .9",
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "kind": "application",
+      "compiled": "B9 .1.1",
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        9
+      ],
+      "skip": false
+    },
+    {
+      "kind": "application",
+      "compiled": "B9 .1.1",
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "skip": true
+    },
+    {
+      "kind": "application",
+      "compiled": "B9 .1.1",
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "skip": false
+    },
+    {
+      "kind": "application",
+      "compiled": "B9 .1.1",
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "kind": "application",
+      "compiled": "B9 .1.1",
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "kind": "PIC",
+      "installed": [
+        2,
+        2,
+        2,
+        0,
+        9
+      ],
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "skip": false
+    },
+    {
+      "kind": "PIC",
+      "installed": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "skip": true
+    },
+    {
+      "kind": "PIC",
+      "installed": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "skip": false
+    },
+    {
+      "kind": "PIC",
+      "installed": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "skip": false
+    },
+    {
+      "kind": "PIC",
+      "installed": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "incoming": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "skip": false
+    }
+  ],
+  "all_five_version_components_compared": true,
+  "PIC_transport_blocks": 130,
+  "valid_corrupt_checksum_comparisons": 260,
+  "every_changed_byte_accounted": true,
+  "reextraction_matches_candidates": true,
+  "B6_and_inherited_ranges_preserved": true,
+  "hardware_tested": false,
+  "flashed": false,
+  "limits": "Offline format/actual-gate/transport arithmetic verification; USB media recognition, installation, display delivery, sound and physical stack behavior require hardware."
+}

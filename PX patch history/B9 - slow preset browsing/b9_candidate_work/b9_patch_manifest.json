@@ -1,0 +1,259 @@
+{
+  "baseline_package_sha256": "438da40fee68dee6062f169e3ca9ed461bf31547f0c1f0a77279a3bc264e6e5d",
+  "baseline_PIC_sha256": "80723ffbd381e1e6cf401f09cff99591d43a07d91d00d57570fe2dea5265e2f3",
+  "baseline_QNX_sha256": "1a562cb01a7703f4facf9a6d0b90a76f6b4da6fc5218e43ac9991a255aba0406",
+  "candidate_package_sha256": "061248f2d8e4e11e9dec78d6b5c74b87d16a283c273e2eba35ae84c2e592a012",
+  "candidate_PIC_sha256": "a5016c62412181659e397d37b763239b213f3ce305b195be85c0619edec2fd52",
+  "candidate_QNX_sha256": "47122ddcc8fdd30aaefb51528f100148751003dfad8992614011cc088dcb8582",
+  "revision": [
+    2,
+    2,
+    2,
+    1,
+    1
+  ],
+  "filename": "PxUpdate_V2.2.2.1.1.bin",
+  "helper": [
+    "0x9d000d84",
+    "0x9d000de8"
+  ],
+  "helper_instructions": 25,
+  "helper_bytes": 100,
+  "hook": "0x9d023550",
+  "behavior_code_bytes": 104,
+  "PIC": {
+    "9d000d84": {
+      "old_word": "ffffffff",
+      "new_word": "02708021",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21807002",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000d88": {
+      "old_word": "ffffffff",
+      "new_word": "8fa90044",
+      "old_bytes": "ffffffff",
+      "new_bytes": "4400a98f",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000d8c": {
+      "old_word": "ffffffff",
+      "new_word": "3c089d02",
+      "old_bytes": "ffffffff",
+      "new_bytes": "029d083c",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000d90": {
+      "old_word": "ffffffff",
+      "new_word": "350aa3d0",
+      "old_bytes": "ffffffff",
+      "new_bytes": "d0a30a35",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000d94": {
+      "old_word": "ffffffff",
+      "new_word": "112a0012",
+      "old_bytes": "ffffffff",
+      "new_bytes": "12002a11",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000d98": {
+      "old_word": "ffffffff",
+      "new_word": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000d9c": {
+      "old_word": "ffffffff",
+      "new_word": "350aa808",
+      "old_bytes": "ffffffff",
+      "new_bytes": "08a80a35",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000da0": {
+      "old_word": "ffffffff",
+      "new_word": "112a000f",
+      "old_bytes": "ffffffff",
+      "new_bytes": "0f002a11",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000da4": {
+      "old_word": "ffffffff",
+      "new_word": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000da8": {
+      "old_word": "ffffffff",
+      "new_word": "350aaabc",
+      "old_bytes": "ffffffff",
+      "new_bytes": "bcaa0a35",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000dac": {
+      "old_word": "ffffffff",
+      "new_word": "112a000c",
+      "old_bytes": "ffffffff",
+      "new_bytes": "0c002a11",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000db0": {
+      "old_word": "ffffffff",
+      "new_word": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000db4": {
+      "old_word": "ffffffff",
+      "new_word": "350abcc8",
+      "old_bytes": "ffffffff",
+      "new_bytes": "c8bc0a35",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000db8": {
+      "old_word": "ffffffff",
+      "new_word": "112a0009",
+      "old_bytes": "ffffffff",
+      "new_bytes": "09002a11",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000dbc": {
+      "old_word": "ffffffff",
+      "new_word": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000dc0": {
+      "old_word": "ffffffff",
+      "new_word": "350adcf0",
+      "old_bytes": "ffffffff",
+      "new_bytes": "f0dc0a35",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000dc4": {
+      "old_word": "ffffffff",
+      "new_word": "112a0006",
+      "old_bytes": "ffffffff",
+      "new_bytes": "06002a11",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000dc8": {
+      "old_word": "ffffffff",
+      "new_word": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000dcc": {
+      "old_word": "ffffffff",
+      "new_word": "350ae0c0",
+      "old_bytes": "ffffffff",
+      "new_bytes": "c0e00a35",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000dd0": {
+      "old_word": "ffffffff",
+      "new_word": "112a0003",
+      "old_bytes": "ffffffff",
+      "new_bytes": "03002a11",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000dd4": {
+      "old_word": "ffffffff",
+      "new_word": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000dd8": {
+      "old_word": "ffffffff",
+      "new_word": "0b408d56",
+      "old_bytes": "ffffffff",
+      "new_bytes": "568d400b",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000ddc": {
+      "old_word": "ffffffff",
+      "new_word": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000de0": {
+      "old_word": "ffffffff",
+      "new_word": "0b408d57",
+      "old_bytes": "ffffffff",
+      "new_bytes": "578d400b",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d000de4": {
+      "old_word": "ffffffff",
+      "new_word": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B9 positive panel countdown no-reset helper"
+    },
+    "9d023550": {
+      "old_word": "02708021",
+      "new_word": "0b400361",
+      "old_bytes": "21807002",
+      "new_bytes": "6103400b",
+      "reason": "B9 positive path hook; existing 500 delay slot preserved"
+    },
+    "9d0258b4": {
+      "old_word": "24842220",
+      "new_word": "24842221",
+      "old_bytes": "20228424",
+      "new_bytes": "21228424",
+      "reason": "revision first four fields 2.2.2.1"
+    },
+    "9d051bc4": {
+      "old_word": "24842220",
+      "new_word": "24842221",
+      "old_bytes": "20228424",
+      "new_bytes": "21228424",
+      "reason": "revision first four fields 2.2.2.1"
+    },
+    "9d001394": {
+      "old_word": "24840009",
+      "new_word": "24840001",
+      "old_bytes": "09008424",
+      "new_bytes": "01008424",
+      "reason": "revision fifth field 1; existing B6 report thunk retained"
+    },
+    "9d0013a0": {
+      "old_word": "24840009",
+      "new_word": "24840001",
+      "old_bytes": "09008424",
+      "new_bytes": "01008424",
+      "reason": "revision fifth field 1; existing B6 report thunk retained"
+    }
+  },
+  "QNX": [
+    {
+      "offset": "0x1f4e3",
+      "old": 9,
+      "new": 17,
+      "reason": "version report/updater equality"
+    },
+    {
+      "offset": "0x250e2",
+      "old": 0,
+      "new": 1,
+      "reason": "version report/updater equality"
+    },
+    {
+      "offset": "0x250ef",
+      "old": 9,
+      "new": 1,
+      "reason": "version report/updater equality"
+    }
+  ],
+  "FPGA_complete_record_unchanged": true,
+  "M_formatter_unchanged": "M:2.2.2",
+  "publication": "pending independent validation"
+}

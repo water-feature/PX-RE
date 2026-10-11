@@ -1,0 +1,142 @@
+[
+  {
+    "pc": "0x9d0010f0",
+    "address": "0xbf8107e0",
+    "value": "0x258",
+    "instruction": "sw $t2, 0x7e0($t1)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d0434fc",
+    "address": "0xbf8100e4",
+    "value": "0x400",
+    "instruction": "sw $v1, 0xe4($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d0507bc",
+    "address": "0xbf810044",
+    "value": "0x10",
+    "instruction": "sw $v1, 4($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d05099c",
+    "address": "0xbf810044",
+    "value": "0x200",
+    "instruction": "sw $v1, 4($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d050b94",
+    "address": "0xbf810044",
+    "value": "0x80000",
+    "instruction": "sw $v1, 4($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d050dc8",
+    "address": "0xbf810044",
+    "value": "0x1000000",
+    "instruction": "sw $v1, 4($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d051374",
+    "address": "0xbf810044",
+    "value": "0x4000",
+    "instruction": "sw $v1, 4($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d05205c",
+    "address": "0xbf810074",
+    "value": "0x10000",
+    "instruction": "sw $v1, 0x34($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d0520e4",
+    "address": "0xbf810074",
+    "value": "0x40000",
+    "instruction": "sw $v1, 0x34($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d0522f4",
+    "address": "0xbf810074",
+    "value": "0x20000",
+    "instruction": "sw $v1, 0x34($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d052bc0",
+    "address": "0xbf810150",
+    "value": null,
+    "instruction": "sw $a2, 0x10($s3)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d052bf4",
+    "address": "0xbf810180",
+    "value": null,
+    "instruction": "sw $t0, 0x40($s3)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d052c20",
+    "address": "0xbf810160",
+    "value": null,
+    "instruction": "sw $t1, 0x20($s3)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d052c58",
+    "address": "0xbf810170",
+    "value": null,
+    "instruction": "sw $t1, 0x30($s3)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d052c7c",
+    "address": "0xbf8101a0",
+    "value": null,
+    "instruction": "sw $a2, 0x60($s3)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d06bf80",
+    "address": "0xbf8101b0",
+    "value": null,
+    "instruction": "sw $v1, 0x70($s0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d06bfa0",
+    "address": "0xbf8101b0",
+    "value": null,
+    "instruction": "sw $v1, 0x70($s0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d080678",
+    "address": "0xbf810008",
+    "value": "0x1000",
+    "instruction": "sw $v1, 8($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d080744",
+    "address": "0xbf810004",
+    "value": null,
+    "instruction": "sw $a0, 4($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  },
+  {
+    "pc": "0x9d080758",
+    "address": "0xbf810008",
+    "value": null,
+    "instruction": "sw $a0, 8($v0)",
+    "classification": "constructed MMIO address candidate; device-specific register identity not asserted"
+  }
+]

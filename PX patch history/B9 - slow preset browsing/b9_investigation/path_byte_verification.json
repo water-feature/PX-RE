@@ -1,0 +1,319 @@
+{
+  "PIC_ranges": [
+    {
+      "label": "encoder producer",
+      "start": "0x7a0cc",
+      "end_exclusive": "0x7a6d0",
+      "equal_to_7": true,
+      "sha256": "52ceddd6beedfdd1d669a4c17b1580d66dd4e264f662963e72b93ecdbc46e363"
+    },
+    {
+      "label": "event constructors",
+      "start": "0x7db44",
+      "end_exclusive": "0x7ddac",
+      "equal_to_7": true,
+      "sha256": "99e5042bcacb5d350508654468f9a170d56f7d82429505db3b7c94e052f62b2d"
+    },
+    {
+      "label": "UI dispatch and MIDI program",
+      "start": "0x29118",
+      "end_exclusive": "0x2935c",
+      "equal_to_7": true,
+      "sha256": "d3a002705b431a5e21d2b3ea61347cff78d37d82da223791245aae9e6c406e75"
+    },
+    {
+      "label": "preset encoder",
+      "start": "0x2a398",
+      "end_exclusive": "0x2a3f4",
+      "equal_to_7": true,
+      "sha256": "ce33fc368e5d3b2ab33cdebc57f87cb80e7c453afe27cd9cbc0d4a78600796cf"
+    },
+    {
+      "label": "bank encoder",
+      "start": "0x2a7d0",
+      "end_exclusive": "0x2a82c",
+      "equal_to_7": true,
+      "sha256": "b8f76e09daf980c0cb58894e563595bc8626cebb8f7955a74520634ed5b42b36"
+    },
+    {
+      "label": "MIDI program",
+      "start": "0x2d580",
+      "end_exclusive": "0x2d5c8",
+      "equal_to_7": true,
+      "sha256": "99c14b059afa2b80c6d1db3713eeadb4ae5b7c3f6128c6c19a68319051f828dd"
+    },
+    {
+      "label": "SysEx state",
+      "start": "0x26d54",
+      "end_exclusive": "0x27000",
+      "equal_to_7": true,
+      "sha256": "d9afb2a78e7bd7b470f556b92fba397b5d292a1ab1bb9e79894d0579f6fb5905"
+    },
+    {
+      "label": "select and apply",
+      "start": "0x22eb4",
+      "end_exclusive": "0x235ec",
+      "equal_to_7": true,
+      "sha256": "80e60a22263800d22864f5e3f2ea775a4f1abd861bc65782aa8237c2cbde986d"
+    },
+    {
+      "label": "serial flash read",
+      "start": "0x40230",
+      "end_exclusive": "0x40304",
+      "equal_to_7": true,
+      "sha256": "296f46c9ce25df52251cfe44863403440e0ac271e6b664458fe2a35de1f57617"
+    },
+    {
+      "label": "preset retrieval",
+      "start": "0x40418",
+      "end_exclusive": "0x40934",
+      "equal_to_7": true,
+      "sha256": "6933d2651a68675423a27da0a307c8cb9818bab3356ccb91dc32883eba9a31f0"
+    },
+    {
+      "label": "instrument cache read",
+      "start": "0x41048",
+      "end_exclusive": "0x41234",
+      "equal_to_7": true,
+      "sha256": "b824aef5cd6db2c203a2255a4407b577bd4e3c01d4b4b46a806cdea9b21ce9ab"
+    },
+    {
+      "label": "name resolution",
+      "start": "0x419bc",
+      "end_exclusive": "0x41e8c",
+      "equal_to_7": true,
+      "sha256": "795eac9808b0aa88a46e29a7ccdfbaf5d9e7b1dd86fd1f6f47c253e679f01d3e"
+    },
+    {
+      "label": "incoming patch apply",
+      "start": "0x46e4c",
+      "end_exclusive": "0x46f58",
+      "equal_to_7": true,
+      "sha256": "fd129a8dd1ea6438e3444aa35fa6996d65a4c585fffbe594fc3d8bdc3cf336e8"
+    },
+    {
+      "label": "PIC transfer",
+      "start": "0x75b18",
+      "end_exclusive": "0x75c84",
+      "equal_to_7": true,
+      "sha256": "83ae0126647608589d50a1d2128e7d408eeeff238b90aacfb55abe0369510ec8"
+    },
+    {
+      "label": "QNX receive countdowns",
+      "start": "0x50f30",
+      "end_exclusive": "0x51db0",
+      "equal_to_7": false,
+      "sha256": "ef7876dfac9a23b9130615a9aa1f880253f7fd46227909e5640f921604604279"
+    },
+    {
+      "label": "hardware init",
+      "start": "0x52940",
+      "end_exclusive": "0x52e58",
+      "equal_to_7": true,
+      "sha256": "0b9824ec81aba021389c1ea7f5e512e7d37d1e512b09e6eae2ebd7240326aa02"
+    },
+    {
+      "label": "main pending selection",
+      "start": "0x53290",
+      "end_exclusive": "0x53344",
+      "equal_to_7": true,
+      "sha256": "ae21b164058a733c8467f19c20ddeb4b169b4a9d02be919346db342bb0963a90"
+    },
+    {
+      "label": "main deferred apply",
+      "start": "0x53750",
+      "end_exclusive": "0x537a4",
+      "equal_to_7": true,
+      "sha256": "2ffa1022dd359d4cf012183226b4b06b0ead76caf0e1f16112d157208c0dfa02"
+    },
+    {
+      "label": "pending equality",
+      "start": "0x53b2c",
+      "end_exclusive": "0x53b5c",
+      "equal_to_7": true,
+      "sha256": "cbf4daeff7f4c7089d34a73243bd3aade534c5691802d32bc4ca6699a4f80860"
+    },
+    {
+      "label": "query waits",
+      "start": "0x79340",
+      "end_exclusive": "0x79748",
+      "equal_to_7": true,
+      "sha256": "70f4f56d290532a0a7b4d8e7b7c2a5e8935253a6e03e96750e0e22437aa901d0"
+    },
+    {
+      "label": "SysEx completion",
+      "start": "0x7814c",
+      "end_exclusive": "0x784f4",
+      "equal_to_7": true,
+      "sha256": "b6a478be4620dfd94beb1298d523f3d705d57048388ed64b13d450809c5dfcee"
+    },
+    {
+      "label": "SysEx decoder",
+      "start": "0x744cc",
+      "end_exclusive": "0x74654",
+      "equal_to_7": true,
+      "sha256": "74804147173503e3f13d73ada62449b7db8a7ef768e89da1bec711426b37ec35"
+    },
+    {
+      "label": "seven-bit unpack",
+      "start": "0x78878",
+      "end_exclusive": "0x78928",
+      "equal_to_7": true,
+      "sha256": "c102521366888096ea6da91e26b6b3062d3b53846d39975bc48f28d76f566187"
+    },
+    {
+      "label": "delta clamp",
+      "start": "0x816e0",
+      "end_exclusive": "0x816fc",
+      "equal_to_7": true,
+      "sha256": "6a5d3d18cea45f27409be3a52c827c9bc3db7fb0452ab0f31d71d968e0957365"
+    },
+    {
+      "label": "activity counter",
+      "start": "0x1e0b4",
+      "end_exclusive": "0x1e0f0",
+      "equal_to_7": true,
+      "sha256": "7784f19417fb650e30cf5035d9a8b03bf47f614ef5366795bd0b607db7e1ee12"
+    },
+    {
+      "label": "counter init",
+      "start": "0x4cd14",
+      "end_exclusive": "0x4cd80",
+      "equal_to_7": true,
+      "sha256": "aa856843d69334c0cf494152c089eefe80ac0df3472fa21403c41c8ff4ad8ccd"
+    }
+  ],
+  "QNX_functions": [
+    {
+      "symbol": "_ZZN17CMessageAudioLoop13HandleMessageEjjE22indexToPhaseParamTable",
+      "address": "0x5eda0",
+      "size": 16,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "f1b2c646fb8fae55ddf21f216e94054c20edf42e4db4b0977cdf04f6dae71cc3"
+    },
+    {
+      "symbol": "_ZZN17CMessageAudioLoop13HandleMessageEjjE21sgOscToGlideRateParam",
+      "address": "0x5edc0",
+      "size": 16,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "56e9f403d6476889f2d2f3f0bc69c8521430219c795fd0ab352495a08793d1aa"
+    },
+    {
+      "symbol": "_ZZN17CMessageAudioLoop13HandleMessageEjjE21indexToSyncParamTable",
+      "address": "0x5edb0",
+      "size": 16,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "eac79ab361ab75312c932ebcf38c4d98dc5d60249c39afcd2947889dc7a3df37"
+    },
+    {
+      "symbol": "_ZN12CSampleGroup17SwitchSampleGroupEP18SSampleGroupFolder",
+      "address": "0x35860",
+      "size": 141,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "17322e30785f4ccca8e3b67031fe9b4a557f5cce4bcb4ab0f3eb7eec185c13b0"
+    },
+    {
+      "symbol": "_Z32RAMFile_WaitForCompletedCommands9EABLayersi",
+      "address": "0x3ede0",
+      "size": 2,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "aa814164e201ade39d001dfa97f020ec12147ee8e200daaf9950824cf1318061"
+    },
+    {
+      "symbol": "_ZN13CPCIeMessages14WaitForMessageEv",
+      "address": "0x454c0",
+      "size": 78,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "5c9c669339eaf959a06f5647f8cfd354961bcb994d3711413a6b8f66830ec11d"
+    },
+    {
+      "symbol": "_ZN17CMessageAudioLoop16SendMessageToPICEjj",
+      "address": "0x1d7f0",
+      "size": 75,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "a1be5c590ca6826c7794ee605e1b84a33f79fe615c7d952ca1318b0f524f2caa"
+    },
+    {
+      "symbol": "_ZN21CInstrumentDictionary4FindEjjj",
+      "address": "0x116c0",
+      "size": 53,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "83b034b7ce3fa82177c5461791fa1534f011c7f89375dcffb6f17664e67a3bab"
+    },
+    {
+      "symbol": "_ZN13CPCIeMessages10GetMessageEPN13IPCIeMessages12SPCIeMessageE",
+      "address": "0x44ea0",
+      "size": 103,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "33d16fb3b637d3c4578080bb8c37ff0fa56a9f1ffa3365f7c8d554a884df7b48"
+    },
+    {
+      "symbol": "_ZN19CGroupFileInfoCache16GetGroupFileInfoEPcS0_PP11CWavHandlerS0_S0_PfS0_",
+      "address": "0x34ef0",
+      "size": 496,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "9809490d08cc15011ef3897bc2cf5b096bb3fcc0ebbad62412771981b54bdf5f"
+    },
+    {
+      "symbol": "_ZN17CMessageAudioLoop12get_messagesEPv",
+      "address": "0x1d580",
+      "size": 419,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "45f2bdb94ccf401fe71d565e85b6d536417d18bd84a33de178ee7f865c2c3fe2"
+    },
+    {
+      "symbol": "_ZN13CSampleGroups20GetSampleGroupFolderEiii",
+      "address": "0x33c10",
+      "size": 84,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "213ef16d86a195d35153010213dc5b344e82559a4ac1a06f5c6226ccf07cd286"
+    },
+    {
+      "symbol": "_ZN21CInstrumentDictionary4FindEPKcS1_",
+      "address": "0x118c0",
+      "size": 132,
+      "equal_to_2": true,
+      "differences": [],
+      "sha256": "980caa90e4a2a8d08ae87f38435eb10ac10b3b3b92262fc50f720bf60a32b771"
+    },
+    {
+      "symbol": "_ZN17CMessageAudioLoop13HandleMessageEjj",
+      "address": "0x1e050",
+      "size": 36742,
+      "equal_to_2": false,
+      "differences": [
+        "0x1f4e3",
+        "0x250ef"
+      ],
+      "sha256": "b83ad6e257976324ab83dfafc0e7af800ac807db4617e561d6e48d0d8e1af6af"
+    }
+  ],
+  "dictionary_vtable": {
+    "address": "0x29e3c8",
+    "slots": [
+      "0x0",
+      "0x29f218",
+      "0x11700",
+      "0x11740",
+      "0x11950",
+      "0x117e0",
+      "0x11760",
+      "0x118c0",
+      "0x116c0",
+      "0x0",
+      "0x0"
+    ]
+  }
+}

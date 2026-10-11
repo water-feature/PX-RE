@@ -1,0 +1,37 @@
+{
+  "design": "DINIT entry hook",
+  "reviewed_helper_words": 101,
+  "sbrk_direct_callers": [
+    "0x9d0814ac"
+  ],
+  "cold_steps": 1577421,
+  "extension": {
+    "pointer": "0x80053ae8",
+    "break": "0x80054ce0",
+    "upper": "0x80057ad8"
+  },
+  "exhaustion": {
+    "live_1024_blocks": 11,
+    "break": "0x800579e0",
+    "errno": 12
+  },
+  "reload": {
+    "serial_reads": 1106,
+    "size_queries": 64,
+    "pointer_state_payload_retained": true
+  },
+  "coordinated_reset": {
+    "fresh_pointer": "0x80053ae8",
+    "old_allocation_invalidated": true
+  },
+  "real_minimum_retry": {
+    "pointer": "0x80053ae8",
+    "break": "0x80054c70",
+    "errno_after_success": 12
+  },
+  "initial_failure": "NULL, root remains zero, errno12",
+  "actual_caller_boundaries": "zero, grow/zero-fill, shrink, exact cap, overflow and invalid upper passed",
+  "direct_DINIT": "PASS: reset root inactive, reused allocation unpublished",
+  "DINIT_differential": "all 32 registers, MMIO and RAM outside controls equal to stock",
+  "allocator_only_reset": "separate handling required: simulated globals reset leaves stale root active"
+}

@@ -1,0 +1,866 @@
+[
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "periodic",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 0,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 0,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 0,
+    "ping": 1,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 0,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 12050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "already_active",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "forced",
+    "identical_pcm_sources_state": true
+  },
+  {
+    "wave": "rich",
+    "mode": 1,
+    "reverse": 1,
+    "ping": 1,
+    "L": 24050,
+    "region": "normal",
+    "identical_pcm_sources_state": true
+  }
+]

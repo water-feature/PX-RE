@@ -1,0 +1,62 @@
+[
+  {
+    "offset": "0x6",
+    "old_bytes": "0009",
+    "new_bytes": "0101"
+  },
+  {
+    "offset": "0x1f4f0",
+    "old_bytes": "09",
+    "new_bytes": "11"
+  },
+  {
+    "offset": "0x250ef",
+    "old_bytes": "00",
+    "new_bytes": "01"
+  },
+  {
+    "offset": "0x250fc",
+    "old_bytes": "09",
+    "new_bytes": "01"
+  },
+  {
+    "offset": "0xfdbd5",
+    "old_bytes": "05",
+    "new_bytes": "06"
+  },
+  {
+    "offset": "0x27fe7e",
+    "old_bytes": "0009",
+    "new_bytes": "0101"
+  },
+  {
+    "offset": "0x280c09",
+    "old_bytes": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "new_bytes": "218070024400a98f029d083cd0a30a3512002a110000000008a80a350f002a1100000000bcaa0a350c002a1100000000c8bc0a3509002a1100000000f0dc0a3506002a1100000000c0e00a3503002a1100000000568d400b00000000578d400b00000000"
+  },
+  {
+    "offset": "0x281219",
+    "old_bytes": "09",
+    "new_bytes": "01"
+  },
+  {
+    "offset": "0x281225",
+    "old_bytes": "09",
+    "new_bytes": "01"
+  },
+  {
+    "offset": "0x2a33d5",
+    "old_bytes": "21807002",
+    "new_bytes": "6103400b"
+  },
+  {
+    "offset": "0x2a5739",
+    "old_bytes": "20",
+    "new_bytes": "21"
+  },
+  {
+    "offset": "0x2d1a49",
+    "old_bytes": "20",
+    "new_bytes": "21"
+  }
+]

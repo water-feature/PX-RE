@@ -1,0 +1,2255 @@
+[
+  {
+    "entry": "0x9d05077c",
+    "candidate_reachable_words": 40,
+    "direct_calls": [],
+    "unresolved_indirect_edges": [],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d050788",
+        "bytes": 24
+      }
+    ],
+    "unique_negative_sp_bytes": 24,
+    "status_writes": [
+      "0x9d0507a4",
+      "0x9d050814"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d05081c",
+    "candidate_reachable_words": 1107,
+    "direct_calls": [
+      {
+        "pc": "0x9d050970",
+        "target": "0x9d07c80c"
+      },
+      {
+        "pc": "0x9d050ad0",
+        "target": "0x9d075d10"
+      },
+      {
+        "pc": "0x9d050afc",
+        "target": "0x9d075d10"
+      },
+      {
+        "pc": "0x9d07c814",
+        "target": "0x9d069e3c"
+      },
+      {
+        "pc": "0x9d07c890",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d07c8e4",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d07c870",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d07c8a8",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d07c83c",
+        "target": "0x9d0779bc"
+      }
+    ],
+    "unresolved_indirect_edges": [],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d050828",
+        "bytes": 328
+      },
+      {
+        "pc": "0x9d075d10",
+        "bytes": 16
+      },
+      {
+        "pc": "0x9d07c80c",
+        "bytes": 24
+      }
+    ],
+    "unique_negative_sp_bytes": 368,
+    "status_writes": [
+      "0x9d050844",
+      "0x9d050ac8"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d050f30",
+    "candidate_reachable_words": 1944,
+    "direct_calls": [
+      {
+        "pc": "0x9d051070",
+        "target": "0x9d01e0b4"
+      },
+      {
+        "pc": "0x9d0510b8",
+        "target": "0x9d07a5ac"
+      },
+      {
+        "pc": "0x9d0510c0",
+        "target": "0x9d07a6d0"
+      },
+      {
+        "pc": "0x9d051180",
+        "target": "0x9d075d10"
+      },
+      {
+        "pc": "0x9d051618",
+        "target": "0x9d07c900"
+      },
+      {
+        "pc": "0x9d0515f0",
+        "target": "0x9d07c900"
+      },
+      {
+        "pc": "0x9d0515cc",
+        "target": "0x9d07c900"
+      },
+      {
+        "pc": "0x9d0515a0",
+        "target": "0x9d07c900"
+      },
+      {
+        "pc": "0x9d051d08",
+        "target": "0x9d075d10"
+      },
+      {
+        "pc": "0x9d051d00",
+        "target": "0x9d081194"
+      },
+      {
+        "pc": "0x9d0517e4",
+        "target": "0x9d075d10"
+      },
+      {
+        "pc": "0x9d0517dc",
+        "target": "0x9d081194"
+      },
+      {
+        "pc": "0x9d05182c",
+        "target": "0x9d075d10"
+      },
+      {
+        "pc": "0x9d051824",
+        "target": "0x9d081194"
+      },
+      {
+        "pc": "0x9d051bc0",
+        "target": "0x9d075b18"
+      },
+      {
+        "pc": "0x9d051bc8",
+        "target": "0x9d075b18"
+      },
+      {
+        "pc": "0x9d0519f4",
+        "target": "0x9d031b9c"
+      },
+      {
+        "pc": "0x9d051a00",
+        "target": "0x9d075b18"
+      },
+      {
+        "pc": "0x9d07a600",
+        "target": "0x9d07757c"
+      },
+      {
+        "pc": "0x9d07a6b8",
+        "target": "0x9d07a298"
+      },
+      {
+        "pc": "0x9d051ca0",
+        "target": "0x9d07e3b0"
+      },
+      {
+        "pc": "0x9d051cb8",
+        "target": "0x9d07e3b0"
+      },
+      {
+        "pc": "0x9d07e2c0",
+        "target": "0x9d071938"
+      },
+      {
+        "pc": "0x9d07e2d0",
+        "target": "0x9d071938"
+      },
+      {
+        "pc": "0x9d07e2e0",
+        "target": "0x9d071938"
+      },
+      {
+        "pc": "0x9d07e2f0",
+        "target": "0x9d071938"
+      },
+      {
+        "pc": "0x9d07e300",
+        "target": "0x9d071938"
+      },
+      {
+        "pc": "0x9d07e310",
+        "target": "0x9d071938"
+      },
+      {
+        "pc": "0x9d07e320",
+        "target": "0x9d071938"
+      },
+      {
+        "pc": "0x9d07e360",
+        "target": "0x9d071938"
+      },
+      {
+        "pc": "0x9d07e384",
+        "target": "0x9d071938"
+      },
+      {
+        "pc": "0x9d071964",
+        "target": "0x9d071810"
+      },
+      {
+        "pc": "0x9d07196c",
+        "target": "0x9d077d18"
+      },
+      {
+        "pc": "0x9d071928",
+        "target": "0x9d07787c"
+      },
+      {
+        "pc": "0x9d071900",
+        "target": "0x9d077cec"
+      },
+      {
+        "pc": "0x9d0718f8",
+        "target": "0x9d07787c"
+      },
+      {
+        "pc": "0x9d0718dc",
+        "target": "0x9d077790"
+      },
+      {
+        "pc": "0x9d071898",
+        "target": "0x9d077cec"
+      },
+      {
+        "pc": "0x9d071890",
+        "target": "0x9d077790"
+      },
+      {
+        "pc": "0x9d0718c4",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d071854",
+        "target": "0x9d077cec"
+      },
+      {
+        "pc": "0x9d07184c",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d051084",
+        "target": "0x9d01e0b4"
+      },
+      {
+        "pc": "0x9d051c90",
+        "target": "0x9d01e0c0"
+      }
+    ],
+    "unresolved_indirect_edges": [],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d050f3c",
+        "bytes": 352
+      },
+      {
+        "pc": "0x9d075d10",
+        "bytes": 16
+      },
+      {
+        "pc": "0x9d075b18",
+        "bytes": 8
+      },
+      {
+        "pc": "0x9d07a5ac",
+        "bytes": 48
+      },
+      {
+        "pc": "0x9d07e29c",
+        "bytes": 40
+      },
+      {
+        "pc": "0x9d071938",
+        "bytes": 32
+      },
+      {
+        "pc": "0x9d071810",
+        "bytes": 24
+      }
+    ],
+    "unique_negative_sp_bytes": 520,
+    "status_writes": [
+      "0x9d050f58",
+      "0x9d0514b0",
+      "0x9d07198c"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d050b54",
+    "candidate_reachable_words": 40,
+    "direct_calls": [],
+    "unresolved_indirect_edges": [],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d050b60",
+        "bytes": 24
+      }
+    ],
+    "unique_negative_sp_bytes": 24,
+    "status_writes": [
+      "0x9d050b7c",
+      "0x9d050bec"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d050bf4",
+    "candidate_reachable_words": 1429,
+    "direct_calls": [
+      {
+        "pc": "0x9d050f20",
+        "target": "0x9d07c900"
+      },
+      {
+        "pc": "0x9d050f10",
+        "target": "0x9d07c900"
+      },
+      {
+        "pc": "0x9d050f00",
+        "target": "0x9d07c900"
+      },
+      {
+        "pc": "0x9d050ef0",
+        "target": "0x9d07c900"
+      },
+      {
+        "pc": "0x9d050dac",
+        "target": "0x9d0776b0"
+      },
+      {
+        "pc": "0x9d050db4",
+        "target": "0x9d077a90"
+      },
+      {
+        "pc": "0x9d077be0",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d077b9c",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d077ca4",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d077c5c",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d077c20",
+        "target": "0x9d0779bc"
+      },
+      {
+        "pc": "0x9d0776d8",
+        "target": "0x9d06ee40"
+      },
+      {
+        "pc": "0x9d07775c",
+        "target": "0x9d06ee40"
+      },
+      {
+        "pc": "0x9d06f504",
+        "target": "0x9d06e9a0"
+      },
+      {
+        "pc": "0x9d06eac0",
+        "target": "0x9d06e56c"
+      },
+      {
+        "pc": "0x9d06ec14",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06ec74",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06ec28",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06ec30",
+        "target": "0x9d031af8"
+      },
+      {
+        "pc": "0x9d06eb34",
+        "target": "0x9d01e374"
+      },
+      {
+        "pc": "0x9d06eb60",
+        "target": "0x9d01e374"
+      },
+      {
+        "pc": "0x9d06eb78",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06eb84",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06eb94",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06eba0",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06ebb4",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06ebc0",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06eb44",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06eb50",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06ec84",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06ec90",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06eca4",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06ecb0",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06e60c",
+        "target": "0x9d01e41c"
+      },
+      {
+        "pc": "0x9d06e63c",
+        "target": "0x9d01e428"
+      },
+      {
+        "pc": "0x9d06e664",
+        "target": "0x9d01e428"
+      },
+      {
+        "pc": "0x9d06e68c",
+        "target": "0x9d01e428"
+      },
+      {
+        "pc": "0x9d06e5f4",
+        "target": "0x9d01e428"
+      },
+      {
+        "pc": "0x9d06e6a4",
+        "target": "0x9d01e428"
+      },
+      {
+        "pc": "0x9d06e6bc",
+        "target": "0x9d01e374"
+      },
+      {
+        "pc": "0x9d06e6d4",
+        "target": "0x9d01e374"
+      },
+      {
+        "pc": "0x9d06e78c",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06e798",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06e7a8",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06e7b4",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06e7c8",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06e7d4",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06e6e8",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06e6f4",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06e704",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06e710",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06e724",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06e730",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06e74c",
+        "target": "0x9d01e374"
+      },
+      {
+        "pc": "0x9d06e764",
+        "target": "0x9d01e374"
+      },
+      {
+        "pc": "0x9d06f338",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06f358",
+        "target": "0x9d06e9a0"
+      },
+      {
+        "pc": "0x9d06f364",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06f5b8",
+        "target": "0x9d031ac8"
+      },
+      {
+        "pc": "0x9d06f664",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06f688",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06f67c",
+        "target": "0x9d06e56c"
+      },
+      {
+        "pc": "0x9d06f5e4",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06f608",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06f5fc",
+        "target": "0x9d06e56c"
+      },
+      {
+        "pc": "0x9d06f348",
+        "target": "0x9d031ac8"
+      },
+      {
+        "pc": "0x9d06f560",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06f624",
+        "target": "0x9d06e56c"
+      },
+      {
+        "pc": "0x9d06f630",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06f640",
+        "target": "0x9d0816e0"
+      },
+      {
+        "pc": "0x9d06f648",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06f654",
+        "target": "0x9d06e56c"
+      },
+      {
+        "pc": "0x9d06f5a0",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06f578",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06f588",
+        "target": "0x9d0816e0"
+      },
+      {
+        "pc": "0x9d06f590",
+        "target": "0x9d031b58"
+      },
+      {
+        "pc": "0x9d06ef6c",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06f1b0",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06ef7c",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d07773c",
+        "target": "0x9d06ee40"
+      }
+    ],
+    "unresolved_indirect_edges": [],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d050c00",
+        "bytes": 304
+      },
+      {
+        "pc": "0x9d077a90",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d0776b0",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d06ee40",
+        "bytes": 48
+      },
+      {
+        "pc": "0x9d06e9a0",
+        "bytes": 40
+      },
+      {
+        "pc": "0x9d06e56c",
+        "bytes": 24
+      }
+    ],
+    "unique_negative_sp_bytes": 464,
+    "status_writes": [
+      "0x9d050c1c",
+      "0x9d050ee8"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d051db0",
+    "candidate_reachable_words": 311,
+    "direct_calls": [
+      {
+        "pc": "0x9d051ed8",
+        "target": "0x9d05bec0"
+      },
+      {
+        "pc": "0x9d05beb0",
+        "target": "0x9d05b8b4"
+      },
+      {
+        "pc": "0x9d05b8c8",
+        "target": "0x9d0806dc"
+      }
+    ],
+    "unresolved_indirect_edges": [
+      {
+        "pc": "0x9d05be6c",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      }
+    ],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d051dbc",
+        "bytes": 304
+      },
+      {
+        "pc": "0x9d05bd98",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d05b8b4",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d0806dc",
+        "bytes": 8
+      }
+    ],
+    "unique_negative_sp_bytes": 360,
+    "status_writes": [
+      "0x9d051dd8",
+      "0x9d051ffc",
+      "0x9d080714"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d052004",
+    "candidate_reachable_words": 40,
+    "direct_calls": [],
+    "unresolved_indirect_edges": [],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d052010",
+        "bytes": 24
+      }
+    ],
+    "unique_negative_sp_bytes": 24,
+    "status_writes": [
+      "0x9d05202c",
+      "0x9d05209c"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d05212c",
+    "candidate_reachable_words": 4396,
+    "direct_calls": [
+      {
+        "pc": "0x9d0522b8",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d052460",
+        "target": "0x9d05f498"
+      },
+      {
+        "pc": "0x9d05f250",
+        "target": "0x9d05f008"
+      },
+      {
+        "pc": "0x9d05f1f4",
+        "target": "0x9d07ee10"
+      },
+      {
+        "pc": "0x9d05f2a4",
+        "target": "0x9d075c1c"
+      },
+      {
+        "pc": "0x9d05f2ac",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05f2e0",
+        "target": "0x9d06fdb0"
+      },
+      {
+        "pc": "0x9d05f2ec",
+        "target": "0x9d06fdb0"
+      },
+      {
+        "pc": "0x9d05f2f8",
+        "target": "0x9d06fdb0"
+      },
+      {
+        "pc": "0x9d05f304",
+        "target": "0x9d06fdb0"
+      },
+      {
+        "pc": "0x9d05f384",
+        "target": "0x9d0580d4"
+      },
+      {
+        "pc": "0x9d05f394",
+        "target": "0x9d0580d4"
+      },
+      {
+        "pc": "0x9d05efdc",
+        "target": "0x9d07f4b0"
+      },
+      {
+        "pc": "0x9d075c40",
+        "target": "0x9d075b18"
+      },
+      {
+        "pc": "0x9d07f570",
+        "target": "0x9d075c1c"
+      },
+      {
+        "pc": "0x9d05f32c",
+        "target": "0x9d0580d4"
+      },
+      {
+        "pc": "0x9d05f33c",
+        "target": "0x9d0580d4"
+      },
+      {
+        "pc": "0x9d058158",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d058268",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d05827c",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d058428",
+        "target": "0x9d056a48"
+      },
+      {
+        "pc": "0x9d058638",
+        "target": "0x9d07c0c8"
+      },
+      {
+        "pc": "0x9d058640",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d058658",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05859c",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d058708",
+        "target": "0x9d0567c4"
+      },
+      {
+        "pc": "0x9d056d58",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d057394",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056d78",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056f14",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d05733c",
+        "target": "0x9d07b7ac"
+      },
+      {
+        "pc": "0x9d057344",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d056dd8",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056dfc",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d0573bc",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d057354",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d057364",
+        "target": "0x9d05eec8"
+      },
+      {
+        "pc": "0x9d057384",
+        "target": "0x9d05e424"
+      },
+      {
+        "pc": "0x9d05e44c",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05e4e4",
+        "target": "0x9d05d74c"
+      },
+      {
+        "pc": "0x9d05e470",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05e484",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05e45c",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05eef4",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05eed8",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05ef14",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05ef04",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d07b540",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07b5d4",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d07b5f0",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d07b6f8",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d07b724",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d07b750",
+        "target": "0x9d07bd90"
+      },
+      {
+        "pc": "0x9d07b758",
+        "target": "0x9d081194"
+      },
+      {
+        "pc": "0x9d07b774",
+        "target": "0x9d07b3bc"
+      },
+      {
+        "pc": "0x9d07b408",
+        "target": "0x9d07b308"
+      },
+      {
+        "pc": "0x9d07b328",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d07b348",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d07b360",
+        "target": "0x9d07c56c"
+      },
+      {
+        "pc": "0x9d07b380",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d07c734",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07c76c",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d07c74c",
+        "target": "0x9d07c5b0"
+      },
+      {
+        "pc": "0x9d07c5bc",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07c5d4",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07c784",
+        "target": "0x9d07c5b0"
+      },
+      {
+        "pc": "0x9d07c610",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07c63c",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d07c654",
+        "target": "0x9d07c5b0"
+      },
+      {
+        "pc": "0x9d07bdc4",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d07bde0",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d07bdf8",
+        "target": "0x9d07c56c"
+      },
+      {
+        "pc": "0x9d07be2c",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d07b60c",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d07b6e8",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d07b658",
+        "target": "0x9d07b3bc"
+      },
+      {
+        "pc": "0x9d07b550",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07b690",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07b560",
+        "target": "0x9d0648d8"
+      },
+      {
+        "pc": "0x9d07b4b8",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d07b4d8",
+        "target": "0x9d07b3bc"
+      },
+      {
+        "pc": "0x9d07b6a4",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07b6cc",
+        "target": "0x9d06491c"
+      },
+      {
+        "pc": "0x9d07b6b8",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d0572b4",
+        "target": "0x9d056b6c"
+      },
+      {
+        "pc": "0x9d056ba8",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056bcc",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056b84",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056c08",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d0571e4",
+        "target": "0x9d056c24"
+      },
+      {
+        "pc": "0x9d056c34",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056c74",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d057438",
+        "target": "0x9d05684c"
+      },
+      {
+        "pc": "0x9d057450",
+        "target": "0x9d056ac0"
+      },
+      {
+        "pc": "0x9d057568",
+        "target": "0x9d0568fc"
+      },
+      {
+        "pc": "0x9d057464",
+        "target": "0x9d056714"
+      },
+      {
+        "pc": "0x9d05757c",
+        "target": "0x9d0568fc"
+      },
+      {
+        "pc": "0x9d056b00",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056b50",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056ad4",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056b30",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d057204",
+        "target": "0x9d056714"
+      },
+      {
+        "pc": "0x9d0572c4",
+        "target": "0x9d056b6c"
+      },
+      {
+        "pc": "0x9d057554",
+        "target": "0x9d0567c4"
+      },
+      {
+        "pc": "0x9d0572d4",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d0572e4",
+        "target": "0x9d05684c"
+      },
+      {
+        "pc": "0x9d057304",
+        "target": "0x9d0567c4"
+      },
+      {
+        "pc": "0x9d057228",
+        "target": "0x9d05684c"
+      },
+      {
+        "pc": "0x9d057240",
+        "target": "0x9d0568fc"
+      },
+      {
+        "pc": "0x9d05724c",
+        "target": "0x9d056ac0"
+      },
+      {
+        "pc": "0x9d057260",
+        "target": "0x9d056714"
+      },
+      {
+        "pc": "0x9d057278",
+        "target": "0x9d0567c4"
+      },
+      {
+        "pc": "0x9d057284",
+        "target": "0x9d056b6c"
+      },
+      {
+        "pc": "0x9d056e48",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d057004",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056e68",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056f54",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056fb0",
+        "target": "0x9d07b7ac"
+      },
+      {
+        "pc": "0x9d056fb8",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d056ec8",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056eec",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d0573ac",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d056fc8",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d056fd8",
+        "target": "0x9d05eec8"
+      },
+      {
+        "pc": "0x9d056ff4",
+        "target": "0x9d05e424"
+      },
+      {
+        "pc": "0x9d05748c",
+        "target": "0x9d056b6c"
+      },
+      {
+        "pc": "0x9d057078",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d0574a0",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d0573cc",
+        "target": "0x9d05684c"
+      },
+      {
+        "pc": "0x9d0573e4",
+        "target": "0x9d056ac0"
+      },
+      {
+        "pc": "0x9d057520",
+        "target": "0x9d0568fc"
+      },
+      {
+        "pc": "0x9d0573f8",
+        "target": "0x9d056714"
+      },
+      {
+        "pc": "0x9d05759c",
+        "target": "0x9d0568fc"
+      },
+      {
+        "pc": "0x9d0570bc",
+        "target": "0x9d056714"
+      },
+      {
+        "pc": "0x9d0574d0",
+        "target": "0x9d056b6c"
+      },
+      {
+        "pc": "0x9d057544",
+        "target": "0x9d0567c4"
+      },
+      {
+        "pc": "0x9d0574e0",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d0574f4",
+        "target": "0x9d05684c"
+      },
+      {
+        "pc": "0x9d05758c",
+        "target": "0x9d0567c4"
+      },
+      {
+        "pc": "0x9d0570f4",
+        "target": "0x9d05684c"
+      },
+      {
+        "pc": "0x9d05710c",
+        "target": "0x9d0568fc"
+      },
+      {
+        "pc": "0x9d057118",
+        "target": "0x9d056ac0"
+      },
+      {
+        "pc": "0x9d057140",
+        "target": "0x9d056714"
+      },
+      {
+        "pc": "0x9d057158",
+        "target": "0x9d0567c4"
+      },
+      {
+        "pc": "0x9d057164",
+        "target": "0x9d056b6c"
+      },
+      {
+        "pc": "0x9d0586f4",
+        "target": "0x9d0568fc"
+      },
+      {
+        "pc": "0x9d058668",
+        "target": "0x9d05eec8"
+      },
+      {
+        "pc": "0x9d05867c",
+        "target": "0x9d05e424"
+      },
+      {
+        "pc": "0x9d07bef4",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07bf80",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d07bfa4",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d07bfe0",
+        "target": "0x9d07c56c"
+      },
+      {
+        "pc": "0x9d07c000",
+        "target": "0x9d07bd90"
+      },
+      {
+        "pc": "0x9d07bf04",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07c014",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d07c060",
+        "target": "0x9d06491c"
+      },
+      {
+        "pc": "0x9d07b824",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d07b83c",
+        "target": "0x9d07bd90"
+      },
+      {
+        "pc": "0x9d07bf50",
+        "target": "0x9d07b494"
+      },
+      {
+        "pc": "0x9d07c038",
+        "target": "0x9d064964"
+      },
+      {
+        "pc": "0x9d07bf14",
+        "target": "0x9d0648d8"
+      },
+      {
+        "pc": "0x9d0582c4",
+        "target": "0x9d07c0c8"
+      },
+      {
+        "pc": "0x9d0582cc",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d0582dc",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d0582ec",
+        "target": "0x9d05eec8"
+      },
+      {
+        "pc": "0x9d058300",
+        "target": "0x9d05e424"
+      },
+      {
+        "pc": "0x9d056a58",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d056a88",
+        "target": "0x9d05f4ec"
+      },
+      {
+        "pc": "0x9d056a9c",
+        "target": "0x9d05f4ec"
+      },
+      {
+        "pc": "0x9d05816c",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d058408",
+        "target": "0x9d056a48"
+      },
+      {
+        "pc": "0x9d0584d0",
+        "target": "0x9d07c0c8"
+      },
+      {
+        "pc": "0x9d0584d8",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d0584f0",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d058438",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d0586e0",
+        "target": "0x9d0567c4"
+      },
+      {
+        "pc": "0x9d058258",
+        "target": "0x9d056ca4"
+      },
+      {
+        "pc": "0x9d0586cc",
+        "target": "0x9d0568fc"
+      },
+      {
+        "pc": "0x9d058500",
+        "target": "0x9d05eec8"
+      },
+      {
+        "pc": "0x9d058514",
+        "target": "0x9d05e424"
+      },
+      {
+        "pc": "0x9d058538",
+        "target": "0x9d07c0c8"
+      },
+      {
+        "pc": "0x9d058540",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d058550",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d058560",
+        "target": "0x9d05eec8"
+      },
+      {
+        "pc": "0x9d058574",
+        "target": "0x9d05e424"
+      },
+      {
+        "pc": "0x9d06fdd4",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fe00",
+        "target": "0x9d06f7c0"
+      },
+      {
+        "pc": "0x9d06fe10",
+        "target": "0x9d01e118"
+      },
+      {
+        "pc": "0x9d06fb44",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fcb8",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06f98c",
+        "target": "0x9d06f7c0"
+      },
+      {
+        "pc": "0x9d06f7f0",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fcf0",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fd0c",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fd20",
+        "target": "0x9d0816e0"
+      },
+      {
+        "pc": "0x9d06fd3c",
+        "target": "0x9d07b7ac"
+      },
+      {
+        "pc": "0x9d06fd44",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06fd54",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06fd64",
+        "target": "0x9d05eec8"
+      },
+      {
+        "pc": "0x9d06fd78",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fd8c",
+        "target": "0x9d0816e0"
+      },
+      {
+        "pc": "0x9d06fda0",
+        "target": "0x9d05e424"
+      },
+      {
+        "pc": "0x9d06fcd8",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fb6c",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fbb0",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fc08",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fc1c",
+        "target": "0x9d0816e0"
+      },
+      {
+        "pc": "0x9d06fc38",
+        "target": "0x9d07b7ac"
+      },
+      {
+        "pc": "0x9d06fc40",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06fc50",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06fc60",
+        "target": "0x9d05eec8"
+      },
+      {
+        "pc": "0x9d06fc74",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06fc88",
+        "target": "0x9d0816e0"
+      },
+      {
+        "pc": "0x9d06fc9c",
+        "target": "0x9d05e424"
+      },
+      {
+        "pc": "0x9d06fb90",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06ff40",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d06feac",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06ff5c",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d06fec4",
+        "target": "0x9d06fa50"
+      },
+      {
+        "pc": "0x9d06fa74",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d06fa90",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d06faa8",
+        "target": "0x9d07c56c"
+      },
+      {
+        "pc": "0x9d06fb04",
+        "target": "0x9d07c0c8"
+      },
+      {
+        "pc": "0x9d06fac0",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d06ff6c",
+        "target": "0x9d07c5fc"
+      },
+      {
+        "pc": "0x9d06ff88",
+        "target": "0x9d07c720"
+      },
+      {
+        "pc": "0x9d06ffa0",
+        "target": "0x9d07c56c"
+      },
+      {
+        "pc": "0x9d06ffbc",
+        "target": "0x9d05eec8"
+      },
+      {
+        "pc": "0x9d06ffd0",
+        "target": "0x9d05e354"
+      },
+      {
+        "pc": "0x9d05e37c",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05e414",
+        "target": "0x9d05d74c"
+      },
+      {
+        "pc": "0x9d05e3a0",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05e3b4",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05e38c",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d01e12c",
+        "target": "0x9d04d300"
+      },
+      {
+        "pc": "0x9d05f2bc",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d07f044",
+        "target": "0x9d07eb84"
+      },
+      {
+        "pc": "0x9d07eebc",
+        "target": "0x9d07fb84"
+      },
+      {
+        "pc": "0x9d07efa8",
+        "target": "0x9d08181c"
+      },
+      {
+        "pc": "0x9d07f00c",
+        "target": "0x9d0817c0"
+      },
+      {
+        "pc": "0x9d07ec7c",
+        "target": "0x9d08149c"
+      },
+      {
+        "pc": "0x9d07ed54",
+        "target": "0x9d08149c"
+      },
+      {
+        "pc": "0x9d0814ac",
+        "target": "0x9d080b98"
+      },
+      {
+        "pc": "0x9d0814cc",
+        "target": "0x9d080f4c"
+      },
+      {
+        "pc": "0x9d080bf0",
+        "target": "0x9d07f9f0"
+      },
+      {
+        "pc": "0x9d07fa7c",
+        "target": "0x9d081848"
+      },
+      {
+        "pc": "0x9d05f010",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05f024",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05f038",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05f090",
+        "target": "0x9d05f008"
+      },
+      {
+        "pc": "0x9d05f444",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05f480",
+        "target": "0x9d05767c"
+      },
+      {
+        "pc": "0x9d05f488",
+        "target": "0x9d05767c"
+      },
+      {
+        "pc": "0x9d05f454",
+        "target": "0x9d05f3c4"
+      },
+      {
+        "pc": "0x9d05f3cc",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05f3e0",
+        "target": "0x9d04d780"
+      },
+      {
+        "pc": "0x9d05f408",
+        "target": "0x9d05f3c4"
+      },
+      {
+        "pc": "0x9d052474",
+        "target": "0x9d05f498"
+      },
+      {
+        "pc": "0x9d052488",
+        "target": "0x9d05f498"
+      },
+      {
+        "pc": "0x9d05244c",
+        "target": "0x9d05f498"
+      }
+    ],
+    "unresolved_indirect_edges": [
+      {
+        "pc": "0x9d07eed8",
+        "word": "0x260f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07eef8",
+        "word": "0x260f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07e87c",
+        "word": "0x200f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07eab4",
+        "word": "0x260f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07e9d8",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07ea10",
+        "word": "0x280f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07ea2c",
+        "word": "0x200f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07ea84",
+        "word": "0x240f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07ea5c",
+        "word": "0x240f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07e92c",
+        "word": "0x260f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07e940",
+        "word": "0x200f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07eb1c",
+        "word": "0x200f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07eb08",
+        "word": "0x200f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07e960",
+        "word": "0x240f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07ead4",
+        "word": "0x200f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07eb34",
+        "word": "0x2a0f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07eb74",
+        "word": "0x2a0f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07e97c",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07e8f8",
+        "word": "0x280f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d07e90c",
+        "word": "0x280f809",
+        "kind": "indirect call"
+      }
+    ],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d052138",
+        "bytes": 312
+      },
+      {
+        "pc": "0x9d05f068",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d05ef7c",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d07f4b0",
+        "bytes": 32
+      },
+      {
+        "pc": "0x9d075c1c",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d075b18",
+        "bytes": 8
+      },
+      {
+        "pc": "0x9d0580d4",
+        "bytes": 64
+      },
+      {
+        "pc": "0x9d056ca4",
+        "bytes": 56
+      },
+      {
+        "pc": "0x9d05e424",
+        "bytes": 40
+      },
+      {
+        "pc": "0x9d05eec8",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d07b4fc",
+        "bytes": 72
+      },
+      {
+        "pc": "0x9d07b3bc",
+        "bytes": 48
+      },
+      {
+        "pc": "0x9d07b308",
+        "bytes": 40
+      },
+      {
+        "pc": "0x9d07c720",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d07c5b0",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d07c5fc",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d07bd90",
+        "bytes": 56
+      },
+      {
+        "pc": "0x9d07b494",
+        "bytes": 48
+      },
+      {
+        "pc": "0x9d056b6c",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d056c24",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d056ac0",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d07bec0",
+        "bytes": 56
+      },
+      {
+        "pc": "0x9d07b800",
+        "bytes": 48
+      },
+      {
+        "pc": "0x9d056a48",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d06fdb0",
+        "bytes": 40
+      },
+      {
+        "pc": "0x9d06fb18",
+        "bytes": 56
+      },
+      {
+        "pc": "0x9d06f960",
+        "bytes": 32
+      },
+      {
+        "pc": "0x9d06f7c0",
+        "bytes": 32
+      },
+      {
+        "pc": "0x9d06fa50",
+        "bytes": 48
+      },
+      {
+        "pc": "0x9d05e354",
+        "bytes": 40
+      },
+      {
+        "pc": "0x9d01e118",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d07ee10",
+        "bytes": 1000
+      },
+      {
+        "pc": "0x9d07eb84",
+        "bytes": 64
+      },
+      {
+        "pc": "0x9d08149c",
+        "bytes": 32
+      },
+      {
+        "pc": "0x9d080b98",
+        "bytes": 32
+      },
+      {
+        "pc": "0x9d07f9f0",
+        "bytes": 40
+      },
+      {
+        "pc": "0x9d05f008",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d05f42c",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d07e838",
+        "bytes": 80
+      },
+      {
+        "pc": "0x9d05f3c4",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d05f400",
+        "bytes": 24
+      }
+    ],
+    "unique_negative_sp_bytes": 2760,
+    "status_writes": [
+      "0x9d052154",
+      "0x9d052418",
+      "0x9d075c60",
+      "0x9d06f9f0"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d0520a4",
+    "candidate_reachable_words": 34,
+    "direct_calls": [],
+    "unresolved_indirect_edges": [],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d0520b0",
+        "bytes": 24
+      }
+    ],
+    "unique_negative_sp_bytes": 24,
+    "status_writes": [
+      "0x9d0520cc",
+      "0x9d052124"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d052498",
+    "candidate_reachable_words": 1005,
+    "direct_calls": [
+      {
+        "pc": "0x9d0525c0",
+        "target": "0x9d07ab60"
+      },
+      {
+        "pc": "0x9d07ab9c",
+        "target": "0x9d055a9c"
+      },
+      {
+        "pc": "0x9d055e04",
+        "target": "0x9d054e40"
+      },
+      {
+        "pc": "0x9d055fa8",
+        "target": "0x9d054e40"
+      },
+      {
+        "pc": "0x9d0561a8",
+        "target": "0x9d054e40"
+      },
+      {
+        "pc": "0x9d055c44",
+        "target": "0x9d054e40"
+      }
+    ],
+    "unresolved_indirect_edges": [
+      {
+        "pc": "0x9d056020",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d055e7c",
+        "word": "0xa0f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d055f14",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d055f60",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d0560a4",
+        "word": "0x60f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d055c90",
+        "word": "0x60f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d0562a4",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d0562f4",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d0562c8",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d055b8c",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d055b74",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d055b4c",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d055b30",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      }
+    ],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d0524a4",
+        "bytes": 304
+      },
+      {
+        "pc": "0x9d07ab60",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d055a9c",
+        "bytes": 96
+      },
+      {
+        "pc": "0x9d054e40",
+        "bytes": 16
+      }
+    ],
+    "unique_negative_sp_bytes": 440,
+    "status_writes": [
+      "0x9d0524c0",
+      "0x9d0526e4"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  },
+  {
+    "entry": "0x9d0526ec",
+    "candidate_reachable_words": 373,
+    "direct_calls": [
+      {
+        "pc": "0x9d052814",
+        "target": "0x9d07abe0"
+      },
+      {
+        "pc": "0x9d07ac1c",
+        "target": "0x9d056414"
+      }
+    ],
+    "unresolved_indirect_edges": [
+      {
+        "pc": "0x9d0565cc",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      },
+      {
+        "pc": "0x9d056570",
+        "word": "0x40f809",
+        "kind": "indirect call"
+      }
+    ],
+    "negative_sp_sites": [
+      {
+        "pc": "0x9d0526f8",
+        "bytes": 304
+      },
+      {
+        "pc": "0x9d07abe0",
+        "bytes": 24
+      },
+      {
+        "pc": "0x9d056414",
+        "bytes": 72
+      }
+    ],
+    "unique_negative_sp_bytes": 400,
+    "status_writes": [
+      "0x9d052714",
+      "0x9d052938"
+    ],
+    "limitations": "Raw MIPS32 control-flow closure; unresolved indirect jumps are stopping points, delay-slot effects not inventoried. Cycles/repeated activation not bounded. Not full stack analysis."
+  }
+]

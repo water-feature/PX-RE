@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "unowned_seek_equivalence": 16,
+  "owned_seek_preservation": 2,
+  "interleaved_independent_reader_streams": 2
+}

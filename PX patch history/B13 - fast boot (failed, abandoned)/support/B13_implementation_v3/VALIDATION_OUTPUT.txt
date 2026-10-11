@@ -1,0 +1,24 @@
+== host harness ==
+normal-crlf          PASS rc=0 fb=0 open=1 read=1 close=1 req=511 got=117 uuid=00112233445566778899aabbccddeeff00
+uuid-first           PASS rc=0 fb=0 open=1 read=1 close=1 req=511 got=84 uuid=00112233445566778899aabbccddeeff00
+empty-columns        PASS rc=0 fb=0 open=1 read=1 close=1 req=511 got=73 uuid=00112233445566778899aabbccddeeff00
+no-uuid-header       PASS rc=77 fb=1 open=1 read=1 close=1 req=511 got=33 uuid=a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+blank-lines          PASS rc=0 fb=0 open=1 read=1 close=1 req=511 got=59 uuid=00112233445566778899aabbccddeeff00
+oversize-header      PASS rc=77 fb=1 open=1 read=1 close=1 req=511 got=511 uuid=a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+missing-first-uuid   PASS rc=77 fb=1 open=1 read=1 close=1 req=511 got=64 uuid=a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+TOTAL PASS (0 failures)
+
+== structural validator ==
+candidate sha256 35c6619daa83fc2a46b2eb006b9c9054d2a9390cd82f972ab621c0478279a716
+changed bytes 489
+startup-call-disp      0x3527d-0x35281 changed=4/4
+helper-text            0xf9240-0xf93e0 changed=387/416
+helper-cfi+terminator  0xfa528-0xfa594 changed=83/108
+eh-count               0xfb008-0xfb00c changed=1/4
+eh-index-entry         0xfcb3c-0xfcb44 changed=8/8
+ph-filesz              0x1b0-0x1b8 changed=1/8
+ph-memsz               0x1b8-0x1c0 changed=1/8
+sh14-size              0xfd528-0xfd530 changed=1/8
+sh39-size              0xfdb68-0xfdb70 changed=2/8
+sh40-size              0xfdba8-0xfdbb0 changed=1/8
+ALL STRUCTURAL CHECKS PASS

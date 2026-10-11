@@ -1,0 +1,35 @@
+{
+  "design": "cold call wrapper",
+  "reviewed_helper_words": 103,
+  "sbrk_direct_callers": [
+    "0x9d0814ac"
+  ],
+  "cold_steps": 1577423,
+  "extension": {
+    "pointer": "0x80053ae8",
+    "break": "0x80054ce0",
+    "upper": "0x80057ad8"
+  },
+  "exhaustion": {
+    "live_1024_blocks": 11,
+    "break": "0x800579e0",
+    "errno": 12
+  },
+  "reload": {
+    "serial_reads": 1106,
+    "size_queries": 64,
+    "pointer_state_payload_retained": true
+  },
+  "coordinated_reset": {
+    "fresh_pointer": "0x80053ae8",
+    "old_allocation_invalidated": true
+  },
+  "real_minimum_retry": {
+    "pointer": "0x80053ae8",
+    "break": "0x80054c70",
+    "errno_after_success": 12
+  },
+  "initial_failure": "NULL, root remains zero, errno12",
+  "actual_caller_boundaries": "zero, grow/zero-fill, shrink, exact cap, overflow and invalid upper passed",
+  "direct_DINIT": "negative control: stale active root survives reset"
+}

@@ -1,0 +1,2249 @@
+{
+  "negative_immediate_sp_adjustments": [
+    {
+      "pc": "0x9d00103c",
+      "frame_bytes": 16
+    },
+    {
+      "pc": "0x9d01a8a0",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d01a9c4",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d01ab84",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01abb0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01ae28",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01aebc",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d01b0a4",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d01b338",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d01b46c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d01b61c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d01b9c8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d01baa8",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d01c64c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d01d250",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01d310",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d01d4e8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01dfb0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01e0f0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01e118",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01e498",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01e51c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d01e670",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d01e800",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d01eacc",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d0203d0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0216bc",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0217d4",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d021b00",
+      "frame_bytes": 104
+    },
+    {
+      "pc": "0x9d022eb4",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d023328",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d0234cc",
+      "frame_bytes": 72
+    },
+    {
+      "pc": "0x9d0235ec",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d023aec",
+      "frame_bytes": 368
+    },
+    {
+      "pc": "0x9d026610",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d026d54",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d027000",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d027294",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d027648",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d028d38",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d028ea0",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d029118",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d031c4c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d031d28",
+      "frame_bytes": 112
+    },
+    {
+      "pc": "0x9d031ecc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d03206c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0322e4",
+      "frame_bytes": 136
+    },
+    {
+      "pc": "0x9d03277c",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d032858",
+      "frame_bytes": 80
+    },
+    {
+      "pc": "0x9d032ccc",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d032fec",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d03330c",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d0335dc",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d0338ac",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d033b7c",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d033e60",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d034068",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d0343f4",
+      "frame_bytes": 112
+    },
+    {
+      "pc": "0x9d034f88",
+      "frame_bytes": 96
+    },
+    {
+      "pc": "0x9d0356d4",
+      "frame_bytes": 104
+    },
+    {
+      "pc": "0x9d035850",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d035ac4",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d035cac",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d035eb4",
+      "frame_bytes": 96
+    },
+    {
+      "pc": "0x9d036028",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d036368",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d03646c",
+      "frame_bytes": 96
+    },
+    {
+      "pc": "0x9d0367d0",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d036a60",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d036aa8",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d036b28",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d036eb0",
+      "frame_bytes": 136
+    },
+    {
+      "pc": "0x9d0371d8",
+      "frame_bytes": 72
+    },
+    {
+      "pc": "0x9d037798",
+      "frame_bytes": 104
+    },
+    {
+      "pc": "0x9d037a08",
+      "frame_bytes": 80
+    },
+    {
+      "pc": "0x9d037b04",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d037d70",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0380e8",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d038434",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d0386d8",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d038948",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d038b68",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d038de8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d039070",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d039290",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d039518",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0397a0",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d039b7c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d039f68",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d03a22c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d03a42c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d03a700",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d03a9c4",
+      "frame_bytes": 120
+    },
+    {
+      "pc": "0x9d03ad9c",
+      "frame_bytes": 128
+    },
+    {
+      "pc": "0x9d03b5d4",
+      "frame_bytes": 104
+    },
+    {
+      "pc": "0x9d03bd60",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d03c0a4",
+      "frame_bytes": 96
+    },
+    {
+      "pc": "0x9d03c2ac",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d03c300",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d03c874",
+      "frame_bytes": 136
+    },
+    {
+      "pc": "0x9d03cdec",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d03ce4c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d03d828",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d03ddd0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d03de2c",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d03ecb0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d03ed0c",
+      "frame_bytes": 104
+    },
+    {
+      "pc": "0x9d03f428",
+      "frame_bytes": 400
+    },
+    {
+      "pc": "0x9d03f6d0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d040304",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d040418",
+      "frame_bytes": 72
+    },
+    {
+      "pc": "0x9d040a4c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d040aac",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d040bb0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d040c3c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d040d14",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d040ed8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d041048",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d041374",
+      "frame_bytes": 96
+    },
+    {
+      "pc": "0x9d0419bc",
+      "frame_bytes": 128
+    },
+    {
+      "pc": "0x9d041db0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d041e10",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d041e8c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d042184",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0421ac",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d042340",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d042520",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0425cc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d042634",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0426c0",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d04275c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d042860",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d042a8c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d042b80",
+      "frame_bytes": 128
+    },
+    {
+      "pc": "0x9d042e28",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d042eb0",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d04306c",
+      "frame_bytes": 80
+    },
+    {
+      "pc": "0x9d043320",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d043718",
+      "frame_bytes": 80
+    },
+    {
+      "pc": "0x9d0442a4",
+      "frame_bytes": 72
+    },
+    {
+      "pc": "0x9d0448ac",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d045264",
+      "frame_bytes": 8288
+    },
+    {
+      "pc": "0x9d045bd8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d045c0c",
+      "frame_bytes": 80
+    },
+    {
+      "pc": "0x9d045dcc",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d0460c4",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d046278",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d046564",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d046704",
+      "frame_bytes": 104
+    },
+    {
+      "pc": "0x9d046970",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d046b5c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d046d0c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d046dd8",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d046e4c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d04c574",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04c840",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d04c860",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d04cd14",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d04cf9c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d04d028",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04d0c0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04d1e0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d04d324",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04d3b0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04d4fc",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04d7b8",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d04dacc",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d04e970",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d04f48c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04f510",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04f5c4",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04f680",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d04f7c8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04f89c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d04f9d4",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04fa6c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04fb2c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d04fbb0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d050750",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d050788",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d050828",
+      "frame_bytes": 328
+    },
+    {
+      "pc": "0x9d050b60",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d050c00",
+      "frame_bytes": 304
+    },
+    {
+      "pc": "0x9d050f3c",
+      "frame_bytes": 352
+    },
+    {
+      "pc": "0x9d051dbc",
+      "frame_bytes": 304
+    },
+    {
+      "pc": "0x9d052010",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0520b0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d052138",
+      "frame_bytes": 312
+    },
+    {
+      "pc": "0x9d0524a4",
+      "frame_bytes": 304
+    },
+    {
+      "pc": "0x9d0526f8",
+      "frame_bytes": 304
+    },
+    {
+      "pc": "0x9d052940",
+      "frame_bytes": 152
+    },
+    {
+      "pc": "0x9d053ef8",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d054098",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d054338",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d054710",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d054918",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d054be4",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d054e40",
+      "frame_bytes": 16
+    },
+    {
+      "pc": "0x9d05529c",
+      "frame_bytes": 80
+    },
+    {
+      "pc": "0x9d055878",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0558dc",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d055a9c",
+      "frame_bytes": 96
+    },
+    {
+      "pc": "0x9d056414",
+      "frame_bytes": 72
+    },
+    {
+      "pc": "0x9d056a48",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d056ac0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d056b6c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d056c24",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d056ca4",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d0575ac",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05765c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05769c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0577fc",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d057948",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d057a5c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d057aec",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d057df4",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d0580d4",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d05871c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d0589f8",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d058c48",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05b140",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05b8b4",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05ba34",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05bc84",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05bd98",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05bf1c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05c314",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05c4e4",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d05c7fc",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05ca28",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05cabc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05caec",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05cbb8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05ce04",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05cf9c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05d134",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05d4e0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05d56c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05d7d4",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05d834",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05d8c4",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05d924",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05d9b0",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05da04",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05da58",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05dabc",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05decc",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d05e334",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05e354",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05e424",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05e4f4",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05e5c4",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d05e72c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05e82c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05e92c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05e9ec",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d05ed04",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05eddc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05ee4c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d05eec8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05ef7c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f008",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f068",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f3a4",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f3c4",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f400",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f42c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f52c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f564",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f5b8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d05f5f8",
+      "frame_bytes": 176
+    },
+    {
+      "pc": "0x9d05f7f4",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d060bec",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d060c18",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0610fc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0647a4",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d064a94",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d064c84",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d064f3c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d064fb4",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d0651e4",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0654f0",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d0659e0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d065ce4",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d066128",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0661a8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d066270",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06641c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06660c",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d066900",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0669b8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d066ae8",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d066ba8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d066db0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d066f30",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d066fe0",
+      "frame_bytes": 72
+    },
+    {
+      "pc": "0x9d067170",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d06751c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d067770",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d067a2c",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d067ad0",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d067d3c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d067d74",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d067da4",
+      "frame_bytes": 120
+    },
+    {
+      "pc": "0x9d0686bc",
+      "frame_bytes": 104
+    },
+    {
+      "pc": "0x9d068adc",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d068c6c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d068cfc",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d068d64",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d068f68",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d0690f4",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0692cc",
+      "frame_bytes": 168
+    },
+    {
+      "pc": "0x9d069598",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0695fc",
+      "frame_bytes": 184
+    },
+    {
+      "pc": "0x9d069df8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06a8cc",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d06a970",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d06abdc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06ac14",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06ac44",
+      "frame_bytes": 120
+    },
+    {
+      "pc": "0x9d06b55c",
+      "frame_bytes": 104
+    },
+    {
+      "pc": "0x9d06b94c",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d06badc",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06bb6c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06bbd4",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06bbfc",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d06be50",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06bf44",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06c254",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06c2f8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06c338",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d06c558",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d06c64c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06c6a8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06c87c",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d06d25c",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d06d648",
+      "frame_bytes": 192
+    },
+    {
+      "pc": "0x9d06e56c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06e890",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d06e910",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06e9a0",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d06eccc",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d06ee00",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06ee40",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d06f6c0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06f71c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06f7c0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06f84c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d06f890",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d06f960",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d06fa50",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d06fb18",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d06fdb0",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07000c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d070034",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07005c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d070084",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0700ac",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d070148",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d070174",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d0701e8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d070284",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07038c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07040c",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d070504",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d070524",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d0705ec",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d070720",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d070794",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d071810",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d071938",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0719a8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d071c28",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d071e60",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d072114",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d072294",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d0723f4",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d072574",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d072608",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d073644",
+      "frame_bytes": 80
+    },
+    {
+      "pc": "0x9d0742d0",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d0744cc",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d0746e4",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07477c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d074894",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d0748fc",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d074954",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d074af0",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d074bd0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d074c40",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d074d54",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d074f50",
+      "frame_bytes": 8
+    },
+    {
+      "pc": "0x9d0750ac",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0751f0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0752c8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0753c0",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d0756b8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d075714",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0757d4",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d075918",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d075a14",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d075b18",
+      "frame_bytes": 8
+    },
+    {
+      "pc": "0x9d075c1c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d075c78",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d075d10",
+      "frame_bytes": 16
+    },
+    {
+      "pc": "0x9d075f1c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d075f78",
+      "frame_bytes": 16
+    },
+    {
+      "pc": "0x9d076140",
+      "frame_bytes": 16
+    },
+    {
+      "pc": "0x9d0762f0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d076350",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07636c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d076484",
+      "frame_bytes": 8
+    },
+    {
+      "pc": "0x9d0765a4",
+      "frame_bytes": 8
+    },
+    {
+      "pc": "0x9d07765c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0776b0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d077828",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d077a90",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d077e40",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d077ea4",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0780ac",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d078110",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07814c",
+      "frame_bytes": 72
+    },
+    {
+      "pc": "0x9d078694",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0787ec",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d078930",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0789ac",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d078a90",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d078aac",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d078c80",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d078dac",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d078f94",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d079050",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d079220",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d079340",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d079544",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d079640",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d079744",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07982c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0798d8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d079978",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d079a08",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07a0cc",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d07a208",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07a258",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07a56c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07a5ac",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d07a7e8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07aa54",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07ab60",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07abe0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07ad64",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d07b00c",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d07b308",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07b3bc",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d07b494",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d07b4fc",
+      "frame_bytes": 72
+    },
+    {
+      "pc": "0x9d07b800",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d07b860",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07b8fc",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07b998",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07bb38",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07bcd0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07bd90",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d07bec0",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d07c114",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07c2ac",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07c330",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07c368",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07c470",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07c5b0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07c5fc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07c670",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07c720",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07c80c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07cb6c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07cc24",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07d5fc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07d624",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d07d808",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07d8c0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07daf8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07db44",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07db98",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07dd50",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07e29c",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07e3dc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07e408",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07e45c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d07e524",
+      "frame_bytes": 72
+    },
+    {
+      "pc": "0x9d07e704",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07e838",
+      "frame_bytes": 80
+    },
+    {
+      "pc": "0x9d07eb84",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d07ee10",
+      "frame_bytes": 1000
+    },
+    {
+      "pc": "0x9d07f0c8",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07f4b0",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d07f6f8",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d07f9f0",
+      "frame_bytes": 40
+    },
+    {
+      "pc": "0x9d07fe54",
+      "frame_bytes": 64
+    },
+    {
+      "pc": "0x9d07ffb8",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0800fc",
+      "frame_bytes": 80
+    },
+    {
+      "pc": "0x9d08022c",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d080358",
+      "frame_bytes": 56
+    },
+    {
+      "pc": "0x9d080684",
+      "frame_bytes": 8
+    },
+    {
+      "pc": "0x9d0806a0",
+      "frame_bytes": 8
+    },
+    {
+      "pc": "0x9d0806bc",
+      "frame_bytes": 8
+    },
+    {
+      "pc": "0x9d0806dc",
+      "frame_bytes": 8
+    },
+    {
+      "pc": "0x9d080764",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d080840",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d080918",
+      "frame_bytes": 88
+    },
+    {
+      "pc": "0x9d0809f0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d080b98",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d08100c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d08127c",
+      "frame_bytes": 48
+    },
+    {
+      "pc": "0x9d0813fc",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d08149c",
+      "frame_bytes": 32
+    },
+    {
+      "pc": "0x9d0815b0",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d0815f8",
+      "frame_bytes": 24
+    },
+    {
+      "pc": "0x9d081640",
+      "frame_bytes": 24
+    }
+  ],
+  "other_sp_writes": [
+    "9d001038: lui $sp, 0x8008",
+    "9d066110: move $sp, $fp",
+    "9d06d630: move $sp, $fp",
+    "9d06e554: move $sp, $fp",
+    "9d075c08: move $sp, $fp",
+    "9d075f08: move $sp, $fp",
+    "9d07612c: move $sp, $fp",
+    "9d0762dc: move $sp, $fp"
+  ],
+  "sum_all_frame_sites": 33672,
+  "max_frame": {
+    "pc": "0x9d045264",
+    "frame_bytes": 8288
+  },
+  "cop0_shadow_register_word_candidates": [
+    {
+      "pc": "0x9d05077c",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d050810",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d05081c",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d050ac4",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d050b54",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d050be8",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d050bf4",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d050ee4",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d050f30",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d0514ac",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d051db0",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d051ff8",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d052004",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d052098",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d0520a4",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d052120",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d05212c",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d052414",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d052498",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d0526e0",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d0526ec",
+      "word": "0x415de800",
+      "rs_field": 10,
+      "rt_field": 29,
+      "rd_field": 29
+    },
+    {
+      "pc": "0x9d052934",
+      "word": "0x41dde800",
+      "rs_field": 14,
+      "rt_field": 29,
+      "rd_field": 29
+    }
+  ],
+  "candidate_cache_to_initial_sp_gap_bytes": 150244,
+  "limitations": "Linear disassembly includes data and omits unsupported instructions. Sum is not a call-path bound; recursion/repeated frames, interrupt nesting and indirect paths unresolved."
+}

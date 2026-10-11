@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "hardware_tested_parent": "2.2.2.1.1",
+  "differential_cases": 576,
+  "all_panel_helper_interrupt_cases": 102,
+  "changed_PIC_bytes_vs_parent": 95,
+  "unchanged_parent_ranges": true,
+  "only_behavior_difference": "Active panel immediate reload 250 instead of 500; positive countdown unchanged, nonpanel unchanged."
+}

@@ -1,0 +1,13 @@
+{
+  "reproducible_candidate_sha256": "a47fa006e7f179b5860ff4e8d7e268dc3e5136c6e5cec3a7ec85087afe9e6b02",
+  "rejected_cases": [
+    "modified source",
+    "truncated source",
+    "already patched input",
+    "wrong expected bytes",
+    "overlapping edits",
+    "size-changing replacement",
+    "wrong hook destination"
+  ],
+  "source_unchanged": true
+}

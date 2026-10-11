@@ -1,0 +1,8 @@
+{
+  "status": "PASS_SYMBOLIC_ONLY",
+  "cases": 80640,
+  "decoder_words": 90,
+  "decoder_bytes": 360,
+  "decoder_end": "0x9d07a400",
+  "limits": "Valid sampled bytes0..3 and direction0/1. No emitted-code, IRQ, complete HSM or hardware execution. No firmware assembled or modified."
+}

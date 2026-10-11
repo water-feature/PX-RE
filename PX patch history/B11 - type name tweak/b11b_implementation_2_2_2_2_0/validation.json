@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "PIC_sha256": "caa2a19d9a246aaeded2debd6b373490fee06f035d101373c24ec188456f6612",
+  "QNX_sha256": "dcc77bdaff17f99288182ffb4927e85dcb76de597f8c5906a4078df8f5b14d16",
+  "instruction_source": "actual emitted file; overlays disabled",
+  "LLVM": "51 layout words match approved fragments, zero relocations",
+  "routing_cases": 18366,
+  "extended": {
+    "actual_setter_cases": 2016,
+    "replacement_sites_executed": [
+      "0x9d04debc",
+      "0x9d04e010",
+      "0x9d04e54c",
+      "0x9d04e624"
+    ],
+    "additional_all_group_routing_cases": 42120,
+    "nonmanual_full_return_identity_cases": 16,
+    "bulk_recall_zero_cases": 3,
+    "ownership": "PASS: only four established Type ranges and four approved clamp call-site words",
+    "external_incoming": [
+      {
+        "source": "0x9d029348",
+        "target": "0x9d02a74c"
+      },
+      {
+        "source": "0x9d04debc",
+        "target": "0x9d02dd08"
+      },
+      {
+        "source": "0x9d04e010",
+        "target": "0x9d02dd08"
+      },
+      {
+        "source": "0x9d04e54c",
+        "target": "0x9d02dd08"
+      },
+      {
+        "source": "0x9d04e624",
+        "target": "0x9d02dd08"
+      }
+    ],
+    "additional_pic_storage_bytes": 0,
+    "cache_correction_included": false,
+    "firmware_modified": false,
+    "limits": "external effects stubbed; raw incoming audit does not prove absence of arbitrary computed entries; hardware testing follows implementation approval"
+  },
+  "branch_target_count": 18,
+  "branch_targets_and_delay_slots": "PASS",
+  "preserved_refresh_Group_cache_and_unrelated_bytes": "PASS",
+  "version_report_and_display": "PASS: 2.2.2.2.0",
+  "actual_version_gate_cases": 22,
+  "PIC_transport_blocks": 130,
+  "valid_corrupt_checksum_comparisons": 260,
+  "cache_correction_included": false,
+  "hardware": "NOT VERIFIED; no hardware flashed",
+  "limits": "UI/metadata/sample I/O stubbed; full on-device preset recall and interrupt timing not executed"
+}

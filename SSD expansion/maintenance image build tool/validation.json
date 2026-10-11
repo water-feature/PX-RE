@@ -1,0 +1,18 @@
+{
+  "input_sha256": "6a5124d8ee0eb6ad7561bf394e3c7469115dc6184e397d34ea7e3b72f8f6fccc",
+  "payload_sha256": "276d810a039e6d15cd4c7ceb04f8a829db0e4396e1e55e5eacb15b7d8ce6d8a1",
+  "boot_disk_sha256": "d09c8e53353ac9aabe7bcc9e905c6e5feabaa3002a0f92f72a99ac85beca4662",
+  "payload_bytes": 23410436,
+  "boot_disk_bytes": 23429632,
+  "decompressed_blocks": 355,
+  "retained_regular_files": 175,
+  "startup_checksum": 0,
+  "ifs_checksum": 0,
+  "reference_match": true,
+  "validation_date": "2026-10-10",
+  "byte_comparison_with_historical_archive": true,
+  "qemu_shell_uname": "QNX localhost 7.0.1 2018/02/06-14:30:25EST x86pc x86_64",
+  "unsupported_input_rejected": true,
+  "existing_output_rejected": true,
+  "physical_migration_repeated": false
+}

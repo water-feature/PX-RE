@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "version": [
+    2,
+    2,
+    2,
+    1,
+    12
+  ],
+  "baseline": "2.2.2.1.11",
+  "package": "PxUpdate_V2.2.2.1.12.bin",
+  "package_bytes": 3187784,
+  "package_sha256": "9d0860d06469519a1f80feef2a2143e4a2a343605821f28f193c985398943139",
+  "QNX_sha256": "b411fc94d17683f49d62184e3c794f6e4eea72e7d6ea58edd1b78ff706377ced",
+  "PIC_sha256": "955839db90f004eb893225e41183c11808f6447bdd5c839b4c0a5d88081d3a3a",
+  "FPGA_sha256": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b",
+  "FPGA_entire_record_unchanged": true,
+  "PIC_only_two_revision_bytes": true,
+  "reextracted_components_match_emitted_validation": true,
+  "all_package_differences_accounted": true,
+  "package_differing_bytes": 957,
+  "application_checksum_hex": "9d6f",
+  "FPGA_checksum_hex": "5977",
+  "PIC_trailer_hex": "3030",
+  "version_gate_cases": 18,
+  "PIC_checksum_blocks": 130,
+  "checksum_accept_reject_cases": 260,
+  "hardware": "NOT VERIFIED",
+  "flashed": false,
+  "diffs": {
+    "package": {
+      "ranges": 66,
+      "different_or_added_bytes": 957,
+      "file": "package_diff.tsv"
+    },
+    "QNX": {
+      "ranges": 61,
+      "different_or_added_bytes": 951,
+      "file": "packaged_QNX_diff.tsv"
+    },
+    "PIC": {
+      "ranges": 2,
+      "different_or_added_bytes": 2,
+      "file": "packaged_PIC_diff.tsv"
+    }
+  }
+}

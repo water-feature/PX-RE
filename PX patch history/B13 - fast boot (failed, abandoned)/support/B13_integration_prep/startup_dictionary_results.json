@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "cpus": 1,
+      "matched_insert_calls": 927,
+      "stock_projection_calls": 927,
+      "v4_fallback_calls": 0,
+      "stored_entries": 0,
+      "failure_projection_same": true
+    },
+    {
+      "cpus": 2,
+      "matched_insert_calls": 927,
+      "stock_projection_calls": 927,
+      "v4_fallback_calls": 0,
+      "stored_entries": 0,
+      "failure_projection_same": true
+    },
+    {
+      "cpus": 4,
+      "matched_insert_calls": 927,
+      "stock_projection_calls": 927,
+      "v4_fallback_calls": 0,
+      "stored_entries": 0,
+      "failure_projection_same": true
+    }
+  ],
+  "original_insert_positive_control": "pass",
+  "scope": "Exact stock worker and Insert machine code with controlled cache UUID/return projections. QNX full parser and actual SSD index tables not executed."
+}

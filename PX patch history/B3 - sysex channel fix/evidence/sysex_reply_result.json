@@ -1,0 +1,19 @@
+{
+  "executions": 68,
+  "fixture": "queued class11/statusF0/field1/command6; zero parameter RAM",
+  "baseline_replies": 5,
+  "candidate_replies": 34,
+  "reply_size": 4688,
+  "reply_sha256": "c350fc16ef78fd871cddb34ef50c741e943627ab0edd7b817c5be62191d099bd",
+  "mocks": [
+    "byte-output transport replaced by jr ra/nop",
+    "one exact unsupported DSP lwx instruction implemented"
+  ],
+  "scope": "full class dispatcher, handler gate, command6 sender and F7; stops before post-reply UI cleanup",
+  "not_tested": [
+    "physical DIN/USB",
+    "other SysEx commands end-to-end",
+    "post-reply cleanup",
+    "real patch/program data"
+  ]
+}

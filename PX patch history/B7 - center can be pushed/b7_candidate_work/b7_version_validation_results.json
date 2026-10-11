@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "application_gate_decoded_cases": [
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        1
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        7
+      ],
+      "skip": false
+    },
+    {
+      "incoming": [
+        2,
+        2,
+        2,
+        0,
+        8
+      ],
+      "skip": true
+    }
+  ],
+  "PIC_gate_decoded_cases": [
+    {
+      "installed": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "incoming": [
+        2,
+        2,
+        4,
+        0,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "installed": [
+        2,
+        2,
+        3,
+        0,
+        0
+      ],
+      "incoming": [
+        2,
+        2,
+        4,
+        0,
+        0
+      ],
+      "skip": false
+    },
+    {
+      "installed": [
+        2,
+        2,
+        4,
+        0,
+        0
+      ],
+      "incoming": [
+        2,
+        2,
+        4,
+        0,
+        0
+      ],
+      "skip": true
+    }
+  ],
+  "all_five_PIC_components_compared": true,
+  "DSP_actual_reply": "0x40139208",
+  "screen_arguments": "M: 2.2.4, DSP: 2.2.2.0.8",
+  "historical_dot7": "Exact .7 display/report/header encode M 2.2.3. Historical hardware M 2.2.2 indicates this PIC was not running; precise installation cause requires target readback."
+}

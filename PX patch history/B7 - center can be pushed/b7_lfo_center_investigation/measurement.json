@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "baseline_sha256": "45ee5d94dddb785f0ffa6e3514d42f05671811a669c5f638414d0cd668d66640",
+  "code_base": 1052512,
+  "code_end": 1053371,
+  "code_and_constants_and_alignment": 859,
+  "frame_base": 1058024,
+  "frame_end": 1058212,
+  "frame_bytes": 188,
+  "index_growth": 16,
+  "hook_bytes": 12,
+  "hook": "e9e8680e0090909090909090",
+  "symbols": {
+    "center_get_mod": 159808,
+    "center_get_param": 38752,
+    "center_map": 2773384,
+    "center_diffs": 2773376,
+    "center_continue": 108679,
+    "center_probe": 1052512,
+    "center_thunk": 1053032
+  },
+  "sections": [
+    {
+      "object": "design_probe",
+      "section": ".text",
+      "start": 1052512,
+      "size": 516
+    },
+    {
+      "object": "design_probe",
+      "section": ".rodata.cst4",
+      "start": 1053028,
+      "size": 4
+    },
+    {
+      "object": "design_probe",
+      "section": ".eh_frame",
+      "start": 1058024,
+      "size": 104
+    },
+    {
+      "object": "design_thunk",
+      "section": ".text",
+      "start": 1053032,
+      "size": 339
+    },
+    {
+      "object": "design_thunk",
+      "section": ".eh_frame",
+      "start": 1058128,
+      "size": 80
+    }
+  ],
+  "relocations": [
+    {
+      "site": 1052564,
+      "target": 159808,
+      "type": 4,
+      "addend": -4,
+      "symbol": "center_get_mod"
+    },
+    {
+      "site": 1052635,
+      "target": 38752,
+      "type": 4,
+      "addend": -4,
+      "symbol": "center_get_param"
+    },
+    {
+      "site": 1052657,
+      "target": 159808,
+      "type": 4,
+      "addend": -4,
+      "symbol": "center_get_mod"
+    },
+    {
+      "site": 1052688,
+      "target": 159808,
+      "type": 4,
+      "addend": -4,
+      "symbol": "center_get_mod"
+    },
+    {
+      "site": 1052748,
+      "target": 1053028,
+      "type": 2,
+      "addend": -4,
+      "symbol": ".LCPI0_0"
+    },
+    {
+      "site": 1052923,
+      "target": 2773384,
+      "type": 2,
+      "addend": -4,
+      "symbol": "center_map"
+    },
+    {
+      "site": 1052943,
+      "target": 2773376,
+      "type": 2,
+      "addend": -4,
+      "symbol": "center_diffs"
+    },
+    {
+      "site": 1058056,
+      "target": 1052512,
+      "type": 2,
+      "addend": 0,
+      "symbol": ""
+    },
+    {
+      "site": 1053202,
+      "target": 1052512,
+      "type": 4,
+      "addend": -4,
+      "symbol": "center_probe"
+    },
+    {
+      "site": 1053367,
+      "target": 108679,
+      "type": 4,
+      "addend": -4,
+      "symbol": "center_continue"
+    },
+    {
+      "site": 1058160,
+      "target": 1053032,
+      "type": 2,
+      "addend": 0,
+      "symbol": ""
+    }
+  ],
+  "inherited_FDEs_preserved": 897,
+  "new_FDEs": [
+    [
+      1052512,
+      1058048
+    ],
+    [
+      1053032,
+      1058152
+    ]
+  ],
+  "code_capacity_remaining": 3397,
+  "frame_capacity_remaining": 2652,
+  "output": "isolated raw payload/CFI objects only; no patched firmware or ELF",
+  "wrapper_stack_bytes": 336
+}

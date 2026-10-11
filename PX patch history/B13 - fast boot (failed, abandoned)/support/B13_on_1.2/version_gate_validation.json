@@ -1,0 +1,174 @@
+{
+  "checks": [
+    {
+      "application": "baseline",
+      "case": "own",
+      "header": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "install_flag": 0
+    },
+    {
+      "application": "baseline",
+      "case": "other build",
+      "header": [
+        2,
+        2,
+        2,
+        1,
+        3
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "baseline",
+      "case": "field-0",
+      "header": [
+        3,
+        2,
+        2,
+        1,
+        2
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "baseline",
+      "case": "field-1",
+      "header": [
+        2,
+        3,
+        2,
+        1,
+        2
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "baseline",
+      "case": "field-2",
+      "header": [
+        2,
+        2,
+        3,
+        1,
+        2
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "baseline",
+      "case": "field-3",
+      "header": [
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "baseline",
+      "case": "field-4",
+      "header": [
+        2,
+        2,
+        2,
+        1,
+        3
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "candidate",
+      "case": "own",
+      "header": [
+        2,
+        2,
+        2,
+        1,
+        3
+      ],
+      "install_flag": 0
+    },
+    {
+      "application": "candidate",
+      "case": "other build",
+      "header": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "candidate",
+      "case": "field-0",
+      "header": [
+        3,
+        2,
+        2,
+        1,
+        3
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "candidate",
+      "case": "field-1",
+      "header": [
+        2,
+        3,
+        2,
+        1,
+        3
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "candidate",
+      "case": "field-2",
+      "header": [
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "candidate",
+      "case": "field-3",
+      "header": [
+        2,
+        2,
+        2,
+        0,
+        3
+      ],
+      "install_flag": 1
+    },
+    {
+      "application": "candidate",
+      "case": "field-4",
+      "header": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "install_flag": 1
+    }
+  ],
+  "status": "all pass",
+  "scope": "Executed candidate/baseline five-field equality instructions, not the complete installer."
+}

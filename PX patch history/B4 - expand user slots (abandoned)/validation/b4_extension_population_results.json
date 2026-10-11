@@ -1,0 +1,121 @@
+{
+  "empty": {
+    "records": 1649,
+    "count_bytes": 1650,
+    "ID65_prefix": 4294967295,
+    "ID96_prefix": 4294967295,
+    "split_population_verified": true
+  },
+  "populated": {
+    "records": 1915,
+    "count_bytes": 1650,
+    "ID65_prefix": 1109,
+    "ID96_prefix": 1895,
+    "split_population_verified": true
+  },
+  "exact_capacity": {
+    "records": 65536,
+    "count_bytes": 1650,
+    "ID65_prefix": 4294967295,
+    "ID96_prefix": 4294967295,
+    "split_population_verified": true
+  },
+  "actual_count_generator_prewrite_rejections": {
+    "raw256": {
+      "reason": "count before sb not 0..255",
+      "serial_operations": 0
+    },
+    "overflow_by_one": {
+      "reason": "name demand exceeds 65536",
+      "serial_operations": 0
+    },
+    "large_overflow": {
+      "reason": "name demand exceeds 65536",
+      "serial_operations": 0
+    }
+  },
+  "rejected": {
+    "count_-1": {
+      "reason": "raw count not 0..255",
+      "serial_writes": 0
+    },
+    "count_256": {
+      "reason": "raw count not 0..255",
+      "serial_writes": 0
+    },
+    "count_65535": {
+      "reason": "raw count not 0..255",
+      "serial_writes": 0
+    },
+    "count_65536": {
+      "reason": "raw count not 0..255",
+      "serial_writes": 0
+    },
+    "count_None": {
+      "reason": "raw count not 0..255",
+      "serial_writes": 0
+    },
+    "count_1.5": {
+      "reason": "raw count not 0..255",
+      "serial_writes": 0
+    },
+    "count_True": {
+      "reason": "raw count not 0..255",
+      "serial_writes": 0
+    },
+    "missing_group": {
+      "reason": "group shape",
+      "serial_writes": 0
+    },
+    "missing_category": {
+      "reason": "category shape",
+      "serial_writes": 0
+    },
+    "overflow_by_one": {
+      "reason": "name demand exceeds 65536",
+      "serial_writes": 0
+    },
+    "large_overflow": {
+      "reason": "name demand exceeds 65536",
+      "serial_writes": 0
+    }
+  },
+  "compatibility": "legacy41, marked65 and stock prefix of marked97 match; unproven97 suffix rejected",
+  "stock_count_wire_results": {
+    "0": 0,
+    "4": 4,
+    "255": 255,
+    "256": 256,
+    "65535": 65535,
+    "65536": 0
+  },
+  "stock_size_wire_results": {
+    "0": 0,
+    "1": 1,
+    "65536": 65536,
+    "305419896": 305419896
+  },
+  "stock_nonterminal_failures": {
+    "count_none": {
+      "no_terminal_return": true,
+      "sends_before_test_limit": 121
+    },
+    "size_none": {
+      "no_terminal_return": true,
+      "sends_before_test_limit": 13
+    },
+    "size_low_only": {
+      "no_terminal_return": true,
+      "sends_before_test_limit": 13
+    },
+    "size_high_only": {
+      "no_terminal_return": true,
+      "sends_before_test_limit": 807
+    },
+    "size_duplicate_low": {
+      "no_terminal_return": true,
+      "sends_before_test_limit": 13
+    }
+  },
+  "size_zero_ambiguity": "successful-empty and modeled backend-failed zero encode identical 4037/4038 values; PIC cannot distinguish"
+}

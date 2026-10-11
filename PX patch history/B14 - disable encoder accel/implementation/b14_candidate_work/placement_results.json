@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "dead_code_reserved": [
+    "0x9d07a468",
+    "0x9d07a56c"
+  ],
+  "helper_used": [
+    "0x9d07a468",
+    "0x9d07a4f8"
+  ],
+  "literal_refs": [],
+  "nearby_constructed_refs": [],
+  "raw_control_hits": [
+    [
+      "0x9d0768c4",
+      "0x9d07a500"
+    ],
+    [
+      "0x9d07a34c",
+      "0x9d07a468"
+    ],
+    [
+      "0x9d07a428",
+      "0x9d07a4ac"
+    ],
+    [
+      "0x9d07a484",
+      "0x9d07a50c"
+    ]
+  ],
+  "lookup_data_false_positive": "9d0768c4 = 0e 0f 11 12 in monotonic byte table",
+  "shared_anchor_exit_preserved": true,
+  "baseline_direct_calls": {
+    "0x9d07a208": [
+      "0x9d07a274"
+    ],
+    "0x9d07a258": [
+      "0x9d0538c8"
+    ],
+    "0x9d07db44": [
+      "0x9d07a23c"
+    ],
+    "0x9d07a298": [
+      "0x9d07a590",
+      "0x9d07a6b8"
+    ]
+  },
+  "scope": "Direct references, nearby constructions and exhaustive decoder execution; arbitrary computed code pointers not exhaustively excluded.",
+  "reentrancy": "Recovered service caller is main loop only; no direct ISR encoder-event/service recursion or literal callback registration. Each synchronous dispatch returns before next event."
+}

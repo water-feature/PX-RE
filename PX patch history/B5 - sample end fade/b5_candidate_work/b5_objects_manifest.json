@@ -1,0 +1,218 @@
+{
+  "status": "standalone_objects_uninstalled",
+  "code_and_constants_aligned": 11269,
+  "eh_frame_aligned": 3024,
+  "objects": [
+    {
+      "object": "b5_core.o",
+      "sha256": "6624b456630afa455286b8191c5134be2ae3d3ec9ab0fdeb5940d0c7cc678394",
+      "text": 1734,
+      "constants": 92,
+      "eh_frame": 416,
+      "fde_count": 10,
+      "functions": [
+        {
+          "name": "same",
+          "section": ".text",
+          "offset": 955,
+          "size": 44
+        },
+        {
+          "name": "b5_predict",
+          "section": ".text",
+          "offset": 0,
+          "size": 366
+        },
+        {
+          "name": "b5_reset",
+          "section": ".text",
+          "offset": 366,
+          "size": 21
+        },
+        {
+          "name": "b5_note_on",
+          "section": ".text",
+          "offset": 387,
+          "size": 51
+        },
+        {
+          "name": "b5_begin",
+          "section": ".text",
+          "offset": 438,
+          "size": 243
+        },
+        {
+          "name": "b5_read_descriptor",
+          "section": ".text",
+          "offset": 681,
+          "size": 27
+        },
+        {
+          "name": "b5_loaded",
+          "section": ".text",
+          "offset": 708,
+          "size": 247
+        },
+        {
+          "name": "b5_unavailable",
+          "section": ".text",
+          "offset": 999,
+          "size": 119
+        },
+        {
+          "name": "b5_render",
+          "section": ".text",
+          "offset": 1118,
+          "size": 524
+        },
+        {
+          "name": "b5_attach",
+          "section": ".text",
+          "offset": 1642,
+          "size": 92
+        }
+      ]
+    },
+    {
+      "object": "b5_adapters.o",
+      "sha256": "e441b13389d999a9841e9346e7b6fe484228b36711e31fc089239e4a2ae98ba1",
+      "text": 3156,
+      "constants": 12,
+      "eh_frame": 184,
+      "fde_count": 2,
+      "functions": [
+        {
+          "name": "requested_key",
+          "section": ".text",
+          "offset": 2928,
+          "size": 228
+        },
+        {
+          "name": "b5_dispatch",
+          "section": ".text",
+          "offset": 0,
+          "size": 2928
+        }
+      ]
+    },
+    {
+      "object": "b5_hooks.objects.o",
+      "sha256": "4850159b26e93e3b6b2bd431a3bce5db0408432686c40b4f288ab0223c1d8ee0",
+      "text": 6245,
+      "constants": 0,
+      "eh_frame": 2424,
+      "fde_count": 12,
+      "functions": [
+        {
+          "name": "b5_hook_forward",
+          "section": ".text",
+          "offset": 0,
+          "size": 354
+        },
+        {
+          "name": "b5_hook_reverse",
+          "section": ".text",
+          "offset": 368,
+          "size": 354
+        },
+        {
+          "name": "b5_hook_geometry",
+          "section": ".text",
+          "offset": 736,
+          "size": 352
+        },
+        {
+          "name": "b5_hook_prepare",
+          "section": ".text",
+          "offset": 1088,
+          "size": 349
+        },
+        {
+          "name": "b5_hook_note_on",
+          "section": ".text",
+          "offset": 1440,
+          "size": 350
+        },
+        {
+          "name": "b5_hook_reset",
+          "section": ".text",
+          "offset": 1792,
+          "size": 356
+        },
+        {
+          "name": "b5_hook_return",
+          "section": ".text",
+          "offset": 2160,
+          "size": 350
+        },
+        {
+          "name": "b5_hook_eof",
+          "section": ".text",
+          "offset": 2512,
+          "size": 350
+        },
+        {
+          "name": "b5_wrap_read",
+          "section": ".text",
+          "offset": 2864,
+          "size": 837
+        },
+        {
+          "name": "b5_wrap_load",
+          "section": ".text",
+          "offset": 3712,
+          "size": 837
+        },
+        {
+          "name": "b5_wrap_filter",
+          "section": ".text",
+          "offset": 4560,
+          "size": 837
+        },
+        {
+          "name": "b5_wrap_publish",
+          "section": ".text",
+          "offset": 5408,
+          "size": 837
+        }
+      ]
+    }
+  ],
+  "bindings": {
+    "b5_ram_vtable": "0x29e4e8",
+    "b5_stack_guard_got": "0x29ffa8",
+    "b5_geometry_default": "0x40c40",
+    "b5_continue_forward": "0x405c8",
+    "b5_continue_reverse": "0x4047f",
+    "b5_continue_geometry": "0x3fbf2",
+    "b5_continue_prepare": "0x372eb",
+    "b5_continue_note_on": "0x3644f",
+    "b5_continue_reset": "0x3c8f6",
+    "b5_continue_return": "0x3749d",
+    "b5_continue_eof": "0x40067",
+    "b5_original_read": "0x3f840",
+    "b5_original_load": "0x2e2e0",
+    "b5_original_filter": "0x36b20",
+    "b5_original_publish": "0x417f0"
+  },
+  "policy": {
+    "shared_source": "../b5_fade_prototype.py:FADE_DURATION_MS",
+    "duration_ms": 5.0,
+    "intervals": 240,
+    "horizon": 304
+  },
+  "state_per_stream": 256,
+  "core_fields": 176,
+  "bridge": 80,
+  "extra_heap_bytes": 17408,
+  "old_reservations_not_stopping_emission": true,
+  "placement_changed": false,
+  "candidate_emitted": false,
+  "source_hashes": {
+    "b5_core.c": "0f1b19128dad1dd326ceaa3dbd3b8a8f363fcc63a1a3935ea276dfeaf46a7a14",
+    "b5_adapters.c": "4efa88a28e87e193e554804e0045f8aca6231b1e11c55c2a3734ccffacd1870a",
+    "b5_core.generated.h": "e6e9c35a28ff6e58d85442c86d225e2fd91f439304f24b7a7d2181043c36aac3",
+    "b5_policy.generated.h": "d78aa5a5b59c45098b7ec932818f03c92e9d609f53fd46b5db1ec75f024809ae",
+    "b5_hooks.objects.s": "160d30c4d5e92922ef34c1e75cb24bc49e1972b0d7b34945e13eb1a064c09453"
+  }
+}

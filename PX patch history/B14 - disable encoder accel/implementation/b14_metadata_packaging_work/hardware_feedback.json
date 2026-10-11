@@ -1,0 +1,14 @@
+{
+  "revision": [
+    2,
+    2,
+    2,
+    1,
+    6
+  ],
+  "status": "HARDWARE_TESTED_RESIDUAL_LAG",
+  "user_report": "maybe a slight improvement but satill lags",
+  "interpretation": "Possible slight subjective improvement; lag persists. No timing measurements, detent calibration or statement about tearing in this report.",
+  "next_investigation": "Bounded replay with retained counts and main/display service opportunities; audit original dirty-field and row-transfer scheduling before assuming that yielding fixes visible lag.",
+  "firmware_modified_this_feedback_turn": false
+}

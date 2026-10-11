@@ -1,0 +1,802 @@
+{
+  "PIC": {
+    "9D000C00": {
+      "old": "FFFFFFFF",
+      "new": "2408000F",
+      "old_bytes": "ffffffff",
+      "new_bytes": "0f000824",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C04": {
+      "old": "FFFFFFFF",
+      "new": "12080004",
+      "old_bytes": "ffffffff",
+      "new_bytes": "04000812",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C08": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C0C": {
+      "old": "FFFFFFFF",
+      "new": "24080050",
+      "old_bytes": "ffffffff",
+      "new_bytes": "50000824",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C10": {
+      "old": "FFFFFFFF",
+      "new": "1608005A",
+      "old_bytes": "ffffffff",
+      "new_bytes": "5a000816",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C14": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C18": {
+      "old": "FFFFFFFF",
+      "new": "27BDFFD0",
+      "old_bytes": "ffffffff",
+      "new_bytes": "d0ffbd27",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C1C": {
+      "old": "FFFFFFFF",
+      "new": "AFB00010",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1000b0af",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C20": {
+      "old": "FFFFFFFF",
+      "new": "AFB10014",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1400b1af",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C24": {
+      "old": "FFFFFFFF",
+      "new": "AFB20018",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1800b2af",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C28": {
+      "old": "FFFFFFFF",
+      "new": "AFB3001C",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1c00b3af",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C2C": {
+      "old": "FFFFFFFF",
+      "new": "AFB40020",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2000b4af",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C30": {
+      "old": "FFFFFFFF",
+      "new": "AFB60024",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2400b6af",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C34": {
+      "old": "FFFFFFFF",
+      "new": "AFBF0028",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2800bfaf",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C38": {
+      "old": "FFFFFFFF",
+      "new": "32500001",
+      "old_bytes": "ffffffff",
+      "new_bytes": "01005032",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C3C": {
+      "old": "FFFFFFFF",
+      "new": "241603E7",
+      "old_bytes": "ffffffff",
+      "new_bytes": "e7031624",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C40": {
+      "old": "FFFFFFFF",
+      "new": "2CE803E8",
+      "old_bytes": "ffffffff",
+      "new_bytes": "e803e82c",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C44": {
+      "old": "FFFFFFFF",
+      "new": "00E8B00B",
+      "old_bytes": "ffffffff",
+      "new_bytes": "0bb0e800",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C48": {
+      "old": "FFFFFFFF",
+      "new": "8FA80010",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1000a88f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C4C": {
+      "old": "FFFFFFFF",
+      "new": "00084040",
+      "old_bytes": "ffffffff",
+      "new_bytes": "40400800",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C50": {
+      "old": "FFFFFFFF",
+      "new": "3C118000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "0080113c",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C54": {
+      "old": "FFFFFFFF",
+      "new": "2631046C",
+      "old_bytes": "ffffffff",
+      "new_bytes": "6c043126",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C58": {
+      "old": "FFFFFFFF",
+      "new": "02288821",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21882802",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C5C": {
+      "old": "FFFFFFFF",
+      "new": "12000002",
+      "old_bytes": "ffffffff",
+      "new_bytes": "02000012",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C60": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C64": {
+      "old": "FFFFFFFF",
+      "new": "26310D6E",
+      "old_bytes": "ffffffff",
+      "new_bytes": "6e0d3126",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C68": {
+      "old": "FFFFFFFF",
+      "new": "9628FFEC",
+      "old_bytes": "ffffffff",
+      "new_bytes": "ecff2896",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C6C": {
+      "old": "FFFFFFFF",
+      "new": "1100002E",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2e000011",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C70": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C74": {
+      "old": "FFFFFFFF",
+      "new": "9629FFF0",
+      "old_bytes": "ffffffff",
+      "new_bytes": "f0ff2996",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C78": {
+      "old": "FFFFFFFF",
+      "new": "962AFFF4",
+      "old_bytes": "ffffffff",
+      "new_bytes": "f4ff2a96",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C7C": {
+      "old": "FFFFFFFF",
+      "new": "02C9A023",
+      "old_bytes": "ffffffff",
+      "new_bytes": "23a0c902",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C80": {
+      "old": "FFFFFFFF",
+      "new": "02C9402B",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2b40c902",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C84": {
+      "old": "FFFFFFFF",
+      "new": "1500000E",
+      "old_bytes": "ffffffff",
+      "new_bytes": "0e000015",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C88": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C8C": {
+      "old": "FFFFFFFF",
+      "new": "02CAA023",
+      "old_bytes": "ffffffff",
+      "new_bytes": "23a0ca02",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C90": {
+      "old": "FFFFFFFF",
+      "new": "0156402B",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2b405601",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C94": {
+      "old": "FFFFFFFF",
+      "new": "11000024",
+      "old_bytes": "ffffffff",
+      "new_bytes": "24000011",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C98": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000C9C": {
+      "old": "FFFFFFFF",
+      "new": "8FB20010",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1000b28f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CA0": {
+      "old": "FFFFFFFF",
+      "new": "2652FFFA",
+      "old_bytes": "ffffffff",
+      "new_bytes": "faff5226",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CA4": {
+      "old": "FFFFFFFF",
+      "new": "2413FFFE",
+      "old_bytes": "ffffffff",
+      "new_bytes": "feff1324",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CA8": {
+      "old": "FFFFFFFF",
+      "new": "01344821",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21483401",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CAC": {
+      "old": "FFFFFFFF",
+      "new": "01545021",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21505401",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CB0": {
+      "old": "FFFFFFFF",
+      "new": "A62AFFF4",
+      "old_bytes": "ffffffff",
+      "new_bytes": "f4ff2aa6",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CB4": {
+      "old": "FFFFFFFF",
+      "new": "A629FFF0",
+      "old_bytes": "ffffffff",
+      "new_bytes": "f0ff29a6",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CB8": {
+      "old": "FFFFFFFF",
+      "new": "0B400337",
+      "old_bytes": "ffffffff",
+      "new_bytes": "3703400b",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CBC": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CC0": {
+      "old": "FFFFFFFF",
+      "new": "8FB20010",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1000b28f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CC4": {
+      "old": "FFFFFFFF",
+      "new": "2652FFF8",
+      "old_bytes": "ffffffff",
+      "new_bytes": "f8ff5226",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CC8": {
+      "old": "FFFFFFFF",
+      "new": "24130002",
+      "old_bytes": "ffffffff",
+      "new_bytes": "02001324",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CCC": {
+      "old": "FFFFFFFF",
+      "new": "01344821",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21483401",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CD0": {
+      "old": "FFFFFFFF",
+      "new": "01545021",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21505401",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CD4": {
+      "old": "FFFFFFFF",
+      "new": "A629FFF0",
+      "old_bytes": "ffffffff",
+      "new_bytes": "f0ff29a6",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CD8": {
+      "old": "FFFFFFFF",
+      "new": "A62AFFF4",
+      "old_bytes": "ffffffff",
+      "new_bytes": "f4ff2aa6",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CDC": {
+      "old": "FFFFFFFF",
+      "new": "24140002",
+      "old_bytes": "ffffffff",
+      "new_bytes": "02001424",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CE0": {
+      "old": "FFFFFFFF",
+      "new": "16A00005",
+      "old_bytes": "ffffffff",
+      "new_bytes": "0500a016",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CE4": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CE8": {
+      "old": "FFFFFFFF",
+      "new": "3C088000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "0080083c",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CEC": {
+      "old": "FFFFFFFF",
+      "new": "95086FFE",
+      "old_bytes": "ffffffff",
+      "new_bytes": "fe6f0895",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CF0": {
+      "old": "FFFFFFFF",
+      "new": "11000005",
+      "old_bytes": "ffffffff",
+      "new_bytes": "05000011",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CF4": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CF8": {
+      "old": "FFFFFFFF",
+      "new": "02A02021",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2120a002",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000CFC": {
+      "old": "FFFFFFFF",
+      "new": "02002821",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21280002",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D00": {
+      "old": "FFFFFFFF",
+      "new": "0F413D44",
+      "old_bytes": "ffffffff",
+      "new_bytes": "443d410f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D04": {
+      "old": "FFFFFFFF",
+      "new": "02403021",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21304002",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D08": {
+      "old": "FFFFFFFF",
+      "new": "16A00004",
+      "old_bytes": "ffffffff",
+      "new_bytes": "0400a016",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D0C": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D10": {
+      "old": "FFFFFFFF",
+      "new": "02002021",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21200002",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D14": {
+      "old": "FFFFFFFF",
+      "new": "0F4135EE",
+      "old_bytes": "ffffffff",
+      "new_bytes": "ee35410f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D18": {
+      "old": "FFFFFFFF",
+      "new": "02402821",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21284002",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D1C": {
+      "old": "FFFFFFFF",
+      "new": "2694FFFF",
+      "old_bytes": "ffffffff",
+      "new_bytes": "ffff9426",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D20": {
+      "old": "FFFFFFFF",
+      "new": "1680FFEF",
+      "old_bytes": "ffffffff",
+      "new_bytes": "efff8016",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D24": {
+      "old": "FFFFFFFF",
+      "new": "02539021",
+      "old_bytes": "ffffffff",
+      "new_bytes": "21905302",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D28": {
+      "old": "FFFFFFFF",
+      "new": "8FA80018",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1800a88f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D2C": {
+      "old": "FFFFFFFF",
+      "new": "24090002",
+      "old_bytes": "ffffffff",
+      "new_bytes": "02000924",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D30": {
+      "old": "FFFFFFFF",
+      "new": "15090006",
+      "old_bytes": "ffffffff",
+      "new_bytes": "06000915",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D34": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D38": {
+      "old": "FFFFFFFF",
+      "new": "16000004",
+      "old_bytes": "ffffffff",
+      "new_bytes": "04000016",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D3C": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D40": {
+      "old": "FFFFFFFF",
+      "new": "24100001",
+      "old_bytes": "ffffffff",
+      "new_bytes": "01001024",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D44": {
+      "old": "FFFFFFFF",
+      "new": "0B400312",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1203400b",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D48": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D4C": {
+      "old": "FFFFFFFF",
+      "new": "02A02021",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2120a002",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D50": {
+      "old": "FFFFFFFF",
+      "new": "8FA50018",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1800a58f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D54": {
+      "old": "FFFFFFFF",
+      "new": "8FA60010",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1000a68f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D58": {
+      "old": "FFFFFFFF",
+      "new": "8FA70040",
+      "old_bytes": "ffffffff",
+      "new_bytes": "4000a78f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D5C": {
+      "old": "FFFFFFFF",
+      "new": "8FB00010",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1000b08f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D60": {
+      "old": "FFFFFFFF",
+      "new": "8FB10014",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1400b18f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D64": {
+      "old": "FFFFFFFF",
+      "new": "8FB20018",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1800b28f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D68": {
+      "old": "FFFFFFFF",
+      "new": "8FB3001C",
+      "old_bytes": "ffffffff",
+      "new_bytes": "1c00b38f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D6C": {
+      "old": "FFFFFFFF",
+      "new": "8FB40020",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2000b48f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D70": {
+      "old": "FFFFFFFF",
+      "new": "8FB60024",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2400b68f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D74": {
+      "old": "FFFFFFFF",
+      "new": "8FBF0028",
+      "old_bytes": "ffffffff",
+      "new_bytes": "2800bf8f",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D78": {
+      "old": "FFFFFFFF",
+      "new": "27BD0030",
+      "old_bytes": "ffffffff",
+      "new_bytes": "3000bd27",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D7C": {
+      "old": "FFFFFFFF",
+      "new": "0B4136BF",
+      "old_bytes": "ffffffff",
+      "new_bytes": "bf36410b",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D000D80": {
+      "old": "FFFFFFFF",
+      "new": "24020050",
+      "old_bytes": "ffffffff",
+      "new_bytes": "50000224",
+      "reason": "B6 unchanged 388-byte helper"
+    },
+    "9D001224": {
+      "old": "0B4136BF",
+      "new": "0B400300",
+      "old_bytes": "bf36410b",
+      "new_bytes": "0003400b",
+      "reason": "B6 hook; inherited delay slot preserved"
+    },
+    "9D0258B4": {
+      "old": "24842240",
+      "new": "24842220",
+      "old_bytes": "40228424",
+      "new_bytes": "20228424",
+      "reason": "PIC revision first four fields 2.2.2.0"
+    },
+    "9D051BC4": {
+      "old": "24842240",
+      "new": "24842220",
+      "old_bytes": "40228424",
+      "new_bytes": "20228424",
+      "reason": "PIC revision first four fields 2.2.2.0"
+    },
+    "9D001394": {
+      "old": "FFFFFFFF",
+      "new": "24840009",
+      "old_bytes": "ffffffff",
+      "new_bytes": "09008424",
+      "reason": "PIC fifth revision field 9 report thunk"
+    },
+    "9D001398": {
+      "old": "FFFFFFFF",
+      "new": "0B41D707",
+      "old_bytes": "ffffffff",
+      "new_bytes": "07d7410b",
+      "reason": "PIC fifth revision field 9 report thunk"
+    },
+    "9D00139C": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "PIC fifth revision field 9 report thunk"
+    },
+    "9D0258C0": {
+      "old": "0F41D707",
+      "new": "0F4004E5",
+      "old_bytes": "07d7410f",
+      "new_bytes": "e504400f",
+      "reason": "PIC fifth revision field 9 report hook; LUI delay preserved"
+    },
+    "9D0013A0": {
+      "old": "FFFFFFFF",
+      "new": "24840009",
+      "old_bytes": "ffffffff",
+      "new_bytes": "09008424",
+      "reason": "PIC fifth revision field 9 report thunk"
+    },
+    "9D0013A4": {
+      "old": "FFFFFFFF",
+      "new": "0B41D6C6",
+      "old_bytes": "ffffffff",
+      "new_bytes": "c6d6410b",
+      "reason": "PIC fifth revision field 9 report thunk"
+    },
+    "9D0013A8": {
+      "old": "FFFFFFFF",
+      "new": "00000000",
+      "old_bytes": "ffffffff",
+      "new_bytes": "00000000",
+      "reason": "PIC fifth revision field 9 report thunk"
+    },
+    "9D051BC8": {
+      "old": "0F41D6C6",
+      "new": "0F4004E8",
+      "old_bytes": "c6d6410f",
+      "new_bytes": "e804400f",
+      "reason": "PIC fifth revision field 9 report hook; LUI delay preserved"
+    },
+    "9D052FEC": {
+      "old": "24020004",
+      "new": "24020002",
+      "old_bytes": "04000224",
+      "new_bytes": "02000224",
+      "reason": "M formatter first three fields 2.2.2"
+    }
+  },
+  "QNX": [
+    {
+      "offset": "0x1f4e3",
+      "old": 8,
+      "new": 9,
+      "reason": "version metadata"
+    },
+    {
+      "offset": "0x250ef",
+      "old": 8,
+      "new": 9,
+      "reason": "version metadata"
+    }
+  ],
+  "record_revisions": {
+    "application": [
+      2,
+      2,
+      2,
+      0,
+      9
+    ],
+    "PIC": [
+      2,
+      2,
+      2,
+      0,
+      9
+    ]
+  },
+  "baseline_sha256": "c7e2e03999ca4590c99c3ba18a518f93f073ee8a619c84371677c7f6cd2c8e7f",
+  "candidate_sha256": "438da40fee68dee6062f169e3ca9ed461bf31547f0c1f0a77279a3bc264e6e5d",
+  "PIC_sha256": "80723ffbd381e1e6cf401f09cff99591d43a07d91d00d57570fe2dea5265e2f3",
+  "QNX_sha256": "1a562cb01a7703f4facf9a6d0b90a76f6b4da6fc5218e43ac9991a255aba0406",
+  "changed_PIC_bytes": 410
+}

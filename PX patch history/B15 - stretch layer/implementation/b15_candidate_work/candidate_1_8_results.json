@@ -1,0 +1,139 @@
+{
+  "status": "PASS_PACKAGE_BYTES_MODELED_UPDATER_CHECKS",
+  "version": [
+    2,
+    2,
+    2,
+    1,
+    8
+  ],
+  "package": "PxUpdate_V2.2.2.1.8_B15_candidate.bin",
+  "hashes": {
+    "stock_package": "91ec37c306731743c62f10b915450f8e64bccec3260e84a9ca8938d146df7f82",
+    "package": "200a2d66625f840e0de93ca83518d025aa6de6cb47b7032bfc304384f9922535",
+    "input_fitted_PIC": "bbaeda4fd2d32602088747caa81d4031fb4607c0073344e3e92fb6bdf00efbfe",
+    "PIC": "d141de4ceaf9a754a3c3db193bacdc0ce6757cdabc9beeb3dcdba0ea49bb85e1",
+    "input_QNX": "e5fbbc361fbd8b5c3614b1116ce03be660224f634eab2fb352261e76bae5c0a5",
+    "QNX": "b819511abcace5c271d13145bbc3499fafed8f442af91d7343663cd71c3892c7",
+    "FPGA": "54c70b9969c7bc6004c7ceb257a15ff1581ef82b1c3c1ad1eba185eacf15ad2b"
+  },
+  "package_bytes": 3187784,
+  "stock_package_bytes": 3151848,
+  "PIC_bytes": 530784,
+  "QNX_bytes": 1075240,
+  "sections": [
+    {
+      "type": 1,
+      "payload_offset": "0xd",
+      "length": 1075240,
+      "header": "017b02020201087a00106828",
+      "trailer": "e4b7"
+    },
+    {
+      "type": 2,
+      "payload_offset": "0x106843",
+      "length": 1581716,
+      "header": "027b00000001007a00182294",
+      "trailer": "5977"
+    },
+    {
+      "type": 3,
+      "payload_offset": "0x288ae5",
+      "length": 530784,
+      "header": "037b02020201087a00081960",
+      "trailer": "3030"
+    }
+  ],
+  "required_words": {
+    "0x81868": "0x24633fc0",
+    "0x7fb40": "0x24843fc0",
+    "0x7a3c8": "0x0",
+    "0x7a3cc": "0x0"
+  },
+  "placements": [
+    {
+      "start": "0x9d07a210",
+      "end": "0x9d07a258",
+      "sha256": "cca14342d4e63ee405e6764884e23326a157e37f70da4e0a953721a41cc50486",
+      "pieces": [
+        {
+          "name": "b15_capture_enable",
+          "pc": "0x9d07a210",
+          "bytes": 52
+        }
+      ]
+    },
+    {
+      "start": "0x9d07a4f8",
+      "end": "0x9d07a56c",
+      "sha256": "5739fd72371d15f28fff4e1605951b42fe0e50b6b5413b74fc9b1f9fd01b916a",
+      "pieces": [
+        {
+          "name": "b15_setter_bank",
+          "pc": "0x9d07a54c",
+          "bytes": 28
+        },
+        {
+          "name": "b15_setter",
+          "pc": "0x9d07a4f8",
+          "bytes": 84
+        }
+      ]
+    },
+    {
+      "start": "0x9d07a408",
+      "end": "0x9d07a450",
+      "sha256": "9328c21b081fc18236b835cfd1dece50f057619316c3282d5974c2c390642b37",
+      "pieces": [
+        {
+          "name": "b15_format",
+          "pc": "0x9d07a408",
+          "bytes": 56
+        }
+      ]
+    }
+  ],
+  "diffs": {
+    "PIC": {
+      "ranges": 120,
+      "different_or_added_bytes": 2680,
+      "file": "candidate_1_8_pic_diff.tsv"
+    },
+    "QNX": {
+      "ranges": 337,
+      "different_or_added_bytes": 36764,
+      "file": "candidate_1_8_qnx_diff.tsv"
+    },
+    "package_positional": {
+      "ranges": 253212,
+      "different_or_added_bytes": 1240585,
+      "file": "candidate_1_8_package_diff.tsv"
+    }
+  },
+  "FPGA_record_unchanged": true,
+  "metadata_only_delta_from_retained_inputs": {
+    "PIC": [
+      "0x1394",
+      "0x13a0"
+    ],
+    "QNX": [
+      "0x1f4e3",
+      "0x250ef"
+    ]
+  },
+  "version_gate_cases": 16,
+  "PIC_transport_checksum_blocks": 130,
+  "checksum_accept_reject_cases": 260,
+  "stack": {
+    "startup_SP": "0x8007fff0",
+    "state_start": "0x80057aa0",
+    "state_end": "0x80057ae0",
+    "growth": "down",
+    "gap_to_state_end": 165136,
+    "gap_to_state_start": 165200,
+    "runtime_high_water": "NOT VERIFIED"
+  },
+  "hardware": "NOT VERIFIED",
+  "flashed": false,
+  "limits": "Package framing/checksums and bounded updater interpretation only. Open ownership, ABI, interrupt and hardware checks remain; QNX runtime not executed. PIC length unchanged; QNX/package grow by existing retained QNX artifact size delta. Positional package diff includes shifts of unchanged later records."
+}

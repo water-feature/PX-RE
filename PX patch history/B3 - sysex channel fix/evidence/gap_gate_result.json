@@ -1,0 +1,47 @@
+{
+  "base_sha256": "f6b5205fc40e635305445bb19dd1a41d12f2ee4c64b7284ccd432868ef0c5898",
+  "candidate_va": "0x9d001200",
+  "candidate_raw_offset": "0x274255",
+  "trampoline_words": [
+    "0x90a30005",
+    "0x386300f0",
+    "0x10600003",
+    "0x1021",
+    "0xf417b93",
+    "0x90a40004",
+    "0xb40a56e",
+    "0x0"
+  ],
+  "hook_word": "0xb400480",
+  "candidate_decision": "selected for offline patch development within supplied-image evidence",
+  "dinit_records": 93,
+  "dinit_end": "0x9d01a84c",
+  "initialized_vector_registers": 192,
+  "vector_offsets": [
+    512,
+    520,
+    528,
+    536,
+    544,
+    552,
+    560,
+    568,
+    576,
+    584,
+    592,
+    600
+  ],
+  "dinit_emulation": "all record destinations verified; baseline and relocated in-memory candidate produce identical RAM/MMIO",
+  "gate_matrix_cases": 4352,
+  "machine_executions": 8704,
+  "sysex_cases": 544,
+  "ordinary_cases": 3808,
+  "scope": "real matcher/getter, hook, trampoline and immediate acceptance/rejection boundary; not complete SysEx handler execution",
+  "unresolved": [
+    "Complete class-11/SysEx handler runtime",
+    "PIC checksum/version/install semantics",
+    "Unseen boot/recovery copier and arbitrary indirect-reference completeness",
+    "Hardware behavior"
+  ],
+  "firmware_file_written": false
+}

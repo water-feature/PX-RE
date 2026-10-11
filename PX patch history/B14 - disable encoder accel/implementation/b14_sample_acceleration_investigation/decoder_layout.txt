@@ -1,0 +1,101 @@
+# Symbolic investigation only. No assembly, binary or firmware patch generated.
+# Decoder starts 9d07a298. Registers t2..t8 must survive scanner call.
+sll t0,a0,2
+sll v0,a0,3
+addu t0,t0,v0
+lui v1,0x8001
+addiu v1,v1,0xbf0
+addu v1,v1,t0
+lbu t0,0(v1)
+lbu a1,1(v1)
+andi t0,t0,3
+andi a1,a1,3
+sll t0,t0,2
+or a1,a1,t0
+li t0,1
+sllv t0,t0,a1
+andi a2,t0,0x6996
+beq a2,zero,invalid
+nop
+andi a3,t0,0x4182
+sltu a3,zero,a3
+andi t1,t0,0x12
+sltu t1,zero,t1
+lbu t0,6(v1)
+beq t0,a1,invalid
+nop
+lbu t0,4(v1)
+bne t0,a3,remember_done
+nop
+sb a1,6(v1)
+remember_done:
+andi t0,a0,0xfffe
+li a2,4
+beq t0,a2,eligible
+li a2,18
+bne t0,a2,slow
+nop
+eligible:
+lbu t0,5(v1)
+sltiu a2,t0,0xe5
+bne a2,zero,slow
+nop
+lbu a2,4(v1)
+bne a2,a3,zero_result
+nop
+lbu a2,2(v1)
+sltiu t0,a2,3
+beq t0,zero,ladder
+nop
+addiu a2,a2,1
+sb a2,2(v1)
+j signed_canonical
+nop
+ladder:
+li v0,1
+beq t1,zero,sign_magnitude
+lbu t0,5(v1)
+sltiu a2,t0,0xea
+bne a2,zero,sign_magnitude
+nop
+li v0,2
+sltiu a2,t0,0xee
+bne a2,zero,sign_magnitude
+nop
+li v0,3
+sltiu a2,t0,0xf4
+bne a2,zero,sign_magnitude
+nop
+li v0,4
+sltiu a2,t0,0xfa
+bne a2,zero,sign_magnitude
+nop
+li v0,7
+li a2,10
+movz v0,a2,a3
+sign_magnitude:
+subu a2,zero,v0
+movn v0,a2,a3
+j finish
+nop
+slow:
+sb zero,2(v1)
+signed_canonical:
+subu v0,zero,t1
+movz v0,t1,a3
+j finish
+nop
+zero_result:
+li v0,0
+finish:
+sb a3,4(v1)
+li a2,255
+sb a2,5(v1)
+jr ra
+nop
+invalid:
+li v0,0
+li a2,255
+sb a2,5(v1)
+jr ra
+nop

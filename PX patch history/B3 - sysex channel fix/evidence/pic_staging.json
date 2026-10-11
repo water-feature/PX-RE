@@ -1,0 +1,54 @@
+{
+  "firmware_sha256": "bbc3c2ad26bef7310fc15cac8edee22a1792d8ced3788f7080acccc047304857",
+  "pic_sha256": "2f746346fa1e592795fd243a9866a8019e69c2d97ab3d674204bb7f5022ef0cc",
+  "receiver": "0x9D0442A4, called for updater state 3 at 0x9D025CBC",
+  "cases": [
+    {
+      "abort": false,
+      "corrupted_then_retried": [],
+      "block_requests": 131,
+      "sector_erases": 130,
+      "page_programs": 2080,
+      "reset_reached": true,
+      "end_pc": "0x9d081790",
+      "payload_equal": true,
+      "staged_range": "0x200000..0x281fff"
+    },
+    {
+      "abort": false,
+      "corrupted_then_retried": [
+        1,
+        37,
+        41,
+        81,
+        129
+      ],
+      "block_requests": 136,
+      "sector_erases": 130,
+      "page_programs": 2080,
+      "reset_reached": true,
+      "end_pc": "0x9d081790",
+      "payload_equal": true,
+      "staged_range": "0x200000..0x281fff"
+    },
+    {
+      "abort": true,
+      "corrupted_then_retried": [],
+      "block_requests": 1,
+      "sector_erases": 0,
+      "page_programs": 0,
+      "reset_reached": false,
+      "end_pc": "0x9d081958",
+      "payload_equal": false,
+      "staged_range": null
+    }
+  ],
+  "qnx_blocks_verified": 130,
+  "mocks": [
+    "link queue supplied one frame at a time from actual QNX sender output",
+    "SPI erase/page helpers modeled in bytearray",
+    "time/UI helpers returned; one exact DSP lwx implemented"
+  ],
+  "scope": "Full PIC receive state machine, queue consumption, checksums, retry, 130 flushes and reset boundary. Internal copier and actual SPI peripheral effects excluded.",
+  "prior_evidence_correction": "Earlier validate_pic_transfer.py executed 0x9D0448AC accumulation/checksum fragments, the FPGA receiver. New evidence uses actual PIC receiver 0x9D0442A4."
+}

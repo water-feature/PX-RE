@@ -1,0 +1,46 @@
+{
+  "status": "PASS_PACKAGE_BYTES_MODELED_UPDATER_CHECKS",
+  "version": [
+    2,
+    2,
+    2,
+    1,
+    10
+  ],
+  "package": "PxUpdate_V2.2.2.1.10_B14_sample_acceleration_candidate.bin",
+  "sha256": "6ab00ccd1f9461ffcf5927b54b317d7644c85a3a129dff6115f8cd0cd6a6a6e3",
+  "package_bytes": 3187784,
+  "PIC_bytes": 530784,
+  "QNX_behavior_unchanged_from_1_9": true,
+  "FPGA_record_unchanged": true,
+  "version_gate_cases": 18,
+  "checksum_blocks": 130,
+  "checksum_accept_reject_cases": 260,
+  "validation": {
+    "status": "PASS_EMITTED_TARGETED_HOST_CHECKS",
+    "decoder_cases": 80640,
+    "service_cases": 1323,
+    "numeric_handler_cases": 180,
+    "hardware": "NOT VERIFIED",
+    "limits": "Decoder/service real words; event callback mocked with adversarial ABI clobbers and ISR-arrival storage. Numeric routes stop at setter entry; getter storage lookup modeled. Existing B15/hardware limits inherited."
+  },
+  "hardware": "NOT VERIFIED",
+  "flashed": false,
+  "diffs": {
+    "PIC": {
+      "ranges": 68,
+      "different_or_added_bytes": 328,
+      "file": "PIC_diff.tsv"
+    },
+    "QNX": {
+      "ranges": 2,
+      "different_or_added_bytes": 2,
+      "file": "QNX_diff.tsv"
+    },
+    "package": {
+      "ranges": 73,
+      "different_or_added_bytes": 333,
+      "file": "package_diff.tsv"
+    }
+  }
+}
