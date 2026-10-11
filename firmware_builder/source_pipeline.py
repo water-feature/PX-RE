@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -89,6 +90,37 @@ def verify_public_sources(public: Path) -> dict[str, object]:
             "scope": "Checkout files match its SHA256SUMS; not repository authentication"}
 
 
+def toolchain_environment() -> dict[str, str]:
+    # Staged scripts run outside the checkout, where rustup cannot see its pin.
+    return dict(os.environ, RUSTUP_TOOLCHAIN=os.environ.get("RUSTUP_TOOLCHAIN", "1.83.0"))
+
+
+def verify_toolchain() -> dict[str, str]:
+    expected = {
+        "clang": "Apple clang version 16.0.0 (clang-1600.0.26.6)",
+        "clang++": "Apple clang version 16.0.0 (clang-1600.0.26.6)",
+        "rustc": "rustc 1.83.0 (90b35a623 2024-11-26)",
+        "objdump": "Apple LLVM version 16.0.0",
+        "/usr/bin/objdump": "Apple LLVM version 16.0.0",
+    }
+    versions = {}
+    for command, required in expected.items():
+        if shutil.which(command) is None:
+            raise RuntimeError(f"Required build tool is missing: {command}; expected {required}")
+        result = subprocess.run([command, "--version"], cwd=PUBLIC,
+                                env=toolchain_environment(), capture_output=True,
+                                text=True, timeout=30)
+        lines = result.stdout.splitlines()
+        actual = lines[0].strip() if lines else "(no version output)"
+        build_matches = ("objdump" not in command or "clang-1600.0.26.6" in result.stdout)
+        if result.returncode or actual != required or not build_matches:
+            raise RuntimeError(f"Unsupported {command}: expected {required}; found {actual}. "
+                               "Use the verified Xcode toolchain and Rust 1.83.0. "
+                               + result.stderr.strip())
+        versions[command] = result.stdout.strip()
+    return versions
+
+
 def clean(path: Path, *names: str) -> None:
     for name in names:
         target = path / name
@@ -164,6 +196,7 @@ def run(root: Path, relative: str, *args: str) -> None:
     print(f"running {relative}", flush=True)
     with (root / "build.log").open("a") as log:
         subprocess.run([sys.executable, str(script), *args], cwd=root, check=True,
+                       env=toolchain_environment(),
                        stdout=log, stderr=subprocess.STDOUT)
 
 
@@ -177,8 +210,10 @@ def require_hash(root: Path, relative: str, expected: str) -> None:
 def build(root: Path, factory: Path) -> Path:
     if digest(factory) != FACTORY_SHA:
         raise ValueError("factory SHA-256 mismatch")
+    toolchain = verify_toolchain()
     source_check = verify_public_sources(PUBLIC)
     stage(root)
+    (root / "toolchain_verification.json").write_text(json.dumps(toolchain, indent=2) + "\n")
     (root / "published_source_verification.json").write_text(json.dumps(source_check, indent=2) + "\n")
     inventory = {str(p.relative_to(root)): digest(p) for p in root.rglob("*") if p.is_file()}
     (root / "staged_source_inventory.json").write_text(json.dumps(inventory, indent=2) + "\n")
@@ -263,10 +298,6 @@ def main() -> None:
         raise ValueError("Keep generated firmware outside the public source tree")
     if digest(args.factory) != FACTORY_SHA or args.factory.stat().st_size != 3099064:
         raise ValueError("Expected the exact factory 2.2.2.0.0 input (SHA-256 mismatch)")
-    for command in ("clang", "rustc", "objdump"):
-        if shutil.which(command) is None:
-            raise RuntimeError(f"Required build tool is missing: {command}")
-
     def execute(root: Path) -> None:
         try:
             final = build(root, args.factory.resolve())
@@ -283,6 +314,7 @@ def main() -> None:
                       "round_trip_identical": True, "FPGA_record_unchanged": True,
                       "component_sha256": {str(row.kind): hashlib.sha256(row.payload).hexdigest() for row in recovered},
                       "staged_source_inventory_sha256": digest(root / "staged_source_inventory.json"),
+                      "toolchain": json.loads((root / "toolchain_verification.json").read_text()),
                       "published_source_verification": json.loads((root / "published_source_verification.json").read_text())}
             (root / "source_build_verification.json").write_text(json.dumps(report, indent=2) + "\n")
             created = False
