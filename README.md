@@ -1,20 +1,21 @@
 # Prophet X firmware patches and SSD tools
 
-This project documents a set of unofficial bugfixes and improvements for the Sequential Prophet X. It includes a local firmware patcher, implementation sources and test evidence for each feature, and a guide detailing how to install a larger SSD. 
+This project documents a set of bugfixes and improvements for the Sequential Prophet X. It includes a local firmware patcher, implementation sources and test evidence for each feature, and a guide detailing how to install a larger SSD. 
   No affiliation with Sequential. 
   No firmware images or extracted payloads are distributed here. 
   Install at your own risk and keep generated firmware images private. 
   LLMs used throughout. 
-  Thanks to [rvense](https://rven.se/prophet-x/) for mapping out the first steps. 
+  Thanks to [rvense](https://rven.se/prophet-x/) for taking the first steps. 
 
 **Before installing:** read [recovery.md](recovery.md), open up your synth by following [this video](https://www.youtube.com/watch?v=tF9Ji9iL00g) and create an image of your SSD.
 
 ## What is included
 
+- [Firmware patcher](patch_prophet_x.py) to generate a flashable firmware file with the changes described in the changelog below
+- [SSD expansion guide](SSD%20expansion/README.md): details on how to prepare and fit a larger SSD
+- [Feature and version history](PX%20patch%20history/BUILD_VERSION_HISTORY.md): follows the build chain and links to each feature's implementation, test status and packaging evidence.
 - [Firmware architecture and map](FIRMWARE_MAP.md): container format, QNX/PIC/FPGA components and version-specific offsets.
 - [Source and research directory map](firmware_builder/README.md#directory-map): identifies active build inputs, retained research and mixed directories.
-- [Feature and version history](PX%20patch%20history/BUILD_VERSION_HISTORY.md): follows the build chain and links to each feature's implementation, test status and packaging evidence.
-- [SSD expansion guide](SSD%20expansion/README.md): increases storage capacity without a firmware update.
 - [Contributing](CONTRIBUTING.md): evidence, reproduction and copyright requirements for proposed changes. PRs and bug reports welcome.
 
 ## Changelog for 2.2.2.2.2.bin
@@ -38,7 +39,7 @@ This project documents a set of unofficial bugfixes and improvements for the Seq
 
 ## Patching the firmware using the supplied tool:
 
-[patch_prophet_x.py](patch_prophet_x.py) converts your own factory 2.2.2.0.0 update file directly into the combined 2.2.2.2.2 update. It builds the retained feature chain locally from source; you do not need to install intermediate versions. 
+[patch_prophet_x.py](patch_prophet_x.py) converts your own factory 2.2.2.0.0 update file directly into the combined 2.2.2.2.2 update. It builds the retained feature chain locally from source. Note that at this stage you're not able to pick and choose which individual features to add; the patcher generates the final 2.2.2.2.2 directly and the manual 'build from source' steps in the next section patch in each feature sequentially. 
 
 You need your own exact factory `PxUpdate_V2.2.2.0.0.bin`, obtained from Sequential, and a local source build environment. Download the whole repository, including `firmware_builder/` and `PX patch history/`; the patcher is a small entry point to those sources.
 
