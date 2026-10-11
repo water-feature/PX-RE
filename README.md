@@ -1,6 +1,6 @@
 # Prophet X firmware patches and SSD tools
 
-This project documents a set of bugfixes and improvements for the Sequential Prophet X. It includes a local firmware patcher, implementation sources and test evidence for each feature, and a guide detailing how to install a larger SSD. 
+This project documents a set of unofficial bugfixes and improvements for the Sequential Prophet X. It includes a local firmware patcher, implementation sources and test evidence for each feature, and a guide detailing how to install a larger SSD. 
   No affiliation with Sequential. 
   No firmware images or extracted payloads are distributed here. 
   Install at your own risk and keep generated firmware images private. 
