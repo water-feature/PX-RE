@@ -8,6 +8,11 @@ Note: The patches described in this repo have all been tested on hardware and do
 
 Download **`PX_Main_2.2.2.0.0.syx`** from the attachment in [Sequential's Prophet X OS forum post](https://forum.sequential.com/index.php?topic=2656.0) (this is the factory PIC / Main OS recovery file; the `.bin` will not work here). Power off the instrument. Hold **SAMPLE STRETCH** while powering it on to enter bootloader mode, then transmit the appropriate factory recovery `.syx` file through the synth's DIN MIDI input using a SysEx sender. Wait for reception and the update to complete, then restart. Finally, install your preferred `.bin` firmware via item 33 in the synth's global menu.   
 
+Verify the downloaded `PX_Main_2.2.2.0.0.syx` matches the retained recovery file before transmitting it:
+
+- **Size:** 2,398,215 bytes
+- **SHA-256:** `63882cc635caa42dfaa45f0bde6545b406c78e248128732663736d946b94daf0`
+
 Note: This recovery path does not repair the SSD's QNX application or filesystem. If the sysex recovery process fails, the issue is likely related to the QNX system on the SSD - proceed to the next step.
 
 ## SSD / QNX recovery
@@ -16,7 +21,7 @@ Note: This recovery path does not repair the SSD's QNX application or filesystem
 
 The rest of this document outlines the steps to recover specific sections of a failed QNX image, which can often be quicker than performing a full image restore:
 
-- **Damaged QNX application:** restore the known-good application to both `ProphetX` and `ProphetXBackup` on the QNX filesystem. The SSD application recovery procedure below documents the Windows/QEMU maintenance workflow used after B13. In that incident the boot image was unchanged; restoring the application was the required repair.
+- **Damaged QNX application:** restore the known-good application to both `ProphetX` and `ProphetXBackup` on the QNX filesystem. The SSD application recovery procedure below documents the Windows/QEMU maintenance workflow used after a failed firmware update. In that incident the boot image was unchanged; restoring the application was the required repair.
 - **Damaged bootloader or boot partition:** restore the matching known-good boot image or boot partition from your own backup. The [SSD expansion guide](SSD%20expansion/README.md#6-preserve-boot-and-create-the-sample-filesystem) explains copying the disk's boot region with verified partition boundaries. Use its boot-copy step only when appropriate; the later formatting steps belong to SSD expansion. Preserve the destination's partition layout when restoring to a drive with a different geometry.
 - **Damaged partition table/filesystem, or uncertain damage:** restore a verified full-disk backup to the confirmed target SSD, or refit the unchanged original drive. A full-image restore overwrites that drive, including samples and changes made since the backup. 
 
@@ -28,7 +33,7 @@ Do not copy boot sectors between arbitrary layouts or assume MIDI recovery can r
 
 **Other operating systems:** The procedure below documents the tested Windows/QEMU setup. The same QNX maintenance image should work in QEMU on Linux or macOS, with changes to host paths, command quoting, disk access permissions and physical SSD identification/unmounting. The commands inside QNX should remain the same if the emulated IDE controllers and disk order are preserved. Other VM applications may require different QNX disk drivers. Recovery on other hosts has not been verified.
 
-This records the Windows/QEMU procedure used after the failed B13 flash. The failed flash left the synth hanging after the boot bar. We restored the SSD-resident application, not its boot partition: the boot image was verified unchanged. Repaired SSD was successfully tested on hardware.
+This records the Windows/QEMU procedure used after the failed firmware update. The failed flash left the synth hanging after the boot bar. We restored the SSD-resident application, not its boot partition: the boot image was verified unchanged. Repaired SSD was successfully tested on hardware.
 
 Both `ProphetX` and `ProphetXBackup` contained the failed application. The stock startup script checks whether the process exists after five seconds; a hung process can pass that check and overwrite the backup.
 
@@ -40,7 +45,7 @@ Use an elevated **Command Prompt (cmd.exe)**. The commands below assume the same
 - `C:\Program Files\qemu\qemu-system-x86_64.exe`
 - `D:\px-maintenance-vm-boot.img` — maintenance boot image; create it using [SSD expansion, step 2: Build the maintenance image](SSD%20expansion/README.md#2-build-the-maintenance-image), then copy it to this path. Follow only that image-building section for recovery, not the SSD migration steps.
 - `D:\qnx-backup.img` — known-good backup image
-- `D:\PX_B13_Evidence` — existing folder for transfers
+- `D:\PX_Recovery` — existing folder for transfers
 - `\\.\PhysicalDrive2` — affected synth SSD, offline in Windows
 
 **Confirm the physical disk number before launching.** PhysicalDrive2 was correct in our session; another machine or reconnection may assign a different number. Match the SSD model and capacity in Windows Disk Management. Set that SSD offline. Do not initialize or format it.
@@ -52,7 +57,7 @@ Choose a firmware update that you know boots correctly on your synth and is comp
 Extract the application directly from the complete update `.bin` with [extract_qnx.py](extract_qnx.py). It uses only Python's standard library (Python 3.10 or newer) and runs on Windows, Linux or macOS. From the downloaded repository folder, run this in Windows Command Prompt, replacing the input path:
 
 ```bat
-python extract_qnx.py "C:\path\to\PxUpdate.bin" -o "D:\PX_B13_Evidence\recovery.elf"
+python extract_qnx.py "C:\path\to\PxUpdate.bin" -o "D:\PX_Recovery\recovery.elf"
 ```
 
 On Linux or macOS, use `python3` and the corresponding host paths. The output must be a new file outside the repository. The command verifies the update identity, container checksums and x86-64 ELF structure, then prints the extracted application's size and SHA-256. It does not patch firmware or access the SSD.
@@ -62,7 +67,7 @@ The default accepted inputs are the exact official 2.2.2.0.0 update and this pro
 The extracted executable normally uses the **`.elf` extension**. Copy or save it to:
 
 ```text
-D:\PX_B13_Evidence\recovery.elf
+D:\PX_Recovery\recovery.elf
 ```
 
 Renaming a complete update `.bin` to `.elf` does not extract its application. On the synth SSD, this same executable must be named `ProphetX` and `ProphetXBackup`, **without an extension**. The copy commands below handle those names.
@@ -74,7 +79,7 @@ File size varies between patched builds; do not require the historical .1.2 size
 Paste this as one command in elevated cmd.exe, after confirming PhysicalDrive2:
 
 ```bat
-"C:\Program Files\qemu\qemu-system-x86_64.exe" -m 512 -machine pc -drive file=D:\px-maintenance-vm-boot.img,if=ide,index=0,format=raw -drive file=D:\qnx-backup.img,if=ide,index=1,format=raw,snapshot=on -drive file=\\.\PhysicalDrive2,if=ide,index=2,format=raw -drive file=fat:rw:D:\PX_B13_Evidence,if=ide,index=3,format=raw -boot c -display none -serial mon:stdio
+"C:\Program Files\qemu\qemu-system-x86_64.exe" -m 512 -machine pc -drive file=D:\px-maintenance-vm-boot.img,if=ide,index=0,format=raw -drive file=D:\qnx-backup.img,if=ide,index=1,format=raw,snapshot=on -drive file=\\.\PhysicalDrive2,if=ide,index=2,format=raw -drive file=fat:rw:D:\PX_Recovery,if=ide,index=3,format=raw -boot c -display none -serial mon:stdio
 ```
 
 The backup image uses a temporary snapshot overlay. The physical SSD is passed through directly and can be written by the guest. Initially mount its filesystems read-only.
@@ -159,7 +164,7 @@ Enter the QEMU monitor with Ctrl+A, then C and type:
 quit
 ```
 
-The evidence copies are now in `D:\PX_B13_Evidence`. Preserve them before restoring the application. In the historical B13 recovery, both applications contained the failed build, while the boot image and startup script were unchanged. No boot-partition rewrite was needed.
+The evidence copies are now in `D:\PX_Recovery`. Preserve them before restoring the application. In the recorded recovery, both applications contained the failed build, while the boot image and startup script were unchanged. No boot-partition rewrite was needed.
 
 ### 5. Restore both application files
 
@@ -205,8 +210,8 @@ umount /in
 Quit QEMU through its monitor. The read-back files are now in the Windows transfer folder. You can compare them byte for byte with the replacement executable, without any fixed version-specific hash:
 
 ```bat
-fc /b D:\PX_B13_Evidence\recovery.elf D:\PX_B13_Evidence\repaired-main
-fc /b D:\PX_B13_Evidence\recovery.elf D:\PX_B13_Evidence\repaired-backup
+fc /b D:\PX_Recovery\recovery.elf D:\PX_Recovery\repaired-main
+fc /b D:\PX_Recovery\recovery.elf D:\PX_Recovery\repaired-backup
 ```
 
 Each comparison should report no differences. After a completed VM shutdown, disconnect the SSD, reinstall it in the synth and test boot. If it still hangs, preserve the evidence and investigate further; the procedure does not justify formatting or rewriting the boot partition.
