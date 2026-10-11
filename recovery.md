@@ -28,7 +28,7 @@ Do not copy boot sectors between arbitrary layouts or assume MIDI recovery can r
 
 ## SSD application recovery procedure
 
-**Verification status:** The owner followed the procedure below and confirmed that it restored the broken SSD to a bootable state. Final repaired-file hashes were not recorded in the retained evidence.
+**Verification status:** Thos procedure has been used to successfully restore a non-booting SSD (as a result of my attempts to increase boot speed) back to a bootable state. 
 
 **Other operating systems:** The procedure below documents the tested Windows/QEMU setup. The same QNX maintenance image should work in QEMU on Linux or macOS, with changes to host paths, command quoting, disk access permissions and physical SSD identification/unmounting. The commands inside QNX should remain the same if the emulated IDE controllers and disk order are preserved. Other VM applications may require different QNX disk drivers. Recovery on other hosts has not been verified.
 
