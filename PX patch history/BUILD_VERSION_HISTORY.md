@@ -1,6 +1,6 @@
 # Firmware build and version history
 
-The implemented chain can be traced from factory **2.2.2.0.0** to final **2.2.2.2.2**. Feature numbers are not build order. The tables distinguish actual ancestors from comparison builds, rejected experiments and reserved numbers.
+The implemented chain can be traced from factory **2.2.2.0.0** to final **2.2.2.2.2**. Branch IDs such as B1 and B16 identify investigations and their technical evidence, not release order or a continuous sequence. The tables distinguish actual ancestors from comparison builds, rejected experiments and reserved numbers.
 
 This is a build/provenance order, not a timestamped record of every development action. In particular, the early B1/B3 artifacts were renumbered. The parent column describes the actual input or merge, rather than assuming every numerical predecessor was used.
 
@@ -67,9 +67,9 @@ Use the full package filename and SHA-256 to identify a build. Application and P
 
 Final `.2.2` retains B9’s browsing improvement and B10’s window-scroll correction, with residual slowdown and clicks respectively. B13 is excluded: both its optimization and full-trace candidates failed hardware boot, and no successful target timing capture is recorded. Its control and bisect variants remain untested on hardware.
 
-## Package identities
+## Archived package identities (technical provenance)
 
-Firmware files are excluded from this repository. The table identifies the private reference packages; [build_version_evidence.json](build_version_evidence.json) provides component revisions, lengths and SHA-256 hashes. Copies with the same whole-package hash represent the same build.
+This table is for auditing locally rebuilt stages and interpreting historical evidence, not choosing a firmware download. For the accepted final output and installation instructions, use the [main README](../README.md). Firmware files are excluded from this repository. The table identifies the private reference packages; [build_version_evidence.json](build_version_evidence.json) provides component revisions, lengths and SHA-256 hashes. Copies with the same whole-package hash represent the same build.
 
 | Version / artifact | Package filename | SHA-256 |
 |---|---|---|

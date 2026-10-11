@@ -1,4 +1,4 @@
-# B2 - Expand the Prophet X SSD
+# Expand the Prophet X SSD
 
 Standalone technical guide for replacing the SSD with a larger drive while preserving the boot partition and copying the QNX sample filesystem. A Crucial M500 480 GB replacement has been hardware-confirmed. Storage expansion does not increase sample-bank slot limits.
 
