@@ -271,7 +271,7 @@ These are the original incremental commands, requiring preparation in a private 
 - Supply the exact baseline package `PxUpdate_V2.2.2.1.15_B10_ordinary_entry_candidate.bin` and its extracted PIC/QNX at the paths pinned in `input_manifest.json`. The three hashes are recorded there.
 - Regenerate the four `approved/fragment_*.bin` files from the approved layout before building; generated binary fragments are excluded from this public folder. `measure_compact.py` emits the matching layout into `compact/`, with independent LLVM comparison using Rust's `mipsel-unknown-none` target and `RUSTC_BOOTSTRAP=1`. Match all 51 words against `approved/listing.txt` before using them as the frozen approved fragments.
 - Preserve the sibling paths listed in the input manifest. Some listed files are hash-pinned procedure/provenance references rather than executed build dependencies; they are included to preserve the original checks. Do not run unrelated B10/B14/B7 packagers as B11b build steps.
-- The inherited `b11_placement_scratch/decode_pic.py` still uses the original absolute workspace path for the private `.1.15` PIC. Reproduction on another machine requires adapting that path and deliberately updating the corresponding pinned source hash after reviewing the change. This bundle is not claimed to be a portable one-command build.
+- The published `b11_pic_tools/decode_pic.py` loads the generated `.1.15` PIC from the staged layout and can be imported by the B11 validators. Use the root source builder to prepare that layout.
 - Use Python 3 and the matching Rust/LLVM MIPS toolchain (recorded independent assembly used Rust 1.83.0). Work in a fresh private directory: output creation is exclusive and existing generated checkpoints may need moving aside. Generated firmware must stay outside the public repository.
 
 The final package is `PxUpdate_V2.2.2.2.0_B11b_real_instrument_on_Type_candidate.bin`. Container framing, payload lengths and record order remain inherited. Application and PIC headers use `2.2.2.2.0`; the application word checksum is recalculated, complete FPGA record retained, and PIC trailer `30 30` preserved under the established contract. No new PIC or QNX payload space is required by B11b.
@@ -285,8 +285,8 @@ Every retained supporting file is linked below. Original B11 closure records are
 | File | Purpose |
 |---|---|
 | [b10_ordinary_entry_design_1_12/candidate_1_15/package.py](b10_ordinary_entry_design_1_12/candidate_1_15/package.py) | Imported decoder/encoder/gate utility or hash-pinned provenance dependency. |
-| [b11_placement_scratch/decode_pic.py](b11_placement_scratch/decode_pic.py) | Imported decoder/encoder/gate utility or hash-pinned provenance dependency. |
-| [b11_placement_scratch/measure_corrected.py](b11_placement_scratch/measure_corrected.py) | Imported decoder/encoder/gate utility or hash-pinned provenance dependency. |
+| [b11_pic_tools/decode_pic.py](b11_pic_tools/decode_pic.py) | Imported decoder/encoder/gate utility or hash-pinned provenance dependency. |
+| [b11_pic_tools/measure_corrected.py](b11_pic_tools/measure_corrected.py) | Imported decoder/encoder/gate utility or hash-pinned provenance dependency. |
 | [b11b_implementation_2_2_2_2_0/approved/candidate.rs](b11b_implementation_2_2_2_2_0/approved/candidate.rs) | New compact helper layout or independent assembly input/listing. |
 | [b11b_implementation_2_2_2_2_0/approved/candidate.s](b11b_implementation_2_2_2_2_0/approved/candidate.s) | New compact helper layout or independent assembly input/listing. |
 | [b11b_implementation_2_2_2_2_0/approved/listing.txt](b11b_implementation_2_2_2_2_0/approved/listing.txt) | New compact helper layout or independent assembly input/listing. |
@@ -324,4 +324,4 @@ Every retained supporting file is linked below. Original B11 closure records are
 
 For this cleanup, Python/JSON syntax, document links, source-copy identities and the saved private package SHA-256 were checked. Compilation, full feature tests and hardware testing were not rerun.
 
-The PIC decoder accepts an explicit private input and one or more hexadecimal address ranges: `python3 b11_placement_scratch/decode_pic.py PIC_FILE START:END [START:END ...]`.
+The PIC decoder uses the generated parent image in the staged layout and accepts hexadecimal address ranges: `python3 b11_pic_tools/decode_pic.py START:END [START:END ...]`.

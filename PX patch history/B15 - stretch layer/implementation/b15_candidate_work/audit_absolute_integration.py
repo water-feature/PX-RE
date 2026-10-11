@@ -17,7 +17,7 @@ for x in j['writes']:
 q=(R/'b14_stable_frame_packaging_work/voice_2.2.2.1.7_qnx.elf').read_bytes()
 # ELF mappings for baseline VAs from builder utility.
 import sys
-sys.path.insert(0,str(R));from patch_b4_minimal_qnx import Elf
+sys.path.insert(0,str(R));from qnx_elf import Elf
 elf=Elf(q)
 # Use disassembly evidence and exact baseline hash as authority; it was generated
 # against this exact image, not the user's mutable Ghidra session.

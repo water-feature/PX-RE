@@ -197,4 +197,4 @@ Copies of B5 sources and reports support inherited implementation/regression inv
 | [b8_candidate_work/validate_b8_candidate.py](b8_candidate_work/validate_b8_candidate.py) | Validation/test or ownership audit tool; uses the private inputs described in source. |
 | [b8_candidate_work/validate_b8_host.py](b8_candidate_work/validate_b8_host.py) | Validation/test or ownership audit tool; uses the private inputs described in source. |
 | [b8_candidate_work/verify_b8_package.py](b8_candidate_work/verify_b8_package.py) | Validation/test or ownership audit tool; uses the private inputs described in source. |
-| [patch_b4_minimal_qnx.py](patch_b4_minimal_qnx.py) | Inherited ELF parser imported by object/build utilities; its B4 entry point is not part of this feature. |
+| [qnx_elf.py](qnx_elf.py) | Shared ELF parser used by object/build utilities. |

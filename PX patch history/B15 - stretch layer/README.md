@@ -159,7 +159,7 @@ Every retained file is linked below. Saved evidence and imported dependencies ar
 |---|---|
 | [b15_candidate_work/build_pic_absolute.py](implementation/b15_candidate_work/build_pic_absolute.py) | Final PIC helper emitter; imports selected prior helper sections. |
 | [b15_candidate_work/build_pic_integrated.py](implementation/b15_candidate_work/build_pic_integrated.py) | Final fitted placement, detours and heap reservations. |
-| [b15_candidate_work/build_pic_helpers.py](implementation/b15_candidate_work/build_pic_helpers.py) | Imported assembler/interpreter/ELF utility; unrelated standalone entry point not used. |
+| [b15_candidate_work/build_pic_helpers.py](implementation/b15_candidate_work/build_pic_helpers.py) | Shared ELF parser used by the QNX build utilities. |
 | [b15_candidate_work/pic_absolute_assembly.json](implementation/b15_candidate_work/pic_absolute_assembly.json) | Saved assembly, patch, validation or ownership evidence; stage labels retain original meaning. |
 | [b15_candidate_work/pic_absolute_results.json](implementation/b15_candidate_work/pic_absolute_results.json) | Saved assembly, patch, validation or ownership evidence; stage labels retain original meaning. |
 | [b15_candidate_work/absolute_pic_integration.json](implementation/b15_candidate_work/absolute_pic_integration.json) | Saved assembly, patch, validation or ownership evidence; stage labels retain original meaning. |
@@ -188,8 +188,8 @@ Every retained file is linked below. Saved evidence and imported dependencies ar
 
 | File | Purpose |
 |---|---|
-| [b14_candidate_work/build_b14.py](implementation/b14_candidate_work/build_b14.py) | Imported assembler/interpreter/ELF utility; unrelated standalone entry point not used. |
-| [b14_ui_candidate_work/build_display.py](implementation/b14_ui_candidate_work/build_display.py) | Imported assembler/interpreter/ELF utility; unrelated standalone entry point not used. |
+| [b14_candidate_work/build_b14.py](implementation/b14_candidate_work/build_b14.py) | Shared ELF parser used by the QNX build utilities. |
+| [b14_ui_candidate_work/build_display.py](implementation/b14_ui_candidate_work/build_display.py) | Shared ELF parser used by the QNX build utilities. |
 | [b15_candidate_work/absolute_formatter_callers_results.json](implementation/b15_candidate_work/absolute_formatter_callers_results.json) | Saved assembly, patch, validation or ownership evidence; stage labels retain original meaning. |
 | [b15_candidate_work/absolute_formatter_results.txt](implementation/b15_candidate_work/absolute_formatter_results.txt) | Saved fitted formatter test results. |
 | [b15_candidate_work/absolute_heap_ownership_evidence.json](implementation/b15_candidate_work/absolute_heap_ownership_evidence.json) | Saved assembly, patch, validation or ownership evidence; stage labels retain original meaning. |
@@ -211,9 +211,9 @@ Every retained file is linked below. Saved evidence and imported dependencies ar
 | [b15_candidate_work/validate_pic_absolute.py](implementation/b15_candidate_work/validate_pic_absolute.py) | Component, fitted-image or ownership validation tool; private inputs may be required. |
 | [b15_candidate_work/validate_pic_emission.py](implementation/b15_candidate_work/validate_pic_emission.py) | Component, fitted-image or ownership validation tool; private inputs may be required. |
 | [b15_candidate_work/validate_pic_operations.py](implementation/b15_candidate_work/validate_pic_operations.py) | Component, fitted-image or ownership validation tool; private inputs may be required. |
-| [b5_elf_placement_check.py](implementation/b5_elf_placement_check.py) | Imported assembler/interpreter/ELF utility; unrelated standalone entry point not used. |
+| [b5_elf_placement_check.py](implementation/b5_elf_placement_check.py) | Shared ELF parser used by the QNX build utilities. |
 | [b7_candidate_work/validate_version_gates.py](implementation/b7_candidate_work/validate_version_gates.py) | Component, fitted-image or ownership validation tool; private inputs may be required. |
-| [b9_250_candidate_work/mips_check.py](implementation/b9_250_candidate_work/mips_check.py) | Imported assembler/interpreter/ELF utility; unrelated standalone entry point not used. |
-| [patch_b4_minimal_qnx.py](implementation/patch_b4_minimal_qnx.py) | Imported assembler/interpreter/ELF utility; unrelated standalone entry point not used. |
+| [b9_250_candidate_work/mips_check.py](implementation/b9_250_candidate_work/mips_check.py) | Shared ELF parser used by the QNX build utilities. |
+| [qnx_elf.py](implementation/qnx_elf.py) | Shared ELF parser used by the QNX build utilities. |
 
 Cleanup checks: source-copy identities, Python/JSON syntax, all handover links, inventory checksums and private `.1.8` package identity PASS. Firmware builds, full test drivers and hardware tests were not rerun.

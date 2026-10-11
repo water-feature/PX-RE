@@ -7,7 +7,7 @@ from pathlib import Path
 import struct, json, sys
 
 ROOT=Path(__file__).resolve().parent
-sys.path.insert(0,str(ROOT.parent/'b11_placement_scratch'))
+sys.path.insert(0,str(ROOT.parent/'b11_pic_tools'))
 import decode_pic as pic
 R={s:i for i,s in enumerate(pic.r)}
 BASE=0x9d000000
@@ -98,7 +98,7 @@ def encode_helper(addr,ret):
         'bne t0,t1,0x9d04d4fc','sll t0,a0,2','addu t0,t0,sp','lw t0,0x24,t0',
         'beq t0,s3,0x9d04d4fc','sltiu t0,a2,1','addu a2,a2,t0','j 0x9d04d4fc','nop']
  # Reuse the authorized explicit encoder without invoking its output driver.
- scope={};src=(ROOT.parent/'b11_placement_scratch/measure_corrected.py').read_text()
+ scope={};src=(ROOT.parent/'b11_pic_tools/measure_corrected.py').read_text()
  exec(compile(src.split('out=Path(__file__).parent')[0],'<encoder>','exec'),scope)
  def enc(p,line):
   if line.startswith('ori '):

@@ -14,7 +14,7 @@ ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT.parent))
 from b5_fade_prototype import FADE_DURATION_MS,fade_intervals,prediction_horizon
 from b5_elf_placement_check import ELF_HASH,ExactElf,decode_index
-from patch_b4_minimal_qnx import Elf
+from qnx_elf import Elf
 
 HOOKS=[
  ('forward',0x405bd,{'size': 11, 'sha256': 'e29a896de7c775fd1cdde012acce7fbbe28e2bca4ea23530ecac1a85e36eb194'},0x405c8,176),

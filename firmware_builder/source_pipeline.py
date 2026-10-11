@@ -16,7 +16,7 @@ from pathlib import Path
 
 
 HERE = Path(__file__).resolve().parent
-PUBLIC = HERE.parent if (HERE.parent / "PX patch history").is_dir() else HERE.parent / "_FOR GITHUB"
+PUBLIC = HERE.parent
 HISTORY = PUBLIC / "PX patch history"
 FINAL_SHA = "488444589607a1b4e793a8d8f79a67c5bd50773b722c302e6d80bc1db77b4b7c"
 FACTORY_SHA = "a4b304b3bb48ca933ae63c99c0098698c497ebfc7c38ab2a823b5e0df4919fa9"
@@ -42,13 +42,13 @@ DIRS = {
     "b10_ordinary_entry_design_1_12": "B10 - window scroll clicks/implementation/b10_ordinary_entry_design_1_12",
     "b11b_implementation_2_2_2_2_0": "B11 - type name tweak/b11b_implementation_2_2_2_2_0",
     "b11b_investigation": "B11 - type name tweak/b11b_investigation",
-    "b11_placement_scratch": "B11 - type name tweak/b11_placement_scratch",
+    "b11_pic_tools": "B11 - type name tweak/b11_pic_tools",
     "b16_finer_loop_sync_resolution": "B16 - new sync divisions/implementation/b16_finer_loop_sync_resolution",
 }
 HELPERS = {
     "b5_elf_placement_check.py": "B5 - sample end fade/b5_elf_placement_check.py",
     "b5_fade_prototype.py": "B8 - end escape/b5_fade_prototype.py",
-    "patch_b4_minimal_qnx.py": "B5 - sample end fade/patch_b4_minimal_qnx.py",
+    "qnx_elf.py": "B5 - sample end fade/qnx_elf.py",
     "b7_combined_instruction_model.py": "B7 - center can be pushed/b7_combined_instruction_model.py",
 }
 
@@ -58,6 +58,35 @@ B14_SPAN_GUARDS = [{'address': 2634289608, 'size': 76, 'sha256': 'f627fb4f5a31e7
 
 def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def verify_public_sources(public: Path) -> dict[str, object]:
+    """Check published files against the checkout's checksum inventory."""
+    public = public.resolve()
+    manifest = public / "SHA256SUMS"
+    seen: set[str] = set()
+    for number, line in enumerate(manifest.read_text().splitlines(), 1):
+        if not line.strip():
+            continue
+        expected, separator, name = line.partition("  ")
+        if (not separator or len(expected) != 64 or
+                any(c not in "0123456789abcdef" for c in expected) or
+                not name or name in seen):
+            raise ValueError(f"Invalid SHA256SUMS entry at line {number}")
+        relative = Path(name)
+        target = public / relative
+        if relative.is_absolute() or ".." in relative.parts or not target.resolve().is_relative_to(public):
+            raise ValueError(f"Unsafe SHA256SUMS path: {name}")
+        if not target.is_file():
+            raise ValueError(f"Published source missing: {name}")
+        if digest(target) != expected:
+            raise ValueError(f"Published source checksum mismatch: {name}")
+        seen.add(name)
+    if not seen:
+        raise ValueError("Empty SHA256SUMS inventory")
+    return {"status": "PASS", "files_verified": len(seen),
+            "manifest_sha256": digest(manifest),
+            "scope": "Checkout files match its SHA256SUMS; not repository authentication"}
 
 
 def clean(path: Path, *names: str) -> None:
@@ -94,10 +123,10 @@ def stage(root: Path) -> None:
         shutil.copy2(HISTORY / source, root / name)
     for name in ("container.py", "build_b1.py", "build_b5.py", "build_b8.py", "build_b3_merge.py"):
         shutil.copy2(HERE / name, root / name)
-    spec = (HISTORY / "B1 - voice steal fix/prophet_x_combined_application_patch (1)/"
+    spec = (HISTORY / "B1 - voice steal fix/prophet_x_combined_application_patch/"
             "analysis/combined_patch/patch_spec.json")
-    destination = (root / "_FOR GITHUB/PX patch history/B1 - voice steal fix/"
-                   "prophet_x_combined_application_patch (1)/analysis/combined_patch/patch_spec.json")
+    destination = (root / "PX patch history/B1 - voice steal fix/"
+                   "prophet_x_combined_application_patch/analysis/combined_patch/patch_spec.json")
     destination.parent.mkdir(parents=True)
     shutil.copy2(spec, destination)
     (root / "b14_investigation").mkdir()
@@ -148,7 +177,9 @@ def require_hash(root: Path, relative: str, expected: str) -> None:
 def build(root: Path, factory: Path) -> Path:
     if digest(factory) != FACTORY_SHA:
         raise ValueError("factory SHA-256 mismatch")
+    source_check = verify_public_sources(PUBLIC)
     stage(root)
+    (root / "published_source_verification.json").write_text(json.dumps(source_check, indent=2) + "\n")
     inventory = {str(p.relative_to(root)): digest(p) for p in root.rglob("*") if p.is_file()}
     (root / "staged_source_inventory.json").write_text(json.dumps(inventory, indent=2) + "\n")
     shutil.copy2(factory, root / "PxUpdate_V2.2.2.0.0.bin")
@@ -251,7 +282,8 @@ def main() -> None:
                       "final_sha256": hashlib.sha256(data).hexdigest(), "final_bytes": len(data),
                       "round_trip_identical": True, "FPGA_record_unchanged": True,
                       "component_sha256": {str(row.kind): hashlib.sha256(row.payload).hexdigest() for row in recovered},
-                      "staged_source_inventory_sha256": digest(root / "staged_source_inventory.json")}
+                      "staged_source_inventory_sha256": digest(root / "staged_source_inventory.json"),
+                      "published_source_verification": json.loads((root / "published_source_verification.json").read_text())}
             (root / "source_build_verification.json").write_text(json.dumps(report, indent=2) + "\n")
             created = False
             try:

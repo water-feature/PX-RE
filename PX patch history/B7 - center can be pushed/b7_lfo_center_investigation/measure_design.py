@@ -6,7 +6,7 @@ import sys, struct, subprocess, json, hashlib
 O=Path(__file__).resolve().parent; R=O.parent
 sys.path[:0]=[str(R),str(R/'b5_candidate_work')]
 from b5_elf_placement_check import ExactElf,decode_index,encode_index
-from patch_b4_minimal_qnx import Elf
+from qnx_elf import Elf
 P=R/'b15_candidate_work/lfo_endpoint_investigation/completion_fix/voice_2.2.2.1.11_B5_completion_fade_candidate_qnx.elf'
 B=P.read_bytes(); assert hashlib.sha256(B).hexdigest()=='45ee5d94dddb785f0ffa6e3514d42f05671811a669c5f638414d0cd668d66640'
 e=ExactElf(B)

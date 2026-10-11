@@ -3,7 +3,7 @@
 from pathlib import Path
 import sys,struct,json,hashlib,subprocess
 ROOT=Path(__file__).resolve().parents[1];OUT=Path(__file__).resolve().parent
-sys.path.insert(0,str(ROOT));from patch_b4_minimal_qnx import Elf
+sys.path.insert(0,str(ROOT));from qnx_elf import Elf
 from b5_elf_placement_check import ExactElf,decode_index,encode_index
 BASE=0x100000;EH=0x102000;INDEX=0x103000;END=0x105000
 EXTERNAL={'b15_stock_message_continue':0x1e056,'b15_stock_noteon':0x36400,

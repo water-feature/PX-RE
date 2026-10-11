@@ -7,7 +7,7 @@ from setter_harness import CPU, PARAM
 
 ROOT=Path(__file__).resolve().parent
 scope={}
-src=(ROOT.parent/'b11_placement_scratch/measure_corrected.py').read_text()
+src=(ROOT.parent/'b11_pic_tools/measure_corrected.py').read_text()
 exec(compile(src.split('out=Path(__file__).parent')[0],'<encoder>','exec'),scope)
 R=scope['R']; old_encode=scope['encode']
 sections=[

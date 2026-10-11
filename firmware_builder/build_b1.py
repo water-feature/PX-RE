@@ -11,9 +11,9 @@ from container import FACTORY_SHA256, Record, elf_layout, parse, serialize, sha2
 
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE if (HERE / "_FOR GITHUB").is_dir() else HERE.parent
-SPEC = (ROOT / "_FOR GITHUB/PX patch history/B1 - voice steal fix/"
-        "prophet_x_combined_application_patch (1)/analysis/combined_patch/patch_spec.json")
+ROOT = HERE if (HERE / "PX patch history").is_dir() else HERE.parent
+SPEC = (ROOT / "PX patch history/B1 - voice steal fix/"
+        "prophet_x_combined_application_patch/analysis/combined_patch/patch_spec.json")
 EXPECTED_APP = "651f0ac3339f4f41a4c0bc562cdf4c72df821d85aad3f689e700612b8c8b05e7"
 EXPECTED_PACKAGE = "2ad5392eb842cbcd5c2e85e65ab42c16f1fac12d16b09c417a61761a8348bcbf"
 

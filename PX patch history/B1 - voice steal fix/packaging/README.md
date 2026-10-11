@@ -33,10 +33,10 @@ The payload follows, then a two-byte checksum trailer. Offsets below are absolut
 
 ## Reproduce locally
 
-Dependencies for the application builder are documented in its [README](../prophet_x_combined_application_patch%20%281%29/analysis/combined_patch/README.md). The packaging script uses only Python's standard library. Supply your own private stock BIN and extracted stock application. Run from this B1 directory, placing generated firmware outside the public repository:
+Dependencies for the application builder are documented in its [README](../prophet_x_combined_application_patch/analysis/combined_patch/README.md). The packaging script uses only Python's standard library. Supply your own private stock BIN and extracted stock application. Run from this B1 directory, placing generated firmware outside the public repository:
 
 ```sh
-python3 'prophet_x_combined_application_patch (1)/analysis/combined_patch/build_application_patch.py' --input /private/work/ProphetX.elf --output /private/work/B1_candidate.elf
+python3 'prophet_x_combined_application_patch/analysis/combined_patch/build_application_patch.py' --input /private/work/ProphetX.elf --output /private/work/B1_candidate.elf
 python3 packaging/package_b1.py --stock /private/work/PxUpdate_V2.2.2.0.0.bin --candidate /private/work/B1_candidate.elf --output /private/work/PxUpdate_V2.2.2.0.2.bin
 ```
 

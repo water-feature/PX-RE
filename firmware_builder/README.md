@@ -20,7 +20,7 @@ Verified on Apple silicon macOS with Python 3.14.3, Apple clang 16.0.0 (`clang-1
 
 ## Build and verification
 
-1. Pin the factory input size and SHA-256; prove an identical null repack with [container.py](container.py).
+1. Verify the published files against the root `SHA256SUMS` before staging. Pin the factory input size and SHA-256; prove an identical null repack with [container.py](container.py).
 2. Apply B1's guarded source recipe; compile the B5/B8 helpers and emit B3 PIC instructions.
 3. Rebuild the retained B7, B6, B9, B14, B15, B5/B7 follow-ups, B10, B11 and B16 stages. Run their saved-image, instruction, ownership, bounds, ABI, version-gate and host validations. Abandoned B4/B13 and rejected alternatives are excluded.
 4. Check the final package hash, length, parser/serializer round trip and unchanged FPGA record before creating the output exclusively.
@@ -40,6 +40,10 @@ The public archive deliberately excludes firmware and some private analysis arti
 - The published B11 PIC decoder supports importing against the generated parent image. Refresh B11's source-file receipts for the portable archive; preserve its historical firmware-input hashes. Independently assemble and compare the emitted fragments before building the image.
 - Recreate B16's preservation receipt for the source-only staged files. The published integration script excludes generated Python caches from the preservation comparison.
 
-`staged_source_inventory.json` records exactly which staged files were used before compilation. Historical reports remain evidence of their original run, including hardware-pending wording; subsequent hardware observations are recorded in the branch guides. A matching final hash establishes byte identity with the accepted package, not exhaustive proof of behavior on every instrument.
+The pinned final firmware SHA-256 is the decisive output integrity gate: the builder refuses to create the requested output unless the generated package matches the accepted bytes. The other guards and validation assertions check inputs and intermediate results.
+
+Before staging, the builder checks every file listed in the root `SHA256SUMS` and records the result in `published_source_verification.json`. This detects missing or changed published files, but does not authenticate a checkout if both files and their checksums have been changed.
+
+B11's refreshed source hashes and B16's recreated preservation receipt establish baselines from the current staged files. They detect subsequent changes to the files they cover during the run; they do not independently establish that those files match a historical or trusted release. `staged_source_inventory.json` records the staged files before compilation, including generated receipts. It is a traceability record, not a comparison against an independently pinned expected inventory. Historical reports remain evidence of their original run, including hardware-pending wording; subsequent hardware observations are recorded in the branch guides. A matching final hash establishes byte identity with the accepted package, not exhaustive proof of behavior on every instrument.
 
 Original-byte fields in retained patch recipes and receipts have been replaced with SHA-256 hashes and lengths. This changes their representation, not the recorded test outcomes. Replacement instructions and authored helper sources remain available for review. Generated build artifacts stay in the private working directory.

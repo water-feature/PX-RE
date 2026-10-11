@@ -93,7 +93,7 @@ python3 b5_packaging_work/verify_b5_test.py
 
 Object emission requires Clang, GNU-compatible objdump and the Python dependencies imported by the supplied helpers. Compiler output can depend on toolchain version; the saved object/source hashes are enforced by the builder. An exact source-to-object rebuild was not rerun during documentation cleanup. The candidate builder runs structural validation itself; `validate_b5_candidate.py` supplies its imported validator rather than a separate standalone command.
 
-`emit_b5_candidate.py` is included for its imported utilities; use the complete object emitter above, not that earlier staging entry point. `patch_b4_minimal_qnx.py` supplies the imported ELF parser; its B4 main program is not part of B5. Generated headers, shim assembly and the [object manifest](b5_candidate_work/b5_objects_manifest.json) are included. Full firmware and compiled objects are excluded. Some tools write fixed output names; use a fresh private working directory. The packager refuses existing delivery outputs.
+`emit_b5_candidate.py` is included for its imported utilities; use the complete object emitter above, not that earlier staging entry point. `qnx_elf.py` supplies the imported ELF parser; its B4 main program is not part of B5. Generated headers, shim assembly and the [object manifest](b5_candidate_work/b5_objects_manifest.json) are included. Full firmware and compiled objects are excluded. Some tools write fixed output names; use a fresh private working directory. The packager refuses existing delivery outputs.
 
 **Packaging reconstruction PASS:** during this documentation review, the supplied packager reproduced the original private `.5` package byte-for-byte from the pinned base and candidate. The independent verifier passed all 21 checks. See the [new verification report](b5_packaging_work/documentation_packaging_verification.json), [historical packaging manifest](b5_packaging_work/b5_packaging_manifest.json) and [historical validation](b5_packaging_work/b5_packaging_validation.json). This check did not rerun source compilation or hardware testing.
 
@@ -234,5 +234,5 @@ Every retained supporting file is linked below. Implementation, imported depende
 | [b5_packaging_work/documentation_packaging_verification.json](b5_packaging_work/documentation_packaging_verification.json) | Saved validation, measurement or ownership evidence; not a new test run. |
 | [b5_packaging_work/package_b5_test.py](b5_packaging_work/package_b5_test.py) | Incremental packaging/publication tool. |
 | [b5_packaging_work/verify_b5_test.py](b5_packaging_work/verify_b5_test.py) | Validation/test or ownership audit tool; uses the private inputs described in source. |
-| [patch_b4_minimal_qnx.py](patch_b4_minimal_qnx.py) | Inherited ELF parser imported by object/build utilities; its B4 entry point is not part of this feature. |
+| [qnx_elf.py](qnx_elf.py) | Shared ELF parser used by object/build utilities. |
 | [test_b5_fade_prototype.py](test_b5_fade_prototype.py) | Validation/test or ownership audit tool; uses the private inputs described in source. |

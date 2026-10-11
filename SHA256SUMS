@@ -1,33 +1,33 @@
 360271195a7da9db3168c9c3734f6d2a4ef986667214744e96bcce4088729377  .gitignore
 3241b41acb198589c3c56dbb28f02fec1c186f77f3536ca79c18ad5409d89b34  CONTRIBUTING.md
 2ee841586c0548d148dcb3598d293542850186eb38af7c8bd78a2fc4a92390ac  LICENSE
-4386b9a59459eb9e90cc6b6934bfe5118afab19f2f287bd0a03d4f42ac8cc74b  PX patch history/B1 - voice steal fix/README.md
-32ec5d301bc64eec08725e2cd76fa589866ed4bec264176e95190bdb9051ce90  PX patch history/B1 - voice steal fix/SHA256SUMS
-a7055f8fed3464857fd1098900415f25a7ceef599139fd66b38f428f9a9ed6b5  PX patch history/B1 - voice steal fix/packaging/README.md
+d1e85917fe89303a06d50a7147df57344c311d301d7e25c46203230acec8f0af  PX patch history/B1 - voice steal fix/README.md
+d20e45a39f0b1c677b6537a1da21f1c7ff68119ea838ceab26e6813ad72ef713  PX patch history/B1 - voice steal fix/SHA256SUMS
+a035231731380a0866ef5d6850c66876703e3d6d1ed51d954ac3a91e6cc61aca  PX patch history/B1 - voice steal fix/packaging/README.md
 89f01024dfe7232b6c3e06bf61571caab93ebdae73adb8e76cd884f9a5ac512a  PX patch history/B1 - voice steal fix/packaging/package_b1.py
 a9cc1a865d1063818e73af669a29cc01c75f4626619c9ecb1b2f8bcee178a72d  PX patch history/B1 - voice steal fix/packaging/verification_report.json
-cbd823032fd04c79153fab7e8b652d30aea84649e966b35289c996cd71291f4e  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/combined_patch/ProphetX_voice_fade_candidate.manifest.json
-fb86c7762ab60cdb6596c3c4bde6baad43a933bcf5e80b975a62e93c40f9df3f  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/combined_patch/README.md
-225309c441e25d2c6ea1706e1d42b2a7b10c419fea3ae78f623405b5215affa6  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/combined_patch/build_application_patch.py
-7f4310ba885802a1ce7ebaaaef19a85fa5f1a010702ecd286d765f889b2b0e7d  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/combined_patch/builder_test_results.json
-bbd625e6822b2cbf3c11c297a7b77b8d3e72009d4a75b0369755fea2654a55bf  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/combined_patch/installed_candidate_test_results.json
-16f26501e9adbe4bb5a1235a387b56870795ed327ee4822e1323c2aefe336c5c  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/combined_patch/patch_spec.json
-1dd28923d8fd381713ae9af8298f5c48bfe8b2312db609a6769ca7d5a3ce37bc  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/combined_patch/program_headers.txt
-2f7467140c66c4bc1fce83b1e508ab71a2002ad0772ce7db7575cb6003ff7e71  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/combined_patch/test_builder.py
-b506ba7d9a4a152e13b565187496b2c932174b9497106253c3d8e3fc4d56a8bc  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/README.md
-30527868fd85cf028e3a0218671e469f1f52c30ce990f9bb09c514acb815fcbc  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/audit_space.py
-b66c34ff7eb60c20f70e3462ea39662a24df9e263f12a834734112286dfae2fe  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/audit_unwind_ownership.py
-a641b36d244cf7f27487d95570168f8bd22a08b1e8f70dc00456c74dc4927ac9  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/build_unwind_trial.py
-260b3f63f5d555de095e9d079eb476023cab72fbe75e9a457b8e6a82f18eea70  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/placed.S
-1a3bf64955f72fbd5173885024a97ef75a4242e2a0e1bda241eb8a04feb29adf  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/placed.ld
-57fbf8db539ab028174206c4145d7f3e9b29fb3573af34962bd7df48b953a5dd  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/placement_manifest.json
-e92aafb2692241b8b2fb9d1d8355686b2ae235f01ec5ae6560037816090fb65d  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/reference_audit.json
-62f2098adbc3f65bc065ec8a35c2ce251adbbca618369d562cfcca3597a10afc  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/test_placed_activation.py
-445c709b61872d55ed2e8d8e5cb60b7d5cb0552d5178efe56e8c3b4527151577  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/test_placed_batch.py
-e7ae1f8322ffff8137776c96bf400bd0a512b65086566fc6ea17b7d83f212264  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/test_unwind_lookup.py
-b92bb16b0100665a6ff50193e0b6f7fe8ec94a368f8c8720856c6e77d3a49437  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/unwind_lookup_results.json
-feb5fae30951324c74ccabec28258f92eaa579b1638b651210ca880235a3a99d  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/unwind_manifest.json
-84d755e8cbe833f23eb1e7ce544f2f6a9851627da9f09689fd84983b0435cdb3  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch (1)/analysis/diagnostic_space/unwind_ownership_audit.json
+cbd823032fd04c79153fab7e8b652d30aea84649e966b35289c996cd71291f4e  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/combined_patch/ProphetX_voice_fade_candidate.manifest.json
+fb86c7762ab60cdb6596c3c4bde6baad43a933bcf5e80b975a62e93c40f9df3f  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/combined_patch/README.md
+225309c441e25d2c6ea1706e1d42b2a7b10c419fea3ae78f623405b5215affa6  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/combined_patch/build_application_patch.py
+7f4310ba885802a1ce7ebaaaef19a85fa5f1a010702ecd286d765f889b2b0e7d  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/combined_patch/builder_test_results.json
+bbd625e6822b2cbf3c11c297a7b77b8d3e72009d4a75b0369755fea2654a55bf  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/combined_patch/installed_candidate_test_results.json
+16f26501e9adbe4bb5a1235a387b56870795ed327ee4822e1323c2aefe336c5c  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/combined_patch/patch_spec.json
+1dd28923d8fd381713ae9af8298f5c48bfe8b2312db609a6769ca7d5a3ce37bc  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/combined_patch/program_headers.txt
+2f7467140c66c4bc1fce83b1e508ab71a2002ad0772ce7db7575cb6003ff7e71  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/combined_patch/test_builder.py
+b506ba7d9a4a152e13b565187496b2c932174b9497106253c3d8e3fc4d56a8bc  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/README.md
+30527868fd85cf028e3a0218671e469f1f52c30ce990f9bb09c514acb815fcbc  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/audit_space.py
+b66c34ff7eb60c20f70e3462ea39662a24df9e263f12a834734112286dfae2fe  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/audit_unwind_ownership.py
+a641b36d244cf7f27487d95570168f8bd22a08b1e8f70dc00456c74dc4927ac9  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/build_unwind_trial.py
+260b3f63f5d555de095e9d079eb476023cab72fbe75e9a457b8e6a82f18eea70  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/placed.S
+1a3bf64955f72fbd5173885024a97ef75a4242e2a0e1bda241eb8a04feb29adf  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/placed.ld
+57fbf8db539ab028174206c4145d7f3e9b29fb3573af34962bd7df48b953a5dd  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/placement_manifest.json
+e92aafb2692241b8b2fb9d1d8355686b2ae235f01ec5ae6560037816090fb65d  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/reference_audit.json
+62f2098adbc3f65bc065ec8a35c2ce251adbbca618369d562cfcca3597a10afc  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/test_placed_activation.py
+445c709b61872d55ed2e8d8e5cb60b7d5cb0552d5178efe56e8c3b4527151577  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/test_placed_batch.py
+e7ae1f8322ffff8137776c96bf400bd0a512b65086566fc6ea17b7d83f212264  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/test_unwind_lookup.py
+b92bb16b0100665a6ff50193e0b6f7fe8ec94a368f8c8720856c6e77d3a49437  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/unwind_lookup_results.json
+feb5fae30951324c74ccabec28258f92eaa579b1638b651210ca880235a3a99d  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/unwind_manifest.json
+84d755e8cbe833f23eb1e7ce544f2f6a9851627da9f09689fd84983b0435cdb3  PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/diagnostic_space/unwind_ownership_audit.json
 bda7b35c643a6e2e212483caf132af50b9dd76bb8b65cf8fa6a23bc4819d5337  PX patch history/B10 - window scroll clicks/README.md
 954ac43d440c7eb3b55247f2dcdcbded5262e1e640599b34bfb887a1ce124ecf  PX patch history/B10 - window scroll clicks/SHA256SUMS
 502891f4ea1f85b10cb91182140e1063be71137d47ea3a1a678b73619e99669b  PX patch history/B10 - window scroll clicks/implementation/b10_center_sweep_1_12/run_sweep.py
@@ -78,11 +78,11 @@ f491d0f15d952a87bbea1e50d69caba2ec074b76114023f188c8604e9acc1113  PX patch histo
 95ccdfcef9ccbcb1b6cbcdcd737019afbe8f6b278c1845c4fcbaa65916d07399  PX patch history/B10 - window scroll clicks/implementation/b10_ordinary_entry_design_1_12/candidate_1_15/validation_manifest.json
 2cb6f3b9fddd8005a64b6a0990877697198c4087d70a6ed477e07b138c91dd80  PX patch history/B10 - window scroll clicks/implementation/b10_ordinary_entry_design_1_12/candidate_1_15/verify_repeated_tail.py
 0453498fdee0b73cbee65803fe6d2b600e4435dcc70032c7783879308b9075e9  PX patch history/B10 - window scroll clicks/implementation/b10_ordinary_entry_design_1_12/candidate_1_15/verify_sequences.py
-7a3653ae6cd6c62238c0857475a5f470a677a10e63b13175ef9f9335ff5ad927  PX patch history/B11 - type name tweak/README.md
-a37258ea18fb61a3cb6b9cb9dcf8ae5dcf05887fa24479ef1d4fa4ce474332f9  PX patch history/B11 - type name tweak/SHA256SUMS
+34b58465328b398507269699d8f030d0366550c108c5df294346f46320923ccc  PX patch history/B11 - type name tweak/README.md
+c08e2ccd3c804b832eaa3fba20ff69c99ae6716920f0e3a62c41364fe499a8da  PX patch history/B11 - type name tweak/SHA256SUMS
 78392e6b5ed381d52544bf122509939be78b9a846e93defc5673baff584f90ee  PX patch history/B11 - type name tweak/b10_ordinary_entry_design_1_12/candidate_1_15/package.py
-bb2b8b15b250df3e77600065153034ed277631a8e785c44d0ba047bae1985d2d  PX patch history/B11 - type name tweak/b11_placement_scratch/decode_pic.py
-cf71cf6b183b2deb9f53ea54ea12e831244151b96466fff3858bb00de407b710  PX patch history/B11 - type name tweak/b11_placement_scratch/measure_corrected.py
+bb2b8b15b250df3e77600065153034ed277631a8e785c44d0ba047bae1985d2d  PX patch history/B11 - type name tweak/b11_pic_tools/decode_pic.py
+cf71cf6b183b2deb9f53ea54ea12e831244151b96466fff3858bb00de407b710  PX patch history/B11 - type name tweak/b11_pic_tools/measure_corrected.py
 d06df2da6647a307b39aa3ab1f84fa406bc73432da81b5ffcafcd7db6aaed759  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/approved/candidate.rs
 2c9d00de42bf9e030afd66eea8eea436fe212a981356ae1d54f026a976102c77  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/approved/candidate.s
 0bcde6bb7f46943d780c7736736ae5e1ddea16013a9a74b1d5a692fc74b86baa  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/approved/listing.txt
@@ -97,18 +97,18 @@ ced15e75a9969107372c9e28f44016c3d86574970d317b638285f81fa488aed7  PX patch histo
 0bcde6bb7f46943d780c7736736ae5e1ddea16013a9a74b1d5a692fc74b86baa  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/compact/listing.txt
 c5835de4354f050c1142fb90ec903b00ec1a7cd6739860aeeb5e79987b92fda5  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/compact/results.json
 b76e44a7fc251f0670d80fb39726840314ce578cf000050c542a5b14863ad0e0  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/emission.json
-5ed8b86d2c888f5b776c75e3eb3fa90ea9fd8bd9621b44945c4032f1efa63f4c  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/input_manifest.json
-e458bef38189207c1aab761f0de1b2ede4fb1703f163641282a53d53f8f9641e  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/measure_compact.py
+8378b0c773e4eebd8fc6e3a088bf326c9eca9381bf40a5136ac409088e7c4640  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/input_manifest.json
+d86a9dbf3e2100fe6cd8417851471f853cd95fbef172576be6f9de10b0e85db6  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/measure_compact.py
 3ea3ebc345e75ae0280fe56ddc3db57196df725ae6beec06f85ba8cdadbe582f  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/package.py
 ad84e377d8a4433ae8270265eaab3c9e84661ff9654f006c766bb57a2b5ad1cb  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/package_results.json
-f57f3c96b8e786d1ac5af756fec2fc39e83ea8a8f37e3a2e7f4611219661e010  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/setter_harness.py
+c629298ec306d85a3ad8b57803de4d85b5e625f939443a505b52773175120080  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/setter_harness.py
 0e5dac3ddbade96531de86bfbf2fbd6279c7fc7c98325b17771365df9f8eab45  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/validate.py
 af5f82cc9d22cc50f8d63bcc1a69e5387353230323260919855e67206dc34e43  PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/validation.json
 8a2544b81ad21781c142b6c94d4980bcafc95eb30b82819435955966c0344cee  PX patch history/B11 - type name tweak/b11b_investigation/check_bank_refresh.py
 9aeb556c5fc4ee8ab34de1795848232cd4926b07cb1533bd156c5549d0eb6897  PX patch history/B11 - type name tweak/b11b_investigation/check_compact.py
-e458bef38189207c1aab761f0de1b2ede4fb1703f163641282a53d53f8f9641e  PX patch history/B11 - type name tweak/b11b_investigation/measure_compact.py
+d86a9dbf3e2100fe6cd8417851471f853cd95fbef172576be6f9de10b0e85db6  PX patch history/B11 - type name tweak/b11b_investigation/measure_compact.py
 2c6df424bdf36b84ae0f26b9455bf2712d8ce0e02351928e5fbf96291ed16b65  PX patch history/B11 - type name tweak/b11b_investigation/redirected_findings.md
-f57f3c96b8e786d1ac5af756fec2fc39e83ea8a8f37e3a2e7f4611219661e010  PX patch history/B11 - type name tweak/b11b_investigation/setter_harness.py
+c629298ec306d85a3ad8b57803de4d85b5e625f939443a505b52773175120080  PX patch history/B11 - type name tweak/b11b_investigation/setter_harness.py
 2cd682fedb2a86836bc51caddbd4babd6007d653296b0b93e599eec83173194c  PX patch history/B11 - type name tweak/b14_ui_packaging_work/package_display.py
 edf7b79d6a65a75625c7604bdd835f15163d177a7d769125b8cf4909b0711fca  PX patch history/B11 - type name tweak/b5_packaging_work/established_packaging_contract.md
 463e31dc074033cd5e506c947a39cab70283aef5da3c31d25daad1dda2d319f5  PX patch history/B11 - type name tweak/b7_candidate_work/validate_version_gates.py
@@ -235,8 +235,8 @@ b7a63a65e4f95a8bcd92ef820f1b3227a211bd784d78ddec0e86c6dd7e0c1151  PX patch histo
 463e31dc074033cd5e506c947a39cab70283aef5da3c31d25daad1dda2d319f5  PX patch history/B14 - disable encoder accel/implementation/b7_candidate_work/validate_version_gates.py
 c703541dc01eda289dba5c8eca7454fa58d9f2a26a266c10d16a6f15156014ca  PX patch history/B14 - disable encoder accel/implementation/b9_250_candidate_work/b9_patch_manifest.json
 5be3e5c0f9377e01d91c8688763a73871070ef757d78b575043f9ee16c309c2a  PX patch history/B14 - disable encoder accel/implementation/b9_250_candidate_work/mips_check.py
-8d36d6bd026c1a0796ff0b63dac529558999621dad1ade6fff1de4d95c4a9fd9  PX patch history/B15 - stretch layer/README.md
-8adec09ad8d097c6a3f7f79cef41e1cb3a3a4925eac690a0d281791a3aa809b5  PX patch history/B15 - stretch layer/SHA256SUMS
+54504eb4a67598ccf10e902843945b38d0bd52342e6fadd7434bd0a26cefe57f  PX patch history/B15 - stretch layer/README.md
+18b4614a8abf175bd3a78932275e1ca3fc6d2fb8ec49a008853bfa8731fa8b83  PX patch history/B15 - stretch layer/SHA256SUMS
 07dc73f120016b01e1487dcd5c66625eef7f1c9f7ea660048f8dd5b1623de551  PX patch history/B15 - stretch layer/implementation/b14_candidate_work/build_b14.py
 d737a44af871d75be939c7dfbe196df12b2e765e7343edd4c125d56da3838970  PX patch history/B15 - stretch layer/implementation/b14_ui_candidate_work/build_display.py
 46b99378ae1145f166dd281877f0638b486cadcb3716ff1f9e7d0e147639a9eb  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/absolute_formatter_callers_results.json
@@ -251,7 +251,7 @@ d1ad6157d96b6482501afa43016e7ca57dca40717b588364d4773a9be1494746  PX patch histo
 7fd348872be738767fcf8a96edb66fcb43727642a29380a64226608485545670  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/absolute_placement_results.json
 68ea94ec25529fc9f74b27dfa1c65eec5f94ed2656eb52b104a4c17f8a623a5a  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/absolute_qnx_integration_results.json
 61766f751b24b10d3a229d2583ab760c4f0ba7a1052ecf47464d45d1d6006b21  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/absolute_stock_setter_results.json
-e4bc198d02faf6645d688f386d17a6df70856c983cdc114c2e7713844a41cd4a  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/audit_absolute_integration.py
+f38a45da532238e4894ec96209f7e093f669d155e63d51f86358ac184b5b241a  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/audit_absolute_integration.py
 abe6286b699283f8306310c47f7b75552c935bfe15ef27651f59d1dd22c98e49  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/audit_absolute_placement.py
 fb0f16ebf8c474747ba2fdc80d021220d3ab3f18b81addef928b08016c1c0adc  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/audit_pic_size.py
 cd9fc9541543eb552d9f292d31d0fc8b5d5749bbae13b849555d418c2338fea9  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/b15_absolute_core.c
@@ -262,7 +262,7 @@ b7a63a65e4f95a8bcd92ef820f1b3227a211bd784d78ddec0e86c6dd7e0c1151  PX patch histo
 8ace130e0577d110e0e9ca41813ea64f07af6a88bc748dd2650a9711826dfe2d  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/build_pic_absolute.py
 81e79c173d696440d66c005cd2d391e42e0053e7c21b7147e764d16bdb14d4be  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/build_pic_helpers.py
 6472f7f6060522dc8a3f8e0f1ec5af10d7810b1e6f51a7bf36c8f7173330c770  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/build_pic_integrated.py
-079d8706a348e89e3f1106537bff486b58b9dc274b14055c84c3a7050ad3e087  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/build_qnx_absolute.py
+829abd2d89dd606c837ef0c762d480b2913044ad4bd82d43c283c5ab08c1df2f  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/build_qnx_absolute.py
 84a41481da3ef6cdd2c90985cf747a513834395033f639efb80004462a928496  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/candidate_1_8_results.json
 eca29500755c461545e2ea13711990be41524ca261c4c572cc6f7993d9064ecf  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/pic_absolute_assembly.json
 fca30a9bef2db4c1a8e2a4611e2ab14ea30999f8ab15f35233791223eafc7c7c  PX patch history/B15 - stretch layer/implementation/b15_candidate_work/pic_absolute_results.json
@@ -279,7 +279,7 @@ df8ce630ee04b6efc2ef83ee8daf212eb87f736f7ef508389fc0cd799861f8e8  PX patch histo
 5d4f319e7d54e596539b79d188af2c0688e542f414eb4fab339745fc9c7d56c3  PX patch history/B15 - stretch layer/implementation/b5_elf_placement_check.py
 463e31dc074033cd5e506c947a39cab70283aef5da3c31d25daad1dda2d319f5  PX patch history/B15 - stretch layer/implementation/b7_candidate_work/validate_version_gates.py
 5be3e5c0f9377e01d91c8688763a73871070ef757d78b575043f9ee16c309c2a  PX patch history/B15 - stretch layer/implementation/b9_250_candidate_work/mips_check.py
-66c7f5296e0d1591272d6a4cb16bfe1d8cea30a24bf025c84f35e4d0f36f2389  PX patch history/B15 - stretch layer/implementation/patch_b4_minimal_qnx.py
+0ed221d7d078d474460c3f00ac2a176281411c3bfa064287f3ccb2bfb4a28f67  PX patch history/B15 - stretch layer/implementation/qnx_elf.py
 aa9d120b12689ce3a9f023d986db358be124336fcfeeca2979eaa2fcfa855dbd  PX patch history/B16 - new sync divisions/README.md
 0cbdc869eb576f92a938e004ebb3b8a7b32dc75503541123b0cf8311809a9996  PX patch history/B16 - new sync divisions/SHA256SUMS
 0622ae948dfedc03884d9a1c16deb0cd7b94a55b19b54eead97859425ee6490e  PX patch history/B16 - new sync divisions/implementation/b16_finer_loop_sync_resolution/ENCODER_CALLERS.tsv
@@ -526,8 +526,8 @@ c9891b47fd537a7ca58da98977b62eddc5d519d6ea5079129b23acd191d66069  PX patch histo
 b43dbdee81565343090586a48f1daca84a43e1a362d0495a6cd58b721c6919b9  PX patch history/B4 - expand user slots (abandoned)/validation/b4_split_addressing_results.json
 19d3c630aea9fb01c8979be82c557d2d2c9d86957b82de6c201303cfe35e3489  PX patch history/B4 - expand user slots (abandoned)/validation/b4_split_stock_call_evidence.json
 31a3e68e9e65ebf2ee8b47b726c890c2ca1deba1a5f8991acd409f8a40c734a5  PX patch history/B4 - expand user slots (abandoned)/validation/readme_B4_minimal_qnx_implementation.md
-1037504def36273cf78974ce7354f13656f6e658c599df65c977704e595c6622  PX patch history/B5 - sample end fade/README.md
-ab8ca1aa5951bc407321478140941f18e98a59caae5d4f9489b2721c73b53035  PX patch history/B5 - sample end fade/SHA256SUMS
+4d4523a3ef17ccf9f2f84c9e149fd2b05674fc533f2d84d8607e3cff573ad2af  PX patch history/B5 - sample end fade/README.md
+131f5e6154cbc41316185ad033f97e7a6e1d2e6232b6b877b218c75772732fef  PX patch history/B5 - sample end fade/SHA256SUMS
 b7a63a65e4f95a8bcd92ef820f1b3227a211bd784d78ddec0e86c6dd7e0c1151  PX patch history/B5 - sample end fade/b15_candidate_work/build_candidate_1_8.py
 00d3ef4fea49cbda22f6b646df6e266fbc614f54d1b3e2cfd63542cdaa514ac0  PX patch history/B5 - sample end fade/b15_candidate_work/build_candidate_1_9.py
 65bc81bd00a485a656f152105f71220ff69f878279f8c41fa5a42d04ae1e4c5a  PX patch history/B5 - sample end fade/b15_candidate_work/lfo_endpoint_investigation/b5_offsets.generated.h
@@ -557,7 +557,7 @@ e6e9c35a28ff6e58d85442c86d225e2fd91f439304f24b7a7d2181043c36aac3  PX patch histo
 d78aa5a5b59c45098b7ec932818f03c92e9d609f53fd46b5db1ec75f024809ae  PX patch history/B5 - sample end fade/b5_candidate_work/b5_policy.generated.h
 57c6fa7dfa8e7f1887ecede70088526c0a6fff952139978bd7030a88283ef8fd  PX patch history/B5 - sample end fade/b5_candidate_work/b5_wrapper_fixture.s
 aba911ecf22708336dc110d671d031fce6f01b9cd963d0297ccb8f817f4ca0e5  PX patch history/B5 - sample end fade/b5_candidate_work/build_b5_candidate.py
-6f7a602dfd2d8d6b24dff9d96af57251c25e118f7950c80e2ac9e77942f02606  PX patch history/B5 - sample end fade/b5_candidate_work/emit_b5_candidate.py
+77814cbc40ed817a36e1ffcc3e88b1a49ec3cfe1ffdf3c75d9cc6ab3ab4624dd  PX patch history/B5 - sample end fade/b5_candidate_work/emit_b5_candidate.py
 fc4308d199111b97108ffcb591d07fe284708f7678086f396af32ad19cc4f31e  PX patch history/B5 - sample end fade/b5_candidate_work/emit_b5_objects.py
 58fca9d8c933b797927af2d7118765bc2800b27a3d06ace3d523b9a3df429987  PX patch history/B5 - sample end fade/b5_candidate_work/validate_b5_candidate.py
 5d4f319e7d54e596539b79d188af2c0688e542f414eb4fab339745fc9c7d56c3  PX patch history/B5 - sample end fade/b5_elf_placement_check.py
@@ -569,7 +569,7 @@ fc4308d199111b97108ffcb591d07fe284708f7678086f396af32ad19cc4f31e  PX patch histo
 13dafd5d8472fc5f250c3c64c0d0b75d9482a695e19b14e14a2fe455416c2ff3  PX patch history/B5 - sample end fade/b5_packaging_work/documentation_packaging_verification.json
 d775ef23ff0818c2bca8d0ae79ef2aea3fe559e5d8caaed992940284d99ddec8  PX patch history/B5 - sample end fade/b5_packaging_work/package_b5_test.py
 196a8dcad9a080be63ac98df9bf2e4085fc41e3eda5704c1f53cee106e6b1fe9  PX patch history/B5 - sample end fade/b5_packaging_work/verify_b5_test.py
-66c7f5296e0d1591272d6a4cb16bfe1d8cea30a24bf025c84f35e4d0f36f2389  PX patch history/B5 - sample end fade/patch_b4_minimal_qnx.py
+0ed221d7d078d474460c3f00ac2a176281411c3bfa064287f3ccb2bfb4a28f67  PX patch history/B5 - sample end fade/qnx_elf.py
 8bf3d577c043cad7a31159e681b8509d0a94b279c519c280d0bb57fcc494e4cc  PX patch history/B5 - sample end fade/test_b5_fade_prototype.py
 799b685929911c6d2431fde167752f42daa620b1544f6df204427de9bad3954e  PX patch history/B6 - center moves window/README.md
 3937e4335a450f85b664a21f47bfaffc7e6b6d9bd49ef560dc26249370ea707f  PX patch history/B6 - center moves window/SHA256SUMS
@@ -587,8 +587,8 @@ acb3c284fb9ed1e785923ec55213561289ac3f545a7def3730afd419ac49c460  PX patch histo
 bba9936432358d61c5a2530a54c4b98106afe60344fe6fdf6b00a9f3efbdd7e8  PX patch history/B6 - center moves window/b7_candidate_work/build_validate_b7.py
 463e31dc074033cd5e506c947a39cab70283aef5da3c31d25daad1dda2d319f5  PX patch history/B6 - center moves window/b7_candidate_work/validate_version_gates.py
 a00bf4624a71df5fb528b138eb9f29a7d084f57aa367f800a82689f39af844c7  PX patch history/B6 - center moves window/b7_combined_instruction_model.py
-b5250aa1885dd710c49cd4629d77c0088d5c5cc5c10bfaa778d1de4307994755  PX patch history/B7 - center can be pushed/README.md
-7c970b03141fe0b09a662a1caf2b9d7018180ca5b0bfc3fff3080472b914f951  PX patch history/B7 - center can be pushed/SHA256SUMS
+fda85039dc88df14ba33f7a75f3c95b1959edc94fc06bcfbe1d9c08097f2e5a6  PX patch history/B7 - center can be pushed/README.md
+8cfec323721ea3c7add01e4bf39f0d8bc658617492574d75ec2187250af1961f  PX patch history/B7 - center can be pushed/SHA256SUMS
 59edb64dd4a88088670d2efcc8270ad69c1030fbeb5feec393c463f297b9337e  PX patch history/B7 - center can be pushed/abandoned_squash_limit/revision_00.md
 37c2b2c125231cdfa38e1c5778b1519dce0f90513e0ccad4a8ca59fc8be94e70  PX patch history/B7 - center can be pushed/abandoned_squash_limit/revision_01.md
 758ffa0f2e03ec28f306d55329351855e0e17b95e1c22cc202194e27dd1df417  PX patch history/B7 - center can be pushed/abandoned_squash_limit/revision_02.md
@@ -629,7 +629,7 @@ e6e9c35a28ff6e58d85442c86d225e2fd91f439304f24b7a7d2181043c36aac3  PX patch histo
 d78aa5a5b59c45098b7ec932818f03c92e9d609f53fd46b5db1ec75f024809ae  PX patch history/B7 - center can be pushed/b5_candidate_work/b5_policy.generated.h
 57c6fa7dfa8e7f1887ecede70088526c0a6fff952139978bd7030a88283ef8fd  PX patch history/B7 - center can be pushed/b5_candidate_work/b5_wrapper_fixture.s
 aba911ecf22708336dc110d671d031fce6f01b9cd963d0297ccb8f817f4ca0e5  PX patch history/B7 - center can be pushed/b5_candidate_work/build_b5_candidate.py
-6f7a602dfd2d8d6b24dff9d96af57251c25e118f7950c80e2ac9e77942f02606  PX patch history/B7 - center can be pushed/b5_candidate_work/emit_b5_candidate.py
+77814cbc40ed817a36e1ffcc3e88b1a49ec3cfe1ffdf3c75d9cc6ab3ab4624dd  PX patch history/B7 - center can be pushed/b5_candidate_work/emit_b5_candidate.py
 fc4308d199111b97108ffcb591d07fe284708f7678086f396af32ad19cc4f31e  PX patch history/B7 - center can be pushed/b5_candidate_work/emit_b5_objects.py
 58fca9d8c933b797927af2d7118765bc2800b27a3d06ace3d523b9a3df429987  PX patch history/B7 - center can be pushed/b5_candidate_work/validate_b5_candidate.py
 5d4f319e7d54e596539b79d188af2c0688e542f414eb4fab339745fc9c7d56c3  PX patch history/B7 - center can be pushed/b5_elf_placement_check.py
@@ -653,14 +653,14 @@ ad398eac55a2cbba1c8703192002241cb7a0a8a4eb847c2901044976cb43510e  PX patch histo
 3c20e315f6ab9c61519215bc2251a7a000ab30da86995369d88b84fba4d0148d  PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/implementation_1_12/package_results.json
 8e78e395c4935f27d5df60b5aec6d7c17d253cac5b9c71586ac101344da284b4  PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/implementation_1_12/validate.py
 e1a2daafac7553ec2654d457ece1b8c9c0ac4006c81f752de5ed586409278119  PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/implementation_1_12/validation.json
-93556887d8213f3e7009861c9e80b4ab442f796db5eae419ab4d52dd5ad3a1c9  PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/measure_design.py
+404ba06e1f0217143f5f916c7648172006c53a852cc543a7f1ae353893e16468  PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/measure_design.py
 6a005ad588284e6a6a189f597c5497e3b13b038e96943fd09ed752c8311dce56  PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/measurement.json
 30aabad3f5128fc46c68627303edfab560f2934d52ea2822146a9f2c21003c7f  PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/probe_getter.s
 5459366b93e3417b3d084f1a9556d4cea78831e852672281e917887db1bb3755  PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/probe_tests.c
 b541c7668e5e0333d9c54446825332279f78f29c50c8cd9d6af91d1ea68560d6  PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/validate_design.py
-66c7f5296e0d1591272d6a4cb16bfe1d8cea30a24bf025c84f35e4d0f36f2389  PX patch history/B7 - center can be pushed/patch_b4_minimal_qnx.py
-d9858966f7028f780fdb45872447241830742814ad143d7052ddeb6f666b7166  PX patch history/B8 - end escape/README.md
-494a20bd3e3eb53f376e92bc8f9d2d36072ad8da00b379ecf4a3ebf67f5fa404  PX patch history/B8 - end escape/SHA256SUMS
+0ed221d7d078d474460c3f00ac2a176281411c3bfa064287f3ccb2bfb4a28f67  PX patch history/B7 - center can be pushed/qnx_elf.py
+821c9490257e2ca0f17e45bca0eaec48c770055c82b299b038278acc8b493304  PX patch history/B8 - end escape/README.md
+5d4484f9e91e4fb5e3f410f018af0334049c1222e3354dbf72bd3250e2fd4764  PX patch history/B8 - end escape/SHA256SUMS
 4efa88a28e87e193e554804e0045f8aca6231b1e11c55c2a3734ccffacd1870a  PX patch history/B8 - end escape/b5_candidate_work/b5_adapters.c
 687ab89294069b1d457d3a5cb445d8a0ab4a7fd723be3ca621f124d9bf1ce5e2  PX patch history/B8 - end escape/b5_candidate_work/b5_candidate_manifest.json
 7ec526e68923de4aba60a01e39fa7ab38f93dbc524ec454e2c8d02d5c37dc356  PX patch history/B8 - end escape/b5_candidate_work/b5_candidate_validation.json
@@ -673,7 +673,7 @@ e6e9c35a28ff6e58d85442c86d225e2fd91f439304f24b7a7d2181043c36aac3  PX patch histo
 d78aa5a5b59c45098b7ec932818f03c92e9d609f53fd46b5db1ec75f024809ae  PX patch history/B8 - end escape/b5_candidate_work/b5_policy.generated.h
 57c6fa7dfa8e7f1887ecede70088526c0a6fff952139978bd7030a88283ef8fd  PX patch history/B8 - end escape/b5_candidate_work/b5_wrapper_fixture.s
 aba911ecf22708336dc110d671d031fce6f01b9cd963d0297ccb8f817f4ca0e5  PX patch history/B8 - end escape/b5_candidate_work/build_b5_candidate.py
-6f7a602dfd2d8d6b24dff9d96af57251c25e118f7950c80e2ac9e77942f02606  PX patch history/B8 - end escape/b5_candidate_work/emit_b5_candidate.py
+77814cbc40ed817a36e1ffcc3e88b1a49ec3cfe1ffdf3c75d9cc6ab3ab4624dd  PX patch history/B8 - end escape/b5_candidate_work/emit_b5_candidate.py
 fc4308d199111b97108ffcb591d07fe284708f7678086f396af32ad19cc4f31e  PX patch history/B8 - end escape/b5_candidate_work/emit_b5_objects.py
 58fca9d8c933b797927af2d7118765bc2800b27a3d06ace3d523b9a3df429987  PX patch history/B8 - end escape/b5_candidate_work/validate_b5_candidate.py
 5d4f319e7d54e596539b79d188af2c0688e542f414eb4fab339745fc9c7d56c3  PX patch history/B8 - end escape/b5_elf_placement_check.py
@@ -701,7 +701,7 @@ e740198c3ab52cc69e8c2d91812c3a0ab7c95e281154ecb6ec70351d86252d45  PX patch histo
 7e4d3e083025319372102d0dbd9b11fbabc0b21f8922702995c41d4a4ef16acf  PX patch history/B8 - end escape/b8_candidate_work/validate_b8_candidate.py
 bb4afc839bf946468c5f3c67b9c6d0aec2ef9ec5cf9878000aa734b501979e38  PX patch history/B8 - end escape/b8_candidate_work/validate_b8_host.py
 175b8b968e3a37c4edff8146909ed47abda6bafed28e3280713fa697fa0de4d4  PX patch history/B8 - end escape/b8_candidate_work/verify_b8_package.py
-66c7f5296e0d1591272d6a4cb16bfe1d8cea30a24bf025c84f35e4d0f36f2389  PX patch history/B8 - end escape/patch_b4_minimal_qnx.py
+0ed221d7d078d474460c3f00ac2a176281411c3bfa064287f3ccb2bfb4a28f67  PX patch history/B8 - end escape/qnx_elf.py
 85c58ad07a8e7b988d834ec6e96a8335c89deabc22397026176a20bff022f51a  PX patch history/B9 - slow preset browsing/README.md
 e2a1c92e5bcab8a23314b87a15e140ab9a157298ef6340a2fa22072d20934ffb  PX patch history/B9 - slow preset browsing/SHA256SUMS
 463e31dc074033cd5e506c947a39cab70283aef5da3c31d25daad1dda2d319f5  PX patch history/B9 - slow preset browsing/b7_candidate_work/validate_version_gates.py
@@ -748,14 +748,14 @@ ea572fbb5eb280efdd294c50bbb562712123248000a600819d8102d63fe43126  SSD expansion/
 19b86dde28afddd735ba5b20ed58e16e25dca8cbaf4873a719c04045b7d6dd95  SSD expansion/maintenance image build tool/bootloader.S
 5f4fb74026c4a3f18718853f31a7588417e6b6b3a7c88132bf79f564e39e32b0  SSD expansion/maintenance image build tool/build_maintenance.py
 7ea9efe4a804706917bc6a93bf06c80b066cbcfb61eb12485ba39cc1fcdceac8  SSD expansion/maintenance image build tool/validation.json
-50d2f35a4d6e0bad496b80c14503d359cb6a25a80293f9f9c86c426baaabbe8b  firmware_builder/README.md
+d0e5e58f640f1b314b636c524ee8531cdee53c87120969ddbb7acd64e172779d  firmware_builder/README.md
 5ab3e0cc662bb9e5448263253b72fb47d28adc94af2ae2ba23ba6c39db95c824  firmware_builder/VERIFICATION.json
-31cc3e9158370353566607856fa9deaacc153d195b169ff071af47fa01daa0a4  firmware_builder/build_b1.py
+3f617421c24f25012c0d1bd2749848e947adc4bfcbba352a0139a242acabcc07  firmware_builder/build_b1.py
 99b6d4b3e8a45c39dac976c16d8b79e2136548ce2babd50ebb82b2988f93db51  firmware_builder/build_b3_merge.py
 a397d46850ca3c089b546dfe60c2ce186fb4349e5f80c92e78fe3768e724ebaa  firmware_builder/build_b5.py
 302ed0710053858748ec4e56aca8a2565b192baf9ae6c6884305a043f430ac78  firmware_builder/build_b8.py
 faa272211ecbe2109a2e09f81ba995c1a1f87719d37b364b9b69b3a1de844866  firmware_builder/container.py
-b67f48905456902bcd5d966a5c7bc1d110b04fdfe95dadd7cc5146add6753e46  firmware_builder/source_pipeline.py
+f4f39b7f0ccc0501abee0ed52cdef6db88845f401c85a5747ff95737aa3491c0  firmware_builder/source_pipeline.py
 907e9a1c524c95c6f478c34e3450f880d03191e4fc240985d7b7a5849f119e90  firmware_builder/sources/lfo_endpoint_investigation/build_fix.py
 abcc2e0b964ed6664ec4a898689adbd7b7078e85147c39684e6a5bea7cc2870c  firmware_builder/sources/lfo_endpoint_investigation/reproduce.c
 d28c076f25bc06edeb10366ba46dc527a81bb5f9d7d936fabbdc8904312e40fb  patch_prophet_x.py

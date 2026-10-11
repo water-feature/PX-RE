@@ -235,4 +235,4 @@ Copies of B5 sources and reports support inherited implementation/regression inv
 | [b7_lfo_center_investigation/probe_getter.s](b7_lfo_center_investigation/probe_getter.s) | Helper/shim assembly or generated target layout. |
 | [b7_lfo_center_investigation/probe_tests.c](b7_lfo_center_investigation/probe_tests.c) | Test/stock-operation fixture. |
 | [b7_lfo_center_investigation/validate_design.py](b7_lfo_center_investigation/validate_design.py) | Validation/test or ownership audit tool; uses the private inputs described in source. |
-| [patch_b4_minimal_qnx.py](patch_b4_minimal_qnx.py) | Inherited ELF parser imported by object/build utilities; its B4 entry point is not part of this feature. |
+| [qnx_elf.py](qnx_elf.py) | Shared ELF parser used by object/build utilities. |
