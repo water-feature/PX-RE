@@ -52,7 +52,7 @@ Quote paths containing spaces. For argument help, run `python3 patch_prophet_x.p
 
 ### Build from source if you do not trust the patcher
 
-You can **review and rebuild the update from the feature sources without running `patch_prophet_x.py`**. Start with the [source build guide](firmware_builder/README.md), inspect the [orchestrator](firmware_builder/source_pipeline.py) and the branch implementations it invokes, then run it directly with a new private working directory:
+You can **review and rebuild the update from the feature sources without running `patch_prophet_x.py`**. Start with the [source build guide](firmware_builder/README.md), inspect the [orchestrator](firmware_builder/source_pipeline.py) and the feature implementations it invokes, then run it directly with a new private working directory:
 
 ```sh
 python3 firmware_builder/source_pipeline.py /path/to/private-workspace/PxUpdate_V2.2.2.0.0.bin -o /path/to/private-workspace/PxUpdate_reviewed.bin --work-dir /path/to/private-workspace/source-build
@@ -68,7 +68,7 @@ The patcher contains no embedded whole-image delta or final-firmware payload. It
 
 The build first proves a byte-identical factory null repack. Retained stage validators check original bytes, owned regions, allocation bounds, version gates and saved-image behavior. The final package is re-extracted and checked for checksums, byte-identical serialization and preservation of the FPGA record. The output must have the exact final length and SHA-256 below before it is saved.
 
-The source build reproduced the accepted final package byte for byte. This connects the generated file to the [documented build history and hardware observations](PX%20patch%20history/BUILD_VERSION_HISTORY.md). Some archived offline reports still describe hardware testing as pending at the time they were written; the branch guides record subsequent observations. See the [source build guide](firmware_builder/README.md) for archive compatibility adjustments and the checks that require historical evidence.
+The source build reproduced the accepted final package byte for byte. This connects the generated file to the [documented build history and hardware observations](PX%20patch%20history/BUILD_VERSION_HISTORY.md). Some archived offline reports still describe hardware testing as pending at the time they were written; the feature guides record subsequent observations. See the [source build guide](firmware_builder/README.md) for archive compatibility adjustments and the checks that require historical evidence.
 
 The [source rebuild receipt](firmware_builder/VERIFICATION.json) records the successful verification. [SHA256SUMS](SHA256SUMS) covers the public source bundle.
 

@@ -1,14 +1,14 @@
 # Firmware build and version history
 
-The implemented chain can be traced from factory **2.2.2.0.0** to final **2.2.2.2.2**. Branch IDs such as B1 and B16 identify investigations and their technical evidence, not release order or a continuous sequence. The tables distinguish actual ancestors from comparison builds, rejected experiments and reserved numbers.
+The implemented chain can be traced from factory **2.2.2.0.0** to final **2.2.2.2.2**. Investigation IDs such as B1 and B16 identify investigations and their technical evidence, not release order or a continuous sequence. The tables distinguish actual ancestors from comparison builds, rejected experiments and reserved numbers.
 
 This is a build/provenance order, not a timestamped record of every development action. In particular, the early B1/B3 artifacts were renumbered. The parent column describes the actual input or merge, rather than assuming every numerical predecessor was used.
 
 ## Path to the final build
 
-All version numbers below have the full `2.2.2` prefix. Each branch link leads to its implementation, hardware status and packaging notes. Most builds inherit all preceding features on their stated parent line; `.0.3` is the parallel B3 line merged at `.0.7`.
+All version numbers below have the full `2.2.2` prefix. Each feature link leads to its implementation, hardware status and packaging notes. Most builds inherit all preceding features on their stated parent line; `.0.3` is the parallel B3 line merged at `.0.7`.
 
-| Order | Actual parent/input | Output version | Feature branch | Change / disposition |
+| Order | Actual parent/input | Output version | Feature | Change / disposition |
 |---|---|---|---|---|
 | 1 | — | 2.2.2.0.0 | Factory | Factory firmware; root of the implemented chain. |
 | 2 | 2.2.2.0.0 | 2.2.2.0.2 | [B1](B1%20-%20voice%20steal%20fix/README.md) | Voice steal/retrigger correction; retained B1 reference. Earlier .0.1 naming is explained below. |
@@ -36,7 +36,7 @@ All version numbers below have the full `2.2.2` prefix. Each branch link leads t
 
 These entries explain the apparent gaps. They are not extra required steps on the final path.
 
-| Version / artifact | Branch | Parent / relationship | Disposition |
+| Version / artifact | Feature / investigation | Parent / relationship | Disposition |
 |---|---|---|---|
 | `.0.1` dummy control, SHA `854f02bd…` | Installation control | Stock audio logic with inert padding marker and revised updater gate | Stock-audio installation control; distinct from voice-fade `.0.1` and combined `.0.1`. |
 | `.0.1` voice-fade, SHA `f6b5205f…` | B1 | Earlier voice correction reference | Earlier voice correction baseline; `.0.2` is the retained B1 reference. |
@@ -61,7 +61,7 @@ These entries explain the apparent gaps. They are not extra required steps on th
 
 ## Packaging and verification
 
-The branch guides document their implementation sources, exact input versions and incremental packaging commands. The B3 [`.0.7` packager](B3%20-%20sysex%20channel%20fix/build/combined_0_7/build_combined.py) produces a byte-for-byte match from `.0.6` and `.0.3`; its [verification result](B3%20-%20sysex%20channel%20fix/build/combined_0_7/recovery_verification.json) identifies the inputs and output. The [root patcher](../patch_prophet_x.py) now rebuilds the retained chain from the exact factory `.0.0` update using the feature sources, then verifies the final `.2.2` package. No whole-image delta is embedded. For source review and rebuilding without the patcher, see the [source build guide](../firmware_builder/README.md); input and output hashes are documented in the [main README](../README.md).
+The feature guides document their implementation sources, exact input versions and incremental packaging commands. The B3 [`.0.7` packager](B3%20-%20sysex%20channel%20fix/build/combined_0_7/build_combined.py) produces a byte-for-byte match from `.0.6` and `.0.3`; its [verification result](B3%20-%20sysex%20channel%20fix/build/combined_0_7/recovery_verification.json) identifies the inputs and output. The [root patcher](../patch_prophet_x.py) now rebuilds the retained chain from the exact factory `.0.0` update using the feature sources, then verifies the final `.2.2` package. No whole-image delta is embedded. For source review and rebuilding without the patcher, see the [source build guide](../firmware_builder/README.md); input and output hashes are documented in the [main README](../README.md).
 
 Use the full package filename and SHA-256 to identify a build. Application and PIC revisions can differ, displayed revisions may retain earlier values, and several experimental packages reuse version numbers. The `.1.9` application is part of the final ancestry even though `.1.11` supersedes its endpoint-fade behavior.
 
