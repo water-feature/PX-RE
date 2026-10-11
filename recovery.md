@@ -24,8 +24,6 @@ Do not copy boot sectors between arbitrary layouts or assume MIDI recovery can r
 
 ## SSD application recovery procedure
 
-**Verification status:** This procedure has no recorded successful end-to-end recovery on the synth. The application files were replaced successfully in the VM, but final repaired-file hashes and a successful hardware boot were not recorded in the retained B13 evidence.
-
 **Other operating systems:** The procedure below documents the tested Windows/QEMU setup. The same QNX maintenance image should work in QEMU on Linux or macOS, with changes to host paths, command quoting, disk access permissions and physical SSD identification/unmounting. The commands inside QNX should remain the same if the emulated IDE controllers and disk order are preserved. Other VM applications may require different QNX disk drivers. Recovery on other hosts has not been verified.
 
 This records the Windows/QEMU procedure used after the failed B13 flash. The failed flash left the synth hanging after the boot bar. We restored the SSD-resident application, not its boot partition: the boot image was verified unchanged.
