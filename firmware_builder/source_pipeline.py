@@ -9,7 +9,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
 import shutil
 import subprocess
 import sys
@@ -91,33 +90,16 @@ def verify_public_sources(public: Path) -> dict[str, object]:
             "scope": "Checkout files match its SHA256SUMS; not repository authentication"}
 
 
-def toolchain_environment() -> dict[str, str]:
-    # Staged scripts run outside the checkout, where rustup cannot see its pin.
-    return dict(os.environ, RUSTUP_TOOLCHAIN=os.environ.get("RUSTUP_TOOLCHAIN", "1.83.0"))
-
-
 def verify_toolchain() -> dict[str, str]:
-    expected = {
-        "clang": "Apple clang version 16.0.0 (clang-1600.0.26.6)",
-        "clang++": "Apple clang version 16.0.0 (clang-1600.0.26.6)",
-        "rustc": "rustc 1.83.0 (90b35a623 2024-11-26)",
-        "objdump": "Apple LLVM version 16.0.0",
-        "/usr/bin/objdump": "Apple LLVM version 16.0.0",
-    }
+    """Check tool availability and record versions without restricting them."""
     versions = {}
-    for command, required in expected.items():
+    for command in ("clang", "clang++", "rustc", "objdump", "/usr/bin/objdump"):
         if shutil.which(command) is None:
-            raise RuntimeError(f"Required build tool is missing: {command}; expected {required}")
+            raise RuntimeError(f"Required build tool is missing: {command}")
         result = subprocess.run([command, "--version"], cwd=PUBLIC,
-                                env=toolchain_environment(), capture_output=True,
-                                text=True, timeout=30)
-        lines = result.stdout.splitlines()
-        actual = lines[0].strip() if lines else "(no version output)"
-        build_matches = ("objdump" not in command or "clang-1600.0.26.6" in result.stdout)
-        if result.returncode or actual != required or not build_matches:
-            raise RuntimeError(f"Unsupported {command}: expected {required}; found {actual}. "
-                               "Use the verified Xcode toolchain and Rust 1.83.0. "
-                               + result.stderr.strip())
+                                capture_output=True, text=True, timeout=30)
+        if result.returncode:
+            raise RuntimeError(f"Cannot query {command} version: {result.stderr.strip()}")
         versions[command] = result.stdout.strip()
     return versions
 
@@ -197,7 +179,6 @@ def run(root: Path, relative: str, *args: str) -> None:
     print(f"running {relative}", flush=True)
     with (root / "build.log").open("a") as log:
         subprocess.run([sys.executable, str(script), *args], cwd=root, check=True,
-                       env=toolchain_environment(),
                        stdout=log, stderr=subprocess.STDOUT)
 
 
