@@ -17,16 +17,16 @@ from b5_elf_placement_check import ELF_HASH,ExactElf,decode_index
 from patch_b4_minimal_qnx import Elf
 
 HOOKS=[
- ('forward',0x405bd,'807c242000440fb65c243c',0x405c8,176),
- ('reverse',0x40474,'807c242000440fb65c243c',0x4047f,176),
- ('geometry',0x3fbe9,'83faff0f844e100000',0x3fbf2,176),
- ('prepare',0x372e5,'488b07ff5068',0x372eb,144),
- ('note_on',0x36448,'488b7d30488b07',0x3644f,64),
- ('reset',0x3c8f0,'41544531e455',0x3c8f6,8),
- ('return',0x37496,'488b1d0b8b2600',0x3749d,144),
+ ('forward',0x405bd,{'size': 11, 'sha256': 'e29a896de7c775fd1cdde012acce7fbbe28e2bca4ea23530ecac1a85e36eb194'},0x405c8,176),
+ ('reverse',0x40474,{'size': 11, 'sha256': 'e29a896de7c775fd1cdde012acce7fbbe28e2bca4ea23530ecac1a85e36eb194'},0x4047f,176),
+ ('geometry',0x3fbe9,{'size': 9, 'sha256': 'f70bb3145cf1165ad717bcb1734d71dfa68108939486cfafb44095d0ca67dbd1'},0x3fbf2,176),
+ ('prepare',0x372e5,{'size': 6, 'sha256': '8363b53dbf73b2fd335ea443b3ca98f8ab9c434349c91623f00c749275b9ecfb'},0x372eb,144),
+ ('note_on',0x36448,{'size': 7, 'sha256': '0ae783f1fbea99e134aa4bdbf3f1422dce3c6be80cd27d065beba76d735ce542'},0x3644f,64),
+ ('reset',0x3c8f0,{'size': 6, 'sha256': 'd9483df69699427b7878676dfa5f99c39a3cc09362d3d12c8190c2ffe81eb72f'},0x3c8f6,8),
+ ('return',0x37496,{'size': 7, 'sha256': 'e42328b759e3f0e03f14bc73242ae8277379bfd7a79dc9a2cd1af195ff687511'},0x3749d,144),
 ]
 CALL_HOOKS=[('read',0x3cc81,0x3f840,64),('load',0x37363,0x2e2e0,144),('filter',0x37446,0x36b20,144)]
-ALLOCATIONS=[(0x3d010,'bf000c0000','bf004c0000'),(0x3d0fc,'bfb8010000','bfc0010000'),(0x3d11a,'bfb8010000','bfc0010000')]
+ALLOCATIONS=[(0x3d010,{'size': 5, 'sha256': '4a40c80e0b47bdcd618b73409ad8f90e8c06e68fcf3e8b60add9c836b7c5ecce'},'bf004c0000'),(0x3d0fc,{'size': 5, 'sha256': '3ded67fea01db5d404e0c2be7828acd045ea3954d983a86e5e1856283e802a3a'},'bfc0010000'),(0x3d11a,{'size': 5, 'sha256': '3ded67fea01db5d404e0c2be7828acd045ea3954d983a86e5e1856283e802a3a'},'bfc0010000')]
 VOLATILE=['rax','rcx','rdx','rsi','rdi','r8','r9','r10','r11']
 def sha(b): return hashlib.sha256(b).hexdigest()
 def shims():
@@ -79,7 +79,7 @@ def main():
     elf=ExactElf(base)
     guards=[]
     for name,site,old,cont,cfa in HOOKS:
-        expected=bytes.fromhex(old)
+        expected=guarded(elf.read,site,old)
         actual=elf.read(site,len(expected))
         guards.append({'name':name,'site':hex(site),'expected':old,'actual':actual.hex(),'matches':actual==expected,'continuation':hex(cont),'inherited_cfa':cfa})
     for name,site,target,cfa in CALL_HOOKS:
@@ -87,7 +87,7 @@ def main():
         expected=b'\xe8'+struct.pack('<i',target-site-5)
         guards.append({'name':name,'site':hex(site),'expected':expected.hex(),'actual':actual.hex(),'matches':actual==expected,'target':hex(target),'inherited_cfa':cfa})
     for site,old,new in ALLOCATIONS:
-        guards.append({'name':'owned allocation','site':hex(site),'expected':old,'actual':elf.read(site,5).hex(),'matches':elf.read(site,5)==bytes.fromhex(old),'proposed':new})
+        guards.append({'name':'owned allocation','site':hex(site),'expected':old,'actual':elf.read(site,5).hex(),'matches':elf.read(site,5)==guarded(elf.read,site,old),'proposed':new})
     if not all(g['matches'] for g in guards):
         (ROOT/'guard_failure.json').write_text(json.dumps(guards,indent=2)+'\n')
         raise ValueError('hook byte guard failed; saved actual bytes, do not change guards blindly')
@@ -127,4 +127,11 @@ def main():
               'blockers':blockers,'pending':['QNX loader/runtime','target CPU performance','acoustic validation']}
     (ROOT/'b5_partial_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     print(json.dumps({k:manifest[k] for k in ['status','partial_code_and_constants_bytes','partial_eh_frame_bytes','candidate_emitted','blockers']},indent=2))
+
+def guarded(read, address, guard):
+    data=read(address,guard['size'])
+    if len(data)!=guard['size'] or hashlib.sha256(data).hexdigest()!=guard['sha256']:
+        raise ValueError(f'Original-byte SHA-256 guard failed at {address:#x}')
+    return data
+
 if __name__=='__main__': main()

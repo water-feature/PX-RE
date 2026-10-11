@@ -18,7 +18,7 @@ spans=[
 phoff=struct.unpack_from('<Q',base,0x20)[0]; phentsz=struct.unpack_from('<H',base,0x36)[0]; phnum=struct.unpack_from('<H',base,0x38)[0]
 for i in range(phnum):
  o=phoff+i*phentsz
- if struct.unpack_from('<I',base,o)[0]==0x6474E550:
+ if hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',base,o)[0])).hexdigest()=='0fe51dced2745ee6eab34377ad3e64563eef82533a339cae1c75354d09fd1dd5':
   spans += [(o+32,o+40,'ph-filesz'),(o+40,o+48,'ph-memsz')]
 # section size fields 14/39/40
 shoff=struct.unpack_from('<Q',base,0x28)[0]; shentsz=struct.unpack_from('<H',base,0x3a)[0]
@@ -43,8 +43,8 @@ for field,target,name in [(0xf9266,0x75a0,'open'),(0xf9281,0x78c0,'read'),(0xf92
 # EH header exact preservation + append
 hb=0xfb000
 assert base[hb:hb+4]==cand[hb:hb+4]==bytes([1,0x1b,0x03,0x3b])
-assert struct.unpack_from('<I',base,hb+8)[0]==870
-assert struct.unpack_from('<I',cand,hb+8)[0]==871
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',base,hb+8)[0])).hexdigest()=='d5c4545138d26b9f7d7fdf5c5919513b6b8019ac59a45993505ac203abe8cff0'
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',cand,hb+8)[0])).hexdigest()=='6941a2fad6b5edcff624fe523ef771377d9a8da1647bccb3d02c45951cbe2141'
 assert base[hb+12:0xfcb3c]==cand[hb+12:0xfcb3c]
 pc,fd=struct.unpack_from('<ii',cand,0xfcb3c)
 assert hb+pc==0xf9240 and hb+fd==0xfa540
@@ -54,11 +54,11 @@ for i in range(n): pcs.append(hb+struct.unpack_from('<i',cand,hb+12+i*8)[0])
 assert all(pcs[i]<pcs[i+1] for i in range(n-1)) and pcs[-1]==0xf9240
 # helper FDE record: CIE len=0x14; FDE at +0x18 len=0x4c; pc-relative initial loc resolves to helper; range 0x1a0
 EH=0xfa528
-assert struct.unpack_from('<I',cand,EH)[0]==0x14
-assert struct.unpack_from('<I',cand,EH+0x18)[0]==0x4c
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',cand,EH)[0])).hexdigest()=='447e12701a0d03cf90a4ad7f02f1a045b35d284e26fe520440edb116d76bf700'
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',cand,EH+0x18)[0])).hexdigest()=='33149ff2dc4209e1a1ef29589fe8a3e5d59cb05f0d75531c5d4e17cf72eb6882'
 init_disp=struct.unpack_from('<i',cand,EH+0x20)[0]
 assert EH+0x20+init_disp==0xf9240
-assert struct.unpack_from('<I',cand,EH+0x24)[0]==0x186
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',cand,EH+0x24)[0])).hexdigest()=='7b777a855e98994332ec090e91bc1cdea0cac51f50572752f2f816b7640a517c'
 assert cand[EH+0x68:EH+0x6c]==b'\0'*4
 # mapping: helper/text/cfi/header all lie in existing RX PT_LOAD
 for addr in (0xf9240,0xf93c5,0xfa528,0xfa593,0xfb000,0xfcb43): assert addr < 0xfd000

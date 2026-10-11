@@ -43,10 +43,10 @@ code,rows,_=assemble((R/'b14_sample_acceleration_investigation/decoder_layout.tx
 put(B+0x7a298,code,'four-ID decoder',rows)
 code,rows,_=assemble(['andi t0,s1,0xfffe','li t1,4','beq t0,t1,full','li t1,18','beq t0,t1,full','nop','slt t0,s0,zero','sll t0,t0,1','j 0x9d07a4c0','nop'],B+0x7a440,{'full':B+0x7a244});put(B+0x7a440,code,'snapshot classifier',rows)
 code,rows,_=assemble(['j 0x9d07a4c8','addu s2,s0,zero'],B+0x7a244);put(B+0x7a244,code,'full snapshot continuation',rows)
-assert struct.unpack_from('<II',old,0x7a4b8)==(0x0200402a,0x00084040)
+assert hashlib.sha256(struct.pack('<II',*struct.unpack_from('<II',old,0x7a4b8))).hexdigest()=='001495b326e8d4e2fca1be3e02652b26239e9a436d6fb8c66d7c4361c28e9e54'
 code,rows,_=assemble(['j 0x9d07a440','nop'],B+0x7a4b8);put(B+0x7a4b8,code,'replay sign hook',rows)
 for off in (0x1394,0x13a0):
- assert struct.unpack_from('<I',old,off)[0]==0x24840009
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',old,off)[0])).hexdigest()=='983caaf2fa10cbe31a126d2958e8ea3f402927d4fcfc4a2b77b6e1cef8e90952'
  put(B+off,struct.pack('<I',0x2484000a),'revision1.10')
 allowed={i for x in writes for i in range(x['offset'],x['offset']+x['bytes'])}
 assert len(new)==len(old) and all(a==b or i in allowed for i,(a,b) in enumerate(zip(old,new)))

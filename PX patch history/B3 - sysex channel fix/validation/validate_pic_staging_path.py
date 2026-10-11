@@ -64,7 +64,7 @@ def run(corrupt_indices=(),abort=False):
    e.mem_write(0x8634+4*tail,pending.popleft())
    e.mem_write(0x29c,struct.pack('<H',(tail+1)&8191))
  def lwx(e,a,size,_):
-  assert struct.unpack_from('<I',pic,0x4439c)[0]==0x7e22100a
+  assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x4439c)[0])).hexdigest()=='cb7a369df05f93663805e26a654c601be378fd2dace0d6ca478a827875b4964d'
   addr=(e.reg_read(UC_MIPS_REG_S1)+e.reg_read(UC_MIPS_REG_V0))&0x1fffffff
   e.reg_write(UC_MIPS_REG_V0,struct.unpack('<I',e.mem_read(addr,4))[0]);e.reg_write(UC_MIPS_REG_PC,a+4)
  def erase(e,a,size,_):

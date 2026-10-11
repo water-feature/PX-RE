@@ -23,7 +23,7 @@ for typ,name,rev in [(1,'qnx',[2,2,2,1,3]),(2,'fpga',[0,0,0,1,0]),(3,'pic',[2,2,
 assert pos==len(data)-1
 qnx=(ROOT/'reextracted_qnx.elf').read_bytes()
 assert qnx[0x250e2]==1 and qnx[0x250ef]==3
-assert struct.unpack_from('<I',qnx,0x1f4e3)[0]==0x40139213
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',qnx,0x1f4e3)[0])).hexdigest()=='b1ae5aaffaea01df2e07e8e6425951612a8dbc42ecb887c8238e2dff52979fb0'
 assert qnx[0x3527c]==0xe8 and 0x35281+struct.unpack_from('<i',qnx,0x3527d)[0]==0xf9240
 receipt=json.loads((ROOT/'package_build_manifest.json').read_text());allowed=receipt['allowed_qnx_difference_spans']
 original=(ROOT/'baseline_qnx.elf').read_bytes()

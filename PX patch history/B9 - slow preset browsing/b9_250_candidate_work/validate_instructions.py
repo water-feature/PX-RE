@@ -67,7 +67,7 @@ for site,mode,count,gate,key in itertools.product(callers,(0,1,2),(-1,0,1,37,500
  a,b=CPU(old,gate),CPU(new,gate);slot=int(mode==1)
  for m in (a,b):m.write(GP-0x7c84+slot*4,count,4);m.write(GP-0x7c84+(1-slot)*4,81,4)
  a.call(site,*key,mode);b.call(site,*key,mode)
- active=gate or struct.unpack_from('<I',old,site-BASE+4)[0]==0x24070001
+ active=gate or hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',old,site-BASE+4)[0])).hexdigest()=='c649fcc60d70c4248e94d320e3603d8b89e77ab47051795f9cbc4e7c5a005576'
  panel=site+8 in PANEL
  expected=(count if count>0 else 250) if panel and active else a.count(slot)
  assert b.count(slot)==expected and b.count(1-slot)==a.count(1-slot),(hex(site),mode,count,gate,key,b.count(slot),expected)

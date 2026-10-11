@@ -1172,134 +1172,153 @@
       "label": "JMP forward",
       "offset": 263613,
       "size": 11,
-      "old": "807c242000440fb65c243c",
-      "new": "e9de1d0b00909090909090"
+      "new": "e9de1d0b00909090909090",
+      "old_sha256": "e29a896de7c775fd1cdde012acce7fbbe28e2bca4ea23530ecac1a85e36eb194",
+      "old_size": 11
     },
     {
       "label": "JMP reverse",
       "offset": 263284,
       "size": 11,
-      "old": "807c242000440fb65c243c",
-      "new": "e997200b00909090909090"
+      "new": "e997200b00909090909090",
+      "old_sha256": "e29a896de7c775fd1cdde012acce7fbbe28e2bca4ea23530ecac1a85e36eb194",
+      "old_size": 11
     },
     {
       "label": "JMP geometry",
       "offset": 261097,
       "size": 9,
-      "old": "83faff0f844e100000",
-      "new": "e9922a0b0090909090"
+      "new": "e9922a0b0090909090",
+      "old_sha256": "f70bb3145cf1165ad717bcb1734d71dfa68108939486cfafb44095d0ca67dbd1",
+      "old_size": 9
     },
     {
       "label": "JMP prepare",
       "offset": 226021,
       "size": 6,
-      "old": "488b07ff5068",
-      "new": "e9f6b40b0090"
+      "new": "e9f6b40b0090",
+      "old_sha256": "8363b53dbf73b2fd335ea443b3ca98f8ab9c434349c91623f00c749275b9ecfb",
+      "old_size": 6
     },
     {
       "label": "JMP note_on",
       "offset": 222280,
       "size": 7,
-      "old": "488b7d30488b07",
-      "new": "e9f3c40b009090"
+      "new": "e9f3c40b009090",
+      "old_sha256": "0ae783f1fbea99e134aa4bdbf3f1422dce3c6be80cd27d065beba76d735ce542",
+      "old_size": 7
     },
     {
       "label": "JMP reset",
       "offset": 248048,
       "size": 6,
-      "old": "41544531e455",
-      "new": "e9ab610b0090"
+      "new": "e9ab610b0090",
+      "old_sha256": "d9483df69699427b7878676dfa5f99c39a3cc09362d3d12c8190c2ffe81eb72f",
+      "old_size": 6
     },
     {
       "label": "JMP return",
       "offset": 226454,
       "size": 7,
-      "old": "488b1d0b8b2600",
-      "new": "e975b70b009090"
+      "new": "e975b70b009090",
+      "old_sha256": "e42328b759e3f0e03f14bc73242ae8277379bfd7a79dc9a2cd1af195ff687511",
+      "old_size": 7
     },
     {
       "label": "JMP eof",
       "offset": 262240,
       "size": 7,
-      "old": "488b04244885c0",
-      "new": "e90b2d0b009090"
+      "new": "e90b2d0b009090",
+      "old_sha256": "083d481d167567303eb1b342a5b0f715280710ac77d53a5aaec8849fea711d77",
+      "old_size": 7
     },
     {
       "label": "CALL read",
       "offset": 248961,
       "size": 5,
-      "old": "e8ba2b0000",
-      "new": "e84a620b00"
+      "new": "e84a620b00",
+      "old_sha256": "5688dcf6b3b269f4aa37e5aea604bb85e86ae85effc087f227397dd7c6d54dd4",
+      "old_size": 5
     },
     {
       "label": "CALL load",
       "offset": 226147,
       "size": 5,
-      "old": "e8786fffff",
-      "new": "e8b8be0b00"
+      "new": "e8b8be0b00",
+      "old_sha256": "ebbf16fa7c0ceaadbf982a2982b1273b934e340f8c778dbe8a1997bdb24ffd81",
+      "old_size": 5
     },
     {
       "label": "CALL filter",
       "offset": 226374,
       "size": 5,
-      "old": "e8d5f6ffff",
-      "new": "e825c10b00"
+      "new": "e825c10b00",
+      "old_sha256": "4f7afbe3236800d6d02096aee3f95ac0384c28f696dd6dc317b8d58f3f3b5e7e",
+      "old_size": 5
     },
     {
       "label": "CALL publish",
       "offset": 249193,
       "size": 5,
-      "old": "e8824a0000",
-      "new": "e8526b0b00"
+      "new": "e8526b0b00",
+      "old_sha256": "e4a795d290371c8b0d414b283aa7bbcdf56001cd4d95563a4296de9275b5e924",
+      "old_size": 5
     },
     {
       "label": "owned allocation 0x3d010",
       "offset": 249872,
       "size": 5,
-      "old": "bf000c0000",
-      "new": "bf004c0000"
+      "new": "bf004c0000",
+      "old_sha256": "4a40c80e0b47bdcd618b73409ad8f90e8c06e68fcf3e8b60add9c836b7c5ecce",
+      "old_size": 5
     },
     {
       "label": "owned allocation 0x3d0fc",
       "offset": 250108,
       "size": 5,
-      "old": "bfb8010000",
-      "new": "bfc0010000"
+      "new": "bfc0010000",
+      "old_sha256": "3ded67fea01db5d404e0c2be7828acd045ea3954d983a86e5e1856283e802a3a",
+      "old_size": 5
     },
     {
       "label": "owned allocation 0x3d11a",
       "offset": 250138,
       "size": 5,
-      "old": "bfb8010000",
-      "new": "bfc0010000"
+      "new": "bfc0010000",
+      "old_sha256": "3ded67fea01db5d404e0c2be7828acd045ea3954d983a86e5e1856283e802a3a",
+      "old_size": 5
     },
     {
       "label": "ELF e_shoff",
       "offset": 40,
       "size": 8,
-      "old": "58040f0000000000",
-      "new": "70710f0000000000"
+      "new": "70710f0000000000",
+      "old_sha256": "9b58cf1d561d66d1dc38721544008c59041002b9e85d75ef819fee6796274b13",
+      "old_size": 8
     },
     {
       "label": "ELF e_shnum",
       "offset": 60,
       "size": 2,
-      "old": "2500",
-      "new": "2700"
+      "new": "2700",
+      "old_sha256": "bbb3afa31af1adf2deb2cd3774f62df5807acf44963fc296e62de13b00380a6b",
+      "old_size": 2
     },
     {
       "label": "RX filesz/memsz",
       "offset": 208,
       "size": 16,
-      "old": "80d409000000000080d4090000000000",
-      "new": "00700f000000000000700f0000000000"
+      "new": "00700f000000000000700f0000000000",
+      "old_sha256": "05c3e25845d66c13772bc48192c3a6c6955d276df72c9cc567b73ce9492c1c17",
+      "old_size": 16
     },
     {
       "label": "PT_GNU_EH_FRAME location/size",
       "offset": 408,
       "size": 40,
-      "old": "901509000000000090150900000000009015090000000000441a000000000000441a000000000000",
-      "new": "00500f000000000000500f000000000000500f0000000000041b000000000000041b000000000000"
+      "new": "00500f000000000000500f000000000000500f0000000000041b000000000000041b000000000000",
+      "old_sha256": "a89c587338272cf78f3ca4be87221ff893e251781e45ba9aeb00cecfd0e588f8",
+      "old_size": 40
     }
   ],
   "original_index_count": 839,

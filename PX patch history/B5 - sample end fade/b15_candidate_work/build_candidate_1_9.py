@@ -15,7 +15,7 @@ def main():
  assert sha(baseline[0][1])==evidence['input_sha256']
  pic=bytearray(baseline[2][1]);app=bytearray(fixed)
  for off in (0x1394,0x13a0):
-  assert struct.unpack_from('<I',pic,off)[0]==0x24840008
+  assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='2f0dba6b3a9cfe043aa66c790e12ae85e3d1545e814c2a4f394594cedbd4a182'
   struct.pack_into('<I',pic,off,0x24840009)
  assert app[0x1f4e3]==0x18 and app[0x250ef]==8
  app[0x1f4e3],app[0x250ef]=0x19,9
@@ -49,7 +49,7 @@ def main():
   c=m.CPU(pic);c.run(m.BASE+site,{target_pc});assert c.g('a0')==0x402a0009 and c.g('ra')==m.BASE+site+8
  for off in (0x258b4,0x51bc4):
   c=m.CPU(pic);c.s('a0',0x40290000);c.fetch_simple(m.BASE+off);assert c.g('a0')==0x40292221
- assert struct.unpack_from('<I',app,0x1f4e3)[0]==0x40139219
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',app,0x1f4e3)[0])).hexdigest()=='d211547c397a1f8f4200c32409ff2468aead39e533b0af944f1863e33034836c'
  source=(R/'b7_candidate_work/validate_version_gates.py').read_text();ns={'app':app,'pic':pic,'struct':struct}
  exec(source[source.index('def gate('):source.index('\napp_cases=')],ns);gate=ns['gate'];cases=0
  for incoming in (list(REV),[2,2,2,1,8],[2,2,2,1,7]):

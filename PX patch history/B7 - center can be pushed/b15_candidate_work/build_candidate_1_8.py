@@ -81,7 +81,7 @@ def main():
     assert sha(qnx) == json.loads((O/'absolute_qnx_integration_results.json').read_text())['candidate_sha256']
     pic, app = bytearray(fitted), bytearray(qnx)
     for off in (0x1394,0x13a0):
-        assert struct.unpack_from('<I',pic,off)[0] == 0x24840007
+        assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='af1ad5f7ab9d96ce85f26b3de2e6a0b6dcc66054c2c06e0ef734156379b76468'
         struct.pack_into('<I',pic,off,0x24840008)
     assert app[0x1f4e3] == 0x17 and app[0x250ef] == 7
     app[0x1f4e3], app[0x250ef] = 0x18, 8
@@ -125,7 +125,7 @@ def main():
     for off in (0x258b4,0x51bc4):
         c=m.CPU(pic);c.s('a0',0x40290000);c.fetch_simple(m.BASE+off)
         assert c.g('a0')==0x40292221
-    assert struct.unpack_from('<I',app,0x1f4e3)[0]==0x40139218
+    assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',app,0x1f4e3)[0])).hexdigest()=='8c17100e1576a73618b83d9b06a4f40fa59805a9fab3f9b6bbeb88a2543d06e8'
     source=(R/'b7_candidate_work/validate_version_gates.py').read_text()
     ns={'app':app,'pic':pic,'struct':struct}
     exec(source[source.index('def gate('):source.index('\napp_cases=')],ns)

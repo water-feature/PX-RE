@@ -66,11 +66,11 @@ sites = [
     (0x16353, 5, 'w_cache_beg', 0x34b90),   # CACHE_SETUP_BEGIN     call GetGroupFileInfoCache
     (0x1636a, 5, 'w_preload',   0x356b0),   # PRELOAD_BEGIN/END     call CacheSampleGroups
     (0x163b3, 5, 'w_select_end', 0x7930),   # SELECT_END            call operator new[]
-    (0x7ee3, 5, 'w_fpga_open',  bytes.fromhex('4c89ffff10')),
-    (0x7f70, 6, 'w_sched',      bytes.fromhex('4c89efff5008')),
+    (0x7ee3, 5, 'w_fpga_open',  {'sha256': '6215cc3e682c29f38d11cd8e01dde3586c998acb6ed426396163423906ed28fa', 'size': 5}),
+    (0x7f70, 6, 'w_sched',      {'sha256': '337bcaa950858b9d1b0d6616735fbef1a790c8f31ec0f0fad0d91ada55ae525b', 'size': 6}),
     (0x7f81, 5, 'w_workers',    0x18710),   # WORKERS_BEGIN/END     call StartAudioProcessThreads
-    (0x7f89, 6, 'w_stream',     bytes.fromhex('4c89ffff5010')),
-    (0x7f97, 9, 'flush',        bytes.fromhex('660f1f840000000000')),  # LOOP_ENTER, 9-byte NOP pad
+    (0x7f89, 6, 'w_stream',     {'sha256': 'fd333c0c54180bdb60b745f267fb62e0a6ac113395776592e6fbe38e4cfea6f1', 'size': 6}),
+    (0x7f97, 9, 'flush',        {'sha256': '7916b888b27671144046d6e3198540775731573e9dc9a3aad7f08fb0d8472d36', 'size': 9}),  # LOOP_ENTER, 9-byte NOP pad
 ]
 manifest = []
 if MODE == 'noop': sites = []
@@ -82,7 +82,7 @@ for a, ln, w, exp in sites:
         tgt = a + 5 + struct.unpack('<i', cur[1:5])[0]
         assert tgt == exp, f'{a:#x}: call target {tgt:#x} != {exp:#x}'
     else:
-        assert cur == exp, f'{a:#x}: unexpected bytes {cur.hex()}'
+        assert len(cur)==exp['size'] and hashlib.sha256(cur).hexdigest()==exp['sha256'], f'{a:#x}: unexpected bytes {cur.hex()}'
     new = b'\xe8' + rel32(a + 5, fn[w][0]) + b'\x90' * (ln - 5)
     assert len(new) == ln
     elf[a:a + ln] = new
@@ -129,12 +129,12 @@ struct.pack_into('<I', elf, HDR_COUNT_OFF, cnt + len(fdes))
 PH = 64
 def ph(i): return PH + 56 * i
 # RW LOAD (index 3): p_memsz 0x13f08 -> 0x14008  (approved +0x100 exception)
-assert struct.unpack_from('<I', orig, ph(3))[0] == 1 and struct.unpack_from('<Q', orig, ph(3) + 40)[0] == 0x13f08
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I', orig, ph(3))[0])).hexdigest()=='67abdd721024f0ff4e0b3f4c2fc13bc5bad42d0b7851d456d88d203d15aaa450' and hashlib.sha256(struct.pack('<Q',struct.unpack_from('<Q', orig, ph(3) + 40)[0])).hexdigest()=='10fe042e5ef611976e2feb2145dc4cc9ed1db3743106d375335d4cb6acbd7a3e'
 struct.pack_into('<Q', elf, ph(3) + 40, 0x14008)
 # GNU_EH_FRAME (index 6): size follows the longer table
-assert struct.unpack_from('<I', orig, ph(6))[0] == 0x6474e550
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I', orig, ph(6))[0])).hexdigest()=='0fe51dced2745ee6eab34377ad3e64563eef82533a339cae1c75354d09fd1dd5'
 old_sz = struct.unpack_from('<Q', orig, ph(6) + 32)[0]
-assert old_sz == 0x1c74 and struct.unpack_from('<Q', orig, ph(6) + 40)[0] == 0x1c74
+assert old_sz == 0x1c74 and hashlib.sha256(struct.pack('<Q',struct.unpack_from('<Q', orig, ph(6) + 40)[0])).hexdigest()=='7f02272e90d6c9f977d3facd76caa951be964cfd58e092b1def5e7191839679d'
 new_sz = old_sz + len(new_tab)
 struct.pack_into('<Q', elf, ph(6) + 32, new_sz)
 struct.pack_into('<Q', elf, ph(6) + 40, new_sz)

@@ -34,13 +34,13 @@ pic,app=b[2]['payload'],b[0]['payload'];pic0,app0=a[2]['payload'],a[0]['payload'
 assert pic==(OUT/'pic_2.2.2.1.2.bin').read_bytes() and app==(OUT/'voice_2.2.2.1.2_qnx.elf').read_bytes()
 assert [i for i,(x,y) in enumerate(zip(app0,app)) if x!=y]==[0x1f4e3,0x250e2,0x250ef]
 # Literal expected hook + metadata and allowlisted PIC byte regions, independent of manifest.
-assert struct.unpack_from('<I',pic,0x23550)[0]==0x0b400361
-assert struct.unpack_from('<I',pic,0x235e4)[0]==0x0b400364
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x23550)[0])).hexdigest()=='8cbda0540ed3e32ceb5d67a8b719fc28b2dad31cdcd5e9224eef07106f7896ac'
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x235e4)[0])).hexdigest()=='3ad0ca7b4eb7fa68ef9b81523157e0ed44c76ae747de12ee74926640f956965d'
 assert pic[0x235e8:0x235ec]==pic0[0x235e8:0x235ec]==bytes.fromhex('21807002')
 assert pic[0x23554:0x23558]==pic0[0x23554:0x23558]==bytes.fromhex('f4010224')
 assert pic0[0xd84:0xe00]==b'\xff'*124 and pic[0xdf4:0xe00]==b'\xff'*12
-for off in (0x258b4,0x51bc4):assert struct.unpack_from('<I',pic,off)[0]==0x24842221
-for off in (0x1394,0x13a0):assert struct.unpack_from('<I',pic,off)[0]==0x24840002
+for off in (0x258b4,0x51bc4):assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='99d4d638528ade1cc25fc4c47a71456f6271bafd05cfcc9871ac2258b0f65d8d'
+for off in (0x1394,0x13a0):assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='ab8f63b324f7df43535480cd2059445a2faa56b2cc175725a9d81a7533cb9226'
 allowed=set(range(0xd84,0xdf4))|set(range(0x23550,0x23554))|set(range(0x235e4,0x235e8))
 for off in (0x258b4,0x51bc4,0x1394,0x13a0):allowed.update(range(off,off+4))
 picdiff=[i for i,(x,y) in enumerate(zip(pic0,pic)) if x!=y]
@@ -59,8 +59,8 @@ for site,thunk,target in [(0x258c0,0x1394,0x9d075c1c),(0x51bc8,0x13a0,0x9d075b18
  m=CPU(pic);m.run(BASE+site,{target});assert m.g('a0')==0x402a0002 and m.g('ra')==BASE+site+8
 for off in (0x258b4,0x51bc4):
  m=CPU(pic);m.s('a0',0x40290000);m.fetch_simple(BASE+off);assert m.g('a0')==0x40292221
-assert struct.unpack_from('<I',pic,0x52fec)[0]==0x24020002 # M:2.2.2, established three-field convention.
-assert app[0x1f4dd:0x1f4e3]==bytes.fromhex('c78540f9ffff')
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x52fec)[0])).hexdigest()=='1f72b3d3bc7d3086c957c55ac17ec67f1328fb167c06edde5e436698631746de' # M:2.2.2, established three-field convention.
+assert hashlib.sha256(app[0x1f4dd:0x1f4e3]).hexdigest()=='6818940f9775e42f5d7406aac6317f88908778a6c59027cb66420fbf6ddcd3bd'
 reply=struct.unpack_from('<I',app,0x1f4e3)[0];assert reply==0x40139212
 assert [(reply&65535)>>14,(reply>>11)&7,(reply>>8)&7,(reply>>4)&15,reply&15]==REV
 # Independent existing actual-x86 decoder, no top-level validator/build code executed.

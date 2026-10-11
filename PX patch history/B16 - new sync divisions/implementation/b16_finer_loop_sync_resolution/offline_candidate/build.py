@@ -93,7 +93,7 @@ def main():
   struct.pack_into('<i',helper,off,displacement);rels.append({'offset':hex(off),'symbol':name,'type':typ,'target':hex(target),'addend':add})
  assert len(rels)==4 and {r['symbol'] for r in rels}==set(ext)
  qo=bytearray(qnx);assert qnx[0x101700:0x10179c]==b'\0'*156;qo[0x101700:0x10179c]=helper
- assert qnx[0x1ae55:0x1ae5c]==bytes.fromhex('f3410f2a4c2418')
+ assert hashlib.sha256(qnx[0x1ae55:0x1ae5c]).hexdigest()=='0054edc9678012b3abdb8f4758d1ac6df83b1c3fb5df73193d89bfca029ebc52'
  qo[0x1ae55:0x1ae5c]=b'\xe9'+struct.pack('<i',0x101700-(0x1ae55+5))+b'\x90\x90'
  # Append FDE contiguously, before the existing zero padding terminator.
  fde=0x10277c;cie=0x92fd8
@@ -101,7 +101,7 @@ def main():
  body=struct.pack('<IiI',fde+4-cie,0x101700-(fde+8),136)+b'\0'+cfi
  body+=b'\0'*((-len(body)-4)%8);frame=struct.pack('<I',len(body))+body;assert len(frame)==56
  assert qnx[fde:fde+56]==b'\0'*56;qo[fde:fde+56]=frame
- assert struct.unpack_from('<I',qnx,0x103008)[0]==909
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',qnx,0x103008)[0])).hexdigest()=='cd8bcd8286cc63f847e10405c853e547ee1721a50f0cf3940e784c6e1809d01b'
  struct.pack_into('<I',qo,0x103008,910)
  assert qnx[0x104c74:0x104c7c]==b'\0'*8
  struct.pack_into('<ii',qo,0x104c74,0x101700-0x103000,fde-0x103000)

@@ -42,5 +42,68 @@
     "host_fixtures": "x86_64 under Rosetta"
   },
   "new_hardware_test": "NOT PERFORMED; byte identity connects output to accepted package",
-  "private_B7_branch_target_trace_review_reexecuted": false
+  "private_B7_branch_target_trace_review_reexecuted": false,
+  "hash_guard_revision": {
+    "status": "PASS",
+    "final_sha256": "488444589607a1b4e793a8d8f79a67c5bd50773b722c302e6d80bc1db77b4b7c",
+    "final_bytes": 3187784,
+    "accepted_reference_byte_identical": true,
+    "round_trip_identical": true,
+    "FPGA_record_unchanged": true,
+    "staged_source_inventory_sha256": "d42dabde07157b0a6a2f74aaadea2b76704b997ba35b5d85ad62225e1e71da52",
+    "validation_method": "Clean entry-point run through B14 validation; resumed at B14 packaging after fixing version-hash adaptation, reusing verified preceding intermediates. All remaining pipeline commands executed.",
+    "resumed_commands": [
+      "b14_sample_acceleration_work/package.py",
+      "b15_candidate_work/lfo_endpoint_investigation/completion_fix/build.py",
+      "b15_candidate_work/lfo_endpoint_investigation/completion_fix/validate.py",
+      "b15_candidate_work/lfo_endpoint_investigation/completion_fix/package.py",
+      "b7_lfo_center_investigation/measure_design.py",
+      "b7_lfo_center_investigation/implementation_1_12/build.py",
+      "b7_lfo_center_investigation/implementation_1_12/validate.py",
+      "b7_lfo_center_investigation/implementation_1_12/package.py",
+      "b10_ordinary_entry_design_1_12/candidate_1_15/build.py",
+      "b10_ordinary_entry_design_1_12/candidate_1_15/validate.py",
+      "b10_ordinary_entry_design_1_12/candidate_1_15/package.py",
+      "b11b_implementation_2_2_2_2_0/measure_compact.py",
+      "b11b_implementation_2_2_2_2_0/build.py",
+      "b11b_implementation_2_2_2_2_0/validate.py",
+      "b11b_implementation_2_2_2_2_0/package.py",
+      "b16_finer_loop_sync_resolution/in_place_validation/preflight.py",
+      "b16_finer_loop_sync_resolution/in_place_validation/dependencies.py",
+      "b16_finer_loop_sync_resolution/in_place_validation/integrate.py",
+      "b16_finer_loop_sync_resolution/geometry_candidate/build.py"
+    ],
+    "guard_tests": {
+      "status": "PASS",
+      "rejected_cases": [
+        "B1 wrong span hash 0",
+        "B1 wrong span hash 15",
+        "B1 wrong guard length",
+        "B1 overlap",
+        "B1 modified factory",
+        "modified guarded bytes",
+        "truncated guarded bytes",
+        "incorrect guard hash"
+      ],
+      "verified_migrated_json_guards": 1032
+    },
+    "B14_span_guards": {
+      "status": "PASS",
+      "checks": [
+        {
+          "address": "0x9d0411c8",
+          "size": 76,
+          "valid_match": true,
+          "modified_bytes_rejected": true
+        },
+        {
+          "address": "0x9d041278",
+          "size": 8,
+          "valid_match": true,
+          "modified_bytes_rejected": true
+        }
+      ]
+    },
+    "hardware_test": "No new hardware test; generated firmware is byte-identical to the accepted build."
+  }
 }

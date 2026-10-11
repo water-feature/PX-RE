@@ -11,12 +11,12 @@ m=json.loads((R/'b5_candidate_work/b5_candidate_manifest.json').read_text())
 lo=m['layout']['code_base'];used=m['layout']['code_bytes'];helper=(lo+used+15)&~15
 assert helper+44<=lo+m['layout']['code_reservation']
 original=0xf13bb;body=bytearray(e.read(original,44))
-assert body.hex()=='8b0f31c03b0e75238b4f043b4e04751b8b4f083b4e0875138b4f0c3b4e0c750b8b4f1031c03b4e100f94c0c3'
+assert hashlib.sha256(body).hexdigest()=='31dbbdc480a5005df938358a3ff524917bb5da1f570885a84891b10e4ba06447'
 # Ignore rate only for the render endpoint-identity check. Control comparisons remain exact.
 body[22:24]=b'\x90\x90'
-assert body[16:24].hex()=='8b4f083b4e089090'
+assert hashlib.sha256(body[16:24]).hexdigest()=='e92cc0e2b309c13535dc6838d2827befacf7c2bf11f5c53e8794041eac45b745'
 out[helper:helper+44]=body
-site=0xf15dc;assert old[site:site+5]==bytes.fromhex('e8dafdffff')
+site=0xf15dc;assert hashlib.sha256(old[site:site+5]).hexdigest()=='552ad56a62d0c055a5f4306a074d3235cdf62fd5326a75e61b047f89c8fb16d8'
 out[site:site+5]=b'\xe8'+struct.pack('<i',helper-site-5)
 # Clone original leaf helper's real FDE and reuse its original CIE.
 hp=next(p for p in e.phdr if p['type']==0x6474e550)

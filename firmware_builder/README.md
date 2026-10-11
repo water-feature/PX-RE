@@ -1,6 +1,6 @@
 # Source firmware build
 
-The root patcher calls [source_pipeline.py](source_pipeline.py). This directory contains the container parser and early-stage wrappers; the authored feature implementations remain in [PX patch history](../PX%20patch%20history/BUILD_VERSION_HISTORY.md). The builder contains no factory/final firmware image or whole-image delta. Supply your own exact factory update.
+The root patcher calls [source_pipeline.py](source_pipeline.py). This directory contains the container parser and early-stage wrappers; the authored feature implementations remain in [PX patch history](../PX%20patch%20history/BUILD_VERSION_HISTORY.md). The builder contains no factory/final firmware image or whole-image delta. Original patch-site guards are stored as SHA-256 hashes and lengths; the bytes being checked come from your supplied firmware. Supply your own exact factory update.
 
 ## Review and rebuild without the patcher
 
@@ -34,10 +34,12 @@ The [rebuild receipt](VERIFICATION.json) records the completed source-only and p
 The public archive deliberately excludes firmware and some private analysis artifacts. The staging code makes these explicit adjustments:
 
 - Select the B8 revision of the shared B5 helper and combine the separately archived B15/B5 follow-up sources. [sources/lfo_endpoint_investigation/build_fix.py](sources/lfo_endpoint_investigation/build_fix.py) and [reproduce.c](sources/lfo_endpoint_investigation/reproduce.c) restore two authored follow-up sources missing from the archive.
-- Supply 21 explicit original B14 instruction guards rather than the full private disassembly.
+- Supply SHA-256 guards for the two B14 pre-edit spans rather than original instruction words or the full private disassembly.
 - Restore B7's historical checksum filename. Skip the old B7 branch-target trace review that requires an unpublished full disassembly; retain its historical review receipt and run the emitted-byte host and CFI checks. This build does not claim to rerun that private trace review.
 - Remove B10's absent `phase.csv` from the report artifact list; its validation assertions still run.
 - Make the B11 PIC decoder usable as an imported module against the generated parent image. Refresh B11's source-file receipts for the portable archive; preserve its historical firmware-input hashes. Independently assemble and compare the emitted fragments before building the image.
 - Recreate B16's preservation receipt for the source-only staged files and exclude generated Python caches from the preservation comparison.
 
 `staged_source_inventory.json` records exactly which staged files were used before compilation. Historical reports remain evidence of their original run, including hardware-pending wording; subsequent hardware observations are recorded in the branch guides. A matching final hash establishes byte identity with the accepted package, not exhaustive proof of behavior on every instrument.
+
+Original-byte fields in retained patch recipes and receipts have been replaced with SHA-256 hashes and lengths. This changes their representation, not the recorded test outcomes. Replacement instructions and authored helper sources remain available for review. Generated build artifacts stay in the private working directory.

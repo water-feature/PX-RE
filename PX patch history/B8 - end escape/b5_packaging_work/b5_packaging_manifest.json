@@ -25,15 +25,17 @@
       "region": "application header version",
       "offset": 3,
       "bytes": 5,
-      "old": "0202020002",
-      "new": "0202020005"
+      "new": "0202020005",
+      "old_sha256": "57416f4ab9569793885656d28cab10f81903d65b50430208624d60a7f1d9ba1c",
+      "old_size": 5
     },
     {
       "region": "application length",
       "offset": 9,
       "bytes": 4,
-      "old": "000f0d98",
-      "new": "000f7b30"
+      "new": "000f7b30",
+      "old_sha256": "5c04caee9c130fa38083be5db45e92ce3973706f0e90bd0224ddc1a9deba5323",
+      "old_size": 4
     },
     {
       "region": "QNX application payload",
@@ -47,8 +49,9 @@
       "old_offset": 986533,
       "new_offset": 1014589,
       "bytes": 2,
-      "old": "4bf4",
-      "new": "0434"
+      "new": "0434",
+      "old_sha256": "5b3ffed621a627a722a7240c6b2c4c391d2c9d88a8d9c1441ac05f56ba848699",
+      "old_size": 2
     }
   ],
   "all_other_records_byte_identical": true,

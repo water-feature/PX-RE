@@ -1,6 +1,7 @@
 """Execute actual candidate x86 gate bytes using a bounded instruction decoder.
 No symbolic gate overlays. Version formatter arguments verified from PIC words.
 """
+import hashlib
 from pathlib import Path
 import struct,json
 P=Path(__file__).resolve().parent
@@ -46,7 +47,7 @@ for installed in ([2,2,2,0,0],[2,2,3,0,0],[2,2,4,0,0]):
 for i in range(5):
  incoming=[2,2,4,0,0];incoming[i]^=1
  assert not gate('pic',incoming,[2,2,4,0,0]).get(0x3744,0)
-assert app[0x1F4DD:0x1F4E3]==bytes.fromhex('c78540f9ffff')
+assert hashlib.sha256(app[0x1F4DD:0x1F4E3]).hexdigest()=='6818940f9775e42f5d7406aac6317f88908778a6c59027cb66420fbf6ddcd3bd'
 reply=struct.unpack_from('<I',app,0x1F4E3)[0];assert reply==0x40139208
 # Verify actual formatter sources/argument layout, retaining exact .7 code
 # everywhere except M minor argument. DSP fields are packed in the reply.

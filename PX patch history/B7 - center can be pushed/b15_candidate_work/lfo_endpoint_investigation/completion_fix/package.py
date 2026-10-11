@@ -10,7 +10,7 @@ app=bytearray((O/'fixed_qnx.elf').read_bytes());assert sha(app)==build['candidat
 app[0x1f4e3],app[0x250ef]=0x1b,11
 pic=bytearray(base[2][1])
 for off in (0x1394,0x13a0):
- assert struct.unpack_from('<I',pic,off)[0]==0x2484000a;struct.pack_into('<I',pic,off,0x2484000b)
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='50dab8339ee49462b7ffcd9ac6bd3dedae6c504908dea58d038baf7178bf30cf';struct.pack_into('<I',pic,off,0x2484000b)
 assert [i for i,(a,b) in enumerate(zip(pic,base[2][1])) if a!=b]==[0x1394,0x13a0]
 rows=[]
 for i,p in [(0,app),(1,base[1][1]),(2,pic)]:
@@ -25,6 +25,7 @@ assert ex[0][1]==app and ex[2][1]==pic
 fixed=(O/'fixed_qnx.elf').read_bytes();assert [i for i,(a,b) in enumerate(zip(app,fixed)) if a!=b]==[0x1f4e3,0x250ef]
 source=(R/'b15_candidate_work/build_candidate_1_9.py').read_text();chunk=source[source.index(' # Bounded updater'):source.index(' names=')]
 chunk=chunk.replace('0x402a0009','0x402a000b').replace('0x40139219','0x4013921b').replace('[2,2,2,1,8],[2,2,2,1,7]','[2,2,2,1,10],[2,2,2,1,9]')
+chunk=chunk.replace(sha(struct.pack('<I',0x40139219)),sha(struct.pack('<I',0x4013921b)))
 exec('\n'.join(line[1:] if line.startswith(' ') else line for line in chunk.splitlines()))
 files={'PxUpdate_V2.2.2.1.11_B5_completion_fade_candidate.bin':package,'pic_2.2.2.1.11_B5_completion_fade_candidate.bin':pic,'voice_2.2.2.1.11_B5_completion_fade_candidate_qnx.elf':app}
 for n,b in files.items():

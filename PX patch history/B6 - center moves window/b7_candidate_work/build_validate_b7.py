@@ -126,7 +126,7 @@ for off in (0x258B4,0x51BC4):
  packed=w&65535
  components=[(packed>>shift)&15 for shift in (12,8,4,0)]+[0]
  assert components==list(package[pic_h+2:pic_h+7])
-assert struct.unpack_from('<I',pic,0x52FEC)[0]==0x24020004
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x52FEC)[0])).hexdigest()=='98ff8498f1947f9ac317462fe8d8bfdbbf4d9183c5a24590ccce0eeac32d1d66'
 report['version_verification']={'application_header':[2,2,2,0,8],'PIC_header':[2,2,4,0,0],'PIC_reports_match_header':True,'M_formatter':'2.2.4','DSP_reply_and_updater_revision_offsets':['0x1F4E3','0x250EF'],'PIC_trailer':'3030 (inherited, ignored by type-3 parser)','application_checksum':f'{wordsum(app):04X}','FPGA_byte_identical':True,'QNX_only_two_version_bytes_changed':True}
 report['placement']={'payload_size':len(pic),'helpers_start':'0x9D001220','helpers_exclusive_end':'0x9D001394','data_boundary':'0x9D001480','B3_preserved':True,'all_changes_accounted':True}
 report['hashes']={'baseline_package':sha((ROOT/'PxUpdate_V2.2.2.0.7.bin').read_bytes()),'candidate_package':sha(package),'PIC':sha(pic),'QNX':sha(app),'FPGA':sha(package[fpga_s:fpga_e])}

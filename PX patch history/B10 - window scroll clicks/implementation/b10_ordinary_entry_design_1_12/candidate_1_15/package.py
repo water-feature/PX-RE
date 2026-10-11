@@ -29,9 +29,9 @@ def main():
  app=(O/'voice_2.2.2.1.15_qnx.elf').read_bytes();assert sha(app)==v['QNX_sha256']
  pic=bytearray(base[2][1])
  for off in [0x1394,0x13a0]:
-  assert S.unpack_from('<I',pic,off)[0]==0x2484000c;S.pack_into('<I',pic,off,0x2484000f)
+  assert hashlib.sha256(S.pack('<I',S.unpack_from('<I',pic,off)[0])).hexdigest()=='fbf69dbe6517255b0f433dcab0aabf21058364579e2976ab066cbe260773140a';S.pack_into('<I',pic,off,0x2484000f)
  assert [i for i,(a,b) in enumerate(zip(base[2][1],pic)) if a!=b]==[0x1394,0x13a0]
- assert S.unpack_from('<I',app,0x1f4e3)[0]==0x4013921f and app[0x250ef]==15
+ assert hashlib.sha256(S.pack('<I',S.unpack_from('<I',app,0x1f4e3)[0])).hexdigest()=='7c2065036356b0a1304f121c0d1e8f0444413dd11302da2d440028937a8e0619' and app[0x250ef]==15
  rows=[]
  for i,payload in [(0,app),(1,base[1][1]),(2,bytes(pic))]:
   h,_,tail=base[i]

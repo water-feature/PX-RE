@@ -52,31 +52,8 @@ HELPERS = {
     "b7_combined_instruction_model.py": "B7 - center can be pushed/b7_combined_instruction_model.py",
 }
 
-# Independent pre-edit word guards retained from the private B14 .1.4 audit.
-# These 21 instruction words are a patch-site recipe, not a payload chunk.
-B14_WORD_GUARDS = """\
-9d0411c8 0b410475 guard
-9d0411cc 02684021 guard
-9d0411d0 00e01821 guard
-9d0411d4 00602021 guard
-9d0411d8 0f410293 guard
-9d0411dc 24670001 guard
-9d0411e0 a0c20000 guard
-9d0411e4 14e8fffa guard
-9d0411e8 24c60001 guard
-9d0411ec 02503021 guard
-9d0411f0 3c0800c0 guard
-9d0411f4 00063180 guard
-9d0411f8 25030016 guard
-9d0411fc 02263021 guard
-9d041200 2508002c guard
-9d041204 02631821 guard
-9d041208 24c60016 guard
-9d04120c 0b410486 guard
-9d041210 02684021 guard
-9d041278 02508021 guard
-9d04127c 00108180 guard
-"""
+# Independent SHA-256 guards for the two B14 pre-edit spans.
+B14_SPAN_GUARDS = [{'address': 2634289608, 'size': 76, 'sha256': 'f627fb4f5a31e7416ed531a6fbe9365293873f7f7b96769a1e0bb4efb33f3f4a'}, {'address': 2634289784, 'size': 8, 'sha256': '56e75428addb793d8167d3c023effea76afbdfb7505acca5c6d1e2533961fea5'}]
 
 
 def digest(path: Path) -> str:
@@ -124,7 +101,7 @@ def stage(root: Path) -> None:
     destination.parent.mkdir(parents=True)
     shutil.copy2(spec, destination)
     (root / "b14_investigation").mkdir()
-    (root / "b14_investigation/ui_exact_1_4.txt").write_text(B14_WORD_GUARDS)
+    (root / "b14_investigation/ui_exact_1_4.json").write_text(json.dumps(B14_SPAN_GUARDS, indent=2) + "\n")
     shutil.copy2(root / "b7_lfo_center_investigation/HISTORICAL_SHA256SUMS",
                  root / "b7_lfo_center_investigation/SHA256SUMS")
     # The public archive omits the private full disassembly trace. Its recorded

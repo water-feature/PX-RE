@@ -16,9 +16,9 @@ m=json.loads((R/'b5_candidate_work/b5_candidate_manifest.json').read_text())['la
 assert base>=0xf3c3c and base+len(code)<=m['code_base']+m['code_reservation']
 out[base:base+len(code)]=code
 patches=[]
-for site,expected,target,op in [(0xf122c,'e88a010000',base,0xe8),(0xf126e,'e848010000',base,0xe8),(0xf1730+0x492,'443b4f50750f',geom,0xe9)]:
- assert old[site:site+len(bytes.fromhex(expected))].hex()==expected
- value=bytes([op])+struct.pack('<i',target-site-5)+b'\x90'*(len(bytes.fromhex(expected))-5)
+for site,expected,target,op in [(0xf122c,{'size': 5, 'sha256': 'b1d090e8ab50878f563e76d89b5f007a26603f3768d31156d61ad89af0344eab'},base,0xe8),(0xf126e,{'size': 5, 'sha256': '4141f176166314c5f7b7b3fb30f71f1a6602cc6683d1e5b142ee408c097416d1'},base,0xe8),(0xf1730+0x492,{'size': 6, 'sha256': '2af933f0692fff19a577eabc19ad8a1b404e8cc17a788b58cb147519f7c1915e'},geom,0xe9)]:
+ assert sha(old[site:site+expected['size']])==expected['sha256']
+ value=bytes([op])+struct.pack('<i',target-site-5)+b'\x90'*(expected['size']-5)
  out[site:site+len(value)]=value;patches.append((site,site+len(value)))
 h=next(p for p in e.phdr if p['type']==0x6474e550);frame,pairs=decode_index(e.read(h['va'],h['filesz']),h['va'])
 # Existing .1.9 helper FDE ends at f4be4. Append two FDEs in owned reservation.

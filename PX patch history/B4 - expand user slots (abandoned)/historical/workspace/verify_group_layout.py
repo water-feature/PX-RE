@@ -18,10 +18,10 @@ with elfpath.open('rb') as f:
   ptr=struct.unpack('<Q',read(0x2a0160+8*i,8))[0]
   names.append(read(ptr,4).split(b'\0')[0].decode())
  assert names==['f00']+[f'u{i:02}' for i in range(8)]+[f'p{i:02}' for i in range(32)]+[f'u{i:02}' for i in range(8,100)]
- assert read(0x33c10,3)==bytes.fromhex('83fe40')
- assert read(0x16181,5)==bytes.fromhex('bfd0330000')
- assert read(0x33c72,3)==bytes.fromhex('83fe40')
- assert read(0x336e4,4)==bytes.fromhex('4883fb41')
+ assert hashlib.sha256(read(0x33c10,3)).hexdigest()=='7e54f30b6504023c5db9d667c5978b5991bead2dfe3a571d62a4ec9de1a51e75'
+ assert hashlib.sha256(read(0x16181,5)).hexdigest()=='86b198e9879bd4d5209775ca211e81a9580770f2453ed123e39ec7812d683d54'
+ assert hashlib.sha256(read(0x33c72,3)).hexdigest()=='7e54f30b6504023c5db9d667c5978b5991bead2dfe3a571d62a4ec9de1a51e75'
+ assert hashlib.sha256(read(0x336e4,4)).hexdigest()=='76c345a3e3f79ae1306262330812a21406ced19f79c7ae91de885cccd0437762'
  syms={s.name:s['st_size'] for s in e.get_section_by_name('.symtab').iter_symbols()}
  assert syms['gpGroupNames']==133*8
  assert syms['gGroupSizeCache']==65*8

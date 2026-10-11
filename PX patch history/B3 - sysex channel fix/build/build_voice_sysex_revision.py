@@ -5,8 +5,8 @@ assert hashlib.sha256(b).hexdigest()=='d2775bd0e017e4442ce7d5bbc7d089022a1cf8c02
 c=bytearray(b)
 for off,old,new in [(7,1,3),(13+0x250ef,1,3),(13+0x1f4e3,0,3)]:
  assert c[off]==old;c[off]=new
-assert b[13+0x1f4dd:13+0x1f4e7]==bytes.fromhex('c78540f9ffff00921340')
-assert b[13+0x250e9:13+0x250f0]==bytes.fromhex('80bd74faffff01')
+assert hashlib.sha256(b[13+0x1f4dd:13+0x1f4e7]).hexdigest()=='6edf6c265d747eac6acca2e740887ceaa60cccca47ad1129db57286cb0882a38'
+assert hashlib.sha256(b[13+0x250e9:13+0x250f0]).hexdigest()=='769897966c9cc4178ab1bd456723be37a4812f95c84db19e15087e0deb3cb2e6'
 checksum=sum(int.from_bytes(c[i:i+2],'little') for i in range(13,13+986520,2))&65535
 assert checksum==0xf64b;c[0xf0da5:0xf0da7]=checksum.to_bytes(2,'little')
 changes=[i for i,(x,y) in enumerate(zip(b,c)) if x!=y]

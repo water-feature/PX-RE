@@ -29,7 +29,7 @@ assert [i for i,(a,b) in enumerate(zip(o[0]['payload'],app)) if a!=b]==[0x1f4e3,
 manifest=json.loads((OUT/'b6_patch_manifest.json').read_text());allowed=set()
 for a,item in manifest['PIC'].items():
  off=int(a,16)-m.BASE
- assert o[2]['payload'][off:off+4].hex()==item['old_bytes'] and pic[off:off+4].hex()==item['new_bytes']
+ assert hashlib.sha256(o[2]['payload'][off:off+4]).hexdigest()==(item['old_bytes_sha256'] if 'old_bytes_sha256' in item else hashlib.sha256(bytes.fromhex(item['old_bytes'])).hexdigest()) and pic[off:off+4].hex()==item['new_bytes']
  allowed.update(range(off,off+4))
 assert all(i in allowed for i,(a,b) in enumerate(zip(o[2]['payload'],pic)) if a!=b)
 assert pic[0x1200:0x1224]==o[2]['payload'][0x1200:0x1224]
@@ -46,15 +46,15 @@ for installed in ([2,2,4,0,0],[2,2,2,0,8],[2,2,2,0,9]):
  skip=bool(gate('pic',[2,2,2,0,9],installed).get(0x3744,0));assert skip==(installed==[2,2,2,0,9]);pic_cases.append({'installed':installed,'skip':skip})
 for i in range(5):
  incoming=[2,2,2,0,9];incoming[i]^=1;assert not gate('pic',incoming,[2,2,2,0,9]).get(0x3744,0)
-assert app[0x1f4dd:0x1f4e3]==bytes.fromhex('c78540f9ffff')
+assert hashlib.sha256(app[0x1f4dd:0x1f4e3]).hexdigest()=='6818940f9775e42f5d7406aac6317f88908778a6c59027cb66420fbf6ddcd3bd'
 reply=struct.unpack_from('<I',app,0x1f4e3)[0];assert reply==0x40139209
 assert [(reply&65535)>>14,(reply>>11)&7,(reply>>8)&7,(reply>>4)&15,reply&15]==[2,2,2,0,9]
-for off in (0x258b4,0x51bc4):assert struct.unpack_from('<I',pic,off)[0]==0x24842220
-assert struct.unpack_from('<I',pic,0x52fec)[0]==0x24020002
+for off in (0x258b4,0x51bc4):assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='20b29d7713890e7f7b35971c2c61d877c6fb7d2e3453baefdb1222a0c7a886dc'
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x52fec)[0])).hexdigest()=='1f72b3d3bc7d3086c957c55ac17ec67f1328fb167c06edde5e436698631746de'
 # Inspect actual two fifth-field report thunks and inherited LUI slots.
 for site,thunk,target in [(0x258c0,0x1394,0x9d075c1c),(0x51bc8,0x13a0,0x9d075b18)]:
  assert struct.unpack_from('<I',pic,site)[0]==(3<<26)|(((m.BASE+thunk)>>2)&0x3ffffff)
- assert struct.unpack_from('<I',pic,site+4)[0]==0x3c04402a
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,site+4)[0])).hexdigest()=='eda20564be774dbd33eca7e77be9e14735addd649e92a419366dd6028162e403'
  assert struct.unpack_from('<III',pic,thunk)==(0x24840009,(2<<26)|((target>>2)&0x3ffffff),0)
 m.IMAGE=pic;machine=m.Machine([(0,999,499,0)]*2,0,0,0);machine.set('gp',0x80007ff0);gp=machine.get('gp')
 blocks=[pic[i:i+4096] for i in range(0,len(pic),4096)]

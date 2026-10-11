@@ -71,7 +71,7 @@ routes=[];routecases=0;order=[17,16]+list(range(16))
 for row in (B/'ENCODER_CALLERS.tsv').read_text().splitlines()[1:]:
  addr,route,param,sync=row.split('\t')
  if sync!='true':continue
- pc=int(addr,16);assert struct.unpack_from('<I',image,pc-BASE)[0]==0x0f413e9b;routes.append(addr)
+ pc=int(addr,16);assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',image,pc-BASE)[0])).hexdigest()=='426a0972c52400049047022e0d3007d05bb63839972adc21a6778b8720442bf6';routes.append(addr)
  for ident in ((int(param,16),) if param in ('1d','5e') else (0x1d,0x5e)):
   for layer in (0,1,2):
    for rank,raw in enumerate(order):

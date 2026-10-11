@@ -1,3 +1,4 @@
+import hashlib
 import ctypes as C,mmap,struct,json,collections
 from pathlib import Path
 import argparse,subprocess
@@ -42,7 +43,7 @@ def lines(data):
  while getline(reader,out):yield out.value
 # Stock converter has low-nibble-first ordering; independent literal check.
 out=C.create_string_buffer(17);guid(b'0123456789ABCDEF0123456789abcdef',out)
-assert out.raw.hex()=='1032547698badcfe1032547698badcfe00',out.raw.hex()
+assert hashlib.sha256(out.raw).hexdigest()=='c5463983878846b6b741266bdc78b5ece918b426aa393296496e38d964a36098',out.raw.hex()
 assert tokens(b'\tA\t\tB\t')==[b'A',b'B']
 files=sorted(args.manifest_root.rglob('*.grp'))
 stats=collections.Counter();bad=[];maxprefix=0;headers=collections.Counter();maxline=0

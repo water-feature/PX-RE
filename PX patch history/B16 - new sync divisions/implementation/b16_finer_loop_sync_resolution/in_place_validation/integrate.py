@@ -34,9 +34,9 @@ qo=ns['qo'];functional_qnx=bytes(qo)
 put('QNX_rebuild_logic.py',chunk.encode());put('qnx_helper_linked.bin',ns['helper'])
 pdiff=diff('PIC_functional_diff.tsv',pic,out,BASE);qdiff=diff('QNX_functional_diff.tsv',qnx,qo,0x100000)
 # Established version metadata, tracked separately from functional edits.
-for off in (0x1394,0x13a0):assert struct.unpack_from('<I',out,off)[0]==0x24840000;struct.pack_into('<I',out,off,0x24840001)
-assert struct.unpack_from('<I',qo,0x1f4e3)[0]==0x40139220;struct.pack_into('<I',qo,0x1f4e3,0x40139221)
-assert qo[0x250e9:0x250f0]==bytes.fromhex('80bd74faffff00');qo[0x250ef]=1
+for off in (0x1394,0x13a0):assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',out,off)[0])).hexdigest()=='074cd098f2055c6cd2700aaa7190e54b789e6099eccbdf0c96b40abfd604c1c2';struct.pack_into('<I',out,off,0x24840001)
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',qo,0x1f4e3)[0])).hexdigest()=='74da53a4fe7f2418ee58d06afd878968fa2393e8049d8daff09ac74a500329d5';struct.pack_into('<I',qo,0x1f4e3,0x40139221)
+assert hashlib.sha256(qo[0x250e9:0x250f0]).hexdigest()=='65fa555819be40547acf6fc4b5eea2a06e4f2c6f7d0a56daf86bbba97e7f483e';qo[0x250ef]=1
 assert set(changes(functional_pic,out))=={0x1394,0x13a0};assert set(changes(functional_qnx,qo))=={0x1f4e3,0x250ef}
 diff('PIC_version_diff.tsv',functional_pic,out,BASE);diff('QNX_version_diff.tsv',functional_qnx,qo,0x100000)
 # Verify version reports by execution and compiled update-gate behavior.
@@ -75,10 +75,10 @@ for block in blocks:
 # All indexed FDEs and full inherited load extents.
 _,_,ph,*_=elf(qo);_,_,oph,*_=elf(qnx);assert [x for x in ph if x[0]==1]==[x for x in oph if x[0]==1]
 assert qo[0x10300c:0x104c74]==qnx[0x10300c:0x104c74]
-assert struct.unpack_from('<I',qo,0x103008)[0]==910
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',qo,0x103008)[0])).hexdigest()=='2d83588e4594e714e920350edff9fd9ae6dd86dd03b2bd04f8c9368490c2f6b5'
 entries=[struct.unpack_from('<ii',qo,0x10300c+i*8) for i in range(910)];assert [e[0] for e in entries]==sorted(set(e[0] for e in entries))
 for initial,relative in entries:
- f=0x103000+relative;n,delta,pc,span=struct.unpack_from('<IIiI',qo,f);assert n>=12 and f+n+4<=len(qo) and f+8+pc==0x103000+initial;assert struct.unpack_from('<I',qo,f+4-delta+4)[0]==0
+ f=0x103000+relative;n,delta,pc,span=struct.unpack_from('<IIiI',qo,f);assert n>=12 and f+n+4<=len(qo) and f+8+pc==0x103000+initial;assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',qo,f+4-delta+4)[0])).hexdigest()=='df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119'
 assert entries[-1]==(0x101700-0x103000,0x10277c-0x103000)
 f=0x10277c;n=struct.unpack_from('<I',qo,f)[0];oldn=struct.unpack_from('<I',qo,0x95338)[0]
 assert v['row_at'](qo,qo[0x95338+17:0x95338+4+oldn],0x195d0,0x1ae55)==v['row_at'](qo,qo[f+17:f+4+n],0x101700,0x101700)

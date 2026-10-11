@@ -70,7 +70,7 @@ def main():
  phoff=S.unpack_from('<Q',old,32)[0]
  for i in range(S.unpack_from('<H',old,56)[0]):
   off=phoff+i*56
-  if S.unpack_from('<I',old,off)[0]==0x6474e550:put(off+32,S.pack('<QQ',len(header),len(header)),'unwind sizes')
+  if hashlib.sha256(S.pack('<I',S.unpack_from('<I',old,off)[0])).hexdigest()=='0fe51dced2745ee6eab34377ad3e64563eef82533a339cae1c75354d09fd1dd5':put(off+32,S.pack('<QQ',len(header),len(header)),'unwind sizes')
  sec,names=elf(old);shoff=S.unpack_from('<Q',old,40)[0]
  for name,end in [('.b15_text',text),('.b15_eh_frame',frame),('.eh_frame_hdr',h+len(header))]:
   i=names.index(name);put(shoff+64*i+32,S.pack('<Q',end-sec[i][3]),name+' size')

@@ -1,452 +1,542 @@
 {
   "9D001220": {
-    "old": "FFFFFFFF",
     "new": "AFA70010",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001224": {
-    "old": "FFFFFFFF",
     "new": "0B4136BF",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001228": {
-    "old": "FFFFFFFF",
     "new": "00A09021",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001240": {
-    "old": "FFFFFFFF",
     "new": "2608FFBF",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001244": {
-    "old": "FFFFFFFF",
     "new": "2E090041",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001248": {
-    "old": "FFFFFFFF",
     "new": "0209400B",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00124C": {
-    "old": "FFFFFFFF",
     "new": "2509FFF9",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001250": {
-    "old": "FFFFFFFF",
     "new": "3129FFFD",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001254": {
-    "old": "FFFFFFFF",
     "new": "1520000F",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001258": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00125C": {
-    "old": "FFFFFFFF",
     "new": "8FB30010",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001260": {
-    "old": "FFFFFFFF",
     "new": "260A06B7",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001264": {
-    "old": "FFFFFFFF",
     "new": "000A5040",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001268": {
-    "old": "FFFFFFFF",
     "new": "022A5021",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00126C": {
-    "old": "FFFFFFFF",
     "new": "2509FFF9",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001270": {
-    "old": "FFFFFFFF",
     "new": "15200005",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001274": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001278": {
-    "old": "FFFFFFFF",
     "new": "954B0004",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00127C": {
-    "old": "FFFFFFFF",
     "new": "0173482B",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001280": {
-    "old": "FFFFFFFF",
     "new": "0B4004A5",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001284": {
-    "old": "FFFFFFFF",
     "new": "0169980B",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001288": {
-    "old": "FFFFFFFF",
     "new": "954BFFFC",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00128C": {
-    "old": "FFFFFFFF",
     "new": "026B482B",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001290": {
-    "old": "FFFFFFFF",
     "new": "0169980B",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001294": {
-    "old": "FFFFFFFF",
     "new": "0B4137EA",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001298": {
-    "old": "FFFFFFFF",
     "new": "24040001",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012C0": {
-    "old": "FFFFFFFF",
     "new": "02A02021",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012C4": {
-    "old": "FFFFFFFF",
     "new": "24050000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012C8": {
-    "old": "FFFFFFFF",
     "new": "0F4004C8",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012CC": {
-    "old": "FFFFFFFF",
     "new": "00603021",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012D0": {
-    "old": "FFFFFFFF",
     "new": "16A00003",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012D4": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012D8": {
-    "old": "FFFFFFFF",
     "new": "0B41379C",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012DC": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012E0": {
-    "old": "FFFFFFFF",
     "new": "0B4137A0",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012E4": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012F0": {
-    "old": "FFFFFFFF",
     "new": "02A02021",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012F4": {
-    "old": "FFFFFFFF",
     "new": "24050001",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012F8": {
-    "old": "FFFFFFFF",
     "new": "0F4004C8",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D0012FC": {
-    "old": "FFFFFFFF",
     "new": "00603021",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001300": {
-    "old": "FFFFFFFF",
     "new": "16A00003",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001304": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001308": {
-    "old": "FFFFFFFF",
     "new": "0B4137F1",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00130C": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001310": {
-    "old": "FFFFFFFF",
     "new": "0B4137F5",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001314": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001320": {
-    "old": "FFFFFFFF",
     "new": "2608FFBF",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001324": {
-    "old": "FFFFFFFF",
     "new": "2E090041",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001328": {
-    "old": "FFFFFFFF",
     "new": "0209400B",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00132C": {
-    "old": "FFFFFFFF",
     "new": "2509FFF9",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001330": {
-    "old": "FFFFFFFF",
     "new": "3129FFFD",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001334": {
-    "old": "FFFFFFFF",
     "new": "15200015",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001338": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00133C": {
-    "old": "FFFFFFFF",
     "new": "2509FFFB",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001340": {
-    "old": "FFFFFFFF",
     "new": "00094840",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001344": {
-    "old": "FFFFFFFF",
     "new": "00C95023",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001348": {
-    "old": "FFFFFFFF",
     "new": "95490000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00134C": {
-    "old": "FFFFFFFF",
     "new": "1120000F",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001350": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001354": {
-    "old": "FFFFFFFF",
     "new": "94C70000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001358": {
-    "old": "FFFFFFFF",
     "new": "954B0014",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00135C": {
-    "old": "FFFFFFFF",
     "new": "2509FFF9",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001360": {
-    "old": "FFFFFFFF",
     "new": "15200004",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001364": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001368": {
-    "old": "FFFFFFFF",
     "new": "0167482B",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00136C": {
-    "old": "FFFFFFFF",
     "new": "0B4004DE",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001370": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001374": {
-    "old": "FFFFFFFF",
     "new": "00EB482B",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001378": {
-    "old": "FFFFFFFF",
     "new": "11200004",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00137C": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001380": {
-    "old": "FFFFFFFF",
     "new": "02083023",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001384": {
-    "old": "FFFFFFFF",
     "new": "0B4136B3",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001388": {
-    "old": "FFFFFFFF",
     "new": "24C6000F",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D00138C": {
-    "old": "FFFFFFFF",
     "new": "03E00008",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D001390": {
-    "old": "FFFFFFFF",
     "new": "00000000",
-    "reason": "B7 helper"
+    "reason": "B7 helper",
+    "old_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+    "old_size": 4
   },
   "9D04DAF4": {
-    "old": "00A09021",
     "new": "0B400488",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "406e3aee269c94744407b4ea94e3a5ae1352d9608035f8f1aca0e075748e26b6",
+    "old_size": 4
   },
   "9D04DBFC": {
-    "old": "1040022C",
     "new": "0B41392C",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "6330cd9d0464659ec3166a3997f98fa231b8477382bc5480c5f33ed23a7a461e",
+    "old_size": 4
   },
   "9D04DCC4": {
-    "old": "10400209",
     "new": "0B41393B",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "4efc4b9e03d0313496d36942cb38feaabd94cabd5d4c5f9a3bd6a96209ce6e60",
+    "old_size": 4
   },
   "9D04DDE8": {
-    "old": "104001B1",
     "new": "0B41392C",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "48ab72b3df76dd07e18c9708e7d8b5626e76cde6fc1e22b4b4b9db810d4651af",
+    "old_size": 4
   },
   "9D04DE68": {
-    "old": "16A00005",
     "new": "0B4004B0",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "5122aa3c7f1bfc249fde2b81909ba0fa804ca0c4250256441d5e8fab839202c6",
+    "old_size": 4
   },
   "9D04DFA0": {
-    "old": "24040001",
     "new": "0B400490",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "cda882bfddac8c8612ccc90d4f9bc30f1f8144600c0df5e3d1404cbb7d53d3ff",
+    "old_size": 4
   },
   "9D04DFBC": {
-    "old": "16A00005",
     "new": "0B4004BC",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "5122aa3c7f1bfc249fde2b81909ba0fa804ca0c4250256441d5e8fab839202c6",
+    "old_size": 4
   },
   "9D04E2D0": {
-    "old": "10400086",
     "new": "0B41393B",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "ac9f958bc4378ff51c49fa85311e83409ac59512a221fe3df7d975a50a7c2987",
+    "old_size": 4
   },
   "9D04E420": {
-    "old": "10400032",
     "new": "0B41393B",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "7e269fcd74013e5850b0a8a65f8af6de7c74232e971818e1d69525e08ecd5d01",
+    "old_size": 4
   },
   "9D04E45C": {
-    "old": "10400014",
     "new": "0B41392C",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "5eae1b2781f51bfdee4014b01a3140c6101cbd771880d4b691cab89c6554d126",
+    "old_size": 4
   },
   "9D04E498": {
-    "old": "10400005",
     "new": "0B41392C",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "c1529cfcffda4e7987c4c06975dbc54ba95afe759442173fc852d589f897b262",
+    "old_size": 4
   },
   "9D04E4D4": {
-    "old": "10400005",
     "new": "0B41393B",
-    "reason": "B7 hook/gate"
+    "reason": "B7 hook/gate",
+    "old_sha256": "c1529cfcffda4e7987c4c06975dbc54ba95afe759442173fc852d589f897b262",
+    "old_size": 4
   },
   "9D0258B4": {
-    "old": "24842230",
     "new": "24842240",
-    "reason": "PIC 2.2.4 version"
+    "reason": "PIC 2.2.4 version",
+    "old_sha256": "089e9b68179354c2e31fc02aa345b9c25c7f5dd00adfed6d4a8337637253df47",
+    "old_size": 4
   },
   "9D051BC4": {
-    "old": "24842230",
     "new": "24842240",
-    "reason": "PIC 2.2.4 version"
+    "reason": "PIC 2.2.4 version",
+    "old_sha256": "089e9b68179354c2e31fc02aa345b9c25c7f5dd00adfed6d4a8337637253df47",
+    "old_size": 4
   },
   "9D052FEC": {
-    "old": "24020003",
     "new": "24020004",
-    "reason": "PIC 2.2.4 version"
+    "reason": "PIC 2.2.4 version",
+    "old_sha256": "cda3d944aae91d7b8debe1b2f7b27857b93c819c67dd1c9ac8f83f77c9c30bf6",
+    "old_size": 4
   }
 }

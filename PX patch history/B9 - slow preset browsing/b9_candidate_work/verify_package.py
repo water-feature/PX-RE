@@ -34,11 +34,11 @@ pic,app=b[2]['payload'],b[0]['payload'];pic0,app0=a[2]['payload'],a[0]['payload'
 assert pic==(OUT/'pic_2.2.2.1.1.bin').read_bytes() and app==(OUT/'voice_2.2.2.1.1_qnx.elf').read_bytes()
 assert [i for i,(x,y) in enumerate(zip(app0,app)) if x!=y]==[0x1f4e3,0x250e2,0x250ef]
 # Literal expected hook + metadata and allowlisted PIC byte regions, independent of manifest.
-assert struct.unpack_from('<I',pic,0x23550)[0]==0x0b400361
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x23550)[0])).hexdigest()=='8cbda0540ed3e32ceb5d67a8b719fc28b2dad31cdcd5e9224eef07106f7896ac'
 assert pic[0x23554:0x23558]==pic0[0x23554:0x23558]==bytes.fromhex('f4010224')
 assert pic0[0xd84:0xe00]==b'\xff'*124 and pic[0xde8:0xe00]==b'\xff'*24
-for off in (0x258b4,0x51bc4):assert struct.unpack_from('<I',pic,off)[0]==0x24842221
-for off in (0x1394,0x13a0):assert struct.unpack_from('<I',pic,off)[0]==0x24840001
+for off in (0x258b4,0x51bc4):assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='99d4d638528ade1cc25fc4c47a71456f6271bafd05cfcc9871ac2258b0f65d8d'
+for off in (0x1394,0x13a0):assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='43c9216e9b9aa559a72fb2004d7cbc68a7c33dac592e2fc4106773e82d6ac63a'
 allowed=set(range(0xd84,0xde8))|set(range(0x23550,0x23554))
 for off in (0x258b4,0x51bc4,0x1394,0x13a0):allowed.update(range(off,off+4))
 picdiff=[i for i,(x,y) in enumerate(zip(pic0,pic)) if x!=y]
@@ -57,8 +57,8 @@ for site,thunk,target in [(0x258c0,0x1394,0x9d075c1c),(0x51bc8,0x13a0,0x9d075b18
  m=CPU(pic);m.run(BASE+site,{target});assert m.g('a0')==0x402a0001 and m.g('ra')==BASE+site+8
 for off in (0x258b4,0x51bc4):
  m=CPU(pic);m.s('a0',0x40290000);m.fetch_simple(BASE+off);assert m.g('a0')==0x40292221
-assert struct.unpack_from('<I',pic,0x52fec)[0]==0x24020002 # M:2.2.2, established three-field convention.
-assert app[0x1f4dd:0x1f4e3]==bytes.fromhex('c78540f9ffff')
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x52fec)[0])).hexdigest()=='1f72b3d3bc7d3086c957c55ac17ec67f1328fb167c06edde5e436698631746de' # M:2.2.2, established three-field convention.
+assert hashlib.sha256(app[0x1f4dd:0x1f4e3]).hexdigest()=='6818940f9775e42f5d7406aac6317f88908778a6c59027cb66420fbf6ddcd3bd'
 reply=struct.unpack_from('<I',app,0x1f4e3)[0];assert reply==0x40139211
 assert [(reply&65535)>>14,(reply>>11)&7,(reply>>8)&7,(reply>>4)&15,reply&15]==REV
 # Independent existing actual-x86 decoder, no top-level validator/build code executed.

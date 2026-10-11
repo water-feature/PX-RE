@@ -44,8 +44,8 @@ def build():
  for ret in PANEL:
   assert struct.unpack_from('<II',pic0,ret-BASE-8)==(3<<26|((0x9d0234cc>>2)&0x3ffffff),0x00003821)
   assert 0x24030002 in struct.unpack_from('<6I',pic0,ret-BASE-24)
- assert struct.unpack_from('<I',pic0,0x234d0)[0]==0xafbf0044
- assert struct.unpack_from('<II',pic0,0x23550)==(0x02708021,0x240201f4)
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic0,0x234d0)[0])).hexdigest()=='77185abf4de0d8d9180b3192ed83d220e4a506ec38704d0af061472b1d48c405'
+ assert hashlib.sha256(struct.pack('<II',*struct.unpack_from('<II',pic0,0x23550))).hexdigest()=='291591a53defb0facc2414f29d7d23b8ad56f0927da1c7af088a8ea0ab773b7b'
  assert pic0[0xd84:0xe00]==b'\xff'*124
  helper=0x9d000d84
  rows=[('addu','s0','s3','s0'),('lw','t1',0x44,'sp'),('lui','t0',0x9d02)]
@@ -62,13 +62,13 @@ def build():
  for addr,word in words.items():put(addr,word,'B9 positive panel countdown no-reset helper')
  put(0x9d023550,asm(0x9d023550,('j',helper)),'B9 positive path hook; existing 500 delay slot preserved')
  for addr in (0x9d0258b4,0x9d051bc4):
-  assert struct.unpack_from('<I',pic0,addr-BASE)[0]==0x24842220
+  assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic0,addr-BASE)[0])).hexdigest()=='20b29d7713890e7f7b35971c2c61d877c6fb7d2e3453baefdb1222a0c7a886dc'
   put(addr,0x24842221,'revision first four fields 2.2.2.1')
  for addr in (0x9d001394,0x9d0013a0):
-  assert struct.unpack_from('<I',pic0,addr-BASE)[0]==0x24840009
+  assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic0,addr-BASE)[0])).hexdigest()=='983caaf2fa10cbe31a126d2958e8ea3f402927d4fcfc4a2b77b6e1cef8e90952'
   put(addr,0x24840001,'revision fifth field 1; existing B6 report thunk retained')
  # Existing M formatter exposes first three fields only: retain M:2.2.2.
- assert struct.unpack_from('<I',pic,0x52fec)[0]==0x24020002
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x52fec)[0])).hexdigest()=='1f72b3d3bc7d3086c957c55ac17ec67f1328fb167c06edde5e436698631746de'
  app=bytearray(app0);qchanges=[]
  for off,old,new in [(0x1f4e3,9,0x11),(0x250e2,0,1),(0x250ef,9,1)]:
   assert app0[off]==old;app[off]=new;qchanges.append({'offset':hex(off),'old':old,'new':new,'reason':'version report/updater equality'})

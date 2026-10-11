@@ -22,7 +22,7 @@ def main():
  def put(off,value,reason):
   assert off+len(value)<=len(out);out[off:off+len(value)]=value
   allowed.append(dict(start=off,end=off+len(value),reason=reason))
- assert e.read(0x1a87b,12).hex()=='4183c501488385e0fdffff70'
+ assert hashlib.sha256(e.read(0x1a87b,12)).hexdigest()=='e4e83aa32850992c5084ec5a5d6d951a03a393ced8c710b2e1a17e746c718b5b'
  assert m['hook']=='e9e8680e0090909090909090'
  assert (m['code_base'],m['code_end'],m['frame_base'],m['frame_end'])==(0x100f60,0x1012bb,0x1024e8,0x1025a4)
  # Exact current B15 sections prove the inherited reservation boundary.
@@ -41,7 +41,7 @@ def main():
  i=e.phdr.index(h);put(e.phoff+i*e.phentsize+32,struct.pack('<QQ',len(header),len(header)),'GNU_EH_FRAME file/memory sizes')
  for name,end in [('.b15_text',m['code_end']),('.b15_eh_frame',m['frame_end']),('.eh_frame_hdr',h['va']+len(header))]:
   i=e.section_names.index(name);put(e.shoff+i*e.shentsize+32,struct.pack('<Q',end-e.sections[i][3]),name+' section size')
- assert struct.unpack_from('<I',old,0x1f4e3)[0]==0x4013921b and old[0x250ef]==11
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',old,0x1f4e3)[0])).hexdigest()=='9db64facca134620ded2b020f9a257c805aad8c916a4fc72ba0b707b52351cee' and old[0x250ef]==11
  put(0x1f4e3,b'\x1c','application packed version report: .1.12')
  put(0x250ef,b'\x0c','application updater fifth-field compare: 12')
  changed=[i for i,(a,b) in enumerate(zip(old,out)) if a!=b]
@@ -53,7 +53,7 @@ def main():
  pic0=(BASE/'pic_2.2.2.1.11_B5_completion_fade_candidate.bin').read_bytes();assert sha(pic0)=='2ffb52bec4e399c0cfcc8bd00d27774e22c4b9ea6843afbd4a271a55ce191325'
  pic=bytearray(pic0)
  for off in (0x1394,0x13a0):
-  assert struct.unpack_from('<I',pic,off)[0]==0x2484000b;struct.pack_into('<I',pic,off,0x2484000c)
+  assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='1bd84e49bb381203eeaef99a7f4c1f5995573fb3c3a698852f37afda292591cc';struct.pack_into('<I',pic,off,0x2484000c)
  assert [i for i,(a,b) in enumerate(zip(pic0,pic)) if a!=b]==[0x1394,0x13a0]
  save(QNX,out);save(PIC,pic)
  ph=[struct.unpack_from('<IIQQQQQQ',out,x.phoff+i*x.phentsize) for i in range(x.phnum)]

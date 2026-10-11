@@ -79,8 +79,8 @@ def layout(base):
 BASE=0x9d000c00
 labels,rows,words=layout(BASE)
 hook=assemble(0x9d001224,('j',BASE))
-assert struct.unpack_from('<I',pic,0x1224)[0]==0x0b4136bf
-assert struct.unpack_from('<I',pic,0x1228)[0]==0x00a09021
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x1224)[0])).hexdigest()=='1eada8c9665036a19c6d8696edb9251c9c0b1230117bba3a6241a8ed24b88c6e'
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,0x1228)[0])).hexdigest()=='840f37e17d061f31105a15dda1aab1e26f21efd59855070d58417023d332894b'
 overlay={**words,0x9d001224:hook}
 
 def decode(pc):

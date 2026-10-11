@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Validate installed B5 candidate bytes/CFI, without executing a QNX ELF."""
+import hashlib
 import bisect,json,re,struct,subprocess,tempfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
@@ -83,13 +84,13 @@ def validate(base,out,m,objects):
     # Explicit independent whitelist; no allowance for obsolete section-table or
     # payload mutation. Manifest must match these ranges exactly.
     whitelist={40:8,60:2,original.phoff+2*original.phentsize+32:16,original.phoff+6*original.phentsize+8:40}
-    whitelist.update({h[1]:len(bytes.fromhex(h[2])) for h in JUMPS})
+    whitelist.update({h[1]:h[2]['size'] for h in JUMPS})
     whitelist.update({h[1]:5 for h in CALLS});whitelist.update({a[0]:5 for a in ALLOCATIONS})
     check('manifest edits exactly equal explicit B5 whitelist',{c['offset']:c['size'] for c in m['original_byte_whitelist']}==whitelist)
     allowed=set()
     for c in m['original_byte_whitelist']:
         at=c['offset'];n=c['size'];allowed.update(range(at,at+n))
-        check('edit guard and final bytes: '+c['label'],base[at:at+n].hex()==c['old'] and out[at:at+n].hex()==c['new'])
+        check('edit guard and final bytes: '+c['label'],hashlib.sha256(base[at:at+n]).hexdigest()==(c['old_sha256'] if 'old_sha256' in c else hashlib.sha256(bytes.fromhex(c['old'])).hexdigest()) and out[at:at+n].hex()==c['new'])
     changed=[i for i,(a,b) in enumerate(zip(base,out)) if a!=b]
     check('all changed original bytes lie in explicit whitelist',set(changed)<=allowed)
     check('original bytes not explicitly changed remain identical',all(base[i]==out[i] for i in range(len(base)) if i not in allowed))
@@ -130,7 +131,7 @@ def validate(base,out,m,objects):
         instructions=[i for i in decoded if f['va']<=i[0]<f['va']+f['size']]
         last=instructions[-1]
         check('JMP final continuation instruction '+name,last[2]=='jmp' and last[1][0]==0xe9 and last[0]+5+struct.unpack_from('<i',last[1],1)[0]==cont)
-        original_bytes=bytes.fromhex(oldhex)
+        original_bytes=guarded(original.read,site,oldhex)
         if name in ['forward','reverse','prepare','note_on','eof']:
             replay=b''.join(i[1] for i in instructions[-3:-1])
             check('displaced instruction replay '+name,replay==original_bytes)
@@ -220,3 +221,10 @@ def validate(base,out,m,objects):
     (ROOT/'b5_candidate_validation.json').write_text(json.dumps(result,indent=2)+'\n')
     (ROOT/'b5_candidate_cfi_rows.json').write_text(json.dumps(record_report,indent=2)+'\n')
     return {k:v for k,v in result.items() if k!='checks'}
+
+def guarded(read, address, guard):
+    data=read(address,guard['size'])
+    if len(data)!=guard['size'] or hashlib.sha256(data).hexdigest()!=guard['sha256']:
+        raise ValueError(f'Original-byte SHA-256 guard failed at {address:#x}')
+    return data
+

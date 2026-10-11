@@ -50,9 +50,9 @@ def build():
  for off,expected,name,op in hooks:
   assert struct.unpack_from('<II',old,off)==expected
   put(BASE+off,(op,starts[name]),name+' entry hook');put(BASE+off+4,('nop',),name+' hook delay')
- assert struct.unpack_from('<I',old,0x29ce0)[0]==0x0f41aa33
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',old,0x29ce0)[0])).hexdigest()=='ddf8d87b483dafc8c4fa8ca50f099df6f7580df13fb7d0ff3ae1dbc5d8001f9d'
  put(BASE+0x29ce0,('jal',starts['blank']),'blanking rectangle cancels previous primary transfer; original selector delay retained')
- assert struct.unpack_from('<I',old,0x3ee54)[0]==0x1460ffc0
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',old,0x3ee54)[0])).hexdigest()=='5438bb064eb44326d67b306fec02c13e20a0078ba020fd1ae4d932567aefb8d4'
  put(BASE+0x3ee54,('bne','v1','zero',BASE+0x3ed24),'render all pending fields before starting stable frame')
  for name,rows in blocks.items():
   for i,row in enumerate(rows):put(starts[name]+i*4,row,name+' helper')

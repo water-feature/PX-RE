@@ -52,7 +52,7 @@ for b,oe,places,tables in objects:
    assert typ in (2,4),typ
    struct.pack_into('<i',view,site,target+add-site)
    relocs.append(dict(site=site,target=target,type=typ,addend=add,symbol=sn))
-assert e.read(0x1a87b,12).hex()=='4183c501488385e0fdffff70'
+assert hashlib.sha256(e.read(0x1a87b,12)).hexdigest()=='e4e83aa32850992c5084ec5a5d6d951a03a393ced8c710b2e1a17e746c718b5b'
 hook=b'\xe9'+struct.pack('<i',symbols['center_thunk']-0x1a880)+b'\x90'*7
 thunkend=next(i['start']+i['size'] for i in inventory if i['object']=='design_thunk' and i['section']=='.text')
 assert view[thunkend-17:thunkend-5]==e.read(0x1a87b,12)

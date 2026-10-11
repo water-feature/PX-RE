@@ -25,17 +25,14 @@ def build():
        ('j',BASE+0x41264),('nop',)]
  labels={'byte':START+4*4}
  assert len(rows)==19 and START+len(rows)*4==BASE+0x41214
- # Guard every replaced original word against independent exact-baseline dump.
- expected={}
- for line in (R/'b14_investigation/ui_exact_1_4.txt').read_text().splitlines():
-  bits=line.split()
-  if len(bits)>2 and len(bits[0])==8 and len(bits[1])==8:
-   try:expected[int(bits[0],16)]=int(bits[1],16)
-   except ValueError:pass
+ # Check independently audited pre-edit spans without embedding original bytes.
+ guards=json.loads((R/'b14_investigation/ui_exact_1_4.json').read_text())
+ for guard in guards:
+  off=guard['address']-BASE;n=guard['size']
+  assert len(old[off:off+n])==n and sha(old[off:off+n])==guard['sha256']
  new=bytearray(old);patches=[]
  def put(pc,row,why):
   off=pc-BASE;before=old[off:off+4]
-  assert struct.unpack('<I',before)[0]==expected[pc]
   after=struct.pack('<I',enc(pc,row,labels));new[off:off+4]=after
   patches.append({'address':hex(pc),'offset':hex(off),'before':before.hex(),'after':after.hex(),'assembly':row,'reason':why})
  for i,row in enumerate(rows):put(START+i*4,row,'in-place bounded 64-byte sequential metadata read')

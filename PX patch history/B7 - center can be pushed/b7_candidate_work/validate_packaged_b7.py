@@ -21,7 +21,7 @@ pic=n[2][1];assert pic==(P/'pic_2.2.2.0.8.bin').read_bytes()
 manifest=json.loads((P/'b7_patch_manifest.json').read_text());allowed=set()
 for a,item in manifest.items():
  off=int(a,16)-m.BASE
- assert struct.unpack_from('<I',o[2][1],off)[0]==int(item['old'],16)
+ assert hashlib.sha256(o[2][1][off:off+4][::-1]).hexdigest()==(item['old_sha256'] if 'old_sha256' in item else hashlib.sha256(bytes.fromhex(item['old'])).hexdigest())
  assert struct.unpack_from('<I',pic,off)[0]==int(item['new'],16)
  allowed.update(range(off,off+4))
 diff=[i for i,(a,b) in enumerate(zip(pic,o[2][1])) if a!=b];assert set(diff)<=allowed

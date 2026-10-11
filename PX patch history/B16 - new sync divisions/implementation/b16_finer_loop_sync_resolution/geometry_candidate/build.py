@@ -23,9 +23,9 @@ for a,w in words.items():struct.pack_into('<I',out,a-BASE,w)
 functional_pic=bytes(out);scope=set(range(0x3b0a0,0x3b104))|set(range(0x3b55c,0x3b57c));assert set(changes(pic,out))<=scope
 pd=diff('PIC_geometry_diff.tsv',pic,out,BASE)
 # Established fifth-component version procedure, tracked separately.
-for off in (0x1394,0x13a0):assert struct.unpack_from('<I',out,off)[0]==0x24840001;struct.pack_into('<I',out,off,0x24840002)
-app=bytearray(qnx);assert struct.unpack_from('<I',app,0x1f4e3)[0]==0x40139221;struct.pack_into('<I',app,0x1f4e3,0x40139222)
-assert app[0x250e9:0x250f0]==bytes.fromhex('80bd74faffff01');app[0x250ef]=2
+for off in (0x1394,0x13a0):assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',out,off)[0])).hexdigest()=='43c9216e9b9aa559a72fb2004d7cbc68a7c33dac592e2fc4106773e82d6ac63a';struct.pack_into('<I',out,off,0x24840002)
+app=bytearray(qnx);assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',app,0x1f4e3)[0])).hexdigest()=='4a0aefa53435f484d5226e276f88b606a75f151dd1a996eca61e534783315686';struct.pack_into('<I',app,0x1f4e3,0x40139222)
+assert hashlib.sha256(app[0x250e9:0x250f0]).hexdigest()=='769897966c9cc4178ab1bd456723be37a4812f95c84db19e15087e0deb3cb2e6';app[0x250ef]=2
 assert set(changes(functional_pic,out))=={0x1394,0x13a0};assert set(changes(qnx,app))=={0x1f4e3,0x250ef}
 diff('PIC_version_diff.tsv',functional_pic,out,BASE);diff('QNX_version_diff.tsv',qnx,app,0x100000)
 assert set(changes(pic,out))<=scope|{0x1394,0x13a0}

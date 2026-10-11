@@ -29,7 +29,7 @@ for a,w in words.items():
 put(0x9d001224,0x0b400300,'B6 hook; inherited delay slot preserved')
 # All five PIC revision components match package/application .9.
 for a in (0x9d0258b4,0x9d051bc4):
- assert struct.unpack_from('<I',pic0,a-0x9d000000)[0]==0x24842240
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic0,a-0x9d000000)[0])).hexdigest()=='9800bddd5c9028c5b9c585c5d4148eb48869913d42c66aedabc4e5b5f2255e76'
  put(a,0x24842220,'PIC revision first four fields 2.2.2.0')
 for site,addr,target in [(0x9d0258c0,0x9d001394,0x9d075c1c),(0x9d051bc8,0x9d0013a0,0x9d075b18)]:
  assert struct.unpack_from('<I',pic0,site-0x9d000000)[0]==ns['assemble'](site,('jal',target))
@@ -37,7 +37,7 @@ for site,addr,target in [(0x9d0258c0,0x9d001394,0x9d075c1c),(0x9d051bc8,0x9d0013
   assert pic0[a-0x9d000000:a-0x9d000000+4]==b'\xff'*4
   put(a,ns['assemble'](a,row),'PIC fifth revision field 9 report thunk')
  put(site,ns['assemble'](site,('jal',addr)),'PIC fifth revision field 9 report hook; LUI delay preserved')
-assert struct.unpack_from('<I',pic0,0x52fec)[0]==0x24020004
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic0,0x52fec)[0])).hexdigest()=='98ff8498f1947f9ac317462fe8d8bfdbbf4d9183c5a24590ccce0eeac32d1d66'
 put(0x9d052fec,0x24020002,'M formatter first three fields 2.2.2')
 app=bytearray(app0)
 for off in (0x1f4e3,0x250ef):assert app[off]==8;app[off]=9

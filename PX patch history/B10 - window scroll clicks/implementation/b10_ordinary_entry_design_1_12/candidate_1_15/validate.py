@@ -15,16 +15,16 @@ def main():
  phoff=S.unpack_from('<Q',old,32)[0]
  for i in range(S.unpack_from('<H',old,56)[0]):
   lo=phoff+56*i
-  if S.unpack_from('<I',old,lo)[0]!=0x6474e550:assert b[lo:lo+56]==old[lo:lo+56]
+  if hashlib.sha256(S.pack('<I',S.unpack_from('<I',old,lo)[0])).hexdigest()!='0fe51dced2745ee6eab34377ad3e64563eef82533a339cae1c75354d09fd1dd5':assert b[lo:lo+56]==old[lo:lo+56]
  h=0x103000;oldn=S.unpack_from('<I',old,h+8)[0];newn=S.unpack_from('<I',b,h+8)[0]
  def pairs(data,n):return [tuple(h+x for x in S.unpack_from('<ii',data,h+12+8*i)) for i in range(n)]
  prior=pairs(old,oldn);current=pairs(b,newn);assert oldn==899 and current==sorted(prior+[tuple(x) for x in m['new_FDEs']])
  for pc,f in current:
   length,cie=S.unpack_from('<II',b,f);assert cie and length>=12
   assert f+8+S.unpack_from('<i',b,f+8)[0]==pc
-  cieaddr=f+4-cie;assert S.unpack_from('<I',b,cieaddr+4)[0]==0
+  cieaddr=f+4-cie;assert hashlib.sha256(S.pack('<I',S.unpack_from('<I',b,cieaddr+4)[0])).hexdigest()=='df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119'
   if (pc,f) in prior:assert b[f:f+4+length]==old[f:f+4+length]
- assert S.unpack_from('<I',b,0x1f4e3)[0]==0x4013921f and b[0x250ef]==15
+ assert hashlib.sha256(S.pack('<I',S.unpack_from('<I',b,0x1f4e3)[0])).hexdigest()=='7c2065036356b0a1304f121c0d1e8f0444413dd11302da2d440028937a8e0619' and b[0x250ef]==15
  identity=json.loads((O/'identity.json').read_text());assert identity['sha256']==sha(b) and identity['unchanged'] and identity['firmware_build']
  phase=json.loads((O/'phase_counts.json').read_text());assert phase==dict(trials=162528,corrected=6900)
  hand=list(csv.DictReader(open(O/'handoff_sweep.csv')));assert len(hand)==6900

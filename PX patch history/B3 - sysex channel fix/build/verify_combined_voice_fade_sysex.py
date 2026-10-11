@@ -14,7 +14,7 @@ expected[0x2c4c19]=0x21 # 0x273055 + 0x51BC4
 expected[0x27304e]=1
 assert b==expected
 assert b[:0x273049]==a[:0x273049]
-assert b[0x29c609:0x29c60d]==bytes.fromhex('04 00 a4 90')
+assert hashlib.sha256(b[0x29c609:0x29c60d]).hexdigest()=='7aab477050ea5f44b8635ade6db046d97c08e90267a2b24d189c783e35fdce93'
 assert b[0x27304b:0x273050]==bytes([2,2,2,1,0])
 assert b[3:8]==bytes([2,2,2,0,1]) and b[-3:]==b'00\xf7'
 for lo,n,trailer in [(13,986520,0xf0da5),(0xf0db3,1581716,0x273047)]:

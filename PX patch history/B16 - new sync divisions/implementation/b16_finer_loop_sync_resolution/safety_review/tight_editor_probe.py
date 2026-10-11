@@ -3,8 +3,8 @@
 No build/package driver imports. Outputs are text/JSON only. Explicit MIPS32
 encoding and a scoped interpreter, not an independent assembler or PIC emulator.
 """
-from pathlib import Path
 import hashlib
+from pathlib import Path
 import json
 import struct
 
@@ -135,7 +135,7 @@ def main():
     assert hashlib.sha256(image).hexdigest()==PIN
     overlay,source=program()
     assert len(overlay)*4==156 and min(overlay)==START and max(overlay)==END-4
-    assert image[HELPER-BASE:HELPER-BASE+28].hex()=='2110a400030040042a18c2000800e0030b10c3000800e00321100000'
+    assert hashlib.sha256(image[HELPER-BASE:HELPER-BASE+28]).hexdigest()=='6a5d3d18cea45f27409be3a52c827c9bc3db7fb0452ab0f31d71d968e0957365'
     gate=sum(((0 if i^0x5e==0 else i^0x1d)==0)==(i in (0x1d,0x5e)) for i in range(65536))
     assert gate==65536
     sync=non=bpm=chain=0

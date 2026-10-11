@@ -23,19 +23,18 @@ def build(factory: bytes, spec: dict) -> bytes:
         raise ValueError("factory identity mismatch")
     records = parse(factory)
     source = records[0].payload
-    if spec["format"] != 1 or spec["input_sha256"] != sha256(source) or spec["input_size"] != len(source):
+    if spec["format"] != 2 or spec["input_sha256"] != sha256(source) or spec["input_size"] != len(source):
         raise ValueError("B1 recipe/source identity mismatch")
     app = bytearray(source)
     owned = set()
     for span in spec["spans"]:
         offset = int(span["offset"], 16)
-        before = bytes.fromhex(span["expected_hex"])
         after = bytes.fromhex(span["replacement_hex"])
         length = span["size"]
-        if length != len(before) or length != len(after) or offset < 0 or offset + length > len(app):
+        if length != span["expected_size"] or length != len(after) or offset < 0 or offset + length > len(app):
             raise ValueError("invalid B1 recipe span")
         positions = set(range(offset, offset + length))
-        if owned & positions or app[offset:offset + length] != before:
+        if owned & positions or sha256(app[offset:offset + length]) != span["expected_sha256"]:
             raise ValueError(f"overlap or byte guard failure at {offset:#x}")
         app[offset:offset + length] = after
         owned |= positions

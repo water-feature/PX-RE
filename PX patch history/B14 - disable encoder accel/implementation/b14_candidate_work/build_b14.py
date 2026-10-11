@@ -60,10 +60,10 @@ def build():
         off = pc-BASE; before = old[off:off+4]; after = struct.pack('<I',word)
         new[off:off+4] = after
         patches.append({'address':hex(pc),'offset':hex(off),'before':before.hex(),'after':after.hex(),'reason':why})
-    for pc, expected in [(0x9D07A34C,0x10400046),(0x9D07A3C8,0x1040000F)]:
-        assert struct.unpack_from('<II',old,pc-BASE) == (expected,0)
+    for pc, expected in [(0x9D07A34C,'62d4cc4d21be2d02e11e210f1a1a0e1ad333a487a148d004cbb54ff1435d831b'),(0x9D07A3C8,'daf3d11b3aa21b4ce65e75a298fca5f94e4c045f2509564c509f884170d0b56a')]:
+        assert sha(old[pc-BASE:pc-BASE+8]) == expected
         put(pc,0,'global canonical slow-path bypass')
-    assert struct.unpack_from('<II',old,0x7A208) == (0x27BDFFE8,0xAFBF0014)
+    assert sha(old[0x7A208:0x7A210]) == 'f8ef6a4938dc02b3660371e5ef293f9361ce9af83991c9a997b667cfe39b08ae'
     put(0x9D07A208,encode(0x9D07A208,('j',HELPER),labels),'service entry jump')
     put(0x9D07A20C,0,'service entry delay slot; original prologue skipped')
     for i,row in enumerate(rows): put(HELPER+i*4,encode(HELPER+i*4,row,labels),'replay helper in unreachable acceleration code')

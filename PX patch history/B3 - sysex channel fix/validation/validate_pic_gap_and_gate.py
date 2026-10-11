@@ -10,12 +10,12 @@ assert hashlib.sha256(raw).hexdigest()=='f6b5205fc40e635305445bb19dd1a41d12f2ee4
 BASE,OFF,SIZE=0x9D000000,0x273055,530784
 b=raw[OFF:OFF+SIZE];CAVE=BASE+0x1200;HOOK=BASE+0x295B0;RESUME=HOOK+8
 assert b[0x11c4:0x1480]==b'\xff'*700
-assert struct.unpack_from('<I',b,0x11bc)[0]==0x01000008
-assert struct.unpack_from('<I',b,0x11c0)[0]==0
-assert struct.unpack_from('<I',b,0x81098)[0]==0x25081480
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',b,0x11bc)[0])).hexdigest()=='85fd965f1d2ec9de5c26f6ceeb0ee2803823fc81817aacbaed440b2d4075d930'
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',b,0x11c0)[0])).hexdigest()=='df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119'
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',b,0x81098)[0])).hexdigest()=='063b3e7331b556a31fa138dc3e170026e0e411329357aa0ae8b4a483a86d70f8'
 # Pin EBase setter and its constants, including its uniqueness in the image.
 assert [n for n in range(0,len(b),4) if struct.unpack_from('<I',b,n)[0]&0xffe0ffff==0x40807801]==[0x112c]
-assert struct.unpack_from('<III',b,0x1120)==(0x3c099d00,0x25290000,0x000000c0)
+assert hashlib.sha256(struct.pack('<III',*struct.unpack_from('<III',b,0x1120))).hexdigest()=='5ba5fd829d3c510663d4cbe53b23ae286a731c265d4a9c4206a1bd2f0ccb4c82'
 records=[];vectors={};n=0x1480
 while True:
     dest=struct.unpack_from('<I',b,n)[0]

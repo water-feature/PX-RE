@@ -33,282 +33,322 @@
     {
       "address": "0x9d07a34c",
       "offset": "0x7a34c",
-      "before": "46004010",
       "after": "00000000",
-      "reason": "global canonical slow-path bypass"
+      "reason": "global canonical slow-path bypass",
+      "before_sha256": "216fa1b14c8254672e80942369bcbbc645eaf5f8652bdf348cc162be91058b7c",
+      "before_size": 4
     },
     {
       "address": "0x9d07a3c8",
       "offset": "0x7a3c8",
-      "before": "0f004010",
       "after": "00000000",
-      "reason": "global canonical slow-path bypass"
+      "reason": "global canonical slow-path bypass",
+      "before_sha256": "2e3742eaa9bcaa2c591d90a37663208b84d23786eb3300e848a428687861c9af",
+      "before_size": 4
     },
     {
       "address": "0x9d07a208",
       "offset": "0x7a208",
-      "before": "e8ffbd27",
       "after": "1ae9410b",
-      "reason": "service entry jump"
+      "reason": "service entry jump",
+      "before_sha256": "9da69f68f7f99868cf912d984e4ce2e36615cb9436236bbf3f4b97997331cddb",
+      "before_size": 4
     },
     {
       "address": "0x9d07a20c",
       "offset": "0x7a20c",
-      "before": "1400bfaf",
       "after": "00000000",
-      "reason": "service entry delay slot; original prologue skipped"
+      "reason": "service entry delay slot; original prologue skipped",
+      "before_sha256": "0288afa4dc2408b5cb014e0ec7622f8e0716f32c3088684c9040a34c417bc40b",
+      "before_size": 4
     },
     {
       "address": "0x9d07a468",
       "offset": "0x7a468",
-      "before": "0400e890",
       "after": "e0ffbd27",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "7ac2b64039a85fe85477604daabc508860525b1694f600a9c3e8f9ad992535eb",
+      "before_size": 4
     },
     {
       "address": "0x9d07a46c",
       "offset": "0x7a46c",
-      "before": "ff000831",
       "after": "1c00bfaf",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "691c15254107d18d404612e3a9056d51bf1fff11054d672f5064e4a1159294ba",
+      "before_size": 4
     },
     {
       "address": "0x9d07a470",
       "offset": "0x7a470",
-      "before": "bbff0015",
       "after": "1800b2af",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "667fd9954f85d7ffd2ad731bb18bd6f61df349910d14851d905d25eee0d70c70",
+      "before_size": 4
     },
     {
       "address": "0x9d07a474",
       "offset": "0x7a474",
-      "before": "21100000",
       "after": "1400b1af",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "fc6f1ad92eb3f7f75feb2005c6c218d1258dc66ea9f4b28b690495463125fe32",
+      "before_size": 4
     },
     {
       "address": "0x9d07a478",
       "offset": "0x7a478",
-      "before": "0200e290",
       "after": "1000b0af",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "97172cc67218bf5ca6614196dacbe6dd8cba9e56713b1527a8b182d1273a8799",
+      "before_size": 4
     },
     {
       "address": "0x9d07a47c",
       "offset": "0x7a47c",
-      "before": "ff004230",
       "after": "21888000",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "647e4ee7533086f88f3838a7b1c883bc3c1a38554a9cfc633b75ec544b6aeddf",
+      "before_size": 4
     },
     {
       "address": "0x9d07a480",
       "offset": "0x7a480",
-      "before": "0300422c",
       "after": "80101100",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "2525d57627825c2faaa7d9eca71bf84412f8ff328b8d29a54e48642246c60058",
+      "before_size": 4
     },
     {
       "address": "0x9d07a484",
       "offset": "0x7a484",
-      "before": "21004010",
       "after": "00191100",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "912ba9c9023f98d21097042ebd618ca7dea19ed9baefbc3288fc4d59fdef42b7",
+      "before_size": 4
     },
     {
       "address": "0x9d07a488",
       "offset": "0x7a488",
-      "before": "04000824",
       "after": "23186200",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "f016ffaf26afadb2e53b22793a8479990e9e37c28b96b9f232cfb93820dd1b3c",
+      "before_size": 4
     },
     {
       "address": "0x9d07a48c",
       "offset": "0x7a48c",
-      "before": "0200e890",
       "after": "0180093c",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "34efd962e3ef9dcdfbdb6a4e388380ec15d87681eaa2aca36d489bea9c64c367",
+      "before_size": 4
     },
     {
       "address": "0x9d07a490",
       "offset": "0x7a490",
-      "before": "0400a238",
       "after": "f00b2925",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "01f6c2ffd1fc07b8d9d169cfe599197adf6d8e3a2e199df858bd5b3c9f54b792",
+      "before_size": 4
     },
     {
       "address": "0x9d07a494",
       "offset": "0x7a494",
-      "before": "0100422c",
       "after": "21186900",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "c8efae7ef7609e8d14eb50b896e344c6c78a417c83853ff75766101963b140d2",
+      "before_size": 4
     },
     {
       "address": "0x9d07a498",
       "offset": "0x7a498",
-      "before": "01000525",
       "after": "00606841",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "e2cb33fc5118b6cf5ce54d916db2baa8409f97a62579c84e5e4338d1338b920e",
+      "before_size": 4
     },
     {
       "address": "0x9d07a49c",
       "offset": "0x7a49c",
-      "before": "ff00a530",
       "after": "c0000000",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "f77b6b7fcf43a23a2de5e18ac5959a36d00be61ffba176a34d43e51151e39164",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4a0",
       "offset": "0x7a4a0",
-      "before": "0200e5a0",
       "after": "0800708c",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "d5156b6ef17bc9bfaaa807b3012093932d4552682b3f434c580ae673c5a01436",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4a4",
       "offset": "0x7a4a4",
-      "before": "d9e8410b",
       "after": "080060ac",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "0a167e9ef78406a14427f07d0249ceb88dcdd3b485fd11d9020aa18da641e51b",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4a8",
       "offset": "0x7a4a8",
-      "before": "23288600",
       "after": "00608840",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "f014c300a16005f2f11ff3f657b5019da2ed8bebbbe1a76867e2d6f9e9aa1c14",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4ac",
       "offset": "0x7a4ac",
-      "before": "ccffa814",
       "after": "c0000000",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "88726db6c18b0ac8a158f0c7e34fe144e402d208129553a7e4931152ee8185fb",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4b0",
       "offset": "0x7a4b0",
-      "before": "ffff0224",
       "after": "0b000012",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "9a044b9d35d8bfb12a7e9217ed346bc0ab65fcbd4c9390ee99e818bbbc4a4cab",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4b4",
       "offset": "0x7a4b4",
-      "before": "0500e590",
       "after": "00000000",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "fccf16dd5dc1a75aa7426f2b4f86c4fe2204d64c7ed65884cb000ca42b53c60c",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4b8",
       "offset": "0x7a4b8",
-      "before": "ff00a530",
       "after": "2a400002",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "f77b6b7fcf43a23a2de5e18ac5959a36d00be61ffba176a34d43e51151e39164",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4bc",
       "offset": "0x7a4bc",
-      "before": "ea00a52c",
       "after": "40400800",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "96f9a90cf019ab91363693ff495f224058a0dd486519aa5a2a9ea94f66671253",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4c0",
       "offset": "0x7a4c0",
-      "before": "c8ffa014",
       "after": "01001224",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "86b591b8d8bd6168673cd1f1ef78bc3675864ce3c6c89f792590f1641028807a",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4c4",
       "offset": "0x7a4c4",
-      "before": "23288600",
       "after": "23904802",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "f014c300a16005f2f11ff3f657b5019da2ed8bebbbe1a76867e2d6f9e9aa1c14",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4c8",
       "offset": "0x7a4c8",
-      "before": "0500e590",
       "after": "21202002",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "fccf16dd5dc1a75aa7426f2b4f86c4fe2204d64c7ed65884cb000ca42b53c60c",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4cc",
       "offset": "0x7a4cc",
-      "before": "ff00a530",
       "after": "d1f6410f",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "f77b6b7fcf43a23a2de5e18ac5959a36d00be61ffba176a34d43e51151e39164",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4d0",
       "offset": "0x7a4d0",
-      "before": "fa00a52c",
       "after": "21284002",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "85360ae7a28ce29fa4486fd04be9e633799703ab57f7eb0cb95d60baf6433087",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4d4",
       "offset": "0x7a4d4",
-      "before": "c2ffa010",
       "after": "23801202",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "6000f93c09790f9e911ed48b67018289a7cd0fe4bcb4c706901233c2a78d5472",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4d8",
       "offset": "0x7a4d8",
-      "before": "f9ff0224",
       "after": "fbff0016",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "22d00ac5087a5d05f8edaa32feb83a2a2e237b819b92a5afa3ba76c72f84449d",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4dc",
       "offset": "0x7a4dc",
-      "before": "0500e590",
       "after": "00000000",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "fccf16dd5dc1a75aa7426f2b4f86c4fe2204d64c7ed65884cb000ca42b53c60c",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4e0",
       "offset": "0x7a4e0",
-      "before": "ff00a530",
       "after": "1000b08f",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "f77b6b7fcf43a23a2de5e18ac5959a36d00be61ffba176a34d43e51151e39164",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4e4",
       "offset": "0x7a4e4",
-      "before": "f400a52c",
       "after": "1400b18f",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "cc1e73148365481475d95ad4f4dd4f1d6dbf4cc94cbb9aa88058f5366c30fd8d",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4e8",
       "offset": "0x7a4e8",
-      "before": "bdffa010",
       "after": "1800b28f",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "cfb7b731412d614ec5b5b6fb9c78d912fd01e593016bbbfc36b5c01f762d2b82",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4ec",
       "offset": "0x7a4ec",
-      "before": "fcff0224",
       "after": "1c00bf8f",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "41efbf3d7efaf39c21f2a5452f46167f8839348324e65951891f76f202d080fb",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4f0",
       "offset": "0x7a4f0",
-      "before": "0500e790",
       "after": "0800e003",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "cc2cb64bef6269b4e1d7de4c2fb9654024710d13e4dff83ff0464e49a7f3df06",
+      "before_size": 4
     },
     {
       "address": "0x9d07a4f4",
       "offset": "0x7a4f4",
-      "before": "fdff0224",
       "after": "2000bd27",
-      "reason": "replay helper in unreachable acceleration code"
+      "reason": "replay helper in unreachable acceleration code",
+      "before_sha256": "5b86d03fe188a6c80e9fedf08c17fbd21afed545c44da1c0f0b192f524f6d987",
+      "before_size": 4
     }
   ],
   "QNX": "not modified",

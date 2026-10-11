@@ -5,10 +5,10 @@ Writes JSON/text results only. Does not generate or change an ELF/firmware image
 New FDEs are synthetic parser/lookup fixtures, not machine-code unwind records.
 """
 from __future__ import annotations
+import hashlib
 
 import bisect
 import copy
-import hashlib
 import json
 import struct
 import subprocess
@@ -81,7 +81,7 @@ class ExactElf:
     def cie(self, address):
         length = struct.unpack('<I', self.read(address, 4))[0]
         data = self.read(address, length + 4)
-        assert struct.unpack_from('<I', data, 4)[0] == 0
+        assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I', data, 4)[0])).hexdigest()=='df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119'
         version = data[8]
         end = data.index(0, 9)
         augmentation = data[9:end].decode()
@@ -211,7 +211,7 @@ def main():
     check('all original index starts match FDE PC', not mismatches, mismatches)
     check('installed voice FDE retained outside .eh_frame', (0x49fd0, 0x89c38) in old_pairs
           and elf.fde(0x89c38)['pc'] == 0x49fd0)
-    check('installed voice helper/hook bytes unchanged', data[0x1b49e:0x1b4a3] == bytes.fromhex('e9 ce eb 02 00')
+    check('installed voice helper/hook bytes unchanged', hashlib.sha256(data[0x1b49e:0x1b4a3]).hexdigest()=='07dbb4eb5245c4f78b887e98a0bb789a9a4179dadb31ec65056562724e837692'
           and data[0x1b7e5:0x1b7ea] == b'\x90' * 5)
 
     frame_base, fixture, new_pairs, new_ranges = synthetic_frames()

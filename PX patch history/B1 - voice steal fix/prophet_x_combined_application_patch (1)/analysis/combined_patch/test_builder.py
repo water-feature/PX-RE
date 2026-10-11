@@ -15,7 +15,7 @@ def reject(name,b,s):
 b=bytearray(source);b[0x21399]^=1;reject('modified source',bytes(b),spec)
 reject('truncated source',source[:-1],spec)
 reject('already patched input',result,spec)
-s=copy.deepcopy(spec);s['spans'][0]['expected_hex']='00'+s['spans'][0]['expected_hex'][2:];reject('wrong expected bytes',source,s)
+s=copy.deepcopy(spec);s['spans'][0]['expected_sha256']='0'*64;reject('wrong expected bytes',source,s)
 s=copy.deepcopy(spec);s['spans'].append(copy.deepcopy(s['spans'][0]));reject('overlapping edits',source,s)
 s=copy.deepcopy(spec);s['spans'][0]['replacement_hex']+='00';reject('size-changing replacement',source,s)
 s=copy.deepcopy(spec);s['integration_hooks'][0]['target']='0x49fd5';reject('wrong hook destination',source,s)

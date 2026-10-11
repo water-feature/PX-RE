@@ -1,4 +1,5 @@
 """Audit reuse of now-unreachable acceleration instructions, not spare padding."""
+import hashlib
 from pathlib import Path
 import struct,json
 ROOT=Path(__file__).resolve().parent.parent;OUT=Path(__file__).resolve().parent
@@ -31,8 +32,8 @@ assert control==[['0x9d0768c4','0x9d07a500'],['0x9d07a34c','0x9d07a468'],['0x9d0
 assert b[0x768C4:0x768C8]==bytes([14,15,17,18])
 # Second removed. Third originates in negative acceleration block whose only
 # canonical ingress is removed at 3c8. Fourth originates in reused dead block.
-assert struct.unpack_from('<I',n,0x7A34C)[0]==0
-assert struct.unpack_from('<I',n,0x7A3C8)[0]==0
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',n,0x7A34C)[0])).hexdigest()=='df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119'
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',n,0x7A3C8)[0])).hexdigest()=='df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119'
 # Existing anchor-rejection shared return block at 450..468 must survive.
 assert n[0x7A450:0x7A468]==b[0x7A450:0x7A468]
 # Both service entry references and decoder callers, direct target scans.

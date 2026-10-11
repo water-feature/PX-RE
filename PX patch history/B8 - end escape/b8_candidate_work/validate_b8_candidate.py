@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Independent installed B8 branch/ABI/unwind checks against inherited B5."""
+import hashlib
 import bisect,json,re,struct,subprocess,tempfile,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
@@ -25,11 +26,11 @@ def validate(base,out,m,objects):
  ck('new sections and unwind terminator',e.sections[-2][3:6]==(L['code_base'],L['code_base'],L['code_bytes']) and e.sections[-1][3:6]==(L['frame_base'],L['frame_base'],L['frame_bytes_with_terminator']) and e.read(L['frame_base']+L['frame_bytes'],4)==b'\0'*4)
  ck('metadata outside RX',e.shoff>=L['rx_end']+L['names_size'] and e.sections[e.shstrndx][4]==L['rx_end'])
  allowed={40:8,60:2,old.phoff+2*old.phentsize+32:16,old.phoff+6*old.phentsize+8:40}
- allowed.update({site:len(bytes.fromhex(raw)) for _,site,raw,_,_ in JUMPS});allowed.update({site:5 for _,site,_,_ in CALLS});allowed.update({site:5 for site,_,_ in ALLOCATIONS})
+ allowed.update({site:raw['size'] for _,site,raw,_,_ in JUMPS});allowed.update({site:5 for _,site,_,_ in CALLS});allowed.update({site:5 for site,_,_ in ALLOCATIONS})
  ck('exact explicit edit whitelist',{c['offset']:c['size'] for c in m['original_byte_whitelist']}==allowed)
  mask=set()
  for c in m['original_byte_whitelist']:
-  p,n=c['offset'],c['size'];mask.update(range(p,p+n));ck('guard/final '+c['label'],base[p:p+n].hex()==c['old'] and out[p:p+n].hex()==c['new'])
+  p,n=c['offset'],c['size'];mask.update(range(p,p+n));ck('guard/final '+c['label'],hashlib.sha256(base[p:p+n]).hexdigest()==(c['old_sha256'] if 'old_sha256' in c else hashlib.sha256(bytes.fromhex(c['old'])).hexdigest()) and out[p:p+n].hex()==c['new'])
  changed={i for i,(a,b) in enumerate(zip(base,out)) if a!=b}
  ck('all other baseline bytes preserved',changed<=mask and len(out)>len(base))
  inherited=json.loads((ROOT.parent/'b5_candidate_work/b5_candidate_manifest.json').read_text())
@@ -68,7 +69,7 @@ def validate(base,out,m,objects):
  for name,site,raw,cont,cfa in JUMPS:
   f=next(f for f in m['functions'] if f['name']=='b8_hook_'+name);ins=[i for i in decoded if f['va']<=i[0]<f['va']+f['size']];last=ins[-1]
   if name in ['gate','note']:
-   ck('flags-preserving indirect continuation '+name,last[1]==bytes.fromhex('ff6424f0'))
+   ck('flags-preserving indirect continuation '+name,hashlib.sha256(last[1]).hexdigest()=='cb096fa36627fd5cd3c17a8e8bc512499bdad839f7685051105a7608bc32f6de')
   else:ck('direct continuation '+name,last[2]=='jmp' and last[0]+5+struct.unpack_from('<i',last[1],1)[0]==cont)
   if name=='prepare':replay=b''.join(i[1] for i in ins[-3:-1])
   elif name=='gate':replay=ins[-2][1]
@@ -76,8 +77,8 @@ def validate(base,out,m,objects):
   elif name=='return':replay=ins[-2][1]
   else:
    replay=None;ck('NoteOn resampler Reset call preserved',sum(i[2]=='call' and i[0]+5+struct.unpack_from('<i',i[1],1)[0]==BINDINGS['b8_original_resampler_reset'] for i in ins)==1)
-   ck('NoteOn scheduler loads replayed',b''.join(i[1] for i in ins[-3:-1])==bytes.fromhex('488b7d30488b07'))
-  if replay is not None:ck('displaced replay '+name,replay==bytes.fromhex(raw))
+   ck('NoteOn scheduler loads replayed',hashlib.sha256(b''.join(i[1] for i in ins[-3:-1])).hexdigest()=='0ae783f1fbea99e134aa4bdbf3f1422dce3c6be80cd27d065beba76d735ce542')
+  if replay is not None:ck('displaced replay '+name,hashlib.sha256(replay).hexdigest()==raw['sha256'])
  for name,site,target,event in CALLS:
   f=next(f for f in m['functions'] if f['name']=='b8_wrap_'+name);ins=[i for i in decoded if f['va']<=i[0]<f['va']+f['size']]
   ck('Open three calls and RET',ins[-1][1]==b'\xc3' and sum(i[2]=='call' for i in ins)==3)

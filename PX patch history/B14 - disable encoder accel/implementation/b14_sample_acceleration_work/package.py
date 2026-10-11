@@ -25,6 +25,7 @@ assert ex[0][1]==app and ex[2][1]==pic
 source=(R/'b15_candidate_work/build_candidate_1_9.py').read_text()
 chunk=source[source.index(' # Bounded updater'):source.index(' names=')]
 chunk=chunk.replace('0x402a0009','0x402a000a').replace('0x40139219','0x4013921a').replace('[2,2,2,1,8],[2,2,2,1,7]', '[2,2,2,1,9],[2,2,2,1,8],[2,2,2,1,7]')
+chunk=chunk.replace(sha(struct.pack('<I',0x40139219)),sha(struct.pack('<I',0x4013921a)))
 exec('\n'.join(line[1:] if line.startswith(' ') else line for line in chunk.splitlines()))
 name='PxUpdate_V2.2.2.1.10_B14_sample_acceleration_candidate.bin'
 files={name:package,'voice_2.2.2.1.10_B14_sample_acceleration_candidate_qnx.elf':app}

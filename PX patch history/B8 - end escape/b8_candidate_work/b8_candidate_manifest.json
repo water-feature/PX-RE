@@ -496,85 +496,97 @@
       "label": "JMP prepare",
       "offset": 226004,
       "size": 7,
-      "old": "498b7f300f28c1",
-      "new": "e917130c009090"
+      "new": "e917130c009090",
+      "old_sha256": "c64495f9ceed5b96c965b8444405f3fa843a01fd10846a72498d35ec32deab55",
+      "old_size": 7
     },
     {
       "label": "JMP gate",
       "offset": 261165,
       "size": 6,
-      "old": "898794000000",
-      "new": "e91e8b0b0090"
+      "new": "e91e8b0b0090",
+      "old_sha256": "0123a39e28cb9c884592372bdfb8ba10d1c00e83e5d6f6fb942094a6ad55b64c",
+      "old_size": 6
     },
     {
       "label": "JMP reset",
       "offset": 248054,
       "size": 6,
-      "old": "31ed534889fb",
-      "new": "e9c5bf0b0090"
+      "new": "e9c5bf0b0090",
+      "old_sha256": "8050aa90b16beae254509d9741ff0580be72f0c95adf59fe9478b7a5f83b5fea",
+      "old_size": 6
     },
     {
       "label": "JMP note",
       "offset": 222271,
       "size": 9,
-      "old": "488b7d18e8187effff",
-      "new": "e9ec250c0090909090"
+      "new": "e9ec250c0090909090",
+      "old_sha256": "8a987a7b556f1599b2ce4332be797b0540ae8c5115bfb69bd5d6eb0a654a609e",
+      "old_size": 9
     },
     {
       "label": "JMP return",
       "offset": 226461,
       "size": 5,
-      "old": "488b4c2448",
-      "new": "e9de180c00"
+      "new": "e9de180c00",
+      "old_sha256": "603ee83db6782f4c499fe945f3c08012e2ee658261921f1427f98af9558a1a44",
+      "old_size": 5
     },
     {
       "label": "CALL open",
       "offset": 251026,
       "size": 5,
-      "old": "e8c9510000",
-      "new": "e849ba0b00"
+      "new": "e849ba0b00",
+      "old_sha256": "1bc82580eeddd880dc974315328960768bcd731bf201cf8a3c0fdef03d5c3fe3",
+      "old_size": 5
     },
     {
       "label": "owned allocation 0x3d0fc",
       "offset": 250108,
       "size": 5,
-      "old": "bfc0010000",
-      "new": "bfc8010000"
+      "new": "bfc8010000",
+      "old_sha256": "b7039ca0c440dd3005b97a91ae0555f0138639846733b22e379b49f514f3b4e4",
+      "old_size": 5
     },
     {
       "label": "owned allocation 0x3d11a",
       "offset": 250138,
       "size": 5,
-      "old": "bfc0010000",
-      "new": "bfc8010000"
+      "new": "bfc8010000",
+      "old_sha256": "b7039ca0c440dd3005b97a91ae0555f0138639846733b22e379b49f514f3b4e4",
+      "old_size": 5
     },
     {
       "label": "ELF e_shoff",
       "offset": 40,
       "size": 8,
-      "old": "70710f0000000000",
-      "new": "88d10f0000000000"
+      "new": "88d10f0000000000",
+      "old_sha256": "4077c2809b18008f3e8f819de8058bef1faa0f68dc98de4b92c9b2d048337c15",
+      "old_size": 8
     },
     {
       "label": "ELF e_shnum",
       "offset": 60,
       "size": 2,
-      "old": "2700",
-      "new": "2900"
+      "new": "2900",
+      "old_sha256": "8a76197204599702d0f07ca4bb29a6958d1c56121d2e7d652ca25e4663cb2f76",
+      "old_size": 2
     },
     {
       "label": "RX filesz/memsz",
       "offset": 208,
       "size": 16,
-      "old": "00700f000000000000700f0000000000",
-      "new": "00d00f000000000000d00f0000000000"
+      "new": "00d00f000000000000d00f0000000000",
+      "old_sha256": "5bd8c1e0689373c50894b06c4fa3846295e1bf26752e9761a0d90f715dc2331e",
+      "old_size": 16
     },
     {
       "label": "PT_GNU_EH_FRAME location/size",
       "offset": 408,
       "size": 40,
-      "old": "00500f000000000000500f000000000000500f0000000000041b000000000000041b000000000000",
-      "new": "00b00f000000000000b00f000000000000b00f00000000003c1b0000000000003c1b000000000000"
+      "new": "00b00f000000000000b00f000000000000b00f00000000003c1b0000000000003c1b000000000000",
+      "old_sha256": "10c4002de61da45d2f3c306f63160e2920fb8589e46bbd98c6d95070505838cc",
+      "old_size": 40
     }
   ],
   "original_index_count": 863,

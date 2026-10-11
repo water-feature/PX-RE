@@ -8,8 +8,9 @@
       "update_file_offset": "0x49fdd",
       "length": 4,
       "replacement_file": "debug_stub.bin",
-      "expected_original_hex": "534989f2",
-      "replacement_sha256": "031a1d90a8a2c46993613c8b2828efd0c52f20f2852d5f2ff930bc6acc0090c8"
+      "replacement_sha256": "031a1d90a8a2c46993613c8b2828efd0c52f20f2852d5f2ff930bc6acc0090c8",
+      "expected_original_sha256": "b304aaa5c8597258d8a22db249425635461e315c897b3fb15468127c4b64dcf4",
+      "expected_original_hex_size": 4
     },
     {
       "virtual_address": "0x49fd4",
@@ -17,8 +18,9 @@
       "update_file_offset": "0x49fe1",
       "length": 185,
       "replacement_file": "hooks_code.bin",
-      "expected_original_hex": "4881ecd000000084c0488954243048894c24384c894424404c894c244874370f294424500f294c24600f295424700f299c24800000000f29a424900000000f29ac24a00000000f29b424b00000000f29bc24c0000000488b1d775f2500488b03488944241831c083ff02b8ffffffff7731488d8424e00000004889e64c89d7c7042410000000c7442404300000004889442408488d4424204889442410e83ad7fbff488b54241848331375094881c4d00000005bc3e8f2dafb",
-      "replacement_sha256": "5a7b2a057d4b744fccd5a47e03325cb73009c2154e49ad4d061a52ce8b16e2d9"
+      "replacement_sha256": "5a7b2a057d4b744fccd5a47e03325cb73009c2154e49ad4d061a52ce8b16e2d9",
+      "expected_original_sha256": "ed4fa66970ab3b2b9d23004c670c4fc390e481c376aa5790954ec757482e2a20",
+      "expected_original_hex_size": 185
     },
     {
       "virtual_address": "0x8fed0",
@@ -26,8 +28,9 @@
       "update_file_offset": "0x8fedd",
       "length": 73,
       "replacement_file": "quiet_code.bin",
-      "expected_original_hex": "43465047414d616e616765723a3a4f70656e3a20436f756c64206e6f742073657420726f6f7420494f207065726d697373696f6e732e0a0043465047414d616e616765723a3a4f7065",
-      "replacement_sha256": "9110905ac42e43dc2864df92023bb11764e36dcf06d01e89e9354afc5637b363"
+      "replacement_sha256": "9110905ac42e43dc2864df92023bb11764e36dcf06d01e89e9354afc5637b363",
+      "expected_original_sha256": "a383080e3e2eed4aff7d3df1e6744d95e02742b8f50bcb7ccf6b29d9bf158030",
+      "expected_original_hex_size": 73
     }
   ]
 }

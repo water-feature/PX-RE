@@ -123,7 +123,7 @@ def build():
         raise ValueError('unmapped edit '+hex(va))
     hooks=[]
     for name,site,oldhex,continuation,cfa in JUMPS:
-        old=bytes.fromhex(oldhex);target=symbols['b8_hook_'+name]
+        old=guarded(original.read,site,oldhex);target=symbols['b8_hook_'+name]
         new=b'\xe9'+struct.pack('<i',target-site-5)+b'\x90'*(len(old)-5)
         edit(va_offset(site,len(old)),old,new,'JMP '+name)
         hooks.append({'name':name,'kind':'JMP','site':site,'size':len(old),'target':target,'continuation':continuation,'cfa':cfa})
@@ -132,7 +132,7 @@ def build():
         new=b'\xe8'+struct.pack('<i',wrapper-site-5)
         edit(va_offset(site,5),old,new,'CALL '+name)
         hooks.append({'name':name,'kind':'CALL','site':site,'size':5,'target':wrapper,'original_target':target,'continuation':site+5})
-    for site,oldhex,newhex in ALLOCATIONS:edit(va_offset(site,5),bytes.fromhex(oldhex),bytes.fromhex(newhex),'owned allocation '+hex(site))
+    for site,oldhex,newhex in ALLOCATIONS:edit(va_offset(site,5),guarded(original.read,site,oldhex),bytes.fromhex(newhex),'owned allocation '+hex(site))
     edit(40,struct.pack('<Q',original.shoff),struct.pack('<Q',table_offset),'ELF e_shoff')
     edit(60,struct.pack('<H',original.shnum),struct.pack('<H',len(section_table)),'ELF e_shnum')
     rx_idx=next(i for i,p in enumerate(original.phdr) if p['type']==1 and p['flags']==5 and p['offset']==0 and p['va']==0)
@@ -164,4 +164,11 @@ def main():
     except Exception as error:
         (ROOT/'b8_candidate_blocker.json').write_text(json.dumps({'status':'blocked','reason':str(error),'candidate_emitted_by_this_run':False},indent=2)+'\n')
         raise
+
+def guarded(read, address, guard):
+    data=read(address,guard['size'])
+    if len(data)!=guard['size'] or hashlib.sha256(data).hexdigest()!=guard['sha256']:
+        raise ValueError(f'Original-byte SHA-256 guard failed at {address:#x}')
+    return data
+
 if __name__=='__main__':main()

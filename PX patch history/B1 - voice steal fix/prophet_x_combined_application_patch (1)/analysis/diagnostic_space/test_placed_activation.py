@@ -1,4 +1,5 @@
 """Execute candidate helper/hook bytes; all QNX threading is mocked."""
+import hashlib
 import struct, os
 from pathlib import Path
 from unicorn import Uc, UC_ARCH_X86, UC_MODE_64, UC_HOOK_CODE
@@ -15,8 +16,8 @@ with (P.parent/'ProphetX.elf').open('rb') as f:
             if s['p_type']=='PT_LOAD' and s['p_vaddr']<=addr<s['p_vaddr']+s['p_filesz']:
                 return s.data()[addr-s['p_vaddr']:addr-s['p_vaddr']+n]
     setgate=stock(0xead0,18)
-    assert stock(0x216bf,7)==bytes.fromhex('48 63 85 cc f7 ff ff')
-    assert stock(0x1b49e,11)==bytes.fromhex('8b 74 24 3c 49 8d 87 20 20 00 00')
+    assert hashlib.sha256(stock(0x216bf,7)).hexdigest()=='0c82d794207db714513f8de87db297995c04b7a35b3edd777da26312beb7d738'
+    assert hashlib.sha256(stock(0x1b49e,11)).hexdigest()=='1e6a78c2b8af4e1fd0ad6dc842cb653cdb9f51265a5f8e6bf13aac47b1af6eb0'
     for site,target in [(0x21484,0xead0),(0x2174c,0x7a10),(0x1b7e5,0x7a10)]:
         b=stock(site,5);assert b[0]==0xe8 and site+5+int.from_bytes(b[1:],'little',signed=True)==target
 INTEGRATED=os.environ.get('PX_CANDIDATE_ELF')

@@ -6,7 +6,7 @@ from emit_b5_candidate import object_info,sha,HOOKS,ALLOCATIONS,FADE_DURATION_MS
 ROOT=Path(__file__).resolve().parent
 REGS=['rax','rcx','rdx','rsi','rdi','r8','r9','r10','r11','rbx','rbp','r12','r13','r14','r15']
 INHERITED={'rbx':-56,'rbp':-48,'r12':-40,'r13':-32,'r14':-24,'r15':-16}
-JUMPS=HOOKS+[('eof',0x40060,'488b04244885c0',0x40067,176)]
+JUMPS=HOOKS+[('eof',0x40060,{'size': 7, 'sha256': '083d481d167567303eb1b342a5b0f715280710ac77d53a5aaec8849fea711d77'},0x40067,176)]
 CALLS=[('read',0x3cc81,0x3f840,8),('load',0x37363,0x2e2e0,9),('filter',0x37446,0x36b20,10),('publish',0x3cd69,0x417f0,11)]
 BINDINGS={'b5_ram_vtable':0x29e4e8,'b5_stack_guard_got':0x29ffa8,'b5_geometry_default':0x40c40}
 BINDINGS.update({'b5_continue_'+n:c for n,_,_,c,_ in JUMPS})

@@ -21,7 +21,7 @@ for f in ('validation_results.json','placement_results.json'):
 assert a[2][3]==(R/'b9_250_candidate_work/pic_2.2.2.1.2.bin').read_bytes()
 pic=bytearray(raw); app=bytearray(a[0][3])
 for off in (0x1394,0x13a0):
- assert struct.unpack_from('<I',pic,off)[0]==0x24840002
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',pic,off)[0])).hexdigest()=='ab8f63b324f7df43535480cd2059445a2faa56b2cc175725a9d81a7533cb9226'
  struct.pack_into('<I',pic,off,0x24840004)
 assert app[0x1f4e3]==0x12 and app[0x250ef]==2
 app[0x1f4e3]=0x14; app[0x250ef]=4
@@ -49,7 +49,7 @@ for site,target in ((0x258c0,0x9d075c1c),(0x51bc8,0x9d075b18)):
  m=CPU(pic);m.run(BASE+site,{target});assert m.g('a0')==0x402a0004 and m.g('ra')==BASE+site+8
 for off in (0x258b4,0x51bc4):
  m=CPU(pic);m.s('a0',0x40290000);m.fetch_simple(BASE+off);assert m.g('a0')==0x40292221
-assert struct.unpack_from('<I',app,0x1f4e3)[0]==0x40139214
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',app,0x1f4e3)[0])).hexdigest()=='add57e34375ad0027184fce90cb4d7388dce948fae36422cbc6a7cb57d069090'
 s=(R/'b7_candidate_work/validate_version_gates.py').read_text();ns={'app':app,'pic':pic,'struct':struct};exec(s[s.index('def gate('):s.index('\napp_cases=')],ns)
 gate=ns['gate']; cases=0
 for image,compiled in ((a[0][3],[2,2,2,1,2]),(app,list(rev))):

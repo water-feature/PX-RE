@@ -1,107 +1,128 @@
 [
   {
     "offset": 7,
-    "old": "06",
-    "new": "07"
+    "new": "07",
+    "old_sha256": "67586e98fad27da0b9968bc039a1ef34c939b9b8e523a8bef89d478608c5ecf6",
+    "old_size": 1
   },
   {
     "offset": 128240,
-    "old": "16",
-    "new": "17"
+    "new": "17",
+    "old_sha256": "7cb7c4547cf2653590d7a9ace60cc623d25148adfbc88a89aeb0ef88da7839ba",
+    "old_size": 1
   },
   {
     "offset": 151804,
-    "old": "06",
-    "new": "07"
+    "new": "07",
+    "old_sha256": "67586e98fad27da0b9968bc039a1ef34c939b9b8e523a8bef89d478608c5ecf6",
+    "old_size": 1
   },
   {
     "offset": 1039318,
-    "old": "89",
-    "new": "8b"
+    "new": "8b",
+    "old_sha256": "e9b0c031f0493d3fd6b0b668260c79e7efe734bfd4b4115f9d82bc3be609c294",
+    "old_size": 1
   },
   {
     "offset": 2621055,
-    "old": "06",
-    "new": "07"
+    "new": "07",
+    "old_sha256": "67586e98fad27da0b9968bc039a1ef34c939b9b8e523a8bef89d478608c5ecf6",
+    "old_size": 1
   },
   {
     "offset": 2626073,
-    "old": "06",
-    "new": "07"
+    "new": "07",
+    "old_sha256": "67586e98fad27da0b9968bc039a1ef34c939b9b8e523a8bef89d478608c5ecf6",
+    "old_size": 1
   },
   {
     "offset": 2626085,
-    "old": "06",
-    "new": "07"
+    "new": "07",
+    "old_sha256": "67586e98fad27da0b9968bc039a1ef34c939b9b8e523a8bef89d478608c5ecf6",
+    "old_size": 1
   },
   {
     "offset": 2626097,
-    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffff",
-    "new": "11808293080040100000000010808293050040100000000098"
+    "new": "11808293080040100000000010808293050040100000000098",
+    "old_sha256": "bc633b3d23c69ae98e331bb62faaebf353a41b0f34c76c4df3e515d8411c5065",
+    "old_size": 25
   },
   {
     "offset": 2626123,
-    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
-    "new": "bd276400bfaf45fb400b000000000800e0030000000001000224118082a3148280a7e8"
+    "new": "bd276400bfaf45fb400b000000000800e0030000000001000224118082a3148280a7e8",
+    "old_sha256": "6748d135279f2f6567188298d7989d8c9474169f6e2576395e45684bc3d4e073",
+    "old_size": 35
   },
   {
     "offset": 2626159,
-    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
-    "new": "bd271400bfaf14fb400f000000002efb400b0000000001000224118082a3148280a70800e0031c8282af118082a3148280a733aa410b00000000010002240300821400000000118082a3148280a7e8"
+    "new": "bd271400bfaf14fb400f000000002efb400b0000000001000224118082a3148280a70800e0031c8282af118082a3148280a733aa410b00000000010002240300821400000000118082a3148280a7e8",
+    "old_sha256": "9601ca084345f4dae7ea6fa696a2c3d7a228b47e76d83743e29e6b3d313e5127",
+    "old_size": 79
   },
   {
     "offset": 2626239,
-    "old": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
-    "new": "bd271400bfaf04f9410b00000000010002240300821400000000118082a3148280a7c0100400c02304009ff8410b00000000"
+    "new": "bd271400bfaf04f9410b00000000010002240300821400000000118082a3148280a7c0100400c02304009ff8410b00000000",
+    "old_sha256": "c4612d488c8b730aecd874b92924f9b8f4ecb8f3e78689adfbd94e2f9452c7fc",
+    "old_size": 50
   },
   {
     "offset": 2791261,
-    "old": "010002241c8282af",
-    "new": "0005400f00000000"
+    "new": "0005400f00000000",
+    "old_sha256": "34c35185806dfccc1146a85237ff64e14bf7c1b7d423b21ff67b2a6575be5496",
+    "old_size": 8
   },
   {
     "offset": 2792293,
-    "old": "33aa41",
-    "new": "050540"
+    "new": "050540",
+    "old_sha256": "77eefd40cc554987b2fdd4bbeddd7b7cf5b030372f7771163d0917bae9b5f1d3",
+    "old_size": 3
   },
   {
     "offset": 2878261,
-    "old": "e8ffbd2714",
-    "new": "f704400b00"
+    "new": "f704400b00",
+    "old_sha256": "73876b0307ff9123f7a344a400a0f07dae4ea2673f879ff165757bcf8a654a32",
+    "old_size": 5
   },
   {
     "offset": 2878267,
-    "old": "bfaf",
-    "new": "0000"
+    "new": "0000",
+    "old_sha256": "ee1f7857dfa2cd6d6cb416c07c3a2ce473d843480ce5f52abdd4506a779f6f5e",
+    "old_size": 2
   },
   {
     "offset": 2878353,
-    "old": "98ffbd2764",
-    "new": "eb04400b00"
+    "new": "eb04400b00",
+    "old_sha256": "3bbe14fd8f91e652a28eac20527c7fa38ee69eec498ff49ecbeb276dae36feff",
+    "old_size": 5
   },
   {
     "offset": 2878359,
-    "old": "bfaf",
-    "new": "0000"
+    "new": "0000",
+    "old_sha256": "ee1f7857dfa2cd6d6cb416c07c3a2ce473d843480ce5f52abdd4506a779f6f5e",
+    "old_size": 2
   },
   {
     "offset": 2878681,
-    "old": "c0",
-    "new": "b3"
+    "new": "b3",
+    "old_sha256": "e4ff5e7d7a7f08e9800a3e25cb774533cb20040df30b6ba10f956f9acd0eb3f7",
+    "old_size": 1
   },
   {
     "offset": 3137785,
-    "old": "c0100400c02304",
-    "new": "1205400b000000"
+    "new": "1205400b000000",
+    "old_sha256": "70e48d8b7f174e4ed231181104bc3011cd25fd227350cd6fa189805bcd24ec1f",
+    "old_size": 7
   },
   {
     "offset": 3138189,
-    "old": "e8ffbd2714",
-    "new": "0905400b00"
+    "new": "0905400b00",
+    "old_sha256": "73876b0307ff9123f7a344a400a0f07dae4ea2673f879ff165757bcf8a654a32",
+    "old_size": 5
   },
   {
     "offset": 3138195,
-    "old": "bfaf",
-    "new": "0000"
+    "new": "0000",
+    "old_sha256": "ee1f7857dfa2cd6d6cb416c07c3a2ce473d843480ce5f52abdd4506a779f6f5e",
+    "old_size": 2
   }
 ]

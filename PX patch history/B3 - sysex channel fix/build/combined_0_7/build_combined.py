@@ -24,9 +24,9 @@ for off,old in [(13+0x1f4e3,2),(13+0x250ef,2)]:
 # PIC update revision 2.2.3.0.0, both actual report paths, and M display.
 c[ph+2:ph+7]=bytes([2,2,3,0,0])
 for off in [0x258b4,0x51bc4]:
- assert struct.unpack_from('<I',c,pp+off)[0]==0x24842221
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',c,pp+off)[0])).hexdigest()=='99d4d638528ade1cc25fc4c47a71456f6271bafd05cfcc9871ac2258b0f65d8d'
  struct.pack_into('<I',c,pp+off,0x24842230)
-assert struct.unpack_from('<I',c,pp+0x52fec)[0]==0x24020002
+assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',c,pp+0x52fec)[0])).hexdigest()=='1f72b3d3bc7d3086c957c55ac17ec67f1328fb167c06edde5e436698631746de'
 struct.pack_into('<I',c,pp+0x52fec,0x24020003)
 a,ap,an,ae=qr[0];cs=(sum(c[ap:ap+an:2])+256*sum(c[ap+1:ap+an:2]))&65535
 c[ap+an:ae]=cs.to_bytes(2,'little')

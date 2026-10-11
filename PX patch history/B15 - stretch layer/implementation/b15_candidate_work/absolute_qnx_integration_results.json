@@ -36,37 +36,42 @@
     {
       "va": "0x1e050",
       "file_offset": 122960,
-      "before": "554889e54157",
       "after": "e9eb2d0e0090",
-      "label": "b15_message_entry"
+      "label": "b15_message_entry",
+      "before_sha256": "f909b8f17e0b649494430b8edcbf48a7bd51781dbdbb327ef8bf85744198ef45",
+      "before_size": 6
     },
     {
       "va": "0x23b2d",
       "file_offset": 146221,
-      "before": "e8ce280100",
       "after": "e855d30d00",
-      "label": "b15_noteon_thunk"
+      "label": "b15_noteon_thunk",
+      "before_sha256": "b3fb2491c4a20e8741d3bf75a9a47f8122b16d588ead31a54db4ebebee2cbaaa",
+      "before_size": 5
     },
     {
       "va": "0x23a3a",
       "file_offset": 145978,
-      "before": "e8215dfeff",
       "after": "e896d40d00",
-      "label": "b15_attempt_thunk"
+      "label": "b15_attempt_thunk",
+      "before_sha256": "9d415d5f7cda824101fb26839450684a8e53a705dfff3c972e3fff0d73faf2b8",
+      "before_size": 5
     },
     {
       "va": "0x22280",
       "file_offset": 139904,
-      "before": "49c78424b81f000000000000",
       "after": "e98dec0d0090909090909090",
-      "label": "b15_group_clear_thunk"
+      "label": "b15_group_clear_thunk",
+      "before_sha256": "97f8cc9c3054577ce36409ecec171f9a51a6046db1278252cefe34f05eabac12",
+      "before_size": 12
     },
     {
       "va": "0x22344",
       "file_offset": 140100,
-      "before": "e8f7350100",
       "after": "31c0909090",
-      "label": "defer legacy group selection to common helper"
+      "label": "defer legacy group selection to common helper",
+      "before_sha256": "1a79e1930d6f83f25cbbad5e41f980b1e466aaca765824af8da8bcc253701bd1",
+      "before_size": 5
     }
   ],
   "symbols": {

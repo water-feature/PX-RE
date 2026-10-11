@@ -15,7 +15,7 @@ def main():
  assert len(b)==len(old) and e.read(0x1a87b,12)==bytes.fromhex(m['hook'])
  assert e.read(0x100f60,859)==(D/'design_payload.bin').read_bytes()
  assert e.read(0x1024e8,188)==(D/'design_frames.bin').read_bytes()
- assert struct.unpack_from('<I',b,0x1f4e3)[0]==0x4013921c and b[0x250ef]==12
+ assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',b,0x1f4e3)[0])).hexdigest()=='dde27b74cf574e3d5414beed196d373f49403c06efc33a13e6e2f046ae673f4c' and b[0x250ef]==12
  ah=next(p for p in a.phdr if p['type']==0x6474e550);bh=next(p for p in e.phdr if p['type']==0x6474e550)
  frame,pairs=decode_index(a.read(ah['va'],ah['filesz']),ah['va']);_,new=decode_index(e.read(bh['va'],bh['filesz']),bh['va'])
  assert new==sorted(pairs+[tuple(x) for x in m['new_FDEs']]) and len(new)==899

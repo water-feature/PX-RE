@@ -1,6 +1,7 @@
 """Execute actual stock selection loop with candidate batch hooks.
 Thread/scheduler calls mocked: instruction-order test, not audio runtime proof.
 """
+import hashlib
 import struct, os
 from pathlib import Path
 from unicorn import Uc, UC_ARCH_X86, UC_MODE_64, UC_HOOK_CODE
@@ -15,9 +16,9 @@ def stock(a,n):
  for b,d in LOAD:
   if b<=a<b+len(d):return d[a-b:a-b+n]
 # Exact displaced instruction checks.
-assert stock(0x21399,7)==bytes.fromhex('0f 1f 80 00 00 00 00')
-assert stock(0x21489,5)==bytes.fromhex('4d 63 ec 89 d9')
-assert stock(0x215b8,7)==bytes.fromhex('44 8b 9d f0 f7 ff ff')
+assert hashlib.sha256(stock(0x21399,7)).hexdigest()=='dec3dc93fb8359b84dd839a186767552beab46924eb89e17b2954355ed4555ef'
+assert hashlib.sha256(stock(0x21489,5)).hexdigest()=='133d482fc6b3996e6da40945e1c486aab04ea03ac562976cedc141a8acd4c434'
+assert hashlib.sha256(stock(0x215b8,7)).hexdigest()=='d5ac54d1ae1496a9b32a334840a187743e11e73cfaf4906378d7c62b8dfff37a'
 INTEGRATED=os.environ.get('PX_CANDIDATE_ELF')
 if INTEGRATED:
  with open(INTEGRATED,'rb') as f:

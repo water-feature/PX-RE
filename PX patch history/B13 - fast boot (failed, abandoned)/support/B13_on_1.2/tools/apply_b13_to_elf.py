@@ -121,7 +121,7 @@ allowed=[(CALL_SITE+1,CALL_SITE+5),(TEXT_BASE,TEXT_BASE+len(text)),(EH_BASE,EH_B
 for idx in (14,39,40):allowed.append((sh(idx)+32,sh(idx)+40))
 for i in range(e_phnum):
  ph=e_phoff+i*e_phentsize
- if struct.unpack_from('<I',p,ph)[0]==0x6474E550:allowed.append((ph+32,ph+48))
+ if hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',p,ph)[0])).hexdigest()=='0fe51dced2745ee6eab34377ad3e64563eef82533a339cae1c75354d09fd1dd5':allowed.append((ph+32,ph+48))
 assert all(any(a<=i<z for a,z in allowed) for i,(a,b) in enumerate(zip(orig,p)) if a!=b),'Unexpected mutation'
 # Recheck actual RX mapping for the full added regions.
 for start,end in ((TEXT_BASE,TEXT_BASE+len(text)),(EH_BASE,EH_BASE+len(eh)+4),(HDR_BASE,entry+8)):

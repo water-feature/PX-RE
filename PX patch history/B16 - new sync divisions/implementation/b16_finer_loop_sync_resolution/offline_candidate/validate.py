@@ -1,4 +1,5 @@
 """Scoped tests of emitted PIC words, actual QNX execution and ELF metadata."""
+import hashlib
 from pathlib import Path
 import struct,json,subprocess,math
 import build as b
@@ -152,7 +153,7 @@ def main():
   f=0x103000+relative;n,delta,pc,span=struct.unpack_from('<IIiI',app,f)
   assert n>=12 and f+n+4<=len(app)
   assert f+8+pc==0x103000+initial
-  cie=f+4-delta;assert struct.unpack_from('<I',app,cie+4)[0]==0
+  cie=f+4-delta;assert hashlib.sha256(struct.pack('<I',struct.unpack_from('<I',app,cie+4)[0])).hexdigest()=='df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119'
  # Last baseline FDE ends exactly where the appended record begins.
  last=0x103000+entries[-2][1]
  assert last+4+struct.unpack_from('<I',oldapp,last)[0]==0x10277c

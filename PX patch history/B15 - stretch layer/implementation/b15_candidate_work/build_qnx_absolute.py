@@ -70,16 +70,16 @@ def build():
     else:raise ValueError('unsupported relocation '+str(typ))
     relocs.append({'object':path.name,'place':hex(place),'type':typ,'symbol':name,'target':hex(target),'addend':add})
  # Guard every exact original instruction window.
- hooks=[(0x1e050,'554889e54157','b15_message_entry',False),
-        (0x23b2d,'e8ce280100','b15_noteon_thunk',True),
-        (0x23a3a,'e8215dfeff','b15_attempt_thunk',True),
-        (0x22280,'49c78424b81f000000000000','b15_group_clear_thunk',False)]
+ hooks=[(0x1e050,{'size': 6, 'sha256': 'f909b8f17e0b649494430b8edcbf48a7bd51781dbdbb327ef8bf85744198ef45'},'b15_message_entry',False),
+        (0x23b2d,{'size': 5, 'sha256': 'b3fb2491c4a20e8741d3bf75a9a47f8122b16d588ead31a54db4ebebee2cbaaa'},'b15_noteon_thunk',True),
+        (0x23a3a,{'size': 5, 'sha256': '9d415d5f7cda824101fb26839450684a8e53a705dfff3c972e3fff0d73faf2b8'},'b15_attempt_thunk',True),
+        (0x22280,{'size': 12, 'sha256': '97f8cc9c3054577ce36409ecec171f9a51a6046db1278252cefe34f05eabac12'},'b15_group_clear_thunk',False)]
  changes=[]
  for va,expected,name,call in hooks:
-  before=bytes.fromhex(expected);off=e.off(va,len(before));assert old[off:off+len(before)]==before
+  off=e.off(va,expected['size']);before=old[off:off+expected['size']];assert sha(before)==expected['sha256']
   after=bytes([0xe8 if call else 0xe9])+struct.pack('<i',symbols[name]-va-5)+b'\x90'*(len(before)-5)
   out[off:off+len(before)]=after;changes.append({'va':hex(va),'file_offset':off,'before':before.hex(),'after':after.hex(),'label':name})
- va=0x22344;off=e.off(va,5);assert old[off:off+5]==bytes.fromhex('e8f7350100')
+ va=0x22344;off=e.off(va,5);assert hashlib.sha256(old[off:off+5]).hexdigest()=='1a79e1930d6f83f25cbbad5e41f980b1e466aaca765824af8da8bcc253701bd1'
  out[off:off+5]=bytes.fromhex('31c0909090');changes.append({'va':hex(va),'file_offset':off,'before':old[off:off+5].hex(),'after':out[off:off+5].hex(),'label':'defer legacy group selection to common helper'})
  oldhdr=e.ph[hdridx];frame,oldpairs=decode_index(old[oldhdr[2]:oldhdr[2]+oldhdr[5]],oldhdr[3]);newpairs=[]
  # Decode relocated real compiler FDEs using their supported zR CIE encoding.

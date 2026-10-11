@@ -2,109 +2,91 @@
   "0x9d0792e0": {
     "helper": "count",
     "synthetic_entry": "0x9f000000",
-    "stock_words": [
-      "00041100",
-      "00442021"
-    ],
     "test_hook_words": [
       "0BC00000",
       "00000000"
-    ]
+    ],
+    "stock_words_sha256": "d03400700da6f8c0eb70b58a818ae184f9169c8d0ff30c0ccbe849f27f340a19",
+    "stock_words_size": 8
   },
   "0x9d079300": {
     "helper": "availability",
     "synthetic_entry": "0x9f009000",
-    "stock_words": [
-      "000430C0",
-      "000421C0"
-    ],
     "test_hook_words": [
       "0BC02400",
       "00000000"
-    ]
+    ],
+    "stock_words_sha256": "8e58fdd7c9359abd0901fd08f52e5293a7a92169430222c8541ce2f40d2eb02d",
+    "stock_words_size": 8
   },
   "0x9d041178": {
     "helper": "selected_index",
     "synthetic_entry": "0x9f00a000",
-    "stock_words": [
-      "00518821",
-      "0234A021"
-    ],
     "test_hook_words": [
       "0BC02800",
       "00000000"
-    ]
+    ],
+    "stock_words_sha256": "0435906e4647c000e05d41484a34bbc7825c5363e88bf18ac46d0053dafacc68",
+    "stock_words_size": 8
   },
   "0x9d041ea0": {
     "helper": "shared_index",
     "synthetic_entry": "0x9f00b000",
-    "stock_words": [
-      "00041100",
-      "00442021"
-    ],
     "test_hook_words": [
       "0BC02C00",
       "00000000"
-    ]
+    ],
+    "stock_words_sha256": "d03400700da6f8c0eb70b58a818ae184f9169c8d0ff30c0ccbe849f27f340a19",
+    "stock_words_size": 8
   },
   "0x9d01b8dc": {
     "helper": "import_size",
     "synthetic_entry": "0x9f00c000",
-    "stock_words": [
-      "0014A080",
-      "3C04402C"
-    ],
     "test_hook_words": [
       "0BC03000",
       "00000000"
-    ]
+    ],
+    "stock_words_sha256": "6591f887b822f5e4146eb2f2c0d6446f85eda68beee3c39734ab822032e27c27",
+    "stock_words_size": 8
   },
   "0x9d034280": {
     "helper": "render_size",
     "synthetic_entry": "0x9f00d000",
-    "stock_words": [
-      "00132080",
-      "3C038004"
-    ],
     "test_hook_words": [
       "0BC03400",
       "00000000"
-    ]
+    ],
+    "stock_words_sha256": "608d5b5d89bcf9f3df8498c7eee91e1a831ccdb9280bfec34469eac361a64a47",
+    "stock_words_size": 8
   },
   "0x9d079a08": {
     "helper": "size_initialize",
     "synthetic_entry": "0x9f00e000",
-    "stock_words": [
-      "27BDFFE0",
-      "AFBF001C"
-    ],
     "test_hook_words": [
       "0BC03800",
       "00000000"
-    ]
+    ],
+    "stock_words_sha256": "e857bd740c4321d10de9bca1d86d8eaa1457cc7ee0541d11c63634cfdbb3c7fb",
+    "stock_words_size": 8
   },
   "0x9d041014": {
     "helper": "count_defaults_tail",
     "synthetic_entry": "0x9f00f000",
-    "stock_words": [
-      "8FBF001C",
-      "8FB20018"
-    ],
     "test_hook_words": [
       "0BC03C00",
       "00000000"
-    ]
+    ],
+    "stock_words_sha256": "4d6eafe3de15a78c7b475112f2bdfa6e4f07a95e1fe7ed06f01b89c8d842d952",
+    "stock_words_size": 8
   },
   "0x9d040ed8": {
     "helper": "count_entry_gate",
     "synthetic_entry": "0x9f010000",
-    "stock_words": [
-      "27BDFFE0",
-      "AFBF001C"
-    ],
     "test_hook_words": [
       "0BC04000",
       "00000000"
-    ]
+    ],
+    "stock_words_sha256": "e857bd740c4321d10de9bca1d86d8eaa1457cc7ee0541d11c63634cfdbb3c7fb",
+    "stock_words_size": 8
   }
 }

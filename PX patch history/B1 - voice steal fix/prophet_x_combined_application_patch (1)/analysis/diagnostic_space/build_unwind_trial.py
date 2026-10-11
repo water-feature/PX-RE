@@ -212,7 +212,7 @@ trial = bytearray(raw); spans = []
 def put(offset, b, why):
     before = raw[offset:offset+len(b)]
     trial[offset:offset+len(b)] = b
-    spans.append({'offset':hex(offset), 'size':len(b), 'reason':why, 'expected_hex':before.hex(), 'replacement_hex':b.hex()})
+    spans.append({'offset':hex(offset), 'size':len(b), 'reason':why, 'expected_sha256':hashlib.sha256(before).hexdigest(), 'expected_size':len(before), 'replacement_hex':b.hex()})
 put(POOL, metadata, 'new CIE, hook/quiet FDEs, and translated cleanup LSDA')
 put(NEW_HDR, new_header, 'rebased lookup header with one new helper entry')
 # Keep the original FDE valid for linear scans, but restrict it to the stub.

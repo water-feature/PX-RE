@@ -6,13 +6,13 @@ ROOT=Path(__file__).resolve().parent
 sys.path[:0]=[str(ROOT.parent/'b5_candidate_work'),str(ROOT.parent)]
 from emit_b5_candidate import object_info
 BASE_SHA='07ff1fd635505114945fc4dcab11a212f4bc9164b1a7ab8beb681482cb7c2b35'
-JUMPS=[('prepare',0x372d4,'498b7f300f28c1',0x372db,144),
-       ('gate',0x3fc2d,'898794000000',0x3fc33,176),
-       ('reset',0x3c8f6,'31ed534889fb',0x3c8fc,24),
-       ('note',0x3643f,'488b7d18e8187effff',0x36448,64),
-       ('return',0x3749d,'488b4c2448',0x374a2,144)]
+JUMPS=[('prepare',0x372d4,{'size': 7, 'sha256': 'c64495f9ceed5b96c965b8444405f3fa843a01fd10846a72498d35ec32deab55'},0x372db,144),
+       ('gate',0x3fc2d,{'size': 6, 'sha256': '0123a39e28cb9c884592372bdfb8ba10d1c00e83e5d6f6fb942094a6ad55b64c'},0x3fc33,176),
+       ('reset',0x3c8f6,{'size': 6, 'sha256': '8050aa90b16beae254509d9741ff0580be72f0c95adf59fe9478b7a5f83b5fea'},0x3c8fc,24),
+       ('note',0x3643f,{'size': 9, 'sha256': '8a987a7b556f1599b2ce4332be797b0540ae8c5115bfb69bd5d6eb0a654a609e'},0x36448,64),
+       ('return',0x3749d,{'size': 5, 'sha256': '603ee83db6782f4c499fe945f3c08012e2ee658261921f1427f98af9558a1a44'},0x374a2,144)]
 CALLS=[('open',0x3d492,0x42660,3)]
-ALLOCATIONS=[(0x3d0fc,'bfc0010000','bfc8010000'),(0x3d11a,'bfc0010000','bfc8010000')]
+ALLOCATIONS=[(0x3d0fc,{'size': 5, 'sha256': 'b7039ca0c440dd3005b97a91ae0555f0138639846733b22e379b49f514f3b4e4'},'bfc8010000'),(0x3d11a,{'size': 5, 'sha256': 'b7039ca0c440dd3005b97a91ae0555f0138639846733b22e379b49f514f3b4e4'},'bfc8010000')]
 B5=json.loads((ROOT.parent/'b5_candidate_work/b5_candidate_manifest.json').read_text())
 BINDINGS={k:B5['symbols'][k] for k in ['b5_ram_vtable','b5_read_original_return']}
 BINDINGS.update({'b8_continue_'+n:c for n,_,_,c,_ in JUMPS})
