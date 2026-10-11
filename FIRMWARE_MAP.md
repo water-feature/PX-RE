@@ -1,6 +1,6 @@
 # Firmware architecture and map
 
-This is an orientation guide to the structures used by this project, not a complete manufacturer specification. Offsets below were checked against the exact factory **2.2.2.0.0** and accepted modified **2.2.2.2.2** packages. Other builds can have different layouts. No firmware bytes are included here.
+This is an orientation guide to the structures used by this project, as discovered in Ghidra. Offsets below were checked against the exact factory **2.2.2.0.0** and accepted modified **2.2.2.2.2** packages. Other builds can have different layouts. No firmware bytes are included here.
 
 For installation, use the [main README](README.md) and [recovery guide](recovery.md). For source locations, see the [directory map](firmware_builder/README.md#directory-map). For ancestry and experiments, see the [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md).
 
