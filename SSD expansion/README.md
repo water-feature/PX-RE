@@ -4,23 +4,19 @@ Standalone technical guide for replacing the SSD with a larger drive while prese
 
 **Firmware:** No firmware update required; this is a separate hardware/storage procedure.
 
-**Hardware: PASS (owner-reported, limited scope)** The replacement boots and Global → Update Library reports approximately 277,000 MB free. Broad playback testing, full file-content comparison and imports beyond the original approximately 53 GB budget remain unverified.
+**Hardware: PASS** The replacement boots and Global → Update Library reports approximately 277,000 MB free. Broad playback testing, full file-content comparison and imports beyond the original approximately 53 GB budget remain unverified.
 
 ## Before starting
-
-**Patch location:** SSD storage/layout only; no QNX application or PIC firmware patch.
-
-**Patch size:** 0 firmware bytes. Disk/partition sizes depend on the source layout and replacement SSD; the maintenance-image tool generates a separate private service image.
 
 You need:
 
 - The original PX SSD, kept unchanged for rollback.
 - A larger replacement SATA SSD and a reliable connection. Its contents will be overwritten.
-- Storage for a verified whole-disk backup. A second extracted copy of the sample library is unnecessary.
-- macOS for the backup commands below; Windows with Administrator access and QEMU for migration. The tested migration used Windows 10 and a laptop SATA caddy.
-- A validated PX maintenance image with a QNX serial shell, filesystem driver and `mkqnx6fs`.
+- Storage for a verified whole-disk backup. 
+- macOS for the backup commands below; Windows with Administrator access and QEMU for migration. The tested migration used Windows 10.
+- Linux, a Linux VM or suitable WSL environment with Python 3 and GNU binutils supporting 32-bit x86 output, to build the maintenance image in step 2.
 
-The maintenance image is built from your own `.boot/x86_64-generic.bin` using the source tool in step 2. It provides the original QNX 7.0.1 x86_64 utilities and a COM1 shell at 115200 baud, without automatically mounting, formatting or launching ProphetX. Keep the backup, extracted boot file and generated QNX images private.
+Keep the backup, extracted boot file and generated QNX images private.
 
 Use this guide only for the tested **two-partition MBR layout with 512-byte sectors**. GPT, other sector sizes, additional partitions and drives beyond MBR’s addressing range require a separate procedure.
 
@@ -56,6 +52,8 @@ shasum -a 256 "/Volumes/DEST/qnx-backup.img"
 Both hashes must match, with no read errors. Record the hash and capacity. Hash-check any transferred copy too. Use a Windows-readable destination for migration; APFS is not natively readable by Windows. Disconnect and retain the original SSD.
 
 ## 2. Build the maintenance image
+
+Extract `.boot/x86_64-generic.bin` from your verified SSD backup, then use the Python builder below to create `px-maintenance-vm-boot.img`. This is the QEMU boot disk used in step 3. It provides the original QNX 7.0.1 utilities and a COM1 shell at 115200 baud, without automatically mounting, formatting or launching ProphetX.
 
 Use Linux, a Linux VM or suitable WSL environment with Python 3 and GNU binutils supporting 32-bit x86 output. On Ubuntu:
 
@@ -106,7 +104,7 @@ The tool decompresses the boot filesystem, preserves the original utilities, dri
 | Boot disk | `d09c8e53353ac9aabe7bcc9e905c6e5feabaa3002a0f92f72a99ac85beca4662` |
 | QNX payload | `276d810a039e6d15cd4c7ceb04f8a829db0e4396e1e55e5eacb15b7d8ce6d8a1` |
 
-Copy the boot disk to the Windows host and hash-check the transferred copy. Keep all generated images outside the public source folder. The expected serial banner is `PX maintenance candidate: no disks mounted automatically`.
+Copy `px-maintenance-vm-boot.img` to the Windows host as `D:\px-maintenance-vm-boot.img` (the path used below) and hash-check the transferred copy. Keep all generated images outside the public source folder. The expected serial banner is `PX maintenance candidate: no disks mounted automatically`.
 
 ## 3. Attach the replacement through QEMU
 

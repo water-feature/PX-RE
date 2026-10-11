@@ -38,7 +38,7 @@ Both `ProphetX` and `ProphetXBackup` contained the failed application. The stock
 Use an elevated **Command Prompt (cmd.exe)**. The commands below assume the same files and drive mapping as the successful session:
 
 - `C:\Program Files\qemu\qemu-system-x86_64.exe`
-- `D:\px-maintenance-vm-boot.img` — maintenance boot image
+- `D:\px-maintenance-vm-boot.img` — maintenance boot image; create it using [SSD expansion, step 2: Build the maintenance image](SSD%20expansion/README.md#2-build-the-maintenance-image), then copy it to this path. Follow only that image-building section for recovery, not the SSD migration steps.
 - `D:\qnx-backup.img` — known-good backup image
 - `D:\PX_B13_Evidence` — existing folder for transfers
 - `\\.\PhysicalDrive2` — affected synth SSD, offline in Windows
@@ -49,13 +49,15 @@ Use an elevated **Command Prompt (cmd.exe)**. The commands below assume the same
 
 Choose a firmware update that you know boots correctly on your synth and is compatible with its installed PIC firmware. You need the QNX application from that update, not necessarily the newest build and not specifically .1.2.
 
-If Codex or Claude built the update, ask it for the **final QNX application ELF actually packaged into that exact update**. Build folders commonly contain multiple intermediate `.elf` files; use the final packaged one.
+Extract the application directly from the complete update `.bin` with [extract_qnx.py](extract_qnx.py). It uses only Python's standard library (Python 3.10 or newer) and runs on Windows, Linux or macOS. From the downloaded repository folder, run this in Windows Command Prompt, replacing the input path:
 
-If you only have the complete update `.bin`, have your local firmware tools extract its QNX application record. Give Codex/Claude this instruction, replacing the path:
+```bat
+python extract_qnx.py "C:\path\to\PxUpdate.bin" -o "D:\PX_B13_Evidence\recovery.elf"
+```
 
-> Extract the QNX application payload from this exact Prophet X update: `C:\path\to\PxUpdate.bin`. Save it as `D:\PX_B13_Evidence\recovery.elf`. Use the existing Prophet X container extractor and confirm that the result is the complete x86-64 QNX ELF application record. Do not patch it or use an intermediate build. Do not modify the disk.
+On Linux or macOS, use `python3` and the corresponding host paths. The output must be a new file outside the repository. The command verifies the update identity, container checksums and x86-64 ELF structure, then prints the extracted application's size and SHA-256. It does not patch firmware or access the SSD.
 
-This is an instruction for the assistant with access to your local firmware tools, not a command to paste into Windows Command Prompt. A standalone extraction utility is not supplied with this guide.
+The default accepted inputs are the exact official 2.2.2.0.0 update and this project's accepted 2.2.2.2.2 update. For another known-good compatible update, add `--expected-sha256 HASH`, using an independently verified SHA-256 for that exact update. A matching hash and valid structure do not establish that an update boots correctly or is compatible with your installed PIC firmware.
 
 The extracted executable normally uses the **`.elf` extension**. Copy or save it to:
 
