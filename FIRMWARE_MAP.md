@@ -13,7 +13,7 @@ For installation, use the [main README](README.md) and [recovery guide](recovery
 | PIC controller | Record 3; little-endian MIPS image | Controller firmware, including SysEx handling and UI/control paths patched by this project. Address mapping uses base `0x9D000000`. |
 | SSD boot image | `.boot/x86_64-generic.bin` on the SSD | QNX boot environment used to build the separate maintenance VM image. It is not the QNX application ELF extracted from record 1. |
 
-The update `.bin`, MIDI recovery `.syx`, extracted application `.elf`, maintenance VM image and full SSD backup are different artifacts. Renaming one does not convert it into another. See [recovery](recovery.md) and [SSD expansion](SSD%20expansion/README.md) for their separate uses.
+The update `.bin`, MIDI recovery `.syx`, extracted application `.elf`, maintenance VM image and full SSD backup are different artifacts. See [recovery](recovery.md) and [SSD expansion](SSD%20expansion/README.md) for their separate uses.
 
 ## Update container
 
