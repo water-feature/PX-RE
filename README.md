@@ -2,6 +2,8 @@
 
 This project documents a set of bugfixes and improvements for the Sequential Prophet X. It includes a local firmware patcher, implementation sources and test evidence for each feature, and a guide detailing how to install a larger SSD. No affiliation with Sequential. No firmware images or extracted payloads are distributed here. Install at your own risk. LLMs used throughout. Thanks to [rvense](https://rven.se/prophet-x/) for taking the first steps. 
 
+Keep generated firmware images private; this repository’s GPL licence does not grant permission to redistribute Sequential’s firmware.
+
 **Before installing:** read [recovery.md](recovery.md), open up your synth by following [this video](https://www.youtube.com/watch?v=tF9Ji9iL00g) and create an image of your SSD.
 
 ## What is included
