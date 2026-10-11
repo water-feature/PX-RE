@@ -2,7 +2,6 @@
 
 Keep the factory update `PxUpdate_V2.2.2.0.0.bin`, the factory recovery file `PX_Main_2.2.2.0.0.syx`, and a verified full SSD image backup available privately. Recovery differs between the PIC controller and the SSD-resident QNX system. The synth does not perform any version gating, so rollback to an earlier firmware version is always possible. 
 
-Note: The patches described in this repo have all been tested on hardware and do not touch the synth's bootloader so you should always be able to recover from a non-booting state.
 
 ## PIC / Main OS recovery over MIDI
 
