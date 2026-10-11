@@ -22,7 +22,7 @@ This project documents a set of bugfixes and improvements for the Sequential Pro
 | [Start/End push Center](PX%20patch%20history/B7%20-%20center%20can%20be%20pushed/README.md) | Allows sample Start and End values to push past the Center position instead of being blocked by it. |
 | [Window bug](PX%20patch%20history/B7%20-%20center%20can%20be%20pushed/README.md) | Fixed bug where editing both sample layers together could allow Start to move past End and leave the sample window in an invalid state. |
 | [Tail retrigger bug](PX%20patch%20history/B8%20-%20end%20escape/README.md) | Fixed bug where increasing End after a held sample had already finished could unexpectedly retrigger the newly exposed tail. |
-| [Loop sync divisions](PX%20patch%20history/B16%20-%20new%20sync%20divisions/README.md) | Previously minimum loop sync was 1/16. this has been reduced to allow 1/32 and 1/64. |
+| [Loop sync divisions](PX%20patch%20history/B16%20-%20new%20sync%20divisions/README.md) | Previously minimum loop sync was 1/16. This has been reduced to allow 1/32 and 1/64. |
 | [Preset browsing](PX%20patch%20history/B9%20-%20slow%20preset%20browsing/README.md) | Reduced screen lag when scrolling presets. |
 | [Encoder acceleration](PX%20patch%20history/B14%20-%20disable%20encoder%20accel/README.md) | Removed acceleration from all encoders except for sample controls. |
 | [Stretch velocity layer](PX%20patch%20history/B15%20-%20stretch%20layer/README.md) | Enabling stretch while a note is held now selects the held velocity layer in addition to its note, and the layer can be changed using the menu as expected. Previously stretch would always choose the highest layer with no way of changing it. |
