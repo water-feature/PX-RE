@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 import re, struct, subprocess
 from pathlib import Path
 import argparse, os

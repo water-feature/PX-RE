@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Fresh in-place B16 build, gated on independent and scoped validation.
 Reads exact .2.0 inputs. Reuses QNX source/established metadata logic, never old candidate binaries.
 """

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """B4 instruction-design model. Never reads or writes a firmware image.
 
 Encodes proposed guard words in memory, executes them with MIPS delay slots,

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Synthetic format fixtures only; no manufacturer firmware is required."""
 import sys
 import unittest

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Targeted read-only stock instruction listing; unknown words remain explicit."""
 import struct, os
 from pathlib import Path

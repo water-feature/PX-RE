@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 import hashlib
 import ctypes as C,mmap,struct,json,collections
 from pathlib import Path

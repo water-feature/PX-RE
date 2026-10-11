@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Independent reread of delivered package and actual PIC checksum fragments."""
 from pathlib import Path
 import sys,struct,json,hashlib

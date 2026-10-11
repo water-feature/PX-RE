@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Real emitted MIPS component tests; synthetic in-memory overlay only."""
 from pathlib import Path
 import json,struct,os

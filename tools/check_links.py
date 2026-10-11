@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Check inline repository Markdown links and heading anchors; skip external URLs."""
 import re
 import sys

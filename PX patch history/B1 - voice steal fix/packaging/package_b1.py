@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Reproduce B1 PxUpdate using privately supplied stock firmware and B1 candidate."""
 import argparse
 import hashlib

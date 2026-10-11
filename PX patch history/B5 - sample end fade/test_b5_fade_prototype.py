@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Executable adversarial host tests; no firmware output is ever generated."""
 import copy
 import hashlib

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute actual stock selection loop with candidate batch hooks.
 Thread/scheduler calls mocked: instruction-order test, not audio runtime proof.
 """

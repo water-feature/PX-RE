@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 #define B15_PAIR_TEST
 #define main b15_adapter_selftest
 #include "test_absolute_qnx_adapter.c"

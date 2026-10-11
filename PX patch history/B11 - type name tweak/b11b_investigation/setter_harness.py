@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute actual .1.15 PIC setter/clamp/getter instructions, never patch a file.
 
 Metadata loading, notification and UI calls are recorded stubs. This validates

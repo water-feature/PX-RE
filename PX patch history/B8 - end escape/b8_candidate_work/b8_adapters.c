@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 /* B8 interposers: inherited B1/B5 instructions and helpers stay byte-identical.
  * Only new persistent state is one byte per owned CWavReader at +0x1c0.
  */

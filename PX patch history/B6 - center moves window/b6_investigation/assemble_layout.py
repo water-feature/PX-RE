@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Standalone B6 words and sparse-overlay host model. Never writes firmware."""
 from pathlib import Path
 import sys, struct, hashlib, json

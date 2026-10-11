@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Integrate reviewed stateless producer hook over exact .1.11. No packaging."""
 from pathlib import Path
 import sys,json,struct,hashlib

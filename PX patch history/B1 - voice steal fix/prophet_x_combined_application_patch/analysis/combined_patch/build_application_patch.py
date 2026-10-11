@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Build an offline ProphetX application candidate; never writes an update.
 
 Usage: python build_application_patch.py --input /path/ProphetX.elf --output /path/candidate.elf

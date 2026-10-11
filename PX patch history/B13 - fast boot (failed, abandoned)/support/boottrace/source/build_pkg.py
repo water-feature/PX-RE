@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Build PxUpdate_V2.2.2.1.1 trace candidate. Run: python3 -I build_pkg.py"""
 import hashlib, struct, sys
 from pathlib import Path

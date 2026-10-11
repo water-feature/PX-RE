@@ -17,3 +17,18 @@ their own unit. Nothing in this project is endorsed by, supported by, or
 affiliated with Sequential. Prophet X and Sequential are trademarks of their
 respective owners, used only to identify the hardware this project targets.
 Third-party material remains subject to its own applicable license terms.
+
+Source provenance notes
+
+SPDX comments identify the repository's GPL-2.0-or-later grant for its own
+source files. They do not replace or extend third-party licensing terms.
+
+The B13 boottrace sha.inc file contains 32 bytes of baseline application
+SHA-256 data, referenced by trace.asm; it is not a SHA implementation.
+The B16 VerifyB16Words.java and VerifyGeometryWords.java files are
+project-specific Ghidra verification scripts. They use Ghidra APIs; no
+Ghidra implementation source is included in those files. The B16
+native_mapper_test.cpp copies are project-specific ELF execution fixtures.
+Inspection found no third-party attribution or license notices in these
+helpers. This records the retained evidence, not an independent authorship
+certification. Report any missing attribution through a repository issue.

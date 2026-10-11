@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Isolated B15 rate-independent endpoint identity candidate; no packaging."""
 from pathlib import Path
 import sys,struct,json,hashlib,subprocess

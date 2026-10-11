@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute fitted lifecycle roots without whole-lifecycle-body substitutions.
 Peripheral and listed stock dependency contracts are explicit in each result.
 """

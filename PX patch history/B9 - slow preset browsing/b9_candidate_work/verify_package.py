@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Independent reread/re-extraction/checksum/update-gate and every-byte audit.
 Does not publish until validation completes. No builder parser/assembler imported.
 """

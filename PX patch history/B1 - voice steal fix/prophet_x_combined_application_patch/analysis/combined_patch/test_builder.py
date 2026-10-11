@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Check reproducibility and fail-closed behavior of the offline builder."""
 from pathlib import Path
 import copy,json,hashlib

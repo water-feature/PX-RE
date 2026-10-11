@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 #define OFF_b5_ram_vtable 1758440
 #define OFF_b5_stack_guard_got 1765288
 #define OFF_b5_geometry_default -721856

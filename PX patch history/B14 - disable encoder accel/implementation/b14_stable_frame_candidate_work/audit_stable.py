@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Independent byte, placement, direct writer and interrupt-path audit."""
 from pathlib import Path
 import struct,json,hashlib

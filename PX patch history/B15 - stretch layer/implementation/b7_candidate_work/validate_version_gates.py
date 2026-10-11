@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute actual candidate x86 gate bytes using a bounded instruction decoder.
 No symbolic gate overlays. Version formatter arguments verified from PIC words.
 """

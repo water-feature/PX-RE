@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Independent container verifier; no packager imports or QNX execution."""
 import hashlib,struct,json
 from pathlib import Path

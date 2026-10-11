@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute emitted helper words in the inherited bounded MIPS interpreter.
 The synthetic execution image is IN MEMORY ONLY, not a firmware payload.
 """

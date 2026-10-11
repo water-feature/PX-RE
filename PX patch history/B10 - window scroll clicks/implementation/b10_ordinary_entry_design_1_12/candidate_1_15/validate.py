@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from pathlib import Path
 import struct as S,json,csv,hashlib
 from build import elf,BASE,O

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 #![feature(no_core, rustc_attrs, asm_experimental_arch)]
 #![no_core]
 #![no_main]

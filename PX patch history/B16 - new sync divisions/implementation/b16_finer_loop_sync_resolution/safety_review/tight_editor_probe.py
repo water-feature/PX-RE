@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Isolated instruction overlay: reads baseline, never writes a firmware image.
 
 No build/package driver imports. Outputs are text/JSON only. Explicit MIPS32

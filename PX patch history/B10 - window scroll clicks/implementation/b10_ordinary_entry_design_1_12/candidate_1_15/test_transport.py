@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 import proposal as p
 import ctypes as C,json
 s=p.s;s.waveform('periodic');p.capture_streams=True

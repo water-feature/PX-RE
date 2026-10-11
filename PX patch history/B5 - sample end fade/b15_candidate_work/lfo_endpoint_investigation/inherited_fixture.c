@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 /* Focused independent endpoint-bank fixtures around emitted code bytes. */
 #include <stdio.h>
 #include <stdlib.h>

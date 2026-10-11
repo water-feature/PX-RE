@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from pathlib import Path
 import struct,json
 b=Path('pic.bin').read_bytes();off=0x1480;desc=[]

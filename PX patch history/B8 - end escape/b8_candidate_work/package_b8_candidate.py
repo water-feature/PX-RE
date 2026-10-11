@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Package validated combined candidate; exclusively creates distinct outputs."""
 import json,sys,hashlib,struct
 from pathlib import Path

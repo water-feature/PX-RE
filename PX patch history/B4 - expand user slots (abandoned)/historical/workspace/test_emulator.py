@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from unicorn import *
 from unicorn.mips_const import *
 from pathlib import Path

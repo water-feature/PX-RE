@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute original x86 equality branches; intercept destinations as host returns.
 Does not execute installation, filesystem writes or USB handling.
 """

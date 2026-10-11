@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 /* Freestanding B5 core, staged implementation. Object adapters are not yet
  * installed. Never equate this core's successful tests with a QNX candidate.
  * The generated policy header comes from b5_fade_prototype.FADE_DURATION_MS.

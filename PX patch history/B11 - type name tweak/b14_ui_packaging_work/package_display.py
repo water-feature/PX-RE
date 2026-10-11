@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from pathlib import Path
 import struct,json,hashlib,sys
 R=Path(__file__).resolve().parent.parent; O=Path(__file__).resolve().parent

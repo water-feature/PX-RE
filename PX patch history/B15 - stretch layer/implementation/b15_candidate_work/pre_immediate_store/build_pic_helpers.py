@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Emit bounded B15 PIC helper work. No input payload is modified or packaged.
 Some caller adapters remain unresolved; emission is not firmware approval.
 """

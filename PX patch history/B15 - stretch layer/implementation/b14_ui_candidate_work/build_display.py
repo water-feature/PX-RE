@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """PIC-only scheduler candidate based on tested .1.4. No updater or QNX edits."""
 from pathlib import Path
 import struct,json,hashlib,sys

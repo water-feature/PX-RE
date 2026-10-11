@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Compare components extracted independently from baseline and packaged updates.
 The JSON mapping is supplied by the verified container extractor, not invented here.
 """

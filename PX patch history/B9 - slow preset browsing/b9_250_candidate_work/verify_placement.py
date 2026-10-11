@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Recheck baseline padding, aliases and inherited vector/reservation evidence."""
 from pathlib import Path
 import struct,json,hashlib

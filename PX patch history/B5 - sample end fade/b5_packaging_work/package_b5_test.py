@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Package only the pinned B5 ELF into the pinned tested voice container.
 Established pass-34 framing and voice naming; header-only test identity because
 an embedded revision change would violate the required candidate SHA-256.

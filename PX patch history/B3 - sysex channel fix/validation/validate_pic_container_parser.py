@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Run real QNX x86 type-3 record parser with mocked libc I/O/allocation."""
 from pathlib import Path
 import hashlib,json,struct,sys

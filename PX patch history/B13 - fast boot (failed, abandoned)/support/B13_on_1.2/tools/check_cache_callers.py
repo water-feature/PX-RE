@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Audit the known cache/thread entry closure in a supplied x86-64 ELF."""
 import argparse,re,subprocess,struct,json
 from pathlib import Path

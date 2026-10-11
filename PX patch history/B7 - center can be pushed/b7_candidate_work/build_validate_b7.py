@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Bounded MIPS assembler, decoded-byte B7 validation and deterministic packaging."""
 from pathlib import Path
 import sys,struct,hashlib,json

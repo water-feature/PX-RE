@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Audit reuse of now-unreachable acceleration instructions, not spare padding."""
 import hashlib
 from pathlib import Path

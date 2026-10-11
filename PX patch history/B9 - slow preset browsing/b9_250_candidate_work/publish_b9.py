@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Publish the exact independently validated candidate without overwriting files."""
 from pathlib import Path
 import json,hashlib

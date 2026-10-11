@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from pathlib import Path
 import sys,struct,json,hashlib
 O=Path(__file__).resolve().parent;R=O.parent;sys.path.insert(0,str(R/'b15_candidate_work'))

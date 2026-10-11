@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Static reference audit for two potential diagnostic-code reclamation regions."""
 from pathlib import Path
 from collections import Counter

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Apply the frozen approved B11b layout to the exact .1.15 components."""
 from pathlib import Path
 import hashlib,json,struct

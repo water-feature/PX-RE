@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 import sweep as s
 import csv,json,hashlib,math,collections
 s.trace=True

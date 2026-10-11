@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 /* Isolated sizing/validation probe. Never linked into a firmware image. */
 typedef unsigned long uintptr_t;
 extern __attribute__((visibility("hidden"))) float *center_get_mod(void *, int, int);

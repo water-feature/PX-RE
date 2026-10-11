@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Package saved/validated .1.12; exact .1.11 records, FPGA unchanged."""
 from pathlib import Path
 import sys,struct,json,hashlib

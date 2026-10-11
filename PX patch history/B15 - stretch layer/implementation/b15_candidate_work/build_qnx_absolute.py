@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Build an UNPACKAGED QNX integration image; no release-approval implication."""
 from pathlib import Path
 import sys,struct,json,hashlib,subprocess

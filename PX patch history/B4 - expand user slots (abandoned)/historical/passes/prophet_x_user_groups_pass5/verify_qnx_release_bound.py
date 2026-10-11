@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 import runpy,json,struct
 from pathlib import Path
 from unicorn import UC_HOOK_MEM_WRITE

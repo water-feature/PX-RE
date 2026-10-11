@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Package the reviewed QNX LFO endpoint fix over retained B15 .1.8; no flashing."""
 from pathlib import Path
 import hashlib,json,struct,sys

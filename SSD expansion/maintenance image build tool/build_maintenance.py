@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Reproduce the tested PX maintenance VM from an owner's private boot file."""
 import argparse, hashlib, json, struct, subprocess, tempfile
 from pathlib import Path

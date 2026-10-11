@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Independent delivered-byte, metadata and receiver-checksum verification."""
 from pathlib import Path
 import hashlib,struct,json,sys

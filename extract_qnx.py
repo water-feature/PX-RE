@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Extract the QNX application from a verified Prophet X update (no patching)."""
 from __future__ import annotations
 

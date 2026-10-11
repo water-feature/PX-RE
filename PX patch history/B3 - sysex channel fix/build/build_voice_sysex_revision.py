@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from pathlib import Path
 import hashlib,json
 source=Path(__file__).with_name('baseline.bin');b=source.read_bytes()

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Package the validated .15 image over the exact .12 container."""
 from pathlib import Path
 import struct as S,json,hashlib

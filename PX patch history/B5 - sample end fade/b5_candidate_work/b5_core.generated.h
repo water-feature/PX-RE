@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 #pragma once
 typedef unsigned int u32;
 typedef unsigned long long u64;

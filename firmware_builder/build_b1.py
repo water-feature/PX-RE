@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Rebuild retained B1 from the exact factory update and public patch recipe."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Reuse B6 suites against actual saved candidate instructions, never sparse words."""
 from pathlib import Path
 import json,hashlib,struct

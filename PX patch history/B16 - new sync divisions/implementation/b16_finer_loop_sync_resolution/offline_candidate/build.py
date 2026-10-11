@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """B16 offline emission from pinned .2.0 B11b sources; packaging is separate."""
 from pathlib import Path
 import struct,hashlib,json,subprocess

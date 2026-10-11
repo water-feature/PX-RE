@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute actual QNX sender and actual PIC receiver to a modeled SPI flash."""
 from pathlib import Path
 from collections import deque, Counter

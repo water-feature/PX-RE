@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """B16 geometry-only .2.2 from exact pinned .2.1; no hardware actions."""
 from pathlib import Path
 import struct,sys,json,hashlib,runpy

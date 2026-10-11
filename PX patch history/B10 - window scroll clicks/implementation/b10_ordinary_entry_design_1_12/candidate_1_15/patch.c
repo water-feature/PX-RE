@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 typedef unsigned long U;
 typedef unsigned char B;
 typedef struct { unsigned flags; int origin,end,start; } State;

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute candidate/stock metadata and real SPI/formatter words against an SPI model.
 Only parameter getters/bounds/unrelated UI notification contracts are summarized.
 SPI model covers CS, command/address, receive FIFO, bounded delays and fault completion.

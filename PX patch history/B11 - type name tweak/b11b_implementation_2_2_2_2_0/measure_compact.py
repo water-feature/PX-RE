@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Compact transition-only routing entirely within established owned ranges.
 Scratch fragments and interpreter overlays only; no firmware image writes.
 """

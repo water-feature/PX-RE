@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Append/install the authorized B5 objects into a separate tested-voice ELF copy.
 No container output, target execution, alternative layout or loader research.
 """

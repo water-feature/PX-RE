@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Validate installed B5 candidate bytes/CFI, without executing a QNX ELF."""
 import hashlib
 import bisect,json,re,struct,subprocess,tempfile

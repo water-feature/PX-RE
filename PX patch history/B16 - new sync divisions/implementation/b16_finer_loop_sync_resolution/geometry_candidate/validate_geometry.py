@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Focused validation of emitted bytes; no firmware writes."""
 from pathlib import Path
 import runpy,struct,json

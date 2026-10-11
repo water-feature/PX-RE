@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from pathlib import Path
 import struct,json
 b=Path('pic.bin').read_bytes();roots=[r for r in json.load(open('branch4/pic_interrupt_audit.json')) if r['entry']=='0x9d0526ec'];results=[]

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 static void geom_observe(float rate,int field){
  Capture c=context();dispatch(&c,READ,frame);
  U32(reader[0],0x198+4*((U32(reader[0],0x1b0)+1)&1))=bits(rate);

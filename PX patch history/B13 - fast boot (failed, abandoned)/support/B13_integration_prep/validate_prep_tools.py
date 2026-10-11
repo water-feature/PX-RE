@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 import subprocess,json,hashlib,tempfile
 from pathlib import Path
 prep=Path(__file__).resolve().parent;review=prep.parent/'B13_v4_review';base=review/'v10_exact_reconstructed.elf';expected_candidate=review/'v10_b13_uuid_v4_candidate.elf';sha=hashlib.sha256(base.read_bytes()).hexdigest();results=[]

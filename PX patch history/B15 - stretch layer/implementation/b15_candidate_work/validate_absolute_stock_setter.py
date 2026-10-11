@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute installed wrapper and actual inherited/stock SampleVel store path."""
 import os,json,struct
 os.environ['B15_PLACED']='1'

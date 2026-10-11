@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 #ifndef B15_CORE_H
 #define B15_CORE_H
 /* Freestanding selection policy. Transport/firmware adapters are separate. */

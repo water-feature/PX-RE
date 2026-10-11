@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Emit four standalone instruction fragments. Never opens a firmware image.
 
 Sizing sketch only: valid stock group IDs, initialized cache, one parameter bank.

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Close two bounded B14-dead regions using exact guards and recovered ingress."""
 from pathlib import Path
 import ast,json,struct,hashlib

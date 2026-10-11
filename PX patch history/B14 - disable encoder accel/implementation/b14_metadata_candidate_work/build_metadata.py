@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Unpackaged .1.4-based metadata-only candidate; no display/version/QNX edits."""
 from pathlib import Path
 import struct,json,hashlib,sys

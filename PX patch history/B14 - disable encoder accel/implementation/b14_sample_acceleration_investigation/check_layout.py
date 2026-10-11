@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Read-only symbolic instruction check; never assembles or patches firmware."""
 from pathlib import Path
 import json

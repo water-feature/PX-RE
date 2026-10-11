@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from pathlib import Path
 import ctypes as C, mmap, struct, math, subprocess, re, json, hashlib, csv, collections, sys
 O=Path(__file__).resolve().parent

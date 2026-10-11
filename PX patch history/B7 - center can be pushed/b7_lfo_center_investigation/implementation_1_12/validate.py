@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Validate saved integrated ELF: never overlay/replace its Center helper."""
 from pathlib import Path
 import sys,json,struct,hashlib,subprocess,re,copy

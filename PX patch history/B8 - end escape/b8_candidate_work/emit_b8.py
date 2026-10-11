@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Emit only B8 additions. Never modifies or recompiles inherited B5 objects."""
 import sys,json,subprocess,hashlib
 from pathlib import Path

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Build only authorized minimal B9 on exact hardware-tested B6 .9.
 Publication is separate and requires independent instruction/package validation.
 """

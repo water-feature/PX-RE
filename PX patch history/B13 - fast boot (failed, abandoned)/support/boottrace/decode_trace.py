@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """
 Decode px_boot_trace.bin (the Prophet X boot timing file) on a normal computer.
 

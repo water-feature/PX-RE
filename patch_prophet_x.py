@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Build Prophet X 2.2.2.2.2 from your exact factory 2.2.2.0.0 update.
 
 Requires the complete source repository and the macOS build tools documented

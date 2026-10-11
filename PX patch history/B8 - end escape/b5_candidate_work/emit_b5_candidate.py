@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Stage B5 machine code/CFI; stop at reservations or unestablished adapters.
 
 Never edits its input or packages firmware. A stopped stage emits only partial

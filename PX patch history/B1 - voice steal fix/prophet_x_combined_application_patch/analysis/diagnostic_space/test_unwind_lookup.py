@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute the firmware's own FDE lookup callback against the trial layout.
 
 QNX dl_iterate_phdr is replaced by its input structure; the callback and all

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Factory-to-final build from retained feature sources.
 
 No generated firmware from the branch archives is staged as input.

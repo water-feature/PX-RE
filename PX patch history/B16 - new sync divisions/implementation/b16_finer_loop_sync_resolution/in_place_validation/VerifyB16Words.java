@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 import java.nio.file.*;
 import java.util.*;
 import ghidra.app.script.GhidraScript;

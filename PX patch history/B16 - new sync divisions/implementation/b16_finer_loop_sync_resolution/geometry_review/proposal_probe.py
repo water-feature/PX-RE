@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Proposal only: text words and in-memory execution, no firmware/package emission."""
 from pathlib import Path
 import runpy,struct,json,hashlib

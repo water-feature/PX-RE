@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute original startup worker and dictionary Insert with controlled cache outputs.
 This checks downstream argument preservation, not QNX full-parser execution or SSD index ordering.
 """

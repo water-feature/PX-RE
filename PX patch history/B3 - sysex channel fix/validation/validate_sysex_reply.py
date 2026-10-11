@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Dispatcher-to-reply validation, real sender with mocked byte transport."""
 from pathlib import Path
 import hashlib,json,struct,sys

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Inspect and losslessly repack Prophet X update containers.
 
 This build component stores no firmware bytes and accepts only

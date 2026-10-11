@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Read-only B7 design model: stock MIPS instructions plus symbolic proposed shims.
 
 No instruction bytes are assembled or written. External output/UI callees are

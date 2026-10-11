@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Offline unwind-layout trial. Never modifies the input ELF or update package.
 
 Run from any directory. Requires pyelftools and Capstone. Output ELF is a layout

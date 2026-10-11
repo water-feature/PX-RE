@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Emit full immediate-store helper plan. No payload written if audited cave fails."""
 from pathlib import Path
 import struct,json,hashlib

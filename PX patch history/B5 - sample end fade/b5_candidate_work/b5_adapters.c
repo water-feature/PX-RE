@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 /* Standalone B5 endpoint-bank integration. No ELF writer or new audio buffers.
  * Raw object offsets are the previously recovered QNX contracts.
  */

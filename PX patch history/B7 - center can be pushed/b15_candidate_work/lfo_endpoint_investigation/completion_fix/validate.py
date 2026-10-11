@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from pathlib import Path
 import subprocess,json,hashlib,os
 O=Path(__file__).resolve().parent;R=O.parents[2]

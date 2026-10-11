@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Emit standalone objects only. No ELF writer and no reservation stop."""
 import re,json,subprocess
 from pathlib import Path

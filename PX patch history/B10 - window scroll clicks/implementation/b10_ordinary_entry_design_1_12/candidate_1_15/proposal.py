@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Harness adapter: executes the saved emitted .15 hooks; no semantic correction."""
 from pathlib import Path
 import ctypes as C,struct,re,json,types,sys

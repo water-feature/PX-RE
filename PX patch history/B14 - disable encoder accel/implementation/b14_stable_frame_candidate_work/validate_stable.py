@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Run actual emitted control words with explicit drawing and OLED contracts."""
 from pathlib import Path
 import sys,json,hashlib,random,struct

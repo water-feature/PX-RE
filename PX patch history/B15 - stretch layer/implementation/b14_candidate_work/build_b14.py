@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Unpackaged PIC only. Retain .1.2 revision metadata; no updater/QNX output."""
 from pathlib import Path
 import hashlib, json, struct

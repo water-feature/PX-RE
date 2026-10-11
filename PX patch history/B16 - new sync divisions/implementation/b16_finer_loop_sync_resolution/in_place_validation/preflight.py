@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Read-only firmware validation; proposed changes exist only in memory."""
 from pathlib import Path
 import runpy,struct,json,hashlib

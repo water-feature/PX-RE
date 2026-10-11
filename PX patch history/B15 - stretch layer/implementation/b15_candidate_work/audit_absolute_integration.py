@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Bounded exact-image integration audit, reusing established B15/B14 evidence."""
 from pathlib import Path
 import ast,json,struct,hashlib,subprocess

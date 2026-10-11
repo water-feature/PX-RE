@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 // Execute actual baseline/candidate ELF mapper bytes under isolated mappings.
 // Only harness mappings receive a RET at the duration-conversion boundary.
 #include <sys/mman.h>

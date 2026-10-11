@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute actual B9 PIC instructions and compare to exact B6 baseline.
 Only external application/global-getter/I/O functions are summarized.
 """

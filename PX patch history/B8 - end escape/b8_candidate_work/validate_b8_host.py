@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute emitted object bytes in a host fixture; no firmware ELF output."""
 import json,struct,subprocess,re
 from pathlib import Path

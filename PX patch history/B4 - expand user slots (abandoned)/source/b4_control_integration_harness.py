@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Read-only firmware interpreter with a proposed-instruction overlay in memory.
 
 No patched image is emitted. Implements only instructions reached by these

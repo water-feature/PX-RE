@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Scoped tests of emitted PIC words, actual QNX execution and ELF metadata."""
 import hashlib
 from pathlib import Path

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Population/source checks and stock reply/request execution, no image output."""
 import sys,json,hashlib
 from pathlib import Path

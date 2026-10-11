@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 import proposal as p
 import ctypes as C,struct,json
 s=p.s

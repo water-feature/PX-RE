@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """B9 behavioral design model, not a firmware emulator or patched payload.
 Application callees and IRQ timing are summarized; zero is held until main service.
 """

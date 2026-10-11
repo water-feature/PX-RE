@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Bounded fitted formatter caller inventory and exhaustive 16-bit guard execution.
 Does not execute full renderers or model their results. No firmware writes.
 """

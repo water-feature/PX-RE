@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Validate actual emitted PIC bytes with no instruction overlays."""
 from pathlib import Path
 import contextlib,io,json,runpy,struct,sys

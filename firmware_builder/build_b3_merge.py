@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Apply the public B3 PIC recipe to generated B8 and reproduce merged .0.7."""
 
 from __future__ import annotations

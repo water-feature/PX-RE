@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Relocatable instruction design tested in the existing read-only harness.
 Synthetic helper PCs are test labels, NOT cleared firmware placement.
 """

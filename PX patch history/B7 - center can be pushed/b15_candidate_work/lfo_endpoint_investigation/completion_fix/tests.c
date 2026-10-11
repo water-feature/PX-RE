@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 #define main inherited_test_main
 #include "fixture.c"
 #undef main

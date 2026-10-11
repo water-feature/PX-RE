@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Independent installed B8 branch/ABI/unwind checks against inherited B5."""
 import hashlib
 import bisect,json,re,struct,subprocess,tempfile,sys

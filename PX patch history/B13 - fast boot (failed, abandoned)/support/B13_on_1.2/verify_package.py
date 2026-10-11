@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Independently parse a saved update and compare all payloads to tested files."""
 from pathlib import Path
 import argparse,hashlib,json,struct

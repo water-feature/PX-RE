@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Package only validated exact bytes; exclusively publish a new candidate."""
 from pathlib import Path
 import json,struct

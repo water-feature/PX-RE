@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 #include "b15_absolute_core.h"
 _Static_assert(sizeof(struct b15_state) <= 0x300, "QNX state exceeds audited reservation");
 static int valid(unsigned p) { return p < B15_PAIRS; }

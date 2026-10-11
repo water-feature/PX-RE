@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute stock cold cache parser and switch, with host I/O and no-op locks.
 Not QNX execution. Includes actual cache list and full stock manifest parser.
 """

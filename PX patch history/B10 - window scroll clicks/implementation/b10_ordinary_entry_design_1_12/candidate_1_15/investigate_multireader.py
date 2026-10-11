@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Read-only emitted .15 timing experiment; no firmware build or semantic patch."""
 import proposal as p
 import ctypes as C,csv,json,hashlib,collections

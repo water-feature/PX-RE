@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 #define OFF_b5_predict 0
 #define OFF_b5_reset 366
 #define OFF_b5_note_on 387

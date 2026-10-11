@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute stock PIC bank-delete completion and debug reload dispatch.
 Library/UI/flash I/O are controlled callbacks. No firmware image writes.
 """

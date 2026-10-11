@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Build the boot-trace ELF from the exact .15 ELF. Run with: python3 -I build_elf.py
 Every patch asserts the original bytes first. File size is unchanged."""
 import hashlib, struct, subprocess, sys, json

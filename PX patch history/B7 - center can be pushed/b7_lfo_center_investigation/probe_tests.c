@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 /* Executes isolated ELF probe bytes in a host-only memory fixture. */
 #include <stdio.h>
 #include <stdlib.h>

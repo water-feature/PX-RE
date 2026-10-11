@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Run operation words, including their displaced stock prologue words.
 Worker bodies/IRQ delivery are explicit contracts; no complete caller closure claim.
 """

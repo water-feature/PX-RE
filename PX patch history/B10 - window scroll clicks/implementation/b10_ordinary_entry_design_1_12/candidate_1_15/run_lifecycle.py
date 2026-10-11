@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 import proposal as p
 s=p.s
 import json,math,random,collections,hashlib

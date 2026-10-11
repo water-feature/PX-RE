@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
 /* Exact 2.2.2.1.7 QNX adapter. Raw ELF VAs; SysV AMD64 ABI.
    Not a standalone application. Assembly supplies the firmware detours. */
 #include "b15_absolute_core.h"

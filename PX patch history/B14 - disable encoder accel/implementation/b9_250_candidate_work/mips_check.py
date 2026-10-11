@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Bounded instruction interpreter. Decodes real little-endian MIPS words only.
 No symbolic patch overlays. External program-application/I/O callees use contracts.
 """

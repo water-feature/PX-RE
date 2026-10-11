@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute candidate helper/hook bytes; all QNX threading is mocked."""
 import hashlib
 import struct, os

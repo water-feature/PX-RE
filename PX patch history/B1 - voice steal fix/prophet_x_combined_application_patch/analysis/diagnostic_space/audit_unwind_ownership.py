@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Audit calls newly covered by the earlier startup-mutex acquisition.
 
 Normal direct control flow; RAM scheduler virtual dispatch resolved explicitly

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute candidate words, with adversarial dispatch/ISR contracts.
 This is a bounded host interpreter, not a silicon timing test.
 """

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Independent verification using raw offsets and byte literals."""
 from pathlib import Path
 import hashlib,json,sys

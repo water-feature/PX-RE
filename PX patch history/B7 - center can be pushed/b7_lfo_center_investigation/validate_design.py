@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Run bounded emitted-code fixture and validate exact CFI/placement evidence."""
 from pathlib import Path
 import sys,struct,json,subprocess,re,copy,hashlib

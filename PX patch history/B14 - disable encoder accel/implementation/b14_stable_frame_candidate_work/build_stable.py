@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Unpackaged .1.6 experiment: stable sample framebuffer between transitions."""
 from pathlib import Path
 import sys,struct,json,hashlib

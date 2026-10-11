@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 from pathlib import Path
 namespace={};exec((Path(__file__).parent/'run_lifecycle.py').read_text().split('# Whole vs fragmented')[0],namespace)
 s=namespace['s'];p=namespace['p'];stream=namespace['stream'];geo=namespace['geo'];metrics=namespace['metrics']

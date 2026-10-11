@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Exact-byte placement, driver ABI, incoming references and IRQ direct/switch audit.
 Conservative static scans; unresolved callback targets remain explicitly reported.
 """

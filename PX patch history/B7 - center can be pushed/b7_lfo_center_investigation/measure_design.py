@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Assemble isolated design objects; validate placement in memory only.
 No patched ELF, firmware or package is written.
 """

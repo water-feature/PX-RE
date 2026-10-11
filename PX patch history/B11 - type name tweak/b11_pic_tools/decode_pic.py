@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 import struct,sys
 from pathlib import Path
 b=(Path(__file__).resolve().parent.parent/'b10_ordinary_entry_design_1_12/candidate_1_15/reextracted_pic.bin').read_bytes()

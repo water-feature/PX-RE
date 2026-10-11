@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Compile retained B8 sources on the generated B5 application and package .0.6."""
 
 from __future__ import annotations

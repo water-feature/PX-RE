@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Fitted renderer execution; selected-bank and physical drawing calls modeled."""
 import sys,struct,os
 from pathlib import Path

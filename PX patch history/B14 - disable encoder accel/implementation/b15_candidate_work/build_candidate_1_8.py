@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Package the retained B15 images; no flashing or source rebuilds.
 Format authority: b14_stable_frame_packaging_work/package_stable.py.
 """

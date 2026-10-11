@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Read-only intraprocedural CFG + differential handler-boundary emulation."""
 from pathlib import Path
 import struct, json, hashlib

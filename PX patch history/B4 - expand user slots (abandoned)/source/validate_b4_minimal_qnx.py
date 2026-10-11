@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-2.0-or-later
 """Execute isolated x86-64 stock/patched ELF code. No QNX OS or filesystem I/O."""
 import ctypes as C, json,platform,struct,sys,argparse,tempfile
 from pathlib import Path
