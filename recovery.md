@@ -26,11 +26,10 @@ Do not copy boot sectors between arbitrary layouts or assume MIDI recovery can r
 
 **Other operating systems:** The procedure below documents the tested Windows/QEMU setup. The same QNX maintenance image should work in QEMU on Linux or macOS, with changes to host paths, command quoting, disk access permissions and physical SSD identification/unmounting. The commands inside QNX should remain the same if the emulated IDE controllers and disk order are preserved. Other VM applications may require different QNX disk drivers. Recovery on other hosts has not been verified.
 
-This records the Windows/QEMU procedure used after the failed B13 flash. The failed flash left the synth hanging after the boot bar. We restored the SSD-resident application, not its boot partition: the boot image was verified unchanged.
+This records the Windows/QEMU procedure used after the failed B13 flash. The failed flash left the synth hanging after the boot bar. We restored the SSD-resident application, not its boot partition: the boot image was verified unchanged. Repaired SSD was successfully tested on hardware.
 
 Both `ProphetX` and `ProphetXBackup` contained the failed application. The stock startup script checks whether the process exists after five seconds; a hung process can pass that check and overwrite the backup.
 
-The application copies were replaced successfully in the VM. Final repaired-file hashes and a hardware boot confirmation were not recorded in the retained evidence.
 
 ### 1. Prepare Windows
 
