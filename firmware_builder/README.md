@@ -2,6 +2,32 @@
 
 The root patcher calls [source_pipeline.py](source_pipeline.py). This directory contains the container parser and early-stage wrappers; the authored feature implementations remain in [PX patch history](../PX%20patch%20history/BUILD_VERSION_HISTORY.md). The builder contains no factory/final firmware image or whole-image delta. Original patch-site guards are stored as SHA-256 hashes and lengths; the bytes being checked come from your supplied firmware. Supply your own exact factory update.
 
+## Directory map
+
+`PX patch history/` contains live build inputs alongside research and historical evidence. Its name does not mean the whole directory is archival. The table below describes the factory-to-final builder; standalone recovery and SSD tools have separate inputs.
+
+| Location | Role in the final firmware build |
+|---|---|
+| `firmware_builder/` | Active orchestrator, container parser, early-stage builders and two restored follow-up sources under `sources/`. Documentation and verification receipts are also retained here. |
+| `PX patch history/B1 - voice steal fix/` | Mixed. Staging takes only `prophet_x_combined_application_patch/analysis/combined_patch/patch_spec.json`; other files provide implementation history and evidence. |
+| `PX patch history/B3 - sysex channel fix/` | Research, original implementation and packaging evidence. The final builder uses `firmware_builder/build_b3_merge.py` instead of staging this directory. |
+| `PX patch history/B4 - expand user slots (abandoned)/` | Research and rejected implementation only; not staged. The active ELF parser is `qnx_elf.py` in B5. |
+| `PX patch history/B5 - sample end fade/` | Mixed. Staging uses `b5_candidate_work/`, supplements B15 from `b15_candidate_work/`, and copies `b5_elf_placement_check.py` and `qnx_elf.py`. Other material is retained for review. |
+| `PX patch history/B6 - center moves window/` | Mixed. Staging copies `b6_investigation/` and `b6_candidate_work/`, including their retained fixtures and evidence. |
+| `PX patch history/B7 - center can be pushed/` | Mixed. Staging copies `b7_candidate_work/`, `b7_lfo_center_investigation/` and `b7_combined_instruction_model.py`. Other inherited copies are not selected. |
+| `PX patch history/B8 - end escape/` | Mixed. Staging copies `b8_candidate_work/` and the selected revision of `b5_fade_prototype.py`. Other inherited copies are not selected. |
+| `PX patch history/B9 - slow preset browsing/` | Mixed. Staging uses `b9_250_candidate_work/`; other variants and reports provide historical evidence. |
+| `PX patch history/B10 - window scroll clicks/` | Mixed. Staging copies `implementation/b10_ordinary_entry_design_1_12/`, including retained validation data. Other experiments are not selected. |
+| `PX patch history/B11 - type name tweak/` | Mixed. Staging copies `b11b_implementation_2_2_2_2_0/`, `b11b_investigation/` and `b11_pic_tools/`, plus the B5 packaging contract and `b14_ui_packaging_work/package_display.py`. |
+| `PX patch history/B13 - fast boot (failed, abandoned)/` | Research and failed diagnostic implementations only; not staged. |
+| `PX patch history/B14 - disable encoder accel/` | Mixed. Staging selects the candidate, packaging, metadata, stable-frame, sample-acceleration and UI source directories listed in `DIRS`. Rejected alternatives remain as evidence. |
+| `PX patch history/B15 - stretch layer/` | Mixed. Staging copies `implementation/b15_candidate_work/`, supplemented by the B5 follow-up and restored builder sources. |
+| `PX patch history/B16 - new sync divisions/` | Mixed. Staging copies `implementation/b16_finer_loop_sync_resolution/`, resets the in-place and geometry output directories, then restores the geometry builder and validator. Rejected offline sources remain for preservation checks, not as firmware candidates to install. |
+| `SSD expansion/`, `extract_qnx.py`, `recovery.md` | Separate maintenance-image builder, application extractor and recovery guidance; not stages in the final firmware build. |
+| `tests/`, `tools/`, `.github/` | Repository checks and synthetic tests; not firmware build inputs. |
+
+`DIRS`, `HELPERS` and `stage()` in [source_pipeline.py](source_pipeline.py) are the exact staging specification. `build()` lists the commands that run. Copying a directory does not mean every script in it executes: some files are fixtures, retained results or provenance dependencies. Generated firmware and intermediate packages stay outside the repository. Checksumming the public bundle also covers research files; that does not make them build inputs.
+
 ## Review and rebuild without the patcher
 
 If you do not trust `patch_prophet_x.py`, inspect the source and invoke the orchestrator directly. This uses the same build implementation as the entry point, so the alternative command alone does not supply independent verification. Review the stage code and independently verify the saved file's size and SHA-256.

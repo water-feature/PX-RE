@@ -11,6 +11,7 @@ This project documents a set of bugfixes and improvements for the Sequential Pro
 
 ## What is included
 
+- [Source and research directory map](firmware_builder/README.md#directory-map): identifies active build inputs, retained research and mixed directories.
 - [Feature and version history](PX%20patch%20history/BUILD_VERSION_HISTORY.md): follows the build chain and links to each feature's implementation, test status and packaging evidence.
 - [SSD expansion guide](SSD%20expansion/README.md): increases storage capacity without a firmware update.
 - [Contributing](CONTRIBUTING.md): evidence, reproduction and copyright requirements for proposed changes. PRs and bug reports welcome.
