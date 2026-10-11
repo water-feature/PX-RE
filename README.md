@@ -5,7 +5,7 @@ This project documents a set of unofficial bugfixes and improvements for the Seq
   No firmware images or extracted payloads are distributed here. 
   Install at your own risk and keep generated firmware images private. 
   LLMs used throughout. 
-  Thanks to [rvense](https://rven.se/prophet-x/) for taking the first steps. 
+  Thanks to [rvense](https://rven.se/prophet-x/) for mapping out the first steps. 
 
 **Before installing:** read [recovery.md](recovery.md), open up your synth by following [this video](https://www.youtube.com/watch?v=tF9Ji9iL00g) and create an image of your SSD.
 
