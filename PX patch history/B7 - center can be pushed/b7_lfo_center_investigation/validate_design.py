@@ -73,15 +73,11 @@ assert (-16-48-0x280)%64==0
 assert (0-80-256)%16==0 # wrapper call site
 assert (0-80-256-8-48-56)%16==0 # core's getter call sites
 peak=336+8+104+8;assert peak==456
-# Stolen instruction window has no interior branch target in full Ghidra body.
-trace=(O/'trace.txt').read_text()
-for line in trace.splitlines():
- if re.match(r'^001[0-9a-f]+ (?:J\w+|CALL) ',line):
-  targets=re.findall(r'0x([0-9a-f]+)',line)
-  assert not any(0x11a87b<int(t,16)<0x11a887 for t in targets)
+# The private full-disassembly branch-target review is historical evidence only.
+# It is not rerun by this public source build; the remaining checks below run.
 # Execute emitted payload bytes, stock .1.11 getters/map and actual hook/replay.
 exe=O/'probe_tests'
 subprocess.run(['clang','-arch','x86_64','-O2','-ffp-contract=off','-fno-strict-aliasing',str(O/'probe_tests.c'),str(O/'probe_getter.s'),str(R/'b5_candidate_work/b5_wrapper_fixture.s'),'-o',str(exe)],check=True)
 run=subprocess.run([str(exe),str(P),str(O/'design_payload.bin'),str(M['code_and_constants_and_alignment']),str(M['symbols']['center_thunk'])],capture_output=True,text=True)
-report=dict(status='PASS' if run.returncode==0 else 'FAIL',exit=run.returncode,stderr=run.stderr,emitted_host=json.loads(run.stdout) if run.returncode==0 else run.stdout,wrapper_CFI_matches_original_at_every_byte=True,original_CFA_expression_evaluated=True,core_CFI_validated=True,stack_alignment=True,extra_peak_stack_bytes=peak,interior_branch_targets_absent_in_ghidra_function=True,firmware_unmodified=P.read_bytes()==B,scope='actual isolated emitted x86/hook replay, stock getters/map and both stock geometry instruction slices in all size modes; fake parameter/modulation/reader objects and bounded arithmetic oracle; complete QNX playback and hardware NOT VERIFIED')
+report=dict(status='PASS' if run.returncode==0 else 'FAIL',exit=run.returncode,stderr=run.stderr,emitted_host=json.loads(run.stdout) if run.returncode==0 else run.stdout,wrapper_CFI_matches_original_at_every_byte=True,original_CFA_expression_evaluated=True,core_CFI_validated=True,stack_alignment=True,extra_peak_stack_bytes=peak,interior_branch_targets_absent_in_ghidra_function=None,branch_target_review='NOT RERUN; historical evidence retained',firmware_unmodified=P.read_bytes()==B,scope='actual isolated emitted x86/hook replay, stock getters/map and both stock geometry instruction slices in all size modes; fake parameter/modulation/reader objects and bounded arithmetic oracle; complete QNX playback and hardware NOT VERIFIED')
 (O/'design_validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));assert report['status']=='PASS'

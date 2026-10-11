@@ -1,11 +1,6 @@
 import struct,sys
 from pathlib import Path
-import argparse
-parser=argparse.ArgumentParser(description='Decode PIC address ranges from a privately supplied image.')
-parser.add_argument('pic', type=Path)
-parser.add_argument('ranges', nargs='+', help='Hex START:END address ranges')
-args=parser.parse_args()
-b=args.pic.read_bytes()
+b=(Path(__file__).resolve().parent.parent/'b10_ordinary_entry_design_1_12/candidate_1_15/reextracted_pic.bin').read_bytes()
 r='zero at v0 v1 a0 a1 a2 a3 t0 t1 t2 t3 t4 t5 t6 t7 s0 s1 s2 s3 s4 s5 s6 s7 t8 t9 k0 k1 gp sp fp ra'.split()
 def dec(pc,w):
  op=w>>26;s=(w>>21)&31;t=(w>>16)&31;d=(w>>11)&31;n=(w>>6)&31;f=w&63;u=w&65535;i=u if u<32768 else u-65536
@@ -26,5 +21,5 @@ def dump(start,end):
  for pc in range(start,end,4):
   w=struct.unpack_from('<I',b,pc-0x9d000000)[0];print(f'{pc:08x} {w:08x} {dec(pc,w)}')
 if __name__=='__main__':
- for x in args.ranges:
+ for x in sys.argv[1:]:
   a,z=x.split(':');dump(int(a,16),int(z,16))

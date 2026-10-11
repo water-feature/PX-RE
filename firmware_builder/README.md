@@ -31,14 +31,14 @@ The [rebuild receipt](VERIFICATION.json) records the completed source-only and p
 
 ## Archive compatibility adjustments
 
-The public archive deliberately excludes firmware and some private analysis artifacts. The staging code makes these explicit adjustments:
+The public archive deliberately excludes firmware and some private analysis artifacts. The public sources include explicit compatibility adjustments. Staging copies the adjusted Python files unchanged and prepares the supporting receipts:
 
 - Select the B8 revision of the shared B5 helper and combine the separately archived B15/B5 follow-up sources. [sources/lfo_endpoint_investigation/build_fix.py](sources/lfo_endpoint_investigation/build_fix.py) and [reproduce.c](sources/lfo_endpoint_investigation/reproduce.c) restore two authored follow-up sources missing from the archive.
 - Supply SHA-256 guards for the two B14 pre-edit spans rather than original instruction words or the full private disassembly.
-- Restore B7's historical checksum filename. Skip the old B7 branch-target trace review that requires an unpublished full disassembly; retain its historical review receipt and run the emitted-byte host and CFI checks. This build does not claim to rerun that private trace review.
-- Remove B10's absent `phase.csv` from the report artifact list; its validation assertions still run.
-- Make the B11 PIC decoder usable as an imported module against the generated parent image. Refresh B11's source-file receipts for the portable archive; preserve its historical firmware-input hashes. Independently assemble and compare the emitted fragments before building the image.
-- Recreate B16's preservation receipt for the source-only staged files and exclude generated Python caches from the preservation comparison.
+- Restore B7's historical checksum filename. The published B7 validator omits the old branch-target trace review that requires an unpublished full disassembly; it reports `NOT RERUN; historical evidence retained` and leaves that result unset. The emitted-byte host and CFI checks still run.
+- The published B10 validator excludes absent `phase.csv` from the report artifact list; its validation assertions still run.
+- The published B11 PIC decoder supports importing against the generated parent image. Refresh B11's source-file receipts for the portable archive; preserve its historical firmware-input hashes. Independently assemble and compare the emitted fragments before building the image.
+- Recreate B16's preservation receipt for the source-only staged files. The published integration script excludes generated Python caches from the preservation comparison.
 
 `staged_source_inventory.json` records exactly which staged files were used before compilation. Historical reports remain evidence of their original run, including hardware-pending wording; subsequent hardware observations are recorded in the branch guides. A matching final hash establishes byte identity with the accepted package, not exhaustive proof of behavior on every instrument.
 

@@ -104,23 +104,6 @@ def stage(root: Path) -> None:
     (root / "b14_investigation/ui_exact_1_4.json").write_text(json.dumps(B14_SPAN_GUARDS, indent=2) + "\n")
     shutil.copy2(root / "b7_lfo_center_investigation/HISTORICAL_SHA256SUMS",
                  root / "b7_lfo_center_investigation/SHA256SUMS")
-    # The public archive omits the private full disassembly trace. Its recorded
-    # review receipt remains pinned, while the saved-ELF CFI and host checks run.
-    design_validator = root / "b7_lfo_center_investigation/validate_design.py"
-    design_source = design_validator.read_text()
-    trace_start = design_source.index("# Stolen instruction window")
-    trace_end = design_source.index("# Execute emitted payload bytes")
-    design_validator.write_text(design_source[:trace_start] + design_source[trace_end:])
-    b10_validator = root / "b10_ordinary_entry_design_1_12/candidate_1_15/validate.py"
-    b10_source = b10_validator.read_text()
-    if "'phase.csv'," not in b10_source:
-        raise ValueError("B10 validation source changed")
-    b10_validator.write_text(b10_source.replace("'phase.csv',", ""))
-    decoder = root / "b11_placement_scratch/decode_pic.py"
-    decoder_source = decoder.read_text()
-    start = decoder_source.index("import argparse")
-    end = decoder_source.index("r='zero")
-    decoder.write_text(decoder_source[:start] + "b=(Path(__file__).resolve().parent.parent/'b10_ordinary_entry_design_1_12/candidate_1_15/reextracted_pic.bin').read_bytes()\n" + decoder_source[end:].replace("for x in args.ranges:", "for x in sys.argv[1:]:"))
     (root / "b5_packaging_work").mkdir()
     shutil.copy2(HISTORY / "B11 - type name tweak/b5_packaging_work/established_packaging_contract.md",
                  root / "b5_packaging_work/established_packaging_contract.md")
@@ -137,14 +120,6 @@ def stage(root: Path) -> None:
     before = {str(p.relative_to(offline)): digest(p) for p in offline.rglob("*") if p.is_file()}
     (root / "b16_finer_loop_sync_resolution/safety_review/candidate_preservation.json").write_text(
         json.dumps({"before": before}, indent=2) + "\n")
-    integrate = root / "b16_finer_loop_sync_resolution/in_place_validation/integrate.py"
-    source = integrate.read_text()
-    old = "actual={str(p.relative_to(O)):sha(p.read_bytes()) for p in O.rglob('*') if p.is_file()};assert actual==preserved"
-    new = "actual={str(p.relative_to(O)):sha(p.read_bytes()) for p in O.rglob('*') if p.is_file() and '__pycache__' not in p.parts};assert actual==preserved"
-    if old not in source:
-        raise ValueError("B16 preservation source changed")
-    integrate.write_text(source.replace(old, new))
-
     # Refresh source receipts for the portable public archive; firmware input
     # receipts remain the independently pinned historical values.
     manifest_path = root / "b11b_implementation_2_2_2_2_0/input_manifest.json"
