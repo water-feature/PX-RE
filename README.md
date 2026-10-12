@@ -62,7 +62,7 @@ The patcher is cross-platform, you just need Python 3.11 or newer.
 8. Copy the new firmware file to your update USB drive and verify that copy too. Keep the filename exactly `PxUpdate_V2.2.2.2.2.bin`; the synth will ignore firmware files with different filename formatting.
 9. Follow [Sequential's Prophet X update procedure](https://sequential.com/updating-prophet-x-os/) to install it.
 
-### Build from source if you do not trust the patcher
+## Build from source if you do not trust the patcher
 
 You can review and rebuild the update from the feature sources without using the direct firmware patcher. From the repository root, start with the [source build guide](firmware_builder/source_rebuild/README.md), inspect the [orchestrator](firmware_builder/source_rebuild/source_pipeline.py) and the feature implementations it invokes, then run it directly with a new private working directory:
 
