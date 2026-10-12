@@ -1,10 +1,6 @@
 # Expand the Prophet X SSD
 
-Standalone technical guide for replacing the SSD with a larger drive while preserving the boot partition and copying the QNX sample filesystem. A Crucial M500 480 GB replacement has been hardware-confirmed. Storage expansion does not increase sample-bank slot limits.
-
-**Firmware:** No firmware update required; this is a separate hardware/storage procedure.
-
-**Hardware: PASS** The replacement boots and Global → Update Library reports approximately 277,000 MB free.
+Standalone technical guide for replacing the SSD with a larger drive while preserving the boot partition and copying the QNX sample filesystem. A Crucial M500 480 GB replacement has been hardware-confirmed. No firmware update required; this is a separate hardware/storage procedure.
 
 Follow these steps in order. The original SSD is disconnected after backup; migration reads the backup and writes only to the replacement.
 
