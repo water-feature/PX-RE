@@ -18,7 +18,7 @@ This project documents a set of user-created bugfixes and improvements for the S
 - [Firmware builder folder guide](firmware_builder/README.md): explains where the direct patcher, compiler-based rebuild and feature source code live, and how they fit together.
 - [Contributing](CONTRIBUTING.md): evidence, reproduction and copyright requirements for proposed changes. PRs and bug reports welcome.
 
-## Changelog for 2.2.2.2.2.bin
+## Changelog for PxUpdate_V2.2.2.2.2.bin
 
 | Feature | Description |
 |---|---|
