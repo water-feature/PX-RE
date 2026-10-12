@@ -25,7 +25,7 @@ def build(b5: bytes) -> bytes:
     records = parse(b5)
     base_app = HERE / "b5_packaging_work/b5_packaged_qnx.elf"
     base_app.write_bytes(records[0].payload)
-    for script in ("emit_b8.py", "build_b8_candidate.py"):
+    for script in ("emit_b8.py", "validate_b8_host.py", "build_b8_candidate.py"):
         subprocess.run([sys.executable, script], cwd=SOURCES, check=True,
                        stdout=subprocess.DEVNULL)
     candidate = (SOURCES / "voice_B1_B5_B8_candidate.elf").read_bytes()

@@ -17,3 +17,6 @@ __pycache__/
 *.swp
 *.swo
 *~
+
+# Retained local source-build workspace
+/firmware_builder/source-build/

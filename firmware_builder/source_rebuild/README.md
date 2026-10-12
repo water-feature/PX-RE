@@ -29,17 +29,19 @@ For the default cross-platform patcher, see the [direct builder](../direct/READM
 | `SSD expansion/` (including `extract_qnx.py`), `RECOVERY.md` | Separate maintenance-image builder, application extractor and recovery guidance; not stages in the final firmware build. |
 | `tests/`, `tools/`, `.github/` | Repository checks and synthetic tests; not firmware build inputs. |
 
-`DIRS`, `HELPERS` and `stage()` in [source_pipeline.py](source_pipeline.py) are the exact staging specification. `build()` lists the commands that run. Copying a directory does not mean every script in it executes: some files are fixtures, retained results or provenance dependencies. Generated firmware and intermediate packages stay outside the repository. Checksumming the public bundle also covers research files; that does not make them build inputs.
+`DIRS`, `HELPERS` and `stage()` in [source_pipeline.py](source_pipeline.py) are the exact staging specification. `build()` lists the commands that run. Copying a directory does not mean every script in it executes: some files are fixtures, retained results or provenance dependencies. Generated firmware and intermediate packages are local build outputs. Checksumming the public bundle also covers research files; that does not make them build inputs.
 
 ## Review and rebuild without the patcher
 
 To rebuild compiler objects and review the historical feature stages, inspect the sources and invoke this separate orchestrator. It shares feature logic and the final hash with the direct builder, so agreement does not independently prove behavior. Review the stage code and independently verify the saved file's size and SHA-256.
 
+Copy the factory `PxUpdate_V2.2.2.0.0.bin` into `firmware_builder/`. In your terminal, use `cd` to enter `firmware_builder/`, then run:
+
 ```sh
-python3 firmware_builder/source_rebuild/source_pipeline.py /private/path/PxUpdate_V2.2.2.0.0.bin -o /private/path/PxUpdate_reviewed.bin --work-dir /private/path/new-source-build
+python3 source_rebuild/source_pipeline.py PxUpdate_V2.2.2.0.0.bin --work-dir source-build
 ```
 
-Run from the repository root. Both output and working directory must be outside the public source tree. The output and working directory must be new. `--work-dir` retains firmware intermediates, staged source inventory, compiler output, validation reports and `build.log`, including after a failure. Omit it to use a temporary working directory that is removed afterward.
+The final `PxUpdate_V2.2.2.2.2.bin` is saved in `firmware_builder/`, alongside the factory input. The output file and `source-build/` directory must not already exist; move an earlier run elsewhere before rebuilding. Use `-o` to choose a different output location if needed. `--work-dir` retains firmware intermediates, staged source inventory, compiler output, validation reports and `build.log`, including after a failure. Omit it to use a temporary working directory that is removed afterward.
 
 For a manual build, read `stage()` and the ordered invocations in `build()` in [source_pipeline.py](source_pipeline.py). `stage()` assembles the retained sources into the historical directory layout; `build()` is the complete command sequence and shows the inputs to each stage. Run those scripts in order in a private copy of that layout. Do not use experimental packages or rejected alternatives from the history as inputs.
 
@@ -60,8 +62,9 @@ The [rebuild receipt](VERIFICATION.json) records the 2026-10-11 compiler-based s
 
 ## Archive compatibility adjustments
 
-The public archive deliberately excludes firmware and some private analysis artifacts. The public sources include explicit compatibility adjustments. Staging copies the adjusted Python files unchanged and prepares the supporting receipts:
+The public archive deliberately excludes firmware and some private analysis artifacts. The public sources include explicit compatibility adjustments. B8 reruns its host validation on the emitted objects before checking the candidate, so its test-source receipt reflects the current sources. Staging copies the adjusted Python files unchanged and prepares the supporting receipts:
 
+- Refresh B7 design-source receipts for the public source headers while retaining the historical emitted payload, frame and measurement hashes.
 - Select the B8 revision of the shared B5 helper and combine the separately archived B15/B5 follow-up sources. [sources/lfo_endpoint_investigation/build_fix.py](sources/lfo_endpoint_investigation/build_fix.py) and [reproduce.c](sources/lfo_endpoint_investigation/reproduce.c) restore two authored follow-up sources missing from the archive.
 - Supply SHA-256 guards for the two B14 pre-edit spans rather than original instruction words or the full private disassembly.
 - Restore B7's historical checksum filename. The published B7 validator omits the old branch-target trace review that requires an unpublished full disassembly; it reports `NOT RERUN; historical evidence retained` and leaves that result unset. The emitted-byte host and CFI checks still run.
@@ -73,6 +76,6 @@ The pinned final firmware SHA-256 is the decisive output integrity gate: the bui
 
 Before staging, the builder checks every file listed in the root `SHA256SUMS` and records the result in `published_source_verification.json`. This detects missing or changed published files, but does not authenticate a checkout if both files and their checksums have been changed.
 
-B11's refreshed source hashes and B16's recreated preservation receipt establish baselines from the current staged files. They detect subsequent changes to the files they cover during the run; they do not independently establish that those files match a historical or trusted release. `staged_source_inventory.json` records the staged files before compilation, including generated receipts. It is a traceability record, not a comparison against an independently pinned expected inventory. Historical reports remain evidence of their original run, including hardware-pending wording; subsequent hardware observations are recorded in the feature guides. A matching final hash establishes byte identity with the accepted package, not exhaustive proof of behavior on every instrument.
+B7's and B11's refreshed source hashes and B16's recreated preservation receipt establish baselines from the current staged files. They detect subsequent changes to the files they cover during the run; they do not independently establish that those files match a historical or trusted release. `staged_source_inventory.json` records the staged files before compilation, including generated receipts. It is a traceability record, not a comparison against an independently pinned expected inventory. Historical reports remain evidence of their original run, including hardware-pending wording; subsequent hardware observations are recorded in the feature guides. A matching final hash establishes byte identity with the accepted package, not exhaustive proof of behavior on every instrument.
 
 Original-byte fields in retained patch recipes and receipts have been replaced with SHA-256 hashes and lengths. This changes their representation, not the recorded test outcomes. Replacement instructions and authored helper sources remain available for review. Generated build artifacts stay in the private working directory.

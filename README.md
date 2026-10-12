@@ -62,17 +62,15 @@ The patcher is cross-platform, you just need Python 3.11 or newer.
 
 ## Alternatively: build from source
 
-You can review and rebuild the update from the feature sources without using the direct firmware patcher. From the repository root, start with the [source build guide](firmware_builder/source_rebuild/README.md), inspect the [orchestrator](firmware_builder/source_rebuild/source_pipeline.py) and the feature implementations it invokes, then run it directly with a new private working directory:
+You can review and rebuild the update from the [feature sources](PX%20patch%20history/README.md) without using the direct firmware patcher. Start with [firmware_builder/source_rebuild/README.md](firmware_builder/source_rebuild/README.md), then inspect [firmware_builder/source_rebuild/source_pipeline.py](firmware_builder/source_rebuild/source_pipeline.py) and the feature implementations it invokes. Copy the factory `PxUpdate_V2.2.2.0.0.bin` into `firmware_builder/`, as in the direct patcher instructions above. In your terminal, use `cd` to enter that folder, then run:
 
 ```sh
-python3 firmware_builder/source_rebuild/source_pipeline.py firmware_builder/PxUpdate_V2.2.2.0.0.bin -o /path/to/private-workspace/PxUpdate_reviewed.bin --work-dir /path/to/private-workspace/source-build
+python3 source_rebuild/source_pipeline.py PxUpdate_V2.2.2.0.0.bin --work-dir source-build
 ```
 
-This retains the staged source files, compiler outputs, intermediate packages, validation reports and `build.log` for inspection. This compiler-based audit path is separate from the default direct builder and requires the macOS compiler environment described in its guide. For a manual build, follow the ordered script invocations in `build()` in the orchestrator and review each stage's guards and reports. Independently hash the resulting file using the command below.
+The output `PxUpdate_V2.2.2.2.2.bin` is saved in `firmware_builder/`. The new `source-build/` folder retains staged sources, compiler output, intermediate packages, validation reports and `build.log`. Neither the output file nor `source-build/` may already exist; move an earlier run elsewhere before rebuilding.
 
-The compiler rebuild saves the final update at the path given after `-o`. With `--work-dir`, it also retains the intermediate firmware files, staged sources, compiler outputs, validation reports and `build.log` in that working directory. Before copying the final update to your USB drive, name it exactly `PxUpdate_V2.2.2.2.2.bin` so the synth can recognize it. Verify the final update below, retain your backups, and follow [Sequential's Prophet X update procedure](https://sequential.com/updating-prophet-x-os/) to install it. The factory version requirement applies to the input file used by the patcher; there is no need to install each intermediate project build.
-
-
+This build requires the macOS compiler environment described in the source build guide. For a manual build, follow the ordered script invocations in `build()` in `source_pipeline.py` and review each stage's guards and reports. Verify the saved output below, then follow the USB copy and installation steps above.
 
 ## Independently verify the saved file
 
