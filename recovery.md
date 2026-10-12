@@ -16,26 +16,18 @@ Note: This recovery path does not repair the SSD's QNX application or filesystem
 
 ## SSD / QNX recovery
 
-**The easiest way to back up and restore the SSD is to make a full image clone of the entire drive.** Detailed instructions for doing so are at the start of the [SSD expansion guide](SSD%20expansion/README.md#1-back-up-the-original-ssd); I used dd. This preserves the partition table, boot partition, QNX application and sample filesystem together. Keep a verified image of the working SSD before making changes; restoring it returns the drive to that saved state and overwrites any later changes.
+There are two options:
 
-The rest of this document outlines the steps to recover specific sections of a failed QNX image, which can often be quicker than performing a full image restore:
-
-- **Damaged QNX application:** restore the known-good application to both `ProphetX` and `ProphetXBackup` on the QNX filesystem. The SSD application recovery procedure below documents the Windows/QEMU maintenance workflow used after a failed firmware update. In that incident the boot image was unchanged; restoring the application was the required repair.
-- **Damaged SSD boot code or QNX boot partition:** restore the matching known-good boot image or boot partition from your own backup. The [SSD expansion guide](SSD%20expansion/README.md#6-preserve-boot-and-create-the-sample-filesystem) explains copying the disk's boot region with verified partition boundaries. Use its boot-copy step only when appropriate; the later formatting steps belong to SSD expansion. Preserve the destination's partition layout when restoring to a drive with a different geometry.
-- **Damaged partition table/filesystem, or uncertain damage:** restore a verified full-disk backup to the confirmed target SSD, or refit the unchanged original drive. A full-image restore overwrites that drive, including samples and changes made since the backup. 
-
-Do not copy boot sectors between arbitrary layouts or assume MIDI recovery can repair an SSD boot hang. Check the recovery source, target disk, byte capacity and partition boundaries before performing disk writes.
+- **Restore a full SSD backup:** restore a verified full-disk image to the SSD, or refit the unchanged original drive. This restores the partition table, boot partition, QNX application and sample filesystem together. A full-image restore overwrites the destination drive, including samples and changes made since the backup. The [backup instructions](SSD%20expansion/README.md#1-back-up-the-original-ssd) explain how to create the image; I used dd..
+- **Repair only the QNX application:** follow the procedure below to replace both `ProphetX` and `ProphetXBackup` with a known-good application. This will be quicker than a full restore but may not fix all boot issues depending on the extent of the damage. 
 
 ## SSD application recovery procedure
 
-**Verification status:** Thos procedure has been used to successfully restore a non-booting SSD (as a result of my attempts to increase boot speed) back to a bootable state. 
-
-**Other operating systems:** The procedure below documents the tested Windows/QEMU setup. The same QNX maintenance image should work in QEMU on Linux or macOS, with changes to host paths, command quoting, disk access permissions and physical SSD identification/unmounting. The commands inside QNX should remain the same if the emulated IDE controllers and disk order are preserved. Other VM applications may require different QNX disk drivers. Recovery on other hosts has not been verified.
-
-This records the Windows/QEMU procedure used after the failed firmware update. The failed flash left the synth hanging after the boot bar. We restored the SSD-resident application, not its boot partition: the boot image was verified unchanged. Repaired SSD was successfully tested on hardware.
+This Windows/QEMU procedure successfully recovered my synth after a failed firmware update during my failed attempts to increase boot speed. It hung after the boot bar; replacing the SSD-resident application restored normal boot on hardware. The SSD boot image was verified unchanged.
 
 Both `ProphetX` and `ProphetXBackup` contained the failed application. The stock startup script checks whether the process exists after five seconds; a hung process can pass that check and overwrite the backup.
 
+**Other operating systems:** Recovery on Linux or macOS has not been verified but should be possible via QEMU or UTM. Adapting this procedure would require changes to host paths, command quoting, disk access and SSD identification/unmounting. The QNX commands should remain the same if the emulated IDE controllers and disk order are preserved.
 
 ### 1. Prepare Windows
 
