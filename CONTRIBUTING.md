@@ -18,7 +18,7 @@ Update the affected documentation. Update the build history if the feature or fi
 
 Hardware testing has revealed no bootloader-related issues, but the PIC firmware is not fully mapped. Review new patches carefully before installation and prepare the backups described in the [recovery guide](RECOVERY.md). Passing software checks does not establish hardware safety.
 
-For builder changes, see [object provenance and cache maintenance](firmware_builder/direct/README.md#object-provenance-and-maintenance), including how to update cached objects when their sources change.
+For builder changes, see [object provenance and cache maintenance](firmware_builder/direct/IMPLEMENTATION.md#object-provenance-and-maintenance), including how to update cached objects when their sources change.
 
 ## Checks
 

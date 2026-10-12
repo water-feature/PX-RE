@@ -143,7 +143,7 @@ Python 3 and Clang with x86-64 ELF support are required. The QNX builder uses fr
 
 Some placement/integration audits expect original proprietary exports `b15_investigation/placement_closure_evidence.txt` and `qnx_1_7_disassembly.txt`. Those exports remain private; saved results preserve the original evidence. Historical unplaced component tests also expect generated payload files. Use `B15_PLACED=1` for the applicable fitted-image tests, as their source specifies; the Python scripts that set it internally already select the fitted image. Saved test JSON is evidence, not a promise that every historical driver runs using only this public bundle.
 
-The [direct firmware patcher](../../firmware_builder/patch_prophet_x.py) builds the final combined update directly from the exact factory input using authored generators and pinned redacted objects. See the [direct builder guide](../../firmware_builder/direct/README.md). The separate [compiler audit path](../../firmware_builder/source_rebuild/README.md) retains incremental source rebuilding and its original validation scope.
+The [direct firmware patcher](../../firmware_builder/patch_prophet_x.py) builds the final combined update directly from the exact factory input using authored generators and pinned redacted objects. See the [direct builder implementation](../../firmware_builder/direct/IMPLEMENTATION.md). The separate [compiler audit path](../../firmware_builder/source_rebuild/README.md) retains incremental source rebuilding and its original validation scope.
 
 ## Relationship to later fixes
 

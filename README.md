@@ -7,8 +7,6 @@ This project documents a set of user-created bugfixes and improvements for the S
   LLMs used throughout. 
   Thanks to [rvense](https://rven.se/prophet-x/) for taking the first steps. 
 
-**Before installing:** read [RECOVERY.md](RECOVERY.md), open up your synth by following [this video](https://www.youtube.com/watch?v=tF9Ji9iL00g) and create a backup image of your SSD.
-
 ## What is included
 
 - [Direct firmware patcher](firmware_builder/patch_prophet_x.py): to generate a flashable firmware file (PxUpdate_V2.2.2.2.2.bin) with the changes described in the changelog below.
@@ -41,25 +39,28 @@ This project documents a set of user-created bugfixes and improvements for the S
 The [firmware_builder/patch_prophet_x.py](firmware_builder/patch_prophet_x.py) converts your exact factory 2.2.2.0.0 update into the combined 2.2.2.2.2 update. All listed features are included.
 The patcher is cross-platform, you just need Python 3.11 or newer.
 
-1. Download and extract the whole repository.
-2. Download the latest factory firmware `PxUpdate_V2.2.2.0.0.bin` from [Sequential](https://sequential.com/support/download/prophet-x-operating-system/).
-3. Copy that firmware file into `firmware_builder/`, alongside `patch_prophet_x.py`.
+1. Read [RECOVERY.md](RECOVERY.md), open up your synth by following [this video](https://www.youtube.com/watch?v=tF9Ji9iL00g) and create a backup image of your SSD.
+2. Download and extract the whole repository.
+3. Download the latest factory firmware `PxUpdate_V2.2.2.0.0.bin` from [Sequential](https://sequential.com/support/download/prophet-x-operating-system/).
+4. Copy that firmware file into `firmware_builder/`, alongside `patch_prophet_x.py`.
+5. In your terminal or Command Prompt, use `cd` to enter the extracted repository's `firmware_builder/` folder.
+6. Run the patcher. On macOS or Linux:
 
-cd into `PX-RE/firmware_builder`. On macOS or Linux, run:
+   ```sh
+   python3 patch_prophet_x.py PxUpdate_V2.2.2.0.0.bin -o PxUpdate_V2.2.2.2.2.bin
+   ```
 
-```sh
-python3 patch_prophet_x.py PxUpdate_V2.2.2.0.0.bin -o PxUpdate_V2.2.2.2.2.bin
-```
+   On Windows:
 
-On Windows:
+   ```cmd
+   py -3 patch_prophet_x.py PxUpdate_V2.2.2.0.0.bin -o PxUpdate_V2.2.2.2.2.bin
+   ```
 
-```cmd
-py -3 patch_prophet_x.py PxUpdate_V2.2.2.0.0.bin -o PxUpdate_V2.2.2.2.2.bin
-```
+   If your Windows installation uses `python` instead of the `py` launcher, substitute `python`.
 
-These commands save `PxUpdate_V2.2.2.2.2.bin` and its verification report inside `firmware_builder/`, alongside the factory file. The synth expects the same filename formatting as the factory firmware bin and will ignore firmware files that are formatted differently. If your Windows installation uses `python` instead of the `py` launcher, substitute `python`.
-
-The command prints four completed stages with timings, then the final filename, size and SHA-256. The [direct builder guide](firmware_builder/direct/README.md) describes the implementation and verification scope.
+7. Check that the command completes successfully. It prints four completed stages with timings, then the final filename, size and SHA-256. The update `PxUpdate_V2.2.2.2.2.bin` and its verification report are saved inside `firmware_builder/`, alongside the factory file.
+8. [Verify the saved update](#independently-verify-the-saved-file), then copy it to your update USB drive and verify that copy too. Keep the filename exactly `PxUpdate_V2.2.2.2.2.bin`; the synth will ignore firmware files with different filename formatting.
+9. Follow [Sequential's Prophet X update procedure](https://sequential.com/updating-prophet-x-os/) to install it.
 
 ### Build from source if you do not trust the patcher
 
