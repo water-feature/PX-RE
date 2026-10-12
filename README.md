@@ -62,7 +62,7 @@ The patcher is cross-platform, you just need Python 3.11 or newer.
 
 ## Alternatively: build from source
 
-You can review and rebuild the update from the [feature sources](PX%20patch%20history/README.md) without using the direct firmware patcher. Start with [firmware_builder/source_rebuild/README.md](firmware_builder/source_rebuild/README.md), then inspect [firmware_builder/source_rebuild/source_pipeline.py](firmware_builder/source_rebuild/source_pipeline.py) and the feature implementations it invokes. Copy the factory `PxUpdate_V2.2.2.0.0.bin` into `firmware_builder/`, as in the direct patcher instructions above. In your terminal, use `cd` to enter that folder, then run:
+You can review and rebuild the update from the [feature sources](PX%20patch%20history/README.md) without using the direct firmware patcher. See the [detailed source-build guide](firmware_builder/source_rebuild/README.md) for prerequisites, build stages and validation details. The [source build script](firmware_builder/source_rebuild/source_pipeline.py) runs those stages in order. Copy the factory `PxUpdate_V2.2.2.0.0.bin` into `firmware_builder/`, as in the direct patcher instructions above. In your terminal, use `cd` to enter that folder, then run:
 
 ```sh
 python3 source_rebuild/source_pipeline.py PxUpdate_V2.2.2.0.0.bin --work-dir source-build
