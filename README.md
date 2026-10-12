@@ -9,7 +9,7 @@ This project documents a set of user-created bugfixes and improvements for the S
 
 ## What is included
 
-- [patch_prophet_x.py](firmware_builder/patch_prophet_x.py): generates a flashable firmware file with the changes described in the changelog below.
+- [Direct patcher](firmware_builder/patch_prophet_x.py): python script that generates a flashable firmware file with the changes described in the changelog below.
 - [SSD expansion guide](SSD%20expansion/README.md): details on how to prepare and fit a larger SSD.
 - [Feature and version history](PX%20patch%20history/README.md): follows the build chain and links to each feature's implementation, test status and packaging evidence.
 - [Firmware architecture and map](FIRMWARE_MAP.md): container format, QNX/PIC/FPGA components and version-specific offsets.
