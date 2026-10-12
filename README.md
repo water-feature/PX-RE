@@ -91,4 +91,4 @@ This command reads the saved file independently of the patcher. Replace the path
 python3 -c "import hashlib,pathlib,sys; p=pathlib.Path(sys.argv[1]); b=p.read_bytes(); print('Bytes:',len(b)); print('SHA-256:',hashlib.sha256(b).hexdigest())" /path/to/private-workspace/PxUpdate_V2.2.2.2.2.bin
 ```
 
-Require **both** final values to match before installation. Repeat the check on the copy placed on the update media. A mismatch means that copy is not the documented final package. A displayed firmware version alone is insufficient: historical experimental builds sometimes reused version numbers.
+Require **both** final values to match before installation. Repeat the check on the copy placed on the update media. A mismatch means that copy is not the documented final package.
