@@ -16,7 +16,7 @@ Note: This recovery path does not repair the SSD's QNX application or filesystem
 
 ## SSD / QNX recovery
 
-**The easiest way to back up and restore the SSD is to make a full image clone of the entire drive.** Instructions for doing so are at the start of the [SSD expansion guide](SSD%20expansion/README.md#1-back-up-the-original-ssd), but a simple dd command works fine. This preserves the partition table, boot partition, QNX application and sample filesystem together. Keep a verified image of the working SSD before making changes; restoring it returns the drive to that saved state and overwrites any later changes.
+**The easiest way to back up and restore the SSD is to make a full image clone of the entire drive.** Detailed instructions for doing so are at the start of the [SSD expansion guide](SSD%20expansion/README.md#1-back-up-the-original-ssd); I used dd. This preserves the partition table, boot partition, QNX application and sample filesystem together. Keep a verified image of the working SSD before making changes; restoring it returns the drive to that saved state and overwrites any later changes.
 
 The rest of this document outlines the steps to recover specific sections of a failed QNX image, which can often be quicker than performing a full image restore:
 
