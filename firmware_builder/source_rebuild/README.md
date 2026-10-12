@@ -26,7 +26,7 @@ For the default cross-platform patcher, see the [direct builder](../direct/READM
 | `PX patch history/B14 - disable encoder accel/` | Mixed. Staging selects the candidate, packaging, metadata, stable-frame, sample-acceleration and UI source directories listed in `DIRS`. Rejected alternatives remain as evidence. |
 | `PX patch history/B15 - stretch layer/` | Mixed. Staging copies `implementation/b15_candidate_work/`, supplemented by the B5 follow-up and restored builder sources. |
 | `PX patch history/B16 - new sync divisions/` | Mixed. Staging copies `implementation/b16_finer_loop_sync_resolution/`, resets the in-place and geometry output directories, then restores the geometry builder and validator. Rejected offline sources remain for preservation checks, not as firmware candidates to install. |
-| `SSD expansion/`, `extract_qnx.py`, `recovery.md` | Separate maintenance-image builder, application extractor and recovery guidance; not stages in the final firmware build. |
+| `SSD expansion/` (including `extract_qnx.py`), `RECOVERY.md` | Separate maintenance-image builder, application extractor and recovery guidance; not stages in the final firmware build. |
 | `tests/`, `tools/`, `.github/` | Repository checks and synthetic tests; not firmware build inputs. |
 
 `DIRS`, `HELPERS` and `stage()` in [source_pipeline.py](source_pipeline.py) are the exact staging specification. `build()` lists the commands that run. Copying a directory does not mean every script in it executes: some files are fixtures, retained results or provenance dependencies. Generated firmware and intermediate packages stay outside the repository. Checksumming the public bundle also covers research files; that does not make them build inputs.

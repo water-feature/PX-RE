@@ -45,10 +45,10 @@ Use an elevated **Command Prompt (cmd.exe)**. The commands below assume the same
 
 Choose a firmware update that you know boots correctly on your synth and is compatible with its installed PIC firmware. You need the QNX application from that update, not necessarily the newest build and not specifically .1.2.
 
-Extract the application directly from the complete update `.bin` with [extract_qnx.py](extract_qnx.py). It uses only Python's standard library (Python 3.10 or newer) and runs on Windows, Linux or macOS. From the downloaded repository folder, run this in Windows Command Prompt, replacing the input path:
+Extract the application directly from the complete update `.bin` with [extract_qnx.py](SSD%20expansion/extract_qnx.py). It uses only Python's standard library (Python 3.10 or newer) and runs on Windows, Linux or macOS. From the downloaded repository folder, run this in Windows Command Prompt, replacing the input path:
 
 ```bat
-python extract_qnx.py "C:\path\to\PxUpdate.bin" -o "D:\PX_Recovery\recovery.elf"
+python "SSD expansion\extract_qnx.py" "C:\path\to\PxUpdate.bin" -o "D:\PX_Recovery\recovery.elf"
 ```
 
 On Linux or macOS, use `python3` and the corresponding host paths. The output must be a new file outside the repository. The command verifies the update identity, container checksums and x86-64 ELF structure, then prints the extracted application's size and SHA-256. It does not patch firmware or access the SSD.

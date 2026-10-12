@@ -41,7 +41,7 @@ Read-only SSD forensics found the same failed application in both `ProphetX` and
 
 The exported boot image matched known-good SHA-256 `6a5124d8ee0eb6ad7561bf394e3c7469115dc6184e397d34ea7e3b72f8f6fccc`, and `startup.sh` matched stock behavior. Both on-disk application files were subsequently replaced with known-good `.1.2` bytes; final repaired-file hashes and a boot test of that repaired SSD were not recorded in the supplied reports.
 
-The [SSD application recovery procedure](../../recovery.md) records the Windows/QEMU steps used to inspect the SSD and replace both application copies, plus readback verification steps. This recovered the SSD-resident application; the boot partition was verified unchanged and did not require rewriting. Final repaired-file hashes and a hardware boot confirmation remain unrecorded in the supplied evidence.
+The [SSD application recovery procedure](../../RECOVERY.md) records the Windows/QEMU steps used to inspect the SSD and replace both application copies, plus readback verification steps. This recovered the SSD-resident application; the boot partition was verified unchanged and did not require rewriting. Final repaired-file hashes and a hardware boot confirmation remain unrecorded in the supplied evidence.
 
 ### SSD postmortem: persistence mechanism and repair boundary
 
@@ -73,7 +73,7 @@ The postmortem called for preserving `ProphetX`, `ProphetXBackup`, `startup.sh` 
 
 The decoded factory SysEx recovery payload contains PIC application/preset-related data, with no identified raw QNX application ELF. Its failure to repair this SSD application hang is therefore consistent with the observed failure location and does not establish PIC bootloader damage. Booting normally with a known-good replacement SSD further localizes the failure to SSD-resident state, without proving which QNX operation failed.
 
-After preserving evidence, the repair replaced both application files with the same known-good .1.2 executable, preserved executable permissions, synchronized and cleanly unmounted the filesystem. The unchanged boot partition did not require rewriting. A verified full-disk restore remains the fallback for broader damage. Use the separate [SSD application recovery procedure](../../recovery.md) for the executable Windows/QEMU workflow and readback checks, and the [SSD expansion guide](../../SSD%20expansion/README.md) for the maintenance-image setup. The original postmortem's proposed .1.2 instrumentation baseline was superseded by the later exact-.1.15 diagnostic design described below; neither attempt is retained firmware.
+After preserving evidence, the repair replaced both application files with the same known-good .1.2 executable, preserved executable permissions, synchronized and cleanly unmounted the filesystem. The unchanged boot partition did not require rewriting. A verified full-disk restore remains the fallback for broader damage. Use the separate [SSD application recovery procedure](../../RECOVERY.md) for the executable Windows/QEMU workflow and readback checks, and the [SSD expansion guide](../../SSD%20expansion/README.md) for the maintenance-image setup. The original postmortem's proposed .1.2 instrumentation baseline was superseded by the later exact-.1.15 diagnostic design described below; neither attempt is retained firmware.
 
 ### Saved host evidence
 
@@ -214,7 +214,7 @@ Every retained file is linked below. The original proposal and SSD postmortem ar
 
 | File | Purpose |
 |---|---|
-| [recovery.md](../../recovery.md) | Windows/QEMU SSD application recovery procedure, evidence export and readback verification. |
+| [RECOVERY.md](../../RECOVERY.md) | Windows/QEMU SSD application recovery procedure, evidence export and readback verification. |
 
 ### Original v3 implementation and tests
 

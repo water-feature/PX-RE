@@ -16,4 +16,4 @@ Both workflows require the exact factory update and check the same final firmwar
 | `firmware_builder/source_rebuild/` | Compiler orchestrator, stage wrappers, container inspection tool, follow-up sources and historical rebuild receipt |
 | `PX patch history/` | Feature implementations, research and test evidence; selected files are inputs to the source rebuild |
 
-The [source rebuild directory map](source_rebuild/README.md#directory-map) describes its feature inputs in detail. Recovery and SSD tools are documented in the [recovery guide](../recovery.md) and [SSD expansion guide](../SSD%20expansion/README.md).
+The [source rebuild directory map](source_rebuild/README.md#directory-map) describes its feature inputs in detail. Recovery and SSD tools are documented in the [recovery guide](../RECOVERY.md) and [SSD expansion guide](../SSD%20expansion/README.md).

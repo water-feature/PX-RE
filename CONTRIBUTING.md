@@ -16,7 +16,7 @@ Explain what your changes do. For firmware patches, document the expected input,
 
 Update the affected documentation. Update the build history if the feature or firmware version changes. Code, build-input and research changes also need updated `SHA256SUMS` entries; routine guide edits do not. Keep manufacturer firmware, extracted payloads, recovery images, firmware-containing Ghidra databases and personal instrument data out of issues and pull requests. Share hashes and reproduction instructions instead.
 
-Hardware testing has revealed no bootloader-related issues, but the PIC firmware is not fully mapped. Review new patches carefully before installation and prepare the backups described in the [recovery guide](recovery.md). Passing software checks does not establish hardware safety.
+Hardware testing has revealed no bootloader-related issues, but the PIC firmware is not fully mapped. Review new patches carefully before installation and prepare the backups described in the [recovery guide](RECOVERY.md). Passing software checks does not establish hardware safety.
 
 For builder changes, see [object provenance and cache maintenance](firmware_builder/direct/README.md#object-provenance-and-maintenance), including how to update cached objects when their sources change.
 

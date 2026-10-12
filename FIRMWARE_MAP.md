@@ -2,7 +2,7 @@
 
 This is an orientation guide to the structures used by this project, as discovered in Ghidra. Offsets below were checked against the exact factory **2.2.2.0.0** and accepted modified **2.2.2.2.2** packages. Other builds can have different layouts. No firmware bytes are included here.
 
-For installation, use the [main README](README.md) and [recovery guide](recovery.md). For source locations, see the [directory map](firmware_builder/README.md#directory-map). For ancestry and experiments, see the [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md).
+For installation, use the [main README](README.md) and [recovery guide](RECOVERY.md). For source locations, see the [directory map](firmware_builder/README.md#directory-map). For ancestry and experiments, see the [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md).
 
 ## Components
 
@@ -13,7 +13,7 @@ For installation, use the [main README](README.md) and [recovery guide](recovery
 | PIC controller | Record 3; little-endian MIPS image | Controller firmware, including SysEx handling and UI/control paths patched by this project. Address mapping uses base `0x9D000000`. |
 | SSD boot image | `.boot/x86_64-generic.bin` on the SSD | QNX boot environment used to build the separate maintenance VM image. It is not the QNX application ELF extracted from record 1. |
 
-The update `.bin`, MIDI recovery `.syx`, extracted application `.elf`, maintenance VM image and full SSD backup are different artifacts. See [recovery](recovery.md) and [SSD expansion](SSD%20expansion/README.md) for their separate uses.
+The update `.bin`, MIDI recovery `.syx`, extracted application `.elf`, maintenance VM image and full SSD backup are different artifacts. See [recovery](RECOVERY.md) and [SSD expansion](SSD%20expansion/README.md) for their separate uses.
 
 ## Update container
 
@@ -143,4 +143,4 @@ python3 firmware_builder/source_rebuild/container.py /private/path/PxUpdate_V2.2
 
 To compare it with the accepted final image, add `--final /private/path/PxUpdate_V2.2.2.2.2.bin`. This checks both pinned identities and reports record offsets, lengths, component hashes and ELF layout differences. On Windows, use `python` and Windows paths.
 
-To extract a replacement QNX application, use [extract_qnx.py](extract_qnx.py) as documented in [recovery.md](recovery.md#obtain-the-replacement-executable). Keep firmware inputs and extracted outputs outside this repository.
+To extract a replacement QNX application, use [extract_qnx.py](SSD%20expansion/extract_qnx.py) as documented in [RECOVERY.md](RECOVERY.md#obtain-the-replacement-executable). Keep firmware inputs and extracted outputs outside this repository.

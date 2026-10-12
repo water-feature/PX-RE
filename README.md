@@ -7,7 +7,7 @@ This project documents a set of user-created bugfixes and improvements for the S
   LLMs used throughout. 
   Thanks to [rvense](https://rven.se/prophet-x/) for taking the first steps. 
 
-**Before installing:** read [recovery.md](recovery.md), open up your synth by following [this video](https://www.youtube.com/watch?v=tF9Ji9iL00g) and create an image of your SSD.
+**Before installing:** read [RECOVERY.md](RECOVERY.md), open up your synth by following [this video](https://www.youtube.com/watch?v=tF9Ji9iL00g) and create an image of your SSD.
 
 ## What is included
 

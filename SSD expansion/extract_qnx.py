@@ -7,7 +7,7 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "firmware_builder" / "source_rebuild"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "firmware_builder" / "source_rebuild"))
 from container import FACTORY_SHA256, FINAL_SHA256, elf_layout, parse, sha256
 
 
@@ -39,7 +39,7 @@ def main() -> None:
                         help="Independently verified update hash; defaults to the pinned factory/final updates")
     args = parser.parse_args()
     output = args.output.resolve()
-    public = Path(__file__).resolve().parent
+    public = Path(__file__).resolve().parents[1]
     if output.is_relative_to(public):
         raise ValueError("Keep extracted firmware outside the repository")
     if output.exists():
