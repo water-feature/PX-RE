@@ -1,6 +1,6 @@
 # Compiler-based source rebuild
 
-This workflow rebuilds the retained feature chain using the compiler toolchain documented below. It stages implementations from [PX patch history](../../PX%20patch%20history/BUILD_VERSION_HISTORY.md) and keeps intermediate packages and reports for inspection. Supply your own exact factory update.
+This workflow rebuilds the retained feature chain using the compiler toolchain documented below. It stages implementations from [PX patch history](../../PX%20patch%20history/README.md) and keeps intermediate packages and reports for inspection. Supply your own exact factory update.
 
 For the default cross-platform patcher, see the [direct builder](../direct/README.md) and [main guide](../../README.md).
 

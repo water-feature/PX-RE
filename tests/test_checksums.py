@@ -13,7 +13,7 @@ class InventoryTests(unittest.TestCase):
         import hashlib
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);(root/'nested').mkdir();code=root/'tool.py';code.write_text('code');research=root/'notes.md';research.write_text('evidence')
-            names=['nested/README.md','nested/RECOVERY.md','contributing.md','FIRMWARE_MAP.md','BUILD_VERSION_HISTORY.md']
+            names=['nested/README.md','nested/RECOVERY.md','contributing.md','FIRMWARE_MAP.md','PX patch history/README.md']
             inventory=root/'SHA256SUMS';lines=['0'*64+'  '+name for name in names]
             lines.extend(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name for p in (code,research));inventory.write_text('\n'.join(lines)+'\n')
             self.assertEqual(verify_inventory(inventory),2)

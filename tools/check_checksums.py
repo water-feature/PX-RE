@@ -5,7 +5,7 @@ from pathlib import Path
 import sys
 
 ROOT=Path(__file__).resolve().parents[1]
-GUIDES={'readme.md','contributing.md','firmware_map.md','recovery.md','build_version_history.md'}
+GUIDES={'readme.md','contributing.md','firmware_map.md','recovery.md'}
 
 def verify_inventory(path):
     seen=set();checked=0

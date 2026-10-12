@@ -19,7 +19,7 @@ The same code and factory input must produce the same final bytes on every host.
 
 Retained B5/B8 ELF metadata artifacts are generated as final-layout content.
 Historical behavioral checks are documented in the
-[feature history](../../PX%20patch%20history/BUILD_VERSION_HISTORY.md) and
+[feature history](../../PX%20patch%20history/README.md) and
 [compiler audit guide](../source_rebuild/README.md).
 
 The final firmware is published from a fully written temporary file using an

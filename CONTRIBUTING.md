@@ -1,6 +1,6 @@
 # Contributing
 
-Bug reports, improvements and pull requests are welcome. Start with the [main guide](README.md) and the relevant feature guide in [the build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md).
+Bug reports, improvements and pull requests are welcome. Start with the [main guide](README.md) and the relevant feature guide in [the build history](PX%20patch%20history/README.md).
 
 ## Reporting a bug
 

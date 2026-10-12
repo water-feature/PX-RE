@@ -2,7 +2,7 @@
 
 This is an orientation guide to the structures used by this project, as discovered in Ghidra. Offsets below were checked against the exact factory **2.2.2.0.0** and accepted modified **2.2.2.2.2** packages. Other builds can have different layouts. No firmware bytes are included here.
 
-For installation, use the [main README](README.md) and [recovery guide](RECOVERY.md). For source locations, see the [directory map](firmware_builder/README.md#directory-map). For ancestry and experiments, see the [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md).
+For installation, use the [main README](README.md) and [recovery guide](RECOVERY.md). For source locations, see the [directory map](firmware_builder/README.md#directory-map). For ancestry and experiments, see the [build history](PX%20patch%20history/README.md).
 
 ## Components
 
@@ -127,7 +127,7 @@ The padding within these reservations provides potential room for future QNX hel
 
 ## Feature locations and evidence
 
-Patch sites and helper placements depend on the exact image. Use the feature guides linked from the [changelog](README.md) and [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md) for patch-site offsets, expected parent hashes, guards, allowed writes and test scope.
+Patch sites and helper placements depend on the exact image. Use the feature guides linked from the [changelog](README.md) and [build history](PX%20patch%20history/README.md) for patch-site offsets, expected parent hashes, guards, allowed writes and test scope.
 
 The [direct patcher](firmware_builder/patch_prophet_x.py) generates final QNX/PIC payloads from factory data, authored recipes and pinned redacted objects, then checks every changed byte's owner and the exact final hash. The separate [compiler audit builder](firmware_builder/source_rebuild/source_pipeline.py) stages selected sources and rebuilds the historical chain. Historical receipts, current byte/structure checks and owner-reported hardware observations are different kinds of evidence; the [build guide](firmware_builder/README.md) explains their limits.
 
