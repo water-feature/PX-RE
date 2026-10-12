@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "verification_date": "2026-10-12",
+  "scope": "Default direct builder integrated into repository; macOS local integration checks",
+  "factory_sha256": "a4b304b3bb48ca933ae63c99c0098698c497ebfc7c38ab2a823b5e0df4919fa9",
+  "final_sha256": "488444589607a1b4e793a8d8f79a67c5bd50773b722c302e6d80bc1db77b4b7c",
+  "final_bytes": 3187784,
+  "accepted_reference_byte_comparison": "PASS",
+  "environment": {
+    "platform": "darwin",
+    "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]"
+  },
+  "public_CLI_elapsed_seconds": 0.8216076670214534,
+  "public_CLI_guards": [
+    {
+      "case": "existing output",
+      "status": "PASS"
+    },
+    {
+      "case": "output equals input",
+      "status": "PASS"
+    },
+    {
+      "case": "output inside repository",
+      "status": "PASS"
+    },
+    {
+      "case": "wrong factory",
+      "status": "PASS"
+    }
+  ],
+  "only_final_firmware_and_report_created": "PASS",
+  "synthetic_tests": {
+    "status": "PASS",
+    "count": 15,
+    "firmware_required": false
+  },
+  "published_object_manifest_sha256": "b30faf7b0d64e3eb5cda6a7d49b8d0d41596e0f8b75356136419d3a0dea741cc",
+  "original_recording_manifest_sha256": "8225ea27fd09a00deb7241b3b3ff54183238956f9bcde16e547f0aa51b8bb4b4",
+  "object_outputs": 15,
+  "redacted_spans": 6980,
+  "cache_overlap_audit": {
+    "status": "PASS",
+    "window": 24,
+    "reference_stride": 8,
+    "minimum_distinct": 6,
+    "blob_scan_stride": 1,
+    "blobs": 15,
+    "factory_hits": 0,
+    "final_authored_helper_hits": {
+      ".b5.eh_frame": 193,
+      ".b8.eh_frame": 74,
+      ".b5.text": 18,
+      ".b15_text": 2,
+      ".b8.text": 1
+    },
+    "unattributed_final_hits": 0,
+    "scope": "Bounded byte-overlap check, not authorship certification"
+  },
+  "private_development_paths_in_direct_runtime": "NONE FOUND",
+  "firmware_images_or_extracted_payloads_in_bundle": "NONE FOUND",
+  "platform_trials": {
+    "macOS": "PASS: private direct trial and public integration run",
+    "Windows": "PASS_USER_REPORTED: private direct trial; public CLI adapter not rerun on Windows",
+    "Linux": "PASS_USER_REPORTED: private direct trial in ChatGPT Linux container; public CLI adapter not rerun on Linux"
+  },
+  "compiler_audit_path": "NOT RERUN: retained implementation unchanged; historical 2026-10-11 receipt in ../source_rebuild/VERIFICATION.json",
+  "hardware": "NOT RERUN: refer to feature guides for existing owner observations",
+  "evidence_limits": "Synthetic CI tests require no firmware. Exact-byte integration uses privately supplied factory/reference images; those are not distributed. Sampled overlap audit is bounded, not proof of authorship."
+}

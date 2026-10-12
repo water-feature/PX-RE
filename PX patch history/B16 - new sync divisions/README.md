@@ -119,7 +119,7 @@ The `.2.1` original integration path is preserved in `in_place_validation/integr
 
 `offline_candidate/build.py`, `validate.py` and `mips_tools.py` are retained because the accepted builders import their ELF/container/decoder functions and QNX assembly block. Their earlier candidate main entry points are not part of the retained workflow. Likewise `safety_review/tight_editor_probe.py` supplies the editor interpreter/model, and `geometry_review/proposal_probe.py` supplies the tested geometry interpreter. Original directory names describe provenance rather than current release status.
 
-The [root patcher](../../patch_prophet_x.py) now rebuilds the retained chain from the exact `2.2.2.0.0` update through `2.2.2.2.2`, including both retained B16 stages. The [source build guide](../../firmware_builder/README.md) explains source review, compiler requirements and keeping intermediate packages and reports. The B16 bundle documents its feature implementation and the original incremental packaging path.
+The [root patcher](../../patch_prophet_x.py) builds the final combined update directly from the exact factory input using authored generators and pinned redacted objects. See the [direct builder guide](../../firmware_builder/direct/README.md). The separate [compiler audit path](../../firmware_builder/source_rebuild/README.md) retains incremental source rebuilding and its original validation scope.
 
 ## Complete supporting-file inventory
 

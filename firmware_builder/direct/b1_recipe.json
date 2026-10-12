@@ -1,0 +1,194 @@
+{
+  "source": "PX patch history/B1 - voice steal fix/prophet_x_combined_application_patch/analysis/combined_patch/patch_spec.json",
+  "source_sha256": "16f26501e9adbe4bb5a1235a387b56870795ed327ee4822e1323c2aefe336c5c",
+  "recipe": {
+    "format": 2,
+    "input_sha256": "7db8a8276f0bda34d22fdd2e8744b304dc7d62f80f9189836b107a4d7b178cff",
+    "input_size": 986520,
+    "status": "offline application candidate; no update package or hardware validation",
+    "spans": [
+      {
+        "offset": "0x89c18",
+        "size": 193,
+        "reason": "new CIE, hook/quiet FDEs, and translated cleanup LSDA",
+        "replacement_hex": "1c00000000000000017a504c5200017810079bdd6321001b1b0c07089001000044000000240000009003fcffbd0000000477000000560c0610830786028c068d058e048f0302800c070808030806080c080d080e080f4b0c078001830786068c058d048e038f0200380000006c00000048620000490000000400000000410c07108302420c07188c03420c07208d0402400c0718080d420c0710080c410c070808030000000000001b8f43f9ffff01115205d69902006f05d6990200a801050000",
+        "expected_sha256": "b54841b27152498be41ee4e3b8443b3bae6ca6dd8848b6053418b4ad4521ef1b",
+        "expected_size": 193
+      },
+      {
+        "offset": "0x9a2b8",
+        "size": 40,
+        "reason": "remove stale DebugPrintf stack rules; stub range only",
+        "replacement_hex": "24000000e472000010fdfaff04000000000000000000000000000000000000000000000000000000",
+        "expected_sha256": "fb8af220a1609db44b4ae76d26210f3ff2687bf6114f2a458df544e955633793",
+        "expected_size": 40
+      },
+      {
+        "offset": "0x190",
+        "size": 56,
+        "reason": "point runtime unwind header at relocated table",
+        "replacement_hex": "50e5746404000000901509000000000090150900000000009015090000000000441a000000000000441a0000000000000400000000000000",
+        "expected_sha256": "0778b3f12420ca3fdb4f26465d89d32431bfb7a6d62925756c1ad27f0e695894",
+        "expected_size": 56
+      },
+      {
+        "offset": "0xf07b8",
+        "size": 8,
+        "reason": "exclude consumed trailing padding",
+        "replacement_hex": "30b3030000000000",
+        "expected_sha256": "5bca5c91dfceceb0eabf15fca0a3f25d2686b863f3dfeb559e74807b5a74577f",
+        "expected_size": 8
+      },
+      {
+        "offset": "0xf07e8",
+        "size": 24,
+        "reason": "describe relocated header for ELF tools",
+        "replacement_hex": "90150900000000009015090000000000441a000000000000",
+        "expected_sha256": "36f19b9677da903dded37c7ea1febf7e40fb34558ebb44aa6179c7d61d5592e1",
+        "expected_size": 24
+      },
+      {
+        "offset": "0x49fd0",
+        "size": 4,
+        "reason": "placement code trial",
+        "replacement_hex": "83c8ffc3",
+        "expected_sha256": "b304aaa5c8597258d8a22db249425635461e315c897b3fb15468127c4b64dcf4",
+        "expected_size": 4
+      },
+      {
+        "offset": "0x49fd4",
+        "size": 185,
+        "reason": "placement code trial",
+        "replacement_hex": "c685e9f7ffff00c785ecf7ffff00000000c380bde9f7ffff00750c0fab9decf7ffffe9f573fdff4d63ec89d9e98974fdff80bde9f7ffff00751ec685e9f7ffff018bb5ecf7ffff85f674084c89ffe8a95e0400e97473fdff448b9df0f7ffffe98775fdff488d3d61b72500e8ccd9fbff498b87980200008b8df8f7ffffc6040800c644084400486385ccf7ffffe96076fdff4584f67505e9a0d9fbffc3488d3d28b72500e893d9fbff8b74243c498d8720200000e91c14fdff",
+        "expected_sha256": "ed4fa66970ab3b2b9d23004c670c4fc390e481c376aa5790954ec757482e2a20",
+        "expected_size": 185
+      },
+      {
+        "offset": "0x8fed0",
+        "size": 73,
+        "reason": "placement code trial",
+        "replacement_hex": "53415441554889fb4189f44c8dab483600004c89efe8267bf7ff4489a34436000083bb44360000007411488dbb503600004c89eee83777f7ffebe64c89efe88d7af7ff415d415c5bc3",
+        "expected_sha256": "a383080e3e2eed4aff7d3df1e6744d95e02742b8f50bcb7ccf6b29d9bf158030",
+        "expected_size": 73
+      },
+      {
+        "offset": "0x21399",
+        "size": 7,
+        "reason": "px_batch_init",
+        "replacement_hex": "e8368c02009090",
+        "expected_sha256": "dec3dc93fb8359b84dd839a186767552beab46924eb89e17b2954355ed4555ef",
+        "expected_size": 7
+      },
+      {
+        "offset": "0x21489",
+        "size": 5,
+        "reason": "px_collect_hook",
+        "replacement_hex": "e9588b0200",
+        "expected_sha256": "133d482fc6b3996e6da40945e1c486aab04ea03ac562976cedc141a8acd4c434",
+        "expected_size": 5
+      },
+      {
+        "offset": "0x215b8",
+        "size": 7,
+        "reason": "px_batch_wait_hook",
+        "replacement_hex": "e9488a02009090",
+        "expected_sha256": "d5ac54d1ae1496a9b32a334840a187743e11e73cfaf4906378d7c62b8dfff37a",
+        "expected_size": 7
+      },
+      {
+        "offset": "0x216bf",
+        "size": 7,
+        "reason": "px_fresh_hook",
+        "replacement_hex": "e9748902009090",
+        "expected_sha256": "0c82d794207db714513f8de87db297995c04b7a35b3edd777da26312beb7d738",
+        "expected_size": 7
+      },
+      {
+        "offset": "0x2174c",
+        "size": 5,
+        "reason": "px_activation_lock_hook",
+        "replacement_hex": "e815890200",
+        "expected_sha256": "e227a56286064c70d9870b36da9d07ffb91c99f6c64ab5673b05f3a8cab2bb3e",
+        "expected_size": 5
+      },
+      {
+        "offset": "0x1b49e",
+        "size": 11,
+        "reason": "px_coordinator_hook",
+        "replacement_hex": "e9ceeb0200909090909090",
+        "expected_sha256": "1e6a78c2b8af4e1fd0ad6dc842cb653cdb9f51265a5f8e6bf13aac47b1af6eb0",
+        "expected_size": 11
+      },
+      {
+        "offset": "0x1b7e5",
+        "size": 5,
+        "reason": "remove old coordinator startup acquisition",
+        "replacement_hex": "9090909090",
+        "expected_sha256": "881adbbb1774e3545573eed967d3ee6cf25124e0336b4c815cabf8ceb743d0e2",
+        "expected_size": 5
+      }
+    ],
+    "integration_hooks": [
+      {
+        "site": "0x21399",
+        "target": "0x49fd4",
+        "kind": "call",
+        "size": 7
+      },
+      {
+        "site": "0x21489",
+        "target": "0x49fe6",
+        "kind": "jump",
+        "size": 5
+      },
+      {
+        "site": "0x215b8",
+        "target": "0x4a005",
+        "kind": "jump",
+        "size": 7
+      },
+      {
+        "site": "0x216bf",
+        "target": "0x4a038",
+        "kind": "jump",
+        "size": 7
+      },
+      {
+        "site": "0x2174c",
+        "target": "0x4a066",
+        "kind": "call",
+        "size": 5
+      },
+      {
+        "site": "0x1b49e",
+        "target": "0x4a071",
+        "kind": "jump",
+        "size": 11
+      },
+      {
+        "site": "0x1b7e5",
+        "target": null,
+        "kind": "nop",
+        "size": 5
+      }
+    ]
+  },
+  "index_recipe": {
+    "remove": [
+      [
+        303056,
+        631480
+      ]
+    ],
+    "add": [
+      [
+        303056,
+        564280
+      ],
+      [
+        589520,
+        564352
+      ]
+    ]
+  }
+}

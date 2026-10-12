@@ -17,7 +17,7 @@ from pathlib import Path
 
 
 HERE = Path(__file__).resolve().parent
-PUBLIC = HERE.parent
+PUBLIC = HERE.parents[1]
 HISTORY = PUBLIC / "PX patch history"
 FINAL_SHA = "488444589607a1b4e793a8d8f79a67c5bd50773b722c302e6d80bc1db77b4b7c"
 FACTORY_SHA = "a4b304b3bb48ca933ae63c99c0098698c497ebfc7c38ab2a823b5e0df4919fa9"

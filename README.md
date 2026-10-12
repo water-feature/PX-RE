@@ -39,43 +39,51 @@ This project documents a set of bugfixes and improvements for the Sequential Pro
 
 ## Patching the firmware using the supplied tool:
 
-[patch_prophet_x.py](patch_prophet_x.py) converts your own factory 2.2.2.0.0 update file directly into the combined 2.2.2.2.2 update. It builds the retained feature chain locally from source. Note that at this stage you're not able to pick and choose which individual features to add; the patcher generates the final 2.2.2.2.2 directly and the manual 'build from source' steps in the next section patch in each feature sequentially. 
+[patch_prophet_x.py](patch_prophet_x.py) converts your exact factory 2.2.2.0.0 update into the combined 2.2.2.2.2 update in one direct build. All listed features are included. It generates the final QNX/PIC payloads in memory and writes one final firmware file plus a verification report.
 
-You need your own exact factory `PxUpdate_V2.2.2.0.0.bin`, obtained from Sequential, and a local source build environment. Download the whole repository, including `firmware_builder/` and `PX patch history/`; the patcher is a small entry point to those sources.
+You need **Python 3.11 or newer**. Download and extract the whole repository, including `firmware_builder/direct/`, and obtain your own exact factory `PxUpdate_V2.2.2.0.0.bin` from Sequential. Keep firmware inputs and outputs in a private folder outside the repository.
 
-Requires Python 3, Clang, Rust and objdump. Currently tested on macOS; Apple silicon Macs also need Rosetta for the validation programs.
-
-From the repository root, run:
+From the repository root on macOS or Linux, run:
 
 ```sh
 python3 patch_prophet_x.py /path/to/private-workspace/PxUpdate_V2.2.2.0.0.bin -o /path/to/private-workspace/PxUpdate_V2.2.2.2.2.bin
 ```
 
-Quote paths containing spaces. For argument help, run `python3 patch_prophet_x.py --help`. The build runs the retained validation suites and can take several minutes. A successful run prints the final size, SHA-256 and saved filename. It refuses the wrong factory file and an existing output; choose a fresh filename if needed. It reads the input without changing it.
+On Windows, use Command Prompt from the extracted repository folder:
+
+```cmd
+py -3 patch_prophet_x.py "C:\private-workspace\PxUpdate_V2.2.2.0.0.bin" -o "C:\private-workspace\PxUpdate_V2.2.2.2.2.bin"
+```
+
+Replace the example paths with your own. If your Windows installation uses `python` instead of the `py` launcher, substitute `python`. Quote paths containing spaces. For argument help, run `python3 patch_prophet_x.py --help` (`py -3` on Windows).
+
+The command prints four completed stages with timings, then the final filename, size and SHA-256. The [direct builder guide](firmware_builder/direct/README.md) describes the implementation and verification scope.
+
+Save the output outside the repository using a new filename. The patcher also saves a verification report alongside it.
 
 ### Build from source if you do not trust the patcher
 
-You can **review and rebuild the update from the feature sources without running `patch_prophet_x.py`**. Start with the [source build guide](firmware_builder/README.md), inspect the [orchestrator](firmware_builder/source_pipeline.py) and the feature implementations it invokes, then run it directly with a new private working directory:
+You can **review and rebuild the update from the feature sources without running `patch_prophet_x.py`**. Start with the [source build guide](firmware_builder/source_rebuild/README.md), inspect the [orchestrator](firmware_builder/source_rebuild/source_pipeline.py) and the feature implementations it invokes, then run it directly with a new private working directory:
 
 ```sh
-python3 firmware_builder/source_pipeline.py /path/to/private-workspace/PxUpdate_V2.2.2.0.0.bin -o /path/to/private-workspace/PxUpdate_reviewed.bin --work-dir /path/to/private-workspace/source-build
+python3 firmware_builder/source_rebuild/source_pipeline.py /path/to/private-workspace/PxUpdate_V2.2.2.0.0.bin -o /path/to/private-workspace/PxUpdate_reviewed.bin --work-dir /path/to/private-workspace/source-build
 ```
 
-This retains the staged source files, compiler outputs, intermediate packages, validation reports and `build.log` for inspection. The working directory must not already exist. The entry point and direct source command use the same implementation; they are not independent verification implementations. For a manual build, follow the ordered script invocations in `build()` in the orchestrator and review each stage's guards and reports. Independently hash the resulting file using the command below.
+This retains the staged source files, compiler outputs, intermediate packages, validation reports and `build.log` for inspection. The working directory must not already exist. This compiler-based audit path is separate from the default direct builder and requires the macOS compiler environment described in its guide. Both paths share authored feature logic and the same final hash; agreement is byte reproduction, not independent proof of behavior. For a manual build, follow the ordered script invocations in `build()` in the orchestrator and review each stage's guards and reports. Independently hash the resulting file using the command below.
 
-The command creates an update file; it does not install it on the instrument. Verify that file below, retain your backups, and follow [Sequential's Prophet X update procedure](https://sequential.com/updating-prophet-x-os/) to install it. The factory version requirement applies to the input file used by the patcher; there is no need to install each intermediate project build.
+The command creates an update file. Verify that file below, retain your backups, and follow [Sequential's Prophet X update procedure](https://sequential.com/updating-prophet-x-os/) to install it. The factory version requirement applies to the input file used by the patcher; there is no need to install each intermediate project build.
 
 ## Why the output is checkable
 
-The patcher contains no embedded whole-image delta or final-firmware payload. It checks the exact factory input, extracts the QNX/PIC records, compiles or emits the authored helpers, applies guarded feature edits, and repacks the update. Unchanged firmware bytes come from your input file.
+Unchanged firmware comes from your verified factory input. New helpers come from authored source recipes and 15 pinned compiler objects. Firmware-matching spans are zeroed in the distributed object blobs and restored only from your factory input; source/include hashes, blob hashes and complete restored-object hashes are checked before linking. See the [object provenance and validation details](firmware_builder/direct/README.md).
 
-The build first proves a byte-identical factory null repack. Retained stage validators check original bytes, owned regions, allocation bounds, version gates and saved-image behavior. The final package is re-extracted and checked for checksums, byte-identical serialization and preservation of the FPGA record. The output must have the exact final length and SHA-256 below before it is saved.
+The direct builder verifies the factory container round trip, relocation bounds, guarded final ownership of every changed byte, ELF/helper layout, all 910 indexed FDE targets, revision gates, record checksums and the unchanged FPGA record. It generates the final payloads once and requires the exact final size and SHA-256 below before saving.
 
-The source build reproduced the accepted final package byte for byte. This connects the generated file to the [documented build history and hardware observations](PX%20patch%20history/BUILD_VERSION_HISTORY.md). Some archived offline reports still describe hardware testing as pending at the time they were written; the feature guides record subsequent observations. See the [source build guide](firmware_builder/README.md) for archive compatibility adjustments and the checks that require historical evidence.
+The direct build and the separately retained compiler-based source build reproduce the accepted final package byte for byte. The [documented build history and hardware observations](PX%20patch%20history/BUILD_VERSION_HISTORY.md) describe that firmware. Historical offline reports retain their original test status; feature guides record subsequent observations. The [source build guide](firmware_builder/source_rebuild/README.md) documents the compiler audit path and its historical validation limits.
 
-The [source rebuild receipt](firmware_builder/VERIFICATION.json) records the successful verification. [SHA256SUMS](SHA256SUMS) covers the public source bundle.
+[Direct verification](firmware_builder/direct/VERIFICATION.json) and the earlier [compiler rebuild receipt](firmware_builder/source_rebuild/VERIFICATION.json) distinguish these runs. [SHA256SUMS](SHA256SUMS) covers published code, object blobs and research evidence; routine guides are excluded from checksum gating so documentation edits do not break CI.
 
-The command creates a new output exclusively and removes it if writing fails. It contains no flashing commands or network requests.
+The command publishes a fully written final file without overwriting an existing destination. Temporary output is cleaned up on a reported write failure. If report publication fails after final publication, the validated firmware remains and the command reports failure.
 
 **Matching hashes establish byte identity, not freedom from bugs or authenticity of an untrusted download.** Read the code and obtain the script and expected hashes from a project copy you trust. The documented hardware results describe one user's experience, not exhaustive testing on every instrument. Keep preset/sample backups and a known-good SSD image before installing modified firmware.
 

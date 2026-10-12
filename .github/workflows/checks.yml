@@ -11,18 +11,8 @@ jobs:
         with:
           python-version: '3.14'
       - name: Verify published checksums
-        run: |
-          # Routine guides can change without rebuilding checksum inventories.
-          # Retain checks for code, build inputs and research/validation evidence.
-          check_inventory() {
-            awk 'tolower($0) !~ /  (\.\/)?(.*\/)?(readme|contributing|firmware_map|recovery|build_version_history)\.md$/' SHA256SUMS |
-              sha256sum --check --quiet -
-          }
-          check_inventory
-          find 'PX patch history' 'SSD expansion' -name SHA256SUMS -print0 | while IFS= read -r -d '' inventory; do
-            (cd "$(dirname "$inventory")" && check_inventory) || exit 1
-          done
+        run: python tools/check_checksums.py
       - name: Check repository links
         run: python tools/check_links.py
-      - name: Test container parser with synthetic fixtures
+      - name: Test parser and direct builder with synthetic fixtures
         run: python -m unittest discover -s tests -v

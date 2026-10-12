@@ -12,7 +12,7 @@ from container import FACTORY_SHA256, Record, elf_layout, parse, serialize, sha2
 
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE if (HERE / "PX patch history").is_dir() else HERE.parent
+ROOT = HERE if (HERE / "PX patch history").is_dir() else HERE.parents[1]
 SPEC = (ROOT / "PX patch history/B1 - voice steal fix/"
         "prophet_x_combined_application_patch/analysis/combined_patch/patch_spec.json")
 EXPECTED_APP = "651f0ac3339f4f41a4c0bc562cdf4c72df821d85aad3f689e700612b8c8b05e7"

@@ -1,0 +1,92 @@
+{
+  "b15_core": {
+    "key": "a280eba3ba04ced2f1217e5b94ea915a4ba316411b5d5a20daf5e2a2d7f3f2ad",
+    "inputs": {
+      "b15_absolute_core.c": {
+        "file": "sources/remaining/b15_core_b15_absolute_core.c",
+        "sha256": "dadd2d1cf38919a3e4e156003ffe910672e3bb4871195510939ee03958165d73",
+        "original": "PX patch history/B15 - stretch layer/implementation/b15_candidate_work/b15_absolute_core.c"
+      },
+      "b15_absolute_core.h": {
+        "file": "sources/remaining/b15_core_b15_absolute_core.h",
+        "sha256": "f11e3a2385376707ab57ee433879135d9cc0cad7f8542e0f991da0427cbacdc8",
+        "original": "PX patch history/B15 - stretch layer/implementation/b15_candidate_work/b15_absolute_core.h"
+      }
+    }
+  },
+  "b15_adapter": {
+    "key": "e23480b680b3e8b6712c01613485b1264e89bd8e15f695b53075c1c352f8e94d",
+    "inputs": {
+      "b15_absolute_qnx_adapter.c": {
+        "file": "sources/remaining/b15_adapter_b15_absolute_qnx_adapter.c",
+        "sha256": "d5dd6f32063cd649ed9e926e055e3103b6d32ec4ad3e4c0251da8ff36885c042",
+        "original": "PX patch history/B15 - stretch layer/implementation/b15_candidate_work/b15_absolute_qnx_adapter.c"
+      },
+      "b15_absolute_core.h": {
+        "file": "sources/remaining/b15_adapter_b15_absolute_core.h",
+        "sha256": "f11e3a2385376707ab57ee433879135d9cc0cad7f8542e0f991da0427cbacdc8",
+        "original": "PX patch history/B15 - stretch layer/implementation/b15_candidate_work/b15_absolute_core.h"
+      }
+    }
+  },
+  "b15_thunks": {
+    "key": "1d1fb26708b2bd6b27b9f0c260a0c01e555f4c9ac45d8c16731e0335a6439d26",
+    "inputs": {
+      "b15_qnx_thunks.s": {
+        "file": "sources/remaining/b15_thunks_b15_qnx_thunks.s",
+        "sha256": "15a25a5b7e7406bb3f5a00c81ef61c7f35759ddee39f8ee9418f4addfb38e28b",
+        "original": "PX patch history/B15 - stretch layer/implementation/b15_candidate_work/b15_qnx_thunks.s"
+      }
+    }
+  },
+  "center_probe": {
+    "key": "b4f7463ff57caef4cb16032235f83111f39daae7b5e0cfb19cf7c94bc7daa43b",
+    "inputs": {
+      "design_probe.c": {
+        "file": "sources/remaining/center_probe_design_probe.c",
+        "sha256": "935d5a1b3320e769daa5ceae21b3e04de3a816c3a432ec342ffde0fec56c086a",
+        "original": "PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/design_probe.c"
+      }
+    }
+  },
+  "center_thunk": {
+    "key": "ca5b62e932bc1bc598e203084e97d3b899b85d5207d839cf2cecc018e5055190",
+    "inputs": {
+      "design_thunk.s": {
+        "file": "sources/remaining/center_thunk_design_thunk.s",
+        "sha256": "86a523868322b76da63d4ea6212d06a366b2d80dfb84a73aafca626df76f4ede",
+        "original": "PX patch history/B7 - center can be pushed/b7_lfo_center_investigation/design_thunk.s"
+      }
+    }
+  },
+  "scroll_patch": {
+    "key": "3196bdfb1f1fe5a621185b67dda7ff6bd91f21c0bc7d5a80aea60eb9ba2cd38f",
+    "inputs": {
+      "patch.c": {
+        "file": "sources/remaining/scroll_patch_patch.c",
+        "sha256": "32d0196837e2a2dd23f74ac44a56389f2de4e50c0ef75e9360fe435f947ef0ea",
+        "original": "PX patch history/B10 - window scroll clicks/implementation/b10_ordinary_entry_design_1_12/candidate_1_15/patch.c"
+      }
+    }
+  },
+  "scroll_hooks": {
+    "key": "f167e4110d98e21a4bcc3418d771d3f497e2e65e4f52f8909b1931a94915f55f",
+    "inputs": {
+      "hooks.s": {
+        "file": "sources/remaining/scroll_hooks_hooks.s",
+        "sha256": "bfec8011e6b40cc4c40e53c6f56977854292722ca8c020b71fcfe6b2bd0edddf",
+        "original": "PX patch history/B10 - window scroll clicks/implementation/b10_ordinary_entry_design_1_12/candidate_1_15/hooks.s"
+      }
+    }
+  },
+  "sync_helper": {
+    "key": "9153675b85f53717bba6a90487610cf4b3ba242f005c44cf8967b4f0d23ed0d1",
+    "inputs": {
+      "qnx_helper.s": {
+        "file": "sources/remaining/sync_helper_qnx_helper.s",
+        "sha256": "cb97827fb593a870ae3a0ccb8956bfc610a45c5d60787979de5001f0823d09f7",
+        "original": "PX patch history/B16 - new sync divisions/implementation/b16_finer_loop_sync_resolution/in_place_candidate/qnx_helper.s"
+      }
+    }
+  }
+}

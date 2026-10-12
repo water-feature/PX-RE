@@ -276,7 +276,7 @@ These are the original incremental commands, requiring preparation in a private 
 
 The final package is `PxUpdate_V2.2.2.2.0_B11b_real_instrument_on_Type_candidate.bin`. Container framing, payload lengths and record order remain inherited. Application and PIC headers use `2.2.2.2.0`; the application word checksum is recalculated, complete FPGA record retained, and PIC trailer `30 30` preserved under the established contract. No new PIC or QNX payload space is required by B11b.
 
-The supplied tools document the incremental `.1.15` → `.2.0` path. The [root patcher](../../patch_prophet_x.py) now generates the retained parent inputs from the exact factory update, emits and independently checks B11b instructions, and continues to the final package. See the [source build guide](../../firmware_builder/README.md) for source review and retained build reports.
+The supplied tools document the incremental `.1.15` → `.2.0` path. The [root patcher](../../patch_prophet_x.py) builds the final combined update directly from the exact factory input using authored generators and pinned redacted objects. See the [direct builder guide](../../firmware_builder/direct/README.md). The separate [compiler audit path](../../firmware_builder/source_rebuild/README.md) retains incremental source rebuilding and its original validation scope.
 
 ## Complete supporting-file inventory
 

@@ -20,6 +20,15 @@ Third-party material remains subject to its own applicable license terms.
 
 Source provenance notes
 
+The direct builder's cache contains redacted compiler outputs of project-authored
+helpers. Matching factory spans are zero placeholders and are restored only from
+the user's verified factory input. Source/include and restored-object hashes,
+compiler metadata and extraction provenance are retained under
+firmware_builder/direct/. The derived publication manifest is distinguished from
+the original recording; it does not claim a new compiler recording. Content audits
+and provenance checks do not independently certify authorship or grant rights to
+manufacturer firmware.
+
 SPDX comments identify the repository's GPL-2.0-or-later grant for its own
 source files. They do not replace or extend third-party licensing terms.
 

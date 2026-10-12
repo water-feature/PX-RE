@@ -7,7 +7,7 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "firmware_builder"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "firmware_builder" / "source_rebuild"))
 from container import FACTORY_SHA256, FINAL_SHA256, elf_layout, parse, sha256
 
 

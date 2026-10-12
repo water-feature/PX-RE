@@ -1,24 +1,38 @@
 # Contributing
 
-This repository documents a specific Prophet X firmware build and the investigations behind it. Read the [main guide](README.md), [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md) and relevant feature `README.md` before proposing a change. The [recovery guide](recovery.md) explains the PIC and SSD recovery materials to prepare before hardware testing.
+Bug reports, improvements and pull requests are welcome. Start with the [main guide](README.md) and the relevant feature guide in [the build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md).
 
-Use a GitHub issue to describe a bug or a proposed improvement. Include the pxupdate version and the steps needed to reproduce. For an implementation change, identify the QNX or PIC payload, the factory or incremental input it expects, patch offsets and byte guards, changed-byte size, and the validation performed. Keep results from rejected experiments distinguishable from the released build. 
+## Reporting a bug
 
-Note that while I suspect the firmware PIC payload does not have the ability to modify the bootloader, not every byte has actually been mapped, so any further patches should be assessed very carefully before flashing to hardware.
+Open a GitHub issue with your firmware version, file SHA-256, steps to reproduce, and what you expected to happen.
 
-Do not attach or commit Sequential firmware, extracted firmware payloads, recovery images, Ghidra databases containing copyrighted code, or private instrument data. Supply hashes and instructions so a reader can work with a firmware copy obtained independently. Keep generated binaries and personal disk images outside the repository. 
+## Proposing a change
 
-For pull requests, update the affected feature guide and the [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md) when the feature or version relationship changes. Regenerate the applicable `SHA256SUMS` inventory after editing published files and confirm local Markdown links resolve. State the test environment and outcome precisely; distinguish owner-reported hardware testing from static checks and from tests you ran yourself. A matching checksum proves byte identity, not functional safety.
+Open a GitHub issue to discuss an improvement. Explain the problem you want to solve, your proposed approach and which component it affects.
 
-GitHub Actions verifies the root and feature `SHA256SUMS`, inline local Markdown links and heading anchors, and container parser tests using synthetic data. No firmware or compiler toolchain is needed. CI verifies inventories; it does not regenerate them. External websites are not checked.
+## Pull requests and firmware modifications
 
-Run the link and parser checks locally from the repository root:
+Explain what your changes do. For firmware patches, document the expected input, patch locations, byte guards and validation results. Say which checks you ran, on what system, and whether you tested on hardware.
+
+Update the affected documentation. Update the build history if the feature or firmware version changes. Code, build-input and research changes also need updated `SHA256SUMS` entries; routine guide edits do not. Keep manufacturer firmware, extracted payloads, recovery images, firmware-containing Ghidra databases and personal instrument data out of issues and pull requests. Share hashes and reproduction instructions instead.
+
+Hardware testing has revealed no bootloader-related issues, but the PIC firmware is not fully mapped. Review new patches carefully before installation and prepare the backups described in the [recovery guide](recovery.md). Passing software checks does not establish hardware safety.
+
+For builder changes, see [object provenance and cache maintenance](firmware_builder/direct/README.md#object-provenance-and-maintenance), including how to update cached objects when their sources change.
+
+## Checks
+
+Run these from the repository root before submitting:
 
 ```sh
+python3 tools/check_checksums.py
 python3 tools/check_links.py
 python3 -m unittest discover -s tests -v
 ```
 
-On Linux, run `sha256sum --check SHA256SUMS` and repeat from each feature directory containing `SHA256SUMS`. On macOS, use `shasum -a 256 --check SHA256SUMS`. The root inventory also checks the feature inventory files themselves.
+GitHub Actions runs the same checks for checksums, documentation links and synthetic tests.
 
-Contributions must be submitted under [GPL-2.0-or-later](LICENSE). Credit [water-feature](https://github.com/water-feature/) for project material and individual contributors for their own work. By contributing, you confirm that you have the rights needed to submit the material under that license. The project license does not grant rights to manufacturer firmware or other third-party material.
+
+## License
+
+Contributions are accepted under [GPL-2.0-or-later](LICENSE). Credit the project and contributors whose work you use, and submit only material you have the rights to share. Manufacturer firmware remains subject to its own rights.

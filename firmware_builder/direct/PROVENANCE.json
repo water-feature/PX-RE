@@ -1,0 +1,46 @@
+{
+  "description": "Pure generators extracted from reviewed project feature sources. Historical scripts are development references, never invoked by the direct builder.",
+  "source_receipts": {
+    "source_extraction.json": {
+      "scope": "Source-only extraction; no historical scripts executed",
+      "original_source_hashes": {
+        "PX patch history/B5 - sample end fade/b5_candidate_work/emit_b5_candidate.py": "8e0b80c475d577c333acac078db4f71f1e3ade862ae5f9851daa0ba17930cf76",
+        "PX patch history/B5 - sample end fade/b5_candidate_work/emit_b5_objects.py": "55b0f36d380bfabc1d14da33b7d53c7d215a84e08c6e40409ddada53d94c21fa",
+        "PX patch history/B8 - end escape/b8_candidate_work/emit_b8.py": "4a9bfc9d4a788e23987f8088f249be30371a5267f9487396382b16447892ad17",
+        "PX patch history/B8 - end escape/b5_fade_prototype.py": "c96190de65deb111c45890331a2dd4252fba691aaebf203495fdff82323a69ba",
+        "PX patch history/B5 - sample end fade/b5_candidate_work/b5_core.c": "6fe8b5fc7327c179ad9cc7027a967ad481e9676c4b15d3fb1f3b4f850d26359a",
+        "PX patch history/B5 - sample end fade/b5_candidate_work/b5_adapters.c": "4a38606d935b54d542bd1aaba6c366506e25ea775c6460943ad2d1ee5cca1dc6",
+        "PX patch history/B8 - end escape/b8_candidate_work/b8_adapters.c": "365a9bf3f5849b062bd3c3c2aebaddfd6638cb47ab1a6184812a6c3593717672",
+        "PX patch history/B5 - sample end fade/b15_candidate_work/lfo_endpoint_investigation/completion_fix/helpers.s": "8ceffac52b158bf5dda558b9a7ee2d5a5b41079dbe6a2eacd4b77e330e59ddf4"
+      }
+    },
+    "pic_source_extraction.json": {
+      "PX patch history/B15 - stretch layer/implementation/b15_candidate_work/build_pic_helpers.py": "fc283e76777e2b71b7c1ba1023dcc9a3ffe02842a7ba4ff38ec1c4eb0300ae86",
+      "PX patch history/B15 - stretch layer/implementation/b15_candidate_work/build_pic_absolute.py": "f6a497e5231dda87f6fde7bba0ea0a139c5d6acb7b4a9089f96f5cf4470d9033",
+      "PX patch history/B15 - stretch layer/implementation/b15_candidate_work/pre_immediate_store/build_pic_helpers.py": "fc283e76777e2b71b7c1ba1023dcc9a3ffe02842a7ba4ff38ec1c4eb0300ae86"
+    },
+    "pic_recipe_sources.json": {
+      "PX patch history/B7 - center can be pushed/b7_combined_instruction_model.py": "89d4293a3149274d9581d53e1f80c2416ef2d14284948e133963a85cdfa7e10f",
+      "PX patch history/B6 - center moves window/b6_investigation/assemble_layout.py": "98b9bbb404edd131059ae00a59611806da02012b1f00b8aceb54cef7c7fd037d",
+      "PX patch history/B14 - disable encoder accel/implementation/b14_candidate_work/build_b14.py": "156eb2916537f006c02a0e9733bbb9320a589419bd42b2e4e48f1e87dafea9d0",
+      "PX patch history/B14 - disable encoder accel/implementation/b14_metadata_candidate_work/build_metadata.py": "bf3eca438cf97a7c7fac6fe11beebd495c6e753c0d512aa71ac68ebb54eca06c",
+      "PX patch history/B14 - disable encoder accel/implementation/b14_stable_frame_candidate_work/build_stable.py": "3fd7ef8fc48c4cc49be70a52f4effc28b905ff028fb271b4d888a15fcb79dcca",
+      "PX patch history/B11 - type name tweak/b11b_implementation_2_2_2_2_0/measure_compact.py": "dc117f32f6e7564d00e242d382547f3e7763f2d6949f2e558e18781a20a85d03",
+      "PX patch history/B16 - new sync divisions/implementation/b16_finer_loop_sync_resolution/in_place_validation/expected_words.tsv": "306fd181c0b35a2baf92ab4dd8b88388a98fc71b641c0c196d36397cf9eb33f7",
+      "PX patch history/B16 - new sync divisions/implementation/b16_finer_loop_sync_resolution/geometry_review/proposed_words.tsv": "372a01754a9c8bce5495e720c639ca150305b874dec4893244a72e7ebf00de5c",
+      "PX patch history/B14 - disable encoder accel/implementation/b14_sample_acceleration_investigation/decoder_layout.txt": "48fd26f35769e72362b8e2209609652319be2ef4aea0be12d8f0cfe25958b6d7",
+      "PX patch history/B16 - new sync divisions/implementation/b16_finer_loop_sync_resolution/in_place_validation/integrate.py": "85b77b3210f4be3bf1cce464bc63b9e74b26041a0f5f0f2da1a7a3b5a9ef99a8"
+    }
+  },
+  "public_object_manifest_sha256": "b30faf7b0d64e3eb5cda6a7d49b8d0d41596e0f8b75356136419d3a0dea741cc",
+  "original_recording_manifest_sha256": "8225ea27fd09a00deb7241b3b3ff54183238956f9bcde16e547f0aa51b8bb4b4",
+  "original_recording_unchanged": true,
+  "source_compatibility_notes": [
+    {
+      "source": "PX patch history/B16 - new sync divisions/implementation/b16_finer_loop_sync_resolution/in_place_validation/integrate.py",
+      "recording_source_sha256": "85b77b3210f4be3bf1cce464bc63b9e74b26041a0f5f0f2da1a7a3b5a9ef99a8",
+      "downloaded_public_source_sha256": "9cf4dae1c3ffba83869aeb77e89b8146155c03eb3de8f17684e3f4379e1de11b",
+      "difference": "Recording reference separates the macOS native mapper test and marks it NOT RERUN; downloaded public source compiles and runs that fixture inline. Authored B16 PIC labels/division data used by the direct generator are identical. Neither script executes in the direct builder."
+    }
+  ]
+}

@@ -17,7 +17,7 @@ The update `.bin`, MIDI recovery `.syx`, extracted application `.elf`, maintenan
 
 ## Update container
 
-[container.py](firmware_builder/container.py) is the executable format reference. The accepted files contain one `F0` framing byte, three records in order (kinds 1, 2, 3), and one final `F7` byte. This describes the stored update file, not the complete MIDI transfer protocol.
+[container.py](firmware_builder/source_rebuild/container.py) is the executable format reference. The accepted files contain one `F0` framing byte, three records in order (kinds 1, 2, 3), and one final `F7` byte. This describes the stored update file, not the complete MIDI transfer protocol.
 
 Each record contains:
 
@@ -92,13 +92,44 @@ Update file offset = record 3 payload offset + PIC payload offset
 
 Instruction words are stored little-endian. MIPS branch delay slots and address-region rules matter when relocating instructions. A payload offset, a controller virtual address, a container offset and an external-flash staging address are separate coordinate systems.
 
-The [SysEx guide](PX%20patch%20history/B3%20-%20sysex%20channel%20fix/README.md) documents the transfer parser and modeled external-flash staging path. It does not establish general bootloader safety or recovery independence. Do not treat an empty or `FF`-filled region as proof that this project owns it.
+The [SysEx guide](PX%20patch%20history/B3%20-%20sysex%20channel%20fix/README.md) documents the transfer parser and modeled external-flash staging path. It does not establish general bootloader safety or recovery independence.
+
+## Patch space and allocations
+
+### PIC code caves
+
+Space in the currently reviewed PIC code caves is very tight; further usable regions may remain undiscovered. The main code cave found at `[0x9D0002A0, 0x9D000C00)` holds the B15 Stretch helpers and has just **4 bytes remaining** - one MIPS instruction word. B15 also uses three small regions of disabled acceleration code, documented in its [placement review](PX%20patch%20history/B15%20-%20stretch%20layer/README.md#final-placement-and-state).
+
+The following figures describe the exact **2.2.2.2.2** package identified above. Addresses are PIC virtual addresses; range ends are exclusive. Used bytes count the final helper/hook writes, including their delay-slot instructions.
+
+| Region | Final use | Used / region bytes |
+|---|---|---:|
+| `[0x9D0002A0, 0x9D000C00)` | B15 Stretch helpers | 2,396 / 2,400 |
+| `[0x9D000C00, 0x9D000D84)` | B6 Center/window helper | 388 / 388 |
+| `[0x9D000D84, 0x9D000DF4)` | B9 browsing helper | 112 / 112 |
+| `[0x9D001220, 0x9D001480)` | B7 helpers, B6 hook, version-report thunks and B14 display helpers | 516 / 608 |
+
+B3 occupies the preceding `[0x9D001200, 0x9D001220)` range. The last helper in the later region ends at `0x9D00146C`, leaving **20 bytes before DINIT data at `0x9D001480`**. The other unused bytes in that region are scattered gaps between helpers. These figures are not a pool of freely allocatable space: new placement needs its own reference, control-flow and data-use review. In particular, the unexplained `[0x9D000E00, 0x9D000EC0)` interval was left unused by [B16](PX%20patch%20history/B16%20-%20new%20sync%20divisions/README.md).
+
+An empty or `FF`-filled range alone is not evidence that it is safe to overwrite. The final [PIC generator](firmware_builder/direct/pic.py) and [Stretch placement recipe](firmware_builder/direct/pic_stretch.py) specify the current allocations. The PIC payload remains 530,784 bytes; further features may require compacting or replacing existing helpers rather than simply appending code.
+
+### QNX helper reservations
+
+QNX has more room within its appended ELF helper reservations. These are ELF file offsets, which equal virtual addresses for these particular sections. Text figures include helper code and associated read-only data; frame figures include the section's unwind records and terminators.
+
+| Helper group | Text reservation | Used / reserved bytes | Unwind reservation | Used / reserved bytes |
+|---|---|---:|---|---:|
+| B5 and endpoint fixes | `[0xF1000, 0xF4000)` | 11,458 / 12,288 | `[0xF4000, 0xF5000)` | 3,100 / 4,096 |
+| B8 | `[0xF8000, 0xFA000)` | 4,667 / 8,192 | `[0xFA000, 0xFB000)` | 1,324 / 4,096 |
+| B15, B7 LFO, B10 and B16 | `[0x100000, 0x102000)` | 6,044 / 8,192 | `[0x102000, 0x103000)` | 1,972 / 4,096 |
+
+The padding within these reservations provides potential room for future QNX helpers, subject to alignment, relocation, section-size and unwind-index updates. Extending beyond them requires reviewing the ELF layout and load mappings. See the [QNX generator](firmware_builder/direct/qnx.py) for the current layout.
 
 ## Feature locations and evidence
 
-Patch sites and helper placements depend on the exact parent image, so this overview does not assign permanent free-space ranges. Use the feature guides linked from the [changelog](README.md#changelog-for-22222bin) and [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md) for offsets, expected parent hashes, guards, allowed writes and test scope.
+Patch sites and helper placements depend on the exact image. Use the feature guides linked from the [changelog](README.md#changelog-for-22222bin) and [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md) for patch-site offsets, expected parent hashes, guards, allowed writes and test scope.
 
-The [source builder](firmware_builder/source_pipeline.py) stages selected sources, replays the accepted chain, and requires the final package hash before creating the requested output. Hash guards check original spans using the user's supplied firmware. Historical test receipts, checks rerun during a build and owner-reported hardware observations are different kinds of evidence; the [build guide](firmware_builder/README.md) explains their limits.
+The [direct patcher](patch_prophet_x.py) generates final QNX/PIC payloads from factory data, authored recipes and pinned redacted objects, then checks every changed byte's owner and the exact final hash. The separate [compiler audit builder](firmware_builder/source_rebuild/source_pipeline.py) stages selected sources and rebuilds the historical chain. Historical receipts, current byte/structure checks and owner-reported hardware observations are different kinds of evidence; the [build guide](firmware_builder/README.md) explains their limits.
 
 Displayed versions and container revisions are not sufficient identifiers: some experiments reused versions, and component displays can differ from packaging metadata. Use the whole-package SHA-256 to identify an exact build.
 
@@ -107,9 +138,9 @@ Displayed versions and container revisions are not sufficient identifiers: some 
 To inspect the exact factory container without producing firmware output:
 
 ```sh
-python3 firmware_builder/container.py /private/path/PxUpdate_V2.2.2.0.0.bin
+python3 firmware_builder/source_rebuild/container.py /private/path/PxUpdate_V2.2.2.0.0.bin
 ```
 
 To compare it with the accepted final image, add `--final /private/path/PxUpdate_V2.2.2.2.2.bin`. This checks both pinned identities and reports record offsets, lengths, component hashes and ELF layout differences. On Windows, use `python` and Windows paths.
 
-To extract a replacement QNX application, use [extract_qnx.py](extract_qnx.py) as documented in [recovery.md](recovery.md#obtain-the-replacement-executable). Extraction does not require the macOS compiler toolchain. Keep firmware inputs and extracted outputs outside this repository.
+To extract a replacement QNX application, use [extract_qnx.py](extract_qnx.py) as documented in [recovery.md](recovery.md#obtain-the-replacement-executable). Keep firmware inputs and extracted outputs outside this repository.
