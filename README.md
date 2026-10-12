@@ -42,7 +42,7 @@ The [firmware_builder/patch_prophet_x.py](firmware_builder/patch_prophet_x.py) c
 The patcher is cross-platform, you just need Python 3.11 or newer.
 
 1. Download and extract the whole repository.
-2. Obtain your own exact factory `PxUpdate_V2.2.2.0.0.bin` from Sequential.
+2. Obtain your own exact factory `PxUpdate_V2.2.2.0.0.bin` from [Sequential](https://sequential.com/support/download/prophet-x-operating-system/).
 3. Copy that firmware file into `firmware_builder/`, alongside `patch_prophet_x.py`.
 
 cd into `PX-RE/firmware_builder`. On macOS or Linux, run:
