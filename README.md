@@ -15,7 +15,6 @@ This project documents a set of user-created bugfixes and improvements for the S
 - [SSD expansion guide](SSD%20expansion/README.md): details on how to prepare and fit a larger SSD.
 - [Feature and version history](PX%20patch%20history/BUILD_VERSION_HISTORY.md): follows the build chain and links to each feature's implementation, test status and packaging evidence.
 - [Firmware architecture and map](FIRMWARE_MAP.md): container format, QNX/PIC/FPGA components and version-specific offsets.
-- [Firmware builder folder guide](firmware_builder/README.md): explains where the direct patcher, compiler-based rebuild and feature source code live, and how they fit together.
 - [Contributing](CONTRIBUTING.md): evidence, reproduction and copyright requirements for proposed changes. PRs and bug reports welcome.
 
 ## Changelog for PxUpdate_V2.2.2.2.2.bin
