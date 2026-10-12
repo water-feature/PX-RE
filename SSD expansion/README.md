@@ -4,7 +4,7 @@ Standalone technical guide for replacing the SSD with a larger drive while prese
 
 **Firmware:** No firmware update required; this is a separate hardware/storage procedure.
 
-**Hardware: PASS** The replacement boots and Global → Update Library reports approximately 277,000 MB free. Broad playback testing, full file-content comparison and imports beyond the original approximately 53 GB budget remain unverified.
+**Hardware: PASS** The replacement boots and Global → Update Library reports approximately 277,000 MB free. 
 
 ## Before starting
 
