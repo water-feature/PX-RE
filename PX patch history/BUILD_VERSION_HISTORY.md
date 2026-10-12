@@ -1,8 +1,8 @@
 # Firmware build and version history
 
-The implemented chain can be traced from factory **2.2.2.0.0** to final **2.2.2.2.2**. Investigation IDs such as B1 and B16 identify investigations and their technical evidence, not release order or a continuous sequence. The tables distinguish actual ancestors from comparison builds, rejected experiments and reserved numbers.
+The tables trace the firmware builds from factory **2.2.2.0.0** to final **2.2.2.2.2**, with comparison builds, rejected experiments and reserved numbers listed separately. IDs such as B1 and B16 link each investigation to its technical evidence.
 
-This is a build/provenance order, not a timestamped record of every development action. In particular, the early B1/B3 artifacts were renumbered. The parent column describes the actual input or merge, rather than assuming every numerical predecessor was used.
+Builds are ordered by their inputs and merges. The early B1/B3 artifacts were renumbered; the parent column records which versions each build actually used.
 
 ## Path to the final build
 
