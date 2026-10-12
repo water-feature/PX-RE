@@ -1,6 +1,6 @@
 # Prophet X recovery
 
-Keep the factory update `PxUpdate_V2.2.2.0.0.bin`, the factory recovery file `PX_Main_2.2.2.0.0.syx`, and a verified full SSD image backup available privately. Recovery differs between the PIC controller and the SSD-resident QNX system. The synth does not perform any version gating, so rollback to an earlier firmware version is always possible. 
+Keep the factory update `PxUpdate_V2.2.2.0.0.bin`, the factory recovery file `PX_Main_2.2.2.0.0.syx`, and a verified full SSD image backup available privately. Recovery differs between the PIC controller and the SSD-resident QNX system. The synth does not perform any version gating, so rollback to an earlier firmware version is always possible. This has been tested on hardware.
 
 
 ## PIC / Main OS recovery over MIDI
