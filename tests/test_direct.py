@@ -92,6 +92,20 @@ class CacheTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,'Factory identity'):Objects(root,b'wrong')
 
 class OutputTests(unittest.TestCase):
+    def test_cli_output_inside_repository(self):
+        from build import main
+        with tempfile.TemporaryDirectory() as directory:
+            repository=Path(directory);builder=repository/'firmware_builder'
+            direct=builder/'direct';direct.mkdir(parents=True)
+            factory=builder/'factory.bin';factory.write_bytes(b'factory')
+            output=builder/'final.bin'
+            with patch('build.HERE',direct),patch('build.build',return_value=(b'final',{'sha256':sha(b'final')})),patch('sys.argv',['patch_prophet_x.py',str(factory),'-o',str(output)]),patch('builtins.print'):
+                main()
+                self.assertEqual(output.read_bytes(),b'final')
+                self.assertTrue(output.with_suffix('.bin.report.json').is_file())
+                with self.assertRaises(FileExistsError):main()
+            self.assertEqual(factory.read_bytes(),b'factory')
+
     def test_atomic_no_replace_and_failure_cleanup(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);output=root/'final.bin';write_new(output,b'validated')

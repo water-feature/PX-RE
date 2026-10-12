@@ -1,6 +1,6 @@
 # Direct firmware builder
 
-The root [patcher](../../patch_prophet_x.py) uses this implementation on Windows,
+The [direct firmware patcher](../patch_prophet_x.py) is launched by `firmware_builder/patch_prophet_x.py` and uses this implementation on Windows,
 macOS and Linux. Requires Python 3.11+. Follow the
 [main guide](../../README.md#patching-the-firmware-using-the-supplied-tool) for commands.
 The same code and factory input must produce the same final bytes on every host.
@@ -26,8 +26,8 @@ The final firmware is published from a fully written temporary file using an
 exclusive hard link, so existing destinations are never replaced. Use a local
 filesystem supporting hard links. Successful builds leave the final file and
 `<output>.report.json` only. If report publication fails after firmware publication,
-the validated firmware remains and the command reports failure. Generated firmware
-must stay outside the repository. The input is never modified.
+the validated firmware remains and the command reports failure. The commands in the main guide save the firmware and report in
+`firmware_builder/`, alongside the factory input. The input is never modified.
 
 ## Implementation map
 

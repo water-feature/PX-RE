@@ -92,7 +92,6 @@ def main():
     parser.add_argument('-o','--output',type=Path,required=True)
     args=parser.parse_args();report_path=args.output.with_suffix(args.output.suffix+'.report.json')
     if args.factory.resolve()==args.output.resolve():raise ValueError('Output must differ from factory input')
-    if args.output.resolve().is_relative_to(HERE.parents[1]):raise ValueError('Output must be outside the repository')
     if any(os.path.lexists(p) for p in (args.output,report_path)):raise FileExistsError('Output or report already exists')
     result,report=build(args.factory.read_bytes(),HERE/'cache',lambda name,seconds:print(f'PASS: {name} ({seconds:.3f}s)',flush=True))
     write_new(args.output,result)

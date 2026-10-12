@@ -1,6 +1,6 @@
 # Prophet X firmware patches and SSD tools
 
-This project documents a set of bugfixes and improvements for the Sequential Prophet X. It includes a local firmware patcher, implementation sources and test evidence for each feature, and a guide detailing how to install a larger SSD. 
+This project documents a set of user-created bugfixes and improvements for the Sequential Prophet X. It includes a local firmware patcher, implementation sources and test evidence for each feature, and a guide detailing how to install a larger SSD. 
   No affiliation with Sequential. 
   No firmware images or extracted payloads are distributed here. 
   Install at your own risk and keep generated firmware images private. 
@@ -11,8 +11,8 @@ This project documents a set of bugfixes and improvements for the Sequential Pro
 
 ## What is included
 
-- [Firmware patcher](patch_prophet_x.py) to generate a flashable firmware file with the changes described in the changelog below
-- [SSD expansion guide](SSD%20expansion/README.md): details on how to prepare and fit a larger SSD
+- [Direct firmware patcher](firmware_builder/patch_prophet_x.py): to generate a flashable firmware file with the changes described in the changelog below.
+- [SSD expansion guide](SSD%20expansion/README.md): details on how to prepare and fit a larger SSD.
 - [Feature and version history](PX%20patch%20history/BUILD_VERSION_HISTORY.md): follows the build chain and links to each feature's implementation, test status and packaging evidence.
 - [Firmware architecture and map](FIRMWARE_MAP.md): container format, QNX/PIC/FPGA components and version-specific offsets.
 - [Source and research directory map](firmware_builder/README.md#directory-map): identifies active build inputs, retained research and mixed directories.
@@ -39,39 +39,40 @@ This project documents a set of bugfixes and improvements for the Sequential Pro
 
 ## Patching the firmware using the supplied tool:
 
-[patch_prophet_x.py](patch_prophet_x.py) converts your exact factory 2.2.2.0.0 update into the combined 2.2.2.2.2 update in one direct build. All listed features are included. It generates the final QNX/PIC payloads in memory and writes one final firmware file plus a verification report.
+The [firmware_builder/patch_prophet_x.py](firmware_builder/patch_prophet_x.py) converts your exact factory 2.2.2.0.0 update into the combined 2.2.2.2.2 update. All listed features are included.
+The patcher is cross-platform, you just need Python 3.11 or newer.
 
-You need **Python 3.11 or newer**. Download and extract the whole repository, including `firmware_builder/direct/`, and obtain your own exact factory `PxUpdate_V2.2.2.0.0.bin` from Sequential. Keep firmware inputs and outputs in a private folder outside the repository.
+1. Download and extract the whole repository.
+2. Obtain your own exact factory `PxUpdate_V2.2.2.0.0.bin` from Sequential.
+3. Copy that firmware file into `firmware_builder/`, alongside `patch_prophet_x.py`.
 
-From the repository root on macOS or Linux, run:
+cd into `PX-RE/firmware_builder`. On macOS or Linux, run:
 
 ```sh
-python3 patch_prophet_x.py /path/to/private-workspace/PxUpdate_V2.2.2.0.0.bin -o /path/to/private-workspace/PxUpdate_V2.2.2.2.2.bin
+python3 patch_prophet_x.py PxUpdate_V2.2.2.0.0.bin -o PxUpdate_V2.2.2.2.2.bin
 ```
 
-On Windows, use Command Prompt from the extracted repository folder:
+On Windows:
 
 ```cmd
-py -3 patch_prophet_x.py "C:\private-workspace\PxUpdate_V2.2.2.0.0.bin" -o "C:\private-workspace\PxUpdate_V2.2.2.2.2.bin"
+py -3 patch_prophet_x.py PxUpdate_V2.2.2.0.0.bin -o PxUpdate_V2.2.2.2.2.bin
 ```
 
-Replace the example paths with your own. If your Windows installation uses `python` instead of the `py` launcher, substitute `python`. Quote paths containing spaces. For argument help, run `python3 patch_prophet_x.py --help` (`py -3` on Windows).
+These commands save `PxUpdate_V2.2.2.2.2.bin` and its verification report inside `firmware_builder/`, alongside the factory file. The synth expects the same filename formatting as the factory firmware bin and will ignore firmware files that are formatted differently. If your Windows installation uses `python` instead of the `py` launcher, substitute `python`.
 
 The command prints four completed stages with timings, then the final filename, size and SHA-256. The [direct builder guide](firmware_builder/direct/README.md) describes the implementation and verification scope.
 
-Save the output outside the repository using a new filename. The patcher also saves a verification report alongside it.
-
 ### Build from source if you do not trust the patcher
 
-You can **review and rebuild the update from the feature sources without running `patch_prophet_x.py`**. Start with the [source build guide](firmware_builder/source_rebuild/README.md), inspect the [orchestrator](firmware_builder/source_rebuild/source_pipeline.py) and the feature implementations it invokes, then run it directly with a new private working directory:
+You can review and rebuild the update from the feature sources without using the direct firmware patcher. From the repository root, start with the [source build guide](firmware_builder/source_rebuild/README.md), inspect the [orchestrator](firmware_builder/source_rebuild/source_pipeline.py) and the feature implementations it invokes, then run it directly with a new private working directory:
 
 ```sh
-python3 firmware_builder/source_rebuild/source_pipeline.py /path/to/private-workspace/PxUpdate_V2.2.2.0.0.bin -o /path/to/private-workspace/PxUpdate_reviewed.bin --work-dir /path/to/private-workspace/source-build
+python3 firmware_builder/source_rebuild/source_pipeline.py firmware_builder/PxUpdate_V2.2.2.0.0.bin -o /path/to/private-workspace/PxUpdate_reviewed.bin --work-dir /path/to/private-workspace/source-build
 ```
 
-This retains the staged source files, compiler outputs, intermediate packages, validation reports and `build.log` for inspection. The working directory must not already exist. This compiler-based audit path is separate from the default direct builder and requires the macOS compiler environment described in its guide. Both paths share authored feature logic and the same final hash; agreement is byte reproduction, not independent proof of behavior. For a manual build, follow the ordered script invocations in `build()` in the orchestrator and review each stage's guards and reports. Independently hash the resulting file using the command below.
+This retains the staged source files, compiler outputs, intermediate packages, validation reports and `build.log` for inspection. This compiler-based audit path is separate from the default direct builder and requires the macOS compiler environment described in its guide. For a manual build, follow the ordered script invocations in `build()` in the orchestrator and review each stage's guards and reports. Independently hash the resulting file using the command below.
 
-The command creates an update file. Verify that file below, retain your backups, and follow [Sequential's Prophet X update procedure](https://sequential.com/updating-prophet-x-os/) to install it. The factory version requirement applies to the input file used by the patcher; there is no need to install each intermediate project build.
+The compiler rebuild saves the final update at the path given after `-o`. With `--work-dir`, it also retains the intermediate firmware files, staged sources, compiler outputs, validation reports and `build.log` in that working directory. Before copying the final update to your USB drive, name it exactly `PxUpdate_V2.2.2.2.2.bin` so the synth can recognize it. Verify the final update below, retain your backups, and follow [Sequential's Prophet X update procedure](https://sequential.com/updating-prophet-x-os/) to install it. The factory version requirement applies to the input file used by the patcher; there is no need to install each intermediate project build.
 
 ## Why the output is checkable
 

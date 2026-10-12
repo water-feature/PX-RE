@@ -129,7 +129,7 @@ The padding within these reservations provides potential room for future QNX hel
 
 Patch sites and helper placements depend on the exact image. Use the feature guides linked from the [changelog](README.md#changelog-for-22222bin) and [build history](PX%20patch%20history/BUILD_VERSION_HISTORY.md) for patch-site offsets, expected parent hashes, guards, allowed writes and test scope.
 
-The [direct patcher](patch_prophet_x.py) generates final QNX/PIC payloads from factory data, authored recipes and pinned redacted objects, then checks every changed byte's owner and the exact final hash. The separate [compiler audit builder](firmware_builder/source_rebuild/source_pipeline.py) stages selected sources and rebuilds the historical chain. Historical receipts, current byte/structure checks and owner-reported hardware observations are different kinds of evidence; the [build guide](firmware_builder/README.md) explains their limits.
+The [direct patcher](firmware_builder/patch_prophet_x.py) generates final QNX/PIC payloads from factory data, authored recipes and pinned redacted objects, then checks every changed byte's owner and the exact final hash. The separate [compiler audit builder](firmware_builder/source_rebuild/source_pipeline.py) stages selected sources and rebuilds the historical chain. Historical receipts, current byte/structure checks and owner-reported hardware observations are different kinds of evidence; the [build guide](firmware_builder/README.md) explains their limits.
 
 Displayed versions and container revisions are not sufficient identifiers: some experiments reused versions, and component displays can differ from packaging metadata. Use the whole-package SHA-256 to identify an exact build.
 

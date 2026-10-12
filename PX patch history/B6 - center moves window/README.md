@@ -78,7 +78,7 @@ python3 b6_candidate_work/publish_b6.py
 
 The builder writes private candidate payloads and `package_pending_validation.bin`. Validation writes reports/listings. Publication checks saved results, creates the final `.9` file without overwriting an existing final output, and independently verifies it. Some intermediate outputs use fixed names. Keep all generated firmware outside the public repository.
 
-These are the original incremental build tools. The [root patcher](../../patch_prophet_x.py) builds the final combined update directly from the exact factory input using authored generators and pinned redacted objects. See the [direct builder guide](../../firmware_builder/direct/README.md). The separate [compiler audit path](../../firmware_builder/source_rebuild/README.md) retains incremental source rebuilding and its original validation scope.
+These are the original incremental build tools. The [direct firmware patcher](../../firmware_builder/patch_prophet_x.py) builds the final combined update directly from the exact factory input using authored generators and pinned redacted objects. See the [direct builder guide](../../firmware_builder/direct/README.md). The separate [compiler audit path](../../firmware_builder/source_rebuild/README.md) retains incremental source rebuilding and its original validation scope.
 
 ## Validation and hardware evidence
 
