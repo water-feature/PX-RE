@@ -43,7 +43,7 @@ The patcher is cross-platform, you just need Python 3.11 or newer.
 2. Download and extract the whole repository.
 3. Download the latest factory firmware `PxUpdate_V2.2.2.0.0.bin` from [Sequential](https://sequential.com/support/download/prophet-x-operating-system/).
 4. Copy that firmware file into `firmware_builder/`, alongside `patch_prophet_x.py`.
-5. In your terminal or Command Prompt, use `cd` to enter the extracted repository's `firmware_builder/` folder.
+5. In your terminal or Command Prompt, use `cd` to enter the `firmware_builder/` folder.
 6. Run the patcher. On macOS or Linux:
 
    ```sh
