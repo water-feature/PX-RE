@@ -73,19 +73,6 @@ This retains the staged source files, compiler outputs, intermediate packages, v
 
 The compiler rebuild saves the final update at the path given after `-o`. With `--work-dir`, it also retains the intermediate firmware files, staged sources, compiler outputs, validation reports and `build.log` in that working directory. Before copying the final update to your USB drive, name it exactly `PxUpdate_V2.2.2.2.2.bin` so the synth can recognize it. Verify the final update below, retain your backups, and follow [Sequential's Prophet X update procedure](https://sequential.com/updating-prophet-x-os/) to install it. The factory version requirement applies to the input file used by the patcher; there is no need to install each intermediate project build.
 
-## Why the output is checkable
-
-Unchanged firmware comes from your verified factory input. New helpers come from authored source recipes and 15 pinned compiler objects. Firmware-matching spans are zeroed in the distributed object blobs and restored only from your factory input; source/include hashes, blob hashes and complete restored-object hashes are checked before linking. See the [object provenance and validation details](firmware_builder/direct/README.md).
-
-The direct builder verifies the factory container round trip, relocation bounds, guarded final ownership of every changed byte, ELF/helper layout, all 910 indexed FDE targets, revision gates, record checksums and the unchanged FPGA record. It generates the final payloads once and requires the exact final size and SHA-256 below before saving.
-
-The direct build and the separately retained compiler-based source build reproduce the accepted final package byte for byte. The [documented build history and hardware observations](PX%20patch%20history/BUILD_VERSION_HISTORY.md) describe that firmware. Historical offline reports retain their original test status; feature guides record subsequent observations. The [source build guide](firmware_builder/source_rebuild/README.md) documents the compiler audit path and its historical validation limits.
-
-[Direct verification](firmware_builder/direct/VERIFICATION.json) and the earlier [compiler rebuild receipt](firmware_builder/source_rebuild/VERIFICATION.json) distinguish these runs. [SHA256SUMS](SHA256SUMS) covers published code, object blobs and research evidence; routine guides are excluded from checksum gating so documentation edits do not break CI.
-
-The command publishes a fully written final file without overwriting an existing destination. Temporary output is cleaned up on a reported write failure. If report publication fails after final publication, the validated firmware remains and the command reports failure.
-
-**Matching hashes establish byte identity, not freedom from bugs or authenticity of an untrusted download.** Read the code and obtain the script and expected hashes from a project copy you trust. The documented hardware results describe one user's experience, not exhaustive testing on every instrument. Keep preset/sample backups and a known-good SSD image before installing modified firmware.
 
 
 ## Independently verify the saved file
