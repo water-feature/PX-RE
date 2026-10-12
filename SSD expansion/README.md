@@ -4,87 +4,162 @@ Standalone technical guide for replacing the SSD with a larger drive while prese
 
 **Firmware:** No firmware update required; this is a separate hardware/storage procedure.
 
-**Hardware: PASS** The replacement boots and Global → Update Library reports approximately 277,000 MB free. 
+**Hardware: PASS** The replacement boots and Global → Update Library reports approximately 277,000 MB free.
+
+Follow these steps in order. The original SSD is disconnected after backup; migration reads the backup and writes only to the replacement.
+
+- [Before starting](#before-starting)
+- [1. Back up the original SSD](#1-back-up-the-original-ssd)
+- [2. Build the maintenance image](#2-build-the-maintenance-image)
+- [3. Attach the replacement through QEMU](#3-attach-the-replacement-through-qemu)
+- [4. Confirm the guest disk mapping](#4-confirm-the-guest-disk-mapping)
+- [5. Set the partition boundaries](#5-set-the-partition-boundaries)
+- [6. Preserve boot and create the sample filesystem](#6-preserve-boot-and-create-the-sample-filesystem)
+- [7. Copy and verify the files](#7-copy-and-verify-the-files)
+- [8. Shut down and test](#8-shut-down-and-test)
+- [Troubleshooting](#troubleshooting)
+- [Tested configuration and results](#tested-configuration-and-results)
 
 ## Before starting
+
+Linux is required to read the QNX filesystem, so the guide has been written using Linux for the full process: backup, maintenance-image preparation and migration. You can use a Linux computer or a Linux VM on macOS or Windows. A whole-disk backup can be created on any operating system using a suitable imaging tool. Migration runs inside a QNX virtual machine; other host operating systems may work but are not covered here.
+
+The commands below use Ubuntu/Debian package names; other distributions need equivalent packages and a kernel with the QNX6 filesystem driver.
 
 You need:
 
 - The original PX SSD, kept unchanged for rollback.
-- A larger replacement SATA SSD and a reliable connection. Its contents will be overwritten.
-- Storage for a verified whole-disk backup. 
-- macOS for the backup commands below; Windows with Administrator access and QEMU for migration. The tested migration used Windows 10.
-- Linux, a Linux VM or suitable WSL environment with Python 3 and GNU binutils supporting 32-bit x86 output, to build the maintenance image in step 2.
+- A larger replacement SATA SSD that reports 512-byte logical sectors and is no larger than 2 TB. Its contents will be overwritten. The tested replacement is a Crucial M500 480 GB; the partition format’s capacity limit does not establish compatibility with every SSD up to 2 TB.
+- A reliable SATA connection or USB-to-SATA adapter that exposes the whole disk with 512-byte logical sectors.
+- A Linux environment with administrator access, Python 3, GNU binutils, QEMU and the QNX6 kernel driver.
+- Storage for a whole-disk backup, plus temporary QEMU files. The tested original disk requires approximately 240 GB just for the backup image. Use a filesystem that supports files larger than 4 GB; FAT32 is unsuitable.
 
-Keep the backup, extracted boot file and generated QNX images private.
+Keep the backup, extracted boot file and generated QNX images private. Store them outside this repository, on storage separate from both SSDs.
 
-Use this guide only for the tested **two-partition MBR layout with 512-byte sectors**. GPT, other sector sizes, additional partitions and drives beyond MBR’s addressing range require a separate procedure.
+Confirm the original SSD has the two partitions shown below before continuing.
 
-Enter commands individually. After each command completes, check its output; use `echo $?` immediately to inspect its exit status. Continue only on success. Long serial pastes can lose characters.
+### If you use a Linux VM
+
+Attach the SATA adapter to the Linux VM using your VM application's USB device controls. Linux must see the **whole physical SSD**, including its partition table, rather than a shared folder or a virtual disk containing copied files. Only one operating system should access it at a time. Decline any host prompts to initialise or format it.
+
+Confirm that the disk appears in Linux using `lsblk` before continuing. If the adapter cannot be attached reliably, resolve that first. The Linux VM needs access to the backup storage too, with enough free space for the image and temporary files. A live Linux session is another option, but save all images and build outputs on persistent storage.
+
+QEMU runs inside Linux, including when Linux itself is a VM. The commands use software x86 emulation, so hardware virtualisation support is not required for this inner QNX guest. On ARM hosts, the Linux environment must also provide GNU binutils capable of assembling and linking 32-bit x86 code; see step 2.
+
+### Install the tools
+
+In a **Linux terminal**:
+
+```sh
+sudo apt update
+sudo apt install python3 binutils qemu-system-x86 util-linux coreutils
+sudo modprobe qnx6
+```
+
+If `modprobe` fails, use a Linux kernel/distribution that supplies the QNX6 driver before continuing. A generic VM or WSL installation does not necessarily include it or expose physical USB disks.
+
+### Where to enter commands
+
+Steps 1–3 run in the **Linux terminal**. Steps 4–8 use the **QNX shell inside QEMU**, except where the **QEMU monitor** or a second **Linux terminal** is explicitly named. Commands for one environment must not be entered in another.
+
+Enter commands individually. After each command completes, check its output; use `echo $?` immediately to inspect its exit status when no explicit status check is shown. Continue only on success. Long serial pastes can lose characters. Paths and device names in examples must be replaced with your own confirmed values. Avoid commas in the working-directory path because QEMU uses commas to separate drive options.
 
 ## 1. Back up the original SSD
 
-Power off the synth before removing its SSD. On macOS, identify it by model and exact byte capacity:
+Power off the synth before removing its SSD. Connect only the original SSD for this step. In the **Linux terminal**, list disks before and after connecting it:
 
 ```sh
-diskutil list
-diskutil info /dev/diskN
+lsblk --bytes -o NAME,PATH,SIZE,MODEL,SERIAL,TRAN,LOG-SEC,TYPE,MOUNTPOINTS
 ```
 
-Replace `N` with the confirmed disk number and `DEST` with the backup volume. Never select the computer’s system disk. Cancel offers to initialise or format the PX SSD.
+Identify the newly attached whole disk by model, serial number and exact byte capacity. `/dev/sdX` below is a placeholder for that disk, not a partition such as `/dev/sdX1`. Never select the computer's system disk. If the adapter hides its identity or identification is ambiguous, stop.
+
+Set the confirmed source device and an absolute path on your backup storage. Keep this terminal open for steps 1–3:
 
 ```sh
-diskutil unmountDisk /dev/diskN
-sudo dd if=/dev/rdiskN of="/Volumes/DEST/qnx-backup.img" bs=4m
+px_source=/dev/sdX
+px_work=/absolute/path/to/private-px-work
+mkdir -p "$px_work"
+lsblk --bytes -o NAME,PATH,SIZE,MODEL,SERIAL,LOG-SEC,TYPE,MOUNTPOINTS "$px_source"
+sudo blockdev --getsize64 "$px_source"
+sudo blockdev --getss "$px_source"
+sudo fdisk -l "$px_source"
+df -h "$px_work"
+```
+
+Record the exact capacity. Require 512-byte logical sectors, an MBR partition table, and the original PX partitions: active boot partition (type 177) followed by the sample partition (type 179). Check the backup storage has enough space. If any source partition is mounted, unmount each listed partition with `sudo umount /dev/sdX1`, substituting its actual name. Re-run `lsblk` and require no mountpoints on the source or its partitions. Do not format or repair the original.
+
+Make sure `$px_work/qnx-backup.img` does not already exist. Then copy the whole disk:
+
+```sh
+sudo dd if="$px_source" of="$px_work/qnx-backup.img" bs=4M status=progress conv=fsync,excl
 echo $?
-stat -f %z "/Volumes/DEST/qnx-backup.img"
+stat -c %s "$px_work/qnx-backup.img"
 ```
 
-Require a zero copy status and an image length equal to the original disk’s exact capacity. Ctrl+T requests progress during macOS `dd`. Read failures must be resolved; do not hide them with `conv=noerror`.
+`conv=excl` prevents overwriting an existing backup file. Require a zero copy status and an image length equal to the original disk's exact capacity. Read failures must be resolved; do not hide them with `conv=noerror`.
 
-With the original still unmounted, compare whole-disk and image hashes:
+With the original still unmounted, compare whole-disk and image hashes. Each command reads the entire disk/image and may take a while:
 
 ```sh
-sudo shasum -a 256 /dev/rdiskN
-shasum -a 256 "/Volumes/DEST/qnx-backup.img"
+sudo sha256sum "$px_source"
+sha256sum "$px_work/qnx-backup.img"
 ```
 
-Both hashes must match, with no read errors. Record the hash and capacity. Hash-check any transferred copy too. Use a Windows-readable destination for migration; APFS is not natively readable by Windows. Disconnect and retain the original SSD.
+Both hashes must match, with no read errors. Record the hash and capacity. Hash-check any transferred copy too. Disconnect and retain the original SSD; the remaining steps read the verified backup instead. Linux may reuse its device name for the replacement, so identify the replacement afresh in step 3.
 
 ## 2. Build the maintenance image
 
-Extract `.boot/x86_64-generic.bin` from your verified SSD backup, then use the Python builder below to create `px-maintenance-vm-boot.img`. This is the QEMU boot disk used in step 3. It provides the original QNX 7.0.1 utilities and a COM1 shell at 115200 baud, without automatically mounting, formatting or launching ProphetX.
+This step walks you through extracting the boot file from your verified backup and running the included [build_maintenance.py](maintenance%20image%20build%20tool/build_maintenance.py) tool to create `px-maintenance-vm-boot.img`, the QNX maintenance disk used in step 3. It provides the original QNX 7.0.1 utilities and a COM1 shell at 115200 baud, without automatically mounting, formatting or launching ProphetX.
 
-Use Linux, a Linux VM or suitable WSL environment with Python 3 and GNU binutils supporting 32-bit x86 output. On Ubuntu:
+### Extract the boot file
+
+Continue in the **Linux terminal**. On x86 Linux, the installed GNU `as` and `ld` supply the required 32-bit x86 output. On ARM Linux, install the distribution's x86 cross-binutils and pass their executable names using `--assembler` and `--linker`; the native ARM tools cannot build this loader.
+
+Inspect the backup's partition table:
 
 ```sh
-sudo apt install python3 binutils
+fdisk -l "$px_work/qnx-backup.img"
 ```
 
-Extract the boot file from the verified backup through a read-only QNX6 mount. Check the source partition table first: the example offset and length below apply to the recorded 256 MiB boot partition only. Replace paths and measured values as needed.
+Identify partition 1, the active type-177 boot partition. Record its start LBA and sector count. Multiply each by 512 to obtain the byte offset and length. The recorded layout starts at LBA 2048 and contains 524288 sectors, giving offset 1048576 and length 268435456. **Use these values only if your inspected partition table matches.**
+
+Extract the boot file through a read-only QNX6 mount. Set the measured byte values first:
 
 ```sh
-sudo modprobe qnx6
+px_boot_offset=1048576
+px_boot_length=268435456
 sudo mkdir -p /mnt/px-boot
-px_loop_device=$(sudo losetup --find --show --read-only --offset 1048576 --sizelimit 268435456 /private/path/qnx-backup.img)
+px_loop_device=$(sudo losetup --find --show --read-only --offset "$px_boot_offset" --sizelimit "$px_boot_length" "$px_work/qnx-backup.img")
 sudo mount -t qnx6 -o ro "$px_loop_device" /mnt/px-boot
-sudo cp /mnt/px-boot/.boot/x86_64-generic.bin /private/path/px-qnx-boot.bin
+sudo cp /mnt/px-boot/.boot/x86_64-generic.bin "$px_work/px-qnx-boot.bin"
 sudo umount /mnt/px-boot
 sudo losetup -d "$px_loop_device"
 ```
 
-Require each command to succeed before continuing. The builder supports only the tested **9,278,800-byte** boot file, SHA-256:
+### Verify the extracted file
+
+The builder supports only the tested **9,278,800-byte** boot file, SHA-256:
 
 ```text
 6a5124d8ee0eb6ad7561bf394e3c7469115dc6184e397d34ea7e3b72f8f6fccc
 ```
 
-It rejects other inputs. Other boot-file versions require separate analysis; keep the hash checks intact.
+Check the extracted file before building:
+
+```sh
+stat -c %s "$px_work/px-qnx-boot.bin"
+sha256sum "$px_work/px-qnx-boot.bin"
+```
+
+Require the exact size and hash above. Stop if either differs; this builder supports only that boot-file version.
+
+### Build the QEMU boot disk
 
 Keep [build_maintenance.py](maintenance%20image%20build%20tool/build_maintenance.py) and [bootloader.S](maintenance%20image%20build%20tool/bootloader.S) together. From the `SSD expansion` folder, run:
 
 ```sh
-python3 "maintenance image build tool/build_maintenance.py" /private/path/px-qnx-boot.bin --output /private/path/px-maintenance-build
+python3 "maintenance image build tool/build_maintenance.py" "$px_work/px-qnx-boot.bin" --output "$px_work/px-maintenance-build"
 ```
 
 The output directory must not already exist. Use `--assembler` and `--linker` if your GNU tools have different executable names. The builder creates:
@@ -95,39 +170,42 @@ The output directory must not already exist. Use `--assembler` and `--linker` if
 | `px-maintenance-candidate.ifs` | Rebuilt QNX payload; 23,410,436 bytes. |
 | `build-report.json` | Input/output hashes, sizes, checksums and reference-match result. |
 
-The tool decompresses the boot filesystem, preserves the original utilities, drivers, libraries and loader links, replaces the startup commands with the maintenance shell, repairs headers/checksums and adds the BIOS loader. It verifies both output hashes against the tested reference before writing them. It does not access the physical replacement SSD.
-
-[validation.json](maintenance%20image%20build%20tool/validation.json) records a byte-for-byte match to the working maintenance image, successful QEMU shell boot, and rejection of unsupported input and existing output directories. Physical migration was not repeated for that builder validation. Expected output SHA-256 hashes are:
-
-| Output | SHA-256 |
-|---|---|
-| Boot disk | `d09c8e53353ac9aabe7bcc9e905c6e5feabaa3002a0f92f72a99ac85beca4662` |
-| QNX payload | `276d810a039e6d15cd4c7ceb04f8a829db0e4396e1e55e5eacb15b7d8ce6d8a1` |
-
-Copy `px-maintenance-vm-boot.img` to the Windows host as `D:\px-maintenance-vm-boot.img` (the path used below) and hash-check the transferred copy. Keep all generated images outside the public source folder. The expected serial banner is `PX maintenance candidate: no disks mounted automatically`.
+The builder checks its output hashes against the tested reference and stops if they differ. On success, use `$px_work/px-maintenance-build/px-maintenance-vm-boot.img` in step 3. The `.ifs` file and report are retained for inspection; you do not attach them to QEMU.
 
 ## 3. Attach the replacement through QEMU
 
-In **Administrator PowerShell**, identify the replacement:
+Keep the original SSD disconnected. Connect the replacement; if using a VM, attach its SATA adapter to Linux. In the **Linux terminal**, identify the new disk:
 
-```powershell
-Get-Disk | Format-Table Number,FriendlyName,SerialNumber,Size,LogicalSectorSize,IsBoot,IsSystem,IsOffline
-Get-Partition | Format-Table DiskNumber,PartitionNumber,DriveLetter,Offset,Size
+```sh
+lsblk --bytes -o NAME,PATH,SIZE,MODEL,SERIAL,TRAN,LOG-SEC,TYPE,MOUNTPOINTS
 ```
 
-Match model, serial and capacity to the physical SSD. Require `IsBoot` and `IsSystem` to be false. If identification is ambiguous, stop. Record its disk number and take only that disk offline:
+Match model, serial and capacity to the physical replacement. Set its whole-disk device name; `/dev/sdY` is a placeholder, not a partition:
 
-```powershell
-Set-Disk -Number N -IsOffline $true
+```sh
+px_target=/dev/sdY
+lsblk --bytes -o NAME,PATH,SIZE,MODEL,SERIAL,LOG-SEC,TYPE,MOUNTPOINTS "$px_target"
+sudo blockdev --getsize64 "$px_target"
+sudo blockdev --getss "$px_target"
 ```
 
-In **Administrator cmd.exe**, launch QEMU. Replace the paths and `PhysicalDriveN` with the verified values:
+Record the target's byte capacity for step 5. Require 512-byte logical sectors. Check that this is the replacement, is larger than the original, and contains nothing you need. It must not be the Linux system disk or the disk holding `$px_work`.
 
-```bat
-"C:\Program Files\qemu\qemu-system-x86_64.exe" -m 512 -machine pc -drive "file=D:\px-maintenance-vm-boot.img,if=ide,index=0,format=raw" -drive "file=D:\qnx-backup.img,if=ide,index=1,format=raw,snapshot=on" -drive "file=\\.\PhysicalDriveN,if=ide,index=2,format=raw" -boot c -display none -serial mon:stdio
+Unmount any mounted target partitions individually using `sudo umount` and their actual names. Re-run `lsblk` and require no mountpoints on the target or its partitions. If a target partition is used as swap, disable that partition with `sudo swapoff /dev/sdY1`, using its actual name. Do not let the Linux desktop or outer VM host mount the target during migration.
+
+Launch QEMU from the same Linux terminal. The next command grants the QNX guest write access to the **entire replacement SSD**. Recheck `$px_target` before running it:
+
+```sh
+sudo qemu-system-x86_64 -accel tcg -m 512 -machine pc \
+  -drive "file=$px_work/px-maintenance-build/px-maintenance-vm-boot.img,if=ide,index=0,format=raw,snapshot=on" \
+  -drive "file=$px_work/qnx-backup.img,if=ide,index=1,format=raw,snapshot=on" \
+  -drive "file=$px_target,if=ide,index=2,format=raw" \
+  -boot c -display none -serial mon:stdio
 ```
 
-The shell uses the serial terminal. `snapshot=on` protects the backup through a temporary overlay; never commit it. Apply it only to the source image so replacement writes persist. A read-only IDE source caused `Block node is read-only` in the tested setup; the overlay avoided that problem.
+`snapshot=on` protects the maintenance image and backup through temporary overlays; never commit them. The replacement has no overlay, so its writes persist. Do not add the global `-snapshot` option: that would also discard replacement writes. A read-only IDE source caused `Block node is read-only` in the tested setup; the source overlay avoided that problem.
+
+QEMU needs space for temporary overlays, normally in Linux's temporary directory. Keep sufficient free space there as well as on the backup storage. Wait for the banner `PX maintenance candidate: no disks mounted automatically` and the shell prompt. Continue in the **QNX shell** for step 4.
 
 ## 4. Confirm the guest disk mapping
 
@@ -151,7 +229,7 @@ Press Ctrl+A, release, then C for the **QEMU monitor**. Run `info block` and con
 |---|---|---|
 | ide0-hd0 | Maintenance image | `/dev/hd0` |
 | ide0-hd1 | Verified backup with temporary overlay | `/dev/hd1` |
-| ide1-hd0 | Confirmed `PhysicalDriveN` replacement | `/dev/hd2` |
+| ide1-hd0 | Confirmed Linux `$px_target` replacement | `/dev/hd2` |
 
 Return with Ctrl+A, C. Check the QNX devices before writing anything:
 
@@ -175,18 +253,58 @@ Confirm `ProphetX`, `ProphetXBackup`, `startup.sh` and the expected sample direc
 
 ## 5. Set the partition boundaries
 
-Record these values before changing the target:
+The new sample partition starts at the same sector as the original and extends to near the end of the replacement. Calculate its boundaries before changing the target.
 
-| Value | How to determine it |
+### Record the source and target values
+
+Use the `fdisk` results from step 4 and the Linux capacity recorded in step 3:
+
+| Value | Where to find it |
 |---|---|
-| **P** | Source sample partition’s start LBA. Verify the active boot partition ends before it. |
-| **T** | Smaller of QNX’s reported target sector count and Windows target byte capacity divided by 512. Investigate a large discrepancy. |
-| **length** | `floor((T - P) / 8) * 8` sectors, aligning the length to 4 KiB. |
-| **end** | `P + length - 1`, inclusive. |
+| **P** | Start LBA of source partition 2 (type 179), from QNX `fdisk /dev/hd1 show -l`. Check that the active boot partition ends before this sector. |
+| **Q** | Target sector count reported by QNX `fdisk /dev/hd2 info`. Use the count, not the last sector number. |
+| **B** | Target byte capacity from Linux `sudo blockdev --getsize64 "$px_target"` in step 3. |
 
-Require positive length, boundaries within the target and enough space for source files plus filesystem metadata. The tested values were P=526336 and T=937697985, giving end=937697983. **These are examples, not fixed values for every disk.**
+All sector calculations below use 512-byte sectors. The usable sector count **T** is the smaller of Q and B / 512. Investigate any large difference between those counts before continuing.
 
-Set the confirmed device names and substitute your measured numeric boundaries:
+### Calculate the final sector
+
+Open a second **Linux terminal**, leaving QEMU running in the first. Run this calculator and enter your measured P, Q and B when prompted. It does not access or write any disk:
+
+```sh
+python3 -c '
+p = int(input("Source sample start LBA (P): "))
+q = int(input("QNX target sector count (Q): "))
+b = int(input("Linux target capacity in bytes (B): "))
+if p <= 0 or q <= p or b <= 0 or b % 512:
+    raise SystemExit("Invalid values: check the recorded disk information.")
+t = min(q, b // 512)
+length = ((t - p) // 8) * 8
+if length <= 0:
+    raise SystemExit("Target has no space for the sample partition.")
+print("Linux target sectors:", b // 512)
+print("QNX target sectors:", q)
+print("Usable target sectors (T):", t)
+print("Sample partition length:", length)
+print("psec=" + str(p))
+print("endsec=" + str(p + length - 1))
+'
+```
+
+The calculator rounds the partition length down to a multiple of eight sectors (4 KiB). Its final sector is inclusive: `end = P + length - 1`. Confirm the resulting partition is large enough for the source files and filesystem metadata.
+
+For example, the recorded migration used P=526336 and T=937697985:
+
+```text
+length = floor((937697985 - 526336) / 8) * 8 = 937171648 sectors
+end    = 526336 + 937171648 - 1 = 937697983
+```
+
+These are worked examples, not values to reuse for a different disk.
+
+### Set the values in QNX
+
+Return to the first terminal and the **QNX shell**. Set the confirmed guest disk names and enter the `psec` and `endsec` values printed by your calculation. The numbers below show the recorded example; replace them with your results:
 
 ```sh
 srcdisk=/dev/hd1
@@ -197,6 +315,8 @@ endsec=937697983
 
 ## 6. Preserve boot and create the sample filesystem
 
+### Copy the boot partition
+
 Copy exactly the P sectors preceding the sample partition. This preserves the MBR, gaps and entire boot partition:
 
 ```sh
@@ -205,6 +325,8 @@ echo $?
 ```
 
 Require zero status and P complete records copied. For the tested source this is 257 MiB; other layouts require their measured P.
+
+### Resize partition 2
 
 Replace only partition slot 2. Check each status before entering the next command:
 
@@ -219,7 +341,11 @@ echo $?
 fdisk $dstdisk show -l
 ```
 
-Confirm partition 1 retains its original boundaries and active flag, and partition 2 has the calculated start/end. Then format only the target sample partition:
+Confirm partition 1 retains its original boundaries and active flag, and partition 2 has the calculated start/end.
+
+### Format the sample partition
+
+Format only the target sample partition:
 
 ```sh
 mkqnx6fs -b 4096 -g 16 /dev/hd2t179
@@ -233,6 +359,8 @@ Require successful formatting/mounting and the expected larger capacity. The for
 
 ## 7. Copy and verify the files
 
+### Copy the samples and application
+
 ```sh
 cp -RpPq /src/. /dst/
 copy_rc=$?
@@ -240,6 +368,8 @@ echo $copy_rc
 ```
 
 Capture `copy_rc` immediately when `cp` returns. Require zero. The copy includes hidden files and preserves modes, ownership, modification times and links. It can take hours; optional `-V` adds per-file progress.
+
+### Check the copied files
 
 Compare file counts, checking for traversal errors:
 
@@ -272,11 +402,11 @@ umount /src
 sync
 ```
 
-Require clean unmounts. Switch to the QEMU monitor and enter `quit`, then fully shut down Windows before removing a SATA-caddy SSD. Keep the target offline in Windows and decline initialisation/formatting prompts.
+Require clean unmounts. Switch to the QEMU monitor and enter `quit`, then wait for QEMU to exit back to the Linux terminal. Run `sudo sync` in Linux. Shut down Linux before disconnecting the replacement. If using a VM, shut down the VM and release its USB attachment before disconnecting the adapter; shut down the outer host too if the caddy requires it. Decline initialisation/formatting prompts on every host.
 
 With the synth powered off, fit the replacement. Check boot, several factory and installed instruments, and a normal import. **Global → Update Library** shows the sample-storage budget, which differs from filesystem free space because firmware applies its own allowances. Testing imports beyond the old budget remains a separate validation step.
 
-## If a step fails
+## Troubleshooting
 
 | Problem | Response |
 |---|---|
@@ -301,9 +431,23 @@ With the synth powered off, fit the replacement. Check boot, several factory and
 | Final QNX filesystem | 447 GiB total; 156 GiB used; 291 GiB available |
 | Synth | Successful boot; approximately 277,000 MB free in Update Library |
 
-Full file-content comparison, broad playback testing and imports beyond the original budget remain unverified.
+
+### Maintenance-image implementation and validation
+
+The tool decompresses the boot filesystem, preserves the original utilities, drivers, libraries and loader links, replaces the startup commands with the maintenance shell, repairs headers/checksums and adds the BIOS loader. It verifies both output hashes against the tested reference before writing them. It does not access the physical replacement SSD.
+
+[validation.json](maintenance%20image%20build%20tool/validation.json) records a byte-for-byte match to the working maintenance image, successful QEMU shell boot, and rejection of unsupported input and existing output directories. Physical migration was not repeated for that builder validation.
+
+Expected output SHA-256 hashes are:
+
+| Output | SHA-256 |
+|---|---|
+| Boot disk | `d09c8e53353ac9aabe7bcc9e905c6e5feabaa3002a0f92f72a99ac85beca4662` |
+| QNX payload | `276d810a039e6d15cd4c7ceb04f8a829db0e4396e1e55e5eacb15b7d8ce6d8a1` |
 
 ## References
 
 - QNX 7 [fdisk](https://www.qnx.com/developers/docs/7.0.0/com.qnx.doc.neutrino.utilities/topic/f/fdisk.html).
-- QEMU [disk images](https://www.qemu.org/docs/master/system/images.html).
+- QEMU [disk images and physical host disks](https://www.qemu.org/docs/master/system/images.html).
+- GNU [backup copy options](https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html).
+- Linux [loop-device setup](https://manpages.ubuntu.com/manpages/jammy/man8/losetup.8.html) and [disk capacity queries](https://manpages.ubuntu.com/manpages/jammy/man8/blockdev.8.html).
