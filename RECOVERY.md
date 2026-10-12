@@ -23,7 +23,7 @@ There are two options:
 
 ## SSD application recovery procedure
 
-This Windows/QEMU procedure successfully recovered my synth after a failed firmware update during my failed attempts to increase boot speed. It hung after the boot bar; replacing the SSD-resident application restored normal boot on hardware. The SSD boot image was verified unchanged.
+This section describes the Windows/QEMU procedure I followed to successfully repair an SSD that was rendered unbootable by my failed attempts to increase boot speed. It hung after the boot bar; replacing the SSD-resident application restored normal boot on hardware. The SSD boot image was verified unchanged.
 
 Both `ProphetX` and `ProphetXBackup` contained the failed application. The stock startup script checks whether the process exists after five seconds; a hung process can pass that check and overwrite the backup.
 
