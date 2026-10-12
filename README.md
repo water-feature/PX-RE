@@ -26,7 +26,7 @@ This project documents a set of user-created bugfixes and improvements for the S
 | [Window scrolling](PX%20patch%20history/B10%20-%20window%20scroll%20clicks/README.md) | Reduced clicking when scrolling Start or End across loop boundaries, particularly with short windows. |
 | [Sample-end fade](PX%20patch%20history/B5%20-%20sample%20end%20fade/README.md) | Added a 5 ms fade on sample end, including reverse playback. Eliminates clicks caused by stopping at non-zero crossings when looping is disabled. |
 | [Center moves window](PX%20patch%20history/B6%20-%20center%20moves%20window/README.md) | Center can now move the Start/End window through the sample instead of being constrained inside it. |
-| [Start/End push Center](PX%20patch%20history/B7%20-%20center%20can%20be%20pushed/README.md) | Allows sample Start and End values to push past the Center position instead of being blocked by it. |
+| [Start/End push Center](PX%20patch%20history/B7%20-%20center%20can%20be%20pushed/README.md) | Allows sample Start and End values to push the Center position instead of being blocked by it. |
 | [Window bug](PX%20patch%20history/B7%20-%20center%20can%20be%20pushed/README.md) | Fixed bug where editing both sample layers together could allow Start to move past End and leave the sample window in an invalid state. |
 | [Tail retrigger bug](PX%20patch%20history/B8%20-%20end%20escape/README.md) | Fixed bug where increasing End after a held sample had already finished could unexpectedly retrigger the newly exposed tail. |
 | [Loop sync divisions](PX%20patch%20history/B16%20-%20new%20sync%20divisions/README.md) | Previously minimum loop sync was 1/16. This has been reduced to allow 1/32 and 1/64. |
