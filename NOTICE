@@ -1,11 +1,9 @@
-SPDX-License-Identifier: GPL-2.0-or-later
+SPDX-License-Identifier: MIT
 
 Copyright (C) 2026 water-feature and contributors
 
 This repository's own source code and documentation are licensed under the
-GNU General Public License as published by the Free Software Foundation,
-either version 2 of the License, or (at your option) any later version.
-The full text of version 2 is in LICENSE.
+MIT License. The full license text is in LICENSE.
 
 This license covers this repository's own source code and documentation only.
 It does not extend to any Sequential firmware, which is not distributed here
@@ -29,8 +27,11 @@ the original recording; it does not claim a new compiler recording. Content audi
 and provenance checks do not independently certify authorship or grant rights to
 manufacturer firmware.
 
-SPDX comments identify the repository's GPL-2.0-or-later grant for its own
-source files. They do not replace or extend third-party licensing terms.
+The MIT grant in LICENSE applies to this repository's own source files,
+including files retaining older GPL-2.0-or-later SPDX comments. This grant
+supersedes those project license headers. The headers are retained to preserve
+the exact source bytes pinned by the firmware tooling and evidence inventories.
+This does not replace or extend third-party licensing terms.
 
 The B13 boottrace sha.inc file contains 32 bytes of baseline application
 SHA-256 data, referenced by trace.asm; it is not a SHA implementation.

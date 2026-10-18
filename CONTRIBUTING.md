@@ -35,4 +35,4 @@ GitHub Actions runs the same checks for checksums, documentation links and synth
 
 ## License
 
-Contributions are accepted under [GPL-2.0-or-later](LICENSE). Credit the project and contributors whose work you use, and submit only material you have the rights to share. Manufacturer firmware remains subject to its own rights.
+Contributions are accepted under [MIT License](LICENSE). Credit the project and contributors whose work you use, and submit only material you have the rights to share. Manufacturer firmware remains subject to its own rights.
