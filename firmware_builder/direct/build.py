@@ -88,8 +88,12 @@ def write_new(path,data):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('factory',type=Path)
-    parser.add_argument('-o','--output',type=Path,required=True)
+    parser.add_argument('factory',type=Path,nargs='?',
+                        default=HERE.parent/'PxUpdate_V2.2.2.0.0.bin',
+                        help='factory update (default: PxUpdate_V2.2.2.0.0.bin beside patch.py)')
+    parser.add_argument('-o','--output',type=Path,
+                        default=HERE.parent/'PxUpdate_V2.2.2.2.2.bin',
+                        help='output update (default: PxUpdate_V2.2.2.2.2.bin beside patch.py)')
     args=parser.parse_args();report_path=args.output.with_suffix(args.output.suffix+'.report.json')
     if args.factory.resolve()==args.output.resolve():raise ValueError('Output must differ from factory input')
     if any(os.path.lexists(p) for p in (args.output,report_path)):raise FileExistsError('Output or report already exists')

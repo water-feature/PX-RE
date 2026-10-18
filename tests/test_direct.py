@@ -92,6 +92,22 @@ class CacheTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,'Factory identity'):Objects(root,b'wrong')
 
 class OutputTests(unittest.TestCase):
+    def test_cli_defaults_use_script_directory_and_preserve_input(self):
+        from build import main
+        with tempfile.TemporaryDirectory() as directory:
+            builder=Path(directory)/'firmware_builder'
+            direct=builder/'direct';direct.mkdir(parents=True)
+            factory=builder/'PxUpdate_V2.2.2.0.0.bin';factory.write_bytes(b'factory')
+            output=builder/'PxUpdate_V2.2.2.2.2.bin'
+            with patch('build.HERE',direct),patch('build.build',return_value=(b'final',{'sha256':sha(b'final')})) as generate,patch('sys.argv',['patch.py']),patch('builtins.print'):
+                main()
+                self.assertEqual(output.read_bytes(),b'final')
+                self.assertTrue(output.with_suffix('.bin.report.json').is_file())
+                self.assertEqual(generate.call_args.args[:2],(b'factory',direct/'cache'))
+                with self.assertRaises(FileExistsError):main()
+                self.assertEqual(generate.call_count,1)
+            self.assertEqual(factory.read_bytes(),b'factory')
+
     def test_cli_output_inside_repository(self):
         from build import main
         with tempfile.TemporaryDirectory() as directory:

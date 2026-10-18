@@ -9,7 +9,7 @@ This project documents a set of user-created bugfixes and improvements for the S
 
 ## What is included
 
-- [Direct patcher](firmware_builder/patch_prophet_x.py): python script that generates a flashable firmware file with the changes described in the changelog below.
+- [Direct patcher](firmware_builder/patch.py): python script that generates a flashable firmware file with the changes described in the changelog below.
 - [SSD expansion guide](SSD%20expansion/README.md): details on how to prepare and fit a larger SSD.
 - [Feature and version history](PX%20patch%20history/README.md): follows the build chain and links to each feature's implementation, test status and packaging evidence.
 - [Firmware architecture and map](FIRMWARE_MAP.md): container format, QNX/PIC/FPGA components and version-specific offsets.
@@ -36,25 +36,27 @@ This project documents a set of user-created bugfixes and improvements for the S
 
 ## Patching the firmware using the supplied tool:
 
-The [firmware_builder/patch_prophet_x.py](firmware_builder/patch_prophet_x.py) converts your exact factory 2.2.2.0.0 update into the combined 2.2.2.2.2 update. All listed features are included.
+The [firmware_builder/patch.py](firmware_builder/patch.py) converts your exact factory 2.2.2.0.0 update into the combined 2.2.2.2.2 update. All listed features are included.
 The patcher is cross-platform, you just need Python 3.11 or newer.
 
 1. Read [RECOVERY.md](RECOVERY.md), open up your synth by following [this video](https://www.youtube.com/watch?v=tF9Ji9iL00g) and create a backup image of your SSD.
 2. Download and extract the whole repository.
 3. Download the latest factory firmware `PxUpdate_V2.2.2.0.0.bin` from [Sequential](https://sequential.com/support/download/prophet-x-operating-system/).
-4. Copy that firmware file into `firmware_builder/`, alongside `patch_prophet_x.py`.
+4. Copy that firmware file into `firmware_builder/`, alongside `patch.py`.
 5. In your terminal or Command Prompt, use `cd` to enter the `firmware_builder/` folder.
 6. Run the patcher. On macOS or Linux:
 
    ```sh
-   python3 patch_prophet_x.py PxUpdate_V2.2.2.0.0.bin -o PxUpdate_V2.2.2.2.2.bin
+   python3 patch.py
    ```
 
    On Windows:
 
    ```cmd
-   py -3 patch_prophet_x.py PxUpdate_V2.2.2.0.0.bin -o PxUpdate_V2.2.2.2.2.bin
+   py -3 patch.py
    ```
+
+   The patcher finds `PxUpdate_V2.2.2.0.0.bin` beside the script and saves `PxUpdate_V2.2.2.2.2.bin` there automatically. Existing output files or reports are never overwritten; move an earlier result before running again.
 
 7. Check that the command completes successfully. It prints four completed stages with timings, then the final filename, size and SHA-256. The update `PxUpdate_V2.2.2.2.2.bin` and its verification report are saved inside `firmware_builder/`, alongside the factory file.
 8. Copy the new firmware file to your update USB drive and verify that copy too. Keep the filename exactly `PxUpdate_V2.2.2.2.2.bin`; the synth will ignore firmware files that diverge from this naming scheme.
