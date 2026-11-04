@@ -24,11 +24,11 @@ The commands below use Ubuntu/Debian package names; other distributions need equ
 
 You need:
 
-- The original PX SSD, kept unchanged for rollback.
-- A larger replacement SATA SSD that reports 512-byte logical sectors and is no larger than 2 TB. Its contents will be overwritten. The tested replacement is a Crucial M500 480 GB; the partition format’s capacity limit does not establish compatibility with every SSD up to 2 TB.
-- A reliable SATA connection or USB-to-SATA adapter that exposes the whole disk with 512-byte logical sectors.
-- A Linux environment with administrator access, Python 3, GNU binutils, QEMU and the QNX6 kernel driver.
-- Storage for a whole-disk backup, plus temporary QEMU files. The tested original disk requires approximately 240 GB just for the backup image. Use a filesystem that supports files larger than 4 GB; FAT32 is unsuitable.
+- The original PX SSD, kept unchanged for rollback. This will need to be removed from the synth for cloning.
+- A larger replacement SATA SSD that reports 512-byte logical sectors and is no larger than 2 TB. Its contents will be overwritten. The tested replacement is a Crucial M500 480 GB.
+- A reliable SATA connection or USB-to-SATA adapter that exposes the whole disk.
+- A Linux environment with administrator access and an internet connection.
+- Storage for a whole-disk backup, plus temporary QEMU files (approx 240GB). Use a filesystem that supports files larger than 4 GB; FAT32 is unsuitable.
 
 Keep the backup, extracted boot file and generated QNX images private. Store them outside this repository, on storage separate from both SSDs.
 
