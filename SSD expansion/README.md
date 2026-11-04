@@ -1,6 +1,6 @@
 # Expand the Prophet X SSD
 
-Standalone technical guide for replacing the SSD with a larger drive while preserving the boot partition and copying the QNX sample filesystem. A Crucial M500 480 GB replacement has been hardware-confirmed. No firmware update required; this is a separate hardware/storage procedure.
+The PX SSD conveniently includes a set of QNX tools. We'll clone the entire drive, extract those tools, create a bootable image, use a VM to create the QNX filesystem on the new SSD, and finally copy across the samples and bootloader from the old drive. A Crucial M500 480 GB replacement has been hardware-confirmed. No firmware update required; this is a separate hardware/storage procedure.
 
 Follow these steps in order. The original SSD is disconnected after backup; migration reads the backup and writes only to the replacement.
 
