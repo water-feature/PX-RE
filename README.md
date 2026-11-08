@@ -10,7 +10,6 @@ This project documents a set of user-created bugfixes and improvements for the S
 ## What is included
 
 - [Direct patcher]([https://water-feature.github.io/PX-RE/): generates the new firmware update in your browser with the updates described below.
-- [Browser patcher](website/README.md): static landing site and local JavaScript patcher, with an offline HTML entry point, Python output parity evidence, and GitHub Pages deployment instructions.
 - [SSD expansion guide](SSD%20expansion/README.md): details on how to prepare and fit a larger SSD.
 - [Feature and version history](PX%20patch%20history/README.md): follows the build chain and links to each feature's implementation, test status and packaging evidence.
 - [Firmware architecture and map](FIRMWARE_MAP.md): container format, QNX/PIC/FPGA components and version-specific offsets.
