@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Community fixes for the Sequential Prophet X. Patch your stock firmware locally in your browser, or read the SSD expansion and recovery guides.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; worker-src 'self'; connect-src 'none'; img-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PX-RE — Prophet X community firmware</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="recipe-pin.js" defer></script>
+  <script src="recipe.js" defer></script>
+  <script src="patcher.js" defer></script>
+  <script src="ui.js" defer></script>
+</head>
+<body>
+<main>
+  <h1>PX-RE</h1>
+  <p>Community firmware fixes and SSD resources for the Sequential Prophet X.</p>
+  <p>Independent community project. Not affiliated with Sequential.</p>
+  <nav aria-label="Page sections"><a href="#firmware">Patch firmware</a> · <a href="#instructions">Installation</a> · <a href="#ssd">SSD expansion</a> · <a href="#documentation">Documentation</a></nav>
+  <hr>
+  <section id="firmware" aria-labelledby="firmware-heading">
+    <h2 id="firmware-heading">Create patched firmware</h2>
+    <p>Select your original <code>PxUpdate_V2.2.2.0.0.bin</code> to create <code>PxUpdate_V2.2.2.2.2.bin</code>, with all the fixes listed below.</p>
+    <p>All firmware processing stays on your computer. Your firmware is never uploaded. There are no analytics, external scripts or server-side patching.</p>
+    <p>Before installing, read the <a href="https://github.com/water-feature/PX-RE/blob/main/RECOVERY.md">recovery guide</a> and <a href="https://github.com/water-feature/PX-RE/blob/main/SSD%20expansion/README.md#1-back-up-the-original-ssd">back up your SSD</a>. Install at your own risk and keep generated firmware private.</p>
+    <p><label for="firmware-file">Stock firmware file:</label><br><input type="file" id="firmware-file" accept=".bin" aria-describedby="firmware-help firmware-status"></p>
+    <p id="firmware-help">Only the exact stock 2.2.2.0.0 image (3,099,064 bytes) is accepted. The contents are verified by SHA-256; renaming another file will not work.</p>
+    <button type="button" id="firmware-create" disabled>Create patched firmware</button>
+    <p id="firmware-status" role="status" aria-live="polite">No file selected.</p>
+    <div id="downloads" aria-label="Verified downloads"></div>
+    <noscript><p>JavaScript is required for the browser patcher. You can use the <a href="https://github.com/water-feature/PX-RE#patching-the-firmware-using-the-supplied-tool">Python patcher</a> instead.</p></noscript>
+    <details>
+      <summary>Included fixes in 2.2.2.2.2</summary>
+      <ul>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B1%20-%20voice%20steal%20fix/README.md">Voice steal bug</a>: Fixed bug where amp envelope attack was ignored on voice steal, causing a harsh click when sample start was set on a non-zero crossing.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B3%20-%20sysex%20channel%20fix/README.md">SysEx bug</a>: Fixed bug where the synth ignored sysex when set to receive midi on any channel but 2 or omni.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B10%20-%20window%20scroll%20clicks/README.md">Window scroll clicks</a>: Reduced clicking when scrolling Start or End across loop boundaries, particularly with short windows.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B5%20-%20sample%20end%20fade/README.md">Sample-end fade</a>: Added a 5 ms fade on sample end, including reverse playback. Eliminates clicks caused by stopping at non-zero crossings when looping is disabled.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B6%20-%20center%20moves%20window/README.md">Center moves window</a>: Center can now move the Start/End window through the sample instead of being constrained inside it.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B7%20-%20center%20can%20be%20pushed/README.md">Start/End push Center</a>: Allows sample Start and End values to push the Center position instead of being blocked by it.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B7%20-%20center%20can%20be%20pushed/README.md">Window bug</a>: Fixed bug where editing both sample layers together could allow Start to move past End and leave the sample window in an invalid state.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B8%20-%20end%20escape/README.md">Tail retrigger bug</a>: Fixed bug where increasing End after a held sample had already finished could unexpectedly retrigger the newly exposed tail.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B16%20-%20new%20sync%20divisions/README.md">Loop sync divisions</a>: Previously minimum loop sync was 1/16. This has been reduced to allow 1/32 and 1/64.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B9%20-%20slow%20preset%20browsing/README.md">Preset browsing lag</a>: Reduced screen lag when scrolling presets.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B14%20-%20disable%20encoder%20accel/README.md">Encoder acceleration fix</a>: Removed acceleration from all encoders except for sample controls.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B15%20-%20stretch%20layer/README.md">Stretch velocity layer</a>: Enabling stretch while a note is held now selects the held velocity layer in addition to its note, and the layer can be changed using the menu as expected. Previously stretch would always choose the highest layer with no way of changing it.</li>
+        <li><a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/B11%20-%20type%20name%20tweak/README.md">Type encoder tweak</a>: Moving the &#x27;type&#x27; encoder now starts instruments at entry number 2 if it exists instead of the always-blank entry 1, making it easier to see which types are populated with instrument samples when scrolling.</li>
+      </ul>
+      <p>See the <a href="https://github.com/water-feature/PX-RE/blob/main/PX%20patch%20history/README.md">feature history and test evidence</a>.</p>
+    </details>
+    <details>
+      <summary>What the patcher verifies</summary>
+      <p>Exact stock identity, container framing and checksums, all guarded patch writes, changed-byte ownership, the unchanged FPGA record, ELF sections and load mappings, all 910 unwind-index targets, revision headers and gates, and the exact final length and SHA-256.</p>
+      <p>The browser uses a fixed guarded-write recipe generated from the direct Python builder. Matching stock bytes are copied from your input. See the <a href="https://github.com/water-feature/PX-RE/blob/main/website/README.md">browser implementation and verification notes</a>.</p>
+    </details>
+  </section>
+  <hr>
+  <section id="instructions" aria-labelledby="instructions-heading">
+    <h2 id="instructions-heading">Install the patched firmware</h2>
+    <ol>
+      <li>Keep a verified SSD backup and read the recovery guide linked above.</li>
+      <li>Obtain the original <a href="https://sequential.com/support/download/prophet-x-operating-system/">Sequential 2.2.2.0.0 firmware</a>, select it above, then create and download the verified update.</li>
+      <li>Copy the update to your USB update drive. Keep its exact name: <code>PxUpdate_V2.2.2.2.2.bin</code>.</li>
+      <li><a href="https://github.com/water-feature/PX-RE#independently-verify-the-saved-file">Independently verify the size and SHA-256</a> of the copy on the USB drive using the values below.</li>
+      <li>Follow <a href="https://sequential.com/updating-prophet-x-os/">Sequential’s Prophet X update procedure</a>.</li>
+    </ol>
+    <p>Expected output: <strong>3,187,784 bytes</strong><br>SHA-256: <code class="hash">488444589607a1b4e793a8d8f79a67c5bd50773b722c302e6d80bc1db77b4b7c</code></p>
+  </section>
+  <hr>
+  <section id="ssd" aria-labelledby="ssd-heading">
+    <h2 id="ssd-heading">SSD expansion</h2>
+    <p>SSD expansion is a separate procedure and does not require patched firmware. Follow the existing <a href="https://github.com/water-feature/PX-RE/blob/main/SSD%20expansion/README.md">SSD expansion guide</a> for backups, maintenance-image creation, migration and verification.</p>
+    <p>The tested migration procedure uses Linux and a QNX virtual machine. Maintenance-image creation uses the repository’s Python tools; it is not available in this browser patcher.</p>
+  </section>
+  <hr>
+  <section id="documentation" aria-labelledby="documentation-heading">
+    <h2 id="documentation-heading">Documentation and source</h2>
+    <ul>
+      <li><a href="https://github.com/water-feature/PX-RE">PX-RE repository and Python patcher</a></li>
+      <li><a href="https://github.com/water-feature/PX-RE/blob/main/RECOVERY.md">Recovery guide</a></li>
+      <li><a href="https://github.com/water-feature/PX-RE/blob/main/FIRMWARE_MAP.md">Firmware architecture and map</a></li>
+      <li><a href="https://github.com/water-feature/PX-RE/blob/main/firmware_builder/direct/IMPLEMENTATION.md">Direct builder implementation</a></li>
+      <li><a href="https://github.com/water-feature/PX-RE/blob/main/CONTRIBUTING.md">Contributing and reporting bugs</a></li>
+      <li><a href="https://github.com/water-feature/PX-RE/archive/refs/heads/main.zip">Download source for offline use</a> — extract, then open <code>website/index.html</code> in a current browser.</li>
+    </ul>
+    <p>The patcher is static HTML, CSS and JavaScript. It needs no account, installation or build service. Use a current browser with Web Crypto support.</p>
+    <p><a href="https://github.com/water-feature/PX-RE/blob/main/LICENSE">MIT license</a> · <a href="https://github.com/water-feature/PX-RE/blob/main/NOTICE">Provenance and notices</a></p>
+  </section>
+</main>
+</body>
+</html>

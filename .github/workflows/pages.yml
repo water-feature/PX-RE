@@ -1,0 +1,65 @@
+name: Browser patcher and GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ['website/**', 'tools/*browser*', 'firmware_builder/direct/**', '.github/workflows/pages.yml']
+  pull_request:
+    paths: ['website/**', 'tools/*browser*', 'firmware_builder/direct/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install browser test tools
+        run: |
+          python -m pip install playwright==1.64.1
+          python -m playwright install --with-deps chromium
+      - name: Verify recipe and source pins
+        run: python tools/check_browser_recipe.py
+      - name: Verify repository checksums and documentation links
+        run: |
+          python tools/check_checksums.py
+          python tools/check_links.py
+      - name: Test browser patcher without firmware
+        run: python tools/test_browser.py
+      - name: Test Python builder
+        run: python -m unittest discover -s tests -v
+
+  upload:
+    if: github.event_name != 'pull_request'
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: website
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: upload
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

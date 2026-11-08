@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "synthetic_checks": [
+    "container round trip",
+    "reject framing",
+    "reject record header",
+    "reject record checksum",
+    "reject PIC trailer",
+    "reject truncated container",
+    "reject odd checksum payload",
+    "reject wrong file size",
+    "reject wrong stock hash",
+    "reject invalid ELF",
+    "recipe integrity pin",
+    "reject recipe tampering",
+    "guarded factory copy",
+    "reject overlapping owners",
+    "reject unowned extension",
+    "reject write guard",
+    "reject generated write hash",
+    "reject copy bounds",
+    "UI rejects invalid inputs without downloads",
+    "375px layout has no horizontal overflow"
+  ],
+  "private_parity": "PASS",
+  "browser": "156.0.8078.81",
+  "byte_identical": true,
+  "offline_byte_identical": true,
+  "factory_unchanged": true,
+  "final_size": 3187784,
+  "final_sha256": "488444589607a1b4e793a8d8f79a67c5bd50773b722c302e6d80bc1db77b4b7c",
+  "checks": {
+    "factory_identity": "PASS",
+    "record_checksums": "PASS",
+    "final_identity": "PASS",
+    "FPGA_unchanged": "PASS",
+    "changed_byte_ownership": "PASS",
+    "ELF_added_sections_and_loads": "PASS",
+    "indexed_FDEs": 910,
+    "revision_headers_and_gates": "PASS"
+  },
+  "network_check": "PASS: only local static GET requests; no uploads or external requests"
+}
