@@ -33,8 +33,10 @@ This project documents a set of user-created bugfixes and improvements for the S
 | [Stretch&nbsp;velocity&nbsp;layer](PX%20patch%20history/B15%20-%20stretch%20layer/README.md) | Enabling stretch while a note is held now selects the held velocity layer in addition to its note, and the layer can be changed using the menu as expected. Previously stretch would always choose the highest layer with no way of changing it. |
 | [Type&nbsp;encoder&nbsp;tweak](PX%20patch%20history/B11%20-%20type%20name%20tweak/README.md) | Moving the 'type' encoder now starts instruments at entry number 2 if it exists instead of the always-blank entry 1, making it easier to see which types are populated with instrument samples when scrolling. |
 
+## Patching the firmware using the browser tool:
+Follow this link: [Direct patcher](https://water-feature.github.io/PX-RE/)
 
-## Patching the firmware using the supplied tool:
+## Patching the firmware using the python script (deprecated):
 
 The [firmware_builder/patch.py](firmware_builder/patch.py) converts your exact factory 2.2.2.0.0 update into the combined 2.2.2.2.2 update. All listed features are included.
 The patcher is cross-platform, you just need Python 3.11 or newer.
