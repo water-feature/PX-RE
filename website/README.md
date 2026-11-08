@@ -112,6 +112,14 @@ builder change requires recipe regeneration. It cannot re-run private parity
 without a stock image. A byte-identical result adds no new hardware/audio/QNX
 runtime validation.
 
+## Editing the page on GitHub
+
+Edit `website/index.html` using GitHub’s pencil button and commit to `main`.
+The Pages workflow checks and deploys the change automatically. The HTML page
+is excluded from `SHA256SUMS`, so text edits do not need a checksum update.
+JavaScript, patch recipe, source pins and firmware input/output integrity checks
+remain verified.
+
 ## GitHub Pages deployment
 
 The [Pages workflow](../.github/workflows/pages.yml) runs browser checks and Python
