@@ -1,12 +1,7 @@
 name: Browser patcher and GitHub Pages
 
-on:
-  push:
-    branches: [main]
-    paths: ['website/**', 'tools/*browser*', 'firmware_builder/direct/**', '.github/workflows/pages.yml']
-  pull_request:
-    paths: ['website/**', 'tools/*browser*', 'firmware_builder/direct/**', '.github/workflows/pages.yml']
-  workflow_dispatch:
+# Run checks/deployment explicitly from Actions; commits do not launch jobs.
+on: [workflow_dispatch]
 
 permissions:
   contents: read

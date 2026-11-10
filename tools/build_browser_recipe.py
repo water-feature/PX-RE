@@ -10,6 +10,7 @@ import base64
 import json
 from pathlib import Path
 import sys
+from browser_sources import source_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'firmware_builder/direct'))
@@ -83,9 +84,7 @@ def main():
                            'factory_sha256': sha(component.factory),
                            'final_size': component.final_size, 'writes': writes})
     # Pin all generator inputs, not just the historical cache manifest.
-    direct = ROOT / 'firmware_builder/direct'
-    sources = {str(p.relative_to(ROOT)): sha(p.read_bytes()) for p in sorted(direct.rglob('*'))
-               if p.is_file() and '__pycache__' not in p.parts}
+    sources = {str(p.relative_to(ROOT)): sha(p.read_bytes()) for p in source_paths(ROOT)}
     recipe = {'format': 1, 'factory_sha256': FACTORY_SHA256, 'factory_size': len(factory),
               'final_sha256': FINAL_SHA256, 'final_size': len(output),
               'sources': sources, 'components': components}

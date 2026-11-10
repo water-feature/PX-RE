@@ -28,7 +28,7 @@ copied from user input, rather than included as a literal. This removes matching
 factory-derived tables and code even when relocated. This bounded overlap check
 does not establish independent authorship for shorter/common sequences.
 
-The recipe contains a complete inventory of direct-builder source/cache hashes.
+The recipe pins direct-builder code, data and cache inputs. Markdown guides are excluded because documentation edits do not change generated firmware.
 `recipe-pin.js` pins its serialized SHA-256; `patcher.js` also independently pins
 the accepted stock and final identities and sizes. The pin detects accidental
 recipe damage; it is not a signature or protection against replacement of the
@@ -115,7 +115,7 @@ runtime validation.
 ## Editing the page on GitHub
 
 Edit `website/index.html` using GitHub’s pencil button and commit to `main`.
-The Pages workflow checks and deploys the change automatically. The HTML page
+After committing, run the Pages workflow manually from Actions to check and deploy the change. Commits and pull requests do not launch it automatically. The HTML page
 is excluded from `SHA256SUMS`, so text edits do not need a checksum update.
 JavaScript, patch recipe, source pins and firmware input/output integrity checks
 remain verified.
@@ -123,14 +123,12 @@ remain verified.
 ## GitHub Pages deployment
 
 The [Pages workflow](../.github/workflows/pages.yml) runs browser checks and Python
-tests, uploads only this directory, then deploys it. Pull requests run checks
-without deployment. No stock firmware or generated updates belong in this folder.
+tests, uploads only this directory, then deploys it when explicitly run from Actions. No stock firmware or generated updates belong in this folder.
 
 1. Merge these changes into `main`.
 2. In the repository's **Settings → Pages → Build and deployment**, select
    **GitHub Actions** as the source.
-3. Run **Browser patcher and GitHub Pages** using its manual trigger (or push a
-   website change to `main`).
+3. Run **Browser patcher and GitHub Pages** using **Run workflow** on `main`.
 4. Check the deployment job and open its returned URL. The expected project URL
    is `https://water-feature.github.io/PX-RE/`.
 

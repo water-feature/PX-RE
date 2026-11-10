@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+from browser_sources import source_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -17,8 +18,7 @@ def main():
     if digest != pin:
         raise SystemExit('Browser recipe integrity mismatch')
     recipe = json.loads(payload)
-    expected_paths = {str(p.relative_to(ROOT)) for p in (ROOT / 'firmware_builder/direct').rglob('*')
-                      if p.is_file() and '__pycache__' not in p.parts}
+    expected_paths = {str(p.relative_to(ROOT)) for p in source_paths(ROOT)}
     if set(recipe['sources']) != expected_paths:
         raise SystemExit('Direct builder source inventory changed; regenerate browser recipe')
     for name, expected in recipe['sources'].items():
