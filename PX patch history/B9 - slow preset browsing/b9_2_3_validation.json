@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "scope": "Retained private actual-instruction checks plus current approved target; not newly measured hardware timing",
+  "revision": [
+    2,
+    2,
+    2,
+    2,
+    3
+  ],
+  "approved_package_sha256": "8b6c694fdc1c6b2ff4dc0df2085335d826c484b1ad6d7da12196b490ec827da6",
+  "approved_package_bytes": 3187784,
+  "rearm": {
+    "wrapper_cases": 3840,
+    "nonpanel_wrapper_equivalence": 2400,
+    "expiry_cases": 192,
+    "timer_cases": 50,
+    "mixed_source_sequences": 256,
+    "remote_only_sequences": 3125,
+    "interrupt_to_zero_cases": 426
+  },
+  "display": {
+    "screen_cases": 5184,
+    "full_redraw_cases": 6,
+    "interrupt_display_cases": 57,
+    "mixed_display_cases": 12,
+    "remote_equivalence_cases": 32
+  },
+  "sustained_input_and_expiry_orderings": {
+    "input_first": {
+      "load_times": [
+        0,
+        125,
+        250,
+        375,
+        500,
+        625,
+        750,
+        875,
+        1000
+      ],
+      "final": [
+        2,
+        33
+      ],
+      "idle": -1
+    },
+    "expiry_first": {
+      "load_times": [
+        0,
+        125,
+        250,
+        375,
+        500,
+        625,
+        750,
+        875,
+        1000
+      ],
+      "final": [
+        2,
+        33
+      ],
+      "idle": -1
+    }
+  },
+  "historical_validation_report_hashes": {
+    "rearm": "ffffdbd5ebc1f5ab1046a9008801e89520c084f16d6ce4b2d39b55c48fce5bee",
+    "combined_display": "64de8765379550b3cc2b8b2e4b4346a893ca18ccc5d33eded1e4f91bd004167b"
+  },
+  "current_authored_source": "PX patch history/B9 - slow preset browsing/b9_2_3_source.py",
+  "current_authored_source_sha256": "7cb63da933d0e4eaf61898b3203f604e91aaf28da1fcbab26dfc25b0ed0c8f52",
+  "limits": [
+    "Font/string/draw calls are summarized contracts; actual screen hardware not emulated.",
+    "Scheduling APPLY/getter and complete IRQ save/restore use retained contracts; identity stores execute real bytes.",
+    "Name remains loaded-patch name; actual responsiveness and hardware regression NOT VERIFIED.",
+    "Static alias/reference scans do not prove the absence of every computed alias.",
+    "Owner approved combined .2.3 for integration; full hardware regression and actual load duration not independently verified."
+  ],
+  "encoder_source": "PX patch history/B9 - slow preset browsing/b9_2_3_mips.py",
+  "encoder_source_sha256": "f724eedeaabaee2e8cea6d04423644ed62d3623ca58297437dc7aab00064aee3",
+  "publication_scope": "B9 source/evidence only; local patcher integration is verified, distributed patcher/browser publication is separate",
+  "local_patcher_integration": {
+    "status": "PASS",
+    "sha256": "8b6c694fdc1c6b2ff4dc0df2085335d826c484b1ad6d7da12196b490ec827da6",
+    "bytes": 3187784,
+    "revision": [
+      2,
+      2,
+      2,
+      2,
+      3
+    ],
+    "synthetic_tests": 18,
+    "checksum_inventories": 16,
+    "source_evidence_checks": 1515,
+    "links": "PASS",
+    "cache_manifest_unchanged": "PASS"
+  }
+}

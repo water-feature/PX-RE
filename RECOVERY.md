@@ -18,7 +18,7 @@ Note: This recovery path does not repair the SSD's QNX application or filesystem
 
 There are two options:
 
-- **Restore a full SSD backup:** restore a verified full-disk image to the SSD, or refit the unchanged original drive. This restores the partition table, boot partition, QNX application and sample filesystem together. A full-image restore overwrites the destination drive, including samples and changes made since the backup. The [backup instructions](SSD%20expansion/README.md#1-back-up-the-original-ssd) explain how to create the image; I used dd..
+- **Restore a full SSD backup:** restore a verified full-disk image to the SSD, or refit the unchanged original drive. This restores the partition table, boot partition, QNX application and sample filesystem together. A full-image restore overwrites the destination drive, including samples and changes made since the backup. The [archived backup instructions](https://github.com/water-feature/PX-RE/blob/3fe15aa1369d88eef794851e6e7ce9018e1ee5ac/SSD%20expansion/README.md#1-back-up-the-original-ssd) explain how to create the image; I used dd..
 - **Repair only the QNX application:** follow the procedure below to replace both `ProphetX` and `ProphetXBackup` with a known-good application. This will be quicker than a full restore but may not fix all boot issues depending on the extent of the damage. 
 
 ## SSD application recovery procedure
@@ -34,7 +34,7 @@ Both `ProphetX` and `ProphetXBackup` contained the failed application. The stock
 Use an elevated **Command Prompt (cmd.exe)**. The commands below assume the same files and drive mapping as the successful session:
 
 - `C:\Program Files\qemu\qemu-system-x86_64.exe`
-- `D:\px-maintenance-vm-boot.img` — maintenance boot image; create it using [SSD expansion, step 2: Build the maintenance image](SSD%20expansion/README.md#2-build-the-maintenance-image), then copy it to this path. Follow only that image-building section for recovery, not the SSD migration steps.
+- `D:\px-maintenance-vm-boot.img` — maintenance boot image; create it using [archived SSD expansion, step 2: Build the maintenance image](https://github.com/water-feature/PX-RE/blob/3fe15aa1369d88eef794851e6e7ce9018e1ee5ac/SSD%20expansion/README.md#2-build-the-maintenance-image), then copy it to this path. Follow only that image-building section for recovery, not the SSD migration steps.
 - `D:\qnx-backup.img` — known-good backup image
 - `D:\PX_Recovery` — existing folder for transfers
 - `\\.\PhysicalDrive2` — affected synth SSD, offline in Windows

@@ -1,5 +1,13 @@
 # B9 - Faster preset browsing
 
+## Current combined firmware — 2.2.2.2.3
+
+The approved combined build adds 125-tick panel reload/rearm and requested bank/program numbers on the main screen while a matching panel selection is pending. At other times it retains the modern per-layer identity display. The name remains the loaded patch's name. Existing stored-program SysEx policy and edit-buffer loading paths are retained.
+
+Current source, behavior and validation: [B9 .2.3 follow-up](B9_2_3.md), [authored source snapshot](b9_2_3_source.py) and [verification summary](b9_2_3_validation.json). Whole-package SHA-256: `8b6c694fdc1c6b2ff4dc0df2085335d826c484b1ad6d7da12196b490ec827da6`.
+
+## Historical B9 250-tick milestone
+
 Technical handover for the retained B9 improvement. The 250-tick version is hardware-tested and retained for now; further improvement remains open. This identifies the B9 milestone, not the latest combined project firmware.
 
 **Firmware:** `2.2.2.1.2` (250 ticks); earlier `2.2.2.1.1` (500 ticks) is a comparison build.

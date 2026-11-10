@@ -2,7 +2,7 @@
 
 The [direct firmware patcher](../patch_prophet_x.py) is launched by `firmware_builder/patch_prophet_x.py` and uses this implementation on Windows,
 macOS and Linux. Requires Python 3.11+. Follow the
-[main guide](../../README.md#patching-the-firmware-using-the-supplied-tool) for commands.
+[main guide](../../README.md#patching-the-firmware-using-the-python-script-deprecated) for commands.
 The same code and factory input must produce the same final bytes on every host.
 
 ## Build and checks
